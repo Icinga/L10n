@@ -1,0 +1,85 @@
+#!/bin/bash
+
+set -x
+
+SOURCE_REPOSITORIES=(
+  icingaweb2
+  icingaweb2-module-director
+  icingaweb2-module-vspheredb
+  icingadb-web
+  icingaweb2-module-reporting
+  icingaweb2-module-graphite
+  icingaweb2-module-cube
+  icingaweb2-module-idoreports
+  icingaweb2-module-aws
+  icingaweb2-module-businessprocess
+  #icingaweb2-module-doc
+  #icingaweb2-module-fileshipper
+  #icingaweb2-module-jira
+  #icingaweb2-module-nagvis
+  icingaweb2-module-pdfexport
+  #icingaweb2-module-pnp
+  #icingaweb2-module-puppetdb
+  #icingaweb2-module-test
+  #icingaweb2-module-vsphere
+  icingaweb2-module-x509
+  #icingaweb2-module-toplevelview
+  icingaweb2-module-audit
+  icingaweb2-module-elasticsearch
+  #icingaweb2-module-eventdb
+  #icingaweb2-module-generictts
+  #icingaweb2-module-lynxtechnik
+)
+
+# Fetch repositories which do not exist yet in the directory
+FETCHED_REPOS=();
+for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
+  if [ ! -d "$repo_name" ]; then
+    FETCHED_REPOS+=( $repo_name );
+    wget -q -O - https://github.com/Icinga/$repo_name/archive/master.tar.gz | tar xz
+    mv $repo_name-master/ $repo_name
+  fi
+done
+
+# Create a list of files xgettext should scan
+find -L . -regex ".*\.\(php\|phtml\)" ! -path "*/vendor/*" > catalog.txt
+
+xgettext --language=PHP \
+         --keyword=translate \
+         --keyword=translate:1,2c \
+         --keyword=translatePlural:1,2 \
+         --keyword=translatePlural:1,2,4c \
+         --keyword=mt:2 \
+         --keyword=mt:2,3c \
+         --keyword=mtp:2,3 \
+         --keyword=mtp:2,3,5c \
+         --keyword=t \
+         --keyword=t:1,2c \
+         --keyword=tp:1,2 \
+         --keyword=tp:1,2,4c \
+         --keyword=N_ \
+         --from-code=utf-8 \
+         --files-from=catalog.txt \
+         --width=120 \
+         --foreign-user \
+         --package-name=ipl-L10n \
+         --package-version=$(git describe --always) \
+         --msgid-bugs-address=https://github.com/Icinga/ipl-L10n/issues \
+         --default-domain=icinga \
+         --output=icinga.pot
+
+# Cleanup created files and directories
+rm catalog.txt
+for repo_name in "${FETCHED_REPOS[@]}"; do
+  rm -rf $repo_name
+done
+
+# Check for changes (new messages) that need to be committed
+CHANGES=$(git diff -U0 | grep -Pe '^[+-]{1}[^+-]+' | grep -v -e '."Project-Id-Version:' -e '."POT-Creation-Date:');
+if [ -z "$CHANGES" ]; then
+  echo "No new messages found.";
+  git checkout icinga.pot;
+else
+  echo "New messages found!";
+  # Working tree is left dirty as following step creates a new pull request
+fi
