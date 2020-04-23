@@ -1,0 +1,30 @@
+name: Template Update
+
+on:
+  repository_dispatch:
+    types:
+      - update
+
+jobs:
+  update:
+    name: Gettext template update
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code base
+        uses: actions/checkout@v2
+
+      - name: Setup dependencies
+        run: sudo apt-get -y install gettext
+
+      - name: Update template file
+        run: cd ./src/ && ../bin/update
+
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v2
+        with:
+          commit-message: "icinga.pot: Add latest messages"
+          title: "Update template file"
+          body: ""
+          labels: "automation"
+          branch: "update-template-file"
