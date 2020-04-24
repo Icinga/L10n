@@ -42,7 +42,7 @@ for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
 done
 
 # Create a list of files xgettext should scan
-find -L . -regex ".*\.\(php\|phtml\)" ! -path "*/vendor/*" > catalog.txt
+find -L . -regex ".*\.\(php\|phtml\)" ! -path "*/vendor/*" ! -path "*/test/*" > catalog.txt
 
 xgettext --language=PHP \
          --keyword=translate \
