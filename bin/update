@@ -34,15 +34,15 @@ SOURCE_REPOSITORIES=(
 # Fetch repositories which do not exist yet in the directory
 FETCHED_REPOS=();
 for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
-  if [ ! -d "$repo_name" ]; then
+  if [ ! -d "sources.d/$repo_name" ]; then
     FETCHED_REPOS+=( $repo_name );
     wget -q -O - https://github.com/Icinga/$repo_name/archive/master.tar.gz | tar xz
-    mv $repo_name-master/ $repo_name
+    mv $repo_name-master/ sources.d/$repo_name
   fi
 done
 
 # Create a list of files xgettext should scan
-find -L . -regex ".*\.\(php\|phtml\)" ! -path "*/vendor/*" ! -path "*/test/*" > catalog.txt
+find -L sources.d -regex ".*\.\(php\|phtml\)" ! -path "*/vendor/*" ! -path "*/test/*" > catalog.txt
 
 xgettext --language=PHP \
          --keyword=translate \
@@ -71,7 +71,7 @@ xgettext --language=PHP \
 # Cleanup created files and directories
 rm catalog.txt
 for repo_name in "${FETCHED_REPOS[@]}"; do
-  rm -rf $repo_name
+  rm -rf sources.d/$repo_name
 done
 
 # Check for changes (new messages) that need to be committed
