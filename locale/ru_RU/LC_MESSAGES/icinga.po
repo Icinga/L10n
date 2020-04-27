@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/ipl-L10n/issues\n"
 "POT-Creation-Date: 2020-04-24 13:09+0000\n"
-"PO-Revision-Date: 2020-04-24 16:40+0200\n"
+"PO-Revision-Date: 2020-04-27 14:56+0200\n"
 "Last-Translator: Yuri Konotopov <ykonotopov@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: icingadb-web/application/controllers/CommentController.php:28
 #: icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:41
@@ -104,6 +105,7 @@ msgid "Host"
 msgid_plural "Hosts"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingadb-web/application/controllers/CommentsController.php:45
 #: icingadb-web/application/controllers/DowntimesController.php:46
@@ -125,11 +127,11 @@ msgstr[1] ""
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/object/service-header.phtml:51
 #: icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:277
 #: icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:258
-#, fuzzy
 msgid "Service"
 msgid_plural "Services"
-msgstr[0] "Служба"
-msgstr[1] "Служба"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: icingadb-web/application/controllers/CommentsController.php:46
 #: icingadb-web/application/controllers/DowntimesController.php:47
@@ -562,9 +564,8 @@ msgstr "Состояние"
 #: icingadb-web/application/controllers/ServicesController.php:54
 #: icingaweb2/modules/monitoring/application/controllers/ListController.php:94
 #: icingaweb2/modules/monitoring/application/controllers/ListController.php:175
-#, fuzzy
 msgid "Last State Change"
-msgstr "Последняя проверка службы"
+msgstr ""
 
 #: icingadb-web/application/controllers/HostsController.php:84
 #: icingadb-web/application/controllers/HostsController.php:136
@@ -920,6 +921,7 @@ msgid "Submit Passive Check Result"
 msgid_plural "Submit Passive Check Results"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingadb-web/library/Icingadb/Common/CommandActions.php:189
 #: icingaweb2/modules/monitoring/application/controllers/HostController.php:146
@@ -1063,9 +1065,8 @@ msgstr ""
 
 #: icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:160
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:527
-#, fuzzy
 msgid "Check source"
-msgstr "Источник проверок"
+msgstr ""
 
 #: icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:162
 #: icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:110
@@ -1098,6 +1099,7 @@ msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:123
 #: icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:175
@@ -1152,15 +1154,13 @@ msgstr ""
 #: icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:126
 #: icingaweb2-module-director/library/Director/Web/Widget/SyncRunDetails.php:25
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:504
-#, fuzzy
 msgid "Start time"
-msgstr "Время начала"
+msgstr ""
 
 #: icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:130
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:505
-#, fuzzy
 msgid "End time"
-msgstr "Время окончания"
+msgstr ""
 
 #: icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:142
 msgid "Scheduled Duration"
@@ -1355,6 +1355,7 @@ msgid "Show %d comment"
 msgid_plural "Show %d comments"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:115
 #, php-format
@@ -1362,6 +1363,7 @@ msgid "Show %d downtime"
 msgid_plural "Show %d downtimes"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:150
 msgid "Summary"
@@ -1436,18 +1438,19 @@ msgid "%d Host"
 msgid_plural "%d Hosts"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:45
 msgid "Host Down"
 msgid_plural "Hosts Down"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:57
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:14
-#, fuzzy
 msgid "Host Summary"
-msgstr "Влияние состояния узла"
+msgstr ""
 
 #: icingadb-web/library/Icingadb/Widget/ItemList/BaseCommentListItem.php:40
 #, php-format
@@ -1524,16 +1527,14 @@ msgstr ""
 #: icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:199
 #: icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:41
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:491
-#, fuzzy
 msgid "Downtime ended"
-msgstr "Время простоя"
+msgstr ""
 
 #: icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:203
 #: icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:45
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:488
-#, fuzzy
 msgid "Downtime started"
-msgstr "Время простоя"
+msgstr ""
 
 #: icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:207
 #: icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:49
@@ -1597,18 +1598,19 @@ msgid "%d Service"
 msgid_plural "%d Services"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:48
 msgid "Service Critical"
 msgid_plural "Services Critical"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:61
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:71
-#, fuzzy
 msgid "Service Summary"
-msgstr "Влияние состояния службы"
+msgstr ""
 
 #: icingadb-web/library/Icingadb/Widget/ShowMore.php:40
 #: icingaweb2-module-graphite/application/views/scripts/list/hosts.phtml:51
@@ -1946,9 +1948,8 @@ msgstr ""
 #: icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:62
 #: icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/MonitoredObjectMappingTable.php:24
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:441
-#, fuzzy
 msgid "Source"
-msgstr "Источник проверок"
+msgstr ""
 
 #: icingaweb2-module-businessprocess/application/controllers/ProcessController.php:473
 msgid "Highlight changes"
@@ -3476,9 +3477,8 @@ msgstr ""
 #: icingaweb2-module-vspheredb/application/controllers/PhperrorController.php:14
 #: icingaweb2-module-vspheredb/application/controllers/PhperrorController.php:52
 #: icingaweb2/application/controllers/ErrorController.php:124
-#, fuzzy
 msgid "Error"
-msgstr "Ошибка"
+msgstr ""
 
 #: icingaweb2-module-director/application/controllers/PhperrorController.php:18
 #, php-format
@@ -6966,9 +6966,8 @@ msgstr ""
 
 #: icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:25
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:497
-#, fuzzy
 msgid "Custom notification"
-msgstr "Отправить уведомление"
+msgstr ""
 
 #: icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:27
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/object/detail-content.phtml:6
@@ -8728,9 +8727,8 @@ msgstr ""
 
 #: icingaweb2-module-director/library/Director/Web/Widget/BackgroundDaemonDetails.php:70
 #: icingaweb2/modules/monitoring/application/views/scripts/show/components/reachable.phtml:7
-#, fuzzy
 msgid "yes"
-msgstr "Да"
+msgstr ""
 
 #: icingaweb2-module-director/library/Director/Web/Widget/BackgroundDaemonDetails.php:71
 #: icingaweb2/modules/monitoring/application/views/scripts/show/components/reachable.phtml:7
@@ -11277,9 +11275,8 @@ msgstr ""
 
 #: icingaweb2/application/controllers/AnnouncementsController.php:82
 #: icingaweb2/application/controllers/AnnouncementsController.php:98
-#, fuzzy
 msgid "Announcement not found"
-msgstr "Страница не найдена."
+msgstr ""
 
 #: icingaweb2/application/controllers/AnnouncementsController.php:84
 msgid "Update Announcement"
@@ -11431,9 +11428,8 @@ msgid ""
 msgstr ""
 
 #: icingaweb2/application/controllers/DashboardController.php:43
-#, fuzzy
 msgid "New Dashlet"
-msgstr "Добавить новую панель или страницу сводки"
+msgstr ""
 
 #: icingaweb2/application/controllers/DashboardController.php:74
 msgid "Dashlet created"
@@ -11478,9 +11474,9 @@ msgid "Title"
 msgstr ""
 
 #: icingaweb2/application/controllers/DashboardController.php:234
-#, fuzzy, php-format
+#, php-format
 msgid "Pane \"%s\" successfully renamed to \"%s\""
-msgstr "Предпочтения успешно сохранены"
+msgstr ""
 
 #: icingaweb2/application/controllers/DashboardController.php:269
 msgid "Dashboard has been removed"
@@ -11588,9 +11584,8 @@ msgid "List groups of user group backends"
 msgstr ""
 
 #: icingaweb2/application/controllers/ListController.php:57 icingaweb2/library/Icinga/Web/Menu.php:128
-#, fuzzy
 msgid "Application Log"
-msgstr "Журнал приложения"
+msgstr ""
 
 #: icingaweb2/application/controllers/NavigationController.php:152
 #: icingaweb2/application/forms/Navigation/NavigationConfigForm.php:594
@@ -11670,9 +11665,8 @@ msgid "Failed to unshare navigation item \"%s\""
 msgstr ""
 
 #: icingaweb2/application/controllers/NavigationController.php:433
-#, fuzzy
 msgid "Navigation not found"
-msgstr "Страница не найдена."
+msgstr ""
 
 #: icingaweb2/application/controllers/RoleController.php:50
 msgid "Create Role"
@@ -11687,9 +11681,8 @@ msgid "Update Role"
 msgstr ""
 
 #: icingaweb2/application/controllers/RoleController.php:75 icingaweb2/application/controllers/RoleController.php:98
-#, fuzzy
 msgid "Role not found"
-msgstr "Страница не найдена."
+msgstr ""
 
 #: icingaweb2/application/controllers/RoleController.php:92 icingaweb2/application/controllers/RoleController.php:101
 msgid "Remove Role"
@@ -11777,14 +11770,12 @@ msgid "Update Account"
 msgstr ""
 
 #: icingaweb2/application/forms/Account/ChangePasswordForm.php:41
-#, fuzzy
 msgid "Old Password"
-msgstr "Пароль"
+msgstr ""
 
 #: icingaweb2/application/forms/Account/ChangePasswordForm.php:49
-#, fuzzy
 msgid "New Password"
-msgstr "Пароль"
+msgstr ""
 
 #: icingaweb2/application/forms/Account/ChangePasswordForm.php:57
 msgid "Confirm New Password"
@@ -11955,9 +11946,8 @@ msgid "Database Connection"
 msgstr ""
 
 #: icingaweb2/application/forms/Config/General/DefaultAuthenticationDomainConfigForm.php:34
-#, fuzzy
 msgid "Default Login Domain"
-msgstr "Язык по умолчанию"
+msgstr ""
 
 #: icingaweb2/application/forms/Config/General/DefaultAuthenticationDomainConfigForm.php:36
 msgid ""
@@ -12008,10 +11998,9 @@ msgstr "Ошибка"
 
 #: icingaweb2/application/forms/Config/General/LoggingConfigForm.php:60
 #: icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:103
-#, fuzzy
 msgctxt "app.config.logging.level"
 msgid "Warning"
-msgstr "Предупреждение"
+msgstr ""
 
 #: icingaweb2/application/forms/Config/General/LoggingConfigForm.php:61
 #: icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:104
@@ -12062,10 +12051,9 @@ msgid "The default theme"
 msgstr ""
 
 #: icingaweb2/application/forms/Config/General/ThemingConfigForm.php:42
-#, fuzzy
 msgctxt "Form element label"
 msgid "Default Theme"
-msgstr "Язык по умолчанию"
+msgstr ""
 
 #: icingaweb2/application/forms/Config/General/ThemingConfigForm.php:53
 msgctxt "Form element description"
@@ -12125,19 +12113,16 @@ msgid "The name of the database to use"
 msgstr "Имя базы данных"
 
 #: icingaweb2/application/forms/Config/Resource/DbResourceForm.php:115
-#, fuzzy
 msgid "The hostname of the database"
-msgstr "Сетевое имя сервера СУБД"
+msgstr ""
 
 #: icingaweb2/application/forms/Config/Resource/DbResourceForm.php:124
-#, fuzzy
 msgid "The port to use"
-msgstr "Используемый сетевой порт"
+msgstr ""
 
 #: icingaweb2/application/forms/Config/Resource/DbResourceForm.php:146
-#, fuzzy
 msgid "The user name to use for authentication"
-msgstr "Имя пользователя для аутентификации"
+msgstr ""
 
 #: icingaweb2/application/forms/Config/Resource/DbResourceForm.php:163
 msgid "The character set for the database"
@@ -12936,14 +12921,12 @@ msgid "New Dashboard Title"
 msgstr ""
 
 #: icingaweb2/application/forms/Dashboard/DashletForm.php:124
-#, fuzzy
 msgid "Enter a title for the new dashboard"
-msgstr "Введите название для компонента."
+msgstr ""
 
 #: icingaweb2/application/forms/Dashboard/DashletForm.php:136
-#, fuzzy
 msgid "Select a dashboard you want to add the dashlet to"
-msgstr "Выберите панель, на которую следует добавить компонент."
+msgstr ""
 
 #: icingaweb2/application/forms/LdapDiscoveryForm.php:27
 msgid "Search Domain"
@@ -13060,13 +13043,10 @@ msgid "Current Column"
 msgstr ""
 
 #: icingaweb2/application/forms/Navigation/NavigationItemForm.php:56
-#, fuzzy
 msgid ""
 "The url of this navigation item. Leave blank if only the name should be displayed. For urls with username and "
 "password and for all external urls, make sure to prepend an appropriate protocol identifier (e.g. http://example.tld)"
 msgstr ""
-"URL адрес элемента навигации. Оставьте пустым, если необходимо только отображение имени. Для внешних адресов "
-"убедитесь, что в начале ссылке указан корректный протокол (например, http://example.tld)"
 
 #: icingaweb2/application/forms/Navigation/NavigationItemForm.php:72
 msgid "Missing protocol identifier"
@@ -13130,14 +13110,12 @@ msgid "Whether to show application state messages."
 msgstr ""
 
 #: icingaweb2/application/forms/PreferenceForm.php:245
-#, fuzzy
 msgid "System (Yes)"
-msgstr "Система"
+msgstr ""
 
 #: icingaweb2/application/forms/PreferenceForm.php:246
-#, fuzzy
 msgid "System (No)"
-msgstr "Система"
+msgstr ""
 
 #: icingaweb2/application/forms/PreferenceForm.php:260
 msgid "Set whether to show an exception's stacktrace."
@@ -13152,9 +13130,8 @@ msgid "This option allows you to enable or to disable the global page content au
 msgstr ""
 
 #: icingaweb2/application/forms/PreferenceForm.php:290
-#, fuzzy
 msgid "Default page size"
-msgstr "Язык по умолчанию"
+msgstr ""
 
 #: icingaweb2/application/forms/PreferenceForm.php:291
 msgid "Default number of items per page for list views"
@@ -13291,14 +13268,12 @@ msgid "Skip to Content"
 msgstr ""
 
 #: icingaweb2/application/layouts/scripts/parts/navigation.phtml:32
-#, fuzzy
 msgid "Toggle Menu"
-msgstr "Добавить в меню"
+msgstr ""
 
 #: icingaweb2/application/views/scripts/about/index.phtml:8
-#, fuzzy
 msgid "Icinga Web 2 Version"
-msgstr "Вход в Icinga Web 2"
+msgstr ""
 
 #: icingaweb2/application/views/scripts/about/index.phtml:12 icingaweb2/application/views/scripts/config/module.phtml:33
 msgid "Git commit"
@@ -13539,9 +13514,8 @@ msgid "Currently there is no dashlet available. This might change once you enabl
 msgstr ""
 
 #: icingaweb2/application/views/scripts/dashboard/index.phtml:21
-#, fuzzy
 msgid "modules"
-msgstr "Расширения"
+msgstr ""
 
 #: icingaweb2/application/views/scripts/dashboard/settings.phtml:5
 msgid "Dashboard Settings"
@@ -13661,10 +13635,9 @@ msgstr ""
 
 #: icingaweb2/application/views/scripts/joystickPagination.phtml:52
 #: icingaweb2/application/views/scripts/joystickPagination.phtml:148
-#, fuzzy
 msgctxt "pagination.joystick"
 msgid "hosts"
-msgstr "Узлы"
+msgstr ""
 
 #: icingaweb2/application/views/scripts/joystickPagination.phtml:79
 #: icingaweb2/application/views/scripts/joystickPagination.phtml:118
@@ -13674,10 +13647,9 @@ msgstr ""
 
 #: icingaweb2/application/views/scripts/joystickPagination.phtml:80
 #: icingaweb2/application/views/scripts/joystickPagination.phtml:119
-#, fuzzy
 msgctxt "pagination.joystick"
 msgid "services"
-msgstr "Службы"
+msgstr ""
 
 #: icingaweb2/application/views/scripts/joystickPagination.phtml:99
 msgid "Flip grid axes"
@@ -13822,9 +13794,8 @@ msgid "Remove user %s"
 msgstr ""
 
 #: icingaweb2/application/views/scripts/user/show.phtml:16
-#, fuzzy
 msgid "Edit User"
-msgstr "Пользователь"
+msgstr ""
 
 #: icingaweb2/application/views/scripts/user/show.phtml:33
 msgid "Inactive"
@@ -14124,27 +14095,24 @@ msgid "List announcements"
 msgstr ""
 
 #: icingaweb2/library/Icinga/Web/Menu.php:68
-#, fuzzy
 msgid "Open application configuration"
-msgstr "Проверить конфигурацию"
+msgstr ""
 
 #: icingaweb2/library/Icinga/Web/Menu.php:69
 msgid "Application"
 msgstr ""
 
 #: icingaweb2/library/Icinga/Web/Menu.php:76
-#, fuzzy
 msgid "Open authentication configuration"
-msgstr "Проверить конфигурацию"
+msgstr ""
 
 #: icingaweb2/library/Icinga/Web/Menu.php:84
 msgid "Open shared navigation configuration"
 msgstr ""
 
 #: icingaweb2/library/Icinga/Web/Menu.php:92
-#, fuzzy
 msgid "Open module configuration"
-msgstr "Проверить конфигурацию"
+msgstr ""
 
 #: icingaweb2/library/Icinga/Web/Menu.php:108
 msgid "Open your account preferences"
@@ -14159,9 +14127,8 @@ msgid "Logout"
 msgstr "Выход"
 
 #: icingaweb2/library/Icinga/Web/Menu.php:127
-#, fuzzy
 msgid "Open Application Log"
-msgstr "Журнал приложения"
+msgstr ""
 
 #: icingaweb2/library/Icinga/Web/Navigation/Navigation.php:467
 msgid "Menu Entry"
@@ -14196,9 +14163,8 @@ msgid "Cannot create dashboard dashlet \"%s\" without valid URL"
 msgstr ""
 
 #: icingaweb2/library/Icinga/Web/Widget/Dashboard/Dashlet.php:272
-#, fuzzy
 msgid "Dashlet"
-msgstr "Название компонента"
+msgstr ""
 
 #: icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:283
 msgid "Cannot search here"
@@ -14254,9 +14220,8 @@ msgid "Searching"
 msgstr ""
 
 #: icingaweb2/library/Icinga/Web/Widget/SearchDashboard.php:91
-#, fuzzy
 msgid "Page not found"
-msgstr "Страница не найдена."
+msgstr ""
 
 #: icingaweb2/library/Icinga/Web/Widget/SortBox.php:196
 msgid "Sort by"
@@ -14267,9 +14232,8 @@ msgid "Change sort direction"
 msgstr ""
 
 #: icingaweb2/library/Icinga/Web/Widget/Tabextension/DashboardSettings.php:25
-#, fuzzy
 msgid "Add Dashlet"
-msgstr "Добавить новую панель или страницу сводки"
+msgstr ""
 
 #: icingaweb2/library/Icinga/Web/Widget/Tabextension/MenuAction.php:27
 msgid "Add To Menu"
@@ -14614,52 +14578,45 @@ msgid "%.2f%%"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:225
-#, fuzzy
 msgctxt "tooltip"
 msgid "Notification"
-msgstr "Оповещение"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:227
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:96
-#, fuzzy
 msgctxt "tooltip"
 msgid "Comment"
-msgstr "Комментарии"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:229
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:101
-#, fuzzy
 msgctxt "tooltip"
 msgid "Comment removed"
-msgstr "Комментарии"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:231
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:106
-#, fuzzy
 msgctxt "tooltip"
 msgid "Acknowledged"
-msgstr "Обработать"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:233
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:111
-#, fuzzy
 msgctxt "tooltip"
 msgid "Acknowledgement removed"
-msgstr "Обработанные события служб"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:235
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:116
-#, fuzzy
 msgctxt "tooltip"
 msgid "Downtime scheduled"
-msgstr "Время простоя"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:237
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:121
-#, fuzzy
 msgctxt "tooltip"
 msgid "Downtime removed"
-msgstr "Время простоя"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:239
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:126
@@ -14683,17 +14640,15 @@ msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:247
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:154
-#, fuzzy
 msgctxt "tooltip"
 msgid "Downtime started"
-msgstr "Время простоя"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:249
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:159
-#, fuzzy
 msgctxt "tooltip"
 msgid "Downtime ended"
-msgstr "Время простоя"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:362
 msgid "Entry time"
@@ -14704,9 +14659,8 @@ msgid "Is fixed"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:364
-#, fuzzy
 msgid "Is in effect"
-msgstr "В процессе"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:365
 msgid "Was started"
@@ -14721,9 +14675,8 @@ msgid "Trigger time"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:377
-#, fuzzy
 msgid "Scheduled start time"
-msgstr "Запланированное начало"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:381
 #: icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:140
@@ -14731,9 +14684,8 @@ msgid "Actual start time"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:385
-#, fuzzy
 msgid "Scheduled end time"
-msgstr "Запланировать обслуживание"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:393
 #: icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:145
@@ -14741,23 +14693,20 @@ msgid "Actual end time"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:413
-#, fuzzy
 msgid "User comment"
-msgstr "Добавить комментарий"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:416
-#, fuzzy
 msgid "Scheduled downtime"
-msgstr "Запланировать обслуживание"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:430
 msgid "Icinga"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:440
-#, fuzzy
 msgid "Time"
-msgstr "Время окончания"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:442
 msgid "Entry type"
@@ -14772,9 +14721,8 @@ msgid "Expiration time"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:447
-#, fuzzy
 msgid "Deletion time"
-msgstr "Время выполнения проверки"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:454
 msgid "Flapping stopped normally"
@@ -14786,9 +14734,8 @@ msgid "Flapping was disabled"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:464
-#, fuzzy
 msgid "Event time"
-msgstr "Обработчик событий"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:465
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:506
@@ -14808,14 +14755,12 @@ msgid "High threshold"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:473
-#, fuzzy
 msgid "Normal notification"
-msgstr "Оповещение"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:476
-#, fuzzy
 msgid "Problem acknowledgement"
-msgstr "Не обработано"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:494
 msgid "Downtime was cancelled"
@@ -14826,9 +14771,8 @@ msgid "Escalated"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:512
-#, fuzzy
 msgid "Contacts notified"
-msgstr "Контакты"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:514
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:536
@@ -14841,9 +14785,8 @@ msgid "State time"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:528
-#, fuzzy
 msgid "Check attempt"
-msgstr "Попытки проверки"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:529
 #, php-format
@@ -14851,9 +14794,8 @@ msgid "%d of %d"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:533
-#, fuzzy
 msgid "Last state"
-msgstr "Состояние узлов"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/EventController.php:534
 msgid "Last hard state"
@@ -15033,14 +14975,12 @@ msgid "Service Group Name"
 msgstr "Название группы служб"
 
 #: icingaweb2/modules/monitoring/application/controllers/ListController.php:522
-#, fuzzy
 msgid "Service Group Grid"
-msgstr "Группа служб"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/ListController.php:523
-#, fuzzy
 msgid "Show the Service Group Grid"
-msgstr "Группа служб"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/ListController.php:561
 #: icingaweb2/modules/monitoring/configuration.php:217
@@ -15053,9 +14993,8 @@ msgid "Host Group Name"
 msgstr "Название группы узлов"
 
 #: icingaweb2/modules/monitoring/application/controllers/ListController.php:608
-#, fuzzy
 msgid "Host Group Grid"
-msgstr "Группа узлов"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/ListController.php:609
 msgid "Show the Host Group Grid"
@@ -15079,9 +15018,8 @@ msgid "Show the Service Grid"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/ListController.php:698
-#, fuzzy
 msgid "Problems Only"
-msgstr "Проблемы"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/ServiceController.php:84
 msgid "Acknowledge Service Problem"
@@ -15131,23 +15069,20 @@ msgid "Contact details"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/ShowController.php:40
-#, fuzzy
 msgid "Contact"
-msgstr "Контакты"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/TacticalController.php:23
 msgid "Show an overview of all hosts and services, their current states and monitoring feature utilisation"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/TacticalController.php:80
-#, fuzzy
 msgid "Hosts Down"
-msgstr "Узлы"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/TacticalController.php:95
-#, fuzzy
 msgid "Services Critical"
-msgstr "Матрица служб"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/controllers/TimelineController.php:24
 msgid "Show the number of historical event records grouped by time and type"
@@ -15345,6 +15280,7 @@ msgid "Acknowledge problem"
 msgid_plural "Acknowledge problems"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:56
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:45
@@ -15401,6 +15337,7 @@ msgid "Acknowledging problem.."
 msgid_plural "Acknowledging problems.."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:20
 msgid "This command is used to add host or service comments."
@@ -15429,6 +15366,7 @@ msgid "Adding comment.."
 msgid_plural "Adding comments.."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/CheckNowCommandForm.php:42
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/CheckNowCommandForm.php:45
@@ -15444,6 +15382,7 @@ msgid "Scheduling check.."
 msgid_plural "Scheduling checks.."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/DeleteCommentCommandForm.php:40
 msgid "Delete this comment"
@@ -15513,6 +15452,7 @@ msgid "Processing check result.."
 msgid_plural "Processing check results.."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:125
 msgctxt "icinga.state"
@@ -15531,20 +15471,18 @@ msgstr "НЕДОСТУПНО"
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:73
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:92
-#, fuzzy
 msgid "Remove acknowledgement"
 msgid_plural "Remove acknowledgements"
-msgstr[0] "Не обработано"
-msgstr[1] "Не обработано"
-msgstr[2] "Не обработано"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:114
-#, fuzzy
 msgid "Removing acknowledgement.."
 msgid_plural "Removing acknowledgements.."
-msgstr[0] "Не обработано"
-msgstr[1] "Не обработано"
-msgstr[2] "Не обработано"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostCheckCommandForm.php:29
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:35
@@ -15560,6 +15498,7 @@ msgid "Scheduling host check.."
 msgid_plural "Scheduling host checks.."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:33
 msgid "Schedule downtime for all services on the hosts and the hosts themselves."
@@ -15600,6 +15539,7 @@ msgid "Scheduling host downtime.."
 msgid_plural "Scheduling host downtimes.."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:23
 msgid ""
@@ -15612,6 +15552,7 @@ msgid "Schedule check"
 msgid_plural "Schedule checks"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:51
 msgid "Check Time"
@@ -15636,6 +15577,7 @@ msgid "Scheduling service check.."
 msgid_plural "Scheduling service checks.."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:33
 msgid ""
@@ -15683,6 +15625,7 @@ msgid "Scheduling service downtime.."
 msgid_plural "Scheduling service downtimes.."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:21
 msgid "This command is used to send custom notifications about hosts or services."
@@ -15693,6 +15636,7 @@ msgid "Send custom notification"
 msgid_plural "Send custom notifications"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:58
 msgid "Forced"
@@ -15873,9 +15817,8 @@ msgid "SSH port to connect to on the remote Icinga instance"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/forms/Config/Transport/ApiTransportForm.php:51
-#, fuzzy
 msgid "API Username"
-msgstr "Имя пользователя"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/forms/Config/Transport/ApiTransportForm.php:63
 msgid "API Password"
@@ -16346,9 +16289,8 @@ msgid "Remove all selected downtimes"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/event/show.phtml:26
-#, fuzzy
 msgid "Event Details"
-msgstr "Обработчики событий"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:40
 #, php-format
@@ -16431,9 +16373,8 @@ msgid "Unhandled Problems:"
 msgstr "Необработанные события:"
 
 #: icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:22
-#, fuzzy
 msgid "Service Problems:"
-msgstr "Проблемы служб"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:37
 msgid "Host Problems:"
@@ -16528,9 +16469,8 @@ msgstr "Выполнение проверки"
 
 #: icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:180
 #: icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:182
-#, fuzzy
 msgid "Schedule Check"
-msgstr "Запланировать обслуживание"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:15
 msgid "No comments found matching the filter"
@@ -16560,10 +16500,10 @@ msgid ""
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/components/selectioninfo.phtml:12
-#, fuzzy, php-format
+#, php-format
 msgctxt "Multi-selection count"
 msgid "%s row(s) selected"
-msgstr "строк выделено"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/components/servicesummary.phtml:13
 #, php-format
@@ -16582,14 +16522,12 @@ msgstr[1] ""
 msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/contactgroups.phtml:16
-#, fuzzy
 msgid "No contact groups found matching the filter"
-msgstr "Не найдены узлы в соответствии с фильтром"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/contactgroups.phtml:23
-#, fuzzy
 msgid "Contact Group"
-msgstr "Группы контактов"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:14
 msgid "No contacts found matching the filter"
@@ -16603,9 +16541,8 @@ msgid "Send a mail to %s"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:19
-#, fuzzy
 msgid "No downtimes found matching the filter."
-msgstr "Не найдены узлы в соответствии с фильтром."
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/eventgrid.phtml:16
 #, php-format
@@ -16659,52 +16596,52 @@ msgid "No host groups found matching the filter."
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/hostgroup-grid.phtml:37
-#, fuzzy, php-format
+#, php-format
 msgid "List %u host that is currently in state DOWN in the host group \"%s\""
 msgid_plural "List %u hosts which are currently in state DOWN in the host group \"%s\""
-msgstr[0] "Показать %u службу, находящуюся в состоянии ОК, на узлах группы  \"%s\""
-msgstr[1] "Показать %u службы, находящиеся в состоянии ОК, на узлах группы  \"%s\""
-msgstr[2] "Показать %u служб, находящихся в состоянии ОК, на узлах группы  \"%s\""
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/hostgroup-grid.phtml:59
-#, fuzzy, php-format
+#, php-format
 msgid "List %u host that is currently in state UNREACHABLE in the host group \"%s\""
 msgid_plural "List %u hosts which are currently in state UNREACHABLE in the host group \"%s\""
-msgstr[0] "Показать %u службу, находящуюся в состоянии КРИТИЧНО, на узлах группы  \"%s\""
-msgstr[1] "Показать %u службы, находящиеся в состоянии КРИТИЧНО, на узлах группы  \"%s\""
-msgstr[2] "Показать %u служб, находящихся в состоянии КРИТИЧНО, на узлах группы  \"%s\""
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/hostgroup-grid.phtml:81
-#, fuzzy, php-format
+#, php-format
 msgid "List %u host that is currently in state DOWN (Acknowledged) in the host group \"%s\""
 msgid_plural "List %u hosts which are currently in state DOWN (Acknowledged) in the host group \"%s\""
-msgstr[0] "Показать %u службу, находящуюся в состоянии НЕИЗВЕСТНО (Подтверждено), на узлах группы \"%s\""
-msgstr[1] "Показать %u службы, находящиеся в состоянии НЕИЗВЕСТНО (Подтверждено), на узлах группы \"%s\""
-msgstr[2] "Показать %u служб, находящихся в состоянии НЕИЗВЕСТНО (Подтверждено), на узлах группы \"%s\""
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/hostgroup-grid.phtml:103
-#, fuzzy, php-format
+#, php-format
 msgid "List %u host that is currently in state UNREACHABLE (Acknowledged) in the host group \"%s\""
 msgid_plural "List %u hosts which are currently in state UNREACHABLE (Acknowledged) in the host group \"%s\""
-msgstr[0] "Показать %u службу, находящуюся в состоянии КРИТИЧНО (Подтверждено), на узлах группы \"%s\""
-msgstr[1] "Показать %u службы, находящиеся в состоянии КРИТИЧНО (Подтверждено), на узлах группы \"%s\""
-msgstr[2] "Показать %u служб, находящихся в состоянии КРИТИЧНО (Подтверждено), на узлах группы \"%s\""
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/hostgroup-grid.phtml:124
-#, fuzzy, php-format
+#, php-format
 msgid "List %u host that is currently in state PENDING in the host group \"%s\""
 msgid_plural "List %u hosts which are currently in state PENDING in the host group \"%s\""
-msgstr[0] "Показать %u службу, находящуюся в состоянии ОЖИДАНИЕ, на узлах группы  \"%s\""
-msgstr[1] "Показать %u службы, находящиеся в состоянии ОЖИДАНИЕ, на узлах группы  \"%s\""
-msgstr[2] "Показать %u служб, находящихся в состоянии ОЖИДАНИЕ, на узлах группы  \"%s\""
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/hostgroup-grid.phtml:145
-#, fuzzy, php-format
+#, php-format
 msgid "List %u host that is currently in state UP in the host group \"%s\""
 msgid_plural "List %u hosts which are currently in state UP in the host group \"%s\""
-msgstr[0] "Показать %u службу, находящуюся в состоянии ОК, на узлах группы  \"%s\""
-msgstr[1] "Показать %u службы, находящиеся в состоянии ОК, на узлах группы  \"%s\""
-msgstr[2] "Показать %u служб, находящихся в состоянии ОК, на узлах группы  \"%s\""
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/hostgroup-grid.phtml:165
 #: icingaweb2/modules/monitoring/application/views/scripts/list/hostgroups.phtml:52
@@ -16756,11 +16693,11 @@ msgid "List %s unhandled service problem on host %s"
 msgid_plural "List %s unhandled service problems on host %s"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:18
-#, fuzzy
 msgid "No notifications found matching the filter."
-msgstr "Не найдены узлы в соответствии с фильтром."
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:46
 #: icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:69
@@ -16911,9 +16848,8 @@ msgid "This comment expires on %s at %s"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-detail.phtml:75
-#, fuzzy
 msgid "Delete comment"
-msgstr "Добавить комментарий"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comments-header.phtml:23
 #, php-format
@@ -16942,9 +16878,9 @@ msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:60
 #: icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:77
-#, fuzzy, php-format
+#, php-format
 msgid "Flexible downtime by %s"
-msgstr "Запланировать обслуживание"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:61
 #: icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:78
@@ -16966,9 +16902,8 @@ msgid "This downtime is in effect"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:93
-#, fuzzy
 msgid "Delete downtime"
-msgstr "Запланировать обслуживание"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtimes-header.phtml:31
 #, php-format
@@ -16986,70 +16921,63 @@ msgid "Flapping with a %.2f%% state change rate"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:59
-#, fuzzy
 msgctxt "tooltip"
 msgid "State notification"
-msgstr "Отправить уведомление"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:60
 msgid "NOTIFICATION"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:64
-#, fuzzy
 msgctxt "tooltip"
 msgid "Ack Notification"
-msgstr "Оповещение"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:65
 msgid "ACK NOTIFICATION"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:68
-#, fuzzy
 msgctxt "tooltip"
 msgid "Downtime start notification"
-msgstr "Отключенные уведомления узлов"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:69
 msgid "DOWNTIME START NOTIFICATION"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:72
-#, fuzzy
 msgctxt "tooltip"
 msgid "Downtime end notification"
-msgstr "Отправить уведомление"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:73
 msgid "DOWNTIME END NOTIFICATION"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:76
-#, fuzzy
 msgctxt "tooltip"
 msgid "Flapping notification"
-msgstr "Отправить уведомление"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:77
 msgid "FLAPPING NOTIFICATION"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:80
-#, fuzzy
 msgctxt "tooltip"
 msgid "Flapping end notification"
-msgstr "Отправить уведомление"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:81
 msgid "FLAPPING END NOTIFICATION"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:84
-#, fuzzy
 msgctxt "tooltip"
 msgid "Custom notification"
-msgstr "Отправить уведомление"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:85
 msgid "CUSTOM NOTIFICATION"
@@ -17097,10 +17025,9 @@ msgid "Hard state"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:148
-#, fuzzy
 msgctxt "tooltip"
 msgid "Soft state"
-msgstr "Состояние узлов"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:155
 msgid "DOWNTIME START"
@@ -17111,9 +17038,9 @@ msgid "DOWNTIME END"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/host/objects-header.phtml:32
-#, fuzzy, php-format
+#, php-format
 msgid "List all %d hosts"
-msgstr "Показать все %d комментария"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/partials/object/host-header.phtml:39
 msgctxt "host"
@@ -17280,9 +17207,9 @@ msgid "%d notifications have been sent for this issue."
 msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/show/components/notifications.phtml:57
-#, fuzzy, php-format
+#, php-format
 msgid "The last one was sent %s."
-msgstr "Последнее произошло %s назад"
+msgstr ""
 
 # Plural forms needed
 #: icingaweb2/modules/monitoring/application/views/scripts/show/components/notifications.phtml:62
@@ -17294,9 +17221,8 @@ msgid "Performance data"
 msgstr "Данные производительности"
 
 #: icingaweb2/modules/monitoring/application/views/scripts/show/components/reachable.phtml:4
-#, fuzzy
 msgid "Reachable"
-msgstr "Доступен"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/show/components/reachable.phtml:9
 msgid "Is reachable"
@@ -17341,6 +17267,7 @@ msgid "List %u actively checked host"
 msgid_plural "List %u actively checked hosts"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/hostservicechecks.phtml:37
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/hostservicechecks.phtml:93
@@ -17349,6 +17276,7 @@ msgid "%d Passive"
 msgid_plural "%d Passive"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/hostservicechecks.phtml:44
 #, php-format
@@ -17356,6 +17284,7 @@ msgid "List %u passively checked host"
 msgid_plural "List %u passively checked hosts"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/hostservicechecks.phtml:55
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/hostservicechecks.phtml:111
@@ -17364,6 +17293,7 @@ msgid "%d Disabled"
 msgid_plural "%d Disabled"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/hostservicechecks.phtml:62
 #, php-format
@@ -17371,6 +17301,7 @@ msgid "List %u host that is not being checked at all"
 msgid_plural "List %u hosts which are not being checked at all"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/hostservicechecks.phtml:75
 #, php-format
@@ -17378,6 +17309,7 @@ msgid "%d Active"
 msgid_plural "%d Active"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/hostservicechecks.phtml:82
 #, php-format
@@ -17385,6 +17317,7 @@ msgid "List %u actively checked service"
 msgid_plural "List %u actively checked services"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/hostservicechecks.phtml:100
 #, php-format
@@ -17392,6 +17325,7 @@ msgid "List %u passively checked service"
 msgid_plural "List %u passively checked services"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/hostservicechecks.phtml:118
 #, php-format
@@ -17399,6 +17333,7 @@ msgid "List %u service that is not being checked at all"
 msgid_plural "List %u services which are not being checked at all"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:3
 msgid "Monitoring Features"
@@ -17420,6 +17355,7 @@ msgid "List %u host for which flap detection has been disabled"
 msgid_plural "List %u hosts for which flap detection has been disabled"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:39
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:160
@@ -17445,6 +17381,7 @@ msgid "List %u host that is currently flapping"
 msgid_plural "List %u hosts which are currently flapping"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:75
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:175
@@ -17462,6 +17399,7 @@ msgid "List %u service for which flap detection has been disabled"
 msgid_plural "List %u services for which flap detection has been disabled"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:94
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:194
@@ -17479,6 +17417,7 @@ msgid "%u Service Flapping"
 msgid_plural "%u Services Flapping"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:114
 #, php-format
@@ -17486,6 +17425,7 @@ msgid "List %u service that is currently flapping"
 msgid_plural "List %u services which are currently flapping"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:150
 #, php-format
@@ -17493,6 +17433,7 @@ msgid "List %u host for which notifications are suppressed"
 msgid_plural "List %u hosts for which notifications are suppressed"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:164
 msgid "List all hosts, for which notifications are enabled entirely"
@@ -17504,6 +17445,7 @@ msgid "List %u service for which notifications are suppressed"
 msgid_plural "List %u services for which notifications are suppressed"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:198
 msgid "List all services, for which notifications are enabled entirely"
@@ -17515,6 +17457,7 @@ msgid "List %u host that is not processing any event handlers"
 msgid_plural "List %u hosts which are not processing any event handlers"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:243
 msgid "List all hosts, which are processing event handlers entirely"
@@ -17526,6 +17469,7 @@ msgid "List %u service that is not processing any event handlers"
 msgid_plural "List %u services which are not processing any event handlers"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:277
 msgid "List all services, which are processing event handlers entirely"
@@ -17545,6 +17489,7 @@ msgid "List %u host that is currently in state UP"
 msgid_plural "List %u hosts which are currently in state UP"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/ok_hosts.phtml:34
 #, php-format
@@ -17552,6 +17497,7 @@ msgid "%u Host PENDING"
 msgid_plural "%u Hosts PENDING"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/ok_hosts.phtml:41
 #, php-format
@@ -17559,6 +17505,7 @@ msgid "List %u host that is currently in state PENDING"
 msgid_plural "List %u hosts which are currently in state PENDING"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/ok_hosts.phtml:78
 #: icingaweb2/modules/monitoring/configuration.php:157 icingaweb2/modules/monitoring/configuration.php:309
@@ -17581,17 +17528,16 @@ msgstr[2] "Показать %u служб, находящихся в состо�
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:86
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:100
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:114
-#, fuzzy
 msgid "Handled"
-msgstr "Не обработано"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:41
-#, fuzzy, php-format
+#, php-format
 msgid "List %u service that is currently in state CRITICAL (Handled)"
 msgid_plural "List %u services which are currently in state CRITICAL (Handled)"
-msgstr[0] "Показать %u службу, находящуюся в состоянии КРИТИЧНО (Подтверждено)"
-msgstr[1] "Показать %u службы, находящиеся в состоянии КРИТИЧНО (Подтверждено)"
-msgstr[2] "Показать %u служб, находящихся в состоянии КРИТИЧНО (Подтверждено)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:53
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:152
@@ -17601,6 +17547,7 @@ msgid "%u is passively checked"
 msgid_plural "%u are passively checked"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:68
 #, php-format
@@ -17620,6 +17567,7 @@ msgid "%u is not checked at all"
 msgid_plural "%u are not checked at all"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:95
 #, php-format
@@ -17638,12 +17586,12 @@ msgstr[1] "Показать %u службы, находящиеся в сост�
 msgstr[2] "Показать %u служб, находящихся в состоянии ВНИМАНИЕ"
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:140
-#, fuzzy, php-format
+#, php-format
 msgid "List %u service that is currently in state WARNING (Handled)"
 msgid_plural "List %u services which are currently in state WARNING (Handled)"
-msgstr[0] "Показать %u службу, находящуюся в состоянии ВНИМАНИЕ (Подтверждено)"
-msgstr[1] "Показать %u службы, находящиеся в состоянии ВНИМАНИЕ (Подтверждено)"
-msgstr[2] "Показать %u служб, находящихся в состоянии ВНИМАНИЕ (Подтверждено)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:167
 #, php-format
@@ -17659,6 +17607,7 @@ msgid "List %u service that is currently in state WARNING and not checked at all
 msgid_plural "List %u services which are currently in state WARNING and not checked at all"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:218
 #, php-format
@@ -17669,12 +17618,12 @@ msgstr[1] "Показать %u службы, находящиеся в сост�
 msgstr[2] "Показать %u служб, находящихся в состоянии НЕИЗВЕСТНО"
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:239
-#, fuzzy, php-format
+#, php-format
 msgid "List %u service that is currently in state UNKNOWN (Handled)"
 msgid_plural "List %u services which are currently in state UNKNOWN (Handled)"
-msgstr[0] "Показать %u службу, находящуюся в состоянии НЕИЗВЕСТНО (Подтверждено)"
-msgstr[1] "Показать %u службы, находящиеся в состоянии НЕИЗВЕСТНО (Подтверждено)"
-msgstr[2] "Показать %u служб, находящихся в состоянии НЕИЗВЕСТНО (Подтверждено)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:266
 #, php-format
@@ -17690,6 +17639,7 @@ msgid "List %u service that is currently in state UNKNOWN and not checked at all
 msgid_plural "List %u services which are currently in state UNKNOWN and not checked at all"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:314
 #, php-format
@@ -17721,6 +17671,7 @@ msgid "List %u service that is currently in state PENDING and not checked at all
 msgid_plural "List %u services which are currently in state PENDING and not checked at all"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/problem_hosts.phtml:11
 #, php-format
@@ -17736,6 +17687,7 @@ msgid "List %u host that is currently in state DOWN"
 msgid_plural "List %u hosts which are currently in state DOWN"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/components/problem_hosts.phtml:30
 #, php-format
@@ -17751,23 +17703,21 @@ msgid "List %u host that is currently in state UNREACHABLE"
 msgid_plural "List %u hosts which are currently in state UNREACHABLE"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:9
-#, fuzzy
 msgid "No results found matching the filter."
-msgstr "Не найдены узлы в соответствии с фильтром."
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:57
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:128
-#, fuzzy
 msgid "Pending"
-msgstr "Ожидающие обработки узлы"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:64
 #: icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:135
-#, fuzzy
 msgid "Not Checked"
-msgstr "Последняя проверка"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/application/views/scripts/timeline/index.phtml:15
 msgid "Legend"
@@ -17896,9 +17846,8 @@ msgid "Allow sending custom notifications for hosts and services"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/configuration.php:90
-#, fuzzy
 msgid "Prohibit access to contacts and contactgroups"
-msgstr "Показать контакты в группе контактов \"%s\""
+msgstr ""
 
 #: icingaweb2/modules/monitoring/configuration.php:95
 msgid "Restrict views to the Icinga objects that match the filter"
@@ -17942,9 +17891,8 @@ msgid "%d unhandled hosts down"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/configuration.php:159
-#, fuzzy
 msgid "List current service problems"
-msgstr "Проблемы служб"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/configuration.php:163
 #, php-format
@@ -17960,19 +17908,16 @@ msgid "Current Downtimes"
 msgstr "Проходящие обслуживания"
 
 #: icingaweb2/modules/monitoring/configuration.php:179
-#, fuzzy
 msgid "List current downtimes"
-msgstr "Проходящие обслуживания"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/configuration.php:193
-#, fuzzy
 msgid "Open tactical overview"
-msgstr "Тактический обзор"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/configuration.php:233
-#, fuzzy
 msgid "List users"
-msgstr "Показать все %d службы"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/configuration.php:261
 msgid "Open event grid"
@@ -17991,9 +17936,8 @@ msgid "Monitoring Health"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/configuration.php:298
-#, fuzzy
 msgid "Open monitoring health"
-msgstr "Возможности мониторинга"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/configuration.php:307
 msgid "Current Incidents"
@@ -18175,10 +18119,9 @@ msgid "The filter column \"%s\" is not allowed here."
 msgstr ""
 
 #: icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:51
-#, fuzzy
 msgctxt "setup.summary.subject"
 msgid "the monitoring module"
-msgstr "Возможности мониторинга"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:62
 msgid "The given resource name is already in use."
@@ -18336,9 +18279,8 @@ msgid "Show all event records of host %s"
 msgstr ""
 
 #: icingaweb2/modules/monitoring/library/Monitoring/Web/Navigation/Renderer/BackendAvailabilityNavigationItemRenderer.php:65
-#, fuzzy
 msgid "Notifications are disabled"
-msgstr "Уведомления"
+msgstr ""
 
 #: icingaweb2/modules/monitoring/library/Monitoring/Web/Navigation/Renderer/BackendAvailabilityNavigationItemRenderer.php:71
 #, php-format
