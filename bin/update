@@ -95,6 +95,12 @@ if [ -z "$CHANGES" ]; then
   echo "No new messages found.";
   git checkout icinga.pot;
 else
+  # Update intermediate (in-progress) catalogs
+  LOCALES=$(find . -mindepth 1 -maxdepth 1 -type d -regextype grep -regex '\./[a-z]\{2\}_[A-Z]\{2\}' -printf "%P ")
+  for locale_name in $LOCALES; do
+    msgmerge --update --backup=none --lang=$locale_name --sort-by-file $locale_name/LC_MESSAGES/icinga.po icinga.pot
+  done
+
   echo "New messages found!";
   # Working tree is left dirty as the following step creates a new pull request
 fi
