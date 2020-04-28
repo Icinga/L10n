@@ -90,8 +90,13 @@ for repo_name in "${FETCHED_REPOS[@]}"; do
 done
 
 # Check for changes (new messages) that need to be committed
-CHANGES=$(git diff -U0 | grep -Pe '^[+-]{1}[^+-]+' | grep -v -e '."Project-Id-Version:' -e '."POT-Creation-Date:');
-if [ -z "$CHANGES" ]; then
+CHANGES=1
+git diff -U0 \
+  | grep -Pe '^[+-]{1}[^+-]+' \
+  | grep -qv -e '."Project-Id-Version:' -e '."POT-Creation-Date:' \
+|| CHANGES=0
+
+if [ ! $CHANGES ]; then
   echo "No new messages found.";
   git checkout icinga.pot;
 else
