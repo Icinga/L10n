@@ -68,6 +68,21 @@ xgettext --language=PHP \
          --default-domain=icinga \
          --output=icinga.pot
 
+# Re-add the PoEdit header extensions
+REPLACE_CODE=$(cat << PYTHON
+import sys, re
+result = re.sub(
+    r'msgid \"\"\nmsgstr \"\"(\n\".*\")+',
+    '\g<0>\n'
+        + '\"X-Poedit-Basepath: ../../../src\\\\\\\\n\"\n'
+        + '\"X-Poedit-SearchPath-0: sources.d\\\\\\\\n\"',
+    sys.stdin.read()
+)
+sys.stdout.write(result)
+PYTHON
+)
+cat icinga.pot | python -c "$REPLACE_CODE" > temp; mv temp icinga.pot
+
 # Cleanup created files and directories
 rm catalog.txt
 for repo_name in "${FETCHED_REPOS[@]}"; do
