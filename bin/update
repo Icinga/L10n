@@ -96,7 +96,7 @@ git diff -U0 \
   | grep -qv -e '."Project-Id-Version:' -e '."POT-Creation-Date:' \
 || CHANGES=0
 
-if [ ! $CHANGES ]; then
+if [ $CHANGES -eq 0 ]; then
   echo "No new messages found.";
   git checkout icinga.pot;
 else
