@@ -17,6 +17,9 @@ jobs:
       - name: Setup dependencies
         run: sudo apt-get -y install gettext
 
+      - name: Dispatch details
+        run: echo "${{ github.event.client_payload.origin }} @ ${{ github.event.client_payload.commit }}"
+
       - name: Update template file
         run: cd ./src/ && ../bin/update
 
