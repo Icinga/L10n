@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/ipl-L10n/issues\n"
 "POT-Creation-Date: 2020-04-29 15:24+0000\n"
-"PO-Revision-Date: 2020-04-30 16:17+0500\n"
+"PO-Revision-Date: 2020-05-01 00:07+0500\n"
 "Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
 "Language-Team: TranslAster\n"
 "Language: ru_RU\n"
@@ -2301,6 +2301,7 @@ msgid ""
 "A slightly more detailed description for this process, about 100-150 "
 "characters long"
 msgstr ""
+"Чуть более подробное описание этого процесса, длиной около 100-150 символов"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:55
 #: sources.d/icingaweb2-module-graphite/configuration.php:12
@@ -2453,7 +2454,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:68
 msgid "Are you sure?"
-msgstr ""
+msgstr "Вы уверены?"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:71
 msgid "Do you really want to delete this node?"
@@ -3045,6 +3046,11 @@ msgid ""
 "Sync strategies and other base Configuration Objects. It is not a tool to "
 "operate with single Hosts or Services."
 msgstr ""
+"Корзина конфигурации ссылается на определенные объекты конфигурации или все "
+"объекты определенного типа. Она была разработана для совместного "
+"использования шаблонов, стратегий импорта/синхронизации и других объектов "
+"базовой конфигурации. Это не инструмент для работы с отдельными хостами или "
+"службами."
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketsController.php:41
 msgid ""
@@ -3501,7 +3507,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:76
 #, php-format
 msgid "%d objects found"
-msgstr ""
+msgstr "%d объектов найдено"
 
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:82
 msgid "Type attributes"
@@ -3745,17 +3751,17 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:255
 #, php-format
 msgid "%d object(s) will be deleted"
-msgstr ""
+msgstr "будет удалено %d объект(ов)"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:264
 #, php-format
 msgid "%d object(s) will be modified"
-msgstr ""
+msgstr "будет изменено %d объект(ов)"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:274
 #, php-format
 msgid "%d object(s) will be created"
-msgstr ""
+msgstr "будет создан %d объект(ов)"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:376
 #, php-format
@@ -4302,6 +4308,8 @@ msgid ""
 "A short name identifying this job. Use something meaningful, like \"Import "
 "Puppet Hosts\""
 msgstr ""
+"Короткое имя, обозначающее эту работу. Используйте что-то осмысленное, "
+"например \"Импорт узлов Puppet\""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaAddServiceForm.php:67
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:576
@@ -5064,7 +5072,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/IcingaMultiEditForm.php:93
 #, php-format
 msgid "%d objects have been modified"
-msgstr ""
+msgstr "было изменено %d объектов"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaMultiEditForm.php:269
 #, php-format
@@ -5437,6 +5445,8 @@ msgid ""
 "A meaningful description explaining your users what to expect when assigning "
 "this set of services"
 msgstr ""
+"Содержательное описание, объясняющее пользователям чего следует ожидать при "
+"назначении этого набора служб"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceSetForm.php:121
 msgid ""
@@ -5711,6 +5721,7 @@ msgstr ""
 msgid ""
 "A property modifier allows you to modify a specific property at import time"
 msgstr ""
+"Модификатор свойств позволяет изменять определенное свойство во время импорта"
 
 #: sources.d/icingaweb2-module-director/application/forms/ImportRunForm.php:23
 msgid "Trigger Import Run"
@@ -5733,6 +5744,9 @@ msgid ""
 "A short name identifying this import source. Use something meaningful, like "
 "\"Hosts from Puppet\", \"Users from Active Directory\" or similar"
 msgstr ""
+"Короткое имя, идентифицирующее этот источник импорта. Используйте что-то "
+"значимое, как \"Узлы из Puppet\", \"Пользователи из Active Directory\" или "
+"аналогичные"
 
 #: sources.d/icingaweb2-module-director/application/forms/ImportSourceForm.php:26
 msgid ""
@@ -6090,7 +6104,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/SettingsForm.php:177
 #, php-format
 msgid "%s (default)"
-msgstr ""
+msgstr "%s (по-умолчанию)"
 
 #: sources.d/icingaweb2-module-director/application/forms/SelfServiceSettingsForm.php:285
 msgid "Self Service Settings have been stored"
@@ -6300,6 +6314,10 @@ msgid ""
 "the form ${columnName} in such case.  Structured data sources can be "
 "referenced as ${columnName.sub.key}"
 msgstr ""
+"Пользовательская строка. Может содержать исходные столбцы, пожалуйста, в "
+"таком случае используйте заполнители формы ${columnName}. На "
+"структурированные источники данных можно ссылаться как на ${columnName.sub."
+"key}"
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:235
 msgid "Existing templates"
@@ -6343,7 +6361,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:347
 msgid "a list"
-msgstr ""
+msgstr "список"
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:355
 msgid "Special properties"
@@ -6454,6 +6472,10 @@ msgid ""
 "expected. The \"Black/Whitelist\" Import Property Modifier is probably what "
 "you're looking for."
 msgstr ""
+"Будьте осторожны: обычно это не то, что вы хотите, так как это делает "
+"синхронизацию \"слепой\" для объектов, соответствующих этому фильтру. Это "
+"означает, что \"Очистка\" будет работать не как ожидалось. Модификатор "
+"свойств импорта \"черный/белый список\" - это, вероятно, то, что вы ищете."
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncRunForm.php:23
 msgid "Trigger this Sync"
@@ -6725,7 +6747,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/Dashlet.php:256
 #, php-format
 msgid "%d objects have been defined"
-msgstr ""
+msgstr "было определено %d объектов"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/Dashlet.php:265
 #, php-format
@@ -6796,6 +6818,8 @@ msgid ""
 "A total of %d config changes happened since your last deployed config has "
 "been rendered"
 msgstr ""
+"Всего с момента отображения последней развернутой конфигурации произошло %d "
+"изменений конфигурации"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/EndpointObjectDashlet.php:17
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceCoreApi.php:59
@@ -7334,6 +7358,10 @@ msgid ""
 "a lot of flexibility but requires LDAP filter skills. Simple filters might "
 "look as follows: operatingsystem=*server*"
 msgstr ""
+"Пользовательский фильтр LDAP для использования в дополнение к классу "
+"объектов. Он обеспечивает большую гибкость, но требует навыков фильтрации "
+"LDAP. Простые фильтры могут выглядеть следующим образом: "
+"operatingsystem=*server*"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceLdap.php:70
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/SyncRuleTabs.php:39
@@ -7977,7 +8005,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Resolver/CommandUsage.php:59
 #, php-format
 msgid "%d Notification(s)"
-msgstr ""
+msgstr "%d уведомление(й)"
 
 #: sources.d/icingaweb2-module-director/library/Director/Resolver/CommandUsage.php:60
 #, php-format
@@ -8537,6 +8565,8 @@ msgstr ""
 #, php-format
 msgid "%s config changes happend since the last deployed configuration"
 msgstr ""
+"изменения конфигурации %s произошли с момента последнего развертывания "
+"конфигурации"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/ObjectPreview.php:40
 #, php-format
@@ -8631,6 +8661,8 @@ msgid ""
 "A ticket for this agent could not have been requested from your deployment "
 "endpoint: %s"
 msgstr ""
+"Ярлык для этого агента не мог быть запрошен из конечной точки развертывания: "
+"%s"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:223
 msgid "For manual configuration"
@@ -8843,7 +8875,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:58
 #, php-format
 msgid "%s (%d members)"
-msgstr ""
+msgstr "%s (%d участников)"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableEndpoint.php:46
 msgid "This is your Config master and will receive our Deployments"
@@ -9300,7 +9332,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/SyncRunDetails.php:48
 #, php-format
 msgid "%s objects have been modified"
-msgstr ""
+msgstr "объекты %s были изменены"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/controllers/DocumentsController.php:24
 msgid "Instance not found"
@@ -9331,7 +9363,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-elasticsearch/application/controllers/EventsController.php:79
 #, php-format
 msgid "%s Events"
-msgstr ""
+msgstr "%s события"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/controllers/EventsController.php:87
 msgid "Instance for the event type not found"
@@ -9774,6 +9806,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/BackendForm.php:35
 msgid "A user with access to your Graphite Web via HTTP basic authentication"
 msgstr ""
+"Пользователь, имеющий доступ к вашему Graphite Web через HTTP-аутентификацию"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/BackendForm.php:45
 msgid "Graphite Web password"
@@ -9840,12 +9873,12 @@ msgstr "Показать за последние ... недель"
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:75
 #, php-format
 msgid "%d week"
-msgstr ""
+msgstr "%d неделя"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:76
 #, php-format
 msgid "%d weeks"
-msgstr ""
+msgstr "%d недель"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:81
 msgid "Show the last … months"
@@ -9868,12 +9901,12 @@ msgstr "Показать за последние ... лет"
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:91
 #, php-format
 msgid "%d year"
-msgstr ""
+msgstr "%d год"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:92
 #, php-format
 msgid "%d years"
-msgstr ""
+msgstr "%d лет"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:47
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:56
@@ -15501,7 +15534,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:529
 #, php-format
 msgid "%d of %d"
-msgstr ""
+msgstr "%d из %d"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:533
 msgid "Last state"
@@ -16596,7 +16629,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:142
 #, php-format
 msgid "A command transport with the name \"%s\" does already exist"
-msgstr ""
+msgstr "Командный транспорт с именем \"%s\" уже существует"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:205
 msgctxt "command transport instance association"
@@ -16943,6 +16976,7 @@ msgstr "Дата и время ввода этого простоя"
 msgid ""
 "A comment, as entered by the author, associated with the scheduled downtime"
 msgstr ""
+"Комментарий, указанный автором, связанный с запланированным временем простоя"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:63
 msgid ""
@@ -18701,6 +18735,8 @@ msgid ""
 "Allow processing commands for toggling active checks on host and service "
 "objects"
 msgstr ""
+"Разрешить обработку команд для переключения активных проверок объектов узла "
+"и сервиса"
 
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:70
 msgid ""
@@ -19089,7 +19125,7 @@ msgstr ""
 
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/MonitoredObject.php:717
 msgid "service"
-msgstr "Служба"
+msgstr "служба"
 
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:195
 msgid "WARNING"
@@ -19418,6 +19454,9 @@ msgid ""
 "As you've chosen to use a database for authentication all you need to do now "
 "is defining a name for your first authentication backend."
 msgstr ""
+"Поскольку вы решили для аутентификации использовать базу данных, все, что "
+"вам нужно сделать сейчас - это определить имя для вашего первого бэкенда "
+"аутентификации."
 
 #: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:103
 msgid ""
@@ -19480,6 +19519,8 @@ msgstr ""
 msgid ""
 "A user which is able to create databases and/or touch the database schema"
 msgstr ""
+"Пользователь, который может создавать базы данных и/или касаться схемы базы "
+"данных"
 
 #: sources.d/icingaweb2/modules/setup/application/forms/DatabaseCreationPage.php:112
 msgid "The password for the database user defined above"
@@ -19689,7 +19730,7 @@ msgstr ""
 
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/form/setup-welcome.phtml:84
 msgid "A system group called \"icingaweb2\" exists"
-msgstr ""
+msgstr "Существует системная группа под названием \"icingaweb2\""
 
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/form/setup-welcome.phtml:86
 #, php-format
@@ -19877,7 +19918,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/AuthenticationStep.php:127
 msgctxt "setup.summary.auth.type"
 msgid "a database"
-msgstr ""
+msgstr "база данных"
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/AuthenticationStep.php:129
 msgctxt "setup.summary.auth.type"
