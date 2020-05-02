@@ -10,7 +10,7 @@ SOURCE_REPOSITORIES=(
   icingaweb2-module-reporting
   icingaweb2-module-graphite
   icingaweb2-module-cube
-  icingaweb2-module-idoreports
+  #icingaweb2-module-idoreports
   icingaweb2-module-aws
   icingaweb2-module-businessprocess
   #icingaweb2-module-doc
@@ -100,11 +100,53 @@ if [ $CHANGES -eq 0 ]; then
   echo "No new messages found.";
   git checkout icinga.pot;
 else
+  STATS=""
+
   # Update intermediate (in-progress) catalogs
   LOCALES=$(find . -mindepth 1 -maxdepth 1 -type d -regextype grep -regex '\./[a-z]\{2\}_[A-Z]\{2\}' -printf "%P ")
   for locale_name in $LOCALES; do
     msgmerge --update --backup=none --lang=$locale_name --sort-by-file $locale_name/LC_MESSAGES/icinga.po icinga.pot
+
+    STATS_OUT=$(LC_ALL=C msgfmt --statistics $locale_name/LC_MESSAGES/icinga.po 2>&1 >/dev/null)
+    if [ -f "messages.mo" ]; then
+      rm "messages.mo"
+    fi
+
+    # TODO: Make this a function? (is also used in bin/validate)
+    TRANSLATED=0
+    UNTRANSLATED=0
+    FUZZY=0
+
+    RE="[0-9]+"
+    LAST_LINE=$(echo "$STATS_OUT" | tail -1)
+    for chars in $LAST_LINE; do
+      if [[ "$chars" =~ $RE ]] && [[ ${BASH_REMATCH[0]} ]]; then
+        LAST_CNT="${BASH_REMATCH[0]}"
+      else
+        case $chars in
+          "translated")
+            TRANSLATED=$LAST_CNT
+          ;;
+          "fuzzy")
+            FUZZY=$LAST_CNT
+          ;;
+          "untranslated")
+            UNTRANSLATED=$LAST_CNT
+          ;;
+        esac
+      fi
+    done
+
+    PROGRESS=$(python -c "print (int(round(($TRANSLATED.0 / ($TRANSLATED + $UNTRANSLATED + $FUZZY)) * 100)))")
+    STATS+=" $locale_name:$PROGRESS%"
   done
+
+  # Update locale statistics
+  python -c "import json; \
+    print ( \
+      json.dumps({k: v for k, v in (kv for kv in (s.split(':') for s in '$STATS'.strip().split()))}) \
+    ) \
+  " > ../.github/stats.json
 
   echo "New messages found!";
   # Working tree is left dirty as the following step creates a new pull request
