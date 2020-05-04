@@ -92,7 +92,7 @@ done
 # Check for changes (new messages) that need to be committed
 CHANGES=1
 git diff -U0 \
-  | grep -Pe '^[+-]{1}[^+-]+' \
+  | grep -Pe '^[+-]{1}(?!#:)[^+-]+' \
   | grep -qv -e '."Project-Id-Version:' -e '."POT-Creation-Date:' \
 || CHANGES=0
 
