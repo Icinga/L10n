@@ -61,7 +61,7 @@ xgettext --language=PHP \
          --from-code=utf-8 \
          --files-from=catalog.txt \
          --sort-by-file \
-         --foreign-user \
+         --copyright-holder="Icinga GmbH" \
          --package-name="Icinga L10n" \
          --package-version=$(git describe --always) \
          --msgid-bugs-address=https://github.com/Icinga/L10n/issues \
@@ -77,6 +77,12 @@ result = re.sub(
         + '\"X-Poedit-Basepath: ../../../src\\\\\\\\n\"\n'
         + '\"X-Poedit-SearchPath-0: sources.d\\\\\\\\n\"',
     sys.stdin.read()
+)
+from datetime import date
+result = result.replace(
+    '# Copyright (C) YEAR Icinga GmbH',
+    '# Copyright (C) {0} Icinga GmbH'.format(date.today().year),
+    1
 )
 sys.stdout.write(result)
 PYTHON
