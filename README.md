@@ -12,6 +12,19 @@
 L10n (short for *Localization*) is the central location for all translations available
 for Icinga.
 
+## Installation
+
+We provide packages for [supported platforms](https://icinga.com/subscription/support-details/).
+The package's name is `icinga-l10n` and should already be installed if you've got Icinga Web 2
+or the Icinga CLI installed. (More info at https://packages.icinga.com)
+
+If there's no package available for your platform, install Icinga L10n in `/usr/share/icinga-L10n`
+and Icinga Web 2 or the Icinga CLI (v2.8+) will detect and use it already. (Restart php-fpm or your
+web server if not)
+
+It's also possible to place it in a different path and pass an environment variable to Icinga Web 2
+or the Icinga CLI: `ICINGAWEB_LOCALEDIR=/var/www/icinga/L10n/locale`
+
 ## Contributing
 
 Want to contribute a new language or help complete an existing one? Head over to the

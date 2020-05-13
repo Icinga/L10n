@@ -61,10 +61,10 @@ xgettext --language=PHP \
          --from-code=utf-8 \
          --files-from=catalog.txt \
          --sort-by-file \
-         --foreign-user \
-         --package-name=ipl-L10n \
+         --copyright-holder="Icinga GmbH" \
+         --package-name="Icinga L10n" \
          --package-version=$(git describe --always) \
-         --msgid-bugs-address=https://github.com/Icinga/ipl-L10n/issues \
+         --msgid-bugs-address=https://github.com/Icinga/L10n/issues \
          --default-domain=icinga \
          --output=icinga.pot
 
@@ -77,6 +77,12 @@ result = re.sub(
         + '\"X-Poedit-Basepath: ../../../src\\\\\\\\n\"\n'
         + '\"X-Poedit-SearchPath-0: sources.d\\\\\\\\n\"',
     sys.stdin.read()
+)
+from datetime import date
+result = result.replace(
+    '# Copyright (C) YEAR Icinga GmbH',
+    '# Copyright (C) {0} Icinga GmbH'.format(date.today().year),
+    1
 )
 sys.stdout.write(result)
 PYTHON
@@ -92,7 +98,7 @@ done
 # Check for changes (new messages) that need to be committed
 CHANGES=1
 git diff -U0 \
-  | grep -Pe '^[+-]{1}[^+-]+' \
+  | grep -Pe '^[+-]{1}(?!#:)[^+-]+' \
   | grep -qv -e '."Project-Id-Version:' -e '."POT-Creation-Date:' \
 || CHANGES=0
 
