@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2020-05-13 13:39+0000\n"
+"POT-Creation-Date: 2020-05-14 12:19+0000\n"
 "PO-Revision-Date: 2020-04-27 14:56+0200\n"
 "Last-Translator: Pavlo Kuznetsov <p4k81337@gmail.com>\n"
 "Language-Team: \n"
@@ -1708,7 +1708,7 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:90
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:81
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:224
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:250
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:25
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:22
 #: sources.d/icingaweb2-module-director/library/Director/TranslationDummy.php:18
@@ -2020,57 +2020,109 @@ msgstr ""
 msgid "State Change Rate: %.2f%%; End Threshold: %.2f%%; Flapping for %s"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:82
-#, php-format
-msgctxt "..<username>"
-msgid "Cleared by: %s"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:191
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:178
 msgid "Comment added"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:195
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:185
+#, fuzzy, php-format
+msgctxt "..<username>"
+msgid "Comment removed by %s"
+msgstr "Коментар видалено"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:189
+#, fuzzy
+msgid "Comment removed by author"
+msgstr "Коментар видалено"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:192
+#, fuzzy
+msgid "Comment expired"
+msgstr "Тип коментаря"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:194
 msgid "Comment removed"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:199
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:202
+#, fuzzy, php-format
+msgctxt "..<username>"
+msgid "Downtime cancelled by %s"
+msgstr "Простій було відсінено"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:206
+#, fuzzy
+msgid "Downtime cancelled by author"
+msgstr "Простій було відсінено"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:209
+#, fuzzy
+msgid "Downtime cancelled"
+msgstr "Простій було відсінено"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:211
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:41
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:491
 msgid "Downtime ended"
 msgstr "Простій завершено"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:203
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:216
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:45
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:488
 msgid "Downtime started"
 msgstr "Простій розпочався"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:207
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:220
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:49
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:479
 msgid "Flapping started"
 msgstr "Флепінг розпочався"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:211
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:224
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:47
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:482
 msgid "Flapping stopped"
 msgstr "Флепінг припинився"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:215
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:228
 msgid "Acknowledgement set"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:219
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:235
+#, fuzzy, php-format
+msgctxt "..<username>"
+msgid "Acknowledgement cleared by %s"
+msgstr "Підтвердження видалено"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:239
+#, fuzzy
+msgid "Acknowledgement cleared by author"
+msgstr "Підтвердження видалено"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:242
+#, fuzzy
+msgid "Acknowledgement expired"
+msgstr "Підтвердження видалено"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:244
 msgid "Acknowledgement cleared"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:235
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:265
+#, fuzzy
+msgid "Service recovered"
+msgstr "Тяжкість стану сервіса"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:267
+#, fuzzy
+msgid "Host recovered"
+msgstr "Тяжкість стану хоста"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:271
 msgid "Hard state changed"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:237
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:273
 msgid "Soft state changed"
 msgstr ""
 
@@ -2997,7 +3049,7 @@ msgstr ""
 msgid "No business process nodes for \"%s\" have been defined yet"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpNode.php:324
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpNode.php:345
 #, php-format
 msgid "Nesting error detected: %s"
 msgstr ""
@@ -3011,45 +3063,45 @@ msgstr ""
 msgid "Show Overview"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:110
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:120
 msgid "Children"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:183
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:193
 msgid "Show tiles for this subtree"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:190
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:200
 msgid "Show this subtree as a tree"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:202
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:213
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:189
 msgid "Show this process as part of its original configuration"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:217
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:229
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:293
 msgid "More information"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:271
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:283
 msgid "Show the business impact of this node by simulating a specific state"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:283
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:295
 msgid "Modify this monitored node"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:300
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:312
 msgid "Modify this business process node"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:314
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:326
 msgid "Add a new sub-node to this business process"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:331
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:343
 msgid "Delete this node"
 msgstr ""
 
@@ -16386,8 +16438,8 @@ msgstr[2] ""
 msgid "Delete this comment"
 msgstr "Видалити цей коментар"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/DeleteCommentCommandForm.php:105
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/DeleteCommentsCommandForm.php:84
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/DeleteCommentCommandForm.php:106
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/DeleteCommentsCommandForm.php:85
 msgid "Deleting comment.."
 msgid_plural "Deleting comments.."
 msgstr[0] "Видалення коментаря.."
@@ -16398,11 +16450,11 @@ msgstr[2] ""
 msgid "Delete this downtime"
 msgstr "Видалити цей простій"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/DeleteDowntimeCommandForm.php:106
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/DeleteDowntimeCommandForm.php:107
 msgid "Deleting downtime."
 msgstr "Видалення простою."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/DeleteDowntimesCommandForm.php:84
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/DeleteDowntimesCommandForm.php:85
 msgid "Deleting downtime.."
 msgid_plural "Deleting downtimes.."
 msgstr[0] "Видалення простою.."
@@ -16481,7 +16533,7 @@ msgstr[0] "Видалити підтвердження"
 msgstr[1] "Видалити підтвердження"
 msgstr[2] ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:114
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:115
 msgid "Removing acknowledgement.."
 msgid_plural "Removing acknowledgements.."
 msgstr[0] "Видалення підтвердження.."
