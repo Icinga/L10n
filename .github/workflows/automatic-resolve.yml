@@ -1,0 +1,38 @@
+name: Automatic Resolve
+
+on:
+  schedule:
+    # Every day at UTC+8 midnight
+    - cron: "5 8 * * *"
+    # Every day at UTC+4 midnight
+    - cron: "5 4 * * *"
+    # Every day at UTC midnight
+    - cron: "5 0 * * *"
+    # Every day at UTC-4 midnight
+    - cron: "5 20 * * *"
+    # Every day at UTC-8 midnight
+    - cron: "5 16 * * *"
+
+jobs:
+  resolve-conflicts:
+    name: Automatic Conflict Resolution
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code base
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Setup dependencies
+        run: sudo apt-get -y install gettext jq
+
+      - name: Prepare Git environment
+        run: |
+          git config user.name "icingabot"
+          git config user.email "65761963+icingabot@users.noreply.github.com"
+
+      - name: Resolve conflicting pull requests
+        run: bin/autoresolve
+        env:
+          ICINGABOT_TOKEN: "${{ secrets.ICINGABOT_TOKEN }}"
