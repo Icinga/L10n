@@ -222,6 +222,11 @@ for (( i = 0; i < $TOTAL_PULL_REQUESTS; i++ )); do
   # Attempt to merge master, should fail
   git merge --no-ff --no-commit origin/master || true
 
+  if [ ! -f .git/MERGE_HEAD ]; then
+    echo "Merge aborted or succeeded for some unknown reason. Cancelling pull request resolution"
+    continue
+  fi
+
   # Resolve source catalog conflicts
   GIT_STATUS=$(git status -suno)
   while IFS= read -r line; do
