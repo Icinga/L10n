@@ -5,7 +5,6 @@
 : "${ICINGABOT_TOKEN:=}"
 
 RE_IS_CONFLICTING="^UU (.*)"
-RE_HTTPS_REPO_URL="^https://(.*)"
 RE_IS_SOURCE_CATALOG="^UU src/([a-z]{2}_[A-Z]{2})/LC_MESSAGES/icinga.po"
 RE_LABEL="automatic conflict resolution \(UTC([-+][0-9])?\)"
 
@@ -25,7 +24,7 @@ query {
           maintainerCanModify
           headRefName
           headRepository {
-            url
+            sshUrl
           }
           comments(first: 100) {
             totalCount
@@ -208,7 +207,7 @@ for (( i = 0; i < $TOTAL_PULL_REQUESTS; i++ )); do
 
   PR_AUTHOR=$(read_json_var "$PULL_REQUESTS" .[$i].node.author.login)
   PR_BRANCH=$(read_json_var "$PULL_REQUESTS" .[$i].node.headRefName)
-  PR_REPO=$(read_json_var "$PULL_REQUESTS" .[$i].node.headRepository.url)
+  PR_REPO=$(read_json_var "$PULL_REQUESTS" .[$i].node.headRepository.sshUrl)
 
   echo "Resolving pull request #$PR_NUMBER (Author: $PR_AUTHOR, Branch: $PR_BRANCH, Repo: $PR_REPO)"
 
@@ -256,15 +255,7 @@ for (( i = 0; i < $TOTAL_PULL_REQUESTS; i++ )); do
 
   echo "Successfully resolved pull request #$PR_NUMBER. Pushing the changes now"
 
-  # Set an upstream push url with credentials
-  [[ "$PR_REPO" =~ $RE_HTTPS_REPO_URL ]]
-  git remote set-url --push $PR_AUTHOR "https://$ICINGABOT_TOKEN@${BASH_REMATCH[1]}"
-
   # Push the new changes
-  git push $PR_AUTHOR pull/$PR_NUMBER:$PR_BRANCH 2>/dev/null || rc=$?
-  if [ -n "$rc" ] && [ "$rc" -gt 0 ]; then
-    echo "Unable to push changes to '$PR_AUTHOR/$PR_BRANCH'"
-  else
-    send_success_message "$PR_ID"
-  fi
+  git push $PR_AUTHOR pull/$PR_NUMBER:$PR_BRANCH
+  send_success_message "$PR_ID"
 done
