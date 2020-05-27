@@ -154,7 +154,7 @@ for (( i = 0; i < $TOTAL_PULL_REQUESTS; i++ )); do
 
   PR_MERGEABLE=$(read_json_var "$PULL_REQUESTS" .[$i].node.mergeable)
   if [[ "$PR_MERGEABLE" != "CONFLICTING" ]]; then
-    echo "Ignoring pull request #$PR_NUMBER. No conflicts detected"
+    echo "Ignoring pull request #$PR_NUMBER. No conflicts detected ($PR_MERGEABLE)"
     continue
   fi
 
