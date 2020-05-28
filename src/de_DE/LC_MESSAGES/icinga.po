@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2020-05-20 14:45+0000\n"
+"POT-Creation-Date: 2020-05-27 13:42+0000\n"
 "PO-Revision-Date: 2020-05-20 17:02+0200\n"
 "Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
 "Language-Team: \n"
@@ -515,10 +515,11 @@ msgstr "Hostgruppen"
 #: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:22
 #: sources.d/icingaweb2-module-x509/application/views/scripts/jobs/index.phtml:24
 #: sources.d/icingaweb2/application/controllers/DashboardController.php:209
+#: sources.d/icingaweb2/application/controllers/RoleController.php:38
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:575
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:101
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:16
-#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:22
+#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:28
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:334
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:20
 msgid "Name"
@@ -777,7 +778,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/UserGroupsDashlet.php:11
 #: sources.d/icingaweb2/application/controllers/GroupController.php:26
 #: sources.d/icingaweb2/application/controllers/GroupController.php:395
-#: sources.d/icingaweb2/application/controllers/RoleController.php:134
+#: sources.d/icingaweb2/application/controllers/RoleController.php:146
 #: sources.d/icingaweb2/application/controllers/UserController.php:352
 msgid "User Groups"
 msgstr "Benutzergruppen"
@@ -791,13 +792,14 @@ msgstr "Benutzergruppen"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarTable.php:47
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarVariantsTable.php:62
 #: sources.d/icingaweb2/application/controllers/GroupController.php:387
-#: sources.d/icingaweb2/application/controllers/RoleController.php:126
+#: sources.d/icingaweb2/application/controllers/RoleController.php:39
+#: sources.d/icingaweb2/application/controllers/RoleController.php:138
 #: sources.d/icingaweb2/application/controllers/UserController.php:26
 #: sources.d/icingaweb2/application/controllers/UserController.php:344
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/AddMemberForm.php:118
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:605
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:159
-#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:23
+#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:29
 msgid "Users"
 msgstr "Benutzer"
 
@@ -1924,10 +1926,11 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:644
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:109
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:61
+#: sources.d/icingaweb2/application/controllers/RoleController.php:40
 #: sources.d/icingaweb2/application/forms/Config/User/CreateMembershipForm.php:79
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:615
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:167
-#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:24
+#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:30
 msgid "Groups"
 msgstr "Gruppen"
 
@@ -3190,59 +3193,59 @@ msgstr "Prozess-Auswirkung"
 msgid "Show Overview"
 msgstr "Zeige Übersicht"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:120
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:124
 msgid "Children"
 msgstr "Kinder"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:193
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:197
 msgid "Show tiles for this subtree"
 msgstr "Zeige Kacheln für diesen Teilbaum"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:200
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:204
 msgid "Show this subtree as a tree"
 msgstr "Zeige diesen Teilbaum als eigenen Baum"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:213
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:189
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:217
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:193
 msgid "Show this process as part of its original configuration"
 msgstr "Zeige diesen Prozess in seiner originalen Konfiguration"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:229
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:293
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:233
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:297
 msgid "More information"
 msgstr "Weitere Informationen"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:283
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:287
 msgid "Show the business impact of this node by simulating a specific state"
 msgstr ""
 "Zeige die Prozess-Auswirkung dieses Knotens durch Simulation eines "
 "gewünschten Zustandes"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:295
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:299
 msgid "Modify this monitored node"
 msgstr "Bearbeite diesen überwachten Knoten"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:312
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:316
 msgid "Modify this business process node"
 msgstr "Bearbeite diesen Geschäfts-Prozessknoten"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:326
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:330
 msgid "Add a new sub-node to this business process"
 msgstr "Neuen Knoten zu diesem Geschäfts-Prozess hinzufügen"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:343
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:347
 msgid "Delete this node"
 msgstr "Lösche diesen Knoten"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:270
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:274
 msgid "Modify this node"
 msgstr "Bearbeite diesen Knoten"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:283
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:287
 msgid "Simulate a specific state"
 msgstr "Einen bestimmten Zustand simulieren"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:317
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:321
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:128
 msgid "Add a new business process node"
 msgstr "Neuen Geschäfts-Prozess hinzufügen"
@@ -13133,14 +13136,14 @@ msgid "Show group %s"
 msgstr "Zeige Gruppe %s"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:375
-#: sources.d/icingaweb2/application/controllers/RoleController.php:21
-#: sources.d/icingaweb2/application/controllers/RoleController.php:114
+#: sources.d/icingaweb2/application/controllers/RoleController.php:20
+#: sources.d/icingaweb2/application/controllers/RoleController.php:126
 #: sources.d/icingaweb2/application/controllers/UserController.php:332
 msgid "Roles"
 msgstr "Rollen"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:377
-#: sources.d/icingaweb2/application/controllers/RoleController.php:116
+#: sources.d/icingaweb2/application/controllers/RoleController.php:128
 #: sources.d/icingaweb2/application/controllers/UserController.php:334
 msgid ""
 "Configure roles to permit or restrict users and groups accessing Icinga Web 2"
@@ -13149,13 +13152,13 @@ msgstr ""
 "2"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:386
-#: sources.d/icingaweb2/application/controllers/RoleController.php:125
+#: sources.d/icingaweb2/application/controllers/RoleController.php:137
 #: sources.d/icingaweb2/application/controllers/UserController.php:343
 msgid "List users of authentication backends"
 msgstr "Benutzer der Authentifizierungsbackends auflisten"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:394
-#: sources.d/icingaweb2/application/controllers/RoleController.php:133
+#: sources.d/icingaweb2/application/controllers/RoleController.php:145
 #: sources.d/icingaweb2/application/controllers/UserController.php:351
 msgid "List groups of user group backends"
 msgstr "Gruppen der Benutzergruppenbackends auflisten"
@@ -13249,26 +13252,32 @@ msgstr ""
 msgid "Navigation not found"
 msgstr "Navigation nicht gefunden"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:50
+#: sources.d/icingaweb2/application/controllers/RoleController.php:41
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:199
+#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:57
+msgid "Permissions"
+msgstr "Berechtigungen"
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:62
 msgid "Create Role"
 msgstr "Rolle erstellen"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:53
+#: sources.d/icingaweb2/application/controllers/RoleController.php:65
 msgid "New Role"
 msgstr "Neue Rolle anlegen"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:69
-#: sources.d/icingaweb2/application/controllers/RoleController.php:78
+#: sources.d/icingaweb2/application/controllers/RoleController.php:81
+#: sources.d/icingaweb2/application/controllers/RoleController.php:90
 msgid "Update Role"
 msgstr "Rolle aktualisieren"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:75
-#: sources.d/icingaweb2/application/controllers/RoleController.php:98
+#: sources.d/icingaweb2/application/controllers/RoleController.php:87
+#: sources.d/icingaweb2/application/controllers/RoleController.php:110
 msgid "Role not found"
 msgstr "Rolle nicht gefunden"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:92
-#: sources.d/icingaweb2/application/controllers/RoleController.php:101
+#: sources.d/icingaweb2/application/controllers/RoleController.php:104
+#: sources.d/icingaweb2/application/controllers/RoleController.php:113
 msgid "Remove Role"
 msgstr "Rolle entfernen"
 
@@ -14955,11 +14964,6 @@ msgstr "Alles ist erlaubt"
 msgid "Module"
 msgstr "Modul"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:199
-#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:57
-msgid "Permissions"
-msgstr "Berechtigungen"
-
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:234
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:67
 msgid "Restrictions"
@@ -15475,25 +15479,25 @@ msgstr ""
 msgid "%s: %d to %d of %d (on the %s-axis)"
 msgstr "%s: %d bis %d von %d (auf der %s-Achse)"
 
-#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:6
+#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:12
 msgid "Create a New Role"
 msgstr "Neue Rolle erstellen"
 
-#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:13
+#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:19
 msgid "Create a new role"
 msgstr "Neue Rolle erstellen"
 
-#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:17
+#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:23
 msgid "No roles found."
 msgstr "Es wurden keine Rollen gefunden."
 
-#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:36
+#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:42
 #: sources.d/icingaweb2/application/views/scripts/user/show.phtml:56
 #, php-format
 msgid "Edit role %s"
 msgstr "Rolle %s bearbeiten"
 
-#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:49
+#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:55
 #, php-format
 msgid "Remove role %s"
 msgstr "Rolle %s entfernen"
