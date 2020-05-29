@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
 "POT-Creation-Date: 2020-04-29 15:24+0000\n"
-"PO-Revision-Date: 2020-05-18 17:25+0500\n"
+"PO-Revision-Date: 2020-05-29 22:50+0500\n"
 "Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
 "Language-Team: TranslAster\n"
 "Language: ru_RU\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.3\n"
 "X-Poedit-Basepath: ../../../src\n"
 "X-Poedit-SearchPath-0: sources.d\n"
 
@@ -70,7 +70,7 @@ msgstr "Комментарии"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:252
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:43
 msgid "Entry Time"
-msgstr ""
+msgstr "Время входа"
 
 #: sources.d/icingadb-web/application/controllers/CommentsController.php:44
 #: sources.d/icingadb-web/application/controllers/DowntimesController.php:45
@@ -162,7 +162,7 @@ msgstr "Автор"
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/DisableNotificationsExpireCommandForm.php:43
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:96
 msgid "Expire Time"
-msgstr ""
+msgstr "Срок действия"
 
 #: sources.d/icingadb-web/application/controllers/CommentsController.php:75
 #: sources.d/icingadb-web/application/controllers/CommentsController.php:165
@@ -173,28 +173,28 @@ msgstr "Показать все %d комментариев"
 #: sources.d/icingadb-web/application/controllers/CommentsController.php:86
 #: sources.d/icingadb-web/application/controllers/CommentsController.php:124
 msgid "Remove Comments"
-msgstr ""
+msgstr "Удалить комментарии"
 
 #: sources.d/icingadb-web/application/controllers/CommentsController.php:103
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentsController.php:97
 #, php-format
 msgid "Confirm removal of %d comments."
-msgstr ""
+msgstr "Подтвердите удаление %d комментариев"
 
 #: sources.d/icingadb-web/application/controllers/CommentsController.php:127
 msgid "Remove comments"
-msgstr ""
+msgstr "Удалить комментарии"
 
 #: sources.d/icingadb-web/application/controllers/CommentsController.php:169
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comments/show.phtml:11
 #, php-format
 msgid "Remove %d comments"
-msgstr ""
+msgstr "Удалить %d комментариев"
 
 #: sources.d/icingadb-web/application/controllers/ConfigController.php:43
 #: sources.d/icingadb-web/application/controllers/ConfigController.php:54
 msgid "Create Command Transport"
-msgstr ""
+msgstr "Создание транспорта команд"
 
 #: sources.d/icingadb-web/application/controllers/ConfigController.php:70
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:273
@@ -203,7 +203,7 @@ msgstr "Транспорт команды успешно создан"
 
 #: sources.d/icingadb-web/application/controllers/ConfigController.php:85
 msgid "Delete Command Transport"
-msgstr ""
+msgstr "Удаление транспорта команд"
 
 #: sources.d/icingadb-web/application/controllers/ConfigController.php:107
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:194
@@ -213,7 +213,7 @@ msgstr "Транспорт команды \"%s\" успешно удален"
 
 #: sources.d/icingadb-web/application/controllers/ConfigController.php:125
 msgid "Update Command Transport"
-msgstr ""
+msgstr "Обновление транспорта команд"
 
 #: sources.d/icingadb-web/application/controllers/ConfigController.php:149
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:234
@@ -281,11 +281,11 @@ msgstr "Время окончания"
 
 #: sources.d/icingadb-web/application/controllers/DowntimesController.php:50
 msgid "Scheduled Start Time"
-msgstr ""
+msgstr "Запланированное время начала"
 
 #: sources.d/icingadb-web/application/controllers/DowntimesController.php:51
 msgid "Scheduled End Time"
-msgstr ""
+msgstr "Запланированное время окончания"
 
 #: sources.d/icingadb-web/application/controllers/DowntimesController.php:52
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:52
@@ -328,13 +328,13 @@ msgstr "Отменить %d простоев"
 #: sources.d/icingadb-web/application/controllers/ErrorController.php:82
 #: sources.d/icingaweb2-module-x509/application/views/scripts/missing-resource.phtml:5
 msgid "Database not configured"
-msgstr ""
+msgstr "База данных не настроена"
 
 #: sources.d/icingadb-web/application/controllers/HealthController.php:22
 #: sources.d/icingadb-web/configuration.php:66
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/MainTabs.php:31
 msgid "Health"
-msgstr ""
+msgstr "Состояние"
 
 #: sources.d/icingadb-web/application/controllers/HealthController.php:39
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:43
@@ -343,13 +343,15 @@ msgid ""
 "It seems that Icinga DB is not running. Make sure Icinga DB is running and "
 "writing into the database."
 msgstr ""
+"Похоже, что БД Icinga не работает. Убедитесь, что БД Icinga работает и "
+"доступна на запись."
 
 #: sources.d/icingadb-web/application/controllers/HealthController.php:54
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:62
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:115
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:139
 msgid "Host Checks"
-msgstr ""
+msgstr "Проверки узла"
 
 #: sources.d/icingadb-web/application/controllers/HealthController.php:57
 #: sources.d/icingadb-web/application/controllers/HealthController.php:70
@@ -365,14 +367,14 @@ msgstr "Активный"
 #: sources.d/icingadb-web/application/controllers/HealthController.php:61
 #: sources.d/icingadb-web/application/controllers/HealthController.php:74
 msgid "Passive"
-msgstr ""
+msgstr "Пассивно"
 
 #: sources.d/icingadb-web/application/controllers/HealthController.php:67
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:85
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:121
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:143
 msgid "Service Checks"
-msgstr ""
+msgstr "Проверки служб"
 
 #: sources.d/icingadb-web/application/controllers/HealthController.php:84
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:334
@@ -400,19 +402,19 @@ msgstr "История"
 
 #: sources.d/icingadb-web/application/controllers/HistoryController.php:46
 msgid "Event Time"
-msgstr ""
+msgstr "Время события"
 
 #: sources.d/icingadb-web/application/controllers/HistoryController.php:75
 #: sources.d/icingadb-web/application/controllers/HostController.php:166
 #: sources.d/icingadb-web/application/controllers/ServiceController.php:166
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:259
 msgid "Load More"
-msgstr ""
+msgstr "Загрузить больше"
 
 #: sources.d/icingadb-web/application/controllers/HostController.php:45
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostController.php:33
 msgid "Host not found"
-msgstr ""
+msgstr "Узел не найден"
 
 #: sources.d/icingadb-web/application/controllers/HostController.php:235
 #: sources.d/icingadb-web/application/controllers/ServicesController.php:30
@@ -458,7 +460,7 @@ msgstr "Группа узлов"
 
 #: sources.d/icingadb-web/application/controllers/HostgroupController.php:38
 msgid "Host group not found"
-msgstr ""
+msgstr "Группа узлов не найдена"
 
 #: sources.d/icingadb-web/application/controllers/HostgroupsController.php:17
 #: sources.d/icingadb-web/configuration.php:54
@@ -466,7 +468,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/HostGroupsDashlet.php:11
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:560
 msgid "Host Groups"
-msgstr ""
+msgstr "Группы узлов"
 
 #: sources.d/icingadb-web/application/controllers/HostgroupsController.php:29
 #: sources.d/icingadb-web/application/controllers/HostsController.php:47
@@ -525,7 +527,7 @@ msgstr "Влияние состояния"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:592
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:631
 msgid "Total Hosts"
-msgstr ""
+msgstr "Всего узлов"
 
 #: sources.d/icingadb-web/application/controllers/HostgroupsController.php:32
 #: sources.d/icingadb-web/application/controllers/ServicegroupsController.php:31
@@ -534,7 +536,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:593
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:632
 msgid "Total Services"
-msgstr "Количество служб"
+msgstr "Всего служб"
 
 #: sources.d/icingadb-web/application/controllers/HostgroupsController.php:59
 #, php-format
@@ -589,7 +591,7 @@ msgstr "Состояние"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:94
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:175
 msgid "Last State Change"
-msgstr ""
+msgstr "Последнее изменение состояния"
 
 #: sources.d/icingadb-web/application/controllers/HostsController.php:84
 #: sources.d/icingadb-web/application/controllers/HostsController.php:136
@@ -635,7 +637,7 @@ msgstr "Уведомления"
 
 #: sources.d/icingadb-web/application/controllers/NotificationsController.php:35
 msgid "Send Time"
-msgstr ""
+msgstr "Время отправки"
 
 #: sources.d/icingadb-web/application/controllers/NotificationsController.php:66
 #, php-format
@@ -645,7 +647,7 @@ msgstr "Показать все %d уведомлений"
 #: sources.d/icingadb-web/application/controllers/ServiceController.php:49
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:38
 msgid "Service not found"
-msgstr ""
+msgstr "Служба не найдена"
 
 #: sources.d/icingadb-web/application/controllers/ServicegroupController.php:23
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:15
@@ -655,7 +657,7 @@ msgstr "Группа служб"
 
 #: sources.d/icingadb-web/application/controllers/ServicegroupController.php:38
 msgid "Service group not found"
-msgstr ""
+msgstr "Группа служб не найдена"
 
 #: sources.d/icingadb-web/application/controllers/ServicegroupsController.php:17
 #: sources.d/icingadb-web/configuration.php:58
@@ -697,7 +699,7 @@ msgstr "Тактический обзор"
 #: sources.d/icingadb-web/application/controllers/UsersController.php:19
 #, php-format
 msgid "No permission for %s"
-msgstr ""
+msgstr "Нет разрешения для %s"
 
 #: sources.d/icingadb-web/application/controllers/UserController.php:25
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:17
@@ -721,23 +723,23 @@ msgstr "Пользователь не найден"
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:120
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:10
 msgid "Details"
-msgstr ""
+msgstr "Детали"
 
 #: sources.d/icingadb-web/application/controllers/UserController.php:50
 msgid "E-Mail"
-msgstr ""
+msgstr "E-mail"
 
 #: sources.d/icingadb-web/application/controllers/UserController.php:54
 #: sources.d/icingadb-web/application/controllers/UserController.php:62
 msgid "Unset"
-msgstr ""
+msgstr "Сброс"
 
 #: sources.d/icingadb-web/application/controllers/UserController.php:58
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:41
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:22
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:34
 msgid "Pager"
-msgstr ""
+msgstr "Пейджер"
 
 #: sources.d/icingadb-web/application/controllers/UsergroupController.php:25
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:18
@@ -752,7 +754,7 @@ msgstr "Пользовательская группа"
 
 #: sources.d/icingadb-web/application/controllers/UsergroupController.php:37
 msgid "User group not found"
-msgstr ""
+msgstr "Группа пользователей не найдена"
 
 #: sources.d/icingadb-web/application/controllers/UsergroupsController.php:25
 #: sources.d/icingadb-web/configuration.php:48
@@ -791,12 +793,12 @@ msgstr "Пользователи"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:42
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:24
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #: sources.d/icingadb-web/application/controllers/UsersController.php:38
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:337
 msgid "Pager Address / Number"
-msgstr ""
+msgstr "Адрес пейджера / номер"
 
 #: sources.d/icingadb-web/application/forms/DatabaseConfigForm.php:14
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:15
@@ -822,7 +824,7 @@ msgstr "Сохранить изменения"
 #: sources.d/icingaweb2-module-reporting/application/forms/SelectBackendForm.php:23
 #: sources.d/icingaweb2-module-x509/application/forms/Config/BackendConfigForm.php:23
 msgid "Database resource"
-msgstr ""
+msgstr "Источник базы данных"
 
 #: sources.d/icingadb-web/application/forms/DatabaseConfigForm.php:23
 #: sources.d/icingadb-web/configuration.php:76
@@ -838,7 +840,7 @@ msgstr "База данных"
 
 #: sources.d/icingadb-web/application/forms/DatabaseConfigForm.php:25
 msgid "Please choose"
-msgstr ""
+msgstr "Пожалуйста, выберите"
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:27
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:28
@@ -889,17 +891,21 @@ msgid ""
 "Primary connection established but failed to verify Icinga is connected as "
 "well."
 msgstr ""
+"Первичное соединение установлено, но не удалось проверить, что Icinga также "
+"подключена."
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:212
 #, php-format
 msgid "Failed to connect to secondary Redis: %s"
-msgstr ""
+msgstr "Не удалось подключиться к вторичному Radius: %s"
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:222
 msgid ""
 "Secondary connection established but failed to verify Icinga is connected as "
 "well."
 msgstr ""
+"Вторичное соединение установлено, но не удалось проверить, что Icinga также "
+"подключена."
 
 #: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:13
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:19
@@ -909,41 +915,41 @@ msgstr "Транспорт"
 #: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:34
 #, php-format
 msgid "Update command transport %s"
-msgstr ""
+msgstr "Обновление транспорта команд %s"
 
 #: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:38
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:39
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:44
 #, php-format
 msgid "Type: %s"
-msgstr ""
+msgstr "Тип %s"
 
 #: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:51
 #, php-format
 msgid "Delete command transport %s"
-msgstr ""
+msgstr "Удалить транспорт команд %s"
 
 #: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:59
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:66
 msgid "Move up in order"
-msgstr ""
+msgstr "Переместить вверх по порядку"
 
 #: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:60
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:68
 #, php-format
 msgid "Move command transport %s upwards"
-msgstr ""
+msgstr "Переместить транспорт команд %s выше"
 
 #: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:67
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:78
 msgid "Move down in order"
-msgstr ""
+msgstr "Переместить вниз по порядку"
 
 #: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:68
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:80
 #, php-format
 msgid "Move command transport %s downwards"
-msgstr ""
+msgstr "Переместить транспорт команд %s ниже"
 
 #: sources.d/icingadb-web/configuration.php:10
 msgid "Icinga DB"
@@ -958,11 +964,11 @@ msgstr "Настройка бэкэнда базы данных"
 
 #: sources.d/icingadb-web/configuration.php:81
 msgid "Redis"
-msgstr ""
+msgstr "Redis"
 
 #: sources.d/icingadb-web/configuration.php:82
 msgid "Configure the Redis connections"
-msgstr ""
+msgstr "Настройка подключения Redis"
 
 #: sources.d/icingadb-web/configuration.php:86
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:62
@@ -977,7 +983,7 @@ msgstr "Настройка транспортов команд"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:295
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:109
 msgid "Security"
-msgstr ""
+msgstr "Безопасность"
 
 #: sources.d/icingadb-web/configuration.php:92
 msgid "Configure security related settings"
