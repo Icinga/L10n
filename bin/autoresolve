@@ -1,0 +1,261 @@
+#!/bin/bash
+
+# First some definitions and functions
+
+: "${ICINGABOT_TOKEN:=}"
+
+RE_IS_CONFLICTING="^UU (.*)"
+RE_IS_SOURCE_CATALOG="^UU src/([a-z]{2}_[A-Z]{2})/LC_MESSAGES/icinga.po"
+RE_LABEL="automatic conflict resolution \(UTC([-+][0-9])?\)"
+
+PR_QUERY=$(sed ':a;N;$!ba;s/\n/\\n/g' << GRAPHQL
+query {
+    repository(owner:\"Icinga\", name:\"L10n\") {
+    pullRequests(first: 100, states: OPEN) {
+      totalCount
+      edges {
+        node {
+          id
+          number
+          author {
+            login
+          }
+          mergeable
+          maintainerCanModify
+          headRefName
+          headRepository {
+            sshUrl
+          }
+          comments(first: 100) {
+            totalCount
+            edges {
+              node {
+                author {
+                  login
+                }
+              }
+            }
+          }
+          labels(first: 100) {
+            totalCount
+            edges {
+              node {
+                name
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+GRAPHQL
+)
+get_open_pull_requests() {
+  curl -sH "Authorization: bearer $ICINGABOT_TOKEN" -d "{\"query\": \"$PR_QUERY\"}" https://api.github.com/graphql
+}
+
+FRIENDLY_REMINDER=$(sed ':a;N;$!ba;s/\n/\\n/g' << TEXT
+I would have loved to assist you with your source catalog conflicts!
+
+Though, you've disabled edits for maintainers of Icinga/L10n. :unamused:
+As long as you don't enable edits for us you will have to solve conflicts manually.
+TEXT
+)
+FRIENDLY_REMINDER_MUTATION=$(sed ':a;N;$!ba;s/\n/\\n/g' << GRAPHQL
+mutation {
+  addComment(input: {subjectId: \"<PR_ID>\", body: \"$FRIENDLY_REMINDER\"}) {
+    clientMutationId
+  }
+}
+GRAPHQL
+)
+send_friendly_reminder() {
+  local pull_request_id="$1"
+
+  local mutation=$(echo $FRIENDLY_REMINDER_MUTATION | sed "s/<PR_ID>/$pull_request_id/")
+  local _=$(
+    curl -sH "Authorization: bearer $ICINGABOT_TOKEN" -d "{\"query\": \"$mutation\"}" https://api.github.com/graphql
+  )
+}
+
+SUCCESS_MESSAGE=$(sed ':a;N;$!ba;s/\n/\\n/g' << TEXT
+I successfully solved the conflicts in your source catalog files! :partying_face:
+
+Please make sure to pull my changes before you'll continue with the translation.
+Otherwise you'll risk getting conflicts in your working tree with which I can't help you.
+TEXT
+)
+SUCCESS_MESSAGE_MUTATION=$(sed ':a;N;$!ba;s/\n/\\n/g' << GRAPHQL
+mutation {
+  addComment(input: {subjectId: \"<PR_ID>\", body: \"$SUCCESS_MESSAGE\"}) {
+    clientMutationId
+  }
+}
+GRAPHQL
+)
+send_success_message() {
+  local pull_request_id="$1"
+
+  local mutation=$(echo $SUCCESS_MESSAGE_MUTATION | sed "s/<PR_ID>/$pull_request_id/")
+  local _=$(
+    curl -sH "Authorization: bearer $ICINGABOT_TOKEN" -d "{\"query\": \"$mutation\"}" https://api.github.com/graphql
+  )
+}
+
+read_json_var() {
+  local json="$1"
+  local varpath="$2"
+
+  echo $json | jq -r $varpath
+}
+read_json_blob() {
+  local json="$1"
+  local varpath="$2"
+
+  echo $json | jq $varpath
+}
+should_get_resolved() {
+  local offset="$1"
+
+  if [ -z "$offset" ]; then
+    offset="UTC"
+  else
+    case "${offset:0:1}" in
+      "-")
+        offset="UTC+${offset:1:2}"
+      ;;
+      "+")
+        offset="UTC-${offset:1:2}"
+      ;;
+    esac
+  fi
+
+  hour=$(TZ=$offset date +%H)
+  [[ "$hour" == "00" ]]
+  return
+}
+
+# Actual script starts here
+
+set -e
+
+if [ -z "$ICINGABOT_TOKEN" ]; then
+  echo "Environment variable ICINGABOT_TOKEN not set"
+  exit 1
+fi
+
+OPEN_PRS=$(get_open_pull_requests)
+PULL_REQUESTS=$(read_json_blob "$OPEN_PRS" .data.repository.pullRequests.edges)
+
+TOTAL_PULL_REQUESTS=$(read_json_var "$OPEN_PRS" .data.repository.pullRequests.totalCount)
+for (( i = 0; i < $TOTAL_PULL_REQUESTS; i++ )); do
+  PR_NUMBER=$(read_json_var "$PULL_REQUESTS" .[$i].node.number)
+
+  PR_MERGEABLE=$(read_json_var "$PULL_REQUESTS" .[$i].node.mergeable)
+  if [[ "$PR_MERGEABLE" != "CONFLICTING" ]] && [[ "$PR_MERGEABLE" != "UNKNOWN" ]]; then
+    echo "Ignoring pull request #$PR_NUMBER. No conflicts detected"
+    continue
+  fi
+
+  echo "Attempting to resolve pull request #$PR_NUMBER..."
+
+  # Pull requests only get automatically resolved if they have an appropriate label
+  SHOULD_GET_RESOLVED=false
+  TOTAL_LABELS=$(read_json_var "$PULL_REQUESTS" .[$i].node.labels.totalCount)
+  for (( j = 0; j < $TOTAL_LABELS; j++ )); do
+    LABEL=$(read_json_var "$PULL_REQUESTS" .[$i].node.labels.edges[$j].node.name)
+    if [[ "$LABEL" =~ $RE_LABEL ]] && [[ ${BASH_REMATCH[0]} ]]; then
+      echo "Identified label '$LABEL'. Checking schedule..."
+      if should_get_resolved "${BASH_REMATCH[1]}"; then
+        SHOULD_GET_RESOLVED=true
+        break
+      fi
+    fi
+  done
+
+  if [[ "$SHOULD_GET_RESOLVED" == "false" ]]; then
+    echo "Ignoring pull request #$PR_NUMBER. No label found or it's not scheduled for now"
+    continue
+  fi
+
+  PR_ID=$(read_json_var "$PULL_REQUESTS" .[$i].node.id)
+
+  # If however the author disabled maintainer edits, tell him this once
+  PR_IS_ACCESSIBLE=$(read_json_var "$PULL_REQUESTS" .[$i].node.maintainerCanModify)
+  if [[ "$PR_IS_ACCESSIBLE" == "false" ]]; then
+    ICINGABOT_COMMENTED=false
+
+    TOTAL_COMMENTS=$(read_json_var "$PULL_REQUESTS" .[$i].node.comments.totalCount)
+    for (( j = 0; j < $TOTAL_COMMENTS; j++ )); do
+      COMMENT_AUTHOR=$(read_json_var "$PULL_REQUESTS" .[$i].node.comments.edges[$j].node.author.login)
+      if [[ $COMMENT_AUTHOR != "icingabot" ]]; then
+        continue
+      fi
+
+      ICINGABOT_COMMENTED=true
+      break
+    done
+
+    if [ "$ICINGABOT_COMMENTED" == false ]; then
+      send_friendly_reminder "$PR_ID"
+    fi
+
+    echo "Ignoring pull request #$PR_NUMBER. Maintainer edits are disallowed"
+    continue
+  fi
+
+  PR_AUTHOR=$(read_json_var "$PULL_REQUESTS" .[$i].node.author.login)
+  PR_BRANCH=$(read_json_var "$PULL_REQUESTS" .[$i].node.headRefName)
+  PR_REPO=$(read_json_var "$PULL_REQUESTS" .[$i].node.headRepository.sshUrl)
+
+  echo "Resolving pull request #$PR_NUMBER (Author: $PR_AUTHOR, Branch: $PR_BRANCH, Repo: $PR_REPO)"
+
+  # Fetch the remote branch
+  git remote add $PR_AUTHOR $PR_REPO
+  git fetch $PR_AUTHOR $PR_BRANCH
+
+  # Checkout the branch
+  git checkout -b pull/$PR_NUMBER $PR_AUTHOR/$PR_BRANCH
+
+  # Attempt to merge master, should fail
+  git merge --no-ff --no-commit origin/master || true
+
+  if [ ! -f .git/MERGE_HEAD ]; then
+    echo "Merge aborted or succeeded for some unknown reason. Cancelling pull request resolution"
+    continue
+  fi
+
+  # Resolve source catalog conflicts
+  GIT_STATUS=$(git status -suno)
+  while IFS= read -r line; do
+    if [[ "$line" =~ $RE_IS_CONFLICTING ]] && [[ ${BASH_REMATCH[0]} ]]; then
+      # Only a conflict, yet
+      FILENAME="${BASH_REMATCH[1]}"
+
+      # Reset file to the author's version
+      git checkout --ours $FILENAME
+
+      if [[ "$line" =~ $RE_IS_SOURCE_CATALOG ]] && [[ ${BASH_REMATCH[0]} ]]; then
+        # It's a source catalog! Utilize msgmerge to update the source catalog with the latest messages
+        LOCALE="${BASH_REMATCH[1]}"
+        echo "Resolving file '$FILENAME':"
+        msgmerge --update --backup=none --lang=$LOCALE --sort-by-file $FILENAME src/icinga.pot
+        git add $FILENAME
+      else
+        # It's some other file we don't care about. That's the authors duty to fix this
+        git add $FILENAME
+      fi
+    fi
+  done <<< "$GIT_STATUS"
+
+  # Finish the merge
+  echo -e "Update with base 'origin/master'\n\nResolves source catalog conflicts" > .git/MERGE_MSG
+  GIT_EDITOR=true git merge --continue
+
+  echo "Successfully resolved pull request #$PR_NUMBER. Pushing the changes now"
+
+  # Push the new changes
+  git push $PR_AUTHOR pull/$PR_NUMBER:$PR_BRANCH
+  send_success_message "$PR_ID"
+done
