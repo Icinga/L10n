@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
 "POT-Creation-Date: 2020-05-27 13:42+0000\n"
-"PO-Revision-Date: 2020-05-29 23:48+0500\n"
+"PO-Revision-Date: 2020-05-30 17:11+0500\n"
 "Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
 "Language-Team: TranslAster\n"
 "Language: ru_RU\n"
@@ -235,12 +235,12 @@ msgstr "Транспорт команды \"%s\" не найден"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:112
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:126
 msgid "Downtime"
-msgstr ""
+msgstr "Время простоя"
 
 #: sources.d/icingadb-web/application/controllers/DowntimeController.php:43
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimeController.php:58
 msgid "Downtime not found"
-msgstr ""
+msgstr "Время простоя не найдено"
 
 #: sources.d/icingadb-web/application/controllers/DowntimesController.php:24
 #: sources.d/icingadb-web/application/controllers/DowntimesController.php:144
@@ -859,7 +859,7 @@ msgstr "Порт Redis"
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:52
 msgid "Redis connection details of your Icinga host. If you are running a high availability zone with two masters, this is your configuration master."
-msgstr ""
+msgstr "Сведения о подключении Redis к вашему узлу Icinga. Если вы используете зону высокой доступности с двумя мастерами, то это ваш мастер конфигурации."
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:55
 msgid "Primary Icinga Master"
@@ -867,7 +867,7 @@ msgstr ""
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:84
 msgid "If you are running a high availability zone with two masters, please provide the Redis connection details of the secondary master."
-msgstr ""
+msgstr "Если вы работаете в зоне высокой доступности с двумя мастерами, пожалуйста, предоставьте сведения о соединении Redis вторичного мастера."
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:87
 msgid "Secondary Icinga Master"
@@ -875,12 +875,12 @@ msgstr ""
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:102
 msgid "Check this box to enforce changes without validating that Redis is available."
-msgstr ""
+msgstr "Установите этот флажок, чтобы применить изменения без проверки доступен ли Redis."
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:184
 #, php-format
 msgid "Failed to connect to primary Redis: %s"
-msgstr ""
+msgstr "Не удалось подключиться к первичному Radius: %s"
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:194
 msgid "Primary connection established but failed to verify Icinga is connected as well."
@@ -948,7 +948,7 @@ msgstr "БД Icinga"
 #: sources.d/icingadb-web/configuration.php:16
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:33
 msgid "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
-msgstr ""
+msgstr "Модуль \"ipl\" не включен. Этот модуль является обязательным для веб БД Icinga"
 
 #: sources.d/icingadb-web/configuration.php:40
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceCoreApi.php:61
@@ -983,11 +983,11 @@ msgstr "Проблемы с узлами"
 #: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:84
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:344
 msgid "Overdue"
-msgstr ""
+msgstr "Просрочено"
 
 #: sources.d/icingadb-web/configuration.php:96
 msgid "Downtimes Active For At Least Three Days"
-msgstr ""
+msgstr "Время простоя активно в течение как минимум трех дней"
 
 #: sources.d/icingadb-web/configuration.php:208
 #: sources.d/icingaweb2-module-reporting/configuration.php:23
@@ -1051,16 +1051,16 @@ msgstr "Перепланировать проверку службы"
 #: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:205
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostController.php:158
 msgid "Schedule Host Downtime"
-msgstr ""
+msgstr "Расписание времени простоя узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:209
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:120
 msgid "Schedule Service Downtime"
-msgstr ""
+msgstr "Расписание времени простоя службы"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:218
 msgid "Send Custom Notification"
-msgstr ""
+msgstr "Отправить пользовательское уведомление"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:98
 #: sources.d/icingaweb2-module-director/application/locale/translateMe.php:5
@@ -1095,7 +1095,7 @@ msgstr "недоступен"
 #, php-format
 msgctxt "<service> on <host>"
 msgid "%s on %s"
-msgstr ""
+msgstr "%s на %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ServiceStates.php:106
 #: sources.d/icingaweb2-module-director/application/locale/translateMe.php:9
@@ -1115,7 +1115,7 @@ msgstr "критический"
 #: sources.d/icingadb-web/library/Icingadb/Common/ServiceStates.php:115
 #: sources.d/icingaweb2-module-director/application/locale/translateMe.php:12
 msgid "unknown"
-msgstr ""
+msgstr "неизвестен"
 
 #: sources.d/icingadb-web/library/Icingadb/Compat/MonitoringRestrictions.php:57
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/MonitoringRestrictions.php:46
@@ -1293,12 +1293,12 @@ msgstr "Отсутствует"
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:133
 #, php-format
 msgid "Resource configuration update successful: %s"
-msgstr ""
+msgstr "Успешное обновление конфигурации ресурсов: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:139
 #, php-format
 msgid "Resource configuration update failed: %s"
-msgstr ""
+msgstr "Ошибка обновления конфигурации ресурсов: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:60
 msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
@@ -1306,19 +1306,19 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:70
 msgid "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is required."
-msgstr ""
+msgstr "Для доступа к базе данных MySQL БД Icinga требуется модуль PDO-MySQL для PHP."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:79
 msgid "To send external commands over Icinga 2's API, the cURL module for PHP is required."
-msgstr ""
+msgstr "Для отправки внешних команд через API Icinga 2 требуется модуль cURL для PHP."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:89
 msgid "To view the most recent state information in Icinga DB Web, the Redis module for PHP is required."
-msgstr ""
+msgstr "Для просмотра самой последней информации о состоянии в веб БД Icinga требуется модуль Redis для PHP."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:96
 msgid "The Redis module for PHP in version 4.3 and above requires PHP 7+"
-msgstr ""
+msgstr "Модуль Redis для PHP в версии 4.3 и выше требует PHP 7+"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisPage.php:15
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:103
@@ -1327,49 +1327,49 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisPage.php:17
 msgid "Please fill out the connection details to access the Icinga DB Redis."
-msgstr ""
+msgstr "Пожалуйста, заполните данные подключения, чтобы получить доступ к Icinga DB Redis."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:64
 msgid "The Icinga DB Redis will be accessed using the following connection details:"
-msgstr ""
+msgstr "Доступ к Icinga DB Redis будет осуществляться с помощью следующих сведений о подключении:"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:79
 msgid "Primary"
-msgstr ""
+msgstr "Перичный"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:94
 msgid "Secondary"
-msgstr ""
+msgstr "Вторичный"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:114
 #, php-format
 msgid "Module configuration update successful: %s"
-msgstr ""
+msgstr "Успешное обновление модуля конфигурации: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:120
 #, php-format
 msgid "Module configuration update failed: %s"
-msgstr ""
+msgstr "Ошибка обновления модуля конфигурации: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/WelcomePage.php:23
 msgid "Welcome to the configuration of Icinga DB Web!"
-msgstr ""
+msgstr "Добро пожаловать в конфигурирование Icinga DB Web!"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/WelcomePage.php:37
 msgid "Icinga DB Web is the UI for Icinga DB and provides a graphical interface to your monitoring environment."
-msgstr ""
+msgstr "Icinga DB Web - это пользовательский интерфейс для БД Icinga и представляет графический интерфейс в среде мониторинга."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/WelcomePage.php:49
 msgid "The wizard will guide you through the configuration to establish a connection with Icinga DB and Icinga 2."
-msgstr ""
+msgstr "Мастер проведет вас через конфигурацию, чтобы установить соединение с Icinga DB и Icinga 2."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/BaseItemList.php:83
 msgid "No items found."
-msgstr ""
+msgstr "Элементов не найдено."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ContinueWith.php:32
 msgid "Continue with filter"
-msgstr ""
+msgstr "Продолжить с фильтром"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:72
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:238
@@ -1379,7 +1379,7 @@ msgstr "Сейчас"
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:102
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/checkstatistics.phtml:7
 msgid "Last update"
-msgstr ""
+msgstr "Последнее обновление"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:104
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:118
