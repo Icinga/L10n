@@ -17,6 +17,7 @@ jobs:
   resolve-conflicts:
     name: Automatic Conflict Resolution
     runs-on: ubuntu-latest
+    if: github.repository == 'Icinga/L10n'
 
     steps:
       - name: Checkout code base

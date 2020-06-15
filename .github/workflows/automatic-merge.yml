@@ -9,6 +9,7 @@ jobs:
   merge:
     name: Automatic pull request merges
     runs-on: ubuntu-latest
+    if: github.repository == 'Icinga/L10n'
 
     steps:
       - name: Merge ready PRs
