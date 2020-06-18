@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2020-06-17 14:18+0000\n"
+"POT-Creation-Date: 2020-06-18 06:53+0000\n"
 "PO-Revision-Date: 2020-04-27 14:36+0200\n"
 "Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
 "Language-Team: \n"
@@ -435,6 +435,7 @@ msgstr "Host nicht gefunden"
 #: sources.d/icingadb-web/configuration.php:156
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostDetail.php:32
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostDetail.php:33
+#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:61
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:229
 #: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:18
 #: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:57
@@ -561,6 +562,7 @@ msgstr ""
 #: sources.d/icingadb-web/application/controllers/HostsController.php:105
 #: sources.d/icingadb-web/configuration.php:31
 #: sources.d/icingadb-web/configuration.php:151
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:59
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:193
 #: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:14
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:100
@@ -2075,16 +2077,23 @@ msgid_plural "%d Hosts"
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:45
-msgid "Host Down"
-msgid_plural "Hosts Down"
-msgstr[0] ""
-msgstr[1] ""
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:46
+#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:21
+#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:134
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:32
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:39
+msgid "Down"
+msgstr "Down"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:57
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:14
-msgid "Host Summary"
-msgstr "Host Übersicht"
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:61
+#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:63
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:57
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmDiskUsageTable.php:123
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmDiskUsageTable.php:127
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:67
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:91
+msgid "Total"
+msgstr "Gesamt"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseCommentListItem.php:42
 #, php-format
@@ -2286,15 +2295,13 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:48
-msgid "Service Critical"
-msgid_plural "Services Critical"
-msgstr[0] ""
-msgstr[1] ""
-
-#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:61
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:71
-msgid "Service Summary"
-msgstr "Service Übersicht"
+#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:26
+#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:114
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:41
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:103
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:110
+msgid "Critical"
+msgstr "Kritisch"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ShowMore.php:40
 #: sources.d/icingaweb2-module-graphite/application/views/scripts/list/hosts.phtml:51
@@ -8216,16 +8223,9 @@ msgstr "Gruppenmitgliedschaftscache (Hosts)"
 
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:20
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:133
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:22
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:25
 msgid "Up"
 msgstr "Up"
-
-#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:21
-#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:134
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:29
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:36
-msgid "Down"
-msgstr "Down"
 
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:24
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:192
@@ -8235,25 +8235,17 @@ msgstr "Ok"
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:25
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:115
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:40
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:86
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:93
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:89
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:96
 msgid "Warning"
 msgstr "Warnung"
-
-#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:26
-#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:114
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:41
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:100
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:107
-msgid "Critical"
-msgstr "Kritisch"
 
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:27
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:54
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:42
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:116
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:114
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:121
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:117
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:124
 msgid "Unknown"
 msgstr "Unbekannt"
 
@@ -10068,14 +10060,6 @@ msgstr "Direkt"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:56
 msgid "Indirect"
 msgstr "Indirekt"
-
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:57
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmDiskUsageTable.php:123
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmDiskUsageTable.php:127
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:67
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:91
-msgid "Total"
-msgstr "Gesamt"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:103
 msgid "This template is not in use"
@@ -16972,11 +16956,11 @@ msgstr ""
 "Zeige eine Übersicht aller Hosts und Services, ihre aktuellen Zustände und "
 "Ausnutzung der Monitoring-Funktionen"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:80
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:82
 msgid "Hosts Down"
 msgstr "Hosts Down"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:95
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:97
 msgid "Services Critical"
 msgstr "Services Kritisch"
 
@@ -18021,13 +18005,13 @@ msgid "Today"
 msgstr "Heute"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:117
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:79
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:82
 msgid "Ok"
 msgstr "Ok"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:135
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:43
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:50
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:46
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:53
 msgid "Unreachable"
 msgstr "Nicht erreichbar"
 
@@ -19591,11 +19575,11 @@ msgstr[1] "Liste %u Services, die gerade KRITISCH sind"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:31
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:130
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/parts/servicestatesummarybyhoststate.phtml:229
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:29
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:43
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:86
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:100
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:114
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:32
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:46
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:89
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:103
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:117
 msgid "Handled"
 msgstr "Behandelt"
 
@@ -19780,19 +19764,27 @@ msgid_plural "List %u hosts which are currently in state UNREACHABLE"
 msgstr[0] "Liste %u Host, der gerade UNERREICHBAR ist"
 msgstr[1] "Liste %u Hosts, die gerade UNERREICHBAR sind"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:9
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:12
 msgid "No results found matching the filter."
 msgstr "Zu diesem Filter wurden keine Ergebnisse gefunden."
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:57
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:128
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:17
+msgid "Host Summary"
+msgstr "Host Übersicht"
+
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:60
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:131
 msgid "Pending"
 msgstr "Ungeprüft"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:64
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:135
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:67
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:138
 msgid "Not Checked"
 msgstr "Nicht geprüft"
+
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:74
+msgid "Service Summary"
+msgstr "Service Übersicht"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/timeline/index.phtml:15
 msgid "Legend"
