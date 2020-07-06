@@ -1,0 +1,10 @@
+policy_module(icinga-l10n, 1.0)
+
+require {
+	type httpd_t;
+}
+
+optional_policy(`
+	apache_content_template(icingal10n)
+')
+
