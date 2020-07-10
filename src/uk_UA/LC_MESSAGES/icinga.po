@@ -9,16 +9,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"POT-Creation-Date: \n"
+"POT-Creation-Date: 2020-07-01 07:07+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: uk_UA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk_UA\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 2.2.1\n"
 
 #: sources.d/icingadb-web/application/controllers/CommentController.php:28
@@ -1078,7 +1078,6 @@ msgstr "Прострочені результати перевірки серв�
 msgid "Acknowledgements Active For At Least Three Days"
 msgstr "Підтвердження активні довше за три дні"
 
-#: sources.d/icingadb-web/configuration.php:96
 #: sources.d/icingadb-web/configuration.php:97
 msgid "Downtimes Active For At Least Three Days"
 msgstr "Простої активні протягом не менш ніж трьох днів"
@@ -2057,19 +2056,6 @@ msgstr[0] "%d хост"
 msgstr[1] "%d хости"
 msgstr[2] "%d хостів"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:45
-msgid "Host Down"
-msgid_plural "Hosts Down"
-msgstr[0] "Хост недоступний"
-msgstr[1] "Хост недоступні"
-msgstr[2] "Хост недоступні"
-
-#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:57
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:14
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:17
-msgid "Host Summary"
-msgstr "Хости загалом"
-
 #: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:46
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:21
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:134
@@ -2282,18 +2268,6 @@ msgstr[1] "%d сервіси"
 msgstr[2] "%d сервісів"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:48
-msgid "Service Critical"
-msgid_plural "Services Critical"
-msgstr[0] "Критичний сервіс"
-msgstr[1] "Критичних сервіси"
-msgstr[2] "Критичних сервісів"
-
-#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:61
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:71
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:74
-msgid "Service Summary"
-msgstr "Усього сервісів"
-
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:26
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:114
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:41
@@ -6078,9 +6052,6 @@ msgid "A new %s has successfully been created"
 msgstr "Новий %s було успішно створено"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:135
-msgid "This Service has been blacklisted on this host"
-msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
-
 msgid "This Service has been deactivated on this host"
 msgstr "Цей\tсервіс було деакьтвовано на цьому хості"
 
@@ -6099,14 +6070,6 @@ msgid "Hints regarding this service"
 msgstr "Підказки для цього сервісу"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:161
-msgid "Blacklist"
-msgstr "Чорний список"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:265
-#, php-format
-msgid "%s has been blacklisted on %s"
-msgstr "%s було додано у чорний список %s"
-
 msgid "Deactivate"
 msgstr "Деактивувати"
 
@@ -6117,9 +6080,6 @@ msgstr "%s було деактивовано на %s"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:302
 #, php-format
-msgid "%s is no longer blacklisted on %s"
-msgstr "%s більше не у чорному списку %s"
-
 msgid "%s is no longer deactivated on %s"
 msgstr "%s більше не деактивовано на %s"
 
@@ -8997,13 +8957,6 @@ msgstr ""
 "Що необхідно зробити з рядком коли ця властивість відповідає наданому виразу?"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:59
-msgid "Reject the whole row (Blacklist)"
-msgstr "Відкинути весь рядок (blacklist)"
-
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:60
-msgid "Keep only matching rows (Whitelist)"
-msgstr "Зберегти лише відповідаючі рядки (whitelist)"
-
 msgid "Reject the whole row"
 msgstr "Відкинути весь рядок"
 
@@ -14146,6 +14099,8 @@ msgstr "Користувача \"%s\" було видалено"
 msgid "Failed to remove user \"%s\""
 msgstr "Не вдалося видалити користувача \"%s\""
 
+#: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:205
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupForm.php:153
 #: sources.d/icingaweb2/application/forms/ConfigForm.php:91
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:413
 msgid ""
@@ -19809,6 +19764,10 @@ msgstr[2] "Показати %u хостів у стані НЕДОСЯЖНИЙ"
 msgid "No results found matching the filter."
 msgstr "Не знайдено результатів що відповідають фільтру."
 
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:17
+msgid "Host Summary"
+msgstr "Хости загалом"
+
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:60
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:131
 msgid "Pending"
@@ -19818,6 +19777,10 @@ msgstr "Очікування"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:138
 msgid "Not Checked"
 msgstr "Не перевірено"
+
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:74
+msgid "Service Summary"
+msgstr "Усього сервісів"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/timeline/index.phtml:15
 msgid "Legend"
@@ -21698,3 +21661,33 @@ msgstr ""
 "Конфігураційною директорією Icinga Web 2 за замовчуванням є \"/etc/"
 "icingaweb2\" у разі якщо явно не зазначено у змінній оточення "
 "\"ICINGAWEB_CONFIGDIR\"."
+
+#~ msgid "Keep only matching rows (Whitelist)"
+#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
+
+#~ msgid "Reject the whole row (Blacklist)"
+#~ msgstr "Відкинути весь рядок (blacklist)"
+
+#~ msgid "%s is no longer blacklisted on %s"
+#~ msgstr "%s більше не у чорному списку %s"
+
+#~ msgid "%s has been blacklisted on %s"
+#~ msgstr "%s було додано у чорний список %s"
+
+#~ msgid "Blacklist"
+#~ msgstr "Чорний список"
+
+#~ msgid "This Service has been blacklisted on this host"
+#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+
+#~ msgid "Service Critical"
+#~ msgid_plural "Services Critical"
+#~ msgstr[0] "Критичний сервіс"
+#~ msgstr[1] "Критичних сервіси"
+#~ msgstr[2] "Критичних сервісів"
+
+#~ msgid "Host Down"
+#~ msgid_plural "Hosts Down"
+#~ msgstr[0] "Хост недоступний"
+#~ msgstr[1] "Хост недоступні"
+#~ msgstr[2] "Хост недоступні"
