@@ -8,7 +8,7 @@ jobs:
   resolve-command-dispatch:
     name: Conflict Resolution Command
     runs-on: ubuntu-latest
-    if: github.actor == github.event.issue.user.login
+    if: github.event.comment.author_association == 'MEMBER' || github.actor == github.event.issue.user.login
 
     steps:
       - name: Conflict Resolution Command Dispatch
