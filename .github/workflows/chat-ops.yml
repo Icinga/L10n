@@ -1,0 +1,21 @@
+name: Slash Command Dispatch
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  resolve-command-dispatch:
+    name: Conflict Resolution Command
+    runs-on: ubuntu-latest
+    if: github.event.actor.login == github.event.payload.issue.user.login
+
+    steps:
+      - name: Conflict Resolution Command Dispatch
+        uses: peter-evans/slash-command-dispatch@v1
+        with:
+          token: ${{ secrets.ICINGABOT_TOKEN }}
+          reaction-token: ${{ secrets.ICINGABOT_TOKEN }}
+          commands: resolve
+          permission: read
+          issue-type: pull-request
