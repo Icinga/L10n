@@ -54,29 +54,20 @@ Our source catalogs however are huge. A few conflicts may be fixable by hand, bu
 them can be a pain. We don't recommend fixing conflicts by hand, but provide a bot which
 will take care of them automatically.
 
+> **Note:**
+>
+> To utilize the bot, it is required to enable maintainer edits.
+
 If you want the bot to resolve source catalog conflicts and update your pull request,
-just add a label of the following to it:
+add a comment with `/resolve` in the first line.
 
-* ![automatic conflict resolution (UTC-8)](https://img.shields.io/badge/-automatic%20conflict%20resolution%20(UTC--8)-1808a8)
-* ![automatic conflict resolution (UTC-4)](https://img.shields.io/badge/-automatic%20conflict%20resolution%20(UTC--4)-1808a8)
-* ![automatic conflict resolution (UTC)](https://img.shields.io/badge/-automatic%20conflict%20resolution%20(UTC)-1808a8)
-* ![automatic conflict resolution (UTC+4)](https://img.shields.io/badge/-automatic%20conflict%20resolution%20(UTC%2B4)-1808a8)
-* ![automatic conflict resolution (UTC+8)](https://img.shields.io/badge/-automatic%20conflict%20resolution%20(UTC%2B8)-1808a8)
+![Resolve Command Comment](doc/screenshot/resolve-command.png "Resolve Command Comment")
 
-Each label has a timezone designation which defines when the bot will be active on your
-pull request. Choose the label which fits your own timezone best, and the bot will then
-update your pull request at/around midnight.
+The bot will then immediately attempt to fix your source catalog conflicts. Once the bot
+finished its work, it will leave a comment. Pull its changes then and continue with the
+translation.
 
-Choosing a proper label is important. Once you enable the bot, it's not only you anymore
-who's working on the pull request. It's then also the bot which is adding commits. To
-avoid conflicts in your working tree, it is recommended to pull the remote branch first
-before continuing with the translation. The labels let you control when the bot will add
-commits, which should be a time when *you* won't add commits. (That's why the bot runs
-at/around midnight)
-
-If the bot is active, your general workflow should be the following:
-
-* Pull your own fork/branch
-* Do some translations
-* Commit **and push** your changes
-* Repeat above on the next day
+Pulling the bot's changes is important. Once you trigger the bot, it's not only you
+anymore who's working on the pull request. It's then also the bot which is adding
+commits. To avoid conflicts in your working tree, it is recommended to pull the remote
+branch first before continuing with the translation.
