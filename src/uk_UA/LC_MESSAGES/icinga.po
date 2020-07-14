@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2020-07-01 07:07+0000\n"
+"POT-Creation-Date: 2020-07-14 06:12+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -2503,21 +2503,26 @@ msgstr "Налаштувати ключі доступу AWS"
 msgid "AWS Keys"
 msgstr "Ключі AWS"
 
-#: sources.d/icingaweb2-module-aws/library/Aws/ProvidedHook/Director/ImportSource.php:161
+#: sources.d/icingaweb2-module-aws/library/Aws/ProvidedHook/Director/ImportSource.php:167
+#, fuzzy
 msgid ""
-"Use IAM role credential or select your AWS key. This shows all keys from "
-"your keys.ini. Please check the documentation if you miss the keys in the "
-"list."
+"Use IAM role credential, assume role or select your AWS key. This shows all "
+"keys from your keys.ini. Please check the documentation if you miss the keys "
+"in the list."
 msgstr ""
 "Використати реквізити ролі IAM або обрати ключ AWS. Будуть показані всі "
 "ключі з keys.ini. Будь ласка зверніться до документації якщо ваші ключі "
 "відсутні у списку."
 
-#: sources.d/icingaweb2-module-aws/library/Aws/ProvidedHook/Director/ImportSource.php:165
+#: sources.d/icingaweb2-module-aws/library/Aws/ProvidedHook/Director/ImportSource.php:173
+msgid "IAM assume role"
+msgstr ""
+
+#: sources.d/icingaweb2-module-aws/library/Aws/ProvidedHook/Director/ImportSource.php:175
 msgid "IAM role credentials"
 msgstr "Реквізити ролі IAM"
 
-#: sources.d/icingaweb2-module-aws/library/Aws/ProvidedHook/Director/ImportSource.php:174
+#: sources.d/icingaweb2-module-aws/library/Aws/ProvidedHook/Director/ImportSource.php:192
 msgid "AWS object type"
 msgstr "Тип об'єкта AWS"
 
@@ -21662,23 +21667,11 @@ msgstr ""
 "icingaweb2\" у разі якщо явно не зазначено у змінній оточення "
 "\"ICINGAWEB_CONFIGDIR\"."
 
-#~ msgid "Keep only matching rows (Whitelist)"
-#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
-
-#~ msgid "Reject the whole row (Blacklist)"
-#~ msgstr "Відкинути весь рядок (blacklist)"
-
-#~ msgid "%s is no longer blacklisted on %s"
-#~ msgstr "%s більше не у чорному списку %s"
-
-#~ msgid "%s has been blacklisted on %s"
-#~ msgstr "%s було додано у чорний список %s"
-
-#~ msgid "Blacklist"
-#~ msgstr "Чорний список"
-
-#~ msgid "This Service has been blacklisted on this host"
-#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+#~ msgid "Host Down"
+#~ msgid_plural "Hosts Down"
+#~ msgstr[0] "Хост недоступний"
+#~ msgstr[1] "Хост недоступні"
+#~ msgstr[2] "Хост недоступні"
 
 #~ msgid "Service Critical"
 #~ msgid_plural "Services Critical"
@@ -21686,8 +21679,20 @@ msgstr ""
 #~ msgstr[1] "Критичних сервіси"
 #~ msgstr[2] "Критичних сервісів"
 
-#~ msgid "Host Down"
-#~ msgid_plural "Hosts Down"
-#~ msgstr[0] "Хост недоступний"
-#~ msgstr[1] "Хост недоступні"
-#~ msgstr[2] "Хост недоступні"
+#~ msgid "This Service has been blacklisted on this host"
+#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+
+#~ msgid "Blacklist"
+#~ msgstr "Чорний список"
+
+#~ msgid "%s has been blacklisted on %s"
+#~ msgstr "%s було додано у чорний список %s"
+
+#~ msgid "%s is no longer blacklisted on %s"
+#~ msgstr "%s більше не у чорному списку %s"
+
+#~ msgid "Reject the whole row (Blacklist)"
+#~ msgstr "Відкинути весь рядок (blacklist)"
+
+#~ msgid "Keep only matching rows (Whitelist)"
+#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
