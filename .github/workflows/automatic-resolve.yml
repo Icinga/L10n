@@ -1,23 +1,14 @@
 name: Automatic Resolve
 
 on:
-  schedule:
-    # Every day at UTC+8 midnight
-    - cron: "5 8 * * *"
-    # Every day at UTC+4 midnight
-    - cron: "5 4 * * *"
-    # Every day at UTC midnight
-    - cron: "5 0 * * *"
-    # Every day at UTC-4 midnight
-    - cron: "5 20 * * *"
-    # Every day at UTC-8 midnight
-    - cron: "5 16 * * *"
+  repository_dispatch:
+    types:
+      - resolve-command
 
 jobs:
   resolve-conflicts:
     name: Automatic Conflict Resolution
     runs-on: ubuntu-latest
-    if: github.repository == 'Icinga/L10n'
 
     steps:
       - name: Checkout code base
@@ -35,7 +26,8 @@ jobs:
           git config user.name "icingabot"
           git config user.email "65761963+icingabot@users.noreply.github.com"
 
-      - name: Resolve conflicting pull requests
+      - name: Resolve conflicting pull request
         run: bin/autoresolve
         env:
           ICINGABOT_TOKEN: "${{ secrets.ICINGABOT_TOKEN }}"
+          PULL_REQUEST_NO: "${{ github.event.client_payload.pull_request.number }}"
