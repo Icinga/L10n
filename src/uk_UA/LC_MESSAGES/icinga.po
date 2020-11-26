@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2020-11-24 19:23+0000\n"
+"POT-Creation-Date: 2020-11-25 15:58+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -8699,7 +8699,6 @@ msgid "Regular Expression"
 msgstr "Регулярний вираз"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierArrayFilter.php:41
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:43
 msgid ""
 "The string/pattern you want to search for. Depends on the chosen method, use "
 "www.* or *linux* for wildcard matches and expression like /^www\\d+\\./ in "
@@ -8710,7 +8709,7 @@ msgstr ""
 "кшталт /^www\\d+\\./ у разі застосування регулярного виразу"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierArrayFilter.php:50
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:52
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:65
 msgid "Policy"
 msgstr "Правило"
 
@@ -9039,25 +9038,42 @@ msgstr "Отримати булеве FALSE"
 msgid "Match NULL value columns"
 msgstr "Отримати колонки зі значенням NULL"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:41
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:44
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:54
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:101
 #: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/eventtypes/index.phtml:35
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Navigation/ActionForm.php:24
 msgid "Filter"
 msgstr "Фільтр"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:55
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:46
+#, fuzzy
+msgid ""
+"The string/pattern you want to search for, use wildcard matches like www.* "
+"or *linux*"
+msgstr ""
+"Патерн який ви шукаєте. Може бути регулярним виразом на кшталт /^www\\d+\\./"
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:56
+#, fuzzy
+msgid ""
+"The string/pattern you want to search for, use regular expression like /^www"
+"\\d+\\./"
+msgstr ""
+"Патерн який ви шукаєте. Може бути регулярним виразом на кшталт /^www\\d+\\./"
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:68
 msgid ""
 "What should happen with the row, when this property matches the given "
 "expression?"
 msgstr ""
 "Що необхідно зробити з рядком коли ця властивість відповідає наданому виразу?"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:59
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:72
 msgid "Reject the whole row"
 msgstr "Відкинути весь рядок"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:60
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:73
 msgid "Keep only matching rows"
 msgstr "Залишати лише рядки що підходять"
 
@@ -22015,29 +22031,28 @@ msgstr ""
 "\"ICINGAWEB_CONFIGDIR\"."
 
 #~ msgid ""
-#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
-#~ "is it part of the description (indented with a single space)"
+#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
 #~ msgstr ""
-#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
-#~ "і не є частиною опису (починається з одного пробілу)"
+#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
+#~ "Web"
 
-#~ msgid "NICs"
-#~ msgstr "NIC"
+#~ msgid "Keep only matching rows (Whitelist)"
+#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
 
-#~ msgid "Vendor / Model"
-#~ msgstr "Вендор / Модель"
+#~ msgid "Reject the whole row (Blacklist)"
+#~ msgstr "Відкинути весь рядок (blacklist)"
 
-#~ msgid "Console"
-#~ msgstr "Консоль"
+#~ msgid "%s is no longer blacklisted on %s"
+#~ msgstr "%s більше не у чорному списку %s"
 
-#~ msgid "Open console with VMRC"
-#~ msgstr "Відкрити консоль VMRC"
+#~ msgid "%s has been blacklisted on %s"
+#~ msgstr "%s було додано у чорний список %s"
 
-#~ msgid "Host Down"
-#~ msgid_plural "Hosts Down"
-#~ msgstr[0] "Хост недоступний"
-#~ msgstr[1] "Хост недоступні"
-#~ msgstr[2] "Хост недоступні"
+#~ msgid "Blacklist"
+#~ msgstr "Чорний список"
+
+#~ msgid "This Service has been blacklisted on this host"
+#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
 
 #~ msgid "Service Critical"
 #~ msgid_plural "Services Critical"
@@ -22045,26 +22060,27 @@ msgstr ""
 #~ msgstr[1] "Критичних сервіси"
 #~ msgstr[2] "Критичних сервісів"
 
-#~ msgid "This Service has been blacklisted on this host"
-#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+#~ msgid "Host Down"
+#~ msgid_plural "Hosts Down"
+#~ msgstr[0] "Хост недоступний"
+#~ msgstr[1] "Хост недоступні"
+#~ msgstr[2] "Хост недоступні"
 
-#~ msgid "Blacklist"
-#~ msgstr "Чорний список"
+#~ msgid "Open console with VMRC"
+#~ msgstr "Відкрити консоль VMRC"
 
-#~ msgid "%s has been blacklisted on %s"
-#~ msgstr "%s було додано у чорний список %s"
+#~ msgid "Console"
+#~ msgstr "Консоль"
 
-#~ msgid "%s is no longer blacklisted on %s"
-#~ msgstr "%s більше не у чорному списку %s"
+#~ msgid "Vendor / Model"
+#~ msgstr "Вендор / Модель"
 
-#~ msgid "Reject the whole row (Blacklist)"
-#~ msgstr "Відкинути весь рядок (blacklist)"
-
-#~ msgid "Keep only matching rows (Whitelist)"
-#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
+#~ msgid "NICs"
+#~ msgstr "NIC"
 
 #~ msgid ""
-#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
+#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
+#~ "is it part of the description (indented with a single space)"
 #~ msgstr ""
-#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
-#~ "Web"
+#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
+#~ "і не є частиною опису (починається з одного пробілу)"
