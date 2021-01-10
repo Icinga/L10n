@@ -26,15 +26,15 @@ msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
 "POT-Creation-Date: 2020-12-15 13:47+0000\n"
-"PO-Revision-Date: 2020-04-27 14:36+0200\n"
-"Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
+"PO-Revision-Date: 2021-01-10 20:13+0100\n"
+"Last-Translator: @hashfunktion <mail@jessereppin.de>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ../../../src\n"
 "X-Poedit-SearchPath-0: sources.d\n"
 
@@ -944,26 +944,30 @@ msgid "Validation In Progress"
 msgstr "Überprüfung läuft"
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:184
-#, fuzzy, php-format
+#, php-format
 msgid "Failed to connect to primary Redis: %s"
-msgstr "Einfügen nicht möglich. Ein Fehler ist aufgetreten: %s"
+msgstr "Verbindungsfehler zur primären Redis Instanz: %s"
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:194
 msgid ""
 "Primary connection established but failed to verify Icinga is connected as "
 "well."
 msgstr ""
+"Primäre Verbindung ist hergestellt aber die Verbindung von Icinga konnte "
+"nicht überprüft werden."
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:212
-#, fuzzy, php-format
+#, php-format
 msgid "Failed to connect to secondary Redis: %s"
-msgstr "Einfügen nicht möglich. Ein Fehler ist aufgetreten: %s"
+msgstr "Verbindungsfehler zur sekundären Redis Instanz: %s"
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:222
 msgid ""
 "Secondary connection established but failed to verify Icinga is connected as "
 "well."
 msgstr ""
+"Sekundäre Verbindung ist hergestellt aber die Verbindung von Icinga konnte "
+"nicht überprüft werden."
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:229
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:74
@@ -989,7 +993,7 @@ msgstr "Transport"
 #: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:34
 #, php-format
 msgid "Update command transport %s"
-msgstr ""
+msgstr "Aktualisiere Befehls-Transport %s"
 
 #: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:38
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:39
@@ -1001,7 +1005,7 @@ msgstr "Typ: %s"
 #: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:51
 #, php-format
 msgid "Delete command transport %s"
-msgstr ""
+msgstr "Lösche Befehls-Transport %s"
 
 #: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:59
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:66
@@ -1133,11 +1137,11 @@ msgstr "Konfiguriere das Datenbank-Backend"
 
 #: sources.d/icingadb-web/configuration.php:206
 msgid "Redis"
-msgstr ""
+msgstr "Redis"
 
 #: sources.d/icingadb-web/configuration.php:207
 msgid "Configure the Redis connections"
-msgstr ""
+msgstr "Konfiguriere die Redis Verbindung"
 
 #: sources.d/icingadb-web/configuration.php:211
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:62
@@ -1146,7 +1150,7 @@ msgstr "Befehls-Transporte"
 
 #: sources.d/icingadb-web/configuration.php:212
 msgid "Configure command transports"
-msgstr ""
+msgstr "Konfiguriere Befehls-Transporte"
 
 #: sources.d/icingadb-web/configuration.php:216
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:295
@@ -1156,15 +1160,15 @@ msgstr "Sicherheit"
 
 #: sources.d/icingadb-web/configuration.php:217
 msgid "Configure security related settings"
-msgstr ""
+msgstr "Konfiguriere Sicherheitsrelevante Einstellungen"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:129
 msgid "Acknowledge Problem"
-msgstr ""
+msgstr "Problem bestätigen"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:136
 msgid "Add Comment"
-msgstr ""
+msgstr "Kommentar hinzufügen"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:173
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:31
@@ -1195,7 +1199,7 @@ msgstr "Service-Downtime planen"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:218
 msgid "Send Custom Notification"
-msgstr ""
+msgstr "Benutzerdefinierte Benachrichtigung senden"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:98
 #: sources.d/icingaweb2-module-director/application/locale/translateMe.php:5
@@ -1271,7 +1275,7 @@ msgstr ""
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:115
 #, php-format
 msgid "Can't connect to Icinga Redis: %s"
-msgstr ""
+msgstr "Keine Verbindung zu Icinga Redis: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:19
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:76
@@ -1280,11 +1284,8 @@ msgid "Icinga 2 API"
 msgstr "Icinga 2 API"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:21
-#, fuzzy
 msgid "Please fill out the connection details to the Icinga 2 API."
-msgstr ""
-"Bitte gib weiter unten die Verbindungsdetails für die IDO-Datenbank der "
-"Monitoringumgebung an."
+msgstr "Bitte gib die Verbindungsdetails zum erreichen der Icinga 2 API an."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:89
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:123
@@ -1310,7 +1311,7 @@ msgstr "Häkchen setzen, um die Einstellungen nicht zu prüfen"
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:50
 msgid ""
 "The Icinga 2 API will be accessed using the following connection details:"
-msgstr ""
+msgstr "Die Icinga 2 API wird über die folgenden Verbindungsdetails erreicht:"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:59
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:68
@@ -1382,16 +1383,16 @@ msgid "Password"
 msgstr "Passwort"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:87
-#, fuzzy, php-format
+#, php-format
 msgid "Commandtransport configuration update successful: %s"
 msgstr ""
-"Die Konfiguration des Befehls-Transports wurde erfolgreich angelegt: %s"
+"Aktualisierung der Konfiguration des Befehls-Transports war erfolgreich: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:93
-#, fuzzy, php-format
+#, php-format
 msgid "Commandtransport configuration update failed: %s"
 msgstr ""
-"Die Konfiguration des Befehls-Transports wurde erfolgreich angelegt: %s"
+"Aktualisierung der Konfiguration des Befehls-Transports schlug fehl: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:96
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:142
@@ -1416,16 +1417,13 @@ msgstr "FEHLER: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:16
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:122
-#, fuzzy
 msgid "Icinga DB Resource"
-msgstr "Datenbankressource"
+msgstr "Icinga DB Ressource"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:18
-#, fuzzy
 msgid "Please fill out the connection details below to access Icinga DB."
 msgstr ""
-"Bitte gib weiter unten die Verbindungsdetails für die IDO-Datenbank der "
-"Monitoringumgebung an."
+"Bitte gib weiter unten die Verbindungsdetails zum erreichen der Icinga DB an."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:111
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:331
@@ -1439,7 +1437,7 @@ msgstr "Überprüfungsprotokoll"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:59
 msgid "Icinga DB will be accessed using the following connection details:"
-msgstr ""
+msgstr "Icinga DB wird über die folgenden Verbindungsdetails erreicht:"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:84
 #, fuzzy
@@ -1515,10 +1513,9 @@ msgstr "SSL-Schlüssel"
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:105
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:109
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:113
-#, fuzzy
 msgctxt "non-existence of a value"
 msgid "None"
-msgstr "Keine"
+msgstr "Keine Wert"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:100
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:203
@@ -1541,97 +1538,90 @@ msgid "SSL CA Path"
 msgstr "SSL-CA-Pfad"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:133
-#, fuzzy, php-format
+#, php-format
 msgid "Resource configuration update successful: %s"
-msgstr "Die Ressourcen-Konfiguration wurde erfolgreich aktualisiert: %s"
+msgstr "Aktualisierung der Ressourcen-Konfiguration war erfolgreich: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:139
-#, fuzzy, php-format
+#, php-format
 msgid "Resource configuration update failed: %s"
-msgstr "Schreibe %s-Einstellungen in die Datei: %s"
+msgstr "Aktualisierung der Ressourcen-Konfiguration schlug fehl: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:60
-#, fuzzy
 msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-msgstr "Der Betrieb von Icinga Web 2 erfordert die PHP-Version 5.6."
+msgstr "Das IPL Modul für Icinga Web 2 wird in Version 0.5+ benötigt."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:70
-#, fuzzy
 msgid ""
 "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
 "required."
 msgstr ""
-"Um auf die in einer MySQL gespeicherte IDO zuzugreifen, wird das PDO-MySQL "
-"Modul für PHP benötigt."
+"Um auf Icinga DB´s MySQL Datenbanken zuzugreifen, wird das PDO-MySQL Modul "
+"für PHP benötigt."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:79
-#, fuzzy
 msgid ""
 "To send external commands over Icinga 2's API, the cURL module for PHP is "
 "required."
 msgstr ""
-"Um externe Icinga-Befehle über die Icinga 2 API zu versenden, wird das cURL "
-"Modul für PHP benötigt."
+"Um externe Befehle über Icinga 2´s API zu versenden, wird das cURL Modul für "
+"PHP benötigt."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:89
-#, fuzzy
 msgid ""
 "To view the most recent state information in Icinga DB Web, the Redis module "
 "for PHP is required."
 msgstr ""
-"Um externe Icinga-Befehle über die Icinga 2 API zu versenden, wird das cURL "
+"Um die neusten Statusinformationen in Icinga DB Web zu sehen, wird das Redis "
 "Modul für PHP benötigt."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:96
 msgid "The Redis module for PHP in version 4.3 and above requires PHP 7+"
-msgstr ""
+msgstr "Das Redis Modul für PHP in Version 4.3 und höher setzt PHP 7+ voraus"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisPage.php:15
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:103
-#, fuzzy
 msgid "Icinga DB Redis"
-msgstr "Icinga %s-Sets"
+msgstr "Icinga DB Redis"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisPage.php:17
-#, fuzzy
 msgid "Please fill out the connection details to access the Icinga DB Redis."
-msgstr ""
-"Bitte gib weiter unten die Verbindungsdetails für die IDO-Datenbank der "
-"Monitoringumgebung an."
+msgstr "Bitte gib die Verbindungsdetails zum erreichen der Icinga DB Redis an."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:64
 msgid ""
 "The Icinga DB Redis will be accessed using the following connection details:"
-msgstr ""
+msgstr "Icinga DB Redis wird über die folgenden Verbindungsdetails erreicht:"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:79
 msgid "Primary"
-msgstr ""
+msgstr "Primäre"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:94
 msgid "Secondary"
-msgstr ""
+msgstr "Sekundäre"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:114
-#, fuzzy, php-format
+#, php-format
 msgid "Module configuration update successful: %s"
-msgstr "Die Ressourcen-Konfiguration wurde erfolgreich aktualisiert: %s"
+msgstr "Aktualisierung der Modul-Konfiguration war erfolgreich: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:120
-#, fuzzy, php-format
+#, php-format
 msgid "Module configuration update failed: %s"
-msgstr "Schreibe %s-Einstellungen in die Datei: %s"
+msgstr "Aktualisierung der Modul-Konfiguration schlug fehl: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/WelcomePage.php:23
-#, fuzzy
 msgid "Welcome to the configuration of Icinga DB Web!"
-msgstr "Willkommen zur Einrichtung von Icinga Web 2!"
+msgstr "Willkommen zur Einrichtung von Icinga DB Web!"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/WelcomePage.php:37
 msgid ""
 "Icinga DB Web is the UI for Icinga DB and provides a graphical interface to "
 "your monitoring environment."
 msgstr ""
+"Icinga DB Web ist die UI für Icinga DB und stellt eine grafische Oberfläche "
+"für die Monitoring-Umgebung bereit."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/WelcomePage.php:49
 msgid ""
@@ -1713,7 +1703,7 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:94
 msgid "Remove Comment"
-msgstr ""
+msgstr "Kommentar löschen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:52
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:66
@@ -1759,7 +1749,7 @@ msgstr "Ende"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:96
 msgid "Cancel Downtime"
-msgstr ""
+msgstr "Downtime beenden"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:114
 #, php-format
@@ -1786,7 +1776,7 @@ msgstr "Endzeitpunkt"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:142
 msgid "Scheduled Duration"
-msgstr ""
+msgstr "Geplante Dauer"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:149
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:158
@@ -1826,7 +1816,7 @@ msgstr ""
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:83
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:75
 msgid "Add a new comment"
-msgstr ""
+msgstr "Neuen Kommentar hinzufügen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:90
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:82
@@ -1842,7 +1832,7 @@ msgstr "Benachrichtigung"
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:92
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:84
 msgid "Send a custom notification"
-msgstr ""
+msgstr "Benutzerdefinierte Benachrichtigung senden"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:101
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:93
@@ -1886,12 +1876,12 @@ msgstr "Check-Ergebnis verarbeiten"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:125
 msgid "Submit passive check result"
-msgstr ""
+msgstr "Passives Check-Ergebnis übermitteln"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:73
 #, php-format
 msgid "Action %d"
-msgstr ""
+msgstr "Aktion %d"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:95
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/QuickTable.php:280
@@ -1903,12 +1893,12 @@ msgstr "Aktionen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:103
 msgid "Check Statistics"
-msgstr ""
+msgstr "Check Statistiken"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:127
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:102
 msgid "No comments created."
-msgstr ""
+msgstr "Keine Kommentare erstellt."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:135
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/DataTabs.php:30
@@ -1919,12 +1909,12 @@ msgstr "Benutzerdefinierte Variablen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:150
 msgid "No custom variables configured."
-msgstr ""
+msgstr "Keine benutzerdefinierte Variablen konfiguriert."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:172
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:121
 msgid "No downtimes scheduled."
-msgstr ""
+msgstr "Keine geplante Downtimes"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:184
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:205
@@ -1941,16 +1931,16 @@ msgstr "Gruppen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:197
 msgid "Not a member of any host group."
-msgstr ""
+msgstr "Kein Mitglied in einer Host-Gruppe."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:210
 msgid "Not a member of any service group."
-msgstr ""
+msgstr "Kein Mitglied in einer Service-Gruppe."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:224
 #, php-format
 msgid "Note %d"
-msgstr ""
+msgstr "Notiz %d"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:252
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1511
@@ -1960,11 +1950,11 @@ msgstr "Notizen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:279
 msgid "No users configured."
-msgstr ""
+msgstr "Keine Benutzer konfiguriert."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:285
 msgid "No user groups configured."
-msgstr ""
+msgstr "Keine Benutzergruppen konfiguriert."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:298
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/PerfdataController.php:26
@@ -1977,13 +1967,12 @@ msgstr "Performancedaten"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:301
 msgid "No performance data available."
-msgstr ""
+msgstr "Keine Performancedaten verfügbar."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:316
 #: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:39
-#, fuzzy
 msgid "Output unavailable."
-msgstr "Nicht verfügbar"
+msgstr "Ausgabe nicht verfügbar."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:324
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/output.phtml:1
@@ -1994,24 +1983,24 @@ msgstr "Plugin-Ausgabe"
 #, php-format
 msgid "Show %d comment"
 msgid_plural "Show %d comments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Zeige %d Kommentar an"
+msgstr[1] "Zeige %d Kommentare an"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:115
 #, php-format
 msgid "Show %d downtime"
 msgid_plural "Show %d downtimes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Zeige %d Downtime an"
+msgstr[1] "Zeige %d Downtimes an"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:150
 msgid "Summary"
-msgstr ""
+msgstr "Zusammenfassung"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:73
 msgctxt "verb"
 msgid "Comment"
-msgstr ""
+msgstr "Kommentieren"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:118
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/command.phtml:17
@@ -2025,13 +2014,13 @@ msgstr ""
 #, php-format
 msgctxt "...since <timespan>"
 msgid "Icinga 2 is up and running %s"
-msgstr ""
+msgstr "Icinga 2 ist gestartet und läuft %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Health.php:33
 #, php-format
 msgctxt "...since <timespan>"
 msgid "Icinga 2 or Icinga DB is not running %s"
-msgstr ""
+msgstr "Icinga 2 oder Icinga DB läuft nicht %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Health.php:41
 msgid "Icinga 2 Version"
@@ -2039,15 +2028,15 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Health.php:45
 msgid "Icinga 2 Start Time"
-msgstr ""
+msgstr "Icinga 2 Startzeit"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Health.php:49
 msgid "Last Heartbeat"
-msgstr ""
+msgstr "Letzter Heartbeat"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Health.php:53
 msgid "Active Icinga 2 Endpoint"
-msgstr ""
+msgstr "Aktiver Icinga 2 Endpunkt"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Health.php:54
 #: sources.d/icingadb-web/library/Icingadb/Widget/Health.php:58
@@ -2072,14 +2061,14 @@ msgstr "Nicht verfügbar"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Health.php:57
 msgid "Active Icinga Web Endpoint"
-msgstr ""
+msgstr "Aktiver Icinga Web Endpunkt"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/HostStatusBar.php:14
 #, php-format
 msgid "%d Host"
 msgid_plural "%d Hosts"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d Host"
+msgstr[1] "%d Hosts"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:46
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:21
@@ -2103,49 +2092,49 @@ msgstr "Gesamt"
 #, php-format
 msgctxt "<username>.."
 msgid "%s acknowledged"
-msgstr ""
+msgstr "%s bestätigte"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseCommentListItem.php:42
 #, php-format
 msgctxt "<username>.."
 msgid "%s commented"
-msgstr ""
+msgstr "%s kommentierte"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseCommentListItem.php:60
 msgid "EXPIRES"
-msgstr ""
+msgstr "ABGELAUFEN"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseDowntimeListItem.php:116
 msgid "Flexible Downtime"
-msgstr ""
+msgstr "Flexible Downtime"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseDowntimeListItem.php:117
 msgid "Fixed Downtime"
-msgstr ""
+msgstr "Feste Downtime"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseDowntimeListItem.php:135
 #, php-format
 msgctxt "<timespan>.."
 msgid "%s left"
-msgstr ""
+msgstr "%s vergangen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseDowntimeListItem.php:150
 #, php-format
 msgctxt "..<timespan>"
 msgid "in %s"
-msgstr ""
+msgstr "is %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseDowntimeListItem.php:168
 #, php-format
 msgctxt "..<timespan>"
 msgid "expires in %s"
-msgstr ""
+msgstr "Läuft ab in %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseDowntimeListItem.php:169
 #, php-format
 msgctxt "..<timespan>"
 msgid "starts in %s"
-msgstr ""
+msgstr "Startet in %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:55
 #, php-format
@@ -2159,43 +2148,39 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:178
 msgid "Comment added"
-msgstr ""
+msgstr "Kommentar hinzugefügt"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:185
-#, fuzzy, php-format
+#, php-format
 msgctxt "..<username>"
 msgid "Comment removed by %s"
-msgstr "Kommentar gelöscht"
+msgstr "Kommentar gelöscht von %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:189
-#, fuzzy
 msgid "Comment removed by author"
-msgstr "Kommentar gelöscht"
+msgstr "Kommentar gelöscht vom Autor"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:192
-#, fuzzy
 msgid "Comment expired"
-msgstr "Kommentartyp"
+msgstr "Kommentar abgelaufen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:194
 msgid "Comment removed"
-msgstr ""
+msgstr "Kommentar gelöscht"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:202
-#, fuzzy, php-format
+#, php-format
 msgctxt "..<username>"
 msgid "Downtime cancelled by %s"
-msgstr "Downtime wurde abgesagt"
+msgstr "Downtime abgebrochen %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:206
-#, fuzzy
 msgid "Downtime cancelled by author"
-msgstr "Downtime wurde abgesagt"
+msgstr "Downtime abgebrochen vom Autor"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:209
-#, fuzzy
 msgid "Downtime cancelled"
-msgstr "Downtime wurde abgesagt"
+msgstr "Downtime abgebrochen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:211
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:41
@@ -2223,37 +2208,33 @@ msgstr "Flapping beendet"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:228
 msgid "Acknowledgement set"
-msgstr ""
+msgstr "Bestätigung gesetzt"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:235
-#, fuzzy, php-format
+#, php-format
 msgctxt "..<username>"
 msgid "Acknowledgement cleared by %s"
-msgstr "Bestätigung entfernt"
+msgstr "Bestätigung entfernt von %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:239
-#, fuzzy
 msgid "Acknowledgement cleared by author"
-msgstr "Bestätigung entfernt"
+msgstr "Bestätigung entfernt vom Autor"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:242
-#, fuzzy
 msgid "Acknowledgement expired"
-msgstr "Bestätigung entfernt"
+msgstr "Bestätigung abgelaufen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:244
 msgid "Acknowledgement cleared"
-msgstr ""
+msgstr "Acknowledgement zurückgesetzt"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:265
-#, fuzzy
 msgid "Service recovered"
-msgstr "Service-Eigenschaften"
+msgstr "Service wiederhergestellt"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:267
-#, fuzzy
 msgid "Host recovered"
-msgstr "Hosteigenschaften"
+msgstr "Host wiederhergestellt"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:271
 msgid "Hard state changed"
@@ -2265,11 +2246,11 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:37
 msgid "Problem acknowledged"
-msgstr ""
+msgstr "Problem bestätigt"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:39
 msgid "Custom Notification triggered"
-msgstr ""
+msgstr "Benutzerdefinierte Benachrichtigung ausgelöst"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:43
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:31
@@ -2279,24 +2260,24 @@ msgstr "Downtime entfernt"
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:51
 #, php-format
 msgid "%s ran into a problem"
-msgstr ""
+msgstr "%s ist in ein Problem gelaufen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:53
 #, php-format
 msgid "%s recovered"
-msgstr ""
+msgstr "%s wiederhergestellt"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/PageSeparatorItem.php:32
 #, php-format
 msgid "Page %d"
-msgstr ""
+msgstr "Seite %d"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceStatusBar.php:15
 #, php-format
 msgid "%d Service"
 msgid_plural "%d Services"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d Service"
+msgstr[1] "%d Services"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:48
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:26
@@ -2325,7 +2306,7 @@ msgstr "Mehr zeigen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:36
 msgid "Waiting for Icinga DB to synchronize the state."
-msgstr ""
+msgstr "Wartet darauf, dass Icinga DB den Status synchronisiert"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:51
 #, php-format
@@ -2335,7 +2316,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-audit/application/controllers/ConfigController.php:15
 msgid "Save Configuration"
-msgstr ""
+msgstr "Konfiguration gespeichert"
 
 #: sources.d/icingaweb2-module-audit/application/controllers/LogController.php:22
 #: sources.d/icingaweb2-module-audit/configuration.php:16
@@ -2348,12 +2329,12 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:18
 msgid "Human-readable message log"
-msgstr ""
+msgstr "Menschen-lesbares Nachrichten Log"
 
 #: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:20
 msgctxt "log.type"
 msgid "None"
-msgstr ""
+msgstr "Nicht loggen"
 
 #: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:21
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:254
@@ -2366,19 +2347,19 @@ msgstr "Datei"
 
 #: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:31
 msgid "Standard Log Path"
-msgstr ""
+msgstr "Standard Log Pfad"
 
 #: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:32
 msgid "The full path to the standard log"
-msgstr ""
+msgstr "Der vollständige Pfad zum Standard Log"
 
 #: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:41
 msgid "Ident"
-msgstr ""
+msgstr "Kennung"
 
 #: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:42
 msgid "The identifier to use for syslog messages"
-msgstr ""
+msgstr "Kennung zur Nutzung in Syslog Nachrichten"
 
 #: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:50
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:115
@@ -2403,11 +2384,11 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:86
 msgid "The full path to the JSON log"
-msgstr ""
+msgstr "Der vollständige Pfad zum JSON Log"
 
 #: sources.d/icingaweb2-module-audit/application/views/scripts/log/log-empty.phtml:7
 msgid "No activity has been recorded yet."
-msgstr ""
+msgstr "Bisher keine Aktivitäten aufgezeichnet."
 
 #: sources.d/icingaweb2-module-audit/configuration.php:8
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:54
@@ -2421,7 +2402,7 @@ msgstr "Konfiguration"
 
 #: sources.d/icingaweb2-module-audit/configuration.php:11
 msgid "Allow access to the audit log"
-msgstr ""
+msgstr "Erlaube Zugriff auf das Audit Log"
 
 #: sources.d/icingaweb2-module-audit/configuration.php:15
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:36
@@ -2432,7 +2413,7 @@ msgstr "System"
 #: sources.d/icingaweb2-module-aws/application/controllers/ConfigController.php:36
 #, php-format
 msgid "Remove Key %s"
-msgstr ""
+msgstr "Entferne Schlüssel %s"
 
 #: sources.d/icingaweb2-module-aws/application/controllers/ConfigController.php:39
 msgid ""
@@ -3206,9 +3187,8 @@ msgid "Use current state (%s)"
 msgstr "Aktuellen Status benutzen (%s)"
 
 #: sources.d/icingaweb2-module-businessprocess/application/views/helpers/FormStateOverrides.php:26
-#, fuzzy
 msgid "Keep actual state"
-msgstr "Tatsächliche Startzeit"
+msgstr "Behalte aktuellen Status"
 
 #: sources.d/icingaweb2-module-businessprocess/application/views/scripts/host/show.phtml:10
 #: sources.d/icingaweb2-module-businessprocess/application/views/scripts/service/show.phtml:11
@@ -3504,7 +3484,7 @@ msgstr "%label% ist bereits in diesem Prozess definiert"
 
 #: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:38
 msgid "+ Add a dimension"
-msgstr ""
+msgstr "+ Dimension hinzufügen"
 
 #: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:70
 msgid "Slice/Filter"
@@ -3513,25 +3493,25 @@ msgstr ""
 #: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:101
 #, php-format
 msgid "Remove dimension \"%s\""
-msgstr ""
+msgstr "Dimension entfernen „%s“"
 
 #: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:107
 #, php-format
 msgid "Move dimension \"%s\" up"
-msgstr ""
+msgstr "Dimension „%s“ nach oben verschieben"
 
 #: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:113
 #, php-format
 msgid "Move dimension \"%s\" down"
-msgstr ""
+msgstr "Dimension „%s“ nach unten verschieben"
 
 #: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:206
 msgid "New dimension has been added"
-msgstr ""
+msgstr "Neue Dimension wurde hinzugefügt"
 
 #: sources.d/icingaweb2-module-cube/configuration.php:4
 msgid "Cube"
-msgstr ""
+msgstr "Würfel"
 
 #: sources.d/icingaweb2-module-cube/configuration.php:4
 #: sources.d/icingaweb2-module-reporting/configuration.php:18
@@ -3541,36 +3521,40 @@ msgstr "Reporting"
 
 #: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:32
 msgid "Show hosts status"
-msgstr ""
+msgstr "Zeige Host-Status an"
 
 #: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:33
 msgid ""
 "This shows all matching hosts and their current state in the monitoring "
 "module"
 msgstr ""
+"Das zeigt alle passenden Hosts und deren aktuellen Status im Monitoring-"
+"Modul an"
 
 #: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:46
 msgid "Show services status"
-msgstr ""
+msgstr "Zeige Service-Status an"
 
 #: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:47
 msgid ""
 "This shows all matching services and their current state in the monitoring "
 "module"
 msgstr ""
+"Das zeigt alle passenden Services und deren aktuellen Status im Monitoring-"
+"Modul an"
 
 #: sources.d/icingaweb2-module-cube/library/Cube/Web/ActionLinks.php:53
 msgid "No action links have been provided for this cube"
-msgstr ""
+msgstr "Keine Aktion für diesen Würfel bereitgestellt"
 
 #: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:34
 msgid "Cube details"
-msgstr ""
+msgstr "Würfel Details "
 
 #: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:88
 #, php-format
 msgid "Cube: %s"
-msgstr ""
+msgstr "Würfel: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:35
 #: sources.d/icingaweb2-module-director/application/forms/AddToBasketForm.php:61
@@ -3893,7 +3877,7 @@ msgstr "Datenfelder"
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:82
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/DatafieldCategoryDashlet.php:11
 msgid "Data Field Categories"
-msgstr ""
+msgstr "Datenfeld Kategorien"
 
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:99
 msgid "Custom Vars - Overview"
@@ -3931,15 +3915,15 @@ msgstr "Neues Feld"
 
 #: sources.d/icingaweb2-module-director/application/controllers/DatafieldcategoryController.php:37
 msgid "Edit a Category"
-msgstr ""
+msgstr "Kategorie bearbeiten"
 
 #: sources.d/icingaweb2-module-director/application/controllers/DatafieldcategoryController.php:39
 msgid "Add a new Data Field Category"
-msgstr ""
+msgstr "Einen neues Datenfeld-Kategorie hinzufügen"
 
 #: sources.d/icingaweb2-module-director/application/controllers/DatafieldcategoryController.php:40
 msgid "New Category"
-msgstr ""
+msgstr "Neue Kategorie"
 
 #: sources.d/icingaweb2-module-director/application/controllers/DeploymentController.php:22
 msgid "Deployment details"
@@ -4108,7 +4092,7 @@ msgstr "Vorschau der Importquelle: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:151
 msgid "Download JSON"
-msgstr ""
+msgstr "JSON herunterladen"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:222
 #, php-format
@@ -4151,27 +4135,28 @@ msgid ""
 "Your DB schema (migration #%d) is newer than your code base. Downgrading "
 "Icinga Director is not supported and might lead to unexpected problems."
 msgstr ""
+"Dein DB Schema (Migration #%d) ist neuer als deine Code-Basis. Ein Downgrade "
+"von Icinga Director ist nicht erlaubt und kann zu unvorhersehbaren Problemen "
+"führen."
 
 #: sources.d/icingaweb2-module-director/application/controllers/IndexController.php:45
 #: sources.d/icingaweb2-module-director/application/controllers/IndexController.php:52
-#, fuzzy, php-format
+#, php-format
 msgid "Icinga Director Setup: %s"
-msgstr "Icinga-Director"
+msgstr "Icinga-Director Setup: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/IndexController.php:46
-#, fuzzy
 msgid "Create Schema"
-msgstr "Datenbankschema erstellen"
+msgstr "Schema erstellen"
 
 #: sources.d/icingaweb2-module-director/application/controllers/IndexController.php:53
-#, fuzzy
 msgid "Choose DB Resource"
-msgstr "Datenbankressource"
+msgstr "Wähle eine DB Ressource"
 
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:38
 #, php-format
 msgid "Icinga 2 - Objects: %s"
-msgstr "Icinga-2-Objekte: %s"
+msgstr "Icinga 2 - Objekte: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:42
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:143
@@ -4220,11 +4205,11 @@ msgstr "Icinga 2  API - Status"
 
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:168
 msgid "Inspect Packages"
-msgstr ""
+msgstr "Inspiziere Pakete"
 
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:170
 msgid "Inspect File Content"
-msgstr ""
+msgstr "Inspiziere Dateiinhalt"
 
 #: sources.d/icingaweb2-module-director/application/controllers/JobController.php:23
 #: sources.d/icingaweb2-module-director/application/controllers/JobController.php:55
@@ -4628,7 +4613,7 @@ msgstr "Service-Sets"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:27
 msgid "Notification Templates"
-msgstr ""
+msgstr "Benachrichtigungs-Vorlagen"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:29
 msgid "Time Periods"
@@ -4820,15 +4805,19 @@ msgid ""
 "Data field categories allow to structure Data Fields. Fields with a category "
 "will be shown grouped by category."
 msgstr ""
+"Datenfeld-Kategorien erlauben es Datenfelder zu strukturieren. Felder mit "
+"einer Kategorie werden gruppiert nach ihrer Kategorie angezeigt."
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldCategoryForm.php:23
 msgid "Category name"
-msgstr ""
+msgstr "Kategorie Name"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldCategoryForm.php:25
 msgid ""
 "The unique name of the category used for grouping your custom Data Fields."
 msgstr ""
+"Der eindeutige Name der Kategorie zum gruppieren deiner benutzerspezifischen "
+"Datenfelder."
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:44
 msgid ""
@@ -4951,7 +4940,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:168
 msgid "Data Field Category"
-msgstr ""
+msgstr "Datenfeld-Kategorie"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:181
 msgid "Data type"
@@ -5961,15 +5950,12 @@ msgid "When the last notification should be sent"
 msgstr "Wann soll die letzte Nachricht versandt werden?"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:221
-#, fuzzy
 msgid ""
 "Unit is seconds unless a suffix is given. Supported suffixes include ms "
 "(milliseconds), s (seconds), m (minutes), h (hours) and d (days)."
 msgstr ""
-"Wie lang die Downtime dauert. Beeinflusst nur flexible (keine fixen) "
-"Downtimes. Zeit in Sekunden, unterstützt auch die Suffixes ms "
-"(Millisekunden), s (Sekunden), m (Minuten), h (Stunden) and d (Tage). Um "
-"\"90 Minuten\" auszudrücken könnte man 1h 30m schreiben"
+"Einheit in Sekunden, wenn keine Endung angegeben ist. Erlaubte Endungen sind "
+"ms (Millisekunden), s (Sekunden), m (Minuten), h (Stunden) and d (Tage)."
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:262
 msgid "Notification command"
@@ -6148,14 +6134,12 @@ msgid "A new %s has successfully been created"
 msgstr "Ein neuer %s wurde erfolgreich erstellt"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:133
-#, fuzzy
 msgid "This Service has been deactivated on this host"
-msgstr "Dieser Service wurde auf diesem Host geblacklisted"
+msgstr "Dieser Service wurde auf diesem Host deaktiviert"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:137
-#, fuzzy
 msgid "Reactivate"
-msgstr "Inaktiv"
+msgstr "Erneut aktivieren"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:146
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:412
@@ -6168,19 +6152,18 @@ msgid "Hints regarding this service"
 msgstr "Hinweise zu diesem Service"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:158
-#, fuzzy
 msgid "Deactivate"
-msgstr "Inaktiv"
+msgstr "Deaktiviert"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:263
-#, fuzzy, php-format
+#, php-format
 msgid "%s has been deactivated on %s"
-msgstr "%s wurde auf %s geblacklisted"
+msgstr "%s wurde auf %s deaktiviert"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:299
-#, fuzzy, php-format
+#, php-format
 msgid "%s is no longer deactivated on %s"
-msgstr "%s ist nicht länger auf %s geblacklisted"
+msgstr "%s ist nicht länger auf %s deaktiviert"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:361
 msgid ""
@@ -6931,9 +6914,8 @@ msgid "Transform to uppercase"
 msgstr "In Großbuchstaben umwandeln"
 
 #: sources.d/icingaweb2-module-director/application/forms/SelfServiceSettingsForm.php:43
-#, fuzzy
 msgid "Transform Parent Host to IP"
-msgstr "Hostname transformieren"
+msgstr "Übertrage Eltern-Host zu IP"
 
 #: sources.d/icingaweb2-module-director/application/forms/SelfServiceSettingsForm.php:45
 msgid ""
@@ -6941,14 +6923,18 @@ msgid ""
 "addresses as their \"host\" property. The Agent can be told to issue related "
 "DNS lookups on it' own"
 msgstr ""
+"Dies ist nur wichtig, wenn deine Master/Satellit Einheiten keine IP-Adresse "
+"in ihren Host-Eigenschaften haben. Dem Agent kann befohlen werden "
+"eigenständig eine DNS-Lookup durchzuführen."
 
 #: sources.d/icingaweb2-module-director/application/forms/SelfServiceSettingsForm.php:50
 msgid "Don't care, my host settings are fine"
-msgstr ""
+msgstr "Keine Sorge, meine Host-Einstellungen sind sauber"
 
 #: sources.d/icingaweb2-module-director/application/forms/SelfServiceSettingsForm.php:51
 msgid "My Agents should use DNS to look up Endpoint names"
 msgstr ""
+"Meine Agents sollen DNS benutzen zum prüfen der Hostnamen der Endpunkte"
 
 #: sources.d/icingaweb2-module-director/application/forms/SelfServiceSettingsForm.php:57
 msgid "Global Zones"
@@ -7473,7 +7459,7 @@ msgstr "Ersetzen"
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:65
 msgid "Update only"
-msgstr ""
+msgstr "Nur aktualisieren"
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:70
 msgid "Purge"
@@ -7639,6 +7625,8 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/configuration.php:46
 msgid "Allow users with Hostgroup restrictions to access the Groups field"
 msgstr ""
+"Erlaube Benutzern mit Host-Gruppen Beschränkungen den Zugriff auf "
+"Gruppenfelder"
 
 #: sources.d/icingaweb2-module-director/configuration.php:52
 msgid "Filter available service apply rules"
@@ -7831,7 +7819,7 @@ msgstr "%s verwandte Gruppenobjekte wurden erstellt"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/DatafieldCategoryDashlet.php:17
 msgid "Categories bring structure to your Data Fields"
-msgstr ""
+msgstr "Kategorien bringen Struktur in deine Datenfelder"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/DatafieldDashlet.php:11
 msgid "Define Data Fields"
@@ -8149,33 +8137,31 @@ msgstr "Icinga 2 Infrastruktur verwalten"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/InfrastructureDashboard.php:35
 msgid "Working with Agents and Config Zones"
-msgstr ""
+msgstr "Arbeite mit Agenten und Konfigurations-Zonen"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/InfrastructureDashboard.php:39
 msgid ""
 "This is where you manage your Icinga 2 infrastructure. When adding a new "
 "Icinga Master or Satellite please re-run the Kickstart Helper once."
 msgstr ""
+"Hier verwaltest du deine Icinga 2 Infrastruktur. Wenn du einen neuen Icinga "
+"Master oder Satelliten hinzugefügt hast, bitte starte den Kickstart-"
+"Assistenten einmal erneut."
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/InfrastructureDashboard.php:44
-#, fuzzy
 msgid ""
 "When you feel the desire to manually create Zone or Endpoint objects please "
 "rethink this twice. Doing so is mostly the wrong way, might lead to a dead "
 "end, requiring quite some effort to clean up the whole mess afterwards."
 msgstr ""
-"Hier werden Icinga 2 Infrastrukturkomponenten verwaltet. Beim Hinzufügen "
-"neuer Icinga-Master oder -Satelliten bitte den Kickstart-Assistenten erneut "
-"ausführen.\n"
-"\n"
 "Das Bedürfnis, neue Zonen- oder Endpunkt-Objekte manuell zu erstellen bitte "
 "zweimal überdenken. Das ist meistens der falsche Weg, kann in Sackgassen "
 "führen und damit eine Menge Arbeit beim manuellen Aufräumen verursachen."
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/InfrastructureDashboard.php:50
-#, fuzzy, php-format
+#, php-format
 msgid "Want to connect to your Icinga Agents? Have a look at our %s!"
-msgstr "Was soll als Hostname für den Icinga-2-Agent genutzt werden?"
+msgstr "Zum Icinga Agent verbinden? Schau mal auf unser %s!"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/NotificationsDashboard.php:14
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/UsersDashboard.php:15
@@ -8326,9 +8312,8 @@ msgid "Host groups"
 msgstr "Hostgruppen"
 
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDirectorObject.php:58
-#, fuzzy
 msgid "Notification Apply Rules"
-msgstr "%d Benachrichtigungs-Apply-Regeln"
+msgstr "Benachrichtigungs-Apply-Regeln"
 
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDirectorObject.php:60
 msgid "Service groups"
@@ -8469,14 +8454,12 @@ msgid "Usergroups"
 msgstr "Benutzergruppen"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:68
-#, fuzzy
 msgid "Director Object"
-msgstr "Director-Health"
+msgstr "Director-Objekt"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:79
-#, fuzzy
 msgid "All Object Types"
-msgstr "Objekttyp"
+msgstr "Alle Objekt-Typen"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:80
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/HostTemplateUsageTable.php:11
@@ -8486,9 +8469,8 @@ msgid "Objects"
 msgstr "Objekte"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:82
-#, fuzzy
 msgid "External Objects"
-msgstr "Extern"
+msgstr "Externe Objekte"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:83
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DependencyTemplateUsageTable.php:11
@@ -8498,9 +8480,8 @@ msgid "Apply Rules"
 msgstr "Apply-Regeln"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:89
-#, fuzzy
 msgid "Resolved"
-msgstr "Aufgelöst anzeigen"
+msgstr "Aufgelöst"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceLdap.php:50
 msgid "LDAP Search Base"
@@ -8571,17 +8552,18 @@ msgstr "HTTP (das ist Klartext)"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceRestApi.php:149
 msgid "HTTP Header"
-msgstr ""
+msgstr "HTTP Header"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceRestApi.php:151
-#, fuzzy
 msgid "Additional headers for the HTTP request."
-msgstr "Weitere Notizen zu diesem Objekt"
+msgstr "Weitere Headers zu dieser HTTP Anfrage."
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceRestApi.php:152
 msgid ""
 "Specify headers in text format \"Header: Value\", each header on a new line."
 msgstr ""
+"Spezifizierte Headers im Textformat „Header: Value“, jeder Header in einer "
+"neuen Zeile."
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceRestApi.php:169
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:70
@@ -10375,7 +10357,7 @@ msgstr "Datenfelder"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/DataTabs.php:24
 msgid "Data field categories"
-msgstr ""
+msgstr "Datenfeld Kategorien"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ImportsourceTabs.php:41
 msgid "Modifiers"
@@ -10418,7 +10400,7 @@ msgstr "Bereiche"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectTabs.php:137
 msgid "Packages"
-msgstr ""
+msgstr "Pakete"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectTabs.php:145
 msgid "Agent"
@@ -21498,7 +21480,7 @@ msgid ""
 msgstr ""
 "Icinga Web 2 ist bereits vollständig konfiguriert. Bedenke, dass die meisten "
 "Einstellungs-Dateien überschrieben werden, wenn Icinga Web 2 mittels dieses "
-"Assistenten neu konfiguriert wird."
+"Assistenten neu konfiguriert wird!"
 
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/form/setup-welcome.phtml:62
 msgid ""
@@ -22294,9 +22276,9 @@ msgid ""
 "The Icinga Web 2 configuration directory defaults to \"/etc/icingaweb2\", if "
 "not explicitly set in the environment variable \"ICINGAWEB_CONFIGDIR\"."
 msgstr ""
-"Das Verzeichnis für die Einstellungen von Icinga Web 2 wird durch die "
-"Umgebungsvariable \"ICINGAWEB_CONFIGDIR\" bestimmt. Standardwert: \"/etc/"
-"icingaweb2\""
+"Das Standardverzeichnis für die Icinga Web 2 Konfiguration ist „/etc/"
+"icingaweb2“, wenn es nicht explizit in der Umgebungsvariable "
+"„ICINGAWEB_CONFIGDIR“ gesetzt wurde."
 
 #~ msgid "Generated from host vars"
 #~ msgstr "Aus Host-Variablen generiert"
