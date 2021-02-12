@@ -24,8 +24,9 @@ jobs:
         run: cd ./src/ && ../bin/update
 
       - name: Open pull request
-        uses: peter-evans/create-pull-request@v2
+        uses: peter-evans/create-pull-request@v3
         with:
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           commit-message: "icinga.pot: Add latest messages"
           title: "Update template file"
           body: "Adds latest messages to the icinga template"
