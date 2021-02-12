@@ -4,21 +4,22 @@
 #
 # Contributors:
 # Yuri Konotopov <ykonotopov@gmail.com>, 2015
-# Dmitriy Q <krotesk@mail.ru>, 2021.
+# Dmitriy Q <dmitry@atsip.ru>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
 "POT-Creation-Date: 2020-07-14 06:12+0000\n"
-"PO-Revision-Date: 2021-02-12 15:32+0500\n"
-"Last-Translator: Dmitriy Q <krotesk@mail.ru>\n"
-"Language-Team: TranslAster <https://github.com/translaster>>\n"
+"PO-Revision-Date: 2021-02-12 17:02+0500\n"
+"Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
+"Language-Team: TranslAster <https://github.com/translaster>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Gtranslator 2.91.7\n"
 "X-Poedit-Basepath: ../../../src\n"
 "X-Poedit-SearchPath-0: sources.d\n"
@@ -1229,52 +1230,45 @@ msgstr ""
 "только следующие столбцы: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:50
-#, fuzzy
 msgid "Comment Environment Id"
-msgstr "Комментарии"
+msgstr "Комментарий идентификатора среды"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:51
-#, fuzzy
 msgid "Comment Object Type"
-msgstr "Комментарии"
+msgstr "Комментарий типа объекта"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:52
-#, fuzzy
 msgid "Comment Host Id"
-msgstr "Комментарии"
+msgstr "Комментарий идентификатора узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:53
-#, fuzzy
 msgid "Comment Service Id"
-msgstr "Комментарии"
+msgstr "Комментарий идентификатора службы"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:54
 msgid "Comment Name Checksum"
-msgstr ""
+msgstr "Комментарий имени контрольной суммы"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:55
 msgid "Comment Properties Checksum"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:56
-#, fuzzy
 msgid "Comment Name"
-msgstr "Комментарии"
+msgstr "Комментарий названия"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:57
-#, fuzzy
 msgid "Comment Author"
-msgstr "Комментарии"
+msgstr "Комментарий у автору"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:58
-#, fuzzy
 msgid "Comment Text"
-msgstr "Комментарии"
+msgstr "Комментарий к тексту"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:59
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:459
 msgid "Comment Type"
-msgstr ""
+msgstr "Комментарий к типу"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:60
 #, fuzzy
@@ -1303,21 +1297,19 @@ msgstr "Комментарии"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:58
 msgid "Downtime Environment Id"
-msgstr ""
+msgstr "Идентификатор среды времени простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:59
 msgid "Downtime Object Type"
-msgstr ""
+msgstr "Тип объекта времени простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:60
-#, fuzzy
 msgid "Downtime Host Id"
 msgstr "Время простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:61
-#, fuzzy
 msgid "Downtime Service Id"
-msgstr "Количество служб"
+msgstr "Время простоя службы"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:62
 msgid "Downtime Name Checksum"
@@ -1347,9 +1339,8 @@ msgid "Downtime Entry Time"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:68
-#, fuzzy
 msgid "Downtime Scheduled Start"
-msgstr "Запланированное начало"
+msgstr "Запланированное начало времени простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:69
 #, fuzzy
@@ -1431,72 +1422,63 @@ msgstr "Проверки узлов и служб"
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:78
 #: sources.d/icingaweb2-module-director/application/forms/SelfServiceSettingsForm.php:19
 msgid "Host Name"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:79
-#, fuzzy
-msgid "Host Name (CI)"
 msgstr "Имя узла"
 
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:79
+msgid "Host Name (CI)"
+msgstr "Имя узла (CI)"
+
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:80
-#, fuzzy
 msgid "Host Display Name"
-msgstr "Название группы узлов"
+msgstr "Отображаемое имя узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:81
-#, fuzzy
 msgid "Host Address (IPv4)"
-msgstr "Адрес узла"
+msgstr "Адрес узла (IPv4)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:82
-#, fuzzy
 msgid "Host Address (IPv6)"
-msgstr "Адрес узла"
+msgstr "Адрес узла (IPv6)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:83
-#, fuzzy
 msgid "Host Address (IPv4, Binary)"
-msgstr "Адрес узла"
+msgstr "Адрес узла (IPv4, двоичный)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:84
-#, fuzzy
 msgid "Host Address (IPv6, Binary)"
-msgstr "Адрес узла"
+msgstr "Адрес узла (IPv6, двоичный)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:85
-#, fuzzy
 msgid "Host Checkcommand"
-msgstr "Последняя проверка узла"
+msgstr "Команда проверки узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:86
 msgid "Host Checkcommand Id"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:87
-#, fuzzy
 msgid "Host Max Check Attempts"
-msgstr "Попытки проверки"
+msgstr "Максимальное кол-во попыток проверки узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:88
 msgid "Host Check Timeperiod"
-msgstr ""
+msgstr "Период времени проверки узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:89
 msgid "Host Check Timeperiod Id"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:90
-#, fuzzy
 msgid "Host Check Timeout"
-msgstr "Последняя проверка узла"
+msgstr "Тайм-аут проверки узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:91
 msgid "Host Check Interval"
-msgstr ""
+msgstr "Интервал проверки узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:92
 msgid "Host Check Retry Inverval"
-msgstr ""
+msgstr "Интервал повтора проверки узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:93
 #, fuzzy
@@ -1571,9 +1553,8 @@ msgid "Host Icon Image Alt"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:109
-#, fuzzy
 msgid "Host Zone"
-msgstr "Имя узла"
+msgstr "Область узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:110
 #, fuzzy
@@ -1897,34 +1878,31 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:48
 msgid "User Name Checksum"
-msgstr ""
+msgstr "Контрольная сумма имени пользователя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:49
 msgid "User Properties Checksum"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:50
-#, fuzzy
 msgid "User Name"
 msgstr "Имя пользователя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:51
-#, fuzzy
 msgid "User Name (CI)"
-msgstr "Имя пользователя"
+msgstr "Имя пользователя (CI)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:52
 msgid "User Display Name"
-msgstr ""
+msgstr "Отображаемое имя пользователя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:53
 msgid "User Email"
-msgstr ""
+msgstr "Эл.почта пользователя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:54
-#, fuzzy
 msgid "User Pager"
-msgstr "Имя пользователя"
+msgstr "Пейджер пользователя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:55
 #, fuzzy
@@ -1936,14 +1914,12 @@ msgid "User Timeperiod Id"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:57
-#, fuzzy
 msgid "User States"
-msgstr "Состояние узлов"
+msgstr "Состояния пользователя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:58
-#, fuzzy
 msgid "User Types"
-msgstr "Пользователи"
+msgstr "Типы пользователя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:59
 #, fuzzy
@@ -1963,18 +1939,16 @@ msgid "Usergroup Properties Checksum"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:43
-#, fuzzy
 msgid "Usergroup Name"
-msgstr "Название группы"
+msgstr "Название группы пользователей"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:44
-#, fuzzy
 msgid "Usergroup Name (CI)"
-msgstr "Название группы"
+msgstr "Название группы пользователей (CI)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:45
 msgid "Usergroup Display Name"
-msgstr ""
+msgstr "Отображаемое название группы пользователей"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:46
 msgid "Usergroup Zone Id"
@@ -2045,7 +2019,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:78
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:159
 msgid "Port"
-msgstr ""
+msgstr "Порт"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:63
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:76
@@ -2094,7 +2068,7 @@ msgstr "Имя пользователя"
 #: sources.d/icingaweb2/modules/setup/application/forms/DatabaseCreationPage.php:111
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:90
 msgid "Password"
-msgstr ""
+msgstr "Пароль"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:87
 #, php-format
@@ -2125,16 +2099,18 @@ msgstr ""
 #: sources.d/icingaweb2/modules/setup/library/Setup/Utils/EnableModuleStep.php:66
 #, php-format
 msgid "ERROR: %s"
-msgstr ""
+msgstr "ОШИБКА: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:16
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:122
 msgid "Icinga DB Resource"
-msgstr ""
+msgstr "Ресурс Icinga DB"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:18
 msgid "Please fill out the connection details below to access Icinga DB."
 msgstr ""
+"Пожалуйста, заполните информацию о подключении ниже чтобы получить доступ к "
+"Icinga DB."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:111
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:331
@@ -2144,7 +2120,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:203
 #: sources.d/icingaweb2/modules/setup/application/forms/LdapResourcePage.php:108
 msgid "Validation Log"
-msgstr ""
+msgstr "Журнал проверки"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:59
 msgid "Icinga DB will be accessed using the following connection details:"
@@ -2312,10 +2288,10 @@ msgstr ""
 "DB и Icinga 2."
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:38
-#, fuzzy, php-format
+#, php-format
 msgctxt "..<customvar-name>"
 msgid "Checkcommand %s"
-msgstr "Команда"
+msgstr "Команда проверки %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:39
 #, fuzzy, php-format
@@ -2324,22 +2300,22 @@ msgid "Eventcommand %s"
 msgstr "Обработчики событий"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:40
-#, fuzzy, php-format
+#, php-format
 msgctxt "..<customvar-name>"
 msgid "Host %s"
-msgstr "Узлы"
+msgstr "Узел %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:41
-#, fuzzy, php-format
+#, php-format
 msgctxt "..<customvar-name>"
 msgid "Hostgroup %s"
-msgstr "Группы узлов"
+msgstr "Группа узлов %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:42
-#, fuzzy, php-format
+#, php-format
 msgctxt "..<customvar-name>"
 msgid "Notification %s"
-msgstr "Уведомления"
+msgstr "Уведомление %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:43
 #, fuzzy, php-format
@@ -2348,45 +2324,45 @@ msgid "Notificationcommand %s"
 msgstr "Уведомления"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:44
-#, fuzzy, php-format
+#, php-format
 msgctxt "..<customvar-name>"
 msgid "Service %s"
-msgstr "Группы служб"
+msgstr "Служба %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:45
-#, fuzzy, php-format
+#, php-format
 msgctxt "..<customvar-name>"
 msgid "Servicegroup %s"
-msgstr "Группы служб"
+msgstr "Группа служб %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:46
 #, php-format
 msgctxt "..<customvar-name>"
 msgid "Timeperiod %s"
-msgstr ""
+msgstr "Период времени %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:47
-#, fuzzy, php-format
+#, php-format
 msgctxt "..<customvar-name>"
 msgid "User %s"
-msgstr "Пользователи"
+msgstr "Пользователь %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:48
-#, fuzzy, php-format
+#, php-format
 msgctxt "..<customvar-name>"
 msgid "Usergroup %s"
-msgstr "Группы служб"
+msgstr "Группа пользователей %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:122
 #: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:184
 #, php-format
 msgid "\"%s\" is not a valid relation"
-msgstr ""
+msgstr "\"%s\" недопустимое выражение"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:148
 #, php-format
 msgid "\"%s\" is not a valid column"
-msgstr ""
+msgstr "\"%s\" недопустимый столбец"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:202
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:135
@@ -2400,7 +2376,7 @@ msgstr "Дополнительные переменные"
 #, php-format
 msgctxt "..<customvar-name>"
 msgid " %s"
-msgstr ""
+msgstr " %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:160
 #: sources.d/icingaweb2/application/views/scripts/layout/menu.phtml:11
@@ -2411,7 +2387,7 @@ msgstr "Поиск"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:200
 msgid "Is not a valid column"
-msgstr ""
+msgstr "Не является допустимым столбцом"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/BaseItemList.php:83
 msgid "No items found."
@@ -2957,23 +2933,23 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:206
 msgid "Downtime cancelled by author"
-msgstr ""
+msgstr "Время простоя отменено автором"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:209
 msgid "Downtime cancelled"
-msgstr ""
+msgstr "Время простоя отменено"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:211
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:41
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:498
 msgid "Downtime ended"
-msgstr ""
+msgstr "Завершение времени простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:216
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:45
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:495
 msgid "Downtime started"
-msgstr ""
+msgstr "Начало времени простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:220
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/NotificationListItem.php:49
@@ -3381,12 +3357,12 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterForm.php:37
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:152
 msgid "Store"
-msgstr ""
+msgstr "Применить"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:334
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:347
 msgid "Dismiss"
-msgstr ""
+msgstr "Отклонить"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:342
 #, php-format
@@ -3410,7 +3386,7 @@ msgstr "%s: конфигурация"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:458
 msgid "Show source code"
-msgstr ""
+msgstr "Показать исходный код"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:460
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:531
@@ -3418,11 +3394,11 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/MonitoredObjectMappingTable.php:24
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:448
 msgid "Source"
-msgstr ""
+msgstr "Источник"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:473
 msgid "Highlight changes"
-msgstr ""
+msgstr "Выделите изменения"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:475
 #: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:418
@@ -3432,7 +3408,7 @@ msgstr "Разница"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:485
 msgid "Download process configuration"
-msgstr ""
+msgstr "Загрузка конфигурации процесса"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:487
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:213
@@ -3467,11 +3443,11 @@ msgstr "Создание"
 #: sources.d/icingaweb2-module-director/application/controllers/BasketsController.php:26
 #: sources.d/icingaweb2-module-director/application/forms/BasketUploadForm.php:43
 msgid "Upload"
-msgstr ""
+msgstr "Загрузка"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:522
 msgid "Process Configuration"
-msgstr ""
+msgstr "Конфигурация процесса"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:45
 #, php-format
@@ -3503,7 +3479,7 @@ msgstr "Далее"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/HostPciDevicesTable.php:27
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/PerformanceCounterTable.php:58
 msgid "ID"
-msgstr ""
+msgstr "ИД"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:80
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:34
@@ -3511,7 +3487,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:98
 #: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:38
 msgid "This is the unique identifier of this process"
-msgstr ""
+msgstr "Это уникальный идентификатор для этого процесса"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:92
 msgid "%value% is already defined in this process"
@@ -3532,6 +3508,8 @@ msgstr "Отображаемое имя"
 #: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:52
 msgid "Usually this name will be shown for this node. Equals ID if not given"
 msgstr ""
+"Обычно это название будет показываться для этого узла. Используется ID если "
+"не задано"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:107
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:111
@@ -3615,7 +3593,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:131
 #: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:82
 msgid "Visualization"
-msgstr ""
+msgstr "Визуализация"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:134
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:134
@@ -4133,7 +4111,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:76
 msgid "Not available"
-msgstr ""
+msgstr "Недоступен"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:79
 msgid "No Business Process has been defined for you"
@@ -4174,7 +4152,7 @@ msgstr "Нажмите, чтобы разблокировать редактир
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:80
 msgid "Unlock Editing"
-msgstr ""
+msgstr "Разблокировка редактирования"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:88
 msgid "Click to lock editing for this process"
@@ -4182,12 +4160,12 @@ msgstr "Нажмите чтобы заблокировать редактиро�
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:91
 msgid "Lock Editing"
-msgstr ""
+msgstr "Блокировка редактирования"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:102
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:115
 msgid "Modify this process"
-msgstr ""
+msgstr "Изменить этот процесс"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:105
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:118
@@ -4246,7 +4224,7 @@ msgstr "- пожалуйста выберите -"
 #: sources.d/icingaweb2-module-cube/library/Cube/Web/Form/QuickForm.php:178
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/QuickForm.php:220
 msgid "Submit"
-msgstr ""
+msgstr "Принять"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/QuickForm.php:392
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/QuickForm.php:417
@@ -4300,7 +4278,7 @@ msgstr "Отчёты"
 
 #: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:32
 msgid "Show hosts status"
-msgstr ""
+msgstr "Показать состояние узлов"
 
 #: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:33
 msgid ""
@@ -4310,7 +4288,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:46
 msgid "Show services status"
-msgstr ""
+msgstr "Показать состояние служб"
 
 #: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:47
 msgid ""
@@ -4345,7 +4323,7 @@ msgstr "Корзина"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsSnapshotsTable.php:44
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmSnapshotTable.php:42
 msgid "Snapshots"
-msgstr ""
+msgstr "Снэпшот"
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:53
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:165
@@ -4431,12 +4409,12 @@ msgstr "%s: %s (Снимок)"
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:201
 msgid "Show Basket"
-msgstr ""
+msgstr "Показать корзину"
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:207
 #: sources.d/icingaweb2-module-director/application/forms/RestoreBasketForm.php:58
 msgid "Restore"
-msgstr ""
+msgstr "Восстановление"
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:230
 msgid "Content Checksum"
@@ -4445,15 +4423,15 @@ msgstr "Контрольная сумма содержимого"
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:248
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:371
 msgid "Snapshot"
-msgstr ""
+msgstr "Снэпшот"
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:280
 msgid "new"
-msgstr ""
+msgstr "новый"
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:302
 msgid "modified"
-msgstr ""
+msgstr "изменен"
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:306
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:192
@@ -4517,7 +4495,7 @@ msgstr "Аргументы команды: %s"
 #: sources.d/icingaweb2-module-director/configuration.php:150
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/InfraTabs.php:36
 msgid "Deployments"
-msgstr ""
+msgstr "Развертывания"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:66
 msgid "Render config"
@@ -4535,7 +4513,7 @@ msgstr "Все изменения"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:174
 msgid "My changes"
-msgstr ""
+msgstr "Мои изменения"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:233
 #: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:97
@@ -4587,12 +4565,12 @@ msgstr "Сбой развертывания конфигурации"
 
 #: sources.d/icingaweb2-module-director/application/controllers/CustomvarController.php:13
 msgid "Custom Variable"
-msgstr ""
+msgstr "Пользовательская переменная"
 
 #: sources.d/icingaweb2-module-director/application/controllers/CustomvarController.php:14
 #, php-format
 msgid "Custom Variable variants: %s"
-msgstr ""
+msgstr "Варианты пользовательской переменной: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/DaemonController.php:20
 #: sources.d/icingaweb2-module-director/application/controllers/DaemonController.php:22
@@ -4609,7 +4587,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/controllers/DaemonController.php:43
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/InfrastructureDashboard.php:32
 msgid "documentation"
-msgstr ""
+msgstr "документация"
 
 #: sources.d/icingaweb2-module-director/application/controllers/DaemonController.php:46
 msgid "Icinga Director Background Daemon"
@@ -4652,11 +4630,11 @@ msgstr "Категории полей данных"
 
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:110
 msgid "Custom Vars - Overview"
-msgstr ""
+msgstr "Ползовательские переменные - обзор"
 
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:125
 msgid "List Entries"
-msgstr ""
+msgstr "Список записей"
 
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:184
 #, php-format
@@ -4680,7 +4658,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceLdap.php:70
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/SyncRuleTabs.php:39
 msgid "Properties"
-msgstr ""
+msgstr "Свойства"
 
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:354
 #, php-format
@@ -4740,7 +4718,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/HealthController.php:23
 msgid "Hint: Check Plugin"
-msgstr ""
+msgstr "Подсказка: проверьте плагин"
 
 #: sources.d/icingaweb2-module-director/application/controllers/HealthController.php:25
 msgid ""
@@ -4770,12 +4748,12 @@ msgstr "Добавить набор служб"
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:122
 #, php-format
 msgid "No such service: %s"
-msgstr ""
+msgstr "Не найдена служба: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:162
 #, php-format
 msgid "Services: %s"
-msgstr ""
+msgstr "Службы: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:165
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:233
@@ -4800,7 +4778,7 @@ msgstr "Конфигурация (только для чтения)"
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:228
 #, php-format
 msgid "Services on %s"
-msgstr ""
+msgstr "Служба %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:314
 #, php-format
@@ -4831,7 +4809,7 @@ msgstr "Показать"
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:40
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectTabs.php:132
 msgid "Inspect"
-msgstr ""
+msgstr "Проверить"
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostsController.php:40
 #: sources.d/icingaweb2-module-director/application/controllers/HostsController.php:79
@@ -4856,13 +4834,13 @@ msgstr "Добавить набор служб для %d узлов"
 #: sources.d/icingaweb2-module-director/application/controllers/ImportrunController.php:14
 #: sources.d/icingaweb2-module-director/application/controllers/ImportrunController.php:15
 msgid "Import run"
-msgstr ""
+msgstr "Запустить импорт"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:85
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:113
 #, php-format
 msgid "Import source: %s"
-msgstr ""
+msgstr "Источник импорта: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:93
 msgid "Add import source"
@@ -4877,7 +4855,7 @@ msgstr "Добавить источник импорта"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/SyncRuleTabs.php:37
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:96
 msgid "Modify"
-msgstr ""
+msgstr "Изменено"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:126
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:482
@@ -4997,7 +4975,7 @@ msgstr "Типы атрибутов"
 
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:89
 msgid "Prototypes (methods)"
-msgstr ""
+msgstr "Прототипы (методы)"
 
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:102
 msgid "Object Inspection"
@@ -5005,7 +4983,7 @@ msgstr "Проверка объекта"
 
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:144
 msgid "Icinga 2 API - Status"
-msgstr ""
+msgstr "Состояние Icinga 2 API"
 
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:168
 msgid "Inspect Packages"
@@ -5019,12 +4997,12 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/controllers/JobController.php:55
 #, php-format
 msgid "Job: %s"
-msgstr ""
+msgstr "Задание: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/JobController.php:31
 #: sources.d/icingaweb2-module-x509/application/controllers/JobsController.php:35
 msgid "New Job"
-msgstr ""
+msgstr "Новое задание"
 
 #: sources.d/icingaweb2-module-director/application/controllers/JobController.php:32
 #: sources.d/icingaweb2-module-director/application/controllers/JobsController.php:15
@@ -5033,14 +5011,14 @@ msgstr "Добавить новое задание"
 
 #: sources.d/icingaweb2-module-director/application/controllers/JobController.php:98
 msgid "Job"
-msgstr ""
+msgstr "Задание"
 
 #: sources.d/icingaweb2-module-director/application/controllers/JobsController.php:13
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/JobDashlet.php:14
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ImportTabs.php:26
 #: sources.d/icingaweb2-module-x509/configuration.php:30
 msgid "Jobs"
-msgstr ""
+msgstr "Задания"
 
 #: sources.d/icingaweb2-module-director/application/controllers/KickstartController.php:12
 msgid "Kickstart"
@@ -5110,7 +5088,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:76
 msgid "ServiceSet"
-msgstr ""
+msgstr "НаборСлужб"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:105
 #, php-format
@@ -5232,7 +5210,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:125
 msgid "Sync Properties"
-msgstr ""
+msgstr "Свойства синхронизации"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:161
 msgid "This Sync Rule is in sync and would currently not apply any changes"
@@ -5268,7 +5246,7 @@ msgstr "Добавить правило синхронизации"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/SyncRuleTabs.php:29
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/SyncRuleTabs.php:50
 msgid "Sync rule"
-msgstr ""
+msgstr "Правило синхронизации"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:511
 msgid "Add sync property rule"
@@ -5276,12 +5254,12 @@ msgstr "Добавить свойство правила синхронизац�
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:516
 msgid "Sync properties"
-msgstr ""
+msgstr "Свойства синхронизации"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:544
 #, php-format
 msgid "Sync \"%s\": %s"
-msgstr ""
+msgstr "Синхронизация \"%s\": %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:550
 #, php-format
@@ -5290,7 +5268,7 @@ msgstr "Добавить свойство синхронизации: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:579
 msgid "Sync history"
-msgstr ""
+msgstr "История синхронизации"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncrulesController.php:28
 msgid "Add a new Sync Rule"
@@ -5376,32 +5354,32 @@ msgstr "Шаблон команды"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:21
 msgid "Host Template Choice"
-msgstr ""
+msgstr "Выбор шаблона узла"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:22
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/HostTemplatesDashlet.php:11
 msgid "Host Templates"
-msgstr ""
+msgstr "Шаблоны узла"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:24
 msgid "Service Template Choice"
-msgstr ""
+msgstr "Выбор шаблона службы"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:25
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/ServiceTemplatesDashlet.php:11
 msgid "Service Templates"
-msgstr ""
+msgstr "Шаблоны служб"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:26
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/ServiceSetsDashlet.php:11
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarTable.php:45
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarVariantsTable.php:60
 msgid "Service Sets"
-msgstr ""
+msgstr "Наборы служб"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:27
 msgid "Notification Templates"
-msgstr ""
+msgstr "Шаблоны уведомления"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:29
 msgid "Time Periods"
@@ -5419,11 +5397,11 @@ msgstr "Списки данных"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:32
 msgid "Import Sources"
-msgstr ""
+msgstr "Импорт источников"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:33
 msgid "Sync Rules"
-msgstr ""
+msgstr "Правила синхронизации"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:34
 msgid "Job Definitions"
@@ -5482,7 +5460,7 @@ msgstr "Корзина была загружена"
 #: sources.d/icingaweb2-module-director/application/forms/CustomvarForm.php:16
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarTable.php:41
 msgid "Variable name"
-msgstr ""
+msgstr "Имя переменной"
 
 #: sources.d/icingaweb2-module-director/application/forms/CustomvarForm.php:21
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:50
@@ -5709,7 +5687,7 @@ msgstr "Тип поля"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatalistEntryTable.php:54
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/PerformanceCounterTable.php:35
 msgid "Key"
-msgstr ""
+msgstr "Ключ"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistEntryForm.php:24
 msgid ""
@@ -5751,7 +5729,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistForm.php:13
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatalistTable.php:31
 msgid "List name"
-msgstr ""
+msgstr "Название списка"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistForm.php:15
 msgid ""
@@ -5768,7 +5746,7 @@ msgstr "Список данных"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorJobForm.php:17
 msgid "Job Type"
-msgstr ""
+msgstr "Тип задания"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorJobForm.php:21
 msgid "These are different available job types"
@@ -5809,7 +5787,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/VeeamBackupRunDetails.php:36
 #: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:21
 msgid "Job name"
-msgstr ""
+msgstr "Название задания"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorJobForm.php:74
 msgid ""
@@ -5859,7 +5837,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/IcingaAddServiceSetForm.php:86
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceSetForm.php:85
 msgid "Service set"
-msgstr ""
+msgstr "Набор служб"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaAddServiceSetForm.php:88
 msgid "The service Set that should be assigned"
@@ -5943,11 +5921,11 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:32
 msgid "Description of the argument"
-msgstr ""
+msgstr "Описание этого аргумента"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:36
 msgid "Value type"
-msgstr ""
+msgstr "Тип значения"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:38
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:77
@@ -5960,7 +5938,7 @@ msgstr "Строка"
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:39
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:78
 msgid "Icinga DSL"
-msgstr ""
+msgstr "Icinga DSL"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:42
 msgid ""
@@ -5983,7 +5961,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:67
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierArrayElementByPosition.php:41
 msgid "Position"
-msgstr ""
+msgstr "Позиция"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:69
 msgid ""
@@ -6022,7 +6000,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:107
 msgid "Repeat key"
-msgstr ""
+msgstr "Повтор ключа"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:109
 msgid ""
@@ -6032,7 +6010,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:115
 msgid "Skip key"
-msgstr ""
+msgstr "Пропуск ключа"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:117
 msgid ""
@@ -6240,7 +6218,7 @@ msgstr "Дочерний узел"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:234
 msgid "The child host."
-msgstr ""
+msgstr "Дочерний узел."
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:246
 msgid "Child Service"
@@ -6473,7 +6451,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostGroupForm.php:14
 msgid "Hostgroup"
-msgstr ""
+msgstr "Группа узлов"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostGroupForm.php:16
 msgid "Icinga object name for this host group"
@@ -6481,7 +6459,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostSelfServiceForm.php:25
 msgid "Host name"
-msgstr ""
+msgstr "Имя узла"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostSelfServiceForm.php:31
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:335
@@ -6495,11 +6473,11 @@ msgstr "Ключ API"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostSelfServiceForm.php:56
 msgid "Register"
-msgstr ""
+msgstr "Регистрация"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:16
 msgid "The name of the host"
-msgstr ""
+msgstr "Имя узла"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:23
 msgid "host var name"
@@ -6512,12 +6490,12 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:32
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceVarForm.php:32
 msgid "Format"
-msgstr ""
+msgstr "Формат"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:33
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceVarForm.php:33
 msgid "value format"
-msgstr ""
+msgstr "значение формата"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaImportObjectForm.php:16
 msgid ""
@@ -6585,7 +6563,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:156
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDirectorObject.php:63
 msgid "User groups"
-msgstr ""
+msgstr "Группы пользователей"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:158
 msgid "User groups that should be notified by this notifications"
@@ -6794,7 +6772,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:137
 msgid "Reactivate"
-msgstr ""
+msgstr "Повторно активирован"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:146
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:412
@@ -6856,7 +6834,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:445
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/IcingaObjectFieldLoader.php:266
 msgid "Custom properties"
-msgstr ""
+msgstr "Пользовательские свойства"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:594
 msgid "Choose the host this single service should be assigned to"
@@ -14003,6 +13981,7 @@ msgstr ""
 #: sources.d/icingaweb2/application/controllers/RoleController.php:41
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:199
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:108
+#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:57
 msgid "Permissions"
 msgstr ""
 
@@ -15729,12 +15708,6 @@ msgstr "Разрешено всё"
 msgid "Module"
 msgstr "Модуль"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:41
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:199
-#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:57
-msgid "Permissions"
-msgstr "Разрешения"
-
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:245
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:118
 msgid "Restrictions"
@@ -16456,8 +16429,8 @@ msgstr ""
 #, php-format
 msgid "Module \"%s\" can't be enabled. Module has unmet dependencies"
 msgstr ""
-"Не удается обработать строку %d в %s: строка не указывает пару ключ:значение "
-"и не является частью описания (отступ с одним пробелом)"
+"Модуль \"%s\" не может быть включен. Модуль имеет неудовлетворенные "
+"зависимости"
 
 #: sources.d/icingaweb2/library/Icinga/Application/Modules/Module.php:990
 msgid "This module has no description"
@@ -18047,9 +18020,9 @@ msgstr "Незамедлительно провести следующую ак�
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/CheckNowCommandForm.php:80
 msgid "Scheduling check.."
 msgid_plural "Scheduling checks.."
-msgstr[0] "Проверка расписания"
-msgstr[1] "Проверка расписаний"
-msgstr[2] ""
+msgstr[0] "Проверка расписания.."
+msgstr[1] "Проверка расписаний.."
+msgstr[2] "Проверка расписаний.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/DeleteCommentCommandForm.php:40
 msgid "Delete this comment"
@@ -18121,7 +18094,7 @@ msgid "Processing check result.."
 msgid_plural "Processing check results.."
 msgstr[0] "Обработка результата проверки.."
 msgstr[1] "Обработка результатов проверки.."
-msgstr[2] ""
+msgstr[2] "Обработка результатов проверки.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:125
 msgctxt "icinga.state"
@@ -18782,11 +18755,11 @@ msgstr "Показать подробную информацию о службе
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:38
 msgid "Min"
-msgstr "Мин."
+msgstr "Мин"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:39
 msgid "Max"
-msgstr "Макс."
+msgstr "Макс"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:97
 #, php-format
@@ -21669,7 +21642,7 @@ msgstr ""
 
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/form/setup-welcome.phtml:108
 msgid "Icinga Web 2 documentation"
-msgstr ""
+msgstr "Документация Icinga Web 2"
 
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/index/index.phtml:23
 msgctxt "setup.progress"
@@ -21679,7 +21652,7 @@ msgstr "Добро пожаловать"
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/index/index.phtml:34
 msgctxt "setup.progress"
 msgid "Modules"
-msgstr ""
+msgstr "Модули"
 
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/index/index.phtml:50
 msgctxt "setup.progress"
@@ -21694,7 +21667,7 @@ msgstr "Конфигурация"
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/index/index.phtml:126
 msgctxt "setup.progress"
 msgid "Finish"
-msgstr ""
+msgstr "Завершено"
 
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:3
 msgid "Congratulations! Icinga Web 2 has been successfully set up."
@@ -21720,25 +21693,25 @@ msgstr ""
 #, php-format
 msgctxt "setup.requirement.class"
 msgid "The %s class is available."
-msgstr ""
+msgstr "Доступен класс %s."
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/ClassRequirement.php:31
 #, php-format
 msgctxt "setup.requirement.class"
 msgid "The %s is available."
-msgstr ""
+msgstr "%s доступен."
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/ClassRequirement.php:37
 #, php-format
 msgctxt "setup.requirement.class"
 msgid "The %s class is missing."
-msgstr ""
+msgstr "Класс %s отсутствует."
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/ClassRequirement.php:41
 #, php-format
 msgctxt "setup.requirement.class"
 msgid "The %s is missing."
-msgstr ""
+msgstr "%s отсутствует."
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/ConfigDirectoryRequirement.php:14
 msgid "Read- and writable configuration directory"
@@ -21747,22 +21720,22 @@ msgstr "Каталог конфигурации для чтения и запи�
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/ConfigDirectoryRequirement.php:26
 #, php-format
 msgid "The directory %s is read- and writable."
-msgstr ""
+msgstr "Каталог %s доступен для чтения и записи."
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/ConfigDirectoryRequirement.php:31
 #, php-format
 msgid "The directory %s is not writable."
-msgstr ""
+msgstr "Каталог %s недоступен для записи."
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/ConfigDirectoryRequirement.php:32
 #, php-format
 msgid "The directory %s is not readable."
-msgstr ""
+msgstr "Каталог %s недоступен для чтения."
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/ConfigDirectoryRequirement.php:38
 #, php-format
 msgid "The directory %s does not exist."
-msgstr ""
+msgstr "Каталог %s не существует."
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/OSRequirement.php:15
 #, php-format
@@ -21974,7 +21947,7 @@ msgstr "Логин \"%s\" уже существует..."
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/DatabaseStep.php:130
 #, php-format
 msgid "Creating login \"%s\"..."
-msgstr ""
+msgstr "Создание логина \"%s\"..."
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/DatabaseStep.php:86
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/DatabaseStep.php:137
