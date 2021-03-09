@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-03-08 15:30+0000\n"
+"POT-Creation-Date: 2021-03-09 10:28+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,10 +21,44 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 2.2.1\n"
 
+#: sources.d/icingadb-web/application/controllers/CommandTransportController.php:30
+msgid "Create Command Transport"
+msgstr "Створити Командний Транспорт"
+
+#: sources.d/icingadb-web/application/controllers/CommandTransportController.php:55
+#: sources.d/icingadb-web/application/controllers/CommandTransportController.php:124
+#, fuzzy
+msgid "Unknown transport"
+msgstr "Невідомий тип"
+
+#: sources.d/icingadb-web/application/controllers/CommandTransportController.php:74
+#, fuzzy, php-format
+msgid "Command Transport: %s"
+msgstr "Командні транспорти"
+
+#: sources.d/icingadb-web/application/controllers/CommandTransportController.php:90
+#, fuzzy
+msgid "Add Command Transport"
+msgstr "Командний транспорт"
+
+#: sources.d/icingadb-web/application/controllers/CommandTransportController.php:113
+#, fuzzy, php-format
+msgid "Remove Command Transport: %s"
+msgstr "Видалити командний транспорт %s"
+
+#: sources.d/icingadb-web/application/controllers/CommandTransportController.php:128
+#, fuzzy
+msgid "Position out of bounds"
+msgstr "Навігацію не знайдено"
+
 #: sources.d/icingadb-web/application/controllers/CommentController.php:28
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:41
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:110
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:82
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:43
+#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:38
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:43
+#: sources.d/icingadb-web/application/forms/Command/Object/SendCustomNotificationForm.php:39
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:37
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:92
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:77
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:35
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentController.php:57
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:408
@@ -44,13 +78,13 @@ msgstr "Коментар"
 msgid "Comment not found"
 msgstr "Коментар не знайдено"
 
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:27
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:165
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:24
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:143
 #: sources.d/icingadb-web/application/controllers/HostController.php:73
 #: sources.d/icingadb-web/application/controllers/ServiceController.php:72
 #: sources.d/icingadb-web/configuration.php:160
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:121
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:92
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:118
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:91
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentController.php:74
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentsController.php:59
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentsController.php:64
@@ -64,23 +98,24 @@ msgstr "Коментар не знайдено"
 msgid "Comments"
 msgstr "Коментарі"
 
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:48
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:49
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:45
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:50
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:252
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:43
 msgid "Entry Time"
 msgstr "Час запису"
 
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:49
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:50
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:46
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:51
 #: sources.d/icingadb-web/application/controllers/HostController.php:232
 #: sources.d/icingadb-web/application/controllers/ServicesController.php:59
+#: sources.d/icingadb-web/application/forms/ApiTransportForm.php:33
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:55
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:64
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:69
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:85
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostStatistics.php:45
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:58
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:57
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:158
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:228
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:181
@@ -118,10 +153,10 @@ msgstr[0] "Хост"
 msgstr[1] "Хости"
 msgstr[2] "Хостів"
 
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:50
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:51
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:47
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:52
 #: sources.d/icingadb-web/application/controllers/ServiceController.php:193
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:80
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:79
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ServiceStatistics.php:49
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:159
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:256
@@ -144,8 +179,8 @@ msgstr[0] "Сервіс"
 msgstr[1] "Сервіси"
 msgstr[2] "Сервісів"
 
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:51
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:52
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:48
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:53
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:27
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/ActivityLogInfo.php:538
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:47
@@ -158,80 +193,28 @@ msgstr[2] "Сервісів"
 msgid "Author"
 msgstr "Автор"
 
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:52
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:49
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:120
+#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:74
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/DisableNotificationsExpireCommandForm.php:43
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:96
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:92
 msgid "Expire Time"
 msgstr "Час закінчення"
 
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:96
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:191
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:93
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:169
 #, php-format
 msgid "Show all %d comments"
 msgstr "Показати всі %d коментарі"
 
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:112
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:150
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:111
 msgid "Remove Comments"
 msgstr "Видалити Коментарі"
 
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:129
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentsController.php:97
-#, php-format
-msgid "Confirm removal of %d comments."
-msgstr "Підвердіть видалення %d коментарів."
-
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:153
-msgid "Remove comments"
-msgstr "Видалити коментарі"
-
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:195
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comments/show.phtml:11
-#, php-format
-msgid "Remove %d comments"
-msgstr "Видалити %d коментарів"
-
-#: sources.d/icingadb-web/application/controllers/ConfigController.php:43
-#: sources.d/icingadb-web/application/controllers/ConfigController.php:54
-msgid "Create Command Transport"
-msgstr "Створити Командний Транспорт"
-
-#: sources.d/icingadb-web/application/controllers/ConfigController.php:70
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:273
-msgid "Command transport successfully created"
-msgstr "Командний транспорт успішно створено"
-
-#: sources.d/icingadb-web/application/controllers/ConfigController.php:85
-msgid "Delete Command Transport"
-msgstr "Видалити Командний Транспорт"
-
-#: sources.d/icingadb-web/application/controllers/ConfigController.php:107
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:194
-#, php-format
-msgid "Command transport \"%s\" successfully removed"
-msgstr "Командний транспорт \"%s\" успішно видалено"
-
-#: sources.d/icingadb-web/application/controllers/ConfigController.php:125
-msgid "Update Command Transport"
-msgstr "Оновити Командний Транспорт"
-
-#: sources.d/icingadb-web/application/controllers/ConfigController.php:149
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:234
-#, php-format
-msgid "Command transport \"%s\" successfully updated"
-msgstr "Командний транспорт \"%s\" успішно оновлено"
-
-#: sources.d/icingadb-web/application/controllers/ConfigController.php:163
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:245
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportReorderForm.php:55
-#, php-format
-msgid "Command transport \"%s\" not found"
-msgstr "Командний транспорт \"%s\" не знайдено"
-
 #: sources.d/icingadb-web/application/controllers/DowntimeController.php:24
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:100
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:91
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:95
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:86
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimeController.php:67
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-description.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:112
@@ -244,13 +227,13 @@ msgstr "Простій"
 msgid "Downtime not found"
 msgstr "Простій не знайдено"
 
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:27
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:170
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:28
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:152
 #: sources.d/icingadb-web/application/controllers/HostController.php:94
 #: sources.d/icingadb-web/application/controllers/ServiceController.php:92
 #: sources.d/icingadb-web/configuration.php:156
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:166
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:111
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:163
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:110
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimeController.php:94
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimesController.php:66
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimesController.php:71
@@ -263,32 +246,35 @@ msgstr "Простій не знайдено"
 msgid "Downtimes"
 msgstr "Простої"
 
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:48
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:49
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:249
 msgid "Is In Effect"
 msgstr "Діє"
 
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:53
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:54
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:59
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:254
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:79
 msgid "Start Time"
 msgstr "Час початку"
 
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:54
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:55
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:70
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:255
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:89
 msgid "End Time"
 msgstr "Час завершення"
 
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:55
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:56
 msgid "Scheduled Start Time"
 msgstr "Запланований час початку"
 
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:56
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:57
 msgid "Scheduled End Time"
 msgstr "Запланований час завершеня"
 
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:57
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:58
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:113
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:52
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/DeploymentInfo.php:83
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/SyncRunDetails.php:26
@@ -301,43 +287,28 @@ msgstr "Запланований час завершеня"
 msgid "Duration"
 msgstr "Тривалість"
 
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:101
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:196
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:102
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:178
 #, php-format
 msgid "Show all %d downtimes"
 msgstr "Показати всі %d простої"
 
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:117
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:155
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:120
 msgid "Cancel Downtimes"
 msgstr "Скасувати простої"
-
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:134
-#, php-format
-msgid "Confirm cancellation of %d downtimes."
-msgstr "Підтвердити скасування %d простоїв."
-
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:158
-msgid "Cancel downtimes"
-msgstr "Скасувати простої"
-
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:200
-#, php-format
-msgid "Cancel %d downtimes"
-msgstr "Скасувати %d простоїв"
 
 #: sources.d/icingadb-web/application/controllers/ErrorController.php:82
 #: sources.d/icingaweb2-module-x509/application/views/scripts/missing-resource.phtml:5
 msgid "Database not configured"
 msgstr "Не налаштовано базу даних"
 
-#: sources.d/icingadb-web/application/controllers/HealthController.php:22
+#: sources.d/icingadb-web/application/controllers/HealthController.php:24
 #: sources.d/icingadb-web/configuration.php:193
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/MainTabs.php:31
 msgid "Health"
 msgstr "Здоров'я"
 
-#: sources.d/icingadb-web/application/controllers/HealthController.php:39
+#: sources.d/icingadb-web/application/controllers/HealthController.php:41
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:37
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:61
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:97
@@ -348,15 +319,15 @@ msgstr ""
 "Виглядає наче Icinga DB не запущено. Впевніться що Icinga DB запущена та "
 "виконує записи у базу даних."
 
-#: sources.d/icingadb-web/application/controllers/HealthController.php:54
+#: sources.d/icingadb-web/application/controllers/HealthController.php:56
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:62
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:115
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:139
 msgid "Host Checks"
 msgstr "Перевірки хостів"
 
-#: sources.d/icingadb-web/application/controllers/HealthController.php:57
-#: sources.d/icingadb-web/application/controllers/HealthController.php:70
+#: sources.d/icingadb-web/application/controllers/HealthController.php:59
+#: sources.d/icingadb-web/application/controllers/HealthController.php:72
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/MemoryUsage.php:33
 #: sources.d/icingaweb2/application/controllers/UserController.php:81
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:25
@@ -366,21 +337,21 @@ msgstr "Перевірки хостів"
 msgid "Active"
 msgstr "Активні"
 
-#: sources.d/icingadb-web/application/controllers/HealthController.php:61
-#: sources.d/icingadb-web/application/controllers/HealthController.php:74
+#: sources.d/icingadb-web/application/controllers/HealthController.php:63
+#: sources.d/icingadb-web/application/controllers/HealthController.php:76
 msgid "Passive"
 msgstr "Пасивні"
 
-#: sources.d/icingadb-web/application/controllers/HealthController.php:67
+#: sources.d/icingadb-web/application/controllers/HealthController.php:69
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:85
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:121
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:143
 msgid "Service Checks"
 msgstr "Перевірки сервісів"
 
-#: sources.d/icingadb-web/application/controllers/HealthController.php:84
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:380
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:147
+#: sources.d/icingadb-web/application/controllers/HealthController.php:86
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:373
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:146
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/info.phtml:83
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:203
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:205
@@ -470,7 +441,7 @@ msgstr "Групу хостів не знайдено"
 
 #: sources.d/icingadb-web/application/controllers/HostgroupsController.php:20
 #: sources.d/icingadb-web/configuration.php:181
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:190
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:187
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/HostGroupsDashlet.php:11
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:560
 msgid "Host Groups"
@@ -613,8 +584,10 @@ msgid "Show all %d hosts"
 msgstr "Показати всі %d хости"
 
 #: sources.d/icingadb-web/application/controllers/NotificationsController.php:20
+#: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:34
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:36
 #: sources.d/icingadb-web/configuration.php:164
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:272
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:269
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:28
 #: sources.d/icingaweb2-module-director/configuration.php:137
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/NotificationApplyDashlet.php:13
@@ -674,7 +647,7 @@ msgstr "Групу сервісів не знайдено"
 
 #: sources.d/icingadb-web/application/controllers/ServicegroupsController.php:20
 #: sources.d/icingadb-web/configuration.php:185
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:203
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:200
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:23
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/ServiceGroupsDashlet.php:11
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:482
@@ -733,8 +706,8 @@ msgid "User not found"
 msgstr "Користувача не знайдено"
 
 #: sources.d/icingadb-web/application/controllers/UserController.php:47
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:65
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:120
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:61
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:102
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:10
 msgid "Details"
 msgstr "Детально"
@@ -772,7 +745,7 @@ msgstr "Групу користувачів не знайдено"
 
 #: sources.d/icingadb-web/application/controllers/UsergroupsController.php:27
 #: sources.d/icingadb-web/configuration.php:175
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:278
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:275
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/UserGroupsDashlet.php:11
 #: sources.d/icingaweb2/application/controllers/GroupController.php:26
 #: sources.d/icingaweb2/application/controllers/GroupController.php:401
@@ -783,7 +756,7 @@ msgstr "Групи користувачів"
 
 #: sources.d/icingadb-web/application/controllers/UsersController.php:27
 #: sources.d/icingadb-web/configuration.php:171
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:274
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:271
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:131
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDirectorObject.php:62
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceCoreApi.php:62
@@ -814,6 +787,622 @@ msgstr "Електронна пошта"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:337
 msgid "Pager Address / Number"
 msgstr "Адреса/номер пейджеру"
+
+#: sources.d/icingadb-web/application/forms/ApiTransportForm.php:23
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:224
+msgid "Transport Name"
+msgstr "Назва транспорту"
+
+#: sources.d/icingadb-web/application/forms/ApiTransportForm.php:34
+#, fuzzy
+msgid "Hostname or address of the Icinga master"
+msgstr "Назва хоста або адреса віддаленого екземпляру Icinga"
+
+#: sources.d/icingadb-web/application/forms/ApiTransportForm.php:40
+#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:59
+#: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:68
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:73
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:89
+#: sources.d/icingaweb2-module-director/application/forms/IcingaEndpointForm.php:36
+#: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:141
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/NetworkAdaptersTable.php:54
+#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:53
+#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:45
+#: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:125
+#: sources.d/icingaweb2/application/forms/Config/Resource/LdapResourceForm.php:60
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/ApiTransportForm.php:41
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/RemoteTransportForm.php:150
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:101
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:98
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:78
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:159
+msgid "Port"
+msgstr "Порт"
+
+#: sources.d/icingadb-web/application/forms/ApiTransportForm.php:48
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/ApiTransportForm.php:51
+msgid "API Username"
+msgstr "Ім'я користувача API"
+
+#: sources.d/icingadb-web/application/forms/ApiTransportForm.php:49
+#, fuzzy
+msgid "User to authenticate with using HTTP Basic Auth"
+msgstr "Користувачі будуть використовувати для автентифікації %s."
+
+#: sources.d/icingadb-web/application/forms/ApiTransportForm.php:55
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/ApiTransportForm.php:63
+msgid "API Password"
+msgstr "Пароль API"
+
+#: sources.d/icingadb-web/application/forms/ApiTransportForm.php:59
+#: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:125
+#: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:140
+#: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:137
+#: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:152
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:62
+#: sources.d/icingaweb2-module-x509/application/forms/Config/SniConfigForm.php:45
+#: sources.d/icingaweb2/application/forms/Announcement/AnnouncementForm.php:85
+#: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:69
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupForm.php:34
+msgid "Save"
+msgstr "Зберегти"
+
+#: sources.d/icingadb-web/application/forms/ApiTransportForm.php:80
+#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:89
+#: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:123
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:342
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:418
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:251
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:369
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Setup/IdoResourcePage.php:143
+#: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:214
+#: sources.d/icingaweb2/modules/setup/application/forms/DbResourcePage.php:117
+#: sources.d/icingaweb2/modules/setup/application/forms/LdapResourcePage.php:119
+#, php-format
+msgid "Failed to successfully validate the configuration: %s"
+msgstr "Не вдалося успішно провести валідацію конфігурації: %s"
+
+#: sources.d/icingadb-web/application/forms/ApiTransportForm.php:88
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:247
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:379
+msgid "Force Changes"
+msgstr "Змінити примусово"
+
+#: sources.d/icingadb-web/application/forms/ApiTransportForm.php:89
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:248
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:381
+msgid "Check this box to enforce changes without connectivity validation"
+msgstr "Встановіть цей прапорець для затвердження змін без перевірки з'єднання"
+
+#: sources.d/icingadb-web/application/forms/Command/CommandForm.php:106
+msgid ""
+"Some commands were not transmitted. Please check the log. The first error "
+"follows."
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:26
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:91
+msgid "Active Host Checks"
+msgstr "Активні перевірки хостів"
+
+#: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:28
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:100
+msgid "Active Service Checks"
+msgstr "Активні перевірки сервісів"
+
+#: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:30
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:109
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:208
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:210
+msgid "Event Handlers"
+msgstr "Обробники подій"
+
+#: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:32
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:44
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:118
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:58
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:8
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:10
+msgid "Flap Detection"
+msgstr "Контроль флепінгу"
+
+#: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:36
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:73
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:291
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/PerfdataController.php:26
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/PerfdataController.php:56
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/VCenterTabs.php:36
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:188
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:79
+msgid "Performance Data"
+msgstr "Дані продуктивності"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:28
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:23
+msgid ""
+"This command is used to acknowledge host or service problems. When a problem "
+"is acknowledged, future notifications about problems are temporarily "
+"disabled until the host or service recovers."
+msgstr ""
+"Ця команда використовується для підтвердження проблем хостів або сервісів. "
+"Коли проблему підтверджено, майбутні сповіщення про проблеми тимчасово "
+"припиняються до поновлення хоста або сервіса."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:45
+#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:40
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:45
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:56
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:47
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:67
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:48
+#, fuzzy
+msgid ""
+"If you work with other administrators, you may find it useful to share "
+"information about the host or service that is having problems. Make sure you "
+"enter a brief description of what you are doing."
+msgstr ""
+"Якщо ви працюєте з іншими адміністраторами, ви можете поділитися з ними "
+"інформацією про проблемний хост або сервіс. Віедіть короткий опис ваших дій."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:57
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:67
+msgid "Persistent Comment"
+msgstr "Постійний коментар"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:60
+#, fuzzy
+msgid ""
+"If you want the comment to remain even when the acknowledgement is removed, "
+"check this option."
+msgstr ""
+"При виборі цієї опції коментар залишиться навіть після видалення "
+"підтвердження."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:71
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:132
+msgid "Send Notification"
+msgstr "Надіслати сповіщення"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:74
+#, fuzzy
+msgid ""
+"If you want an acknowledgement notification to be sent out to the "
+"appropriate contacts, check this option."
+msgstr ""
+"Вимкніть цю опцію якщо не хочете надсилати сповіщення про підтвердження "
+"відповідним контактам."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:85
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:120
+msgid "Sticky Acknowledgement"
+msgstr "Закріплене підтвердження"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:88
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:123
+msgid ""
+"If you want the acknowledgement to remain until the host or service recovers "
+"even if the host or service changes state, check this option."
+msgstr ""
+"При виборі цієї опції підтвердження залишиться допоки хост або сервіс не "
+"прийде до ладу, навіть якщо хост або сервіс змінить стан."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:104
+#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:58
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:79
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:77
+msgid "Use Expire Time"
+msgstr "Використати час закінчення"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:105
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:82
+msgid "If the acknowledgement should expire, check this option."
+msgstr "Якщо підтвердження повинне сплинути, виберіть цю опцію."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:121
+#, fuzzy
+msgid "Choose the date and time when Icinga should delete the acknowledgement."
+msgstr "Зазначити час та дату запланованої перевірки."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:135
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:35
+msgid "Acknowledge problem"
+msgid_plural "Acknowledge problems"
+msgstr[0] "Підтвердити проблему"
+msgstr[1] "Підтвердити проблеми"
+msgstr[2] "Підтвердити проблеми"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:27
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:22
+msgid "This command is used to add host or service comments."
+msgstr ""
+"Ця команда використовується для додання коментарів до хостів або сервісів."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:59
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:79
+#, fuzzy
+msgid "If the comment should expire, check this option."
+msgstr "Якщо підтвердження повинне сплинути, виберіть цю опцію."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:75
+#, fuzzy
+msgid "Choose the date and time when Icinga should delete the comment."
+msgstr "Зазначити час та дату запланованої перевірки."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:89
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:31
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/comments.phtml:7
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/comments.phtml:19
+msgid "Add comment"
+msgid_plural "Add comments"
+msgstr[0] "Додати коментар"
+msgstr[1] "Додати коментарі"
+msgstr[2] "Додати коментарі"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/CheckNowForm.php:23
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/CheckNowCommandForm.php:81
+msgid "Scheduling check.."
+msgid_plural "Scheduling checks.."
+msgstr[0] "Планування перевірки.."
+msgstr[1] "Планування перевірок.."
+msgstr[2] "Планування перевірок.."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/CheckNowForm.php:40
+#, fuzzy
+msgid "Check Now"
+msgstr "Перевірити зараз"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/CheckNowForm.php:42
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/CheckNowCommandForm.php:45
+msgid "Schedule the next active check to run immediately"
+msgstr "Запланувати проведення наступної активної перевірки невідкладно"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/DeleteCommentForm.php:33
+#, fuzzy
+msgid "Remove Comment"
+msgid_plural "Remove Comments"
+msgstr[0] "Видалити коментар"
+msgstr[1] "Видалити коментар"
+msgstr[2] "Видалити коментар"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/DeleteDowntimeForm.php:35
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:93
+#, fuzzy
+msgid "Delete downtime"
+msgid_plural "Delete donwtimes"
+msgstr[0] "Видалити простій"
+msgstr[1] "Видалити простій"
+msgstr[2] "Видалити простій"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:23
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:20
+msgid "This command is used to submit passive host or service check results."
+msgstr ""
+"Ця команда використовується для відправлення результатів пасивних перевірок "
+"хостів або сервісів."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:42
+#: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:42
+#: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:143
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/DatastoreController.php:48
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/ObjectsTable.php:51
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmDatastoresTable.php:52
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:29
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Summaries.php:195
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:55
+msgid "Status"
+msgstr "Статус"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:43
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:56
+msgid "The state this check result should report"
+msgstr "Стан про який має звітувати цей результат перевірки"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:45
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:125
+msgctxt "icinga.state"
+msgid "UP"
+msgstr "ДОСТУПНО"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:46
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:126
+msgctxt "icinga.state"
+msgid "DOWN"
+msgstr "НЕДОСТУПНИЙ"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:48
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:58
+msgctxt "icinga.state"
+msgid "OK"
+msgstr "ОК"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:49
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:59
+msgctxt "icinga.state"
+msgid "WARNING"
+msgstr "ПОПЕРЕДЖЕННЯ"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:50
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:60
+msgctxt "icinga.state"
+msgid "CRITICAL"
+msgstr "КРИТИЧНИЙ"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:51
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:61
+msgctxt "icinga.state"
+msgid "UNKNOWN"
+msgstr "НЕВІДОМО"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:62
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:521
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:543
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:70
+msgid "Output"
+msgstr "Вивід"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:63
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:71
+msgid "The plugin output of this check result"
+msgstr "Вивід плагіну цього результату перевірки"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:75
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:81
+msgid ""
+"The performance data of this check result. Leave empty if this check result "
+"has no performance data"
+msgstr ""
+"Дані продуктивності цього результату перевірки. Залишити пустим якщо у "
+"результаті перевірки нема даних продуктивності"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:91
+#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:135
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:31
+msgid "Submit Passive Check Result"
+msgid_plural "Submit Passive Check Results"
+msgstr[0] "Надіслати результат пасивної перевірки"
+msgstr[1] "Надіслати результати пасивних перевірок"
+msgstr[2] "Надіслати результатів пасивної перевірки"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/RemoveAcknowledgementForm.php:32
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:73
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:92
+msgid "Remove acknowledgement"
+msgid_plural "Remove acknowledgements"
+msgstr[0] "Видалити підтвердження"
+msgstr[1] "Видалити підтвердження"
+msgstr[2] "Видалити підтвердження"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleCheckForm.php:24
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:23
+msgid ""
+"This command is used to schedule the next check of hosts or services. Icinga "
+"will re-queue the hosts or services to be checked at the time you specify."
+msgstr ""
+"Ця команда використовується для планування наступної перевірки хостів або "
+"сервісів. Icinga зробить повторний запит до хостів або сервісів у вказаний "
+"час."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleCheckForm.php:37
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:51
+msgid "Check Time"
+msgstr "Час перевірки"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleCheckForm.php:38
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:53
+msgid "Set the date and time when the check should be scheduled."
+msgstr "Зазначити час та дату запланованої перевірки."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleCheckForm.php:48
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:62
+msgid "Force Check"
+msgstr "Перевірити примусово"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleCheckForm.php:50
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:64
+msgid ""
+"If you select this option, Icinga will force a check regardless of both what "
+"time the scheduled check occurs and whether or not checks are enabled."
+msgstr ""
+"При виборі цієї опції Icinga примусово запустить перевірку незалежно від "
+"часу запланованої перевірки та чи увімкнені перевірки."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleCheckForm.php:65
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:34
+msgid "Schedule check"
+msgid_plural "Schedule checks"
+msgstr[0] "Запланувати перевірку"
+msgstr[1] "Запланувати перевірки"
+msgstr[2] "Запланувати перевірки"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:26
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostCheckCommandForm.php:29
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:35
+msgid "All Services"
+msgstr "Всі сервіси"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:28
+msgid ""
+"Sets downtime for all services for the matched host objects. If child "
+"options are set, all child hosts and their services will schedule a downtime "
+"too."
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:40
+#, fuzzy
+msgid "Schedule child downtimes."
+msgstr "Запланувати простої"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:41
+#, fuzzy
+msgid "Child Options"
+msgstr "Дочірній хост"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:43
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:52
+msgid "Do nothing with child hosts"
+msgstr "Не робити нічого з дочірніми хостами"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:44
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:53
+msgid "Schedule triggered downtime for all child hosts"
+msgstr "Запланувати спрацьований простій для всіх дочірніх хостів"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:45
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:54
+msgid "Schedule non-triggered downtime for all child hosts"
+msgstr "Запланувати простій для всіх дочірніх хостів"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:28
+#, fuzzy
+msgid ""
+"This command is used to schedule host and service downtimes. During the "
+"downtime specified by the start and end time, Icinga will not send "
+"notifications out about the hosts and services. When the scheduled downtime "
+"expires, Icinga will send out notifications for the hosts and services as it "
+"normally would."
+msgstr ""
+"Ця команда використовується для планування простоїв хостів та сервісів. Під "
+"час вказаних простоїв, Icinga не буде надсилати сповіщення про хости та "
+"сервіси. Коли запланований простій закінчується, Icinga буде надсилати "
+"сповіщення для хостів та сервісів як звичайно. Заплановані простої "
+"зберігаються після перезапусків та вимкнень програми."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:60
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:80
+msgid "Set the start date and time for the downtime."
+msgstr "Зазначити час та дату початку простою."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:71
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:90
+msgid "Set the end date and time for the downtime."
+msgstr "Зазначити час та дату завершення простою."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:77
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:74
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:205
+msgid "The end time must be greater than the start time"
+msgstr "Час закінчення має бути пізніше за час початку"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:82
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:82
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:213
+msgid "A downtime must not be in the past"
+msgstr "Простій не може бути у минулому"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:97
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:109
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:60
+msgid "Flexible"
+msgstr "Гнучкі"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:99
+#, fuzzy
+msgid ""
+"To make this a flexible downtime, check this option. A flexible downtime "
+"starts when the host or service enters a problem state sometime between the "
+"start and end times you specified. It then lasts as long as the duration "
+"time you enter."
+msgstr ""
+"При виборі фіксованого, простій буде діяти між часом початку та часом кінця, "
+"а гнучкий почнеться коли хост або сервіс увійде до проблемного стану між "
+"вказаним часом початку та кінця і буде тривати вказаний проміжок часу. "
+"Налаштування тривалості не застосовуються до фіксованих простоїв."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:132
+#: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:37
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:48
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:148
+msgid "Minutes"
+msgstr "Хвилини"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:139
+#: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:38
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:56
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:138
+msgid "Hours"
+msgstr "Години"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:153
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:47
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:7
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:21
+msgid "Schedule downtime"
+msgid_plural "Schedule downtimes"
+msgstr[0] "Запланувати простій"
+msgstr[1] "Запланувати простої"
+msgstr[2] "Запланувати простої"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/SendCustomNotificationForm.php:26
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:21
+msgid ""
+"This command is used to send custom notifications about hosts or services."
+msgstr ""
+"Ця команда використовується для відправки користувацьких сповіщень про хости "
+"або сервіси."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/SendCustomNotificationForm.php:41
+msgid ""
+"Enter a brief description on why you're sending this notification. It will "
+"be sent with it."
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/Command/Object/SendCustomNotificationForm.php:51
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:58
+msgid "Forced"
+msgstr "Примусово"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/SendCustomNotificationForm.php:54
+#, fuzzy
+msgid ""
+"If you check this option, the notification is sent regardless of downtimes "
+"or whether notifications are enabled or not."
+msgstr ""
+"При виборі цієї опції сповіщення надвилаються незалежно від часових обмежень "
+"та чи увімкнені сповіщення."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/SendCustomNotificationForm.php:69
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:30
+msgid "Send custom notification"
+msgid_plural "Send custom notifications"
+msgstr[0] "Надіслати користувацьке сповіщення"
+msgstr[1] "Надіслати користувацькі сповіщення"
+msgstr[2] "Надіслати користувацькі сповіщення"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:28
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:38
+msgid "Active Checks"
+msgstr "Активні перевірки"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:32
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:42
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:134
+msgid "Passive Checks"
+msgstr "Пасивні перевірки"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:40
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:54
+msgid "Event Handler"
+msgstr "Обробник подій"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:66
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:84
+msgid "Multiple Values"
+msgstr "Декілька значень"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:68
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:87
+msgid "Leave Unchanged"
+msgstr "Залишити без змін"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:69
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:88
+msgid "Disable All"
+msgstr "Вимкнути всі"
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:70
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:89
+msgid "Enable All"
+msgstr "Увімкнути всі"
 
 #: sources.d/icingadb-web/application/forms/DatabaseConfigForm.php:14
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:15
@@ -977,50 +1566,6 @@ msgstr ""
 msgid "The configuration has been successfully validated."
 msgstr "Конфігурацію було успішно валідовано."
 
-#: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:13
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:19
-msgid "Transport"
-msgstr "Транспорт"
-
-#: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:34
-#, php-format
-msgid "Update command transport %s"
-msgstr "Оновити командний транспорт: %s"
-
-#: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:38
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:39
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:44
-#, php-format
-msgid "Type: %s"
-msgstr "Тип: %s"
-
-#: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:51
-#, php-format
-msgid "Delete command transport %s"
-msgstr "Видалити командний транспорт: %s"
-
-#: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:59
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:66
-msgid "Move up in order"
-msgstr "Перемістити догори"
-
-#: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:60
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:68
-#, php-format
-msgid "Move command transport %s upwards"
-msgstr "Перемістити командний транспорт %s догори"
-
-#: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:67
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:78
-msgid "Move down in order"
-msgstr "Перемістити донизу"
-
-#: sources.d/icingadb-web/application/views/scripts/form/reorder-command-transports.phtml:68
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:80
-#, php-format
-msgid "Move command transport %s downwards"
-msgstr "Перемістити командний транспорт %s донизу"
-
 #: sources.d/icingadb-web/configuration.php:36
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceCoreApi.php:61
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/hostgroups.phtml:16
@@ -1153,43 +1698,59 @@ msgstr "Безпека"
 msgid "Configure security related settings"
 msgstr "Налаштування безпеки"
 
-#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:129
+#: sources.d/icingadb-web/library/Icingadb/Command/Transport/CommandTransport.php:39
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Command/Transport/CommandTransport.php:42
+#, php-format
+msgid "No command transports have been configured in \"%s\"."
+msgstr "Командний транспорт у \"%s\" не було сконфігуровано."
+
+#: sources.d/icingadb-web/library/Icingadb/Command/Transport/CommandTransport.php:68
+#, fuzzy, php-format
+msgid ""
+"Cannot create command transport \"%s\". Invalid transport defined in \"%s\". "
+"Use one of: %s."
+msgstr ""
+"Неможливо створити командний транспорт \"%s\". У \"%s\" визначено невалідний "
+"транспорт. Скористайтеся \"%s\", \"%s\" або \"%s\"."
+
+#: sources.d/icingadb-web/library/Icingadb/Command/Transport/CommandTransport.php:124
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Command/Transport/CommandTransport.php:143
+msgid ""
+"Failed to send external Icinga command. No transport has been configured for "
+"this instance. Please contact your Icinga Web administrator."
+msgstr ""
+"Не вдалося надіслати зовнішню команду Icinga. Для цього екземпляру не було "
+"налаштовано транспорт. Будь ласка, зверніться до адміністратора."
+
+#: sources.d/icingadb-web/library/Icingadb/Common/BaseOrderedItemList.php:30
+#: sources.d/icingadb-web/library/Icingadb/Widget/BaseItemList.php:85
+msgid "No items found."
+msgstr "Не знайдено."
+
+#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:115
 msgid "Acknowledge Problem"
 msgstr "Підтвердити проблему"
 
-#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:136
+#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:122
 msgid "Add Comment"
 msgstr "Додати коментар"
 
-#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:173
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:31
-msgid "Submit Passive Check Result"
-msgid_plural "Submit Passive Check Results"
-msgstr[0] "Надіслати результат пасивної перевірки"
-msgstr[1] "Надіслати результати пасивних перевірок"
-msgstr[2] "Надіслати результатів пасивної перевірки"
+#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:148
+#, fuzzy
+msgid "Reschedule Check"
+msgstr "Запланувати перевірку"
 
-#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:189
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/HostController.php:146
-msgid "Reschedule Host Check"
-msgstr "Перенести перевірку хоста"
-
-#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:193
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:108
-msgid "Reschedule Service Check"
-msgstr "Перенести перевірку сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:205
+#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:158
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostController.php:158
 msgid "Schedule Host Downtime"
 msgstr "Запланувати простій хоста"
 
-#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:209
+#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:162
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:120
 msgid "Schedule Service Downtime"
 msgstr "Запланувати простій сервіса"
 
-#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:218
+#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:171
 msgid "Send Custom Notification"
 msgstr "Надіслати користувацьке сповіщення"
 
@@ -3302,20 +3863,6 @@ msgstr "Icinga 2 API"
 msgid "Please fill out the connection details to the Icinga 2 API."
 msgstr "Будь ласка, заповніть деталі з'єднання з API Icinga 2."
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:89
-#: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:123
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:342
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:418
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:251
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:369
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Setup/IdoResourcePage.php:143
-#: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:214
-#: sources.d/icingaweb2/modules/setup/application/forms/DbResourcePage.php:117
-#: sources.d/icingaweb2/modules/setup/application/forms/LdapResourcePage.php:119
-#, php-format
-msgid "Failed to successfully validate the configuration: %s"
-msgstr "Не вдалося успішно провести валідацію конфігурації: %s"
-
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:107
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:141
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Setup/IdoResourcePage.php:184
@@ -3328,26 +3875,6 @@ msgid ""
 "The Icinga 2 API will be accessed using the following connection details:"
 msgstr "З'єднання з API Icinga 2 буде виконано з наступними параметрами:"
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:59
-#: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:68
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:73
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:89
-#: sources.d/icingaweb2-module-director/application/forms/IcingaEndpointForm.php:36
-#: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:141
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/NetworkAdaptersTable.php:54
-#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:53
-#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:45
-#: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:125
-#: sources.d/icingaweb2/application/forms/Config/Resource/LdapResourceForm.php:60
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/ApiTransportForm.php:41
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/RemoteTransportForm.php:150
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:101
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:98
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:78
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:159
-msgid "Port"
-msgstr "Порт"
-
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:63
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:76
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:28
@@ -3356,7 +3883,7 @@ msgstr "Порт"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:90
 #: sources.d/icingaweb2/application/controllers/GroupController.php:116
 #: sources.d/icingaweb2/application/controllers/UserController.php:80
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:48
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:49
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:145
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:34
 #: sources.d/icingaweb2/application/views/scripts/group/show.phtml:75
@@ -3385,7 +3912,7 @@ msgstr "Ім'я користувача"
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:99
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:99
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:104
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:57
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:59
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:155
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:42
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:64
@@ -3718,7 +4245,7 @@ msgid "\"%s\" is not a valid column"
 msgstr "'%s' не є коректним числом"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:203
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:135
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:132
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/DataTabs.php:30
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:91
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/detail-content.phtml:47
@@ -3742,10 +4269,6 @@ msgstr "Пошук"
 #, fuzzy
 msgid "Is not a valid column"
 msgstr "'%s' не є коректним числом"
-
-#: sources.d/icingadb-web/library/Icingadb/Widget/BaseItemList.php:83
-msgid "No items found."
-msgstr "Не знайдено."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ContinueWith.php:33
 msgid "Continue with filter"
@@ -3805,19 +4328,15 @@ msgstr "Час виконання"
 msgid "Latency"
 msgstr "Затримка"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:54
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:50
 #, php-format
 msgctxt "..<time-until>"
 msgid "This acknowledgement expires %s."
 msgstr "Це підтвердження спливає о %s."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:61
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:57
 msgid "This acknowledgement is sticky."
 msgstr "Це підтвердження закріплене."
-
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:94
-msgid "Remove Comment"
-msgstr "Видалити коментар"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:52
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:66
@@ -3830,14 +4349,14 @@ msgstr[2] "%d шт"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:123
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:175
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:134
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:116
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:256
 msgid "Scheduled Start"
 msgstr "Запланований початок"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:136
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:188
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:138
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:120
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:257
 msgid "Scheduled End"
 msgstr "Заплановане завершення"
@@ -3863,42 +4382,38 @@ msgid "End"
 msgstr "Кінець"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:96
-msgid "Cancel Downtime"
-msgstr "Відмінити простій"
-
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:114
 #, php-format
 msgctxt "<username> ..: <comment>"
 msgid "%s commented: %s"
 msgstr "%s додав коментар: %s"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:122
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:104
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:229
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:52
 msgid "Created"
 msgstr "Створено"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:126
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:108
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/SyncRunDetails.php:25
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:511
 msgid "Start time"
 msgstr "Час початку"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:130
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:112
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:512
 msgid "End time"
 msgstr "Час завершення"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:142
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:124
 msgid "Scheduled Duration"
 msgstr "Запланована тривалість"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:149
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:131
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:158
 msgid "Flexible Duration"
 msgstr "Гнучка тривалість"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:154
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:136
 msgid "Progress"
 msgstr "Хід"
 
@@ -3906,8 +4421,8 @@ msgstr "Хід"
 msgid "This host has no services"
 msgstr "Цей хост не має сервісів"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:48
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:50
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:47
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:48
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:31
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:29
@@ -3916,8 +4431,8 @@ msgstr "Цей хост не має сервісів"
 msgid "Acknowledge"
 msgstr "Підтвердити"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:50
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:52
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:49
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:50
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:23
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:37
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/acknowledgement.phtml:85
@@ -3927,13 +4442,13 @@ msgid ""
 msgstr ""
 "Підтвердити проблему, подавити сповіщення про неї та помітити її як оброблену"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:84
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:75
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:79
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:70
 msgid "Add a new comment"
 msgstr "Додати новий коментар"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:91
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:82
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:86
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:77
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:250
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:25
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:22
@@ -3943,13 +4458,13 @@ msgstr "Додати новий коментар"
 msgid "Notification"
 msgstr "Сповіщення"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:93
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:84
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:88
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:79
 msgid "Send a custom notification"
 msgstr "Надіслати користувацьке сповіщення"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:102
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:93
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:97
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:88
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:120
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:134
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:15
@@ -3961,8 +4476,8 @@ msgstr ""
 "Запланувати простій для подавлення всіх сповіщень про проблеми у певний "
 "проміжок часу"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:115
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:106
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:110
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:101
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:190
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:192
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/checkstatistics.phtml:34
@@ -3970,15 +4485,15 @@ msgstr ""
 msgid "Reschedule"
 msgstr "Перенести"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:117
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:108
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:112
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:103
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/checkstatistics.phtml:42
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/checkstatistics.phtml:56
 msgid "Schedule the next active check at a different time than the current one"
 msgstr "Запланувати наступну активну перевірку у час інший від поточної"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:124
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:115
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:119
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:110
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:167
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:169
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/command.phtml:21
@@ -3986,16 +4501,16 @@ msgstr "Запланувати наступну активну перевірк�
 msgid "Process check result"
 msgstr "Обробити результат перевірки"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:126
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:121
 msgid "Submit passive check result"
 msgstr "Надіслати пасивний результат перевірки"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:73
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:70
 #, php-format
 msgid "Action %d"
 msgstr "Дія %d"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:95
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:92
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/QuickTable.php:280
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/ActivityLogInfo.php:580
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/DeployedConfigInfoHeader.php:62
@@ -4003,25 +4518,25 @@ msgstr "Дія %d"
 msgid "Actions"
 msgstr "Дії"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:103
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:100
 msgid "Check Statistics"
 msgstr "Статистика перевірок"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:127
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:103
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:124
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:102
 msgid "No comments created."
 msgstr "Коментарів не додано."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:150
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:147
 msgid "No custom variables configured."
 msgstr "Не налаштовано користувацьких змінних."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:172
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:122
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:169
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:121
 msgid "No downtimes scheduled."
 msgstr "Не заплановано простоїв."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:180
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:177
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:205
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:642
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:109
@@ -4034,57 +4549,48 @@ msgstr "Не заплановано простоїв."
 msgid "Groups"
 msgstr "Групи"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:193
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:190
 msgid "Not a member of any host group."
 msgstr "Не є учасником жодної групи хостів."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:206
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:203
 msgid "Not a member of any service group."
 msgstr "Не є учасником жодної групи сервісів."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:220
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:217
 #, php-format
 msgid "Note %d"
 msgstr "Нотатка %d"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:248
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:245
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1527
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/notes.phtml:37
 msgid "Notes"
 msgstr "Нотатки"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:275
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:272
 msgid "No users configured."
 msgstr "Немає налаштованих користувачів."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:281
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:278
 msgid "No user groups configured."
 msgstr "Немає налаштованих груп користувачів."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:294
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/PerfdataController.php:26
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/PerfdataController.php:56
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/VCenterTabs.php:36
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:188
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:79
-msgid "Performance Data"
-msgstr "Дані продуктивності"
-
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:297
 msgid "No performance data available."
 msgstr "Немає доступних даних продуктивності."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:312
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:309
 #: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:39
 msgid "Output unavailable."
 msgstr "Вивід недоступний."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:320
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:317
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/output.phtml:1
 msgid "Plugin Output"
 msgstr "Вивід плагіну"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:97
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:96
 #, php-format
 msgid "Show %d comment"
 msgid_plural "Show %d comments"
@@ -4092,7 +4598,7 @@ msgstr[0] "Показати %d коментар"
 msgstr[1] "Показати %d коментарі"
 msgstr[2] "Показати %d коментарів"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:116
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:115
 #, php-format
 msgid "Show %d downtime"
 msgid_plural "Show %d downtimes"
@@ -4100,16 +4606,16 @@ msgstr[0] "Показати %d простій"
 msgstr[1] "Показати %d простої"
 msgstr[2] "Показати %d простоїв"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:155
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:154
 msgid "Summary"
 msgstr "Загалом"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:73
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:68
 msgctxt "verb"
 msgid "Comment"
 msgstr "Коментувати"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:118
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:113
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/command.phtml:17
 #, php-format
 msgid "Submit a one time or so called passive result for the %s check"
@@ -4241,6 +4747,11 @@ msgstr "спливає через %s"
 msgctxt "..<timespan>"
 msgid "starts in %s"
 msgstr "починається через %s"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/CommandTransportListItem.php:34
+#, fuzzy, php-format
+msgid "Remove command transport \"%s\""
+msgstr "Видалити командний транспорт %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:55
 #, php-format
@@ -6293,17 +6804,6 @@ msgstr "Ресурс бази даних"
 #, php-format
 msgid "Icinga 2 - Objects: %s"
 msgstr "Icinga 2 - Об'єкти: %s"
-
-#: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:42
-#: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:143
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/DatastoreController.php:48
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/ObjectsTable.php:51
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmDatastoresTable.php:52
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:29
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Summaries.php:195
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:55
-msgid "Status"
-msgstr "Статус"
 
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:63
 msgid "Inspect - object list"
@@ -12937,18 +13437,6 @@ msgstr ""
 msgid "Create a New Event Type"
 msgstr "Створити новий тип події"
 
-#: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:125
-#: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:140
-#: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:137
-#: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:152
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:62
-#: sources.d/icingaweb2-module-x509/application/forms/Config/SniConfigForm.php:45
-#: sources.d/icingaweb2/application/forms/Announcement/AnnouncementForm.php:85
-#: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:69
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupForm.php:34
-msgid "Save"
-msgstr "Зберегти"
-
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:132
 #, php-format
 msgid "Update Event Type %s"
@@ -13199,18 +13687,6 @@ msgstr "Одиниця виміру часового проміжку за за�
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:35
 msgid "The above range's unit"
 msgstr "Одиниця виміру верхнього проміжку"
-
-#: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:37
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:48
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:148
-msgid "Minutes"
-msgstr "Хвилини"
-
-#: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:38
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:56
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:138
-msgid "Hours"
-msgstr "Години"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:39
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:64
@@ -16013,7 +16489,7 @@ msgstr "Вхід"
 msgid "Logging in"
 msgstr "Вхід"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:109
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:111
 msgid ""
 "No authentication methods available. Did you create authentication.ini when "
 "setting up Icinga Web 2?"
@@ -16021,7 +16497,7 @@ msgstr ""
 "Нема доступних методів автентифікації. Чи створювали ви authentication.ini "
 "при встановленні Icinga Web 2?"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:115
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:117
 msgid ""
 "All configured authentication methods failed. Please check the system log or "
 "Icinga Web 2 log for more information."
@@ -16029,7 +16505,7 @@ msgstr ""
 "Усі налаштовані методи автентифікації були провалені.  Будь ласка, перевірте "
 "системний лог або лог Icinga Web 2 для отримання додаткової інформації."
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:122
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:124
 msgid ""
 "Please note that not all authentication methods were available. Check the "
 "system log or Icinga Web 2 log for more information."
@@ -16038,11 +16514,11 @@ msgstr ""
 "ласка, перевірте системний лог або лог Icinga Web 2 для отримання додаткової "
 "інформації."
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:127
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:129
 msgid "Incorrect username or password"
 msgstr "Невірне ім'я користувача або пароль"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:148
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:150
 msgid ""
 "You're currently not authenticated using any of the web server's "
 "authentication mechanisms. Make sure you'll configure such, otherwise you'll "
@@ -16519,16 +16995,6 @@ msgstr "Ресурс \"%s\" було успішно створено"
 #, php-format
 msgid "Resource \"%s\" has been successfully changed"
 msgstr "Ресурс \"%s\" було успішно змінено"
-
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:247
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:379
-msgid "Force Changes"
-msgstr "Змінити примусово"
-
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:248
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:381
-msgid "Check this box to enforce changes without connectivity validation"
-msgstr "Встановіть цей прапорець для затвердження змін без перевірки з'єднання"
 
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:262
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/RemoteTransportForm.php:107
@@ -19014,6 +19480,11 @@ msgstr "Показати детальну інформацію про декіл
 msgid "Remove all Comments"
 msgstr "Видалити всі коментарі"
 
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentsController.php:97
+#, php-format
+msgid "Confirm removal of %d comments."
+msgstr "Підвердіть видалення %d коментарів."
+
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:30
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:104
 msgid "Backends"
@@ -19065,14 +19536,34 @@ msgstr ""
 "Якщо ви досі маєте середовища або види що вказують на цей транспорт, ви "
 "більше не зможете надсилати команди після видалення."
 
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:194
+#, php-format
+msgid "Command transport \"%s\" successfully removed"
+msgstr "Командний транспорт \"%s\" успішно видалено"
+
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:215
 #, php-format
 msgid "Edit Command Transport %s"
 msgstr "Редагувати командний транспорт %s"
 
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:234
+#, php-format
+msgid "Command transport \"%s\" successfully updated"
+msgstr "Командний транспорт \"%s\" успішно оновлено"
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:245
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportReorderForm.php:55
+#, php-format
+msgid "Command transport \"%s\" not found"
+msgstr "Командний транспорт \"%s\" не знайдено"
+
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:259
 msgid "Create New Command Transport"
 msgstr "Створити новий командний транспорт"
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:273
+msgid "Command transport successfully created"
+msgstr "Командний транспорт успішно створено"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimeController.php:68
 msgid "Display detailed information about a downtime."
@@ -19304,12 +19795,6 @@ msgstr "Підвищений"
 msgid "Contacts notified"
 msgstr "Сповіщені контакти"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:521
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:543
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:70
-msgid "Output"
-msgstr "Вивід"
-
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:532
 msgid "State time"
 msgstr "Час стану"
@@ -19362,6 +19847,10 @@ msgstr "Підтвердити проблему хоста"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostController.php:134
 msgid "Add Host Comment"
 msgstr "Додати коментар до хоста"
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/HostController.php:146
+msgid "Reschedule Host Check"
+msgstr "Перенести перевірку хоста"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostController.php:170
 msgid "Submit Passive Host Check Result"
@@ -19564,6 +20053,10 @@ msgstr "Підтвердити проблему сервісу"
 msgid "Add Service Comment"
 msgstr "Додати коментар до сервіса"
 
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:108
+msgid "Reschedule Service Check"
+msgstr "Перенести перевірку сервіса"
+
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:132
 msgid "Submit Passive Service Check Result"
 msgstr "Надіслати результат пасивної перевірки сервіса"
@@ -19693,27 +20186,6 @@ msgstr "Тимчасово вимкнути"
 msgid "Notifications will be re-enabled in <strong>%s</strong>"
 msgstr "Сповіщення будуть знову увімкнені у <strong>%s</strong>"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:91
-msgid "Active Host Checks"
-msgstr "Активні перевірки хостів"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:100
-msgid "Active Service Checks"
-msgstr "Активні перевірки сервісів"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:109
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:208
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:210
-msgid "Event Handlers"
-msgstr "Обробники подій"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:118
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:58
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:8
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:10
-msgid "Flap Detection"
-msgstr "Контроль флепінгу"
-
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:150
 msgid "Obsessing Over Hosts"
 msgstr "Використання OHCP для хостів"
@@ -19814,40 +20286,6 @@ msgstr "Увімкнення збору даних продуктивності.
 msgid "Disabling performance data.."
 msgstr "Вимкнення збору даних продуктивності.."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:23
-msgid ""
-"This command is used to acknowledge host or service problems. When a problem "
-"is acknowledged, future notifications about problems are temporarily "
-"disabled until the host or service recovers."
-msgstr ""
-"Ця команда використовується для підтвердження проблем хостів або сервісів. "
-"Коли проблему підтверджено, майбутні сповіщення про проблеми тимчасово "
-"припиняються до поновлення хоста або сервіса."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:35
-msgid "Acknowledge problem"
-msgid_plural "Acknowledge problems"
-msgstr[0] "Підтвердити проблему"
-msgstr[1] "Підтвердити проблеми"
-msgstr[2] "Підтвердити проблеми"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:56
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:47
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:67
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:48
-#, fuzzy
-msgid ""
-"If you work with other administrators, you may find it useful to share "
-"information about the host or service that is having problems. Make sure you "
-"enter a brief description of what you are doing."
-msgstr ""
-"Якщо ви працюєте з іншими адміністраторами, ви можете поділитися з ними "
-"інформацією про проблемний хост або сервіс. Віедіть короткий опис ваших дій."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:67
-msgid "Persistent Comment"
-msgstr "Постійний коментар"
-
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:70
 msgid ""
 "If you would like the comment to remain even when the acknowledgement is "
@@ -19856,15 +20294,6 @@ msgstr ""
 "При виборі цієї опції коментар залишиться навіть після видалення "
 "підтвердження."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:79
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:77
-msgid "Use Expire Time"
-msgstr "Використати час закінчення"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:82
-msgid "If the acknowledgement should expire, check this option."
-msgstr "Якщо підтвердження повинне сплинути, виберіть цю опцію."
-
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:99
 msgid ""
 "Enter the expire date and time for this acknowledgement here. Icinga will "
@@ -19872,22 +20301,6 @@ msgid ""
 msgstr ""
 "Введіть дату та час закінчення для цього підтвердження. Icinga видалить "
 "підтвердження після того як сплине вказаний час."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:120
-msgid "Sticky Acknowledgement"
-msgstr "Закріплене підтвердження"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:123
-msgid ""
-"If you want the acknowledgement to remain until the host or service recovers "
-"even if the host or service changes state, check this option."
-msgstr ""
-"При виборі цієї опції підтвердження залишиться допоки хост або сервіс не "
-"прийде до ладу, навіть якщо хост або сервіс змінить стан."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:132
-msgid "Send Notification"
-msgstr "Надіслати сповіщення"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:135
 msgid ""
@@ -19904,20 +20317,6 @@ msgstr[0] "Підтвердження проблем.."
 msgstr[1] "Підтвердження проблем.."
 msgstr[2] "Підтвердження проблем.."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:22
-msgid "This command is used to add host or service comments."
-msgstr ""
-"Ця команда використовується для додання коментарів до хостів або сервісів."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:31
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/comments.phtml:7
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/comments.phtml:19
-msgid "Add comment"
-msgid_plural "Add comments"
-msgstr[0] "Додати коментар"
-msgstr[1] "Додати коментарі"
-msgstr[2] "Додати коментарі"
-
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:59
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:47
 msgid "Persistent"
@@ -19930,11 +20329,6 @@ msgid ""
 msgstr ""
 "Якщо вимкнути цю опцію, коментар буде автоматично видалено при наступному "
 "рестарті Icinga."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:79
-#, fuzzy
-msgid "If the comment should expire, check this option."
-msgstr "Якщо підтвердження повинне сплинути, виберіть цю опцію."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:95
 #, fuzzy
@@ -19957,17 +20351,6 @@ msgstr[2] "Додається коментарі.."
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/CheckNowCommandForm.php:46
 msgid "Check now"
 msgstr "Перевірити зараз"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/CheckNowCommandForm.php:45
-msgid "Schedule the next active check to run immediately"
-msgstr "Запланувати проведення наступної активної перевірки невідкладно"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/CheckNowCommandForm.php:81
-msgid "Scheduling check.."
-msgid_plural "Scheduling checks.."
-msgstr[0] "Планування перевірки.."
-msgstr[1] "Планування перевірок.."
-msgstr[2] "Планування перевірок.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/DeleteCommentCommandForm.php:40
 msgid "Delete this comment"
@@ -19996,48 +20379,6 @@ msgstr[0] "Видалення простою.."
 msgstr[1] "Видалення простоїв.."
 msgstr[2] "Видалення простоїв.."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:20
-msgid "This command is used to submit passive host or service check results."
-msgstr ""
-"Ця команда використовується для відправлення результатів пасивних перевірок "
-"хостів або сервісів."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:56
-msgid "The state this check result should report"
-msgstr "Стан про який має звітувати цей результат перевірки"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:58
-msgctxt "icinga.state"
-msgid "OK"
-msgstr "ОК"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:59
-msgctxt "icinga.state"
-msgid "WARNING"
-msgstr "ПОПЕРЕДЖЕННЯ"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:60
-msgctxt "icinga.state"
-msgid "CRITICAL"
-msgstr "КРИТИЧНИЙ"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:61
-msgctxt "icinga.state"
-msgid "UNKNOWN"
-msgstr "НЕВІДОМО"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:71
-msgid "The plugin output of this check result"
-msgstr "Вивід плагіну цього результату перевірки"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:81
-msgid ""
-"The performance data of this check result. Leave empty if this check result "
-"has no performance data"
-msgstr ""
-"Дані продуктивності цього результату перевірки. Залишити пустим якщо у "
-"результаті перевірки нема даних продуктивності"
-
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:109
 msgid "Processing check result.."
 msgid_plural "Processing check results.."
@@ -20045,28 +20386,10 @@ msgstr[0] "Обробка результату перевірки.."
 msgstr[1] "Обробка результатів перевірки.."
 msgstr[2] "Обробка результатів перевірки.."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:125
-msgctxt "icinga.state"
-msgid "UP"
-msgstr "ДОСТУПНО"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:126
-msgctxt "icinga.state"
-msgid "DOWN"
-msgstr "НЕДОСТУПНИЙ"
-
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:130
 msgctxt "icinga.state"
 msgid "UNREACHABLE"
 msgstr "НЕДОСЯЖНО"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:73
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:92
-msgid "Remove acknowledgement"
-msgid_plural "Remove acknowledgements"
-msgstr[0] "Видалити підтвердження"
-msgstr[1] "Видалити підтвердження"
-msgstr[2] "Видалити підтвердження"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:115
 msgid "Removing acknowledgement.."
@@ -20074,11 +20397,6 @@ msgid_plural "Removing acknowledgements.."
 msgstr[0] "Видалення підтвердження.."
 msgstr[1] "Видалення підтверджень.."
 msgstr[2] "Видалення підтверджень.."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostCheckCommandForm.php:29
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:35
-msgid "All Services"
-msgstr "Всі сервіси"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostCheckCommandForm.php:32
 msgid "Schedule check for all services on the hosts and the hosts themselves."
@@ -20104,70 +20422,12 @@ msgstr "Визначіть дії до дочірніх до хостів хос
 msgid "Child Hosts"
 msgstr "Дочірні хости"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:52
-msgid "Do nothing with child hosts"
-msgstr "Не робити нічого з дочірніми хостами"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:53
-msgid "Schedule triggered downtime for all child hosts"
-msgstr "Запланувати спрацьований простій для всіх дочірніх хостів"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:54
-msgid "Schedule non-triggered downtime for all child hosts"
-msgstr "Запланувати простій для всіх дочірніх хостів"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:74
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:205
-msgid "The end time must be greater than the start time"
-msgstr "Час закінчення має бути пізніше за час початку"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:82
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:213
-msgid "A downtime must not be in the past"
-msgstr "Простій не може бути у минулому"
-
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:116
 msgid "Scheduling host downtime.."
 msgid_plural "Scheduling host downtimes.."
 msgstr[0] "Планування простою хоста.."
 msgstr[1] "Планування простоїв хоста.."
 msgstr[2] "Планування простоїв хоста.."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:23
-msgid ""
-"This command is used to schedule the next check of hosts or services. Icinga "
-"will re-queue the hosts or services to be checked at the time you specify."
-msgstr ""
-"Ця команда використовується для планування наступної перевірки хостів або "
-"сервісів. Icinga зробить повторний запит до хостів або сервісів у вказаний "
-"час."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:34
-msgid "Schedule check"
-msgid_plural "Schedule checks"
-msgstr[0] "Запланувати перевірку"
-msgstr[1] "Запланувати перевірки"
-msgstr[2] "Запланувати перевірки"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:51
-msgid "Check Time"
-msgstr "Час перевірки"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:53
-msgid "Set the date and time when the check should be scheduled."
-msgstr "Зазначити час та дату запланованої перевірки."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:62
-msgid "Force Check"
-msgstr "Перевірити примусово"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:64
-msgid ""
-"If you select this option, Icinga will force a check regardless of both what "
-"time the scheduled check occurs and whether or not checks are enabled."
-msgstr ""
-"При виборі цієї опції Icinga примусово запустить перевірку незалежно від "
-"часу запланованої перевірки та чи увімкнені перевірки."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:106
 msgid "Scheduling service check.."
@@ -20190,23 +20450,6 @@ msgstr ""
 "сповіщення для хостів та сервісів як звичайно. Заплановані простої "
 "зберігаються після перезапусків та вимкнень програми."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:47
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:7
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:21
-msgid "Schedule downtime"
-msgid_plural "Schedule downtimes"
-msgstr[0] "Запланувати простій"
-msgstr[1] "Запланувати простої"
-msgstr[2] "Запланувати простої"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:80
-msgid "Set the start date and time for the downtime."
-msgstr "Зазначити час та дату початку простою."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:90
-msgid "Set the end date and time for the downtime."
-msgstr "Зазначити час та дату завершення простою."
-
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:102
 msgid ""
 "If you select the fixed option, the downtime will be in effect between the "
@@ -20219,11 +20462,6 @@ msgstr ""
 "а гнучкий почнеться коли хост або сервіс увійде до проблемного стану між "
 "вказаним часом початку та кінця і буде тривати вказаний проміжок часу. "
 "Налаштування тривалості не застосовуються до фіксованих простоїв."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:109
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:60
-msgid "Flexible"
-msgstr "Гнучкі"
 
 # Enter the duration of the downtime here.
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:160
@@ -20240,24 +20478,6 @@ msgid_plural "Scheduling service downtimes.."
 msgstr[0] "Планування простою сервіса.."
 msgstr[1] "Планування простоїв сервіса.."
 msgstr[2] "Планування простоїв сервіса.."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:21
-msgid ""
-"This command is used to send custom notifications about hosts or services."
-msgstr ""
-"Ця команда використовується для відправки користувацьких сповіщень про хости "
-"або сервіси."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:30
-msgid "Send custom notification"
-msgid_plural "Send custom notifications"
-msgstr[0] "Надіслати користувацьке сповіщення"
-msgstr[1] "Надіслати користувацькі сповіщення"
-msgstr[2] "Надіслати користувацькі сповіщення"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:58
-msgid "Forced"
-msgstr "Примусово"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:61
 msgid ""
@@ -20286,42 +20506,13 @@ msgstr[0] "Надсилання користувацького сповіщен�
 msgstr[1] "Налаштування користувацьких сповіщень.."
 msgstr[2] "Налаштування користувацьких сповіщень.."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:38
-msgid "Active Checks"
-msgstr "Активні перевірки"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:42
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:134
-msgid "Passive Checks"
-msgstr "Пасивні перевірки"
-
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:46
 msgid "Obsessing"
 msgstr "Використання OHCP"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:54
-msgid "Event Handler"
-msgstr "Обробник подій"
-
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:80
 msgid "changed"
 msgstr "змінено"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:84
-msgid "Multiple Values"
-msgstr "Декілька значень"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:87
-msgid "Leave Unchanged"
-msgstr "Залишити без змін"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:88
-msgid "Disable All"
-msgstr "Вимкнути всі"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:89
-msgid "Enable All"
-msgstr "Увімкнути всі"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:137
 msgid "Enabling active checks.."
@@ -20460,14 +20651,6 @@ msgstr "Назва хоста або адреса віддаленого екз�
 msgid "SSH port to connect to on the remote Icinga instance"
 msgstr "SSH порт для з'єднання з віддаленим екземпляром Icinga"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/ApiTransportForm.php:51
-msgid "API Username"
-msgstr "Ім'я користувача API"
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/ApiTransportForm.php:63
-msgid "API Password"
-msgstr "Пароль API"
-
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/LocalTransportForm.php:30
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/RemoteTransportForm.php:177
 msgid "Command File"
@@ -20519,10 +20702,6 @@ msgid ""
 msgstr ""
 "Назва екземпляру Icinga до якого цей транспорт повинен ексклюзивно надвилати "
 "команди."
-
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:224
-msgid "Transport Name"
-msgstr "Назва транспорту"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:226
 msgid ""
@@ -20805,6 +20984,11 @@ msgstr "Цей коментар спливає %s о %s."
 msgid "This comment does not expire."
 msgstr "Цей коментар не спливає."
 
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comments/show.phtml:11
+#, php-format
+msgid "Remove %d comments"
+msgstr "Видалити %d коментарів"
+
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comments/show.phtml:16
 msgid "Remove all selected comments"
 msgstr "Видалити всі обрані коментарі"
@@ -20829,6 +21013,12 @@ msgstr "Бекенд моніторингу"
 #, php-format
 msgid "Edit monitoring backend %s"
 msgstr "Редагувати бекенд моніторингу %s"
+
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:39
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:44
+#, php-format
+msgid "Type: %s"
+msgstr "Тип: %s"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:52
 #, php-format
@@ -20992,6 +21182,10 @@ msgstr "Видалити всі обрані простої"
 msgid "Event Details"
 msgstr "Інфо про події"
 
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:19
+msgid "Transport"
+msgstr "Транспорт"
+
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:40
 #, php-format
 msgid "Edit command transport %s"
@@ -21001,6 +21195,24 @@ msgstr "Редагувати командний транспорт %s"
 #, php-format
 msgid "Remove command transport %s"
 msgstr "Видалити командний транспорт %s"
+
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:66
+msgid "Move up in order"
+msgstr "Перемістити догори"
+
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:68
+#, php-format
+msgid "Move command transport %s upwards"
+msgstr "Перемістити командний транспорт %s догори"
+
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:78
+msgid "Move down in order"
+msgstr "Перемістити донизу"
+
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/form/reorder-command-transports.phtml:80
+#, php-format
+msgid "Move command transport %s downwards"
+msgstr "Перемістити командний транспорт %s донизу"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/disable-notifications.phtml:10
 msgid "Host and service notifications are already disabled."
@@ -21686,10 +21898,6 @@ msgstr "Цей простій гнучкий"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:74
 msgid "This downtime is in effect"
 msgstr "Простій триває"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:93
-msgid "Delete downtime"
-msgstr "Видалити простій"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtimes-header.phtml:31
 #, php-format
@@ -22860,11 +23068,6 @@ msgstr "Конфігурацію ресурсу було успішно онов
 msgid "Resource configuration could not be udpated: %s. An error occured:"
 msgstr "Конфігурацію ресурсу не вдалося оновити: %s. Сталася помилка:"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Command/Transport/CommandTransport.php:42
-#, php-format
-msgid "No command transports have been configured in \"%s\"."
-msgstr "Командний транспорт у \"%s\" не було сконфігуровано."
-
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Command/Transport/CommandTransport.php:80
 #, php-format
 msgid ""
@@ -22873,14 +23076,6 @@ msgid ""
 msgstr ""
 "Неможливо створити командний транспорт \"%s\". У \"%s\" визначено невалідний "
 "транспорт. Скористайтеся \"%s\", \"%s\" або \"%s\"."
-
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Command/Transport/CommandTransport.php:143
-msgid ""
-"Failed to send external Icinga command. No transport has been configured for "
-"this instance. Please contact your Icinga Web administrator."
-msgstr ""
-"Не вдалося надіслати зовнішню команду Icinga. Для цього екземпляру не було "
-"налаштовано транспорт. Будь ласка, зверніться до адміністратора."
 
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Command/Transport/RemoteCommandFile.php:228
 msgid "Can't send external Icinga Command. Remote user is missing"
@@ -24430,15 +24625,83 @@ msgstr ""
 "icingaweb2\" у разі якщо явно не зазначено у змінній оточення "
 "\"ICINGAWEB_CONFIGDIR\"."
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Не зберігати користувацькі налаштування"
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Тип об'єкту"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Історія"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Сервіси на моніторингу"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Тип події"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Час події"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "Згенеровані з змінних хостів"
+
+#~ msgid ""
+#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
 #~ msgstr ""
-#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
+#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
+#~ "Web"
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Відкрити налаштування автентифікації"
+#~ msgid "Keep only matching rows (Whitelist)"
+#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
+
+#~ msgid "Reject the whole row (Blacklist)"
+#~ msgstr "Відкинути весь рядок (blacklist)"
+
+#~ msgid "%s is no longer blacklisted on %s"
+#~ msgstr "%s більше не у чорному списку %s"
+
+#~ msgid "%s has been blacklisted on %s"
+#~ msgstr "%s було додано у чорний список %s"
+
+#~ msgid "Blacklist"
+#~ msgstr "Чорний список"
+
+#~ msgid "This Service has been blacklisted on this host"
+#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+
+#~ msgid "Service Critical"
+#~ msgid_plural "Services Critical"
+#~ msgstr[0] "Критичний сервіс"
+#~ msgstr[1] "Критичних сервіси"
+#~ msgstr[2] "Критичних сервісів"
+
+#~ msgid "Host Down"
+#~ msgid_plural "Hosts Down"
+#~ msgstr[0] "Хост недоступний"
+#~ msgstr[1] "Хост недоступні"
+#~ msgstr[2] "Хост недоступні"
+
+#~ msgid "Open console with VMRC"
+#~ msgstr "Відкрити консоль VMRC"
+
+#~ msgid "Console"
+#~ msgstr "Консоль"
+
+#~ msgid "Vendor / Model"
+#~ msgstr "Вендор / Модель"
+
+#~ msgid "NICs"
+#~ msgstr "NIC"
+
+#~ msgid ""
+#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
+#~ "is it part of the description (indented with a single space)"
+#~ msgstr ""
+#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
+#~ "і не є частиною опису (починається з одного пробілу)"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -24448,80 +24711,39 @@ msgstr ""
 #~ "користувацьких налаштувань призведе Icinga Web 2 до їх збереження у тій "
 #~ "же базі даних що використовується для автентифікації."
 
-#~ msgid ""
-#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
-#~ "is it part of the description (indented with a single space)"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Відкрити налаштування автентифікації"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
 #~ msgstr ""
-#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
-#~ "і не є частиною опису (починається з одного пробілу)"
+#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
 
-#~ msgid "NICs"
-#~ msgstr "NIC"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Не зберігати користувацькі налаштування"
 
-#~ msgid "Vendor / Model"
-#~ msgstr "Вендор / Модель"
+#~ msgid "Cancel Downtime"
+#~ msgstr "Відмінити простій"
 
-#~ msgid "Console"
-#~ msgstr "Консоль"
+#~ msgid "Delete command transport %s"
+#~ msgstr "Видалити командний транспорт: %s"
 
-#~ msgid "Open console with VMRC"
-#~ msgstr "Відкрити консоль VMRC"
+#~ msgid "Update command transport %s"
+#~ msgstr "Оновити командний транспорт: %s"
 
-#~ msgid "Host Down"
-#~ msgid_plural "Hosts Down"
-#~ msgstr[0] "Хост недоступний"
-#~ msgstr[1] "Хост недоступні"
-#~ msgstr[2] "Хост недоступні"
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "Скасувати %d простоїв"
 
-#~ msgid "Service Critical"
-#~ msgid_plural "Services Critical"
-#~ msgstr[0] "Критичний сервіс"
-#~ msgstr[1] "Критичних сервіси"
-#~ msgstr[2] "Критичних сервісів"
+#~ msgid "Cancel downtimes"
+#~ msgstr "Скасувати простої"
 
-#~ msgid "This Service has been blacklisted on this host"
-#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Підтвердити скасування %d простоїв."
 
-#~ msgid "Blacklist"
-#~ msgstr "Чорний список"
+#~ msgid "Update Command Transport"
+#~ msgstr "Оновити Командний Транспорт"
 
-#~ msgid "%s has been blacklisted on %s"
-#~ msgstr "%s було додано у чорний список %s"
+#~ msgid "Delete Command Transport"
+#~ msgstr "Видалити Командний Транспорт"
 
-#~ msgid "%s is no longer blacklisted on %s"
-#~ msgstr "%s більше не у чорному списку %s"
-
-#~ msgid "Reject the whole row (Blacklist)"
-#~ msgstr "Відкинути весь рядок (blacklist)"
-
-#~ msgid "Keep only matching rows (Whitelist)"
-#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
-
-#~ msgid ""
-#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
-#~ msgstr ""
-#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
-#~ "Web"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "Згенеровані з змінних хостів"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Час події"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Тип події"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Сервіси на моніторингу"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Історія"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Тип об'єкту"
+#~ msgid "Remove comments"
+#~ msgstr "Видалити коментарі"
