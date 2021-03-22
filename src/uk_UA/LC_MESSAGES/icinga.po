@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-03-19 15:29+0000\n"
+"POT-Creation-Date: 2021-03-22 16:17+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -679,11 +679,6 @@ msgstr "Показати всі %d групи сервісів"
 #, php-format
 msgid "Show all %d services"
 msgstr "Показати всі %d сервіси"
-
-#: sources.d/icingadb-web/application/controllers/StaticController.php:35
-#, php-format
-msgid "%s does not exist"
-msgstr "%s не існує"
 
 #: sources.d/icingadb-web/application/controllers/TacticalController.php:22
 #: sources.d/icingadb-web/configuration.php:127
@@ -1869,7 +1864,7 @@ msgstr ""
 "Не вдалося надіслати зовнішню команду Icinga. Для цього екземпляру не було "
 "налаштовано транспорт. Будь ласка, зверніться до адміністратора."
 
-#: sources.d/icingadb-web/library/Icingadb/Common/Auth.php:239
+#: sources.d/icingadb-web/library/Icingadb/Common/Auth.php:247
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/MonitoringRestrictions.php:46
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Controller.php:125
 #, php-format
@@ -24813,45 +24808,86 @@ msgstr ""
 "icingaweb2\" у разі якщо явно не зазначено у змінній оточення "
 "\"ICINGAWEB_CONFIGDIR\"."
 
-#~ msgid "- inherited -"
-#~ msgstr "- унаслідувано -"
+#~ msgid "Configure security related settings"
+#~ msgstr "Налаштування безпеки"
 
-#~ msgid "Remove comments"
-#~ msgstr "Видалити коментарі"
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Тип об'єкту"
 
-#~ msgid "Delete Command Transport"
-#~ msgstr "Видалити Командний Транспорт"
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Історія"
 
-#~ msgid "Update Command Transport"
-#~ msgstr "Оновити Командний Транспорт"
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Сервіси на моніторингу"
 
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Підтвердити скасування %d простоїв."
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Тип події"
 
-#~ msgid "Cancel downtimes"
-#~ msgstr "Скасувати простої"
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Час події"
 
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "Скасувати %d простоїв"
+#~ msgid "Generated from host vars"
+#~ msgstr "Згенеровані з змінних хостів"
 
-#~ msgid "Update command transport %s"
-#~ msgstr "Оновити командний транспорт: %s"
-
-#~ msgid "Delete command transport %s"
-#~ msgstr "Видалити командний транспорт: %s"
-
-#~ msgid "Cancel Downtime"
-#~ msgstr "Відмінити простій"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Не зберігати користувацькі налаштування"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgid ""
+#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
 #~ msgstr ""
-#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
+#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
+#~ "Web"
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Відкрити налаштування автентифікації"
+#~ msgid "Keep only matching rows (Whitelist)"
+#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
+
+#~ msgid "Reject the whole row (Blacklist)"
+#~ msgstr "Відкинути весь рядок (blacklist)"
+
+#~ msgid "%s is no longer blacklisted on %s"
+#~ msgstr "%s більше не у чорному списку %s"
+
+#~ msgid "%s has been blacklisted on %s"
+#~ msgstr "%s було додано у чорний список %s"
+
+#~ msgid "Blacklist"
+#~ msgstr "Чорний список"
+
+#~ msgid "This Service has been blacklisted on this host"
+#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+
+#~ msgid "Service Critical"
+#~ msgid_plural "Services Critical"
+#~ msgstr[0] "Критичний сервіс"
+#~ msgstr[1] "Критичних сервіси"
+#~ msgstr[2] "Критичних сервісів"
+
+#~ msgid "Host Down"
+#~ msgid_plural "Hosts Down"
+#~ msgstr[0] "Хост недоступний"
+#~ msgstr[1] "Хост недоступні"
+#~ msgstr[2] "Хост недоступні"
+
+#~ msgid "Open console with VMRC"
+#~ msgstr "Відкрити консоль VMRC"
+
+#~ msgid "Console"
+#~ msgstr "Консоль"
+
+#~ msgid "Vendor / Model"
+#~ msgstr "Вендор / Модель"
+
+#~ msgid "NICs"
+#~ msgstr "NIC"
+
+#~ msgid ""
+#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
+#~ "is it part of the description (indented with a single space)"
+#~ msgstr ""
+#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
+#~ "і не є частиною опису (починається з одного пробілу)"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -24861,83 +24897,45 @@ msgstr ""
 #~ "користувацьких налаштувань призведе Icinga Web 2 до їх збереження у тій "
 #~ "же базі даних що використовується для автентифікації."
 
-#~ msgid ""
-#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
-#~ "is it part of the description (indented with a single space)"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Відкрити налаштування автентифікації"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
 #~ msgstr ""
-#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
-#~ "і не є частиною опису (починається з одного пробілу)"
+#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
 
-#~ msgid "NICs"
-#~ msgstr "NIC"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Не зберігати користувацькі налаштування"
 
-#~ msgid "Vendor / Model"
-#~ msgstr "Вендор / Модель"
+#~ msgid "Cancel Downtime"
+#~ msgstr "Відмінити простій"
 
-#~ msgid "Console"
-#~ msgstr "Консоль"
+#~ msgid "Delete command transport %s"
+#~ msgstr "Видалити командний транспорт: %s"
 
-#~ msgid "Open console with VMRC"
-#~ msgstr "Відкрити консоль VMRC"
+#~ msgid "Update command transport %s"
+#~ msgstr "Оновити командний транспорт: %s"
 
-#~ msgid "Host Down"
-#~ msgid_plural "Hosts Down"
-#~ msgstr[0] "Хост недоступний"
-#~ msgstr[1] "Хост недоступні"
-#~ msgstr[2] "Хост недоступні"
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "Скасувати %d простоїв"
 
-#~ msgid "Service Critical"
-#~ msgid_plural "Services Critical"
-#~ msgstr[0] "Критичний сервіс"
-#~ msgstr[1] "Критичних сервіси"
-#~ msgstr[2] "Критичних сервісів"
+#~ msgid "Cancel downtimes"
+#~ msgstr "Скасувати простої"
 
-#~ msgid "This Service has been blacklisted on this host"
-#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Підтвердити скасування %d простоїв."
 
-#~ msgid "Blacklist"
-#~ msgstr "Чорний список"
+#~ msgid "Update Command Transport"
+#~ msgstr "Оновити Командний Транспорт"
 
-#~ msgid "%s has been blacklisted on %s"
-#~ msgstr "%s було додано у чорний список %s"
+#~ msgid "Delete Command Transport"
+#~ msgstr "Видалити Командний Транспорт"
 
-#~ msgid "%s is no longer blacklisted on %s"
-#~ msgstr "%s більше не у чорному списку %s"
+#~ msgid "Remove comments"
+#~ msgstr "Видалити коментарі"
 
-#~ msgid "Reject the whole row (Blacklist)"
-#~ msgstr "Відкинути весь рядок (blacklist)"
+#~ msgid "- inherited -"
+#~ msgstr "- унаслідувано -"
 
-#~ msgid "Keep only matching rows (Whitelist)"
-#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
-
-#~ msgid ""
-#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
-#~ msgstr ""
-#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
-#~ "Web"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "Згенеровані з змінних хостів"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Час події"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Тип події"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Сервіси на моніторингу"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Історія"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Тип об'єкту"
-
-#~ msgid "Configure security related settings"
-#~ msgstr "Налаштування безпеки"
+#~ msgid "%s does not exist"
+#~ msgstr "%s не існує"
