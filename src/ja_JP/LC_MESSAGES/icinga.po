@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-03-22 16:17+0000\n"
+"POT-Creation-Date: 2021-04-08 14:06+0000\n"
 "PO-Revision-Date: 2020-04-27 14:54+0200\n"
 "Last-Translator: papillon326 <udagawa@www2178ue.sakura.ne.jp>\n"
 "Language-Team: \n"
@@ -492,7 +492,7 @@ msgstr "ホストグループ"
 #: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:22
 #: sources.d/icingaweb2-module-x509/application/views/scripts/jobs/index.phtml:24
 #: sources.d/icingaweb2/application/controllers/DashboardController.php:209
-#: sources.d/icingaweb2/application/controllers/RoleController.php:52
+#: sources.d/icingaweb2/application/controllers/RoleController.php:65
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:575
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:101
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:121
@@ -754,9 +754,9 @@ msgstr ""
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:293
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/UserGroupsDashlet.php:11
 #: sources.d/icingaweb2/application/controllers/GroupController.php:26
-#: sources.d/icingaweb2/application/controllers/GroupController.php:401
-#: sources.d/icingaweb2/application/controllers/RoleController.php:164
-#: sources.d/icingaweb2/application/controllers/UserController.php:357
+#: sources.d/icingaweb2/application/controllers/GroupController.php:411
+#: sources.d/icingaweb2/application/controllers/RoleController.php:385
+#: sources.d/icingaweb2/application/controllers/UserController.php:367
 msgid "User Groups"
 msgstr "グループ一覧"
 
@@ -768,14 +768,15 @@ msgstr "グループ一覧"
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceCoreApi.php:62
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarTable.php:47
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarVariantsTable.php:62
-#: sources.d/icingaweb2/application/controllers/GroupController.php:391
-#: sources.d/icingaweb2/application/controllers/RoleController.php:53
-#: sources.d/icingaweb2/application/controllers/RoleController.php:153
+#: sources.d/icingaweb2/application/controllers/GroupController.php:401
+#: sources.d/icingaweb2/application/controllers/RoleController.php:66
+#: sources.d/icingaweb2/application/controllers/RoleController.php:288
+#: sources.d/icingaweb2/application/controllers/RoleController.php:374
 #: sources.d/icingaweb2/application/controllers/UserController.php:26
-#: sources.d/icingaweb2/application/controllers/UserController.php:347
+#: sources.d/icingaweb2/application/controllers/UserController.php:357
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/AddMemberForm.php:118
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:605
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:212
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:86
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:29
 msgid "Users"
 msgstr "ユーザ"
@@ -1834,7 +1835,7 @@ msgstr ""
 "制限 %s を適用できません。(フィルター%s を使っている場合) 下記のように指定し"
 "てください: %s"
 
-#: sources.d/icingadb-web/library/Icingadb/Common/BaseOrderedItemList.php:30
+#: sources.d/icingadb-web/library/Icingadb/Common/BaseOrderedItemList.php:31
 #: sources.d/icingadb-web/library/Icingadb/Widget/BaseItemList.php:85
 msgid "No items found."
 msgstr ""
@@ -4640,10 +4641,11 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:650
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:109
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:61
-#: sources.d/icingaweb2/application/controllers/RoleController.php:54
+#: sources.d/icingaweb2/application/controllers/RoleController.php:67
+#: sources.d/icingaweb2/application/controllers/RoleController.php:323
 #: sources.d/icingaweb2/application/forms/Config/User/CreateMembershipForm.php:79
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:615
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:220
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:94
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:30
 msgid "Groups"
 msgstr "グループ"
@@ -5031,29 +5033,29 @@ msgctxt "<hostname> is <state-text>"
 msgid "%s is %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/controllers/ConfigController.php:15
+#: sources.d/icingaweb2-module-audit/application/controllers/ConfigController.php:16
 msgid "Save Configuration"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/controllers/LogController.php:22
-#: sources.d/icingaweb2-module-audit/configuration.php:16
+#: sources.d/icingaweb2-module-audit/application/controllers/LogController.php:23
+#: sources.d/icingaweb2-module-audit/configuration.php:17
 msgid "Audit Log"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:17
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:18
 msgid "Standard Log"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:18
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:19
 msgid "Human-readable message log"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:20
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:21
 msgctxt "log.type"
 msgid "None"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:21
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:22
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:254
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:132
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ConfigFileDiffTable.php:82
@@ -5062,44 +5064,44 @@ msgstr ""
 msgid "File"
 msgstr "ファイル"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:31
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:32
 msgid "Standard Log Path"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:32
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:33
 msgid "The full path to the standard log"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:41
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:42
 msgid "Ident"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:42
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:43
 msgid "The identifier to use for syslog messages"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:50
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:51
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:115
 msgid "Facility"
 msgstr "ファシリティ"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:51
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:52
 msgid "The facility to send syslog messages to"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:74
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:75
 msgid "JSON Log"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:75
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:76
 msgid "Machine-parsable JSON objects"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:85
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:86
 msgid "JSON Log Path"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:86
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:87
 msgid "The full path to the JSON log"
 msgstr ""
 
@@ -5107,7 +5109,7 @@ msgstr ""
 msgid "No activity has been recorded yet."
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/configuration.php:8
+#: sources.d/icingaweb2-module-audit/configuration.php:9
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:63
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/DeploymentInfo.php:82
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:21
@@ -5117,11 +5119,11 @@ msgstr ""
 msgid "Configuration"
 msgstr "設定"
 
-#: sources.d/icingaweb2-module-audit/configuration.php:11
+#: sources.d/icingaweb2-module-audit/configuration.php:12
 msgid "Allow access to the audit log"
 msgstr ""
 
-#: sources.d/icingaweb2-module-audit/configuration.php:15
+#: sources.d/icingaweb2-module-audit/configuration.php:16
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:36
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:295
 msgid "System"
@@ -6754,6 +6756,7 @@ msgstr "表示"
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/HostActions.php:36
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:43
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectTabs.php:132
+#: sources.d/icingaweb2/application/controllers/RoleController.php:169
 msgid "Inspect"
 msgstr "検査"
 
@@ -10140,12 +10143,12 @@ msgid "Synchronization failed"
 msgstr "同期が失敗しました。"
 
 #: sources.d/icingaweb2-module-director/application/views/helpers/FormDataFilter.php:507
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:401
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:404
 msgid "Remove this part of your filter"
 msgstr "フィルタからこの部分を除去"
 
 #: sources.d/icingaweb2-module-director/application/views/helpers/FormDataFilter.php:516
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:408
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:411
 msgid "Add another filter"
 msgstr "別のフィルタを追加"
 
@@ -13662,7 +13665,7 @@ msgstr ""
 msgid "No such graph"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:144
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:145
 msgid ""
 "Graphite Web yields more than one metric for the given filter. Please "
 "specify a more precise filter."
@@ -13929,7 +13932,7 @@ msgstr ""
 msgid "The username must not contain colons."
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/library/Graphite/Web/Widget/Graphs.php:384
+#: sources.d/icingaweb2-module-graphite/library/Graphite/Web/Widget/Graphs.php:387
 #, php-format
 msgid "Please %scorrect%s the configuration of the Graphite module."
 msgstr ""
@@ -15437,7 +15440,7 @@ msgstr ""
 msgid "Certificate chain is valid."
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:64
+#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:65
 #, php-format
 msgid "Certificate chain is invalid: %s."
 msgstr ""
@@ -15446,19 +15449,19 @@ msgstr ""
 msgid "Certificate Dashboard"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:37
+#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:38
 msgid "Certificates by CA"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:62
+#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:64
 msgid "Certificates by Duration"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:85
+#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:88
 msgid "Key Strength"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:112
+#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:116
 msgid "Signature Algorithms"
 msgstr ""
 
@@ -16125,14 +16128,14 @@ msgid "Show group %s"
 msgstr "グループ %s を表示"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:377
-#: sources.d/icingaweb2/application/controllers/RoleController.php:21
-#: sources.d/icingaweb2/application/controllers/RoleController.php:140
+#: sources.d/icingaweb2/application/controllers/RoleController.php:34
+#: sources.d/icingaweb2/application/controllers/RoleController.php:351
 #: sources.d/icingaweb2/application/controllers/UserController.php:334
 msgid "Roles"
 msgstr "ルール一覧"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:379
-#: sources.d/icingaweb2/application/controllers/RoleController.php:142
+#: sources.d/icingaweb2/application/controllers/RoleController.php:353
 #: sources.d/icingaweb2/application/controllers/UserController.php:336
 msgid ""
 "Configure roles to permit or restrict users and groups accessing Icinga Web 2"
@@ -16140,15 +16143,28 @@ msgstr ""
 "Icinga Web 2にアクセスするユーザーとグループを許可または制限するためのルール"
 "を設定"
 
-#: sources.d/icingaweb2/application/controllers/GroupController.php:390
-#: sources.d/icingaweb2/application/controllers/RoleController.php:152
+#: sources.d/icingaweb2/application/controllers/GroupController.php:388
+#: sources.d/icingaweb2/application/controllers/RoleController.php:362
+#: sources.d/icingaweb2/application/controllers/UserController.php:345
+msgid "Audit a user's or group's privileges"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/GroupController.php:389
+#: sources.d/icingaweb2/application/controllers/RoleController.php:147
+#: sources.d/icingaweb2/application/controllers/RoleController.php:363
 #: sources.d/icingaweb2/application/controllers/UserController.php:346
+msgid "Audit"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/GroupController.php:400
+#: sources.d/icingaweb2/application/controllers/RoleController.php:373
+#: sources.d/icingaweb2/application/controllers/UserController.php:356
 msgid "List users of authentication backends"
 msgstr "認証バックエンドのユーザ一覧表示"
 
-#: sources.d/icingaweb2/application/controllers/GroupController.php:400
-#: sources.d/icingaweb2/application/controllers/RoleController.php:163
-#: sources.d/icingaweb2/application/controllers/UserController.php:356
+#: sources.d/icingaweb2/application/controllers/GroupController.php:410
+#: sources.d/icingaweb2/application/controllers/RoleController.php:384
+#: sources.d/icingaweb2/application/controllers/UserController.php:366
 msgid "List groups of user group backends"
 msgstr "ユーザグループバックエンドのグループ一覧表示"
 
@@ -16240,34 +16256,73 @@ msgstr "ナビゲーションの項目 %s の共有を解除できませんで�
 msgid "Navigation not found"
 msgstr "ナビゲーションはありません"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:55
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:264
+#: sources.d/icingaweb2/application/controllers/RoleController.php:68
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:133
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:108
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:409
 msgid "Permissions"
 msgstr "権限"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:76
+#: sources.d/icingaweb2/application/controllers/RoleController.php:89
 msgid "Create Role"
 msgstr "ルール作成"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:79
+#: sources.d/icingaweb2/application/controllers/RoleController.php:92
 msgid "New Role"
 msgstr "新規ルールの作成"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:95
-#: sources.d/icingaweb2/application/controllers/RoleController.php:104
+#: sources.d/icingaweb2/application/controllers/RoleController.php:108
+#: sources.d/icingaweb2/application/controllers/RoleController.php:117
 msgid "Update Role"
 msgstr "ルールの変更"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:101
-#: sources.d/icingaweb2/application/controllers/RoleController.php:124
+#: sources.d/icingaweb2/application/controllers/RoleController.php:114
+#: sources.d/icingaweb2/application/controllers/RoleController.php:137
 msgid "Role not found"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:118
-#: sources.d/icingaweb2/application/controllers/RoleController.php:127
+#: sources.d/icingaweb2/application/controllers/RoleController.php:131
+#: sources.d/icingaweb2/application/controllers/RoleController.php:140
 msgid "Remove Role"
 msgstr "ルールの削除"
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:168
+#, fuzzy
+msgid "Enter user or group name"
+msgstr "ユーザグループバックエンド %s の編集"
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:189
+#, fuzzy
+msgid "No user or group selected."
+msgstr "ユーザグループ %s を削除"
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:194
+#, fuzzy, php-format
+msgid "Privilege Audit for User \"%s\""
+msgstr "ユーザ \"%s\" の変更に失敗しました"
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:200
+#, fuzzy, php-format
+msgid "Privilege Audit for Group \"%s\""
+msgstr "グループ \"%s\" の変更に失敗しました"
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:225
+#, fuzzy
+msgid "All roles"
+msgstr "許可されたロール"
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:227
+msgid "Show privileges of all roles"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:238
+#, php-format
+msgid "Only show privileges of role %s"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:335
+msgid "Your search does not match any user or group"
+msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/UserController.php:58
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:77
@@ -16336,7 +16391,7 @@ msgid "User group backend \"%s\" successfully updated"
 msgstr "ユーザグループバックエンド \"%s\" が変更されました"
 
 #: sources.d/icingaweb2/application/controllers/UsergroupbackendController.php:95
-#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:120
+#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:127
 #, php-format
 msgid "User group backend \"%s\" not found"
 msgstr "ユーザグループバックエンド \"%s\" がありません"
@@ -17057,7 +17112,7 @@ msgstr "ユーザ \"%s\" を削除できませんでした"
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:205
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupForm.php:153
 #: sources.d/icingaweb2/application/forms/ConfigForm.php:91
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:564
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:497
 msgid ""
 "Configuration successfully stored. Though, one or more module hooks failed "
 "to run. See logs for details"
@@ -17840,186 +17895,190 @@ msgstr "1ページあたりに表示するデフォルトの項目数を設定�
 msgid "Save for the current Session"
 msgstr "現在のセッション用に保存"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:56
-#, fuzzy
-msgid "Allow to manage announcements"
-msgstr "お知らせの作成に失敗しました"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:60
-msgid "Allow to view the application log"
-msgstr "アプリケーションログの閲覧を許可"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:64
-#, fuzzy
-msgid "Allow full config access"
-msgstr "設定の変更を許可"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:68
-#, fuzzy
-msgid "Allow to adjust the general configuration"
-msgstr "設定反映を許可"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:72
-#, fuzzy
-msgid "Allow to enable/disable and configure modules"
-msgstr "ユーザの設定を許可"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:76
-#, fuzzy
-msgid "Allow to manage resources"
-msgstr "サービスの設定を許可"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:80
-#, fuzzy
-msgid "Allow to view and adjust shared navigation items"
-msgstr "ナビゲーションの項目の共有を許可"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:84
-msgid "Allow to fully manage access-control"
-msgstr ""
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:88
-#, fuzzy
-msgid "Allow to manage user accounts"
-msgstr "ユーザの設定を許可"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:92
-#, fuzzy
-msgid "Allow to manage user groups"
-msgstr "ユーザの設定を許可"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:96
-#, fuzzy
-msgid "Allow to manage roles"
-msgstr "許可されたロール"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:100
-msgid "Allow all account related functionalities"
-msgstr ""
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:104
-#, fuzzy
-msgid "Allow password changes in the account preferences"
-msgstr "アカウント情報の設定画面へ"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:109
-msgid "Allow to adjust in the preferences whether to show stacktraces"
-msgstr "スタックトレースを表示するかどうかの設定変更を許可"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:114
-msgid "Allow to share navigation items"
-msgstr "ナビゲーションの項目の共有を許可"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:122
-msgid "Restrict which users this role can share items and information with"
-msgstr "このルールでアイテムや情報を共有できるユーザを制限してください"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:128
-msgid "Restrict which groups this role can share items and information with"
-msgstr "このルールでアイテムや情報を共有できるグループを制限してください"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:139
-msgid "General Module Access"
-msgstr ""
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:140
-#, php-format
-msgid "Allow access to module %s"
-msgstr "%s モジュールへのアクセスを許可"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:149
-msgid "Full Module Access"
-msgstr ""
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:191
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:65
 msgid "Role Name"
 msgstr "ルール名"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:192
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:66
 msgid "The name of the role"
 msgstr "ルールの名前を入力してください"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:199
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:73
 #, fuzzy
 msgid "Inherit From"
 msgstr "継承されたグループ"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:200
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:74
 msgid "Choose a role from which to inherit privileges"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:203
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:77
 #, fuzzy
 msgctxt "parent role"
 msgid "None"
 msgstr "なし"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:213
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:87
 msgid "Comma-separated list of users that are assigned to the role"
 msgstr "ルールを適用するユーザをコンマ区切りで入力してください"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:221
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:95
 msgid "Comma-separated list of groups that are assigned to the role"
 msgstr "ルールを適用するグループをコンマ区切りで入力してください"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:229
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:103
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:305
 msgid "Administrative Access"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:230
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:104
 msgid "Everything is allowed"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:239
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:113
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:310
 msgid "Unrestricted Access"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:240
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:114
 msgid "Access to any data is completely unrestricted"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:256
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:135
+msgid "Grant access by toggling a switch below"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:138
+msgid "Deny access by toggling a switch below"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:225
+#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:118
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:413
+msgid "Restrictions"
+msgstr "制限事項"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:277
 #: sources.d/icingaweb2/application/views/scripts/config/modules.phtml:11
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:392
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/form/setup-requirements.phtml:13
 msgid "Module"
 msgstr "モジュール"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:266
-msgid "Grant access by toggling a switch below"
-msgstr ""
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:269
-msgid "Deny access by toggling a switch below"
-msgstr ""
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:334
-#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:118
-msgid "Restrictions"
-msgstr "制限事項"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:469
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:402
 msgid "Role created"
 msgstr "ルールを作成しました"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:469
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:402
 msgid "Role creation failed"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:474
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:407
 msgid "Role update failed"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:474
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:407
 msgid "Role updated"
 msgstr "ルールを変更しました"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:479
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:412
 msgid "Role removal failed"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:479
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:412
 msgid "Role removed"
 msgstr "ルールを削除しました"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:512
+#, fuzzy
+msgid "Allow to manage announcements"
+msgstr "お知らせの作成に失敗しました"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:515
+msgid "Allow to view the application log"
+msgstr "アプリケーションログの閲覧を許可"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:518
+#, fuzzy
+msgid "Allow full config access"
+msgstr "設定の変更を許可"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:521
+#, fuzzy
+msgid "Allow to adjust the general configuration"
+msgstr "設定反映を許可"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:524
+#, fuzzy
+msgid "Allow to enable/disable and configure modules"
+msgstr "ユーザの設定を許可"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:527
+#, fuzzy
+msgid "Allow to manage resources"
+msgstr "サービスの設定を許可"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:530
+#, fuzzy
+msgid "Allow to view and adjust shared navigation items"
+msgstr "ナビゲーションの項目の共有を許可"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:533
+msgid "Allow to fully manage access-control"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:536
+#, fuzzy
+msgid "Allow to manage user accounts"
+msgstr "ユーザの設定を許可"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:539
+#, fuzzy
+msgid "Allow to manage user groups"
+msgstr "ユーザの設定を許可"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:542
+#, fuzzy
+msgid "Allow to manage roles"
+msgstr "許可されたロール"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:545
+msgid "Allow all account related functionalities"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:548
+#, fuzzy
+msgid "Allow password changes in the account preferences"
+msgstr "アカウント情報の設定画面へ"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:551
+msgid "Allow to adjust in the preferences whether to show stacktraces"
+msgstr "スタックトレースを表示するかどうかの設定変更を許可"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:554
+msgid "Allow to share navigation items"
+msgstr "ナビゲーションの項目の共有を許可"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:560
+msgid "Restrict which users this role can share items and information with"
+msgstr "このルールでアイテムや情報を共有できるユーザを制限してください"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:563
+msgid "Restrict which groups this role can share items and information with"
+msgstr "このルールでアイテムや情報を共有できるグループを制限してください"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:572
+msgid "General Module Access"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:573
+#, php-format
+msgid "Allow access to module %s"
+msgstr "%s モジュールへのアクセスを許可"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:581
+msgid "Full Module Access"
+msgstr ""
 
 #: sources.d/icingaweb2/application/layouts/scripts/layout.phtml:73
 msgid "Expand"
@@ -18878,17 +18937,17 @@ msgstr "フィルタカラム \"%s\" は \"%s\" テーブル内にありませ�
 msgid "Method Not Allowed"
 msgstr "許可されていない方法"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:62
+#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:69
 #, php-format
 msgid "Authentication backend \"%s\" not found"
 msgstr "認証用バックエンド\"%s\" がありません"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:69
+#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:76
 #, php-format
 msgid "Authentication backend \"%s\" is not %s"
 msgstr "認証用バックエンド\"%s\" は %sではありません"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:127
+#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:134
 #, php-format
 msgid "User group backend \"%s\" is not %s"
 msgstr "ユーザグループバックエンド \"%s\" は %s ではありません"
@@ -19050,6 +19109,66 @@ msgstr ""
 "ナビゲーションの構成を解析できませんでした。既存のナビゲーションの項目の親タ"
 "ブをすべて確認してください。：%s"
 
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:62
+#, php-format
+msgid "Refused by %s and %s as well as one other"
+msgid_plural "Refused by %s and %s as well as %d others"
+msgstr[0] ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:71
+#, php-format
+msgid "Refused by %s"
+msgid_plural "Refused by %s and %s"
+msgstr[0] ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:81
+#, php-format
+msgid "Granted by %s and %s as well as one other"
+msgid_plural "Granted by %s and %s as well as %d others"
+msgstr[0] ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:90
+#, php-format
+msgid "Granted by %s"
+msgid_plural "Granted by %s and %s"
+msgstr[0] ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:95
+msgid "Not granted or refused by any role"
+msgstr ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:210
+#, php-format
+msgid "Restricted by %s and %s as well as one other"
+msgid_plural "Restricted by %s and %s as well as %d others"
+msgstr[0] ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:219
+#, fuzzy, php-format
+msgid "Restricted by %s"
+msgid_plural "Restricted by %s and %s"
+msgstr[0] "制限事項"
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:226
+msgid "Not restricted by any role"
+msgstr ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:236
+#, fuzzy
+msgid "All roles combined"
+msgstr "全コメントを許可"
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:243
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:264
+#, fuzzy
+msgid "Previews:"
+msgstr "プレビュー"
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:296
+#, fuzzy
+msgid "Administrative Privileges"
+msgstr "管理者"
+
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/Dashboard.php:247
 #, php-format
 msgctxt "dashboard.pane.tooltip"
@@ -19080,24 +19199,24 @@ msgstr ""
 msgid "Cannot search here"
 msgstr "検索できません"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:420
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:423
 msgid "Strip this filter"
 msgstr "このフィルタを削除"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:433
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:436
 msgid "Cancel this operation"
 msgstr "この操作をキャンセルする"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:739
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:742
 msgid "Search..."
 msgstr "検索中..."
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:743
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:746
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterWidget.php:89
 msgid "Filter this list"
 msgstr "検索条件の一覧"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:745
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:748
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterWidget.php:94
 msgid "Modify this filter"
 msgstr "この検索条件を変更"
@@ -19134,6 +19253,15 @@ msgstr "検索中"
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SearchDashboard.php:91
 msgid "Page not found"
 msgstr "ページが見つかりません"
+
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:163
+#, fuzzy
+msgid "Can't search:"
+msgstr "検索できません"
+
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:169
+msgid "No results:"
+msgstr ""
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SortBox.php:196
 msgid "Sort by"
@@ -24305,31 +24433,17 @@ msgstr ""
 "環境変数 \"ICINGAWEB_CONFIGDIR\"で明示的に設定されていない場合、Icinga Web 2"
 "設定ディレクトリはデフォルトで \"/etc /icingaweb2\"になります。"
 
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "オブジェクトタイプ"
+#~ msgid "- inherited -"
+#~ msgstr "- 継承 -"
 
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "履歴"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "設定を保存しない"
 
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "監視対象サービス"
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "管理者権限を付与する。例：お知らせの管理"
 
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "コメントの種類"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "イベント時間"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "ホスト変数から生成しました"
-
-#~ msgid "Blacklist"
-#~ msgstr "ブラックリスト"
+#~ msgid "Open authentication configuration"
+#~ msgstr "認証設定を行う画面へ"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -24338,14 +24452,28 @@ msgstr ""
 #~ "環境設定の保存場所として「データベース」を選択すると、Icinga Web 2は認証と"
 #~ "同じデータベースを使用します。"
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "認証設定を行う画面へ"
+#~ msgid "Blacklist"
+#~ msgstr "ブラックリスト"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "管理者権限を付与する。例：お知らせの管理"
+#~ msgid "Generated from host vars"
+#~ msgstr "ホスト変数から生成しました"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "設定を保存しない"
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "イベント時間"
 
-#~ msgid "- inherited -"
-#~ msgstr "- 継承 -"
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "コメントの種類"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "監視対象サービス"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "履歴"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "オブジェクトタイプ"
