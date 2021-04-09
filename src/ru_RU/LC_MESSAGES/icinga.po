@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-03-22 16:17+0000\n"
+"POT-Creation-Date: 2021-04-08 14:06+0000\n"
 "PO-Revision-Date: 2021-02-12 17:02+0500\n"
 "Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
 "Language-Team: TranslAster <https://github.com/translaster>\n"
@@ -499,7 +499,7 @@ msgstr "Группы узлов"
 #: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:22
 #: sources.d/icingaweb2-module-x509/application/views/scripts/jobs/index.phtml:24
 #: sources.d/icingaweb2/application/controllers/DashboardController.php:209
-#: sources.d/icingaweb2/application/controllers/RoleController.php:52
+#: sources.d/icingaweb2/application/controllers/RoleController.php:65
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:575
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:101
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:121
@@ -761,9 +761,9 @@ msgstr "Пользовательская группей не найдена"
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:293
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/UserGroupsDashlet.php:11
 #: sources.d/icingaweb2/application/controllers/GroupController.php:26
-#: sources.d/icingaweb2/application/controllers/GroupController.php:401
-#: sources.d/icingaweb2/application/controllers/RoleController.php:164
-#: sources.d/icingaweb2/application/controllers/UserController.php:357
+#: sources.d/icingaweb2/application/controllers/GroupController.php:411
+#: sources.d/icingaweb2/application/controllers/RoleController.php:385
+#: sources.d/icingaweb2/application/controllers/UserController.php:367
 msgid "User Groups"
 msgstr "Пользовательские группы"
 
@@ -775,14 +775,15 @@ msgstr "Пользовательские группы"
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceCoreApi.php:62
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarTable.php:47
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarVariantsTable.php:62
-#: sources.d/icingaweb2/application/controllers/GroupController.php:391
-#: sources.d/icingaweb2/application/controllers/RoleController.php:53
-#: sources.d/icingaweb2/application/controllers/RoleController.php:153
+#: sources.d/icingaweb2/application/controllers/GroupController.php:401
+#: sources.d/icingaweb2/application/controllers/RoleController.php:66
+#: sources.d/icingaweb2/application/controllers/RoleController.php:288
+#: sources.d/icingaweb2/application/controllers/RoleController.php:374
 #: sources.d/icingaweb2/application/controllers/UserController.php:26
-#: sources.d/icingaweb2/application/controllers/UserController.php:347
+#: sources.d/icingaweb2/application/controllers/UserController.php:357
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/AddMemberForm.php:118
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:605
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:212
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:86
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:29
 msgid "Users"
 msgstr "Пользователи"
@@ -1832,7 +1833,7 @@ msgstr ""
 "Невозможно применить ограничение %s с помощью фильтра %s. Можно использовать "
 "только следующие столбцы: %s"
 
-#: sources.d/icingadb-web/library/Icingadb/Common/BaseOrderedItemList.php:30
+#: sources.d/icingadb-web/library/Icingadb/Common/BaseOrderedItemList.php:31
 #: sources.d/icingadb-web/library/Icingadb/Widget/BaseItemList.php:85
 msgid "No items found."
 msgstr "Элементов не найдено."
@@ -4557,10 +4558,11 @@ msgstr "Нет запланированных времен простоя."
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:650
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:109
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:61
-#: sources.d/icingaweb2/application/controllers/RoleController.php:54
+#: sources.d/icingaweb2/application/controllers/RoleController.php:67
+#: sources.d/icingaweb2/application/controllers/RoleController.php:323
 #: sources.d/icingaweb2/application/forms/Config/User/CreateMembershipForm.php:79
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:615
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:220
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:94
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:30
 msgid "Groups"
 msgstr "Группы"
@@ -4951,29 +4953,29 @@ msgctxt "<hostname> is <state-text>"
 msgid "%s is %s"
 msgstr "%s - это %s"
 
-#: sources.d/icingaweb2-module-audit/application/controllers/ConfigController.php:15
+#: sources.d/icingaweb2-module-audit/application/controllers/ConfigController.php:16
 msgid "Save Configuration"
 msgstr "Сохранение конфигурации"
 
-#: sources.d/icingaweb2-module-audit/application/controllers/LogController.php:22
-#: sources.d/icingaweb2-module-audit/configuration.php:16
+#: sources.d/icingaweb2-module-audit/application/controllers/LogController.php:23
+#: sources.d/icingaweb2-module-audit/configuration.php:17
 msgid "Audit Log"
 msgstr "Журнал аудита"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:17
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:18
 msgid "Standard Log"
 msgstr "Стандартный журнал"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:18
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:19
 msgid "Human-readable message log"
 msgstr "Удобочитаемый журнал сообщений"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:20
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:21
 msgctxt "log.type"
 msgid "None"
 msgstr "Нет"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:21
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:22
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:254
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:132
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ConfigFileDiffTable.php:82
@@ -4982,44 +4984,44 @@ msgstr "Нет"
 msgid "File"
 msgstr "Файл"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:31
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:32
 msgid "Standard Log Path"
 msgstr "Стандартный путь к логу"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:32
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:33
 msgid "The full path to the standard log"
 msgstr "Полный путь к стандартному журналу"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:41
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:42
 msgid "Ident"
 msgstr "Идентификатор"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:42
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:43
 msgid "The identifier to use for syslog messages"
 msgstr "Идентификатор, используемый для сообщений syslog"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:50
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:51
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:115
 msgid "Facility"
 msgstr "Объект"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:51
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:52
 msgid "The facility to send syslog messages to"
 msgstr "Средство для отправки сообщений в syslog"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:74
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:75
 msgid "JSON Log"
 msgstr "Журнал JSON"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:75
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:76
 msgid "Machine-parsable JSON objects"
 msgstr "Машиночитаемые объекты JSON"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:85
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:86
 msgid "JSON Log Path"
 msgstr "Путь к журналу JSON"
 
-#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:86
+#: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:87
 msgid "The full path to the JSON log"
 msgstr "Полный путь к логу JSON"
 
@@ -5027,7 +5029,7 @@ msgstr "Полный путь к логу JSON"
 msgid "No activity has been recorded yet."
 msgstr "Никакой активности пока не зафиксировано."
 
-#: sources.d/icingaweb2-module-audit/configuration.php:8
+#: sources.d/icingaweb2-module-audit/configuration.php:9
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:63
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/DeploymentInfo.php:82
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:21
@@ -5037,11 +5039,11 @@ msgstr "Никакой активности пока не зафиксирова
 msgid "Configuration"
 msgstr "Настройки"
 
-#: sources.d/icingaweb2-module-audit/configuration.php:11
+#: sources.d/icingaweb2-module-audit/configuration.php:12
 msgid "Allow access to the audit log"
 msgstr "Разрешить доступ к журналу аудита"
 
-#: sources.d/icingaweb2-module-audit/configuration.php:15
+#: sources.d/icingaweb2-module-audit/configuration.php:16
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:36
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:295
 msgid "System"
@@ -6675,6 +6677,7 @@ msgstr "Показать"
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/HostActions.php:36
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:43
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectTabs.php:132
+#: sources.d/icingaweb2/application/controllers/RoleController.php:169
 msgid "Inspect"
 msgstr "Проверить"
 
@@ -9882,12 +9885,12 @@ msgid "Synchronization failed"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/views/helpers/FormDataFilter.php:507
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:401
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:404
 msgid "Remove this part of your filter"
 msgstr "Удалите эту часть вашего фильтра"
 
 #: sources.d/icingaweb2-module-director/application/views/helpers/FormDataFilter.php:516
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:408
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:411
 msgid "Add another filter"
 msgstr "Добавить ещё один фильтр"
 
@@ -13267,7 +13270,7 @@ msgstr ""
 msgid "No such graph"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:144
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:145
 msgid ""
 "Graphite Web yields more than one metric for the given filter. Please "
 "specify a more precise filter."
@@ -13535,7 +13538,7 @@ msgstr ""
 msgid "The username must not contain colons."
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/library/Graphite/Web/Widget/Graphs.php:384
+#: sources.d/icingaweb2-module-graphite/library/Graphite/Web/Widget/Graphs.php:387
 #, php-format
 msgid "Please %scorrect%s the configuration of the Graphite module."
 msgstr ""
@@ -15030,7 +15033,7 @@ msgstr ""
 msgid "Certificate chain is valid."
 msgstr "Цепочка сертификатов действительна."
 
-#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:64
+#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:65
 #, php-format
 msgid "Certificate chain is invalid: %s."
 msgstr "Недействительная цепочка сертификатов: %s."
@@ -15039,19 +15042,19 @@ msgstr "Недействительная цепочка сертификатов
 msgid "Certificate Dashboard"
 msgstr "Приборная панель сертификата"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:37
+#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:38
 msgid "Certificates by CA"
 msgstr "Сертификаты по ЦС"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:62
+#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:64
 msgid "Certificates by Duration"
 msgstr "Сертификаты по сроку действия"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:85
+#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:88
 msgid "Key Strength"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:112
+#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:116
 msgid "Signature Algorithms"
 msgstr ""
 
@@ -15722,14 +15725,14 @@ msgid "Show group %s"
 msgstr "Показать группу %s"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:377
-#: sources.d/icingaweb2/application/controllers/RoleController.php:21
-#: sources.d/icingaweb2/application/controllers/RoleController.php:140
+#: sources.d/icingaweb2/application/controllers/RoleController.php:34
+#: sources.d/icingaweb2/application/controllers/RoleController.php:351
 #: sources.d/icingaweb2/application/controllers/UserController.php:334
 msgid "Roles"
 msgstr "Роли"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:379
-#: sources.d/icingaweb2/application/controllers/RoleController.php:142
+#: sources.d/icingaweb2/application/controllers/RoleController.php:353
 #: sources.d/icingaweb2/application/controllers/UserController.php:336
 msgid ""
 "Configure roles to permit or restrict users and groups accessing Icinga Web 2"
@@ -15737,15 +15740,29 @@ msgstr ""
 "Настройка ролей для разрешения или ограничения доступа пользователей и групп "
 "к Icinga Web 2"
 
-#: sources.d/icingaweb2/application/controllers/GroupController.php:390
-#: sources.d/icingaweb2/application/controllers/RoleController.php:152
+#: sources.d/icingaweb2/application/controllers/GroupController.php:388
+#: sources.d/icingaweb2/application/controllers/RoleController.php:362
+#: sources.d/icingaweb2/application/controllers/UserController.php:345
+msgid "Audit a user's or group's privileges"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/GroupController.php:389
+#: sources.d/icingaweb2/application/controllers/RoleController.php:147
+#: sources.d/icingaweb2/application/controllers/RoleController.php:363
 #: sources.d/icingaweb2/application/controllers/UserController.php:346
+#, fuzzy
+msgid "Audit"
+msgstr "Журнал аудита"
+
+#: sources.d/icingaweb2/application/controllers/GroupController.php:400
+#: sources.d/icingaweb2/application/controllers/RoleController.php:373
+#: sources.d/icingaweb2/application/controllers/UserController.php:356
 msgid "List users of authentication backends"
 msgstr "Список пользователей бэкэндов аутентификации"
 
-#: sources.d/icingaweb2/application/controllers/GroupController.php:400
-#: sources.d/icingaweb2/application/controllers/RoleController.php:163
-#: sources.d/icingaweb2/application/controllers/UserController.php:356
+#: sources.d/icingaweb2/application/controllers/GroupController.php:410
+#: sources.d/icingaweb2/application/controllers/RoleController.php:384
+#: sources.d/icingaweb2/application/controllers/UserController.php:366
 msgid "List groups of user group backends"
 msgstr "Список групп бэкендов групп пользователей"
 
@@ -15837,34 +15854,73 @@ msgstr "Не удалось разделить элемент навигации
 msgid "Navigation not found"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:55
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:264
+#: sources.d/icingaweb2/application/controllers/RoleController.php:68
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:133
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:108
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:409
 msgid "Permissions"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:76
+#: sources.d/icingaweb2/application/controllers/RoleController.php:89
 msgid "Create Role"
 msgstr "Создание роли"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:79
+#: sources.d/icingaweb2/application/controllers/RoleController.php:92
 msgid "New Role"
 msgstr "Новая роль"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:95
-#: sources.d/icingaweb2/application/controllers/RoleController.php:104
+#: sources.d/icingaweb2/application/controllers/RoleController.php:108
+#: sources.d/icingaweb2/application/controllers/RoleController.php:117
 msgid "Update Role"
 msgstr "Обновить роль"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:101
-#: sources.d/icingaweb2/application/controllers/RoleController.php:124
+#: sources.d/icingaweb2/application/controllers/RoleController.php:114
+#: sources.d/icingaweb2/application/controllers/RoleController.php:137
 msgid "Role not found"
 msgstr "Роль не найдена"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:118
-#: sources.d/icingaweb2/application/controllers/RoleController.php:127
+#: sources.d/icingaweb2/application/controllers/RoleController.php:131
+#: sources.d/icingaweb2/application/controllers/RoleController.php:140
 msgid "Remove Role"
 msgstr "Удалить роль"
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:168
+#, fuzzy
+msgid "Enter user or group name"
+msgstr "Редактировать группу пользователей бэкэнда %s"
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:189
+#, fuzzy
+msgid "No user or group selected."
+msgstr "Нет настроенных групп пользователей."
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:194
+#, fuzzy, php-format
+msgid "Privilege Audit for User \"%s\""
+msgstr "Не удалось изменить пользователя \"%s\""
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:200
+#, fuzzy, php-format
+msgid "Privilege Audit for Group \"%s\""
+msgstr "Не удалось изменить группу \"%s\""
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:225
+#, fuzzy
+msgid "All roles"
+msgstr "Разрешенные роли"
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:227
+msgid "Show privileges of all roles"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:238
+#, php-format
+msgid "Only show privileges of role %s"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:335
+msgid "Your search does not match any user or group"
+msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/UserController.php:58
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:77
@@ -15932,7 +15988,7 @@ msgid "User group backend \"%s\" successfully updated"
 msgstr "Бэкэнд группы пользователя \"%s\" успешно обновлен"
 
 #: sources.d/icingaweb2/application/controllers/UsergroupbackendController.php:95
-#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:120
+#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:127
 #, php-format
 msgid "User group backend \"%s\" not found"
 msgstr "Бэкэнд группы пользователя \"%s\" не найден"
@@ -16656,7 +16712,7 @@ msgstr "Не удалось удалить пользователя \"%s\""
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:205
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupForm.php:153
 #: sources.d/icingaweb2/application/forms/ConfigForm.php:91
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:564
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:497
 msgid ""
 "Configuration successfully stored. Though, one or more module hooks failed "
 "to run. See logs for details"
@@ -17458,194 +17514,198 @@ msgstr ""
 msgid "Save for the current Session"
 msgstr "Сохранить для текущего сеанса"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:56
-#, fuzzy
-msgid "Allow to manage announcements"
-msgstr "Не удалось создать уведомление"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:60
-msgid "Allow to view the application log"
-msgstr "Разрешить просмотр журнала приложения"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:64
-#, fuzzy
-msgid "Allow full config access"
-msgstr "Разрешить доступ к конфигурации"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:68
-#, fuzzy
-msgid "Allow to adjust the general configuration"
-msgstr "Разрешить развертывание конфигурации"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:72
-#, fuzzy
-msgid "Allow to enable/disable and configure modules"
-msgstr "Разрешить настройку пользователей"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:76
-#, fuzzy
-msgid "Allow to manage resources"
-msgstr "Разрешить настройку служб"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:80
-#, fuzzy
-msgid "Allow to view and adjust shared navigation items"
-msgstr "Разрешить общий доступ к элементам навигации"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:84
-msgid "Allow to fully manage access-control"
-msgstr ""
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:88
-#, fuzzy
-msgid "Allow to manage user accounts"
-msgstr "Разрешить настройку пользователей"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:92
-#, fuzzy
-msgid "Allow to manage user groups"
-msgstr "Разрешить настройку пользователей"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:96
-#, fuzzy
-msgid "Allow to manage roles"
-msgstr "Разрешенные роли"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:100
-msgid "Allow all account related functionalities"
-msgstr ""
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:104
-#, fuzzy
-msgid "Allow password changes in the account preferences"
-msgstr "Запретить изменение пароля в настройках аккаунта"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:109
-msgid "Allow to adjust in the preferences whether to show stacktraces"
-msgstr "Позволить отображать в настройках трассировки стека"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:114
-msgid "Allow to share navigation items"
-msgstr "Разрешить общий доступ к элементам навигации"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:122
-msgid "Restrict which users this role can share items and information with"
-msgstr ""
-"Ограничьте пользователей, с которыми эта роль может обмениваться элементами "
-"и информацией"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:128
-msgid "Restrict which groups this role can share items and information with"
-msgstr ""
-"Ограничьте, с какими группами эта роль может совместно использовать элементы "
-"и информацию"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:139
-msgid "General Module Access"
-msgstr "Общий доступ к модулю"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:140
-#, php-format
-msgid "Allow access to module %s"
-msgstr "Разрешить доступ к модулю %s"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:149
-msgid "Full Module Access"
-msgstr "Полный доступ к модулю"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:191
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:65
 msgid "Role Name"
 msgstr "Название роли"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:192
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:66
 msgid "The name of the role"
 msgstr "Имя для роли"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:199
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:73
 msgid "Inherit From"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:200
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:74
 msgid "Choose a role from which to inherit privileges"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:203
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:77
 #, fuzzy
 msgctxt "parent role"
 msgid "None"
 msgstr "Отсутствует"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:213
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:87
 msgid "Comma-separated list of users that are assigned to the role"
 msgstr ""
 "Разделенный запятыми список пользователей для совместного использования этой "
 "роли"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:221
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:95
 msgid "Comma-separated list of groups that are assigned to the role"
 msgstr ""
 "Разделенный запятыми список имен групп для совместного использования этой "
 "роли"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:229
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:103
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:305
 msgid "Administrative Access"
 msgstr "Административный доступ"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:230
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:104
 msgid "Everything is allowed"
 msgstr "Разрешено всё"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:239
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:113
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:310
 #, fuzzy
 msgid "Unrestricted Access"
 msgstr "Административный доступ"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:240
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:114
 msgid "Access to any data is completely unrestricted"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:256
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:135
+msgid "Grant access by toggling a switch below"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:138
+msgid "Deny access by toggling a switch below"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:225
+#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:118
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:413
+msgid "Restrictions"
+msgstr "Ограничения"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:277
 #: sources.d/icingaweb2/application/views/scripts/config/modules.phtml:11
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:392
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/form/setup-requirements.phtml:13
 msgid "Module"
 msgstr "Модуль"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:266
-msgid "Grant access by toggling a switch below"
-msgstr ""
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:269
-msgid "Deny access by toggling a switch below"
-msgstr ""
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:334
-#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:118
-msgid "Restrictions"
-msgstr "Ограничения"
-
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:469
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:402
 msgid "Role created"
 msgstr "Роль создана"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:469
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:402
 msgid "Role creation failed"
 msgstr "Ошибка создания роли"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:474
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:407
 msgid "Role update failed"
 msgstr "Ошибка обновления роли"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:474
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:407
 msgid "Role updated"
 msgstr "Роль обновлена"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:479
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:412
 msgid "Role removal failed"
 msgstr "Ошибка удаления роли"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:479
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:412
 msgid "Role removed"
 msgstr "Роль удалена"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:512
+#, fuzzy
+msgid "Allow to manage announcements"
+msgstr "Не удалось создать уведомление"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:515
+msgid "Allow to view the application log"
+msgstr "Разрешить просмотр журнала приложения"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:518
+#, fuzzy
+msgid "Allow full config access"
+msgstr "Разрешить доступ к конфигурации"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:521
+#, fuzzy
+msgid "Allow to adjust the general configuration"
+msgstr "Разрешить развертывание конфигурации"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:524
+#, fuzzy
+msgid "Allow to enable/disable and configure modules"
+msgstr "Разрешить настройку пользователей"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:527
+#, fuzzy
+msgid "Allow to manage resources"
+msgstr "Разрешить настройку служб"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:530
+#, fuzzy
+msgid "Allow to view and adjust shared navigation items"
+msgstr "Разрешить общий доступ к элементам навигации"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:533
+msgid "Allow to fully manage access-control"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:536
+#, fuzzy
+msgid "Allow to manage user accounts"
+msgstr "Разрешить настройку пользователей"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:539
+#, fuzzy
+msgid "Allow to manage user groups"
+msgstr "Разрешить настройку пользователей"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:542
+#, fuzzy
+msgid "Allow to manage roles"
+msgstr "Разрешенные роли"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:545
+msgid "Allow all account related functionalities"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:548
+#, fuzzy
+msgid "Allow password changes in the account preferences"
+msgstr "Запретить изменение пароля в настройках аккаунта"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:551
+msgid "Allow to adjust in the preferences whether to show stacktraces"
+msgstr "Позволить отображать в настройках трассировки стека"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:554
+msgid "Allow to share navigation items"
+msgstr "Разрешить общий доступ к элементам навигации"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:560
+msgid "Restrict which users this role can share items and information with"
+msgstr ""
+"Ограничьте пользователей, с которыми эта роль может обмениваться элементами "
+"и информацией"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:563
+msgid "Restrict which groups this role can share items and information with"
+msgstr ""
+"Ограничьте, с какими группами эта роль может совместно использовать элементы "
+"и информацию"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:572
+msgid "General Module Access"
+msgstr "Общий доступ к модулю"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:573
+#, php-format
+msgid "Allow access to module %s"
+msgstr "Разрешить доступ к модулю %s"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:581
+msgid "Full Module Access"
+msgstr "Полный доступ к модулю"
 
 #: sources.d/icingaweb2/application/layouts/scripts/layout.phtml:73
 msgid "Expand"
@@ -18509,17 +18569,17 @@ msgstr "Столбец фильтра \"%s\" не найден в таблице
 msgid "Method Not Allowed"
 msgstr "Метод не разрешен"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:62
+#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:69
 #, php-format
 msgid "Authentication backend \"%s\" not found"
 msgstr "Бэкенд аутентификации \"%s\" не найден"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:69
+#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:76
 #, php-format
 msgid "Authentication backend \"%s\" is not %s"
 msgstr "Бэкенд аутентификации \"%s\" не является %s"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:127
+#: sources.d/icingaweb2/library/Icinga/Web/Controller/AuthBackendController.php:134
 #, php-format
 msgid "User group backend \"%s\" is not %s"
 msgstr "Бэкэнд группы пользователя \"%s\" не %s"
@@ -18686,6 +18746,77 @@ msgstr ""
 "Не удалось полностью проанализировать конфигурацию навигации. Убедитесь, что "
 "все указанные родители являются существующими элементами навигации: %s"
 
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:62
+#, php-format
+msgid "Refused by %s and %s as well as one other"
+msgid_plural "Refused by %s and %s as well as %d others"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:71
+#, fuzzy, php-format
+msgid "Refused by %s"
+msgid_plural "Refused by %s and %s"
+msgstr[0] "Удалить ключ %s"
+msgstr[1] "Удалить ключ %s"
+msgstr[2] "Удалить ключ %s"
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:81
+#, php-format
+msgid "Granted by %s and %s as well as one other"
+msgid_plural "Granted by %s and %s as well as %d others"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:90
+#, php-format
+msgid "Granted by %s"
+msgid_plural "Granted by %s and %s"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:95
+msgid "Not granted or refused by any role"
+msgstr ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:210
+#, php-format
+msgid "Restricted by %s and %s as well as one other"
+msgid_plural "Restricted by %s and %s as well as %d others"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:219
+#, fuzzy, php-format
+msgid "Restricted by %s"
+msgid_plural "Restricted by %s and %s"
+msgstr[0] "Ограничения"
+msgstr[1] "Ограничения"
+msgstr[2] "Ограничения"
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:226
+msgid "Not restricted by any role"
+msgstr ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:236
+#, fuzzy
+msgid "All roles combined"
+msgstr "Разрешить все команды"
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:243
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:264
+msgid "Previews:"
+msgstr ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:296
+#, fuzzy
+msgid "Administrative Privileges"
+msgstr "Административный доступ"
+
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/Dashboard.php:247
 #, php-format
 msgctxt "dashboard.pane.tooltip"
@@ -18716,24 +18847,24 @@ msgstr "Компонент"
 msgid "Cannot search here"
 msgstr "Невозможно найти здесь"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:420
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:423
 msgid "Strip this filter"
 msgstr "Снять этот фильтр"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:433
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:436
 msgid "Cancel this operation"
 msgstr "Отменить эту операцию"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:739
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:742
 msgid "Search..."
 msgstr "Поиск..."
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:743
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:746
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterWidget.php:89
 msgid "Filter this list"
 msgstr "Отфильтровать этот список"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:745
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:748
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterWidget.php:94
 msgid "Modify this filter"
 msgstr "Изменить этот фильтр"
@@ -18770,6 +18901,15 @@ msgstr "Поисковый"
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SearchDashboard.php:91
 msgid "Page not found"
 msgstr "Страница не найдена"
+
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:163
+#, fuzzy
+msgid "Can't search:"
+msgstr "Невозможно найти здесь"
+
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:169
+msgid "No results:"
+msgstr ""
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SortBox.php:196
 msgid "Sort by"
@@ -24002,58 +24142,58 @@ msgstr ""
 "icingaweb2\", если он явно не задан в переменной окружения "
 "\"ICINGAWEB_CONFIGDIR\"."
 
-#~ msgid "Configure security related settings"
-#~ msgstr "Настройка параметров, связанных с безопасностью"
+#~ msgid "%s does not exist"
+#~ msgstr "%s не существует"
 
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "История"
+#~ msgid "- inherited -"
+#~ msgstr "- наследованный -"
+
+#~ msgid "Remove comments"
+#~ msgstr "Удалить комментарии"
+
+#~ msgid "Delete Command Transport"
+#~ msgstr "Удаление транспорта команд"
+
+#~ msgid "Update Command Transport"
+#~ msgstr "Обновление транспорта команд"
+
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Подтвердите отмену %d времени простоя."
+
+#~ msgid "Cancel downtimes"
+#~ msgstr "Отменить времени простоя"
+
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "Отменить %d время простоя"
+
+#~ msgid "Update command transport %s"
+#~ msgstr "Обновление транспорта команд %s"
+
+#~ msgid "Delete command transport %s"
+#~ msgstr "Удалить транспорт команд %s"
+
+#~ msgid "Cancel Downtime"
+#~ msgstr "Отменить время простоя"
+
+#~ msgid "Icinga DB"
+#~ msgstr "БД Icinga"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Не хранить предпочтения"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "Предоставьте права администратора, напр. управлению объявлениями"
+
+#~ msgid "Open authentication configuration"
+#~ msgstr "Открыть конфигурацию аутентификации"
 
 #, fuzzy
 #~ msgid "History Service Id"
 #~ msgstr "Последняя проверка службы"
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Открыть конфигурацию аутентификации"
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "История"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "Предоставьте права администратора, напр. управлению объявлениями"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Не хранить предпочтения"
-
-#~ msgid "Icinga DB"
-#~ msgstr "БД Icinga"
-
-#~ msgid "Cancel Downtime"
-#~ msgstr "Отменить время простоя"
-
-#~ msgid "Delete command transport %s"
-#~ msgstr "Удалить транспорт команд %s"
-
-#~ msgid "Update command transport %s"
-#~ msgstr "Обновление транспорта команд %s"
-
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "Отменить %d время простоя"
-
-#~ msgid "Cancel downtimes"
-#~ msgstr "Отменить времени простоя"
-
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Подтвердите отмену %d времени простоя."
-
-#~ msgid "Update Command Transport"
-#~ msgstr "Обновление транспорта команд"
-
-#~ msgid "Delete Command Transport"
-#~ msgstr "Удаление транспорта команд"
-
-#~ msgid "Remove comments"
-#~ msgstr "Удалить комментарии"
-
-#~ msgid "- inherited -"
-#~ msgstr "- наследованный -"
-
-#~ msgid "%s does not exist"
-#~ msgstr "%s не существует"
+#~ msgid "Configure security related settings"
+#~ msgstr "Настройка параметров, связанных с безопасностью"
