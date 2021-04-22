@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-04-13 15:03+0000\n"
+"POT-Creation-Date: 2021-04-22 08:40+0000\n"
 "PO-Revision-Date: 2021-02-12 17:02+0500\n"
 "Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
 "Language-Team: TranslAster <https://github.com/translaster>\n"
@@ -368,7 +368,7 @@ msgid "Service Checks"
 msgstr "Проверки служб"
 
 #: sources.d/icingadb-web/application/controllers/HealthController.php:86
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:391
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:385
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:146
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/info.phtml:83
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:203
@@ -922,7 +922,7 @@ msgstr ""
 
 #: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:36
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:76
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:309
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:303
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/PerfdataController.php:26
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/PerfdataController.php:56
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/VCenterTabs.php:36
@@ -1092,13 +1092,13 @@ msgid "The state this check result should report"
 msgstr ""
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:48
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:125
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:129
 msgctxt "icinga.state"
 msgid "UP"
 msgstr "ВКЛЮЧЕН"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:49
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:126
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:130
 msgctxt "icinga.state"
 msgid "DOWN"
 msgstr "ОСТАНОВЛЕН"
@@ -1718,7 +1718,7 @@ msgstr "Проблемы с узлами"
 
 #: sources.d/icingadb-web/configuration.php:178
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:115
-#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:90
+#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:100
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:344
 msgid "Overdue"
 msgstr "Просрочено"
@@ -4594,16 +4594,16 @@ msgstr "Нет настроенных пользователей."
 msgid "No user groups configured."
 msgstr "Нет настроенных групп пользователей."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:312
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:306
 msgid "No performance data available."
 msgstr "Данные о производительности отсутствуют."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:327
-#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:39
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:321
+#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:40
 msgid "Output unavailable."
 msgstr "Вывод недоступен."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:335
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:329
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/output.phtml:1
 msgid "Plugin Output"
 msgstr "Вывод плагина"
@@ -4692,6 +4692,24 @@ msgstr "Н/А"
 #: sources.d/icingadb-web/library/Icingadb/Widget/Health.php:57
 msgid "Active Icinga Web Endpoint"
 msgstr "Активная конечная точка Icinga Web"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostListItemDetailed.php:34
+#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceListItemDetailed.php:35
+#, fuzzy
+msgid "This item has been commented"
+msgstr "%s \"%s\" был создан"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostListItemDetailed.php:38
+#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceListItemDetailed.php:39
+#, fuzzy
+msgid "Notifications disabled"
+msgstr "Отключенные уведомления узлов"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostListItemDetailed.php:42
+#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceListItemDetailed.php:43
+#, fuzzy
+msgid "Active checks disabled"
+msgstr "Активные проверки отключены"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/HostStatusBar.php:14
 #, php-format
@@ -4910,14 +4928,46 @@ msgstr "%s восстановлен"
 msgid "Page %d"
 msgstr "Страница %d"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceStatusBar.php:15
-#, php-format
-msgid "%d Service"
-msgid_plural "%d Services"
-msgstr[0] "%d служба"
-msgstr[1] "%d службы"
-msgstr[2] "%d служб"
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:63
+#: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistEntryForm.php:30
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:49
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatalistEntryTable.php:55
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaObjectDatafieldTable.php:49
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:36
+msgid "Label"
+msgstr "Название"
 
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:64
+#: sources.d/icingaweb2-module-director/application/forms/CustomvarForm.php:21
+#: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:50
+#: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:59
+#: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:27
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceVarForm.php:27
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaCommandArgumentTable.php:46
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:37
+msgid "Value"
+msgstr "Значение"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:65
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:38
+msgid "Min"
+msgstr "Мин"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:66
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:39
+msgid "Max"
+msgstr "Макс"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:67
+#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:25
+#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:115
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:40
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:89
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:96
+msgid "Warning"
+msgstr "Предупреждение"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:68
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:52
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:26
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:114
@@ -4926,6 +4976,18 @@ msgstr[2] "%d служб"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:110
 msgid "Critical"
 msgstr "Критично"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:127
+msgid "no value given"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceStatusBar.php:15
+#, php-format
+msgid "%d Service"
+msgid_plural "%d Services"
+msgstr[0] "%d служба"
+msgstr[1] "%d службы"
+msgstr[2] "%d служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ShowMore.php:40
 #: sources.d/icingaweb2-module-graphite/application/views/scripts/list/hosts.phtml:51
@@ -4943,11 +5005,11 @@ msgstr "Критично"
 msgid "Show More"
 msgstr "Показать больше"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:36
+#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:37
 msgid "Waiting for Icinga DB to synchronize the state."
 msgstr "Ожидание синхронизации состояния Icinga DB."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:51
+#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:52
 #, php-format
 msgctxt "<hostname> is <state-text>"
 msgid "%s is %s"
@@ -7322,16 +7384,6 @@ msgstr "Корзина была загружена"
 msgid "Variable name"
 msgstr "Имя переменной"
 
-#: sources.d/icingaweb2-module-director/application/forms/CustomvarForm.php:21
-#: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:50
-#: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:59
-#: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:27
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceVarForm.php:27
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaCommandArgumentTable.php:46
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:37
-msgid "Value"
-msgstr "Значение"
-
 #: sources.d/icingaweb2-module-director/application/forms/DeployConfigForm.php:32
 msgid "Re-deploy now"
 msgstr ""
@@ -7554,14 +7606,6 @@ msgid ""
 "Will be stored as a custom variable value when this entry is chosen from the "
 "list"
 msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistEntryForm.php:30
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:49
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatalistEntryTable.php:55
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaObjectDatafieldTable.php:49
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:36
-msgid "Label"
-msgstr "Название"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistEntryForm.php:33
 msgid "This will be the visible caption for this entry"
@@ -10697,14 +10741,6 @@ msgstr "(Узел) кэш группового разрешения"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:25
 msgid "Up"
 msgstr ""
-
-#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:25
-#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:115
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:40
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:89
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:96
-msgid "Warning"
-msgstr "Предупреждение"
 
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:27
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:54
@@ -18421,7 +18457,7 @@ msgstr ""
 msgid "This module has no description"
 msgstr "Этот модуль не имеет описания"
 
-#: sources.d/icingaweb2/library/Icinga/Authentication/AdmissionLoader.php:142
+#: sources.d/icingaweb2/library/Icinga/Authentication/AdmissionLoader.php:143
 msgid ""
 "Unable to parse authentication configuration. Check the log for more details."
 msgstr ""
@@ -20059,14 +20095,14 @@ msgstr[0] "Удаление времени простоя.."
 msgstr[1] "Удаление времен простоя.."
 msgstr[2] "Удаление времен простоя.."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:109
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:113
 msgid "Processing check result.."
 msgid_plural "Processing check results.."
 msgstr[0] "Обработка результата проверки.."
 msgstr[1] "Обработка результатов проверки.."
 msgstr[2] "Обработка результатов проверки.."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:130
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:134
 msgctxt "icinga.state"
 msgid "UNREACHABLE"
 msgstr "НЕДОСТУПНО"
@@ -20564,14 +20600,6 @@ msgstr "Показать подробную информацию об узле %
 #, php-format
 msgid "Show detailed information for service %s on host %s"
 msgstr "Показать подробную информацию о службе %s узла %s"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:38
-msgid "Min"
-msgstr "Мин"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:39
-msgid "Max"
-msgstr "Макс"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:97
 #, php-format
@@ -24147,58 +24175,58 @@ msgstr ""
 "icingaweb2\", если он явно не задан в переменной окружения "
 "\"ICINGAWEB_CONFIGDIR\"."
 
-#~ msgid "Configure security related settings"
-#~ msgstr "Настройка параметров, связанных с безопасностью"
+#~ msgid "%s does not exist"
+#~ msgstr "%s не существует"
 
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "История"
+#~ msgid "- inherited -"
+#~ msgstr "- наследованный -"
+
+#~ msgid "Remove comments"
+#~ msgstr "Удалить комментарии"
+
+#~ msgid "Delete Command Transport"
+#~ msgstr "Удаление транспорта команд"
+
+#~ msgid "Update Command Transport"
+#~ msgstr "Обновление транспорта команд"
+
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Подтвердите отмену %d времени простоя."
+
+#~ msgid "Cancel downtimes"
+#~ msgstr "Отменить времени простоя"
+
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "Отменить %d время простоя"
+
+#~ msgid "Update command transport %s"
+#~ msgstr "Обновление транспорта команд %s"
+
+#~ msgid "Delete command transport %s"
+#~ msgstr "Удалить транспорт команд %s"
+
+#~ msgid "Cancel Downtime"
+#~ msgstr "Отменить время простоя"
+
+#~ msgid "Icinga DB"
+#~ msgstr "БД Icinga"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Не хранить предпочтения"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "Предоставьте права администратора, напр. управлению объявлениями"
+
+#~ msgid "Open authentication configuration"
+#~ msgstr "Открыть конфигурацию аутентификации"
 
 #, fuzzy
 #~ msgid "History Service Id"
 #~ msgstr "Последняя проверка службы"
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Открыть конфигурацию аутентификации"
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "История"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "Предоставьте права администратора, напр. управлению объявлениями"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Не хранить предпочтения"
-
-#~ msgid "Icinga DB"
-#~ msgstr "БД Icinga"
-
-#~ msgid "Cancel Downtime"
-#~ msgstr "Отменить время простоя"
-
-#~ msgid "Delete command transport %s"
-#~ msgstr "Удалить транспорт команд %s"
-
-#~ msgid "Update command transport %s"
-#~ msgstr "Обновление транспорта команд %s"
-
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "Отменить %d время простоя"
-
-#~ msgid "Cancel downtimes"
-#~ msgstr "Отменить времени простоя"
-
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Подтвердите отмену %d времени простоя."
-
-#~ msgid "Update Command Transport"
-#~ msgstr "Обновление транспорта команд"
-
-#~ msgid "Delete Command Transport"
-#~ msgstr "Удаление транспорта команд"
-
-#~ msgid "Remove comments"
-#~ msgstr "Удалить комментарии"
-
-#~ msgid "- inherited -"
-#~ msgstr "- наследованный -"
-
-#~ msgid "%s does not exist"
-#~ msgstr "%s не существует"
+#~ msgid "Configure security related settings"
+#~ msgstr "Настройка параметров, связанных с безопасностью"
