@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-04-13 15:03+0000\n"
+"POT-Creation-Date: 2021-04-22 08:40+0000\n"
 "PO-Revision-Date: 2020-04-27 14:54+0200\n"
 "Last-Translator: papillon326 <udagawa@www2178ue.sakura.ne.jp>\n"
 "Language-Team: \n"
@@ -361,7 +361,7 @@ msgid "Service Checks"
 msgstr "サービス監視"
 
 #: sources.d/icingadb-web/application/controllers/HealthController.php:86
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:391
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:385
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:146
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/info.phtml:83
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:203
@@ -916,7 +916,7 @@ msgstr "フラップ検出"
 
 #: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:36
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:76
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:309
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:303
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/PerfdataController.php:26
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/PerfdataController.php:56
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/VCenterTabs.php:36
@@ -1090,13 +1090,13 @@ msgid "The state this check result should report"
 msgstr "監視結果の状態を選択します"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:48
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:125
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:129
 msgctxt "icinga.state"
 msgid "UP"
 msgstr ""
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:49
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:126
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:130
 msgctxt "icinga.state"
 msgid "DOWN"
 msgstr ""
@@ -1717,7 +1717,7 @@ msgstr "障害発生中のホスト一覧"
 
 #: sources.d/icingadb-web/configuration.php:178
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:115
-#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:90
+#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:100
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:344
 msgid "Overdue"
 msgstr "遅延状況"
@@ -4677,16 +4677,16 @@ msgstr ""
 msgid "No user groups configured."
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:312
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:306
 msgid "No performance data available."
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:327
-#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:39
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:321
+#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:40
 msgid "Output unavailable."
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:335
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:329
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/output.phtml:1
 msgid "Plugin Output"
 msgstr "プラグイン出力"
@@ -4770,6 +4770,24 @@ msgstr ""
 #: sources.d/icingadb-web/library/Icingadb/Widget/Health.php:57
 msgid "Active Icinga Web Endpoint"
 msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostListItemDetailed.php:34
+#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceListItemDetailed.php:35
+#, fuzzy
+msgid "This item has been commented"
+msgstr "このオブジェクトは有効化されています。"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostListItemDetailed.php:38
+#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceListItemDetailed.php:39
+#, fuzzy
+msgid "Notifications disabled"
+msgstr "通知が無効"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostListItemDetailed.php:42
+#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceListItemDetailed.php:43
+#, fuzzy
+msgid "Active checks disabled"
+msgstr "アクティブ監視無効"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/HostStatusBar.php:14
 #, php-format
@@ -4992,12 +5010,46 @@ msgstr ""
 msgid "Page %d"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceStatusBar.php:15
-#, php-format
-msgid "%d Service"
-msgid_plural "%d Services"
-msgstr[0] ""
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:63
+#: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistEntryForm.php:30
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:49
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatalistEntryTable.php:55
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaObjectDatafieldTable.php:49
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:36
+msgid "Label"
+msgstr "ラベル"
 
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:64
+#: sources.d/icingaweb2-module-director/application/forms/CustomvarForm.php:21
+#: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:50
+#: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:59
+#: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:27
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceVarForm.php:27
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaCommandArgumentTable.php:46
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:37
+msgid "Value"
+msgstr "値"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:65
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:38
+msgid "Min"
+msgstr "分"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:66
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:39
+msgid "Max"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:67
+#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:25
+#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:115
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:40
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:89
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:96
+msgid "Warning"
+msgstr "Warning (警告)"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:68
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:52
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:26
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:114
@@ -5006,6 +5058,17 @@ msgstr[0] ""
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:110
 msgid "Critical"
 msgstr "Critical (危険)"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/PerfDataTable.php:127
+#, fuzzy
+msgid "no value given"
+msgstr "値が設定されていません（null）"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceStatusBar.php:15
+#, php-format
+msgid "%d Service"
+msgid_plural "%d Services"
+msgstr[0] ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ShowMore.php:40
 #: sources.d/icingaweb2-module-graphite/application/views/scripts/list/hosts.phtml:51
@@ -5023,11 +5086,11 @@ msgstr "Critical (危険)"
 msgid "Show More"
 msgstr "さらに表示"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:36
+#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:37
 msgid "Waiting for Icinga DB to synchronize the state."
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:51
+#: sources.d/icingadb-web/library/Icingadb/Widget/StateListItem.php:52
 #, php-format
 msgctxt "<hostname> is <state-text>"
 msgid "%s is %s"
@@ -7410,16 +7473,6 @@ msgstr "バスケットがアップロードされました"
 msgid "Variable name"
 msgstr "変数名"
 
-#: sources.d/icingaweb2-module-director/application/forms/CustomvarForm.php:21
-#: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:50
-#: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:59
-#: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:27
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceVarForm.php:27
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaCommandArgumentTable.php:46
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:37
-msgid "Value"
-msgstr "値"
-
 #: sources.d/icingaweb2-module-director/application/forms/DeployConfigForm.php:32
 msgid "Re-deploy now"
 msgstr "再反映"
@@ -7654,14 +7707,6 @@ msgid ""
 "list"
 msgstr ""
 "カスタム変数の値の入力時に、このキーが選択されると、変数の値になります。"
-
-#: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistEntryForm.php:30
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:49
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatalistEntryTable.php:55
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaObjectDatafieldTable.php:49
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:36
-msgid "Label"
-msgstr "ラベル"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistEntryForm.php:33
 msgid "This will be the visible caption for this entry"
@@ -11025,14 +11070,6 @@ msgstr "(ホスト) グループがキャッシュを解決"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:25
 msgid "Up"
 msgstr "Up (起動)"
-
-#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:25
-#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:115
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:40
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:89
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:96
-msgid "Warning"
-msgstr "Warning (警告)"
 
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:27
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:54
@@ -18791,7 +18828,7 @@ msgstr "モジュール\"%s\"は有効にできません。エラーが発生し
 msgid "This module has no description"
 msgstr "このモジュールには説明がありません"
 
-#: sources.d/icingaweb2/library/Icinga/Authentication/AdmissionLoader.php:142
+#: sources.d/icingaweb2/library/Icinga/Authentication/AdmissionLoader.php:143
 msgid ""
 "Unable to parse authentication configuration. Check the log for more details."
 msgstr ""
@@ -20418,12 +20455,12 @@ msgid "Deleting downtime.."
 msgid_plural "Deleting downtimes.."
 msgstr[0] "計画メンテナンス期間を削除しています.."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:109
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:113
 msgid "Processing check result.."
 msgid_plural "Processing check results.."
 msgstr[0] "監視結果を処理しています.."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:130
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:134
 msgctxt "icinga.state"
 msgid "UNREACHABLE"
 msgstr ""
@@ -20940,14 +20977,6 @@ msgstr "ホスト%s の詳細情報を表示します"
 #, php-format
 msgid "Show detailed information for service %s on host %s"
 msgstr "サービス %s の詳細情報を表示します(ホスト: %s)"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:38
-msgid "Min"
-msgstr "分"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:39
-msgid "Max"
-msgstr ""
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:97
 #, php-format
@@ -24438,31 +24467,17 @@ msgstr ""
 "環境変数 \"ICINGAWEB_CONFIGDIR\"で明示的に設定されていない場合、Icinga Web 2"
 "設定ディレクトリはデフォルトで \"/etc /icingaweb2\"になります。"
 
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "オブジェクトタイプ"
+#~ msgid "- inherited -"
+#~ msgstr "- 継承 -"
 
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "履歴"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "設定を保存しない"
 
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "監視対象サービス"
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "管理者権限を付与する。例：お知らせの管理"
 
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "コメントの種類"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "イベント時間"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "ホスト変数から生成しました"
-
-#~ msgid "Blacklist"
-#~ msgstr "ブラックリスト"
+#~ msgid "Open authentication configuration"
+#~ msgstr "認証設定を行う画面へ"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -24471,14 +24486,28 @@ msgstr ""
 #~ "環境設定の保存場所として「データベース」を選択すると、Icinga Web 2は認証と"
 #~ "同じデータベースを使用します。"
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "認証設定を行う画面へ"
+#~ msgid "Blacklist"
+#~ msgstr "ブラックリスト"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "管理者権限を付与する。例：お知らせの管理"
+#~ msgid "Generated from host vars"
+#~ msgstr "ホスト変数から生成しました"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "設定を保存しない"
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "イベント時間"
 
-#~ msgid "- inherited -"
-#~ msgstr "- 継承 -"
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "コメントの種類"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "監視対象サービス"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "履歴"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "オブジェクトタイプ"
