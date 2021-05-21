@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-05-17 12:27+0000\n"
+"POT-Creation-Date: 2021-05-21 13:43+0000\n"
 "PO-Revision-Date: 2021-03-08 08:36+0100\n"
 "Last-Translator: @hashfunktion <mail@jessereppin.de>\n"
 "Language-Team: \n"
@@ -785,6 +785,7 @@ msgstr "Benutzergruppe nicht gefunden"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarTable.php:47
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarVariantsTable.php:62
 #: sources.d/icingaweb2/application/controllers/GroupController.php:401
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:35
 #: sources.d/icingaweb2/application/controllers/RoleController.php:66
 #: sources.d/icingaweb2/application/controllers/RoleController.php:288
 #: sources.d/icingaweb2/application/controllers/RoleController.php:374
@@ -4114,7 +4115,7 @@ msgstr "Die Icinga 2 API wird über die folgenden Verbindungsdetails erreicht:"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:90
 #: sources.d/icingaweb2/application/controllers/GroupController.php:116
 #: sources.d/icingaweb2/application/controllers/UserController.php:80
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:49
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:53
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:145
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:34
 #: sources.d/icingaweb2/application/views/scripts/group/show.phtml:75
@@ -4143,7 +4144,7 @@ msgstr "Benutzername"
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:99
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:99
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:104
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:59
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:63
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:155
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:42
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:64
@@ -5308,7 +5309,7 @@ msgstr "Bisher keine Aktivitäten aufgezeichnet."
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:21
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:32
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/MainTabs.php:64
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:69
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:77
 msgid "Configuration"
 msgstr "Konfiguration"
 
@@ -13149,8 +13150,8 @@ msgstr "Aktion"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableEndpoint.php:22
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:33
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/VRangerBackupRunDetails.php:24
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:151
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:203
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:159
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:211
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:639
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:30
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:20
@@ -16185,34 +16186,51 @@ msgid "About Icinga Web 2"
 msgstr "Über Icinga Web 2"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:27
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:27
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:135
 msgid "Update your account"
 msgstr "Das eigene Benutzerkonto aktualisieren"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:28
-#: sources.d/icingaweb2/application/controllers/AccountController.php:73
+#: sources.d/icingaweb2/application/controllers/AccountController.php:81
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:28
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:136
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:116
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:124
 msgid "My Account"
 msgstr "Mein Benutzerkonto"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:32
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:35
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:144
 msgid "List and configure your own navigation items"
 msgstr "Eigene Navigationselemente auflisten und bearbeiten"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:33
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:36
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:130
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:145
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:153
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:248
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:304
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:348
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:161
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:256
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:312
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:356
 #: sources.d/icingaweb2/application/views/scripts/layout/menu.phtml:16
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:29
 #: sources.d/icingaweb2/application/views/scripts/pivottablePagination.phtml:16
 msgid "Navigation"
 msgstr "Navigation"
+
+#: sources.d/icingaweb2/application/controllers/AccountController.php:39
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:43
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:152
+msgid "List of devices you are logged in"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/AccountController.php:40
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:44
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:153
+#, fuzzy
+msgid "My Devices"
+msgstr "Services"
 
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:17
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:31
@@ -16249,7 +16267,7 @@ msgstr "Bekanntmachung aktualisieren"
 msgid "Remove Announcement"
 msgstr "Bekanntmachung entfernen"
 
-#: sources.d/icingaweb2/application/controllers/AuthenticationController.php:57
+#: sources.d/icingaweb2/application/controllers/AuthenticationController.php:86
 msgid "Icinga Web 2 Login"
 msgstr "Icinga Web 2 Anmeldung"
 
@@ -16286,7 +16304,7 @@ msgstr "Benutzergruppenbackends"
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:116
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:128
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:83
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:100
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:108
 msgid "Modules"
 msgstr "Module"
 
@@ -16603,91 +16621,112 @@ msgid "Module"
 msgstr "Modul"
 
 #: sources.d/icingaweb2/application/controllers/ListController.php:57
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:135
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:143
 msgid "Application Log"
 msgstr "Anwendungslog"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:152
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:34
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:68
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserList.php:81
+msgid "List of users who stay logged in"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:49
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:63
+msgid "Users can't stay logged in without a database configuration backend"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:60
+#, fuzzy
+msgid "List of devices"
+msgstr "Liste Services"
+
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:61
+#, fuzzy
+msgid "Devices"
+msgstr "Services"
+
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:160
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:594
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:31
 msgid "Shared"
 msgstr "Freigegeben"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:185
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:193
 msgid "Unshare this navigation item"
 msgstr "Freigabe dieses Navigationselementes aufheben"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:192
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:197
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:200
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:205
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:213
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:19
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:92
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:100
 msgid "Shared Navigation"
 msgstr "Freigegebene Navigation"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:196
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:204
 msgid "List and configure shared navigation items"
 msgstr "Geteilte Navigationselemente auflisten und bearbeiten"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:204
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:212
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:21
 msgid "Owner"
 msgstr "Besitzer"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:220
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:228
 msgid "Create a new navigation item, such as a menu entry or dashlet."
 msgstr ""
 "Neues Navigationselement (zum Beispiel Menüeintrag oder Dashlet) erstellen."
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:240
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:248
 msgid "Navigation item successfully created"
 msgstr "Navigationselement erfolgreich angelegt"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:249
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:257
 msgid "New Navigation Item"
 msgstr "Neues Navigationselement erstellen"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:290
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:298
 #, php-format
 msgid "Navigation item \"%s\" successfully updated"
 msgstr "Navigationselement \"%s\" erfolgreich aktualisiert"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:301
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:414
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:309
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:422
 #, php-format
 msgid "Navigation item \"%s\" not found"
 msgstr "Navigationselement \"%s\" wurde nicht gefunden"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:305
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:313
 msgid "Update Navigation Item"
 msgstr "Navigationselement aktualisieren"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:328
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:336
 #, php-format
 msgid "Navigation Item \"%s\" not found. No action required"
 msgstr "Navigationselement \"%s\" nicht gefunden. Kein Eingriff erforderlich"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:340
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:348
 #, php-format
 msgid "Navigation Item \"%s\" successfully removed"
 msgstr "Navigationselement \"%s\" erfolgreich entfernt"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:349
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:357
 msgid "Remove Navigation Item"
 msgstr "Navigationselement entfernen"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:381
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:389
 #, php-format
 msgid "Navigation item \"%s\" has been unshared"
 msgstr "Teilen des Navigationselementes \"%s\" erfolgreich aufgehoben"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:388
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:396
 #, php-format
 msgid "Failed to unshare navigation item \"%s\""
 msgstr ""
 "Teilen des Navigationselementes \"%s\" konnte nicht rückgängig gemacht werden"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:433
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:441
 msgid "Navigation not found"
 msgstr "Navigation nicht gefunden"
 
@@ -16927,16 +16966,20 @@ msgstr "Bekanntmachung entfernt"
 msgid "Failed to remove announcement"
 msgstr "Bekanntmachung konnte nicht entfernt werden"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:33
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:37
 #: sources.d/icingaweb2/application/views/scripts/authentication/logout.phtml:23
 msgid "Login"
 msgstr "Anmelden"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:34
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:38
 msgid "Logging in"
 msgstr "Anmeldung"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:111
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:71
+msgid "Stay logged in"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:134
 msgid ""
 "No authentication methods available. Did you create authentication.ini when "
 "setting up Icinga Web 2?"
@@ -16944,7 +16987,7 @@ msgstr ""
 "Keine Authentifizierungsmethode verfügbar. Wurde bei der Installation von "
 "Icinga Web 2 eine authentication.ini erstellt?"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:117
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:140
 msgid ""
 "All configured authentication methods failed. Please check the system log or "
 "Icinga Web 2 log for more information."
@@ -16952,7 +16995,7 @@ msgstr ""
 "Alle konfigurierten Authentifizierungsmethoden sind fehlgeschlagen. Mehr "
 "Details dazu stehen im Systemlog oder im Log von Icinga Web 2."
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:124
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:147
 msgid ""
 "Please note that not all authentication methods were available. Check the "
 "system log or Icinga Web 2 log for more information."
@@ -16961,11 +17004,11 @@ msgstr ""
 "waren. Prüfe das Systemlog oder jenes von Icinga Web 2 für weitere "
 "Informationen."
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:129
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:152
 msgid "Incorrect username or password"
 msgstr "Benutzername oder Kennwort ungültig"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:150
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:173
 msgid ""
 "You're currently not authenticated using any of the web server's "
 "authentication mechanisms. Make sure you'll configure such, otherwise you'll "
@@ -18545,28 +18588,33 @@ msgstr "Erlaubt die Einstellung zur Anzeige von Stacktraces"
 msgid "Allow to share navigation items"
 msgstr "Erlaubt das Teilen von Navigationselementen"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:560
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:557
+#, fuzzy
+msgid "Allow to manage user sessions"
+msgstr "Erlauben, Benutzer zu konfigurieren"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:563
 msgid "Restrict which users this role can share items and information with"
 msgstr ""
 "Beschränken Sie, mit welchen Benutzern diese Rolle Elemente und "
 "Informationen teilen kann"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:563
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:566
 msgid "Restrict which groups this role can share items and information with"
 msgstr ""
 "Beschränken Sie, mit welchen Gruppen diese Rolle Elemente und Informationen "
 "teilen kann"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:572
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:575
 msgid "General Module Access"
 msgstr "Allgemeiner Modul-Zugriff"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:573
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:576
 #, php-format
 msgid "Allow access to module %s"
 msgstr "Zugriff auf das Modul %s erlauben"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:581
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:584
 msgid "Full Module Access"
 msgstr "Voller Modul-Zugriff"
 
@@ -19574,44 +19622,49 @@ msgstr "Öffne Ereignisüberblick"
 msgid "List announcements"
 msgstr "Bekanntmachungen auflisten"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:76
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:69
+#, fuzzy
+msgid "User Sessions"
+msgstr "SOFT-States benutzen"
+
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:84
 msgid "Open application configuration"
 msgstr "Öffne Anwendungs-Konfiguration"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:77
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:85
 msgid "Application"
 msgstr "Anwendung"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:83
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:91
 #, fuzzy
 msgid "Open access control configuration"
 msgstr "Öffne Anwendungs-Konfiguration"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:84
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:92
 msgid "Access Control"
 msgstr ""
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:91
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:99
 msgid "Open shared navigation configuration"
 msgstr "Öffne Konfiguration geteilter Navigationselemente"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:99
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:107
 msgid "Open module configuration"
 msgstr "Öffne Modul-Konfiguration"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:115
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:123
 msgid "Open your account preferences"
 msgstr "Öffne Konto-Einstellungen"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:122
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:130
 msgid "Log out"
 msgstr "Abmelden"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:123
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:131
 msgid "Logout"
 msgstr "Abmelden"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:134
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:142
 msgid "Open Application Log"
 msgstr "Öffne Anwendungslog"
 
@@ -19628,6 +19681,40 @@ msgstr ""
 "Die Navigationskonfiguration konnte nicht vollständig gelesen werden. Bitte "
 "stellen Sie sicher, dass alle referenziertem Elternelemente existierende "
 "Navigationselemente sind: %s"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:102
+#, fuzzy, php-format
+msgid "List of devices and browsers %s is currently logged in:"
+msgstr "Liste %u Service, der gerade im Zustand FLAPPING ist"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:108
+msgid "OS"
+msgstr ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:109
+#, fuzzy
+msgid "Browser"
+msgstr "Browser (%s)"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:110
+#, fuzzy
+msgid "Fingerprint"
+msgstr "Fingerabdrücke"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:116
+#, fuzzy
+msgid "No device found"
+msgstr "Keine Einträge gefunden."
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserList.php:88
+#, fuzzy
+msgid "No user found"
+msgstr "Keine Ergebnisse gefunden."
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserList.php:95
+#, fuzzy, php-format
+msgid "Device list of %s"
+msgstr "Services auf %s"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:42
 #, fuzzy, php-format
@@ -25209,52 +25296,40 @@ msgstr ""
 "icingaweb2“, wenn es nicht explizit in der Umgebungsvariable "
 "„ICINGAWEB_CONFIGDIR“ gesetzt wurde."
 
-#~ msgid "No permission for %s"
-#~ msgstr "Keine Berechtigung für %s"
+#~ msgid "Action %d"
+#~ msgstr "Aktion %d"
 
-#~ msgid "%s does not exist"
-#~ msgstr "%s existiert nicht"
+#~ msgid "Note %d"
+#~ msgstr "Notiz %d"
 
-#~ msgid "- inherited -"
-#~ msgstr "- geerbt -"
+#~ msgid "Continue with filter"
+#~ msgstr "Mit Filter fortfahren"
 
-#~ msgid "Remove comments"
-#~ msgstr "Entferne Kommentare"
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Objekttyp"
 
-#~ msgid "Delete Command Transport"
-#~ msgstr "Lösche Befehls-Transport"
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Historie"
 
-#~ msgid "Update Command Transport"
-#~ msgstr "Aktualisiere Befehls-Transport"
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Überwachte Services"
 
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Bestätige den Abbruch der %d Downtimes."
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Kommentartyp"
 
-#~ msgid "Cancel downtimes"
-#~ msgstr "Downtimes abbrechen"
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Ereignis-Zeitpunkt"
 
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "%d Downtimes abbrechen"
+#~ msgid "Generated from host vars"
+#~ msgstr "Aus Host-Variablen generiert"
 
-#~ msgid "Update command transport %s"
-#~ msgstr "Aktualisiere Befehls-Transport %s"
-
-#~ msgid "Delete command transport %s"
-#~ msgstr "Lösche Befehls-Transport %s"
-
-#~ msgid "Cancel Downtime"
-#~ msgstr "Downtime beenden"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Einstellungen nicht speichern"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr ""
-#~ "Verleiht Administratorrechte, erlaubt z. B. das Verwalten von "
-#~ "Bekanntmachungen"
-
-#~ msgid "Open authentication configuration"
-#~ msgstr "Öffne Authentifizierungs-Konfiguration"
+#~ msgid "Blacklist"
+#~ msgstr "Blacklist"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -25264,37 +25339,49 @@ msgstr ""
 #~ "gespeichert werden sollen, verwendet Icinga Web 2 die selbe Datenbank wie "
 #~ "zur Authentifizierung."
 
-#~ msgid "Blacklist"
-#~ msgstr "Blacklist"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Öffne Authentifizierungs-Konfiguration"
 
-#~ msgid "Generated from host vars"
-#~ msgstr "Aus Host-Variablen generiert"
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr ""
+#~ "Verleiht Administratorrechte, erlaubt z. B. das Verwalten von "
+#~ "Bekanntmachungen"
 
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Ereignis-Zeitpunkt"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Einstellungen nicht speichern"
 
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Kommentartyp"
+#~ msgid "Cancel Downtime"
+#~ msgstr "Downtime beenden"
 
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Überwachte Services"
+#~ msgid "Delete command transport %s"
+#~ msgstr "Lösche Befehls-Transport %s"
 
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Historie"
+#~ msgid "Update command transport %s"
+#~ msgstr "Aktualisiere Befehls-Transport %s"
 
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Objekttyp"
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "%d Downtimes abbrechen"
 
-#~ msgid "Continue with filter"
-#~ msgstr "Mit Filter fortfahren"
+#~ msgid "Cancel downtimes"
+#~ msgstr "Downtimes abbrechen"
 
-#~ msgid "Note %d"
-#~ msgstr "Notiz %d"
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Bestätige den Abbruch der %d Downtimes."
 
-#~ msgid "Action %d"
-#~ msgstr "Aktion %d"
+#~ msgid "Update Command Transport"
+#~ msgstr "Aktualisiere Befehls-Transport"
+
+#~ msgid "Delete Command Transport"
+#~ msgstr "Lösche Befehls-Transport"
+
+#~ msgid "Remove comments"
+#~ msgstr "Entferne Kommentare"
+
+#~ msgid "- inherited -"
+#~ msgstr "- geerbt -"
+
+#~ msgid "%s does not exist"
+#~ msgstr "%s existiert nicht"
+
+#~ msgid "No permission for %s"
+#~ msgstr "Keine Berechtigung für %s"

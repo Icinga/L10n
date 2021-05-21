@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-05-17 12:27+0000\n"
+"POT-Creation-Date: 2021-05-21 13:43+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -769,6 +769,7 @@ msgstr "Групу користувачів не знайдено"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarTable.php:47
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarVariantsTable.php:62
 #: sources.d/icingaweb2/application/controllers/GroupController.php:401
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:35
 #: sources.d/icingaweb2/application/controllers/RoleController.php:66
 #: sources.d/icingaweb2/application/controllers/RoleController.php:288
 #: sources.d/icingaweb2/application/controllers/RoleController.php:374
@@ -4112,7 +4113,7 @@ msgstr "З'єднання з API Icinga 2 буде виконано з наст�
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:90
 #: sources.d/icingaweb2/application/controllers/GroupController.php:116
 #: sources.d/icingaweb2/application/controllers/UserController.php:80
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:49
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:53
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:145
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:34
 #: sources.d/icingaweb2/application/views/scripts/group/show.phtml:75
@@ -4141,7 +4142,7 @@ msgstr "Ім'я користувача"
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:99
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:99
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:104
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:59
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:63
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:155
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:42
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:64
@@ -5302,7 +5303,7 @@ msgstr "Не було зафіксовано жодних дій."
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:21
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:32
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/MainTabs.php:64
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:69
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:77
 msgid "Configuration"
 msgstr "Налаштування"
 
@@ -13040,8 +13041,8 @@ msgstr "Дія"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableEndpoint.php:22
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:33
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/VRangerBackupRunDetails.php:24
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:151
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:203
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:159
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:211
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:639
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:30
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:20
@@ -16129,34 +16130,51 @@ msgid "About Icinga Web 2"
 msgstr "Про Icinga Web 2"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:27
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:27
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:135
 msgid "Update your account"
 msgstr "Оновити ваш обліковий запис"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:28
-#: sources.d/icingaweb2/application/controllers/AccountController.php:73
+#: sources.d/icingaweb2/application/controllers/AccountController.php:81
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:28
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:136
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:116
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:124
 msgid "My Account"
 msgstr "Мій обліковий запис"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:32
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:35
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:144
 msgid "List and configure your own navigation items"
 msgstr "Перерахувати та налаштувати власні об'єкти навігації"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:33
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:36
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:130
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:145
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:153
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:248
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:304
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:348
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:161
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:256
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:312
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:356
 #: sources.d/icingaweb2/application/views/scripts/layout/menu.phtml:16
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:29
 #: sources.d/icingaweb2/application/views/scripts/pivottablePagination.phtml:16
 msgid "Navigation"
 msgstr "Навігація"
+
+#: sources.d/icingaweb2/application/controllers/AccountController.php:39
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:43
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:152
+msgid "List of devices you are logged in"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/AccountController.php:40
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:44
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:153
+#, fuzzy
+msgid "My Devices"
+msgstr "Пристрої PCI"
 
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:17
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:31
@@ -16193,7 +16211,7 @@ msgstr "Оновити оголошення"
 msgid "Remove Announcement"
 msgstr "Видалити оголошення"
 
-#: sources.d/icingaweb2/application/controllers/AuthenticationController.php:57
+#: sources.d/icingaweb2/application/controllers/AuthenticationController.php:86
 msgid "Icinga Web 2 Login"
 msgstr "Вхід до Icinga Web 2"
 
@@ -16230,7 +16248,7 @@ msgstr "Бекенди груп користувачів"
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:116
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:128
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:83
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:100
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:108
 msgid "Modules"
 msgstr "Модулі"
 
@@ -16547,89 +16565,110 @@ msgid "Module"
 msgstr "Модуль"
 
 #: sources.d/icingaweb2/application/controllers/ListController.php:57
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:135
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:143
 msgid "Application Log"
 msgstr "Лог застосунку"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:152
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:34
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:68
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserList.php:81
+msgid "List of users who stay logged in"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:49
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:63
+msgid "Users can't stay logged in without a database configuration backend"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:60
+#, fuzzy
+msgid "List of devices"
+msgstr "Показати сервіси"
+
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:61
+#, fuzzy
+msgid "Devices"
+msgstr "Сервіси"
+
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:160
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:594
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:31
 msgid "Shared"
 msgstr "Спільне"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:185
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:193
 msgid "Unshare this navigation item"
 msgstr "Відмінити спільність цього об'єкту навігації"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:192
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:197
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:200
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:205
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:213
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:19
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:92
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:100
 msgid "Shared Navigation"
 msgstr "Спільні об'єкти навігації"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:196
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:204
 msgid "List and configure shared navigation items"
 msgstr "Перерахувати та налаштувати спільні об'єкти навігації"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:204
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:212
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:21
 msgid "Owner"
 msgstr "Власник"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:220
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:228
 msgid "Create a new navigation item, such as a menu entry or dashlet."
 msgstr "Створити новий об'єкт навігації, наприклад, пункт меню або дашлет."
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:240
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:248
 msgid "Navigation item successfully created"
 msgstr "Об'єкт навігації успішно створено"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:249
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:257
 msgid "New Navigation Item"
 msgstr "Новий об'єкт навігації"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:290
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:298
 #, php-format
 msgid "Navigation item \"%s\" successfully updated"
 msgstr "Об'єкт навігації \"%s\" успішно оновлено"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:301
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:414
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:309
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:422
 #, php-format
 msgid "Navigation item \"%s\" not found"
 msgstr "Об'єкт навігації \"%s\" не знайдено"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:305
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:313
 msgid "Update Navigation Item"
 msgstr "Оновити об'єкт навігації"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:328
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:336
 #, php-format
 msgid "Navigation Item \"%s\" not found. No action required"
 msgstr "Об'єкт навігації \"%s\" не знайдено. Додаткові дії не потрібні"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:340
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:348
 #, php-format
 msgid "Navigation Item \"%s\" successfully removed"
 msgstr "Об'єкт навігації \"%s\" успішно видалено"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:349
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:357
 msgid "Remove Navigation Item"
 msgstr "Видалити об'єкт навігації"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:381
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:389
 #, php-format
 msgid "Navigation item \"%s\" has been unshared"
 msgstr "Об'єкт навігації \"%s\" тепер не є спільним"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:388
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:396
 #, php-format
 msgid "Failed to unshare navigation item \"%s\""
 msgstr "Не вдалося відмінити спільність об'єкту навігації \"%s\""
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:433
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:441
 msgid "Navigation not found"
 msgstr "Навігацію не знайдено"
 
@@ -16869,16 +16908,20 @@ msgstr "Оголошення видалено"
 msgid "Failed to remove announcement"
 msgstr "Провалено видалення оголошення"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:33
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:37
 #: sources.d/icingaweb2/application/views/scripts/authentication/logout.phtml:23
 msgid "Login"
 msgstr "Вхід"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:34
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:38
 msgid "Logging in"
 msgstr "Вхід"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:111
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:71
+msgid "Stay logged in"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:134
 msgid ""
 "No authentication methods available. Did you create authentication.ini when "
 "setting up Icinga Web 2?"
@@ -16886,7 +16929,7 @@ msgstr ""
 "Нема доступних методів автентифікації. Чи створювали ви authentication.ini "
 "при встановленні Icinga Web 2?"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:117
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:140
 msgid ""
 "All configured authentication methods failed. Please check the system log or "
 "Icinga Web 2 log for more information."
@@ -16894,7 +16937,7 @@ msgstr ""
 "Усі налаштовані методи автентифікації були провалені.  Будь ласка, перевірте "
 "системний лог або лог Icinga Web 2 для отримання додаткової інформації."
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:124
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:147
 msgid ""
 "Please note that not all authentication methods were available. Check the "
 "system log or Icinga Web 2 log for more information."
@@ -16903,11 +16946,11 @@ msgstr ""
 "ласка, перевірте системний лог або лог Icinga Web 2 для отримання додаткової "
 "інформації."
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:129
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:152
 msgid "Incorrect username or password"
 msgstr "Невірне ім'я користувача або пароль"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:150
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:173
 msgid ""
 "You're currently not authenticated using any of the web server's "
 "authentication mechanisms. Make sure you'll configure such, otherwise you'll "
@@ -18455,25 +18498,30 @@ msgstr ""
 msgid "Allow to share navigation items"
 msgstr "Дозволити ділитися об'єктами навігації"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:560
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:557
+#, fuzzy
+msgid "Allow to manage user sessions"
+msgstr "Дозволити конфігурувати користувачів"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:563
 msgid "Restrict which users this role can share items and information with"
 msgstr ""
 "Обмежити користувачів з якими ця роль може ділитися об'єктами та інформацією"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:563
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:566
 msgid "Restrict which groups this role can share items and information with"
 msgstr "Обмежити групи з якими ця роль може ділитися об'єктами та інформацією"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:572
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:575
 msgid "General Module Access"
 msgstr "Загальний доступ до модулів"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:573
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:576
 #, php-format
 msgid "Allow access to module %s"
 msgstr "Дозволити доступ до модуля  %s"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:581
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:584
 msgid "Full Module Access"
 msgstr "Повний доступ до модулів"
 
@@ -19467,44 +19515,49 @@ msgstr "Відкрити огляд подій"
 msgid "List announcements"
 msgstr "Показати оголошення"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:76
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:69
+#, fuzzy
+msgid "User Sessions"
+msgstr "Використовувати М'ЯКІ стани"
+
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:84
 msgid "Open application configuration"
 msgstr "Відкрити налаштування застосунку"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:77
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:85
 msgid "Application"
 msgstr "Застосунок"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:83
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:91
 #, fuzzy
 msgid "Open access control configuration"
 msgstr "Відкрити налаштування застосунку"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:84
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:92
 msgid "Access Control"
 msgstr ""
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:91
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:99
 msgid "Open shared navigation configuration"
 msgstr "Відкрити налаштування спільних об'єктів навігації"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:99
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:107
 msgid "Open module configuration"
 msgstr "Відкрити налаштування модулів"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:115
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:123
 msgid "Open your account preferences"
 msgstr "Відкрити ваші налаштування облікового запису"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:122
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:130
 msgid "Log out"
 msgstr "Вийти"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:123
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:131
 msgid "Logout"
 msgstr "Вихід"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:134
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:142
 msgid "Open Application Log"
 msgstr "Відкрити лог застосунку"
 
@@ -19520,6 +19573,40 @@ msgid ""
 msgstr ""
 "Не вдалося повністю обробити налаштування конфігурації. Впевніться, що всі "
 "вказані батьківські об'єкти є існуючими навігаційними об'єктами: %s"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:102
+#, fuzzy, php-format
+msgid "List of devices and browsers %s is currently logged in:"
+msgstr "Показати %u сервіс у стані флепінгу"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:108
+msgid "OS"
+msgstr ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:109
+#, fuzzy
+msgid "Browser"
+msgstr "Браузер (%s)"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:110
+#, fuzzy
+msgid "Fingerprint"
+msgstr "Відбитки"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:116
+#, fuzzy
+msgid "No device found"
+msgstr "Не знайдено подій"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserList.php:88
+#, fuzzy
+msgid "No user found"
+msgstr "Не знайдено результатів."
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserList.php:95
+#, fuzzy, php-format
+msgid "Device list of %s"
+msgstr "Сервіси на %s"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:42
 #, fuzzy, php-format
@@ -25110,51 +25197,95 @@ msgstr ""
 "icingaweb2\" у разі якщо явно не зазначено у змінній оточення "
 "\"ICINGAWEB_CONFIGDIR\"."
 
-#~ msgid "No permission for %s"
-#~ msgstr "Немає дозволу для %s"
+#~ msgid "Action %d"
+#~ msgstr "Дія %d"
 
-#~ msgid "%s does not exist"
-#~ msgstr "%s не існує"
+#~ msgid "Note %d"
+#~ msgstr "Нотатка %d"
 
-#~ msgid "- inherited -"
-#~ msgstr "- унаслідувано -"
+#~ msgid "Continue with filter"
+#~ msgstr "Продовжити з фільтром"
 
-#~ msgid "Remove comments"
-#~ msgstr "Видалити коментарі"
+#~ msgid "Configure security related settings"
+#~ msgstr "Налаштування безпеки"
 
-#~ msgid "Delete Command Transport"
-#~ msgstr "Видалити Командний Транспорт"
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Тип об'єкту"
 
-#~ msgid "Update Command Transport"
-#~ msgstr "Оновити Командний Транспорт"
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Історія"
 
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Підтвердити скасування %d простоїв."
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Сервіси на моніторингу"
 
-#~ msgid "Cancel downtimes"
-#~ msgstr "Скасувати простої"
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Тип події"
 
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "Скасувати %d простоїв"
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Час події"
 
-#~ msgid "Update command transport %s"
-#~ msgstr "Оновити командний транспорт: %s"
+#~ msgid "Generated from host vars"
+#~ msgstr "Згенеровані з змінних хостів"
 
-#~ msgid "Delete command transport %s"
-#~ msgstr "Видалити командний транспорт: %s"
-
-#~ msgid "Cancel Downtime"
-#~ msgstr "Відмінити простій"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Не зберігати користувацькі налаштування"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgid ""
+#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
 #~ msgstr ""
-#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
+#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
+#~ "Web"
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Відкрити налаштування автентифікації"
+#~ msgid "Keep only matching rows (Whitelist)"
+#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
+
+#~ msgid "Reject the whole row (Blacklist)"
+#~ msgstr "Відкинути весь рядок (blacklist)"
+
+#~ msgid "%s is no longer blacklisted on %s"
+#~ msgstr "%s більше не у чорному списку %s"
+
+#~ msgid "%s has been blacklisted on %s"
+#~ msgstr "%s було додано у чорний список %s"
+
+#~ msgid "Blacklist"
+#~ msgstr "Чорний список"
+
+#~ msgid "This Service has been blacklisted on this host"
+#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+
+#~ msgid "Service Critical"
+#~ msgid_plural "Services Critical"
+#~ msgstr[0] "Критичний сервіс"
+#~ msgstr[1] "Критичних сервіси"
+#~ msgstr[2] "Критичних сервісів"
+
+#~ msgid "Host Down"
+#~ msgid_plural "Hosts Down"
+#~ msgstr[0] "Хост недоступний"
+#~ msgstr[1] "Хост недоступні"
+#~ msgstr[2] "Хост недоступні"
+
+#~ msgid "Open console with VMRC"
+#~ msgstr "Відкрити консоль VMRC"
+
+#~ msgid "Console"
+#~ msgstr "Консоль"
+
+#~ msgid "Vendor / Model"
+#~ msgstr "Вендор / Модель"
+
+#~ msgid "NICs"
+#~ msgstr "NIC"
+
+#~ msgid ""
+#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
+#~ "is it part of the description (indented with a single space)"
+#~ msgstr ""
+#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
+#~ "і не є частиною опису (починається з одного пробілу)"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -25164,92 +25295,48 @@ msgstr ""
 #~ "користувацьких налаштувань призведе Icinga Web 2 до їх збереження у тій "
 #~ "же базі даних що використовується для автентифікації."
 
-#~ msgid ""
-#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
-#~ "is it part of the description (indented with a single space)"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Відкрити налаштування автентифікації"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
 #~ msgstr ""
-#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
-#~ "і не є частиною опису (починається з одного пробілу)"
+#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
 
-#~ msgid "NICs"
-#~ msgstr "NIC"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Не зберігати користувацькі налаштування"
 
-#~ msgid "Vendor / Model"
-#~ msgstr "Вендор / Модель"
+#~ msgid "Cancel Downtime"
+#~ msgstr "Відмінити простій"
 
-#~ msgid "Console"
-#~ msgstr "Консоль"
+#~ msgid "Delete command transport %s"
+#~ msgstr "Видалити командний транспорт: %s"
 
-#~ msgid "Open console with VMRC"
-#~ msgstr "Відкрити консоль VMRC"
+#~ msgid "Update command transport %s"
+#~ msgstr "Оновити командний транспорт: %s"
 
-#~ msgid "Host Down"
-#~ msgid_plural "Hosts Down"
-#~ msgstr[0] "Хост недоступний"
-#~ msgstr[1] "Хост недоступні"
-#~ msgstr[2] "Хост недоступні"
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "Скасувати %d простоїв"
 
-#~ msgid "Service Critical"
-#~ msgid_plural "Services Critical"
-#~ msgstr[0] "Критичний сервіс"
-#~ msgstr[1] "Критичних сервіси"
-#~ msgstr[2] "Критичних сервісів"
+#~ msgid "Cancel downtimes"
+#~ msgstr "Скасувати простої"
 
-#~ msgid "This Service has been blacklisted on this host"
-#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Підтвердити скасування %d простоїв."
 
-#~ msgid "Blacklist"
-#~ msgstr "Чорний список"
+#~ msgid "Update Command Transport"
+#~ msgstr "Оновити Командний Транспорт"
 
-#~ msgid "%s has been blacklisted on %s"
-#~ msgstr "%s було додано у чорний список %s"
+#~ msgid "Delete Command Transport"
+#~ msgstr "Видалити Командний Транспорт"
 
-#~ msgid "%s is no longer blacklisted on %s"
-#~ msgstr "%s більше не у чорному списку %s"
+#~ msgid "Remove comments"
+#~ msgstr "Видалити коментарі"
 
-#~ msgid "Reject the whole row (Blacklist)"
-#~ msgstr "Відкинути весь рядок (blacklist)"
+#~ msgid "- inherited -"
+#~ msgstr "- унаслідувано -"
 
-#~ msgid "Keep only matching rows (Whitelist)"
-#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
+#~ msgid "%s does not exist"
+#~ msgstr "%s не існує"
 
-#~ msgid ""
-#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
-#~ msgstr ""
-#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
-#~ "Web"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "Згенеровані з змінних хостів"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Час події"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Тип події"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Сервіси на моніторингу"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Історія"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Тип об'єкту"
-
-#~ msgid "Configure security related settings"
-#~ msgstr "Налаштування безпеки"
-
-#~ msgid "Continue with filter"
-#~ msgstr "Продовжити з фільтром"
-
-#~ msgid "Note %d"
-#~ msgstr "Нотатка %d"
-
-#~ msgid "Action %d"
-#~ msgstr "Дія %d"
+#~ msgid "No permission for %s"
+#~ msgstr "Немає дозволу для %s"
