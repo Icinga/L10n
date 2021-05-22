@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-05-17 12:27+0000\n"
+"POT-Creation-Date: 2021-05-21 13:43+0000\n"
 "PO-Revision-Date: 2020-04-27 14:54+0200\n"
 "Last-Translator: papillon326 <udagawa@www2178ue.sakura.ne.jp>\n"
 "Language-Team: \n"
@@ -765,6 +765,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarTable.php:47
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarVariantsTable.php:62
 #: sources.d/icingaweb2/application/controllers/GroupController.php:401
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:35
 #: sources.d/icingaweb2/application/controllers/RoleController.php:66
 #: sources.d/icingaweb2/application/controllers/RoleController.php:288
 #: sources.d/icingaweb2/application/controllers/RoleController.php:374
@@ -4056,7 +4057,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:90
 #: sources.d/icingaweb2/application/controllers/GroupController.php:116
 #: sources.d/icingaweb2/application/controllers/UserController.php:80
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:49
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:53
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:145
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:34
 #: sources.d/icingaweb2/application/views/scripts/group/show.phtml:75
@@ -4085,7 +4086,7 @@ msgstr "ユーザ名"
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:99
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:99
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:104
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:59
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:63
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:155
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:42
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:64
@@ -5253,7 +5254,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:21
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:32
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/MainTabs.php:64
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:69
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:77
 msgid "Configuration"
 msgstr "設定"
 
@@ -12875,8 +12876,8 @@ msgstr "アクション"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableEndpoint.php:22
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:33
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/VRangerBackupRunDetails.php:24
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:151
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:203
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:159
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:211
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:639
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:30
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:20
@@ -15900,34 +15901,51 @@ msgid "About Icinga Web 2"
 msgstr "Icinga Web 2 について"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:27
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:27
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:135
 msgid "Update your account"
 msgstr "アカウント情報の編集"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:28
-#: sources.d/icingaweb2/application/controllers/AccountController.php:73
+#: sources.d/icingaweb2/application/controllers/AccountController.php:81
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:28
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:136
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:116
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:124
 msgid "My Account"
 msgstr "アカウント情報"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:32
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:35
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:144
 msgid "List and configure your own navigation items"
 msgstr "自身のナビゲーションを一覧表示"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:33
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:36
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:130
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:145
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:153
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:248
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:304
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:348
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:161
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:256
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:312
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:356
 #: sources.d/icingaweb2/application/views/scripts/layout/menu.phtml:16
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:29
 #: sources.d/icingaweb2/application/views/scripts/pivottablePagination.phtml:16
 msgid "Navigation"
 msgstr "ナビゲーション"
+
+#: sources.d/icingaweb2/application/controllers/AccountController.php:39
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:43
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:152
+msgid "List of devices you are logged in"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/AccountController.php:40
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:44
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:153
+#, fuzzy
+msgid "My Devices"
+msgstr "サービス"
 
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:17
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:31
@@ -15964,7 +15982,7 @@ msgstr "お知らせを編集"
 msgid "Remove Announcement"
 msgstr "お知らせの削除"
 
-#: sources.d/icingaweb2/application/controllers/AuthenticationController.php:57
+#: sources.d/icingaweb2/application/controllers/AuthenticationController.php:86
 msgid "Icinga Web 2 Login"
 msgstr "Icinga Web 2 ログイン"
 
@@ -16001,7 +16019,7 @@ msgstr "ユーザグループバックエンドの一覧"
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:116
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:128
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:83
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:100
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:108
 msgid "Modules"
 msgstr "モジュール設定"
 
@@ -16316,90 +16334,111 @@ msgid "Module"
 msgstr "モジュール"
 
 #: sources.d/icingaweb2/application/controllers/ListController.php:57
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:135
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:143
 msgid "Application Log"
 msgstr "アプリケーションのログ"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:152
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:34
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:68
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserList.php:81
+msgid "List of users who stay logged in"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:49
+#: sources.d/icingaweb2/application/controllers/MyDevicesController.php:63
+msgid "Users can't stay logged in without a database configuration backend"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:60
+#, fuzzy
+msgid "List of devices"
+msgstr "サービス一覧"
+
+#: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:61
+#, fuzzy
+msgid "Devices"
+msgstr "サービス"
+
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:160
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:594
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:31
 msgid "Shared"
 msgstr "共有設定"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:185
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:193
 msgid "Unshare this navigation item"
 msgstr "このナビゲーションの項目を共有解除"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:192
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:197
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:200
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:205
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:213
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:19
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:92
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:100
 msgid "Shared Navigation"
 msgstr "共有ナビゲーション設定"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:196
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:204
 msgid "List and configure shared navigation items"
 msgstr "共有ナビゲーションを一覧表示"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:204
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:212
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:21
 msgid "Owner"
 msgstr "所有者"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:220
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:228
 msgid "Create a new navigation item, such as a menu entry or dashlet."
 msgstr ""
 "メニューやダッシュレット等の新しいナビゲーションの項目を作成してください。"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:240
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:248
 msgid "Navigation item successfully created"
 msgstr "ナビゲーションの項目を作成しました"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:249
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:257
 msgid "New Navigation Item"
 msgstr "新しいナビゲーションの項目"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:290
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:298
 #, php-format
 msgid "Navigation item \"%s\" successfully updated"
 msgstr "ナビゲーションの項目 \"%s\" を変更しました"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:301
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:414
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:309
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:422
 #, php-format
 msgid "Navigation item \"%s\" not found"
 msgstr "ナビゲーションの項目 \"%s\" はありません"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:305
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:313
 msgid "Update Navigation Item"
 msgstr "ナビゲーション項目を編集"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:328
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:336
 #, php-format
 msgid "Navigation Item \"%s\" not found. No action required"
 msgstr "ナビゲーションの項目 \"%s\" が見つかりません。"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:340
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:348
 #, php-format
 msgid "Navigation Item \"%s\" successfully removed"
 msgstr "ナビゲーションの項目 \"%s\" を削除しました"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:349
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:357
 msgid "Remove Navigation Item"
 msgstr "ナビゲーションの項目を削除"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:381
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:389
 #, php-format
 msgid "Navigation item \"%s\" has been unshared"
 msgstr "ナビゲーションの項目 \"%s\" はすでに共有解除されています"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:388
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:396
 #, php-format
 msgid "Failed to unshare navigation item \"%s\""
 msgstr "ナビゲーションの項目 %s の共有を解除できませんでした"
 
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:433
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:441
 msgid "Navigation not found"
 msgstr "ナビゲーションはありません"
 
@@ -16639,16 +16678,20 @@ msgstr "お知らせを削除しました"
 msgid "Failed to remove announcement"
 msgstr "お知らせを削除できませんでした"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:33
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:37
 #: sources.d/icingaweb2/application/views/scripts/authentication/logout.phtml:23
 msgid "Login"
 msgstr "ログイン"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:34
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:38
 msgid "Logging in"
 msgstr "ログイン中"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:111
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:71
+msgid "Stay logged in"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:134
 msgid ""
 "No authentication methods available. Did you create authentication.ini when "
 "setting up Icinga Web 2?"
@@ -16656,7 +16699,7 @@ msgstr ""
 "利用可能な認証方法がありません。Icinga Web 2を設定する際にauthentication.ini"
 "を作成しましたか？"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:117
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:140
 msgid ""
 "All configured authentication methods failed. Please check the system log or "
 "Icinga Web 2 log for more information."
@@ -16664,7 +16707,7 @@ msgstr ""
 "設定した認証方法が失敗しました。詳細については、システムログまたはIcinga Web "
 "2のログを確認してください。"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:124
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:147
 msgid ""
 "Please note that not all authentication methods were available. Check the "
 "system log or Icinga Web 2 log for more information."
@@ -16672,11 +16715,11 @@ msgstr ""
 "すべての認証方法が利用できるわけではないことに注意してください。詳細について"
 "は、システムログまたはIcinga Web 2ログを確認してください。"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:129
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:152
 msgid "Incorrect username or password"
 msgstr "ユーザ名またはパスワードが違います"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:150
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:173
 msgid ""
 "You're currently not authenticated using any of the web server's "
 "authentication mechanisms. Make sure you'll configure such, otherwise you'll "
@@ -18199,24 +18242,29 @@ msgstr "スタックトレースを表示するかどうかの設定変更を許
 msgid "Allow to share navigation items"
 msgstr "ナビゲーションの項目の共有を許可"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:560
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:557
+#, fuzzy
+msgid "Allow to manage user sessions"
+msgstr "ユーザの設定を許可"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:563
 msgid "Restrict which users this role can share items and information with"
 msgstr "このルールでアイテムや情報を共有できるユーザを制限してください"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:563
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:566
 msgid "Restrict which groups this role can share items and information with"
 msgstr "このルールでアイテムや情報を共有できるグループを制限してください"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:572
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:575
 msgid "General Module Access"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:573
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:576
 #, php-format
 msgid "Allow access to module %s"
 msgstr "%s モジュールへのアクセスを許可"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:581
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:584
 msgid "Full Module Access"
 msgstr ""
 
@@ -19200,44 +19248,49 @@ msgstr "イベント概要の表示"
 msgid "List announcements"
 msgstr "お知らせの一覧"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:76
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:69
+#, fuzzy
+msgid "User Sessions"
+msgstr "ホストの状態"
+
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:84
 msgid "Open application configuration"
 msgstr "アプリケーションの設定を行う画面へ"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:77
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:85
 msgid "Application"
 msgstr "アプリケーション"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:83
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:91
 #, fuzzy
 msgid "Open access control configuration"
 msgstr "アプリケーションの設定を行う画面へ"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:84
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:92
 msgid "Access Control"
 msgstr ""
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:91
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:99
 msgid "Open shared navigation configuration"
 msgstr "共有ナビゲーションの設定を行う画面へ"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:99
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:107
 msgid "Open module configuration"
 msgstr "モジュール設定を行う画面へ"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:115
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:123
 msgid "Open your account preferences"
 msgstr "アカウント情報の設定画面へ"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:122
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:130
 msgid "Log out"
 msgstr "ログアウト"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:123
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:131
 msgid "Logout"
 msgstr "ログアウト"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:134
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:142
 msgid "Open Application Log"
 msgstr "アプリケーションログを開く"
 
@@ -19253,6 +19306,39 @@ msgid ""
 msgstr ""
 "ナビゲーションの構成を解析できませんでした。既存のナビゲーションの項目の親タ"
 "ブをすべて確認してください。：%s"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:102
+#, fuzzy, php-format
+msgid "List of devices and browsers %s is currently logged in:"
+msgstr "現在フラッピング中のサービス %u 個を一覧表示します"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:108
+msgid "OS"
+msgstr ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:109
+#, fuzzy
+msgid "Browser"
+msgstr "ブラウザ (%s)"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:110
+msgid "Fingerprint"
+msgstr ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:116
+#, fuzzy
+msgid "No device found"
+msgstr "サービスが見つかりません"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserList.php:88
+#, fuzzy
+msgid "No user found"
+msgstr "ルールが見つかりません。"
+
+#: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserList.php:95
+#, fuzzy, php-format
+msgid "Device list of %s"
+msgstr "%sのサービス"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:42
 #, fuzzy, php-format
@@ -24583,17 +24669,31 @@ msgstr ""
 "環境変数 \"ICINGAWEB_CONFIGDIR\"で明示的に設定されていない場合、Icinga Web 2"
 "設定ディレクトリはデフォルトで \"/etc /icingaweb2\"になります。"
 
-#~ msgid "- inherited -"
-#~ msgstr "- 継承 -"
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "オブジェクトタイプ"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "設定を保存しない"
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "履歴"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "管理者権限を付与する。例：お知らせの管理"
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "監視対象サービス"
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "認証設定を行う画面へ"
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "コメントの種類"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "イベント時間"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "ホスト変数から生成しました"
+
+#~ msgid "Blacklist"
+#~ msgstr "ブラックリスト"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -24602,28 +24702,14 @@ msgstr ""
 #~ "環境設定の保存場所として「データベース」を選択すると、Icinga Web 2は認証と"
 #~ "同じデータベースを使用します。"
 
-#~ msgid "Blacklist"
-#~ msgstr "ブラックリスト"
+#~ msgid "Open authentication configuration"
+#~ msgstr "認証設定を行う画面へ"
 
-#~ msgid "Generated from host vars"
-#~ msgstr "ホスト変数から生成しました"
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "管理者権限を付与する。例：お知らせの管理"
 
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "イベント時間"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "設定を保存しない"
 
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "コメントの種類"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "監視対象サービス"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "履歴"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "オブジェクトタイプ"
+#~ msgid "- inherited -"
+#~ msgstr "- 継承 -"
