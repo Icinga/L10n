@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-08 13:04+0000\n"
+"POT-Creation-Date: 2021-06-09 13:20+0000\n"
 "PO-Revision-Date: 2020-04-27 14:54+0200\n"
 "Last-Translator: papillon326 <udagawa@www2178ue.sakura.ne.jp>\n"
 "Language-Team: \n"
@@ -221,6 +221,7 @@ msgstr ""
 #: sources.d/icingadb-web/application/controllers/TacticalController.php:86
 #: sources.d/icingadb-web/application/controllers/UsergroupsController.php:95
 #: sources.d/icingadb-web/application/controllers/UsersController.php:97
+#: sources.d/ipl-web/src/Control/SearchBar.php:333
 #, fuzzy
 msgid "Adjust Filter"
 msgstr "カスタムフィルタ"
@@ -6020,6 +6021,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:49
 #: sources.d/icingaweb2/library/Icinga/Web/Form/Decorator/Autosubmit.php:127
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:20
+#: sources.d/ipl-web/src/Control/SearchEditor.php:549
 msgid "Apply"
 msgstr "適用"
 
@@ -15877,6 +15879,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-x509/library/X509/Paginator.php:338
 #: sources.d/icingaweb2/application/views/scripts/mixedPagination.phtml:3
+#: sources.d/ipl-web/src/Control/PaginationControl.php:508
 msgid "Pagination"
 msgstr "ページネーション"
 
@@ -19513,6 +19516,7 @@ msgid "Page not found"
 msgstr "ページが見つかりません"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:163
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:207
 #, fuzzy
 msgid "Can't search:"
 msgstr "検索できません"
@@ -24686,17 +24690,127 @@ msgstr ""
 "環境変数 \"ICINGAWEB_CONFIGDIR\"で明示的に設定されていない場合、Icinga Web 2"
 "設定ディレクトリはデフォルトで \"/etc /icingaweb2\"になります。"
 
-#~ msgid "- inherited -"
-#~ msgstr "- 継承 -"
+#: sources.d/ipl-validator/src/PrivateKeyValidator.php:20
+#: sources.d/ipl-validator/src/X509CertValidator.php:20
+#, fuzzy
+msgid "URLs are not allowed"
+msgstr "%s は書き込みできません"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "設定を保存しない"
+#: sources.d/ipl-validator/src/PrivateKeyValidator.php:26
+msgid "Not a valid PEM-encoded private key"
+msgstr ""
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "管理者権限を付与する。例：お知らせの管理"
+#: sources.d/ipl-validator/src/X509CertValidator.php:26
+msgid "Not a valid PEM-encoded X.509 certificate"
+msgstr ""
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "認証設定を行う画面へ"
+#: sources.d/ipl-web/src/Control/PaginationControl.php:295
+#, fuzzy, php-format
+msgid "Show items %u to %u of %u"
+msgstr "%u - %uを表示(全%u件)"
+
+#: sources.d/ipl-web/src/Control/PaginationControl.php:467
+msgid "Go to page …"
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:287
+msgid "Please add a logical operator on the left."
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:288
+msgid "Please close or remove this group."
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:289
+#, fuzzy, php-format
+msgctxt "..<comma separated list>"
+msgid "Please type one of: %s"
+msgstr "%sを先に定義してください"
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:290
+#, fuzzy
+msgid "Please enter a valid column."
+msgstr "'%s' は無効な数字です。"
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:302
+#, php-format
+msgid "Unexpected %s at start of input"
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:179
+#, fuzzy
+msgid "Search for"
+msgstr "検索"
+
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:195
+#, fuzzy
+msgid "in:"
+msgstr "分"
+
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:266
+#, fuzzy
+msgid "Columns"
+msgstr "新しいカラム"
+
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:302
+#, fuzzy
+msgid "Missing column name"
+msgstr "キーとなるカラム名"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:382
+#, fuzzy
+msgctxt "to a group of filter conditions"
+msgid "Add Condition"
+msgstr "条件フォーマット"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:387
+#, fuzzy
+msgctxt "of filter conditions"
+msgid "Add Group"
+msgstr "グループ"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:394
+#, fuzzy
+msgctxt "a filter rule"
+msgid "Wrap in Group"
+msgstr "サービスグループ"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:399
+#, fuzzy
+msgctxt "a filter rule"
+msgid "Delete"
+msgstr "削除"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:543
+#, fuzzy
+msgid "Clear Filter"
+msgstr "フィルター"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "オブジェクトタイプ"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "履歴"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "監視対象サービス"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "コメントの種類"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "イベント時間"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "ホスト変数から生成しました"
+
+#~ msgid "Blacklist"
+#~ msgstr "ブラックリスト"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -24705,28 +24819,14 @@ msgstr ""
 #~ "環境設定の保存場所として「データベース」を選択すると、Icinga Web 2は認証と"
 #~ "同じデータベースを使用します。"
 
-#~ msgid "Blacklist"
-#~ msgstr "ブラックリスト"
+#~ msgid "Open authentication configuration"
+#~ msgstr "認証設定を行う画面へ"
 
-#~ msgid "Generated from host vars"
-#~ msgstr "ホスト変数から生成しました"
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "管理者権限を付与する。例：お知らせの管理"
 
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "イベント時間"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "設定を保存しない"
 
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "コメントの種類"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "監視対象サービス"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "履歴"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "オブジェクトタイプ"
+#~ msgid "- inherited -"
+#~ msgstr "- 継承 -"

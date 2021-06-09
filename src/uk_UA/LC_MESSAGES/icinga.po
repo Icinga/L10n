@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-08 13:04+0000\n"
+"POT-Creation-Date: 2021-06-09 13:20+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -223,6 +223,7 @@ msgstr "Видалити Коментарі"
 #: sources.d/icingadb-web/application/controllers/TacticalController.php:86
 #: sources.d/icingadb-web/application/controllers/UsergroupsController.php:95
 #: sources.d/icingadb-web/application/controllers/UsersController.php:97
+#: sources.d/ipl-web/src/Control/SearchBar.php:333
 #, fuzzy
 msgid "Adjust Filter"
 msgstr "Користувацький фільтр"
@@ -6077,6 +6078,7 @@ msgstr "У простої"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:49
 #: sources.d/icingaweb2/library/Icinga/Web/Form/Decorator/Autosubmit.php:127
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:20
+#: sources.d/ipl-web/src/Control/SearchEditor.php:549
 msgid "Apply"
 msgstr "Застосувати"
 
@@ -16107,6 +16109,7 @@ msgstr "сьогодні"
 
 #: sources.d/icingaweb2-module-x509/library/X509/Paginator.php:338
 #: sources.d/icingaweb2/application/views/scripts/mixedPagination.phtml:3
+#: sources.d/ipl-web/src/Control/PaginationControl.php:508
 msgid "Pagination"
 msgstr "Нумерація сторінок"
 
@@ -19794,6 +19797,7 @@ msgid "Page not found"
 msgstr "Сторінку не знайдено"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:163
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:207
 #, fuzzy
 msgid "Can't search:"
 msgstr "Тут неможливо здійснити пошук"
@@ -25215,51 +25219,191 @@ msgstr ""
 "icingaweb2\" у разі якщо явно не зазначено у змінній оточення "
 "\"ICINGAWEB_CONFIGDIR\"."
 
-#~ msgid "No permission for %s"
-#~ msgstr "Немає дозволу для %s"
+#: sources.d/ipl-validator/src/PrivateKeyValidator.php:20
+#: sources.d/ipl-validator/src/X509CertValidator.php:20
+#, fuzzy
+msgid "URLs are not allowed"
+msgstr "%s не встановлено"
 
-#~ msgid "%s does not exist"
-#~ msgstr "%s не існує"
+#: sources.d/ipl-validator/src/PrivateKeyValidator.php:26
+msgid "Not a valid PEM-encoded private key"
+msgstr ""
 
-#~ msgid "- inherited -"
-#~ msgstr "- унаслідувано -"
+#: sources.d/ipl-validator/src/X509CertValidator.php:26
+msgid "Not a valid PEM-encoded X.509 certificate"
+msgstr ""
 
-#~ msgid "Remove comments"
-#~ msgstr "Видалити коментарі"
+#: sources.d/ipl-web/src/Control/PaginationControl.php:295
+#, fuzzy, php-format
+msgid "Show items %u to %u of %u"
+msgstr "Показати рядки %u до %u з %u"
 
-#~ msgid "Delete Command Transport"
-#~ msgstr "Видалити Командний Транспорт"
+#: sources.d/ipl-web/src/Control/PaginationControl.php:467
+msgid "Go to page …"
+msgstr ""
 
-#~ msgid "Update Command Transport"
-#~ msgstr "Оновити Командний Транспорт"
+#: sources.d/ipl-web/src/Control/SearchBar.php:287
+msgid "Please add a logical operator on the left."
+msgstr ""
 
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Підтвердити скасування %d простоїв."
+#: sources.d/ipl-web/src/Control/SearchBar.php:288
+msgid "Please close or remove this group."
+msgstr ""
 
-#~ msgid "Cancel downtimes"
-#~ msgstr "Скасувати простої"
+#: sources.d/ipl-web/src/Control/SearchBar.php:289
+#, fuzzy, php-format
+msgctxt "..<comma separated list>"
+msgid "Please type one of: %s"
+msgstr "Будь ласка, додайте до імені один з префіксів \"%s\""
 
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "Скасувати %d простоїв"
+#: sources.d/ipl-web/src/Control/SearchBar.php:290
+#, fuzzy
+msgid "Please enter a valid column."
+msgstr "'%s' не є коректним числом"
 
-#~ msgid "Update command transport %s"
-#~ msgstr "Оновити командний транспорт: %s"
+#: sources.d/ipl-web/src/Control/SearchBar.php:302
+#, php-format
+msgid "Unexpected %s at start of input"
+msgstr ""
 
-#~ msgid "Delete command transport %s"
-#~ msgstr "Видалити командний транспорт: %s"
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:179
+#, fuzzy
+msgid "Search for"
+msgstr "Пошук"
 
-#~ msgid "Cancel Downtime"
-#~ msgstr "Відмінити простій"
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:195
+#, fuzzy
+msgid "in:"
+msgstr "Мін"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Не зберігати користувацькі налаштування"
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:266
+#, fuzzy
+msgid "Columns"
+msgstr "Нова колонка"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:302
+#, fuzzy
+msgid "Missing column name"
+msgstr "Ім'я ключової колонки"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:382
+#, fuzzy
+msgctxt "to a group of filter conditions"
+msgid "Add Condition"
+msgstr "Додати коментар"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:387
+#, fuzzy
+msgctxt "of filter conditions"
+msgid "Add Group"
+msgstr "Група"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:394
+#, fuzzy
+msgctxt "a filter rule"
+msgid "Wrap in Group"
+msgstr "Група сервісів"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:399
+#, fuzzy
+msgctxt "a filter rule"
+msgid "Delete"
+msgstr "Видалити"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:543
+#, fuzzy
+msgid "Clear Filter"
+msgstr "Розрізати/Фільтрувати"
+
+#~ msgid "Action %d"
+#~ msgstr "Дія %d"
+
+#~ msgid "Note %d"
+#~ msgstr "Нотатка %d"
+
+#~ msgid "Continue with filter"
+#~ msgstr "Продовжити з фільтром"
+
+#~ msgid "Configure security related settings"
+#~ msgstr "Налаштування безпеки"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Тип об'єкту"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Історія"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Сервіси на моніторингу"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Тип події"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Час події"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "Згенеровані з змінних хостів"
+
+#~ msgid ""
+#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
 #~ msgstr ""
-#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
+#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
+#~ "Web"
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Відкрити налаштування автентифікації"
+#~ msgid "Keep only matching rows (Whitelist)"
+#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
+
+#~ msgid "Reject the whole row (Blacklist)"
+#~ msgstr "Відкинути весь рядок (blacklist)"
+
+#~ msgid "%s is no longer blacklisted on %s"
+#~ msgstr "%s більше не у чорному списку %s"
+
+#~ msgid "%s has been blacklisted on %s"
+#~ msgstr "%s було додано у чорний список %s"
+
+#~ msgid "Blacklist"
+#~ msgstr "Чорний список"
+
+#~ msgid "This Service has been blacklisted on this host"
+#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+
+#~ msgid "Service Critical"
+#~ msgid_plural "Services Critical"
+#~ msgstr[0] "Критичний сервіс"
+#~ msgstr[1] "Критичних сервіси"
+#~ msgstr[2] "Критичних сервісів"
+
+#~ msgid "Host Down"
+#~ msgid_plural "Hosts Down"
+#~ msgstr[0] "Хост недоступний"
+#~ msgstr[1] "Хост недоступні"
+#~ msgstr[2] "Хост недоступні"
+
+#~ msgid "Open console with VMRC"
+#~ msgstr "Відкрити консоль VMRC"
+
+#~ msgid "Console"
+#~ msgstr "Консоль"
+
+#~ msgid "Vendor / Model"
+#~ msgstr "Вендор / Модель"
+
+#~ msgid "NICs"
+#~ msgstr "NIC"
+
+#~ msgid ""
+#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
+#~ "is it part of the description (indented with a single space)"
+#~ msgstr ""
+#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
+#~ "і не є частиною опису (починається з одного пробілу)"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -25269,92 +25413,48 @@ msgstr ""
 #~ "користувацьких налаштувань призведе Icinga Web 2 до їх збереження у тій "
 #~ "же базі даних що використовується для автентифікації."
 
-#~ msgid ""
-#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
-#~ "is it part of the description (indented with a single space)"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Відкрити налаштування автентифікації"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
 #~ msgstr ""
-#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
-#~ "і не є частиною опису (починається з одного пробілу)"
+#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
 
-#~ msgid "NICs"
-#~ msgstr "NIC"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Не зберігати користувацькі налаштування"
 
-#~ msgid "Vendor / Model"
-#~ msgstr "Вендор / Модель"
+#~ msgid "Cancel Downtime"
+#~ msgstr "Відмінити простій"
 
-#~ msgid "Console"
-#~ msgstr "Консоль"
+#~ msgid "Delete command transport %s"
+#~ msgstr "Видалити командний транспорт: %s"
 
-#~ msgid "Open console with VMRC"
-#~ msgstr "Відкрити консоль VMRC"
+#~ msgid "Update command transport %s"
+#~ msgstr "Оновити командний транспорт: %s"
 
-#~ msgid "Host Down"
-#~ msgid_plural "Hosts Down"
-#~ msgstr[0] "Хост недоступний"
-#~ msgstr[1] "Хост недоступні"
-#~ msgstr[2] "Хост недоступні"
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "Скасувати %d простоїв"
 
-#~ msgid "Service Critical"
-#~ msgid_plural "Services Critical"
-#~ msgstr[0] "Критичний сервіс"
-#~ msgstr[1] "Критичних сервіси"
-#~ msgstr[2] "Критичних сервісів"
+#~ msgid "Cancel downtimes"
+#~ msgstr "Скасувати простої"
 
-#~ msgid "This Service has been blacklisted on this host"
-#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Підтвердити скасування %d простоїв."
 
-#~ msgid "Blacklist"
-#~ msgstr "Чорний список"
+#~ msgid "Update Command Transport"
+#~ msgstr "Оновити Командний Транспорт"
 
-#~ msgid "%s has been blacklisted on %s"
-#~ msgstr "%s було додано у чорний список %s"
+#~ msgid "Delete Command Transport"
+#~ msgstr "Видалити Командний Транспорт"
 
-#~ msgid "%s is no longer blacklisted on %s"
-#~ msgstr "%s більше не у чорному списку %s"
+#~ msgid "Remove comments"
+#~ msgstr "Видалити коментарі"
 
-#~ msgid "Reject the whole row (Blacklist)"
-#~ msgstr "Відкинути весь рядок (blacklist)"
+#~ msgid "- inherited -"
+#~ msgstr "- унаслідувано -"
 
-#~ msgid "Keep only matching rows (Whitelist)"
-#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
+#~ msgid "%s does not exist"
+#~ msgstr "%s не існує"
 
-#~ msgid ""
-#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
-#~ msgstr ""
-#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
-#~ "Web"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "Згенеровані з змінних хостів"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Час події"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Тип події"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Сервіси на моніторингу"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Історія"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Тип об'єкту"
-
-#~ msgid "Configure security related settings"
-#~ msgstr "Налаштування безпеки"
-
-#~ msgid "Continue with filter"
-#~ msgstr "Продовжити з фільтром"
-
-#~ msgid "Note %d"
-#~ msgstr "Нотатка %d"
-
-#~ msgid "Action %d"
-#~ msgstr "Дія %d"
+#~ msgid "No permission for %s"
+#~ msgstr "Немає дозволу для %s"

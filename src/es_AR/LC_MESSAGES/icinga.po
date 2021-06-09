@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 9cdbfb1\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-08 13:04+0000\n"
+"POT-Creation-Date: 2021-06-09 13:20+0000\n"
 "PO-Revision-Date: 2020-04-30 16:15+0200\n"
 "Last-Translator: Juan Cruz Fernandez <juancruz.f87@gmail.com>\n"
 "Language-Team: \n"
@@ -220,6 +220,7 @@ msgstr ""
 #: sources.d/icingadb-web/application/controllers/TacticalController.php:86
 #: sources.d/icingadb-web/application/controllers/UsergroupsController.php:95
 #: sources.d/icingadb-web/application/controllers/UsersController.php:97
+#: sources.d/ipl-web/src/Control/SearchBar.php:333
 #, fuzzy
 msgid "Adjust Filter"
 msgstr "Filtro personalizado"
@@ -6039,6 +6040,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:49
 #: sources.d/icingaweb2/library/Icinga/Web/Form/Decorator/Autosubmit.php:127
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:20
+#: sources.d/ipl-web/src/Control/SearchEditor.php:549
 msgid "Apply"
 msgstr "Aplicar"
 
@@ -15430,6 +15432,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-x509/library/X509/Paginator.php:338
 #: sources.d/icingaweb2/application/views/scripts/mixedPagination.phtml:3
+#: sources.d/ipl-web/src/Control/PaginationControl.php:508
 msgid "Pagination"
 msgstr "Paginación"
 
@@ -19130,6 +19133,7 @@ msgid "Page not found"
 msgstr "Página no encontrada"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:163
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:207
 #, fuzzy
 msgid "Can't search:"
 msgstr "No se puede buscar aquí"
@@ -24648,14 +24652,121 @@ msgstr ""
 "predeterminada en \"/ etc / icingaweb2 \", si no se establece explícitamente "
 "en la variable de entorno \"ICINGAWEB_CONFIGDIR \"."
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "No guardar las preferencias"
+#: sources.d/ipl-validator/src/PrivateKeyValidator.php:20
+#: sources.d/ipl-validator/src/X509CertValidator.php:20
+#, fuzzy
+msgid "URLs are not allowed"
+msgstr "%s no se puede escribir"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "Conceder permisos de administrador, ej. manejar anuncios"
+#: sources.d/ipl-validator/src/PrivateKeyValidator.php:26
+msgid "Not a valid PEM-encoded private key"
+msgstr ""
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Abrir configuración de autenticación"
+#: sources.d/ipl-validator/src/X509CertValidator.php:26
+msgid "Not a valid PEM-encoded X.509 certificate"
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/PaginationControl.php:295
+#, fuzzy, php-format
+msgid "Show items %u to %u of %u"
+msgstr "Mostrar fila %u a %u de %u"
+
+#: sources.d/ipl-web/src/Control/PaginationControl.php:467
+msgid "Go to page …"
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:287
+msgid "Please add a logical operator on the left."
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:288
+msgid "Please close or remove this group."
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:289
+#, php-format
+msgctxt "..<comma separated list>"
+msgid "Please type one of: %s"
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:290
+#, fuzzy
+msgid "Please enter a valid column."
+msgstr "'%s' no es un número valido"
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:302
+#, php-format
+msgid "Unexpected %s at start of input"
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:179
+#, fuzzy
+msgid "Search for"
+msgstr "Búsqueda"
+
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:195
+#, fuzzy
+msgid "in:"
+msgstr "Mín"
+
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:266
+#, fuzzy
+msgid "Columns"
+msgstr "Nueva columna"
+
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:302
+#, fuzzy
+msgid "Missing column name"
+msgstr "Protocolo identificador faltante"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:382
+#, fuzzy
+msgctxt "to a group of filter conditions"
+msgid "Add Condition"
+msgstr "Conexión LDAP"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:387
+#, fuzzy
+msgctxt "of filter conditions"
+msgid "Add Group"
+msgstr "Grupo"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:394
+#, fuzzy
+msgctxt "a filter rule"
+msgid "Wrap in Group"
+msgstr "Grupo de servicio"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:399
+#, fuzzy
+msgctxt "a filter rule"
+msgid "Delete"
+msgstr "El tiempo de borrado"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:543
+#, fuzzy
+msgid "Clear Filter"
+msgstr "Filtro"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Tipo de objeto"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Historia"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Lista de servicios"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Tipo de comentario"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Tiempo del evento"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -24665,22 +24776,11 @@ msgstr ""
 #~ "preferencias hace que Icinga Web 2 use la misma base de datos que para la "
 #~ "autenticación."
 
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Tiempo del evento"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Abrir configuración de autenticación"
 
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Tipo de comentario"
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "Conceder permisos de administrador, ej. manejar anuncios"
 
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Lista de servicios"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Historia"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Tipo de objeto"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "No guardar las preferencias"
