@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-08 13:04+0000\n"
+"POT-Creation-Date: 2021-06-09 13:20+0000\n"
 "PO-Revision-Date: 2020-04-27 14:37+0200\n"
 "Last-Translator: Munzir Taha <munzirtaha@gmail.com>\n"
 "Language-Team: English <trans-ar@lists.fedoraproject.org>\n"
@@ -231,6 +231,7 @@ msgstr ""
 #: sources.d/icingadb-web/application/controllers/TacticalController.php:86
 #: sources.d/icingadb-web/application/controllers/UsergroupsController.php:95
 #: sources.d/icingadb-web/application/controllers/UsersController.php:97
+#: sources.d/ipl-web/src/Control/SearchBar.php:333
 #, fuzzy
 msgid "Adjust Filter"
 msgstr "مرشح LDAP"
@@ -6045,6 +6046,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:49
 #: sources.d/icingaweb2/library/Icinga/Web/Form/Decorator/Autosubmit.php:127
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:20
+#: sources.d/ipl-web/src/Control/SearchEditor.php:549
 msgid "Apply"
 msgstr "تطبيق"
 
@@ -15437,6 +15439,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-x509/library/X509/Paginator.php:338
 #: sources.d/icingaweb2/application/views/scripts/mixedPagination.phtml:3
+#: sources.d/ipl-web/src/Control/PaginationControl.php:508
 msgid "Pagination"
 msgstr "تعدد الصفحات"
 
@@ -19039,6 +19042,7 @@ msgid "Page not found"
 msgstr "الصفحة غير موجودة"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:163
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:207
 #, fuzzy
 msgid "Can't search:"
 msgstr "لا يمكن البحث هنا"
@@ -24434,21 +24438,115 @@ msgid ""
 "not explicitly set in the environment variable \"ICINGAWEB_CONFIGDIR\"."
 msgstr ""
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "عدم تخزين التفضيلات"
+#: sources.d/ipl-validator/src/PrivateKeyValidator.php:20
+#: sources.d/ipl-validator/src/X509CertValidator.php:20
+#, fuzzy
+msgid "URLs are not allowed"
+msgstr "%s غير قابلة للكتابة"
+
+#: sources.d/ipl-validator/src/PrivateKeyValidator.php:26
+msgid "Not a valid PEM-encoded private key"
+msgstr ""
+
+#: sources.d/ipl-validator/src/X509CertValidator.php:26
+msgid "Not a valid PEM-encoded X.509 certificate"
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/PaginationControl.php:295
+#, fuzzy, php-format
+msgid "Show items %u to %u of %u"
+msgstr "عرض الصفوف %u إلى %u من %u"
+
+#: sources.d/ipl-web/src/Control/PaginationControl.php:467
+msgid "Go to page …"
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:287
+msgid "Please add a logical operator on the left."
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:288
+msgid "Please close or remove this group."
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:289
+#, php-format
+msgctxt "..<comma separated list>"
+msgid "Please type one of: %s"
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:290
+#, fuzzy
+msgid "Please enter a valid column."
+msgstr "'%s' ليس رقما صالحا"
+
+#: sources.d/ipl-web/src/Control/SearchBar.php:302
+#, php-format
+msgid "Unexpected %s at start of input"
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:179
+#, fuzzy
+msgid "Search for"
+msgstr "بحث"
+
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:195
+#, fuzzy
+msgid "in:"
+msgstr "أدنى"
+
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:266
+#, fuzzy
+msgid "Columns"
+msgstr "عمود جديد"
+
+#: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:302
+msgid "Missing column name"
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:382
+#, fuzzy
+msgctxt "to a group of filter conditions"
+msgid "Add Condition"
+msgstr "اتصال LDAP"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:387
+#, fuzzy
+msgctxt "of filter conditions"
+msgid "Add Group"
+msgstr "مجموعة"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:394
+#, fuzzy
+msgctxt "a filter rule"
+msgid "Wrap in Group"
+msgstr "مجموعة خدمة"
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:399
+msgctxt "a filter rule"
+msgid "Delete"
+msgstr ""
+
+#: sources.d/ipl-web/src/Control/SearchEditor.php:543
+#, fuzzy
+msgid "Clear Filter"
+msgstr "مرشح"
 
 #, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "نوع التعليق"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "سرد الخدمات"
+#~ msgid "History Object Type"
+#~ msgstr "نوع الكائن"
 
 #, fuzzy
 #~ msgid "History Host Id"
 #~ msgstr "المحفوظات"
 
 #, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "نوع الكائن"
+#~ msgid "History Service Id"
+#~ msgstr "سرد الخدمات"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "نوع التعليق"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "عدم تخزين التفضيلات"
