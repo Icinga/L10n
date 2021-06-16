@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-09 13:20+0000\n"
+"POT-Creation-Date: 2021-06-16 12:36+0000\n"
 "PO-Revision-Date: 2021-03-08 08:36+0100\n"
 "Last-Translator: @hashfunktion <mail@jessereppin.de>\n"
 "Language-Team: \n"
@@ -4328,10 +4328,6 @@ msgid "Resource configuration update failed: %s"
 msgstr "Aktualisierung der Ressourcen-Konfiguration schlug fehl: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:60
-msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-msgstr "Das IPL Modul für Icinga Web 2 wird in Version 0.5+ benötigt."
-
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:70
 msgid ""
 "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
 "required."
@@ -4339,7 +4335,7 @@ msgstr ""
 "Um auf Icinga DB´s MySQL Datenbanken zuzugreifen, wird das PDO-MySQL Modul "
 "für PHP benötigt."
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:79
+#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:69
 msgid ""
 "To send external commands over Icinga 2's API, the cURL module for PHP is "
 "required."
@@ -4347,7 +4343,7 @@ msgstr ""
 "Um externe Befehle über Icinga 2´s API zu versenden, wird das cURL Modul für "
 "PHP benötigt."
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:89
+#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:79
 msgid ""
 "To view the most recent state information in Icinga DB Web, the Redis module "
 "for PHP is required."
@@ -4355,7 +4351,7 @@ msgstr ""
 "Um die neusten Statusinformationen in Icinga DB Web zu sehen, wird das Redis "
 "Modul für PHP benötigt."
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:96
+#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:86
 msgid "The Redis module for PHP in version 4.3 and above requires PHP 7+"
 msgstr "Das Redis Modul für PHP in Version 4.3 und höher setzt PHP 7+ voraus"
 
@@ -5229,6 +5225,33 @@ msgstr "Wartet darauf, dass Icinga DB den Status synchronisiert."
 msgctxt "<hostname> is <state-text>"
 msgid "%s is %s"
 msgstr "%s ist %s"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:157
+msgid "Minimal view active"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:158
+#, fuzzy
+msgid "Switch to minimal view"
+msgstr "Zur Kachelansicht wechseln"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:161
+msgid "Common view active"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:162
+#, fuzzy
+msgid "Switch to common view"
+msgstr "Zur Kachelansicht wechseln"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:165
+msgid "Detailed view active"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:166
+#, fuzzy
+msgid "Switch to detailed view"
+msgstr "Zur Kachelansicht wechseln"
 
 #: sources.d/icingaweb2-module-audit/application/controllers/ConfigController.php:16
 msgid "Save Configuration"
@@ -19914,6 +19937,7 @@ msgid "Sort by"
 msgstr "Sortiere nach"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SortBox.php:251
+#: sources.d/ipl-web/src/Control/SortControl.php:198
 msgid "Change sort direction"
 msgstr "Sortierreihenfolge ändern"
 
@@ -25332,6 +25356,10 @@ msgstr ""
 msgid "Not a valid PEM-encoded X.509 certificate"
 msgstr ""
 
+#: sources.d/ipl-web/src/Control/LimitControl.php:119
+msgid "Change item count per page"
+msgstr ""
+
 #: sources.d/ipl-web/src/Control/PaginationControl.php:295
 #, fuzzy, php-format
 msgid "Show items %u to %u of %u"
@@ -25414,40 +25442,52 @@ msgstr "Löschen"
 msgid "Clear Filter"
 msgstr "Filter"
 
-#~ msgid "Action %d"
-#~ msgstr "Aktion %d"
+#~ msgid "No permission for %s"
+#~ msgstr "Keine Berechtigung für %s"
 
-#~ msgid "Note %d"
-#~ msgstr "Notiz %d"
+#~ msgid "%s does not exist"
+#~ msgstr "%s existiert nicht"
 
-#~ msgid "Continue with filter"
-#~ msgstr "Mit Filter fortfahren"
+#~ msgid "- inherited -"
+#~ msgstr "- geerbt -"
 
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Objekttyp"
+#~ msgid "Remove comments"
+#~ msgstr "Entferne Kommentare"
 
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Historie"
+#~ msgid "Delete Command Transport"
+#~ msgstr "Lösche Befehls-Transport"
 
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Überwachte Services"
+#~ msgid "Update Command Transport"
+#~ msgstr "Aktualisiere Befehls-Transport"
 
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Kommentartyp"
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Bestätige den Abbruch der %d Downtimes."
 
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Ereignis-Zeitpunkt"
+#~ msgid "Cancel downtimes"
+#~ msgstr "Downtimes abbrechen"
 
-#~ msgid "Generated from host vars"
-#~ msgstr "Aus Host-Variablen generiert"
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "%d Downtimes abbrechen"
 
-#~ msgid "Blacklist"
-#~ msgstr "Blacklist"
+#~ msgid "Update command transport %s"
+#~ msgstr "Aktualisiere Befehls-Transport %s"
+
+#~ msgid "Delete command transport %s"
+#~ msgstr "Lösche Befehls-Transport %s"
+
+#~ msgid "Cancel Downtime"
+#~ msgstr "Downtime beenden"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Einstellungen nicht speichern"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr ""
+#~ "Verleiht Administratorrechte, erlaubt z. B. das Verwalten von "
+#~ "Bekanntmachungen"
+
+#~ msgid "Open authentication configuration"
+#~ msgstr "Öffne Authentifizierungs-Konfiguration"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -25457,49 +25497,40 @@ msgstr "Filter"
 #~ "gespeichert werden sollen, verwendet Icinga Web 2 die selbe Datenbank wie "
 #~ "zur Authentifizierung."
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Öffne Authentifizierungs-Konfiguration"
+#~ msgid "Blacklist"
+#~ msgstr "Blacklist"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr ""
-#~ "Verleiht Administratorrechte, erlaubt z. B. das Verwalten von "
-#~ "Bekanntmachungen"
+#~ msgid "Generated from host vars"
+#~ msgstr "Aus Host-Variablen generiert"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Einstellungen nicht speichern"
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Ereignis-Zeitpunkt"
 
-#~ msgid "Cancel Downtime"
-#~ msgstr "Downtime beenden"
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Kommentartyp"
 
-#~ msgid "Delete command transport %s"
-#~ msgstr "Lösche Befehls-Transport %s"
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Überwachte Services"
 
-#~ msgid "Update command transport %s"
-#~ msgstr "Aktualisiere Befehls-Transport %s"
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Historie"
 
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "%d Downtimes abbrechen"
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Objekttyp"
 
-#~ msgid "Cancel downtimes"
-#~ msgstr "Downtimes abbrechen"
+#~ msgid "Continue with filter"
+#~ msgstr "Mit Filter fortfahren"
 
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Bestätige den Abbruch der %d Downtimes."
+#~ msgid "Note %d"
+#~ msgstr "Notiz %d"
 
-#~ msgid "Update Command Transport"
-#~ msgstr "Aktualisiere Befehls-Transport"
+#~ msgid "Action %d"
+#~ msgstr "Aktion %d"
 
-#~ msgid "Delete Command Transport"
-#~ msgstr "Lösche Befehls-Transport"
-
-#~ msgid "Remove comments"
-#~ msgstr "Entferne Kommentare"
-
-#~ msgid "- inherited -"
-#~ msgstr "- geerbt -"
-
-#~ msgid "%s does not exist"
-#~ msgstr "%s existiert nicht"
-
-#~ msgid "No permission for %s"
-#~ msgstr "Keine Berechtigung für %s"
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "Das IPL Modul für Icinga Web 2 wird in Version 0.5+ benötigt."

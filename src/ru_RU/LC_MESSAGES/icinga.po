@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-09 13:20+0000\n"
+"POT-Creation-Date: 2021-06-16 12:36+0000\n"
 "PO-Revision-Date: 2021-02-12 17:02+0500\n"
 "Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
 "Language-Team: TranslAster <https://github.com/translaster>\n"
@@ -4195,24 +4195,20 @@ msgid "Resource configuration update failed: %s"
 msgstr "Ошибка обновления конфигурации ресурсов: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:60
-msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-msgstr "Модуль IPL для Icinga Web 2 требуется в версии 0.5+."
-
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:70
 msgid ""
 "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
 "required."
 msgstr ""
 "Для доступа к базе данных MySQL БД Icinga требуется модуль PDO-MySQL для PHP."
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:79
+#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:69
 msgid ""
 "To send external commands over Icinga 2's API, the cURL module for PHP is "
 "required."
 msgstr ""
 "Для отправки внешних команд через API Icinga 2 требуется модуль cURL для PHP."
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:89
+#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:79
 msgid ""
 "To view the most recent state information in Icinga DB Web, the Redis module "
 "for PHP is required."
@@ -4220,7 +4216,7 @@ msgstr ""
 "Для просмотра самой последней информации о состоянии в веб БД Icinga "
 "требуется модуль Redis для PHP."
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:96
+#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:86
 msgid "The Redis module for PHP in version 4.3 and above requires PHP 7+"
 msgstr "Модуль Redis для PHP в версии 4.3 и выше требует PHP 7+"
 
@@ -5099,6 +5095,30 @@ msgstr "Ожидание синхронизации состояния Icinga DB
 msgctxt "<hostname> is <state-text>"
 msgid "%s is %s"
 msgstr "%s - это %s"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:157
+msgid "Minimal view active"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:158
+msgid "Switch to minimal view"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:161
+msgid "Common view active"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:162
+msgid "Switch to common view"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:165
+msgid "Detailed view active"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:166
+msgid "Switch to detailed view"
+msgstr ""
 
 #: sources.d/icingaweb2-module-audit/application/controllers/ConfigController.php:16
 msgid "Save Configuration"
@@ -19184,6 +19204,7 @@ msgid "Sort by"
 msgstr "Сортировать по"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SortBox.php:251
+#: sources.d/ipl-web/src/Control/SortControl.php:198
 msgid "Change sort direction"
 msgstr "Изменить направление сортировки"
 
@@ -24419,6 +24440,10 @@ msgstr ""
 msgid "Not a valid PEM-encoded X.509 certificate"
 msgstr ""
 
+#: sources.d/ipl-web/src/Control/LimitControl.php:119
+msgid "Change item count per page"
+msgstr ""
+
 #: sources.d/ipl-web/src/Control/PaginationControl.php:295
 #, fuzzy, php-format
 msgid "Show items %u to %u of %u"
@@ -24501,70 +24526,73 @@ msgstr "Удалить"
 msgid "Clear Filter"
 msgstr "Пользовательский фильтр LDAP"
 
-#~ msgid "Action %d"
-#~ msgstr "Действие %d"
+#~ msgid "No permission for %s"
+#~ msgstr "Нет разрешения для %s"
 
-#~ msgid "Note %d"
-#~ msgstr "%d примечание"
+#~ msgid "%s does not exist"
+#~ msgstr "%s не существует"
 
-#~ msgid "Continue with filter"
-#~ msgstr "Продолжить с фильтром"
+#~ msgid "- inherited -"
+#~ msgstr "- наследованный -"
 
-#~ msgid "Configure security related settings"
-#~ msgstr "Настройка параметров, связанных с безопасностью"
+#~ msgid "Remove comments"
+#~ msgstr "Удалить комментарии"
 
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "История"
+#~ msgid "Delete Command Transport"
+#~ msgstr "Удаление транспорта команд"
+
+#~ msgid "Update Command Transport"
+#~ msgstr "Обновление транспорта команд"
+
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Подтвердите отмену %d времени простоя."
+
+#~ msgid "Cancel downtimes"
+#~ msgstr "Отменить времени простоя"
+
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "Отменить %d время простоя"
+
+#~ msgid "Update command transport %s"
+#~ msgstr "Обновление транспорта команд %s"
+
+#~ msgid "Delete command transport %s"
+#~ msgstr "Удалить транспорт команд %s"
+
+#~ msgid "Cancel Downtime"
+#~ msgstr "Отменить время простоя"
+
+#~ msgid "Icinga DB"
+#~ msgstr "БД Icinga"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Не хранить предпочтения"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "Предоставьте права администратора, напр. управлению объявлениями"
+
+#~ msgid "Open authentication configuration"
+#~ msgstr "Открыть конфигурацию аутентификации"
 
 #, fuzzy
 #~ msgid "History Service Id"
 #~ msgstr "Последняя проверка службы"
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Открыть конфигурацию аутентификации"
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "История"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "Предоставьте права администратора, напр. управлению объявлениями"
+#~ msgid "Configure security related settings"
+#~ msgstr "Настройка параметров, связанных с безопасностью"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Не хранить предпочтения"
+#~ msgid "Continue with filter"
+#~ msgstr "Продолжить с фильтром"
 
-#~ msgid "Icinga DB"
-#~ msgstr "БД Icinga"
+#~ msgid "Note %d"
+#~ msgstr "%d примечание"
 
-#~ msgid "Cancel Downtime"
-#~ msgstr "Отменить время простоя"
+#~ msgid "Action %d"
+#~ msgstr "Действие %d"
 
-#~ msgid "Delete command transport %s"
-#~ msgstr "Удалить транспорт команд %s"
-
-#~ msgid "Update command transport %s"
-#~ msgstr "Обновление транспорта команд %s"
-
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "Отменить %d время простоя"
-
-#~ msgid "Cancel downtimes"
-#~ msgstr "Отменить времени простоя"
-
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Подтвердите отмену %d времени простоя."
-
-#~ msgid "Update Command Transport"
-#~ msgstr "Обновление транспорта команд"
-
-#~ msgid "Delete Command Transport"
-#~ msgstr "Удаление транспорта команд"
-
-#~ msgid "Remove comments"
-#~ msgstr "Удалить комментарии"
-
-#~ msgid "- inherited -"
-#~ msgstr "- наследованный -"
-
-#~ msgid "%s does not exist"
-#~ msgstr "%s не существует"
-
-#~ msgid "No permission for %s"
-#~ msgstr "Нет разрешения для %s"
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "Модуль IPL для Icinga Web 2 требуется в версии 0.5+."

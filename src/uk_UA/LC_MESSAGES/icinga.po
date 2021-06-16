@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-09 13:20+0000\n"
+"POT-Creation-Date: 2021-06-16 12:36+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -4323,17 +4323,13 @@ msgid "Resource configuration update failed: %s"
 msgstr "Конфігурацію ресурсу не вдалося оновити: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:60
-msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-msgstr "У версії 0.5+ необхідний IPL модуль для Icinga Web 2."
-
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:70
 msgid ""
 "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
 "required."
 msgstr ""
 "Для доступу до бази даних MySQL Icinga DB необхідний PHP модуль PDO-MySQL."
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:79
+#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:69
 msgid ""
 "To send external commands over Icinga 2's API, the cURL module for PHP is "
 "required."
@@ -4341,7 +4337,7 @@ msgstr ""
 "Для надсилання зовнішніх команд за допомогою API Icinga 2 необхідний PHP "
 "модуль cURL."
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:89
+#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:79
 msgid ""
 "To view the most recent state information in Icinga DB Web, the Redis module "
 "for PHP is required."
@@ -4349,7 +4345,7 @@ msgstr ""
 "Для перегляду останньої інформації у Icinga DB Web, необхідний PHP модуль "
 "Redis."
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:96
+#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:86
 msgid "The Redis module for PHP in version 4.3 and above requires PHP 7+"
 msgstr "PHP модуль Redis версії новішої за 4.3 потребує PHP 7+"
 
@@ -5223,6 +5219,33 @@ msgstr "Очікування синхронізації стану Icinga DB."
 msgctxt "<hostname> is <state-text>"
 msgid "%s is %s"
 msgstr "%s %s"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:157
+msgid "Minimal view active"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:158
+#, fuzzy
+msgid "Switch to minimal view"
+msgstr "Переключитись на вид плиток"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:161
+msgid "Common view active"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:162
+#, fuzzy
+msgid "Switch to common view"
+msgstr "Переключитись на вид плиток"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:165
+msgid "Detailed view active"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:166
+#, fuzzy
+msgid "Switch to detailed view"
+msgstr "Переключитись на вид плиток"
 
 #: sources.d/icingaweb2-module-audit/application/controllers/ConfigController.php:16
 msgid "Save Configuration"
@@ -19812,6 +19835,7 @@ msgid "Sort by"
 msgstr "Сортувати за"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SortBox.php:251
+#: sources.d/ipl-web/src/Control/SortControl.php:198
 msgid "Change sort direction"
 msgstr "Змінити напрям сортування"
 
@@ -25233,6 +25257,10 @@ msgstr ""
 msgid "Not a valid PEM-encoded X.509 certificate"
 msgstr ""
 
+#: sources.d/ipl-web/src/Control/LimitControl.php:119
+msgid "Change item count per page"
+msgstr ""
+
 #: sources.d/ipl-web/src/Control/PaginationControl.php:295
 #, fuzzy, php-format
 msgid "Show items %u to %u of %u"
@@ -25315,95 +25343,51 @@ msgstr "Видалити"
 msgid "Clear Filter"
 msgstr "Розрізати/Фільтрувати"
 
-#~ msgid "Action %d"
-#~ msgstr "Дія %d"
+#~ msgid "No permission for %s"
+#~ msgstr "Немає дозволу для %s"
 
-#~ msgid "Note %d"
-#~ msgstr "Нотатка %d"
+#~ msgid "%s does not exist"
+#~ msgstr "%s не існує"
 
-#~ msgid "Continue with filter"
-#~ msgstr "Продовжити з фільтром"
+#~ msgid "- inherited -"
+#~ msgstr "- унаслідувано -"
 
-#~ msgid "Configure security related settings"
-#~ msgstr "Налаштування безпеки"
+#~ msgid "Remove comments"
+#~ msgstr "Видалити коментарі"
 
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Тип об'єкту"
+#~ msgid "Delete Command Transport"
+#~ msgstr "Видалити Командний Транспорт"
 
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Історія"
+#~ msgid "Update Command Transport"
+#~ msgstr "Оновити Командний Транспорт"
 
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Сервіси на моніторингу"
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Підтвердити скасування %d простоїв."
 
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Тип події"
+#~ msgid "Cancel downtimes"
+#~ msgstr "Скасувати простої"
 
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Час події"
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "Скасувати %d простоїв"
 
-#~ msgid "Generated from host vars"
-#~ msgstr "Згенеровані з змінних хостів"
+#~ msgid "Update command transport %s"
+#~ msgstr "Оновити командний транспорт: %s"
 
-#~ msgid ""
-#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
+#~ msgid "Delete command transport %s"
+#~ msgstr "Видалити командний транспорт: %s"
+
+#~ msgid "Cancel Downtime"
+#~ msgstr "Відмінити простій"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Не зберігати користувацькі налаштування"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
 #~ msgstr ""
-#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
-#~ "Web"
+#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
 
-#~ msgid "Keep only matching rows (Whitelist)"
-#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
-
-#~ msgid "Reject the whole row (Blacklist)"
-#~ msgstr "Відкинути весь рядок (blacklist)"
-
-#~ msgid "%s is no longer blacklisted on %s"
-#~ msgstr "%s більше не у чорному списку %s"
-
-#~ msgid "%s has been blacklisted on %s"
-#~ msgstr "%s було додано у чорний список %s"
-
-#~ msgid "Blacklist"
-#~ msgstr "Чорний список"
-
-#~ msgid "This Service has been blacklisted on this host"
-#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
-
-#~ msgid "Service Critical"
-#~ msgid_plural "Services Critical"
-#~ msgstr[0] "Критичний сервіс"
-#~ msgstr[1] "Критичних сервіси"
-#~ msgstr[2] "Критичних сервісів"
-
-#~ msgid "Host Down"
-#~ msgid_plural "Hosts Down"
-#~ msgstr[0] "Хост недоступний"
-#~ msgstr[1] "Хост недоступні"
-#~ msgstr[2] "Хост недоступні"
-
-#~ msgid "Open console with VMRC"
-#~ msgstr "Відкрити консоль VMRC"
-
-#~ msgid "Console"
-#~ msgstr "Консоль"
-
-#~ msgid "Vendor / Model"
-#~ msgstr "Вендор / Модель"
-
-#~ msgid "NICs"
-#~ msgstr "NIC"
-
-#~ msgid ""
-#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
-#~ "is it part of the description (indented with a single space)"
-#~ msgstr ""
-#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
-#~ "і не є частиною опису (починається з одного пробілу)"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Відкрити налаштування автентифікації"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -25413,48 +25397,95 @@ msgstr "Розрізати/Фільтрувати"
 #~ "користувацьких налаштувань призведе Icinga Web 2 до їх збереження у тій "
 #~ "же базі даних що використовується для автентифікації."
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Відкрити налаштування автентифікації"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgid ""
+#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
+#~ "is it part of the description (indented with a single space)"
 #~ msgstr ""
-#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
+#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
+#~ "і не є частиною опису (починається з одного пробілу)"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Не зберігати користувацькі налаштування"
+#~ msgid "NICs"
+#~ msgstr "NIC"
 
-#~ msgid "Cancel Downtime"
-#~ msgstr "Відмінити простій"
+#~ msgid "Vendor / Model"
+#~ msgstr "Вендор / Модель"
 
-#~ msgid "Delete command transport %s"
-#~ msgstr "Видалити командний транспорт: %s"
+#~ msgid "Console"
+#~ msgstr "Консоль"
 
-#~ msgid "Update command transport %s"
-#~ msgstr "Оновити командний транспорт: %s"
+#~ msgid "Open console with VMRC"
+#~ msgstr "Відкрити консоль VMRC"
 
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "Скасувати %d простоїв"
+#~ msgid "Host Down"
+#~ msgid_plural "Hosts Down"
+#~ msgstr[0] "Хост недоступний"
+#~ msgstr[1] "Хост недоступні"
+#~ msgstr[2] "Хост недоступні"
 
-#~ msgid "Cancel downtimes"
-#~ msgstr "Скасувати простої"
+#~ msgid "Service Critical"
+#~ msgid_plural "Services Critical"
+#~ msgstr[0] "Критичний сервіс"
+#~ msgstr[1] "Критичних сервіси"
+#~ msgstr[2] "Критичних сервісів"
 
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Підтвердити скасування %d простоїв."
+#~ msgid "This Service has been blacklisted on this host"
+#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
 
-#~ msgid "Update Command Transport"
-#~ msgstr "Оновити Командний Транспорт"
+#~ msgid "Blacklist"
+#~ msgstr "Чорний список"
 
-#~ msgid "Delete Command Transport"
-#~ msgstr "Видалити Командний Транспорт"
+#~ msgid "%s has been blacklisted on %s"
+#~ msgstr "%s було додано у чорний список %s"
 
-#~ msgid "Remove comments"
-#~ msgstr "Видалити коментарі"
+#~ msgid "%s is no longer blacklisted on %s"
+#~ msgstr "%s більше не у чорному списку %s"
 
-#~ msgid "- inherited -"
-#~ msgstr "- унаслідувано -"
+#~ msgid "Reject the whole row (Blacklist)"
+#~ msgstr "Відкинути весь рядок (blacklist)"
 
-#~ msgid "%s does not exist"
-#~ msgstr "%s не існує"
+#~ msgid "Keep only matching rows (Whitelist)"
+#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
 
-#~ msgid "No permission for %s"
-#~ msgstr "Немає дозволу для %s"
+#~ msgid ""
+#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
+#~ msgstr ""
+#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
+#~ "Web"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "Згенеровані з змінних хостів"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Час події"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Тип події"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Сервіси на моніторингу"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Історія"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Тип об'єкту"
+
+#~ msgid "Configure security related settings"
+#~ msgstr "Налаштування безпеки"
+
+#~ msgid "Continue with filter"
+#~ msgstr "Продовжити з фільтром"
+
+#~ msgid "Note %d"
+#~ msgstr "Нотатка %d"
+
+#~ msgid "Action %d"
+#~ msgstr "Дія %d"
+
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "У версії 0.5+ необхідний IPL модуль для Icinga Web 2."
