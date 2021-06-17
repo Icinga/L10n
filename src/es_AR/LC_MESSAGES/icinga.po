@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 9cdbfb1\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-09 13:20+0000\n"
+"POT-Creation-Date: 2021-06-16 12:36+0000\n"
 "PO-Revision-Date: 2020-04-30 16:15+0200\n"
 "Last-Translator: Juan Cruz Fernandez <juancruz.f87@gmail.com>\n"
 "Language-Team: \n"
@@ -4280,11 +4280,6 @@ msgstr "Escribir %s al archivo de configuración: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:60
 #, fuzzy
-msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-msgstr "La ejecución de Icinga Web 2 requiere la versión 5.6 de PHP."
-
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:70
-#, fuzzy
 msgid ""
 "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
 "required."
@@ -4292,7 +4287,7 @@ msgstr ""
 "Para acceder al IDO almacenado en una base de datos MySQL, se requiere el "
 "módulo PDO-MySQL para PHP."
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:79
+#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:69
 #, fuzzy
 msgid ""
 "To send external commands over Icinga 2's API, the cURL module for PHP is "
@@ -4301,7 +4296,7 @@ msgstr ""
 "Para enviar comandos externos a través de la API de Icinga 2, se requiere el "
 "módulo cURL para PHP."
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:89
+#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:79
 #, fuzzy
 msgid ""
 "To view the most recent state information in Icinga DB Web, the Redis module "
@@ -4310,7 +4305,7 @@ msgstr ""
 "Para enviar comandos externos a través de la API de Icinga 2, se requiere el "
 "módulo cURL para PHP."
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:96
+#: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:86
 msgid "The Redis module for PHP in version 4.3 and above requires PHP 7+"
 msgstr ""
 
@@ -5189,6 +5184,30 @@ msgstr ""
 #, php-format
 msgctxt "<hostname> is <state-text>"
 msgid "%s is %s"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:157
+msgid "Minimal view active"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:158
+msgid "Switch to minimal view"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:161
+msgid "Common view active"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:162
+msgid "Switch to common view"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:165
+msgid "Detailed view active"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:166
+msgid "Switch to detailed view"
 msgstr ""
 
 #: sources.d/icingaweb2-module-audit/application/controllers/ConfigController.php:16
@@ -19147,6 +19166,7 @@ msgid "Sort by"
 msgstr "Ordenar por"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SortBox.php:251
+#: sources.d/ipl-web/src/Control/SortControl.php:198
 msgid "Change sort direction"
 msgstr "Cambiar el sentido del ordenamiento"
 
@@ -24666,6 +24686,10 @@ msgstr ""
 msgid "Not a valid PEM-encoded X.509 certificate"
 msgstr ""
 
+#: sources.d/ipl-web/src/Control/LimitControl.php:119
+msgid "Change item count per page"
+msgstr ""
+
 #: sources.d/ipl-web/src/Control/PaginationControl.php:295
 #, fuzzy, php-format
 msgid "Show items %u to %u of %u"
@@ -24748,25 +24772,14 @@ msgstr "El tiempo de borrado"
 msgid "Clear Filter"
 msgstr "Filtro"
 
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Tipo de objeto"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "No guardar las preferencias"
 
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Historia"
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "Conceder permisos de administrador, ej. manejar anuncios"
 
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Lista de servicios"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Tipo de comentario"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Tiempo del evento"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Abrir configuración de autenticación"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -24776,11 +24789,26 @@ msgstr "Filtro"
 #~ "preferencias hace que Icinga Web 2 use la misma base de datos que para la "
 #~ "autenticación."
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Abrir configuración de autenticación"
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Tiempo del evento"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "Conceder permisos de administrador, ej. manejar anuncios"
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Tipo de comentario"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "No guardar las preferencias"
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Lista de servicios"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Historia"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Tipo de objeto"
+
+#, fuzzy
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "La ejecución de Icinga Web 2 requiere la versión 5.6 de PHP."
