@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-16 12:36+0000\n"
+"POT-Creation-Date: 2021-06-18 15:21+0000\n"
 "PO-Revision-Date: 2020-04-27 14:37+0200\n"
 "Last-Translator: Munzir Taha <munzirtaha@gmail.com>\n"
 "Language-Team: English <trans-ar@lists.fedoraproject.org>\n"
@@ -66,7 +66,7 @@ msgstr "المضيف غير موجود"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:408
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:54
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:45
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:65
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:96
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:46
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:69
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:47
@@ -278,14 +278,14 @@ msgstr "ساري المفعول"
 #: sources.d/icingadb-web/application/controllers/DowntimesController.php:51
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:60
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:254
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:79
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:111
 msgid "Start Time"
 msgstr "زمن البداية"
 
 #: sources.d/icingadb-web/application/controllers/DowntimesController.php:52
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:72
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:255
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:89
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:121
 msgid "End Time"
 msgstr "زمن الانتهاء"
 
@@ -335,9 +335,9 @@ msgid "Health"
 msgstr ""
 
 #: sources.d/icingadb-web/application/controllers/HealthController.php:41
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:37
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:61
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:97
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:42
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:66
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:102
 msgid ""
 "It seems that Icinga DB is not running. Make sure Icinga DB is running and "
 "writing into the database."
@@ -876,8 +876,8 @@ msgstr "حفظ"
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:89
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:123
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:342
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:418
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:251
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:433
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:265
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:369
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Setup/IdoResourcePage.php:143
 #: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:214
@@ -958,7 +958,7 @@ msgstr ""
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:45
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:56
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:47
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:67
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:98
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:48
 #, fuzzy
 msgid ""
@@ -1257,7 +1257,7 @@ msgstr[5] ""
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:26
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostCheckCommandForm.php:29
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:35
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:57
 msgid "All Services"
 msgstr "كل الخدمات"
 
@@ -1279,17 +1279,17 @@ msgid "Child Options"
 msgstr "مضيفون تابعون"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:43
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:52
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:74
 msgid "Do nothing with child hosts"
 msgstr "لا تفعل شيئا بالمضيفين التابعين"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:44
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:53
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:75
 msgid "Schedule triggered downtime for all child hosts"
 msgstr "جدولة زمن توقف يمكن تشغيله لكل المضيفين التابعين"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:45
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:54
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:76
 msgid "Schedule non-triggered downtime for all child hosts"
 msgstr "جدولة زمن توقف لا يمكن تشغيله لكل المضيفين التابعين"
 
@@ -1308,29 +1308,29 @@ msgstr ""
 "الاحتفاظ بأزمنة التوقف المجدول خلال إغلاق البرنامج وإعادة تشغيله."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:61
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:80
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:112
 msgid "Set the start date and time for the downtime."
 msgstr "ضبط تاريخ البداية والوقت لزمن التوقف."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:73
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:90
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:122
 msgid "Set the end date and time for the downtime."
 msgstr "ضبط التاريخ والوقت لزمن التوقف."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:79
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:74
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:205
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:96
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:238
 msgid "The end time must be greater than the start time"
 msgstr "زمن النهاية يجب أن يكون أكبر من زمن البداية"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:84
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:82
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:213
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:104
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:246
 msgid "A downtime must not be in the past"
 msgstr "زمن التوقف لا يجب أن يكون في الماضي"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:99
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:109
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:142
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:60
 msgid "Flexible"
 msgstr "مرن"
@@ -1351,19 +1351,19 @@ msgstr ""
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:134
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:37
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:48
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:148
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:181
 msgid "Minutes"
 msgstr "دقائق"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:141
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:38
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:56
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:138
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:171
 msgid "Hours"
 msgstr "ساعات"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:155
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:47
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:71
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:7
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:21
 msgid "Schedule downtime"
@@ -1459,8 +1459,8 @@ msgstr ""
 #: sources.d/icingaweb2-module-x509/application/forms/Config/BackendConfigForm.php:14
 #: sources.d/icingaweb2/application/forms/Config/GeneralConfigForm.php:23
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:44
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:46
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:53
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:53
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:60
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:85
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:42
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/SecurityConfigForm.php:20
@@ -1480,8 +1480,8 @@ msgstr ""
 #: sources.d/icingaweb2-module-reporting/application/forms/SelectBackendForm.php:22
 #: sources.d/icingaweb2-module-x509/application/forms/Config/BackendConfigForm.php:22
 #: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:85
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:260
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:179
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:272
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:190
 #: sources.d/icingaweb2/modules/setup/application/forms/AuthenticationPage.php:50
 msgid "Database"
 msgstr "قاعدة البيانات"
@@ -1528,7 +1528,7 @@ msgstr ""
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:100
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:106
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:140
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:373
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:388
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:301
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Setup/IdoResourcePage.php:183
 #: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:244
@@ -1546,8 +1546,8 @@ msgstr "حدد هذا المربع لفرض تغييرات دون تحقق من 
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:151
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:373
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:449
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:282
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:464
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:296
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:282
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:121
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:375
@@ -1557,8 +1557,8 @@ msgstr "التحقق من الإعداد"
 
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:152
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:374
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:450
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:283
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:465
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:297
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:283
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:122
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:376
@@ -1593,8 +1593,8 @@ msgstr ""
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:89
 #: sources.d/icingaweb2-module-aws/application/forms/Config/KeysForm.php:192
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:349
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:425
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:258
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:440
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:272
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:342
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Setup/IdoResourcePage.php:102
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Setup/TransportPage.php:47
@@ -4005,13 +4005,13 @@ msgstr "أب"
 msgid "Zone Depth"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:88
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:93
 msgid ""
 "Icinga Redis is outdated. Make sure Icinga 2 is running and connected to "
 "Redis."
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:115
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:120
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:48
 #, php-format
 msgid "Can't connect to Icinga Redis: %s"
@@ -4155,8 +4155,8 @@ msgstr "الرجاء تعبئة تفاصيل الاتصال أدناه للوص�
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:111
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:331
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:407
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:240
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:422
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:254
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Setup/IdoResourcePage.php:131
 #: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:203
 #: sources.d/icingaweb2/modules/setup/application/forms/LdapResourcePage.php:108
@@ -4424,8 +4424,8 @@ msgid "Usergroup %s"
 msgstr "مجموعات المستخدمين"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:120
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:181
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:269
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:184
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:272
 #, fuzzy, php-format
 msgid "\"%s\" is not a valid relation"
 msgstr "\"%value%\" ليست خياراً صالحاً."
@@ -4443,22 +4443,26 @@ msgstr "'%s' ليس رقما صالحا"
 msgid "Custom Variables"
 msgstr "متغيرات مخصصة"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:197
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:281
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:200
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:284
 #, fuzzy
 msgid "Is not a valid column"
 msgstr "'%s' ليس رقما صالحا"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:324
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:327
 #, fuzzy
 msgid "Show bulk processing actions for all filtered results"
 msgstr "السماح بمعالجة نتائج فحص المضيف والخدمة"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:496
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:500
 #, fuzzy, php-format
 msgctxt "..<customvar-name>"
 msgid " %s"
 msgstr "عند %s"
+
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:556
+msgid "This route does not support the requested output format"
+msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:72
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:238
@@ -4598,7 +4602,7 @@ msgid "Scheduled Duration"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:124
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:158
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:191
 msgid "Flexible Duration"
 msgstr "مدة مرنة"
 
@@ -8745,7 +8749,7 @@ msgid "Every related downtime will show this comment"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:47
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:108
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:141
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:60
 msgid "Fixed"
 msgstr "ثابت"
@@ -12472,7 +12476,7 @@ msgstr ""
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:30
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:20
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:78
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:100
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:133
 msgid "Type"
 msgstr "نوع"
 
@@ -12729,7 +12733,7 @@ msgid "Agent"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:35
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:274
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:286
 #: sources.d/icingaweb2/modules/setup/application/forms/AuthenticationPage.php:55
 msgid "External"
 msgstr "خارجي"
@@ -15592,10 +15596,10 @@ msgid "Configure which resources are being utilized by Icinga Web 2"
 msgstr "إعداد الموارد التي تستخدمها إسنجا وب 2"
 
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:49
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:372
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:393
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:413
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:478
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:394
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:415
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:435
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:500
 msgid "Resources"
 msgstr "الموارد"
 
@@ -15629,27 +15633,27 @@ msgstr "تفعيل الوحدة %s"
 msgid "Disable the %s module"
 msgstr "تعطيل وحدة %s"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:181
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:183
 #, php-format
 msgid "Module \"%s\" enabled"
 msgstr "فُعّلت الوحدة \"%s\""
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:207
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:220
 #, php-format
 msgid "Module \"%s\" disabled"
 msgstr "عُطّلت الوحدة \"%s\""
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:239
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:286
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:325
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:358
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:261
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:308
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:347
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:380
 #: sources.d/icingaweb2/application/controllers/UsergroupbackendController.php:61
 #: sources.d/icingaweb2/application/controllers/UsergroupbackendController.php:98
 #: sources.d/icingaweb2/application/controllers/UsergroupbackendController.php:130
 msgid "Authentication"
 msgstr "المصادقة"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:253
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:275
 msgid ""
 "Create a new backend for authenticating your users. This backend will be "
 "added at the end of your authentication order."
@@ -15657,60 +15661,60 @@ msgstr ""
 "إنشاء خلفية جديدة لمصادقة المستخدمين. ستضاف هذه الخلفية في نهاية ترتيب "
 "المصادقة الخاصة بك."
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:278
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:300
 msgid "User backend successfully created"
 msgstr "أُنشئت خلفية المستخدم بنجاح"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:287
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:309
 msgid "New User Backend"
 msgstr "خلفية مستخدم جديد"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:310
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:332
 #, php-format
 msgid "User backend \"%s\" successfully updated"
 msgstr "حُدثت خلفية المستخدم \"%s\" بنجاح"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:322
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:344
 #: sources.d/icingaweb2/application/forms/Config/UserBackendReorderForm.php:70
 #, php-format
 msgid "User backend \"%s\" not found"
 msgstr "لم يُعثر على خلفية المستخدم \"%s\""
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:326
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:348
 msgid "Update User Backend"
 msgstr "تحديث خلفية مستخدم"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:350
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:372
 #, php-format
 msgid "User backend \"%s\" successfully removed"
 msgstr "أُزيلت خلفية المستخدم \"%s\" بنجاح"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:359
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:381
 msgid "Remove User Backend"
 msgstr "إزالة خلفية مستخدم"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:383
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:405
 msgid "New Resource"
 msgstr "مورد جديد"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:387
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:409
 msgid "Resources are entities that provide data to Icinga Web 2."
 msgstr "الموارد هي كيانات توفر البيانات لإسنجا وب 2."
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:404
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:426
 msgid "Update Resource"
 msgstr "تحديث مورد"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:424
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:446
 msgid "Remove Resource"
 msgstr "إزالة مورد"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:441
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:463
 #, php-format
 msgid "Resource \"%s\" has been successfully removed"
 msgstr "أُزيل المورد \"%s\" بنجاح"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:457
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:479
 #, php-format
 msgid ""
 "The resource \"%s\" is currently utilized for authentication by user backend "
@@ -15720,7 +15724,7 @@ msgstr ""
 "المورد \"%s\" يستخدم حاليا للمصادقة من قبل خلفية المستخدم \"%s\". إزالة "
 "المورد يؤدي إلى عدم قدرة أي أحد على الدخول لفترة أطول."
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:470
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:492
 #, php-format
 msgid ""
 "The resource \"%s\" is currently utilized to store user preferences. "
@@ -17034,7 +17038,7 @@ msgstr ""
 msgid "Failed to discover the chosen LDAP connection: %s"
 msgstr "فشل في اكتشاف اتصال LDAP المختار: %s"
 
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:82
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:90
 msgid ""
 "Could not find any valid user backend resources. Please configure a resource "
 "for authentication first."
@@ -17042,30 +17046,30 @@ msgstr ""
 "لا يمكن العثور على أي موارد لخلفية المستخدم صالحة. يرجى إعداد مورد للمصادقة "
 "أولا."
 
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:118
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:75
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:130
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:87
 #, php-format
 msgid "Invalid backend type \"%s\" provided"
 msgstr "نوع الخلفية المعطى \"%s\" غير صالح"
 
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:165
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:177
 #, php-format
 msgid "A user backend with the name \"%s\" does already exist"
 msgstr "خدمة مستخدم باسم \"%s\" موجودة مسبقا"
 
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:288
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:196
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:303
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:210
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:210
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Setup/BackendPage.php:43
 #: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:113
 msgid "Backend Type"
 msgstr "نوع الخلفية"
 
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:290
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:305
 msgid "The type of the resource to use for this authenticaton provider"
 msgstr "نوع المورد المراد استخدامه لمزود المصادقة هذا"
 
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:375
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:390
 msgid ""
 "Check this box to enforce changes without validating that authentication is "
 "possible."
@@ -17229,7 +17233,7 @@ msgstr ""
 msgid "No LDAP resources available. Please configure an LDAP resource first."
 msgstr "لا يوجد موارد LDAP متوفرة. يُرجى إعداد مورد LDAP أولا."
 
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:197
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:211
 msgid "The type of this user group backend"
 msgstr "نوع خلفية مجموعة هذا المستخدم"
 
@@ -20282,20 +20286,20 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:33
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:55
 msgid ""
 "Schedule downtime for all services on the hosts and the hosts themselves."
 msgstr "جدولة فحص لكل خدمات المضيفين والمضيفين أنفسهم."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:48
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:70
 msgid "Define what should be done with the child hosts of the hosts."
 msgstr "عرف ما يتحتم عمله مع المضيفين التابعين."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:50
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:72
 msgid "Child Hosts"
 msgstr "مضيفون تابعون"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:116
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:138
 msgid "Scheduling host downtime.."
 msgid_plural "Scheduling host downtimes.."
 msgstr[0] ""
@@ -20315,7 +20319,7 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:33
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:81
 msgid ""
 "This command is used to schedule host and service downtimes. During the "
 "specified downtime, Icinga will not send notifications out about the hosts "
@@ -20328,7 +20332,7 @@ msgstr ""
 "التوقف المجدول، ستقوم إسنجا بإرسال إخطارات للمضيفين والخدمات كالمعتاد. يتم "
 "الاحتفاظ بأزمنة التوقف المجدول خلال إغلاق البرنامج وإعادة تشغيله."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:102
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:135
 msgid ""
 "If you select the fixed option, the downtime will be in effect between the "
 "start and end times you specify whereas a flexible downtime starts when the "
@@ -20341,13 +20345,13 @@ msgstr ""
 "إلى حالة مشكلة في وقت ما بين زمن البداية والنهاية الذين حددتهما ويستمر طيلة "
 "المدة الزمنية التي تدخلها. حقول الزمن لا تنطبق على أزمنة التوقف الثابتة."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:160
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:193
 msgid ""
 "Enter here the duration of the downtime. The downtime will be automatically "
 "deleted after this time expired."
 msgstr "أدخل وقت التوقف هنا. سيتم حذف زمن التوقف تلقائيا بعد انقضاء هذا الوقت."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:224
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:257
 msgid "Scheduling service downtime.."
 msgid_plural "Scheduling service downtimes.."
 msgstr[0] ""
@@ -24557,21 +24561,21 @@ msgstr ""
 msgid "Clear Filter"
 msgstr "مرشح"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "عدم تخزين التفضيلات"
-
 #, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "نوع التعليق"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "سرد الخدمات"
+#~ msgid "History Object Type"
+#~ msgstr "نوع الكائن"
 
 #, fuzzy
 #~ msgid "History Host Id"
 #~ msgstr "المحفوظات"
 
 #, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "نوع الكائن"
+#~ msgid "History Service Id"
+#~ msgstr "سرد الخدمات"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "نوع التعليق"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "عدم تخزين التفضيلات"
