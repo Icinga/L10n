@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-22 13:45+0000\n"
+"POT-Creation-Date: 2021-06-23 17:16+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -4246,7 +4246,7 @@ msgstr "SSL не перевіряти сертифікат сервера"
 #: sources.d/icingaweb2/application/forms/Announcement/AnnouncementForm.php:94
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:120
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupForm.php:68
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:265
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:309
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:57
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:126
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:48
@@ -4268,7 +4268,7 @@ msgstr "Так"
 #: sources.d/icingaweb2-module-director/library/Director/Job/SyncJob.php:102
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierUpperCaseFirst.php:26
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/DatastoreTable.php:48
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:266
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:310
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:57
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:126
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:48
@@ -5342,6 +5342,7 @@ msgid "Allow access to the audit log"
 msgstr "Дозволити доступ до логу аудиту"
 
 #: sources.d/icingaweb2-module-audit/configuration.php:16
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:241
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:36
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:295
 msgid "System"
@@ -17008,7 +17009,7 @@ msgid "Auto refresh successfully disabled"
 msgstr "Автооновлення успішно вимкнено"
 
 #: sources.d/icingaweb2/application/forms/AutoRefreshForm.php:63
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:297
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:341
 msgid "Enable auto refresh"
 msgstr "Увімкнути автооновлення"
 
@@ -17017,7 +17018,7 @@ msgid "Disable auto refresh"
 msgstr "Вимкнути автооновлення"
 
 #: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:37
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:277
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:321
 msgid "Show Stacktraces"
 msgstr "Показати траси стеку"
 
@@ -17173,7 +17174,7 @@ msgid "The full path to the log file to write messages to."
 msgstr "Повний шлях до лог файлу для запису повідомлень."
 
 #: sources.d/icingaweb2/application/forms/Config/General/ThemingConfigForm.php:34
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:187
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:193
 msgid "default"
 msgstr "за замовчуванням"
 
@@ -18248,20 +18249,20 @@ msgstr ""
 "Іконка цього об'єкту навігації. Залишити пустим якщо у відображення іконки "
 "немає необхідності"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:48
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:344
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:388
 msgid "Save to the Preferences"
 msgstr "Зберегти до користувацьких налаштувань"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:132
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:138
 msgid "Preferences successfully saved"
 msgstr "Користувацькі налаштування успішно збережено"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:134
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:140
 msgid "Preferences successfully saved for the current session"
 msgstr "Користувацькі налаштування успішно збережено для поточної сесії"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:175
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:181
 msgid ""
 "Your language setting is not applied because your platform is missing the "
 "corresponding locale. Make sure to install the correct language pack and "
@@ -18271,59 +18272,72 @@ msgstr ""
 "відповідної локалі. Впевніться в тому що на сервері встановлено відповідний "
 "набір мов та перезавантажте вебсервер."
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:193
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:199
 msgctxt "Form element label"
 msgid "Theme"
 msgstr "Тема"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:213
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:223
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:228
+#, fuzzy
+msgid "Theme Mode"
+msgstr "Тема"
+
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:233
+msgid "Dark"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:237
+msgid "Light"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:257
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:267
 #, php-format
 msgctxt "preferences.form"
 msgid "Browser (%s)"
 msgstr "Браузер (%s)"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:235
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:279
 msgid "Your Current Language"
 msgstr "Ваша поточна мова"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:236
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:280
 msgid "Use the following language to display texts and messages"
 msgstr "Використати наступну мову для відображення тексту та повідомлень"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:247
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:291
 msgid "Your Current Timezone"
 msgstr "Ваша поточна часова зона"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:248
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:292
 msgid "Use the following timezone for dates and times"
 msgstr "Використати наступну часову зону для дати та часу"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:259
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:303
 msgid "Show application state messages"
 msgstr "Показувати повідомлення про стан застосунку"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:260
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:304
 msgid "Whether to show application state messages."
 msgstr "Чи показувати повідомлення стану застосунку."
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:263
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:307
 msgid "System (Yes)"
 msgstr "Системне (Так)"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:264
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:308
 msgid "System (No)"
 msgstr "Системне (Ні)"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:278
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:322
 msgid "Set whether to show an exception's stacktrace."
 msgstr "Зазначити відображення траси стеку виключень."
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:287
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:331
 msgid "Use benchmark"
 msgstr "Використати бенчмарк"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:299
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:343
 msgid ""
 "This option allows you to enable or to disable the global page content auto "
 "refresh"
@@ -18331,12 +18345,12 @@ msgstr ""
 "Ця опція дозволяє вмикати та вимикати глобальне автоматичне оновлення вмісту "
 "сторінок"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:311
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:355
 #, fuzzy
 msgid "Auto refresh speed"
 msgstr "Автооновлення успішно увімкнено"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:313
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:357
 #, fuzzy
 msgid ""
 "This option allows you to speed up or to slow down the global page content "
@@ -18345,37 +18359,37 @@ msgstr ""
 "Ця опція дозволяє вмикати та вимикати глобальне автоматичне оновлення вмісту "
 "сторінок"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:316
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:360
 msgctxt "refresh_speed"
 msgid "Fast"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:317
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:361
 #, fuzzy
 msgctxt "refresh_speed"
 msgid "Default"
 msgstr "за замовчуванням"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:318
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:362
 #, fuzzy
 msgctxt "refresh_speed"
 msgid "Moderate"
 msgstr "Модель"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:319
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:363
 msgctxt "refresh_speed"
 msgid "Slow"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:330
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:374
 msgid "Default page size"
 msgstr "Розмір сторінки за замовчуванням"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:331
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:375
 msgid "Default number of items per page for list views"
 msgstr "Кількість елементів у списках на сторінку за замовчуванням"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:356
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:400
 msgid "Save for the current Session"
 msgstr "Зберегти для поточної сесії"
 
@@ -18607,12 +18621,12 @@ msgid "The Icinga Project"
 msgstr "The Icinga Project"
 
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:42
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:41
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:38
 msgid "Icinga on Twitter"
 msgstr "Icinga у Twitter"
 
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:51
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:53
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:50
 msgid "Icinga on Facebook"
 msgstr "Icinga у Facebook"
 
@@ -18668,7 +18682,7 @@ msgstr "Не знайдено оголошень."
 msgid "Remove this announcement"
 msgstr "Видалити це оголошеня"
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:7
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:5
 msgid ""
 "Welcome to Icinga Web 2. For users of the screen reader Jaws full and "
 "expectant compliant accessibility is possible only with use of the Firefox "
@@ -18679,7 +18693,7 @@ msgstr ""
 "браузера Firefox. VoiceOver на Mac OS X протестовано на Chrome, Safari та "
 "Firefox."
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:16
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:14
 #, php-format
 msgid ""
 "It appears that you did not configure Icinga Web 2 yet so it's not possible "
@@ -18692,19 +18706,19 @@ msgstr ""
 "автентифікації слідуючи інструкціям у %1$sdocumentation%3$s або "
 "використовуючи наш %2$sweb-based setup-wizard%3$s."
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:20
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:18
 msgid "Icinga Web 2 Documentation"
 msgstr "Документація Icinga Web 2"
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:21
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:19
 msgid "Icinga Web 2 Setup-Wizard"
 msgstr "Встановлювач Icinga Web 2"
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:28
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:26
 msgid "icinga.com"
 msgstr "icinga.com"
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:64
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:61
 msgid "Icinga on GitHub"
 msgstr "Icinga на Github"
 
@@ -25356,51 +25370,114 @@ msgstr "Видалити"
 msgid "Clear Filter"
 msgstr "Розрізати/Фільтрувати"
 
-#~ msgid "No permission for %s"
-#~ msgstr "Немає дозволу для %s"
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "Адаптер Zend для бази даних MySQL доступний."
 
-#~ msgid "%s does not exist"
-#~ msgstr "%s не існує"
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "Адаптер Zend для бази даних MySQL відсутній."
 
-#~ msgid "- inherited -"
-#~ msgstr "- унаслідувано -"
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "Адаптер Zend для бази даних PostgreSQL доступний."
 
-#~ msgid "Remove comments"
-#~ msgstr "Видалити коментарі"
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "Адаптер Zend для бази даних PostgreSQL відстутній."
 
-#~ msgid "Delete Command Transport"
-#~ msgstr "Видалити Командний Транспорт"
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "У версії 0.5+ необхідний IPL модуль для Icinga Web 2."
 
-#~ msgid "Update Command Transport"
-#~ msgstr "Оновити Командний Транспорт"
+#~ msgid "Action %d"
+#~ msgstr "Дія %d"
 
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Підтвердити скасування %d простоїв."
+#~ msgid "Note %d"
+#~ msgstr "Нотатка %d"
 
-#~ msgid "Cancel downtimes"
-#~ msgstr "Скасувати простої"
+#~ msgid "Continue with filter"
+#~ msgstr "Продовжити з фільтром"
 
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "Скасувати %d простоїв"
+#~ msgid "Configure security related settings"
+#~ msgstr "Налаштування безпеки"
 
-#~ msgid "Update command transport %s"
-#~ msgstr "Оновити командний транспорт: %s"
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Тип об'єкту"
 
-#~ msgid "Delete command transport %s"
-#~ msgstr "Видалити командний транспорт: %s"
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Історія"
 
-#~ msgid "Cancel Downtime"
-#~ msgstr "Відмінити простій"
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Сервіси на моніторингу"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Не зберігати користувацькі налаштування"
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Тип події"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Час події"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "Згенеровані з змінних хостів"
+
+#~ msgid ""
+#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
 #~ msgstr ""
-#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
+#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
+#~ "Web"
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Відкрити налаштування автентифікації"
+#~ msgid "Keep only matching rows (Whitelist)"
+#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
+
+#~ msgid "Reject the whole row (Blacklist)"
+#~ msgstr "Відкинути весь рядок (blacklist)"
+
+#~ msgid "%s is no longer blacklisted on %s"
+#~ msgstr "%s більше не у чорному списку %s"
+
+#~ msgid "%s has been blacklisted on %s"
+#~ msgstr "%s було додано у чорний список %s"
+
+#~ msgid "Blacklist"
+#~ msgstr "Чорний список"
+
+#~ msgid "This Service has been blacklisted on this host"
+#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+
+#~ msgid "Service Critical"
+#~ msgid_plural "Services Critical"
+#~ msgstr[0] "Критичний сервіс"
+#~ msgstr[1] "Критичних сервіси"
+#~ msgstr[2] "Критичних сервісів"
+
+#~ msgid "Host Down"
+#~ msgid_plural "Hosts Down"
+#~ msgstr[0] "Хост недоступний"
+#~ msgstr[1] "Хост недоступні"
+#~ msgstr[2] "Хост недоступні"
+
+#~ msgid "Open console with VMRC"
+#~ msgstr "Відкрити консоль VMRC"
+
+#~ msgid "Console"
+#~ msgstr "Консоль"
+
+#~ msgid "Vendor / Model"
+#~ msgstr "Вендор / Модель"
+
+#~ msgid "NICs"
+#~ msgstr "NIC"
+
+#~ msgid ""
+#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
+#~ "is it part of the description (indented with a single space)"
+#~ msgstr ""
+#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
+#~ "і не є частиною опису (починається з одного пробілу)"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -25410,111 +25487,48 @@ msgstr "Розрізати/Фільтрувати"
 #~ "користувацьких налаштувань призведе Icinga Web 2 до їх збереження у тій "
 #~ "же базі даних що використовується для автентифікації."
 
-#~ msgid ""
-#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
-#~ "is it part of the description (indented with a single space)"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Відкрити налаштування автентифікації"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
 #~ msgstr ""
-#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
-#~ "і не є частиною опису (починається з одного пробілу)"
+#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
 
-#~ msgid "NICs"
-#~ msgstr "NIC"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Не зберігати користувацькі налаштування"
 
-#~ msgid "Vendor / Model"
-#~ msgstr "Вендор / Модель"
+#~ msgid "Cancel Downtime"
+#~ msgstr "Відмінити простій"
 
-#~ msgid "Console"
-#~ msgstr "Консоль"
+#~ msgid "Delete command transport %s"
+#~ msgstr "Видалити командний транспорт: %s"
 
-#~ msgid "Open console with VMRC"
-#~ msgstr "Відкрити консоль VMRC"
+#~ msgid "Update command transport %s"
+#~ msgstr "Оновити командний транспорт: %s"
 
-#~ msgid "Host Down"
-#~ msgid_plural "Hosts Down"
-#~ msgstr[0] "Хост недоступний"
-#~ msgstr[1] "Хост недоступні"
-#~ msgstr[2] "Хост недоступні"
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "Скасувати %d простоїв"
 
-#~ msgid "Service Critical"
-#~ msgid_plural "Services Critical"
-#~ msgstr[0] "Критичний сервіс"
-#~ msgstr[1] "Критичних сервіси"
-#~ msgstr[2] "Критичних сервісів"
+#~ msgid "Cancel downtimes"
+#~ msgstr "Скасувати простої"
 
-#~ msgid "This Service has been blacklisted on this host"
-#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Підтвердити скасування %d простоїв."
 
-#~ msgid "Blacklist"
-#~ msgstr "Чорний список"
+#~ msgid "Update Command Transport"
+#~ msgstr "Оновити Командний Транспорт"
 
-#~ msgid "%s has been blacklisted on %s"
-#~ msgstr "%s було додано у чорний список %s"
+#~ msgid "Delete Command Transport"
+#~ msgstr "Видалити Командний Транспорт"
 
-#~ msgid "%s is no longer blacklisted on %s"
-#~ msgstr "%s більше не у чорному списку %s"
+#~ msgid "Remove comments"
+#~ msgstr "Видалити коментарі"
 
-#~ msgid "Reject the whole row (Blacklist)"
-#~ msgstr "Відкинути весь рядок (blacklist)"
+#~ msgid "- inherited -"
+#~ msgstr "- унаслідувано -"
 
-#~ msgid "Keep only matching rows (Whitelist)"
-#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
+#~ msgid "%s does not exist"
+#~ msgstr "%s не існує"
 
-#~ msgid ""
-#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
-#~ msgstr ""
-#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
-#~ "Web"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "Згенеровані з змінних хостів"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Час події"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Тип події"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Сервіси на моніторингу"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Історія"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Тип об'єкту"
-
-#~ msgid "Configure security related settings"
-#~ msgstr "Налаштування безпеки"
-
-#~ msgid "Continue with filter"
-#~ msgstr "Продовжити з фільтром"
-
-#~ msgid "Note %d"
-#~ msgstr "Нотатка %d"
-
-#~ msgid "Action %d"
-#~ msgstr "Дія %d"
-
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "У версії 0.5+ необхідний IPL модуль для Icinga Web 2."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "Адаптер Zend для бази даних PostgreSQL відстутній."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "Адаптер Zend для бази даних PostgreSQL доступний."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "Адаптер Zend для бази даних MySQL відсутній."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "Адаптер Zend для бази даних MySQL доступний."
+#~ msgid "No permission for %s"
+#~ msgstr "Немає дозволу для %s"

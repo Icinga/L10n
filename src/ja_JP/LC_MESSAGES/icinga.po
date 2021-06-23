@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-22 13:45+0000\n"
+"POT-Creation-Date: 2021-06-23 17:16+0000\n"
 "PO-Revision-Date: 2020-04-27 14:54+0200\n"
 "Last-Translator: papillon326 <udagawa@www2178ue.sakura.ne.jp>\n"
 "Language-Team: \n"
@@ -4194,7 +4194,7 @@ msgstr ""
 #: sources.d/icingaweb2/application/forms/Announcement/AnnouncementForm.php:94
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:120
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupForm.php:68
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:265
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:309
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:57
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:126
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:48
@@ -4216,7 +4216,7 @@ msgstr "はい"
 #: sources.d/icingaweb2-module-director/library/Director/Job/SyncJob.php:102
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierUpperCaseFirst.php:26
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/DatastoreTable.php:48
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:266
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:310
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:57
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:126
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:48
@@ -5291,6 +5291,7 @@ msgid "Allow access to the audit log"
 msgstr ""
 
 #: sources.d/icingaweb2-module-audit/configuration.php:16
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:241
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:36
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:295
 msgid "System"
@@ -16775,7 +16776,7 @@ msgid "Auto refresh successfully disabled"
 msgstr "自動更新を無効にしました"
 
 #: sources.d/icingaweb2/application/forms/AutoRefreshForm.php:63
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:297
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:341
 msgid "Enable auto refresh"
 msgstr "自動更新の有効化"
 
@@ -16784,7 +16785,7 @@ msgid "Disable auto refresh"
 msgstr "自動更新を無効にする"
 
 #: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:37
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:277
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:321
 msgid "Show Stacktraces"
 msgstr "スタックトレースの表示"
 
@@ -16938,7 +16939,7 @@ msgid "The full path to the log file to write messages to."
 msgstr "メッセージを書き込むログファイルのフルパス"
 
 #: sources.d/icingaweb2/application/forms/Config/General/ThemingConfigForm.php:34
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:187
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:193
 msgid "default"
 msgstr "デフォルト"
 
@@ -17996,20 +17997,20 @@ msgstr ""
 "ナビゲーション項目のアイコンを設定します。アイコンを表示したくない場合は空白"
 "のままにしてください。"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:48
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:344
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:388
 msgid "Save to the Preferences"
 msgstr "設定を保存"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:132
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:138
 msgid "Preferences successfully saved"
 msgstr "アカウント設定を保存しました"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:134
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:140
 msgid "Preferences successfully saved for the current session"
 msgstr "現在のセッション用にアカウント設定を保存しました"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:175
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:181
 msgid ""
 "Your language setting is not applied because your platform is missing the "
 "corresponding locale. Make sure to install the correct language pack and "
@@ -18018,71 +18019,84 @@ msgstr ""
 "プラットフォームに対応するロケールがないため、言語設定が適用できません。正し"
 "い言語パックをインストールし、Webサーバを再起動してください。"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:193
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:199
 msgctxt "Form element label"
 msgid "Theme"
 msgstr "背景画像設定"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:213
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:223
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:228
+#, fuzzy
+msgid "Theme Mode"
+msgstr "背景画像設定"
+
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:233
+msgid "Dark"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:237
+msgid "Light"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:257
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:267
 #, php-format
 msgctxt "preferences.form"
 msgid "Browser (%s)"
 msgstr "ブラウザ (%s)"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:235
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:279
 msgid "Your Current Language"
 msgstr "言語設定"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:236
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:280
 msgid "Use the following language to display texts and messages"
 msgstr "表示に利用する言語を選択してください"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:247
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:291
 msgid "Your Current Timezone"
 msgstr "タイムゾーン"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:248
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:292
 msgid "Use the following timezone for dates and times"
 msgstr "日時の表示に利用するタイムゾーンを選択してください"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:259
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:303
 msgid "Show application state messages"
 msgstr "アプリケーションの状態メッセージの表示設定"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:260
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:304
 msgid "Whether to show application state messages."
 msgstr "アプリケーションの状態メッセージを表示するかどうかを選択してください。"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:263
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:307
 msgid "System (Yes)"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:264
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:308
 msgid "System (No)"
 msgstr "システム(No)"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:278
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:322
 msgid "Set whether to show an exception's stacktrace."
 msgstr "例外のスタックトレースを表示するかどうかを設定してください。"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:287
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:331
 msgid "Use benchmark"
 msgstr "ベンチマークの利用"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:299
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:343
 msgid ""
 "This option allows you to enable or to disable the global page content auto "
 "refresh"
 msgstr ""
 "グローバルページコンテンツの自動更新を有効または無効にすることができます"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:311
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:355
 #, fuzzy
 msgid "Auto refresh speed"
 msgstr "自動更新を有効にしました"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:313
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:357
 #, fuzzy
 msgid ""
 "This option allows you to speed up or to slow down the global page content "
@@ -18090,36 +18104,36 @@ msgid ""
 msgstr ""
 "グローバルページコンテンツの自動更新を有効または無効にすることができます"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:316
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:360
 msgctxt "refresh_speed"
 msgid "Fast"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:317
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:361
 #, fuzzy
 msgctxt "refresh_speed"
 msgid "Default"
 msgstr "デフォルト"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:318
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:362
 msgctxt "refresh_speed"
 msgid "Moderate"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:319
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:363
 msgctxt "refresh_speed"
 msgid "Slow"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:330
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:374
 msgid "Default page size"
 msgstr "デフォルトのページサイズ"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:331
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:375
 msgid "Default number of items per page for list views"
 msgstr "1ページあたりに表示するデフォルトの項目数を設定してください"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:356
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:400
 msgid "Save for the current Session"
 msgstr "現在のセッション用に保存"
 
@@ -18348,12 +18362,12 @@ msgid "The Icinga Project"
 msgstr "Icingaプロジェクト"
 
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:42
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:41
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:38
 msgid "Icinga on Twitter"
 msgstr ""
 
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:51
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:53
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:50
 msgid "Icinga on Facebook"
 msgstr ""
 
@@ -18409,7 +18423,7 @@ msgstr "お知らせはありません。"
 msgid "Remove this announcement"
 msgstr "このお知らせを削除"
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:7
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:5
 msgid ""
 "Welcome to Icinga Web 2. For users of the screen reader Jaws full and "
 "expectant compliant accessibility is possible only with use of the Firefox "
@@ -18419,7 +18433,7 @@ msgstr ""
 "用しての動作が可能です。Mac OS XでのVoiceOverはChrome、Safari、Firefoxでテス"
 "トされています。"
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:16
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:14
 #, php-format
 msgid ""
 "It appears that you did not configure Icinga Web 2 yet so it's not possible "
@@ -18431,19 +18445,19 @@ msgstr ""
 "ません。%1$sdocumentationの%3$s または %2$sweb-based のセットアップウィザー"
 "ド %3$s の指示に従って認証方法を定義してください。"
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:20
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:18
 msgid "Icinga Web 2 Documentation"
 msgstr "Icinga Web 2 の公式ドキュメント"
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:21
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:19
 msgid "Icinga Web 2 Setup-Wizard"
 msgstr "Icinga Web 2 セットアップウィザード"
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:28
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:26
 msgid "icinga.com"
 msgstr ""
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:64
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:61
 msgid "Icinga on GitHub"
 msgstr ""
 
@@ -24825,17 +24839,51 @@ msgstr "削除"
 msgid "Clear Filter"
 msgstr "フィルター"
 
-#~ msgid "- inherited -"
-#~ msgstr "- 継承 -"
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "MySQL用のZendデータベースアダプタは利用可能です"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "設定を保存しない"
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "MySQL用のZendデータベースアダプタが存在しません"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "管理者権限を付与する。例：お知らせの管理"
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "PostgreSQL用のZendデータベースアダプタは利用可能です"
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "認証設定を行う画面へ"
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "PostgreSQL用のZendデータベースアダプタがありません。"
+
+#, fuzzy
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "Icinga Web 2を実行するには、PHPバージョン5.6が必要です。"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "オブジェクトタイプ"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "履歴"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "監視対象サービス"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "コメントの種類"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "イベント時間"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "ホスト変数から生成しました"
+
+#~ msgid "Blacklist"
+#~ msgstr "ブラックリスト"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -24844,48 +24892,14 @@ msgstr "フィルター"
 #~ "環境設定の保存場所として「データベース」を選択すると、Icinga Web 2は認証と"
 #~ "同じデータベースを使用します。"
 
-#~ msgid "Blacklist"
-#~ msgstr "ブラックリスト"
+#~ msgid "Open authentication configuration"
+#~ msgstr "認証設定を行う画面へ"
 
-#~ msgid "Generated from host vars"
-#~ msgstr "ホスト変数から生成しました"
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "管理者権限を付与する。例：お知らせの管理"
 
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "イベント時間"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "設定を保存しない"
 
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "コメントの種類"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "監視対象サービス"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "履歴"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "オブジェクトタイプ"
-
-#, fuzzy
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "Icinga Web 2を実行するには、PHPバージョン5.6が必要です。"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "PostgreSQL用のZendデータベースアダプタがありません。"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "PostgreSQL用のZendデータベースアダプタは利用可能です"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "MySQL用のZendデータベースアダプタが存在しません"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "MySQL用のZendデータベースアダプタは利用可能です"
+#~ msgid "- inherited -"
+#~ msgstr "- 継承 -"
