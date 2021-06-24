@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-22 13:45+0000\n"
+"POT-Creation-Date: 2021-06-23 17:16+0000\n"
 "PO-Revision-Date: 2020-04-27 14:37+0200\n"
 "Last-Translator: Munzir Taha <munzirtaha@gmail.com>\n"
 "Language-Team: English <trans-ar@lists.fedoraproject.org>\n"
@@ -4199,7 +4199,7 @@ msgstr ""
 #: sources.d/icingaweb2/application/forms/Announcement/AnnouncementForm.php:94
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:120
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupForm.php:68
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:265
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:309
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:57
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:126
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:48
@@ -4221,7 +4221,7 @@ msgstr "نعم"
 #: sources.d/icingaweb2-module-director/library/Director/Job/SyncJob.php:102
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierUpperCaseFirst.php:26
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/DatastoreTable.php:48
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:266
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:310
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:57
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:126
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:48
@@ -5315,6 +5315,7 @@ msgid "Allow access to the audit log"
 msgstr ""
 
 #: sources.d/icingaweb2-module-audit/configuration.php:16
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:241
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:36
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:295
 msgid "System"
@@ -16325,7 +16326,7 @@ msgid "Auto refresh successfully disabled"
 msgstr "عُطِّل التحديث التلقائي"
 
 #: sources.d/icingaweb2/application/forms/AutoRefreshForm.php:63
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:297
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:341
 msgid "Enable auto refresh"
 msgstr "تفعيل التحديث التلقائي"
 
@@ -16334,7 +16335,7 @@ msgid "Disable auto refresh"
 msgstr "تعطيل التحديث التلقائي"
 
 #: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:37
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:277
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:321
 msgid "Show Stacktraces"
 msgstr "عرض تتبعات المكدس"
 
@@ -16481,7 +16482,7 @@ msgid "The full path to the log file to write messages to."
 msgstr "المسار الكامل لملف السجل لكتابة الرسائل إليه."
 
 #: sources.d/icingaweb2/application/forms/Config/General/ThemingConfigForm.php:34
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:187
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:193
 msgid "default"
 msgstr "افتراضي"
 
@@ -17504,91 +17505,104 @@ msgid ""
 "being displayed"
 msgstr "أيقونة عنصر التنقل هذا. دعها فارغة إن لم ترد عرض الأيقونة"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:48
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:344
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:388
 msgid "Save to the Preferences"
 msgstr "حفظ للتفضيلات"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:132
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:138
 msgid "Preferences successfully saved"
 msgstr "حُفظت الإعدادات بنجاح"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:134
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:140
 msgid "Preferences successfully saved for the current session"
 msgstr "حُفظت الإعدادات بنجاح للجلسة الحالية"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:175
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:181
 msgid ""
 "Your language setting is not applied because your platform is missing the "
 "corresponding locale. Make sure to install the correct language pack and "
 "restart your web server afterwards."
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:193
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:199
 msgctxt "Form element label"
 msgid "Theme"
 msgstr "السمة"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:213
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:223
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:228
+#, fuzzy
+msgid "Theme Mode"
+msgstr "السمة"
+
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:233
+msgid "Dark"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:237
+msgid "Light"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:257
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:267
 #, php-format
 msgctxt "preferences.form"
 msgid "Browser (%s)"
 msgstr "متصفح (%s)"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:235
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:279
 msgid "Your Current Language"
 msgstr "لغتك الحالية"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:236
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:280
 msgid "Use the following language to display texts and messages"
 msgstr "استخدم اللغة التالية لعرض النصوص والرسائل"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:247
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:291
 msgid "Your Current Timezone"
 msgstr "منطقتك الزمنية الحالية"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:248
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:292
 msgid "Use the following timezone for dates and times"
 msgstr "استخدم المنطقة الزمنية التالية لعرض التواريخ والأزمنة"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:259
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:303
 msgid "Show application state messages"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:260
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:304
 msgid "Whether to show application state messages."
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:263
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:307
 msgid "System (Yes)"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:264
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:308
 msgid "System (No)"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:278
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:322
 msgid "Set whether to show an exception's stacktrace."
 msgstr "اختيار هل يظهر تتبع مكدس الاستثناء."
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:287
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:331
 msgid "Use benchmark"
 msgstr "استخدام مؤشر أداء"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:299
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:343
 msgid ""
 "This option allows you to enable or to disable the global page content auto "
 "refresh"
 msgstr ""
 "هذا الخيار يسمح لك بتفعيل أو تعطيل التحديث التلقائي لمحتوى الصفحة الكامل"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:311
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:355
 #, fuzzy
 msgid "Auto refresh speed"
 msgstr "فُعِّل التحديث التلقائي"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:313
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:357
 #, fuzzy
 msgid ""
 "This option allows you to speed up or to slow down the global page content "
@@ -17596,36 +17610,36 @@ msgid ""
 msgstr ""
 "هذا الخيار يسمح لك بتفعيل أو تعطيل التحديث التلقائي لمحتوى الصفحة الكامل"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:316
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:360
 msgctxt "refresh_speed"
 msgid "Fast"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:317
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:361
 #, fuzzy
 msgctxt "refresh_speed"
 msgid "Default"
 msgstr "افتراضي"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:318
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:362
 msgctxt "refresh_speed"
 msgid "Moderate"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:319
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:363
 msgctxt "refresh_speed"
 msgid "Slow"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:330
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:374
 msgid "Default page size"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:331
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:375
 msgid "Default number of items per page for list views"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:356
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:400
 msgid "Save for the current Session"
 msgstr "حفظ للجلسة  الحالية"
 
@@ -17851,12 +17865,12 @@ msgid "The Icinga Project"
 msgstr "مشروع إسنجا"
 
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:42
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:41
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:38
 msgid "Icinga on Twitter"
 msgstr "إسنجا على تويتر"
 
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:51
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:53
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:50
 msgid "Icinga on Facebook"
 msgstr "إسنجا على فيسبوك"
 
@@ -17912,14 +17926,14 @@ msgstr ""
 msgid "Remove this announcement"
 msgstr ""
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:7
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:5
 msgid ""
 "Welcome to Icinga Web 2. For users of the screen reader Jaws full and "
 "expectant compliant accessibility is possible only with use of the Firefox "
 "browser. VoiceOver on Mac OS X is tested on Chrome, Safari and Firefox."
 msgstr ""
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:16
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:14
 #, php-format
 msgid ""
 "It appears that you did not configure Icinga Web 2 yet so it's not possible "
@@ -17932,19 +17946,19 @@ msgstr ""
 "%1$sdocumentation %3$s أو  عن طريق استخدام معالج التثبيت%2$s المبني على الوب "
 "الخاص بنا%3$s"
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:20
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:18
 msgid "Icinga Web 2 Documentation"
 msgstr "مستندات مساعدة إسنجا وب 2"
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:21
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:19
 msgid "Icinga Web 2 Setup-Wizard"
 msgstr "معالج تثبيت إسنجا وب 2"
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:28
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:26
 msgid "icinga.com"
 msgstr ""
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:64
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:61
 msgid "Icinga on GitHub"
 msgstr ""
 
@@ -24564,21 +24578,21 @@ msgstr ""
 msgid "Clear Filter"
 msgstr "مرشح"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "عدم تخزين التفضيلات"
-
 #, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "نوع التعليق"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "سرد الخدمات"
+#~ msgid "History Object Type"
+#~ msgstr "نوع الكائن"
 
 #, fuzzy
 #~ msgid "History Host Id"
 #~ msgstr "المحفوظات"
 
 #, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "نوع الكائن"
+#~ msgid "History Service Id"
+#~ msgstr "سرد الخدمات"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "نوع التعليق"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "عدم تخزين التفضيلات"
