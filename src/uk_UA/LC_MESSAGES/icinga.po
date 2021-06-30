@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-23 17:16+0000\n"
+"POT-Creation-Date: 2021-06-30 17:00+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1528,7 +1528,7 @@ msgstr "Затвердити зміни без перевірки доступн
 #: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:464
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:296
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:282
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:121
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:94
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:375
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:391
 msgid "Validate Configuration"
@@ -1539,7 +1539,7 @@ msgstr "Валідація конфігурації"
 #: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:465
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:297
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:283
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:122
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:95
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:376
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:392
 msgid "Validation In Progress"
@@ -5630,8 +5630,8 @@ msgstr "Додати новий кореневий вузол"
 #: sources.d/icingaweb2-module-director/application/forms/IcingaAddServiceForm.php:35
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:31
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:72
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:611
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:635
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:612
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:636
 msgid "Next"
 msgstr "Наступний"
 
@@ -6507,9 +6507,9 @@ msgstr "Знімки"
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:165
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:95
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VcenterController.php:57
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:623
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:647
-#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:20
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:624
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:648
+#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:21
 msgid "Back"
 msgstr "Назад"
 
@@ -19291,7 +19291,7 @@ msgstr "У даного модулю нема залежностей"
 msgid "Module \"%s\" can't be enabled. Module has unmet dependencies"
 msgstr "Модуль \"%s\" не вдалося увімкнути. Сталася помилка:"
 
-#: sources.d/icingaweb2/library/Icinga/Application/Modules/Module.php:999
+#: sources.d/icingaweb2/library/Icinga/Application/Modules/Module.php:1016
 msgid "This module has no description"
 msgstr "У даного модулю немає опису"
 
@@ -19882,7 +19882,7 @@ msgstr "Зміст"
 msgid "Refresh the %s"
 msgstr "Оновити %s"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:659
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:660
 msgid "Finish"
 msgstr "Завершити"
 
@@ -23736,63 +23736,27 @@ msgstr "Колонка сортування \"%s\" не дозволена у \"
 msgid "The filter column \"%s\" is not allowed here."
 msgstr "Колонка фільтру \"%s\" тут не дозволена."
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:51
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:48
 msgctxt "setup.summary.subject"
 msgid "the monitoring module"
 msgstr "модуль monitoring"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:62
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:59
 msgid "The given resource name is already in use."
 msgstr "Надана назва ресурсу вже використовується."
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:108
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:81
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:350
 msgctxt "setup.welcome.btn.next"
 msgid "Start"
 msgstr "Початок"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:111
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:84
 msgctxt "setup.summary.btn.finish"
 msgid "Setup the monitoring module for Icinga Web 2"
 msgstr "Встановлення модулю monitoring для Icinga Web 2"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:182
-msgid ""
-"To access the IDO stored in a MySQL database the PDO-MySQL module for PHP is "
-"required."
-msgstr "Для доступу до IDO у базі даних MySQL необхідний модуль PHP PDO-MySQL."
-
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:188
-msgid "Zend database adapter for MySQL"
-msgstr "Адаптер Zend для бази даних MySQL"
-
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:191
-msgid ""
-"The Zend database adapter for MySQL is required to access a MySQL database."
-msgstr ""
-"Для доступу до бази даних MySQL необхідний адаптер Zend для баз даних MySQL."
-
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:202
-msgid ""
-"To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL module "
-"for PHP is required."
-msgstr ""
-"Для доступу до IDO у базі даних PostgreSQL необхідний модуль PHP PDO-"
-"PostgreSQL."
-
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:208
-msgid "Zend database adapter for PostgreSQL"
-msgstr "Адаптер Zend для бази даних PostgreSQL"
-
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:211
-msgid ""
-"The Zend database adapter for PostgreSQL is required to access a PostgreSQL "
-"database."
-msgstr ""
-"Для доступу до бази даних PostgreSQL необхідний адаптер Zend для баз даних "
-"PostgreSQL."
-
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:222
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:153
 msgid ""
 "To send external commands over Icinga 2's API the cURL module for PHP is "
 "required."
@@ -24574,11 +24538,11 @@ msgstr "Вибачте! Не вдалося успішно встановити 
 msgid "Login to Icinga Web 2"
 msgstr "Вхід до Icinga Web 2"
 
-#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:15
+#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:16
 msgid "Show the login page of Icinga Web 2"
 msgstr "Показати сторінку входу до Icinga Web 2"
 
-#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:25
+#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:26
 msgid "Show previous wizard-page"
 msgstr "Показати попередню сторінку"
 
@@ -25370,114 +25334,51 @@ msgstr "Видалити"
 msgid "Clear Filter"
 msgstr "Розрізати/Фільтрувати"
 
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "Адаптер Zend для бази даних MySQL доступний."
+#~ msgid "No permission for %s"
+#~ msgstr "Немає дозволу для %s"
 
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "Адаптер Zend для бази даних MySQL відсутній."
+#~ msgid "%s does not exist"
+#~ msgstr "%s не існує"
 
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "Адаптер Zend для бази даних PostgreSQL доступний."
+#~ msgid "- inherited -"
+#~ msgstr "- унаслідувано -"
 
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "Адаптер Zend для бази даних PostgreSQL відстутній."
+#~ msgid "Remove comments"
+#~ msgstr "Видалити коментарі"
 
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "У версії 0.5+ необхідний IPL модуль для Icinga Web 2."
+#~ msgid "Delete Command Transport"
+#~ msgstr "Видалити Командний Транспорт"
 
-#~ msgid "Action %d"
-#~ msgstr "Дія %d"
+#~ msgid "Update Command Transport"
+#~ msgstr "Оновити Командний Транспорт"
 
-#~ msgid "Note %d"
-#~ msgstr "Нотатка %d"
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Підтвердити скасування %d простоїв."
 
-#~ msgid "Continue with filter"
-#~ msgstr "Продовжити з фільтром"
+#~ msgid "Cancel downtimes"
+#~ msgstr "Скасувати простої"
 
-#~ msgid "Configure security related settings"
-#~ msgstr "Налаштування безпеки"
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "Скасувати %d простоїв"
 
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Тип об'єкту"
+#~ msgid "Update command transport %s"
+#~ msgstr "Оновити командний транспорт: %s"
 
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Історія"
+#~ msgid "Delete command transport %s"
+#~ msgstr "Видалити командний транспорт: %s"
 
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Сервіси на моніторингу"
+#~ msgid "Cancel Downtime"
+#~ msgstr "Відмінити простій"
 
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Тип події"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Не зберігати користувацькі налаштування"
 
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Час події"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "Згенеровані з змінних хостів"
-
-#~ msgid ""
-#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
+#~ msgid "Grant admin permissions, e.g. manage announcements"
 #~ msgstr ""
-#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
-#~ "Web"
+#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
 
-#~ msgid "Keep only matching rows (Whitelist)"
-#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
-
-#~ msgid "Reject the whole row (Blacklist)"
-#~ msgstr "Відкинути весь рядок (blacklist)"
-
-#~ msgid "%s is no longer blacklisted on %s"
-#~ msgstr "%s більше не у чорному списку %s"
-
-#~ msgid "%s has been blacklisted on %s"
-#~ msgstr "%s було додано у чорний список %s"
-
-#~ msgid "Blacklist"
-#~ msgstr "Чорний список"
-
-#~ msgid "This Service has been blacklisted on this host"
-#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
-
-#~ msgid "Service Critical"
-#~ msgid_plural "Services Critical"
-#~ msgstr[0] "Критичний сервіс"
-#~ msgstr[1] "Критичних сервіси"
-#~ msgstr[2] "Критичних сервісів"
-
-#~ msgid "Host Down"
-#~ msgid_plural "Hosts Down"
-#~ msgstr[0] "Хост недоступний"
-#~ msgstr[1] "Хост недоступні"
-#~ msgstr[2] "Хост недоступні"
-
-#~ msgid "Open console with VMRC"
-#~ msgstr "Відкрити консоль VMRC"
-
-#~ msgid "Console"
-#~ msgstr "Консоль"
-
-#~ msgid "Vendor / Model"
-#~ msgstr "Вендор / Модель"
-
-#~ msgid "NICs"
-#~ msgstr "NIC"
-
-#~ msgid ""
-#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
-#~ "is it part of the description (indented with a single space)"
-#~ msgstr ""
-#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
-#~ "і не є частиною опису (починається з одного пробілу)"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Відкрити налаштування автентифікації"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -25487,48 +25388,144 @@ msgstr "Розрізати/Фільтрувати"
 #~ "користувацьких налаштувань призведе Icinga Web 2 до їх збереження у тій "
 #~ "же базі даних що використовується для автентифікації."
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Відкрити налаштування автентифікації"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgid ""
+#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
+#~ "is it part of the description (indented with a single space)"
 #~ msgstr ""
-#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
+#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
+#~ "і не є частиною опису (починається з одного пробілу)"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Не зберігати користувацькі налаштування"
+#~ msgid "NICs"
+#~ msgstr "NIC"
 
-#~ msgid "Cancel Downtime"
-#~ msgstr "Відмінити простій"
+#~ msgid "Vendor / Model"
+#~ msgstr "Вендор / Модель"
 
-#~ msgid "Delete command transport %s"
-#~ msgstr "Видалити командний транспорт: %s"
+#~ msgid "Console"
+#~ msgstr "Консоль"
 
-#~ msgid "Update command transport %s"
-#~ msgstr "Оновити командний транспорт: %s"
+#~ msgid "Open console with VMRC"
+#~ msgstr "Відкрити консоль VMRC"
 
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "Скасувати %d простоїв"
+#~ msgid "Host Down"
+#~ msgid_plural "Hosts Down"
+#~ msgstr[0] "Хост недоступний"
+#~ msgstr[1] "Хост недоступні"
+#~ msgstr[2] "Хост недоступні"
 
-#~ msgid "Cancel downtimes"
-#~ msgstr "Скасувати простої"
+#~ msgid "Service Critical"
+#~ msgid_plural "Services Critical"
+#~ msgstr[0] "Критичний сервіс"
+#~ msgstr[1] "Критичних сервіси"
+#~ msgstr[2] "Критичних сервісів"
 
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Підтвердити скасування %d простоїв."
+#~ msgid "This Service has been blacklisted on this host"
+#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
 
-#~ msgid "Update Command Transport"
-#~ msgstr "Оновити Командний Транспорт"
+#~ msgid "Blacklist"
+#~ msgstr "Чорний список"
 
-#~ msgid "Delete Command Transport"
-#~ msgstr "Видалити Командний Транспорт"
+#~ msgid "%s has been blacklisted on %s"
+#~ msgstr "%s було додано у чорний список %s"
 
-#~ msgid "Remove comments"
-#~ msgstr "Видалити коментарі"
+#~ msgid "%s is no longer blacklisted on %s"
+#~ msgstr "%s більше не у чорному списку %s"
 
-#~ msgid "- inherited -"
-#~ msgstr "- унаслідувано -"
+#~ msgid "Reject the whole row (Blacklist)"
+#~ msgstr "Відкинути весь рядок (blacklist)"
 
-#~ msgid "%s does not exist"
-#~ msgstr "%s не існує"
+#~ msgid "Keep only matching rows (Whitelist)"
+#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
 
-#~ msgid "No permission for %s"
-#~ msgstr "Немає дозволу для %s"
+#~ msgid ""
+#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
+#~ msgstr ""
+#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
+#~ "Web"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "Згенеровані з змінних хостів"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Час події"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Тип події"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Сервіси на моніторингу"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Історія"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Тип об'єкту"
+
+#~ msgid "Configure security related settings"
+#~ msgstr "Налаштування безпеки"
+
+#~ msgid "Continue with filter"
+#~ msgstr "Продовжити з фільтром"
+
+#~ msgid "Note %d"
+#~ msgstr "Нотатка %d"
+
+#~ msgid "Action %d"
+#~ msgstr "Дія %d"
+
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "У версії 0.5+ необхідний IPL модуль для Icinga Web 2."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "Адаптер Zend для бази даних PostgreSQL відстутній."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "Адаптер Zend для бази даних PostgreSQL доступний."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "Адаптер Zend для бази даних MySQL відсутній."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "Адаптер Zend для бази даних MySQL доступний."
+
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "Для доступу до бази даних PostgreSQL необхідний адаптер Zend для баз "
+#~ "даних PostgreSQL."
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "Адаптер Zend для бази даних PostgreSQL"
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Для доступу до IDO у базі даних PostgreSQL необхідний модуль PHP PDO-"
+#~ "PostgreSQL."
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr ""
+#~ "Для доступу до бази даних MySQL необхідний адаптер Zend для баз даних "
+#~ "MySQL."
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "Адаптер Zend для бази даних MySQL"
+
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
+#~ msgstr ""
+#~ "Для доступу до IDO у базі даних MySQL необхідний модуль PHP PDO-MySQL."

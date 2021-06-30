@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 9cdbfb1\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-23 17:16+0000\n"
+"POT-Creation-Date: 2021-06-30 17:00+0000\n"
 "PO-Revision-Date: 2020-04-30 16:15+0200\n"
 "Last-Translator: Juan Cruz Fernandez <juancruz.f87@gmail.com>\n"
 "Language-Team: \n"
@@ -1521,7 +1521,7 @@ msgstr ""
 #: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:464
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:296
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:282
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:121
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:94
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:375
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:391
 msgid "Validate Configuration"
@@ -1532,7 +1532,7 @@ msgstr "Validar configuración"
 #: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:465
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:297
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:283
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:122
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:95
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:376
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:392
 msgid "Validation In Progress"
@@ -5589,8 +5589,8 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/IcingaAddServiceForm.php:35
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:31
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:72
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:611
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:635
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:612
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:636
 msgid "Next"
 msgstr "Siguiente"
 
@@ -6457,9 +6457,9 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:165
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:95
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VcenterController.php:57
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:623
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:647
-#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:20
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:624
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:648
+#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:21
 msgid "Back"
 msgstr "Atrás"
 
@@ -18624,7 +18624,7 @@ msgstr "Este modulo no tiene dependencias"
 msgid "Module \"%s\" can't be enabled. Module has unmet dependencies"
 msgstr "El módulo \"%s\" no pudo ser habilitado. Ocurrió un error:"
 
-#: sources.d/icingaweb2/library/Icinga/Application/Modules/Module.php:999
+#: sources.d/icingaweb2/library/Icinga/Application/Modules/Module.php:1016
 msgid "This module has no description"
 msgstr "Este modulo no tiene descripción"
 
@@ -19213,7 +19213,7 @@ msgstr "Contenido"
 msgid "Refresh the %s"
 msgstr "Refrescar el %s"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:659
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:660
 msgid "Finish"
 msgstr "Terminado"
 
@@ -23115,66 +23115,27 @@ msgstr "La columna de clasificación \\%s\"\" no está permitida en \\ \"%s\"."
 msgid "The filter column \"%s\" is not allowed here."
 msgstr "La columna de filtro \\%s\"\" no está permitida aquí."
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:51
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:48
 msgctxt "setup.summary.subject"
 msgid "the monitoring module"
 msgstr "el modulo de monitoreo"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:62
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:59
 msgid "The given resource name is already in use."
 msgstr "El nombre del recurso dado ya está en uso."
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:108
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:81
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:350
 msgctxt "setup.welcome.btn.next"
 msgid "Start"
 msgstr "Iniciar"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:111
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:84
 msgctxt "setup.summary.btn.finish"
 msgid "Setup the monitoring module for Icinga Web 2"
 msgstr "Configurar el módulo de monitorización para Icinga Web 2"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:182
-msgid ""
-"To access the IDO stored in a MySQL database the PDO-MySQL module for PHP is "
-"required."
-msgstr ""
-"Para acceder al IDO almacenado en una base de datos MySQL, se requiere el "
-"módulo PDO-MySQL para PHP."
-
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:188
-msgid "Zend database adapter for MySQL"
-msgstr "Adaptador de base de datos Zend para MySQL"
-
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:191
-msgid ""
-"The Zend database adapter for MySQL is required to access a MySQL database."
-msgstr ""
-"Se requiere el adaptador de base de datos Zend para MySQL para acceder a una "
-"base de datos MySQL."
-
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:202
-msgid ""
-"To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL module "
-"for PHP is required."
-msgstr ""
-"Para acceder al IDO almacenado en una base de datos PostgreSQL, se requiere "
-"el módulo PDO-PostgreSQL para PHP."
-
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:208
-msgid "Zend database adapter for PostgreSQL"
-msgstr "Adaptador de base de datos Zend para PostgreSQL"
-
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:211
-msgid ""
-"The Zend database adapter for PostgreSQL is required to access a PostgreSQL "
-"database."
-msgstr ""
-"El adaptador de base de datos Zend para PostgreSQL es necesario para acceder "
-"a una base de datos PostgreSQL."
-
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:222
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:153
 msgid ""
 "To send external commands over Icinga 2's API the cURL module for PHP is "
 "required."
@@ -23986,11 +23947,11 @@ msgstr "¡Lo siento! Error al configurar Icinga Web 2 con éxito."
 msgid "Login to Icinga Web 2"
 msgstr "Logueo a Icinga web 2"
 
-#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:15
+#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:16
 msgid "Show the login page of Icinga Web 2"
 msgstr "Muestre la página de logueo a Icinga web 2"
 
-#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:25
+#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:26
 msgid "Show previous wizard-page"
 msgstr "Mostrar página anterior del asistente"
 
@@ -24799,45 +24760,14 @@ msgstr "El tiempo de borrado"
 msgid "Clear Filter"
 msgstr "Filtro"
 
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "El adaptador de base de datos Zend para MySQL está disponible."
+#~ msgid "Don't Store Preferences"
+#~ msgstr "No guardar las preferencias"
 
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "Falta el adaptador de base de datos Zend para MySQL."
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "Conceder permisos de administrador, ej. manejar anuncios"
 
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "El adaptador de base de datos Zend para PostgreSQL está disponible."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "Falta el adaptador de base de datos Zend para PostgreSQL."
-
-#, fuzzy
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "La ejecución de Icinga Web 2 requiere la versión 5.6 de PHP."
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Tipo de objeto"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Historia"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Lista de servicios"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Tipo de comentario"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Tiempo del evento"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Abrir configuración de autenticación"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -24847,11 +24777,76 @@ msgstr "Filtro"
 #~ "preferencias hace que Icinga Web 2 use la misma base de datos que para la "
 #~ "autenticación."
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Abrir configuración de autenticación"
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Tiempo del evento"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "Conceder permisos de administrador, ej. manejar anuncios"
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Tipo de comentario"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "No guardar las preferencias"
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Lista de servicios"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Historia"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Tipo de objeto"
+
+#, fuzzy
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "La ejecución de Icinga Web 2 requiere la versión 5.6 de PHP."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "Falta el adaptador de base de datos Zend para PostgreSQL."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "El adaptador de base de datos Zend para PostgreSQL está disponible."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "Falta el adaptador de base de datos Zend para MySQL."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "El adaptador de base de datos Zend para MySQL está disponible."
+
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "El adaptador de base de datos Zend para PostgreSQL es necesario para "
+#~ "acceder a una base de datos PostgreSQL."
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "Adaptador de base de datos Zend para PostgreSQL"
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Para acceder al IDO almacenado en una base de datos PostgreSQL, se "
+#~ "requiere el módulo PDO-PostgreSQL para PHP."
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr ""
+#~ "Se requiere el adaptador de base de datos Zend para MySQL para acceder a "
+#~ "una base de datos MySQL."
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "Adaptador de base de datos Zend para MySQL"
+
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
+#~ msgstr ""
+#~ "Para acceder al IDO almacenado en una base de datos MySQL, se requiere el "
+#~ "módulo PDO-MySQL para PHP."
