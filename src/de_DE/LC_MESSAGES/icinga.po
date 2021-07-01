@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-06-30 17:00+0000\n"
+"POT-Creation-Date: 2021-07-01 11:03+0000\n"
 "PO-Revision-Date: 2021-03-08 08:36+0100\n"
 "Last-Translator: @hashfunktion <mail@jessereppin.de>\n"
 "Language-Team: \n"
@@ -25301,9 +25301,8 @@ msgstr ""
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:712
 msgid ""
-"A database is mandatory, therefore at least one module PDO-MySQL OR PDO-"
-"PostgreSQL for PHP \n"
-"        is required."
+"A database is mandatory, therefore at least one module PDO-MySQL or PDO-"
+"PostgreSQL for PHP is required."
 msgstr ""
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:721
@@ -25430,52 +25429,93 @@ msgstr "Löschen"
 msgid "Clear Filter"
 msgstr "Filter"
 
-#~ msgid "No permission for %s"
-#~ msgstr "Keine Berechtigung für %s"
-
-#~ msgid "%s does not exist"
-#~ msgstr "%s existiert nicht"
-
-#~ msgid "- inherited -"
-#~ msgstr "- geerbt -"
-
-#~ msgid "Remove comments"
-#~ msgstr "Entferne Kommentare"
-
-#~ msgid "Delete Command Transport"
-#~ msgstr "Lösche Befehls-Transport"
-
-#~ msgid "Update Command Transport"
-#~ msgstr "Aktualisiere Befehls-Transport"
-
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Bestätige den Abbruch der %d Downtimes."
-
-#~ msgid "Cancel downtimes"
-#~ msgstr "Downtimes abbrechen"
-
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "%d Downtimes abbrechen"
-
-#~ msgid "Update command transport %s"
-#~ msgstr "Aktualisiere Befehls-Transport %s"
-
-#~ msgid "Delete command transport %s"
-#~ msgstr "Lösche Befehls-Transport %s"
-
-#~ msgid "Cancel Downtime"
-#~ msgstr "Downtime beenden"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Einstellungen nicht speichern"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
 #~ msgstr ""
-#~ "Verleiht Administratorrechte, erlaubt z. B. das Verwalten von "
-#~ "Bekanntmachungen"
+#~ "Um auf die in einer MySQL gespeicherte IDO zuzugreifen, wird das PDO-"
+#~ "MySQL Modul für PHP benötigt."
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Öffne Authentifizierungs-Konfiguration"
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "Zend Datenbankadapter für MySQL"
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr ""
+#~ "Der Zend Datenbankadapter für MySQL wird benötigt, um auf MySQL-"
+#~ "Datenbanken zuzugreifen."
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Um auf die in einer PostgreSQL gespeicherte IDO zuzugreifen, wird das PDO-"
+#~ "PostgreSQL Modul für PHP benötigt."
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "Zend Datenbankadapter für PostgreSQL"
+
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "Der Zend Datenbankadapter für PostgreSQL wird benötigt, um auf PostgreSQL-"
+#~ "Datenbanken zuzugreifen."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "Der Zend Datenbankadapter für MySQL ist verfügbar."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "Der Zend Datenbankadapter für MySQL fehlt."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "Der Zend Datenbankadapter für PostgreSQL ist verfügbar."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "Der Zend Datenbankadapter für PostgreSQL fehlt."
+
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "Das IPL Modul für Icinga Web 2 wird in Version 0.5+ benötigt."
+
+#~ msgid "Action %d"
+#~ msgstr "Aktion %d"
+
+#~ msgid "Note %d"
+#~ msgstr "Notiz %d"
+
+#~ msgid "Continue with filter"
+#~ msgstr "Mit Filter fortfahren"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Objekttyp"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Historie"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Überwachte Services"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Kommentartyp"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Ereignis-Zeitpunkt"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "Aus Host-Variablen generiert"
+
+#~ msgid "Blacklist"
+#~ msgstr "Blacklist"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -25485,90 +25525,49 @@ msgstr "Filter"
 #~ "gespeichert werden sollen, verwendet Icinga Web 2 die selbe Datenbank wie "
 #~ "zur Authentifizierung."
 
-#~ msgid "Blacklist"
-#~ msgstr "Blacklist"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Öffne Authentifizierungs-Konfiguration"
 
-#~ msgid "Generated from host vars"
-#~ msgstr "Aus Host-Variablen generiert"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Ereignis-Zeitpunkt"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Kommentartyp"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Überwachte Services"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Historie"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Objekttyp"
-
-#~ msgid "Continue with filter"
-#~ msgstr "Mit Filter fortfahren"
-
-#~ msgid "Note %d"
-#~ msgstr "Notiz %d"
-
-#~ msgid "Action %d"
-#~ msgstr "Aktion %d"
-
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "Das IPL Modul für Icinga Web 2 wird in Version 0.5+ benötigt."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "Der Zend Datenbankadapter für PostgreSQL fehlt."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "Der Zend Datenbankadapter für PostgreSQL ist verfügbar."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "Der Zend Datenbankadapter für MySQL fehlt."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "Der Zend Datenbankadapter für MySQL ist verfügbar."
-
-#~ msgid ""
-#~ "The Zend database adapter for PostgreSQL is required to access a "
-#~ "PostgreSQL database."
+#~ msgid "Grant admin permissions, e.g. manage announcements"
 #~ msgstr ""
-#~ "Der Zend Datenbankadapter für PostgreSQL wird benötigt, um auf PostgreSQL-"
-#~ "Datenbanken zuzugreifen."
+#~ "Verleiht Administratorrechte, erlaubt z. B. das Verwalten von "
+#~ "Bekanntmachungen"
 
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "Zend Datenbankadapter für PostgreSQL"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Einstellungen nicht speichern"
 
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "Um auf die in einer PostgreSQL gespeicherte IDO zuzugreifen, wird das PDO-"
-#~ "PostgreSQL Modul für PHP benötigt."
+#~ msgid "Cancel Downtime"
+#~ msgstr "Downtime beenden"
 
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr ""
-#~ "Der Zend Datenbankadapter für MySQL wird benötigt, um auf MySQL-"
-#~ "Datenbanken zuzugreifen."
+#~ msgid "Delete command transport %s"
+#~ msgstr "Lösche Befehls-Transport %s"
 
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "Zend Datenbankadapter für MySQL"
+#~ msgid "Update command transport %s"
+#~ msgstr "Aktualisiere Befehls-Transport %s"
 
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
-#~ msgstr ""
-#~ "Um auf die in einer MySQL gespeicherte IDO zuzugreifen, wird das PDO-"
-#~ "MySQL Modul für PHP benötigt."
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "%d Downtimes abbrechen"
+
+#~ msgid "Cancel downtimes"
+#~ msgstr "Downtimes abbrechen"
+
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Bestätige den Abbruch der %d Downtimes."
+
+#~ msgid "Update Command Transport"
+#~ msgstr "Aktualisiere Befehls-Transport"
+
+#~ msgid "Delete Command Transport"
+#~ msgstr "Lösche Befehls-Transport"
+
+#~ msgid "Remove comments"
+#~ msgstr "Entferne Kommentare"
+
+#~ msgid "- inherited -"
+#~ msgstr "- geerbt -"
+
+#~ msgid "%s does not exist"
+#~ msgstr "%s existiert nicht"
+
+#~ msgid "No permission for %s"
+#~ msgstr "Keine Berechtigung für %s"
