@@ -26,9 +26,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-07-06 13:21+0000\n"
-"PO-Revision-Date: 2021-03-08 08:36+0100\n"
-"Last-Translator: @hashfunktion <mail@jessereppin.de>\n"
+"POT-Creation-Date: 2021-06-30 17:00+0000\n"
+"PO-Revision-Date: 2021-07-06 15:13+0200\n"
+"Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -917,6 +917,8 @@ msgid ""
 "Some commands were not transmitted. Please check the log. The first error "
 "follows."
 msgstr ""
+"Einige Kommandos wurden nicht gesendet. Bitte prüfe das Log. Der erste "
+"Fehler folgt."
 
 #: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:26
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:91
@@ -974,7 +976,6 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:47
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:98
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:48
-#, fuzzy
 msgid ""
 "If you work with other administrators, you may find it useful to share "
 "information about the host or service that is having problems. Make sure you "
@@ -1060,9 +1061,8 @@ msgstr ""
 
 #: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:69
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:79
-#, fuzzy
 msgid "If the comment should expire, check this option."
-msgstr "Diese Option aktivieren, wenn die Bestätigung verfallen soll."
+msgstr "Diese Option aktivieren, wenn der Kommentar verfallen soll."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:86
 #, fuzzy
@@ -1104,11 +1104,10 @@ msgstr[1] "Kommentar löschen"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/DeleteDowntimeForm.php:35
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:93
-#, fuzzy
 msgid "Delete downtime"
 msgid_plural "Delete downtimes"
 msgstr[0] "Downtime löschen"
-msgstr[1] "Downtime löschen"
+msgstr[1] "Downtimes löschen"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:34
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:20
@@ -1260,16 +1259,17 @@ msgid ""
 "options are set, all child hosts and their services will schedule a downtime "
 "too."
 msgstr ""
+"Setzt eine Downtime für alle Services auf den zutreffenden Hosts. Sind Kind-"
+"Optionen gewählt, werden alle Kind-Hosts und -Services auch in Downtime "
+"gesetzt."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:40
-#, fuzzy
 msgid "Schedule child downtimes."
-msgstr "Downtimes planen"
+msgstr "Untergeordnete Downtimes planen."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:41
-#, fuzzy
 msgid "Child Options"
-msgstr "Kind-Host"
+msgstr "Kind-Optionen"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:43
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:74
@@ -1380,6 +1380,8 @@ msgid ""
 "Enter a brief description on why you're sending this notification. It will "
 "be sent with it."
 msgstr ""
+"Trage eine kurze Notiz für den Grund dieser Benachrichtigung ein. Diese wird "
+"mitgesendet."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/SendCustomNotificationForm.php:59
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:58
@@ -1868,11 +1870,11 @@ msgstr "Konfiguriere das Datenbank-Backend"
 
 #: sources.d/icingadb-web/configuration.php:342
 msgid "Redis"
-msgstr ""
+msgstr "Redis"
 
 #: sources.d/icingadb-web/configuration.php:343
 msgid "Configure the Redis connections"
-msgstr ""
+msgstr "Konfiguriere Redis-Verbindungen"
 
 #: sources.d/icingadb-web/configuration.php:347
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:62
@@ -1881,7 +1883,7 @@ msgstr "Befehls-Transporte"
 
 #: sources.d/icingadb-web/configuration.php:348
 msgid "Configure command transports"
-msgstr ""
+msgstr "Konfiguriere Kommando-Transporte"
 
 #: sources.d/icingadb-web/library/Icingadb/Command/Transport/CommandTransport.php:39
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Command/Transport/CommandTransport.php:42
@@ -1917,6 +1919,8 @@ msgid ""
 "Cannot apply restriction %s using the filter %s. You can only use the "
 "following columns: %s"
 msgstr ""
+"Kann Einschränkung %s mit dem Filter %s nicht anwenden. Es sind nur die "
+"folgenden Spalten erlaubt: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/BaseOrderedItemList.php:31
 #: sources.d/icingadb-web/library/Icingadb/Widget/BaseItemList.php:73
@@ -1925,11 +1929,11 @@ msgstr "Keine Einträge gefunden."
 
 #: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:157
 msgid "Acknowledge Problem"
-msgstr ""
+msgstr "Problem bestätigen"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:164
 msgid "Add Comment"
-msgstr ""
+msgstr "Kommentar hinzufügen"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:196
 #, fuzzy
@@ -1948,7 +1952,7 @@ msgstr "Service-Downtime planen"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:219
 msgid "Send Custom Notification"
-msgstr ""
+msgstr "Eigene Benachrichtigung senden"
 
 # Plural missing
 #: sources.d/icingadb-web/library/Icingadb/Common/DetailActions.php:53
@@ -1982,7 +1986,7 @@ msgstr "ausstehend"
 #: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:110
 #: sources.d/icingadb-web/library/Icingadb/Common/ServiceStates.php:121
 msgid "not available"
-msgstr ""
+msgstr "nicht verfügbar"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:54
 #, fuzzy
@@ -1992,7 +1996,7 @@ msgstr "Aktion"
 #: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:56
 #, php-format
 msgid "You can find this object in %s on line %s."
-msgstr ""
+msgstr "Dieses Objekt ist in %s auf Zeile %s zu finden."
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:82
 #, fuzzy
@@ -2006,7 +2010,7 @@ msgstr "Ausführungsdauer"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:101
 msgid "Volatile State Details"
-msgstr ""
+msgstr "Flüchtige Status Details"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:111
 #, fuzzy
@@ -2023,7 +2027,7 @@ msgstr "Typ-Attribute"
 #, php-format
 msgctxt "<service> on <host>"
 msgid "%s on %s"
-msgstr ""
+msgstr "%s auf %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ServiceStates.php:106
 #: sources.d/icingaweb2-module-director/application/locale/translateMe.php:9
@@ -4082,7 +4086,7 @@ msgstr "Keine Verbindung zu Icinga Redis: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:41
 msgid "Icinga Redis available and up to date."
-msgstr ""
+msgstr "Icinga Redis ist verfügbar und aktuell."
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:44
 #, fuzzy
@@ -4512,7 +4516,7 @@ msgstr "am %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:556
 msgid "This route does not support the requested output format"
-msgstr ""
+msgstr "Diese Route unterstützt nicht das gewünschte Ausgabe-Format"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:72
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:238
@@ -4950,7 +4954,7 @@ msgstr "Down"
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:71
 #, php-format
 msgid "{{#total}}Total{{/total}} %d"
-msgstr ""
+msgstr "%d {{#total}}Gesamt{{/total}}"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseCommentListItem.php:51
 #, php-format
@@ -5010,12 +5014,12 @@ msgstr "Befehls-Transport %s entfernen"
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:56
 #, php-format
 msgid "State Change Rate: %.2f%%; Start Threshold: %.2f%%"
-msgstr ""
+msgstr "Status-Wechsel Rate: %.2f%%; Start Grenzwert: %.2f%%"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:67
 #, php-format
 msgid "State Change Rate: %.2f%%; End Threshold: %.2f%%; Flapping for %s"
-msgstr ""
+msgstr "Status-Wechsel Rate: %.2f%%; Stopp Grenzwert: %.2f%%; Flapping für %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/HistoryListItem.php:180
 msgid "Comment added"
@@ -5232,7 +5236,7 @@ msgstr "%s ist %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:158
 msgid "Minimal view active"
-msgstr ""
+msgstr "Minimale Ansicht aktiv"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:159
 #, fuzzy
@@ -5241,7 +5245,7 @@ msgstr "Zur Kachelansicht wechseln"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:162
 msgid "Common view active"
-msgstr ""
+msgstr "Allgemeine Ansicht aktiv"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:163
 #, fuzzy
@@ -5250,7 +5254,7 @@ msgstr "Zur Kachelansicht wechseln"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:166
 msgid "Detailed view active"
-msgstr ""
+msgstr "Detaillierte Ansicht aktiv"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ViewModeSwitcher.php:167
 #, fuzzy
@@ -5364,6 +5368,8 @@ msgid ""
 "If you still have any import sources referring to this key, you won't be "
 "able to use them without changing the key."
 msgstr ""
+"Gibt es noch Import-Quellen die diesen Schlüssel referenzieren, können diese "
+"nicht genutzt werden ohne den Schlüssel zu ändern."
 
 #: sources.d/icingaweb2-module-aws/application/controllers/ConfigController.php:53
 #, php-format
@@ -6435,7 +6441,7 @@ msgstr "+ Dimension hinzufügen"
 
 #: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:70
 msgid "Slice/Filter"
-msgstr ""
+msgstr "Schneiden/Filtern"
 
 #: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:101
 #, php-format
@@ -10413,6 +10419,12 @@ msgid ""
 "\"Update only\" means that this Rule would never create (or delete) full "
 "Objects."
 msgstr ""
+"Definiere was passieren soll wenn ein Objekt mit einem zutreffenden "
+"Schlüssel bereits existiert. Es ist möglich die Eigenschaften zu "
+"verschmelzen (Import-Quelle gewinnt), das alte mit dem neuen Objekt "
+"vollständig zu ersetzen oder nichts zu tun (Hilfreich bei einmaligen "
+"Imports). \"Nur aktualisieren\" bedeutet, dass diese Regel niemals neue "
+"Objekte anlegt oder vollständig löscht."
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:62
 msgid "Merge"
@@ -10625,6 +10637,8 @@ msgstr ""
 msgid ""
 "Additional (monitoring module) object filter to further restrict write access"
 msgstr ""
+"Ergänzender (monitoring Modul) Objekt-Filter um Schreibzugriff weiter "
+"einzuschränken"
 
 #: sources.d/icingaweb2-module-director/configuration.php:67
 msgid "Allow users with Hostgroup restrictions to access the Groups field"
@@ -11285,6 +11299,9 @@ msgid ""
 "configuration. In case you opt for Array, Director users will be able to "
 "select multiple elements from the list"
 msgstr ""
+"Ob das eine Zeichenkette oder eine Liste in der generierten Icinga "
+"Konfiguration sein soll. Im Falle einer Liste können im Director mehrere "
+"einzelne Elemente daraus ausgewählt werden"
 
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDatalist.php:142
 msgid "Element behavior"
@@ -11318,7 +11335,7 @@ msgstr "Erweitere die Liste mit neuen Werten"
 
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDictionary.php:28
 msgid "To be managed on objects only"
-msgstr ""
+msgstr "Nur auf Objekten zu verwalten"
 
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDictionary.php:36
 #, fuzzy
@@ -11628,10 +11645,14 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceRestApi.php:211
 msgid "Also deeper keys can be specific by a dot-notation:"
 msgstr ""
+"Auch tiefer verschachtelte Schlüssel können über die Punkt-Notation "
+"definiert werden:"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceRestApi.php:213
 msgid "Literal dots in a key name can be written in the escape notation:"
 msgstr ""
+"Tatsächliche Punkte in einem Schlüssel-Namen können in der Escape-Notation "
+"geschrieben werden:"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceRestApi.php:228
 msgid "Will be used to authenticate against your REST API"
@@ -12089,23 +12110,28 @@ msgstr "JSON-String beibehalten"
 msgid "Key Property"
 msgstr "Schlüssel Eigenschaft"
 
+# Was ist ein key/object property name?
+# Schlüssel/Objekt Eigenschafts-Name? (klingt blöd)
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierListToObject.php:18
+#, fuzzy
 msgid ""
 "Each Array in the list must contain this property. It's value will be used "
 "as the key/object property name for the row."
 msgstr ""
+"Jede Liste in den Ergebnissen muss diese Eigenschaft enthalten. Der Wert "
+"dieser wird als Schlüssel-/Objekt-Name für das Ergebnis genutzt."
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierListToObject.php:24
 msgid "What should we do, if the same key occurs twice?"
-msgstr ""
+msgstr "Was soll passieren, wenn ein Schlüssel mehrfach auftritt?"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierListToObject.php:27
 msgid "Keep the first row with that key"
-msgstr ""
+msgstr "Behalte das erste Ergebnis mit diesem Schlüssel"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierListToObject.php:28
 msgid "Keep the last row with that key"
-msgstr ""
+msgstr "Behalte das letzte Ergebnis mit diesem Schlüssel"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMakeBoolean.php:33
 msgid ""
@@ -12195,7 +12221,7 @@ msgstr "Was soll passieren wenn der übergebene String leer ist?"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:17
 msgid "Reject or keep rows based on property value"
-msgstr ""
+msgstr "Behalte oder lehne Ergebnisse ab, abhängig von einer Eigenschaft"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:33
 msgid "Match boolean TRUE"
@@ -12263,7 +12289,7 @@ msgstr "Die Ersatzzeichenkette"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierSimpleGroupBy.php:14
 msgid "Group by a column, aggregate others"
-msgstr ""
+msgstr "Gruppiere nach einer bestimmten Spalte. Aggregiere den Rest"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierSimpleGroupBy.php:60
 #, fuzzy
@@ -12275,6 +12301,8 @@ msgid ""
 "Comma-separated list of columns that should be aggregated (transformed into "
 "an Array). For all other columns only the first value will be kept."
 msgstr ""
+"Komma-Separierte Liste an Spalten die aggregiert (in eine Liste umgewandelt) "
+"werden sollen. Bei allen anderen Spalten wird nur der erste Wert behalten."
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierSkipDuplicates.php:13
 msgid "Skip row if this value appears more than once"
@@ -12303,11 +12331,11 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierTrim.php:16
 msgid "Trim Method"
-msgstr ""
+msgstr "Kürzungs-Methode"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierTrim.php:17
 msgid "Where to trim the string(s)"
-msgstr ""
+msgstr "Wo Zeichenketten gekürzt werden sollen"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierTrim.php:20
 msgid "Beginning and Ending"
@@ -12330,6 +12358,8 @@ msgid ""
 "Specify the characters that trim should remove.Default is: \" \\t\\n\\r"
 "\\0\\x0B\""
 msgstr ""
+"Definiere die Zeichen die gekürzt werden sollen. Standard: \" \\t\\n\\r"
+"\\0\\x0B\""
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierUpperCaseFirst.php:18
 msgid "Use lowercase first"
@@ -12926,17 +12956,17 @@ msgstr "Einen Neuen hinzufügen..."
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:307
 #, php-format
 msgid "%s (inherited)"
-msgstr ""
+msgstr "%s (vererbt)"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:312
 #, php-format
 msgid "%s (inherited from %s)"
-msgstr ""
+msgstr "%s (vererbt von %s)"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:325
 #, php-format
 msgid "%s (not an Array!)"
-msgstr ""
+msgstr "%s (kein Array!)"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:501
 msgid "Show available options"
@@ -13065,6 +13095,8 @@ msgid ""
 "Generated Host keys will continue to work, but you'll no longer be able to "
 "register new Hosts with this key"
 msgstr ""
+"Generierte Host-Schlüssel funktionieren weiterhin. Jedoch können keine neuen "
+"Hosts registriert werden mit diesem Schlüssel"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:145
 #: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:151
@@ -13724,35 +13756,35 @@ msgstr "Diese Importquelle hat einen ungültigen Zustand: %s"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/InspectPackages.php:46
 msgid "Endpoint in your Root Zone"
-msgstr ""
+msgstr "Endpunkt in der Wurzel-Zone"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/InspectPackages.php:48
 #, php-format
 msgid "Packages on Endpoint: %s"
-msgstr ""
+msgstr "Pakete an Endpunkt: %s"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/InspectPackages.php:50
 #, php-format
 msgid "Stages in Package: %s"
-msgstr ""
+msgstr "Abschnitte in Paket: %s"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/InspectPackages.php:52
 #, php-format
 msgid "Files in Stage: %s"
-msgstr ""
+msgstr "Dateien im Abschnitt: %s"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/InspectPackages.php:54
 #, php-format
 msgid "File Content: %s"
-msgstr ""
+msgstr "Datei-Inhalt: %s"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/InspectPackages.php:69
 msgid "Root Zone"
-msgstr ""
+msgstr "Wurzel-Zone"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/InspectPackages.php:122
 msgid "active"
-msgstr ""
+msgstr "aktiv"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/JobDetails.php:27
 #, php-format
@@ -14084,11 +14116,11 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-elasticsearch/configuration.php:8
 msgid "Allow to configure Elasticsearch instances and event types"
-msgstr ""
+msgstr "Erlaube die Konfiguration von Elasticsearch-Instanzen und -Event-Typen"
 
 #: sources.d/icingaweb2-module-elasticsearch/configuration.php:13
 msgid "Allow access to view Elasticsearch events on a host"
-msgstr ""
+msgstr "Erlaube die Ansicht von Elasticsearch-Ereignissen eines Hosts"
 
 #: sources.d/icingaweb2-module-elasticsearch/configuration.php:18
 msgid "Restrict the event types the user may use"
@@ -14234,6 +14266,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/BackendForm.php:35
 msgid "A user with access to your Graphite Web via HTTP basic authentication"
 msgstr ""
+"Ein Nutzer mit Zugriff auf Graphite Web über HTTP Basic Authentifizierung"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/BackendForm.php:45
 msgid "Graphite Web password"
@@ -14258,12 +14291,12 @@ msgstr ""
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:51
 #, php-format
 msgid "%d minute"
-msgstr ""
+msgstr "%d Minute"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:52
 #, php-format
 msgid "%d minutes"
-msgstr ""
+msgstr "%d Minuten"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:57
 msgid "Show the last … hours"
@@ -14272,12 +14305,12 @@ msgstr ""
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:59
 #, php-format
 msgid "%d hour"
-msgstr ""
+msgstr "%d Stunde"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:60
 #, php-format
 msgid "%d hours"
-msgstr ""
+msgstr "%d Stunden"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:65
 msgid "Show the last … days"
@@ -14286,12 +14319,12 @@ msgstr ""
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:67
 #, php-format
 msgid "%d day"
-msgstr ""
+msgstr "%d Tag"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:68
 #, php-format
 msgid "%d days"
-msgstr ""
+msgstr "%d Tage"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:73
 msgid "Show the last … weeks"
@@ -14300,12 +14333,12 @@ msgstr ""
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:75
 #, php-format
 msgid "%d week"
-msgstr ""
+msgstr "%d Woche"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:76
 #, php-format
 msgid "%d weeks"
-msgstr ""
+msgstr "%d Wochen"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:81
 msgid "Show the last … months"
@@ -14314,12 +14347,12 @@ msgstr ""
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:83
 #, php-format
 msgid "%d month"
-msgstr ""
+msgstr "%d Monat"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:84
 #, php-format
 msgid "%d months"
-msgstr ""
+msgstr "%d Monate"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:89
 msgid "Show the last … years"
@@ -14328,12 +14361,12 @@ msgstr ""
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:91
 #, php-format
 msgid "%d year"
-msgstr ""
+msgstr "%d Jahr"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:92
 #, php-format
 msgid "%d years"
-msgstr ""
+msgstr "%d Jahre"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:47
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:56
@@ -14371,15 +14404,15 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-graphite/configuration.php:17
 msgid "Advanced configuration"
-msgstr ""
+msgstr "Fortgeschrittene Konfiguration"
 
 #: sources.d/icingaweb2-module-graphite/configuration.php:18
 msgid "Advanced"
-msgstr ""
+msgstr "Fortgeschritten"
 
 #: sources.d/icingaweb2-module-graphite/configuration.php:22
 msgid "Allow debugging directly via the web UI"
-msgstr ""
+msgstr "Erlaube Debugging über die Benutzeroberfläche"
 
 #: sources.d/icingaweb2-module-graphite/library/Graphite/ProvidedHook/Monitoring/DetailviewExtension.php:32
 msgid "Graphs"
@@ -14500,11 +14533,11 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/EventsController.php:162
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:117
 msgid "Alarms"
-msgstr ""
+msgstr "Alarme"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/AnomaliesController.php:14
 msgid "Anomalies"
-msgstr ""
+msgstr "Anomalien"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/AnomaliesController.php:15
 msgid "Bios UUID"
@@ -14536,7 +14569,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:24
 msgid "\"vspheredb/admin\" permissions are required to continue"
-msgstr ""
+msgstr "\"vspheredb/admin\" Berechtigungen sind erforderlich"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:68
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:108
@@ -14708,7 +14741,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/SwitchesController.php:20
 msgid "(Distributed) Virtual Switches"
-msgstr ""
+msgstr "(Verteilte) Virtuelle Switches"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VcenterController.php:30
 #, fuzzy
@@ -14748,7 +14781,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VcenterController.php:157
 msgid "A new Connection has successfully been created"
-msgstr ""
+msgstr "Eine neue Verbindung wurde erfolgreich angelegt"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VcenterController.php:169
 #, fuzzy
@@ -14805,7 +14838,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/configuration.php:7
 msgid "Allow to configure vCenter connections"
-msgstr ""
+msgstr "Erlaube die Konfiguration von vCenter Verbindungen"
 
 #: sources.d/icingaweb2-module-vspheredb/configuration.php:10
 msgid "Virtualization (VMware)"
@@ -14813,7 +14846,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/configuration.php:32
 msgid "Alarm History"
-msgstr ""
+msgstr "Alarm History"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Hint/ConnectionStateDetails.php:22
 msgid "The server has access to the virtual machine"
@@ -14898,7 +14931,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/FilterHostParentForm.php:51
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/FilterHostParentForm.php:58
 msgid "- filter -"
-msgstr ""
+msgstr "- Filter -"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:37
 msgid ""
@@ -15020,7 +15053,7 @@ msgstr "Wird für SOAP-Authentifizierung zum vCenter benutzt"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:105
 msgid "(keep as stored)"
-msgstr ""
+msgstr "(Gespeichertes behalten)"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:112
 msgid ""
@@ -15077,7 +15110,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/HostHardwareInfoTable.php:32
 #, php-format
 msgid "%d Packages, %d Cores, %d Threads"
-msgstr ""
+msgstr "%d Pakete, %d Kerne, %d Threads"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/HostHardwareInfoTable.php:44
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/GroupedvmsTable.php:98
@@ -15143,7 +15176,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VCenterInfoTable.php:37
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/HostsTable.php:39
 msgid "API Version"
-msgstr ""
+msgstr "API Version"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/HostVirtualizationInfoTable.php:44
 msgid "Hypervisor"
@@ -15178,7 +15211,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VCenterInfoTable.php:36
 msgid "API Type"
-msgstr ""
+msgstr "API Typ"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VCenterInfoTable.php:40
 msgid "Product Line"
@@ -15206,7 +15239,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:83
 msgid "Annotation"
-msgstr ""
+msgstr "Anmerkung"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:113
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:126
@@ -15228,7 +15261,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:123
 #, php-format
 msgid "%s %s took place during the last 7 days"
-msgstr ""
+msgstr "%s %s fand in den letzten 7 Tagen statt"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:126
 msgid "VMotion attempt(s)"
@@ -15247,7 +15280,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmExtraInfoTable.php:28
 msgid "Additional Information"
-msgstr ""
+msgstr "Zusätzliche Informationen"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmExtraInfoTable.php:47
 msgid "CPUs"
@@ -15327,12 +15360,12 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/HostSummaryTable.php:199
 msgid "1 Host"
-msgstr ""
+msgstr "1 Host"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/HostSummaryTable.php:200
 #, php-format
 msgid "%d Hosts"
-msgstr ""
+msgstr "%d Hosts"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/HostsTable.php:25
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:99
@@ -15395,7 +15428,7 @@ msgstr "Ports"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/StoragePodTable.php:28
 #, php-format
 msgid "%s datastores"
-msgstr ""
+msgstr "%s Datenspeicher"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/SwitchesTable.php:30
 msgid "Max Ports"
@@ -15455,7 +15488,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:141
 msgid "Active Memory"
-msgstr ""
+msgstr "Aktiver Speicher"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:152
 msgid "Balloon"
@@ -15558,7 +15591,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/AdditionalTableActions.php:125
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/ToggleFlagList.php:125
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:24
 #: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:49
@@ -15567,7 +15600,7 @@ msgstr "Zeitplan"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:25
 msgid "Application Protection"
-msgstr ""
+msgstr "Anwendungs-Schutz"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:30
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/VRangerBackupRunDetails.php:23
@@ -15639,7 +15672,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/CpuAbsoluteUsage.php:26
 #, php-format
 msgid "%d CPUs"
-msgstr ""
+msgstr "%d CPUs"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/CustomValueDetails.php:38
 #, fuzzy
@@ -16265,7 +16298,7 @@ msgstr "Navigation"
 #: sources.d/icingaweb2/application/controllers/MyDevicesController.php:43
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:152
 msgid "List of devices you are logged in"
-msgstr ""
+msgstr "Liste der angemeldeten Geräte"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:40
 #: sources.d/icingaweb2/application/controllers/MyDevicesController.php:44
@@ -16631,7 +16664,7 @@ msgstr ""
 #: sources.d/icingaweb2/application/controllers/RoleController.php:362
 #: sources.d/icingaweb2/application/controllers/UserController.php:345
 msgid "Audit a user's or group's privileges"
-msgstr ""
+msgstr "Kontrolliere die Privilegien eines Nutzers oder einer Gruppe"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:389
 #: sources.d/icingaweb2/application/controllers/RoleController.php:147
@@ -16671,12 +16704,14 @@ msgstr "Anwendungslog"
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:68
 #: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserList.php:81
 msgid "List of users who stay logged in"
-msgstr ""
+msgstr "Liste der Nutzer die angemeldet bleiben"
 
 #: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:49
 #: sources.d/icingaweb2/application/controllers/MyDevicesController.php:63
 msgid "Users can't stay logged in without a database configuration backend"
 msgstr ""
+"Nutzer können nicht angemeldet bleiben wenn Konfigurationen nicht in der "
+"Datenbank gespeichert werden"
 
 #: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:60
 #, fuzzy
@@ -16829,16 +16864,16 @@ msgstr "Erlaubte Rollen"
 
 #: sources.d/icingaweb2/application/controllers/RoleController.php:227
 msgid "Show privileges of all roles"
-msgstr ""
+msgstr "Zeige Privilegien aller Rollen"
 
 #: sources.d/icingaweb2/application/controllers/RoleController.php:238
 #, php-format
 msgid "Only show privileges of role %s"
-msgstr ""
+msgstr "Zeige nur Privilegien der Rolle %s"
 
 #: sources.d/icingaweb2/application/controllers/RoleController.php:335
 msgid "Your search does not match any user or group"
-msgstr ""
+msgstr "Keinen Nutzer und keine Gruppe gefunden"
 
 #: sources.d/icingaweb2/application/controllers/UserController.php:58
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:77
@@ -17019,7 +17054,7 @@ msgstr "Anmeldung"
 
 #: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:78
 msgid "Stay logged in"
-msgstr ""
+msgstr "Angemeldet bleiben"
 
 #: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:153
 msgid ""
@@ -18375,11 +18410,11 @@ msgstr "Theme"
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:234
 msgid "Dark"
-msgstr ""
+msgstr "Dunkel"
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:238
 msgid "Light"
-msgstr ""
+msgstr "Hell"
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:258
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:268
@@ -18455,7 +18490,7 @@ msgstr ""
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:361
 msgctxt "refresh_speed"
 msgid "Fast"
-msgstr ""
+msgstr "Schnell"
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:362
 #, fuzzy
@@ -18466,12 +18501,12 @@ msgstr "standard"
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:363
 msgctxt "refresh_speed"
 msgid "Moderate"
-msgstr ""
+msgstr "Moderat"
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:364
 msgctxt "refresh_speed"
 msgid "Slow"
-msgstr ""
+msgstr "Langsam"
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:375
 msgid "Default page size"
@@ -18500,7 +18535,7 @@ msgstr "Geerbte Gruppen"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:74
 msgid "Choose a role from which to inherit privileges"
-msgstr ""
+msgstr "Wähle eine Rolle aus der Privilegien vererbt werden sollen"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:77
 #, fuzzy
@@ -18533,15 +18568,15 @@ msgstr "Administrativer Zugriff"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:114
 msgid "Access to any data is completely unrestricted"
-msgstr ""
+msgstr "Zugriff auf jegliche Daten ist völlig uneingeschränkt"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:135
 msgid "Grant access by toggling a switch below"
-msgstr ""
+msgstr "Gewähre Zugriff durch Aktivierung eines der unteren Schalter"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:138
 msgid "Deny access by toggling a switch below"
-msgstr ""
+msgstr "Verbiete Zugriff durch Aktivierung eines der unteren Schalter"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:225
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:118
@@ -18609,7 +18644,7 @@ msgstr "Erlaubt das Teilen von Navigationselementen"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:533
 msgid "Allow to fully manage access-control"
-msgstr ""
+msgstr "Erlaube die komplette Verwaltung der Zugriffs-Kontrolle"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:536
 #, fuzzy
@@ -18628,7 +18663,7 @@ msgstr "Erlaubte Rollen"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:545
 msgid "Allow all account related functionalities"
-msgstr ""
+msgstr "Erlaube alle Funktionen des Nutzer-Kontos"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:548
 #, fuzzy
@@ -18848,7 +18883,7 @@ msgstr "Gegenwärtig ist kein solches Modul installiert."
 
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:29
 msgid "Module can't be enabled due to unmet dependencies"
-msgstr ""
+msgstr "Modul kann aufgrund unpassender Abhängigkeiten nicht aktiviert werden"
 
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:54
 msgid "This module has no dependencies"
@@ -18859,10 +18894,12 @@ msgid ""
 "Unmet dependencies found! Module can't be enabled unless all dependencies "
 "are met."
 msgstr ""
+"Unpassende Abhängigkeiten erkannt! Modul kann erst aktiviert werden wenn "
+"alle Abhängigkeiten passen."
 
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:63
 msgid "Libraries"
-msgstr ""
+msgstr "Bibliotheken"
 
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:93
 #, fuzzy
@@ -19031,6 +19068,8 @@ msgid ""
 "Library \"%s\" is required and missing. Please install a version of it "
 "matching the required one: %s"
 msgstr ""
+"Bibliothek \"%s\" ist erforderlich und fehlt. Bitte installiere eine Version "
+"die der geforderten entspricht: %s"
 
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:35
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:70
@@ -19039,12 +19078,16 @@ msgid ""
 "Library \"%s\" is required and installed, but its version (%s) does not "
 "satisfy the required one: %s"
 msgstr ""
+"Bibliothek \"%s\" ist erforderlich und installiert, aber die Version (%s) "
+"entspricht nicht der geforderten: %s"
 
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:41
 msgid ""
 "You have unmet dependencies. Please check Icinga Web 2's installation "
 "instructions."
 msgstr ""
+"Es gibt unpassende Abhängigkeiten. Bitte prüfe die Installations-Anweisungen "
+"von Icinga Web 2."
 
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:51
 #, php-format
@@ -19052,6 +19095,8 @@ msgid ""
 "Module \"%s\" is required and missing. Please install a version of it "
 "matching the required one: %s"
 msgstr ""
+"Modul \"%s\" ist erforderlich und fehlt. Bitte installiere eine Version die "
+"der geforderten entspricht: %s"
 
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:55
 #, php-format
@@ -19059,6 +19104,8 @@ msgid ""
 "Module \"%s\" is required and installed, but not enabled. Please enable "
 "module \"%1$s\"."
 msgstr ""
+"Modul \"%s\" ist erforderlich und installiert, aber nicht aktiviert. Bitte "
+"aktiviere das Modul \"%1$s\"."
 
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:59
 #, php-format
@@ -19066,6 +19113,8 @@ msgid ""
 "Module \"%s\" is required and installed, but its version (%s) does not "
 "satisfy the required one: %s"
 msgstr ""
+"Modul \"%s\" ist erforderlich und installiert, aber die Version (%s) "
+"entspricht nicht der geforderten: %s"
 
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:78
 #, php-format
@@ -19073,6 +19122,8 @@ msgid ""
 "This error might have occurred because module \"%s\" has unmet dependencies. "
 "Please check it's installation instructions and install missing dependencies."
 msgstr ""
+"Dieser Fehler könnte aufgetreten sein, weil das Modul \"%s\" unpassende "
+"Abhängigkeiten hat. Bitte prüfe dessen Installations-Anweisungen."
 
 #: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:25
 #, php-format
@@ -19404,6 +19455,7 @@ msgstr "Dieses Modul hat keine Beschreibung"
 msgid ""
 "Unable to parse authentication configuration. Check the log for more details."
 msgstr ""
+"Kann Authentifizierungs-Konfiguration nicht lesen. Bitte prüfe das Log."
 
 #: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:101
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:117
@@ -19705,7 +19757,7 @@ msgstr "Öffne Anwendungs-Konfiguration"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:92
 msgid "Access Control"
-msgstr ""
+msgstr "Zugriffs-Kontrolle"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:99
 msgid "Open shared navigation configuration"
@@ -19752,7 +19804,7 @@ msgstr "Liste %u Service, der gerade im Zustand FLAPPING ist"
 
 #: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:108
 msgid "OS"
-msgstr ""
+msgstr "Betriebssystem"
 
 #: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:109
 #, fuzzy
@@ -19789,8 +19841,8 @@ msgstr "%s ist %s"
 #, php-format
 msgid "Refused by %s and %s as well as one other"
 msgid_plural "Refused by %s and %s as well as %d others"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Verweigert von %s und %s sowie einer weiteren"
+msgstr[1] "Verweigert von %s und %s sowie %d anderen"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:73
 #, fuzzy, php-format
@@ -19803,26 +19855,26 @@ msgstr[1] "Entferne Schlüssel %s"
 #, php-format
 msgid "Granted by %s and %s as well as one other"
 msgid_plural "Granted by %s and %s as well as %d others"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gewährt von %s und %s sowie einer weiteren"
+msgstr[1] "Gewährt von %s und %s sowie %d anderen"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:92
 #, php-format
 msgid "Granted by %s"
 msgid_plural "Granted by %s and %s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gewährt von %s"
+msgstr[1] "Gewährt von %s und %s"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:97
 msgid "Not granted or refused by any role"
-msgstr ""
+msgstr "Von keiner Rolle gewährt oder verweigert"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:212
 #, php-format
 msgid "Restricted by %s and %s as well as one other"
 msgid_plural "Restricted by %s and %s as well as %d others"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Eingeschränkt von %s und %s sowie einer weiteren"
+msgstr[1] "Eingeschränkt von %s und %s sowie %d anderen"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:221
 #, fuzzy, php-format
@@ -19833,7 +19885,7 @@ msgstr[1] "Einschränkungen"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:228
 msgid "Not restricted by any role"
-msgstr ""
+msgstr "Von keiner Rolle eingeschränkt"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:240
 #, fuzzy
@@ -24732,7 +24784,7 @@ msgstr "%s ist nicht installiert"
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/WebModuleRequirement.php:28
 #, php-format
 msgid "%s version: %s"
-msgstr ""
+msgstr "%s Version: %s"
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/AuthenticationStep.php:73
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/AuthenticationStep.php:83
@@ -25199,6 +25251,8 @@ msgid ""
 "Running Icinga Web 2 requires PHP version 7.3. Older versions are only "
 "supported up until version 2.11."
 msgstr ""
+"Icinga Web 2 setzt PHP in Version 7.3 voraus. Ältere Versionen werden nur "
+"noch bis Version 2.11 unterstützt."
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:587
 #, fuzzy
@@ -25217,11 +25271,14 @@ msgstr ""
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:607
 msgid "The Icinga PHP library (IPL) is required for Icinga Web 2 and modules"
 msgstr ""
+"Die Icinga PHP Bibliothek (IPL) ist für Icinga Web 2 und Module erforderlich"
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:616
 msgid ""
 "The Icinga PHP Thirdparty library is required for Icinga Web 2 and modules"
 msgstr ""
+"Die Icinga PHP Drittanbieter Bibliothek ist für Icinga Web 2 und Module "
+"erforderlich"
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:624
 msgid ""
@@ -25301,6 +25358,8 @@ msgid ""
 "A database is mandatory, therefore at least one module PDO-MySQL or PDO-"
 "PostgreSQL for PHP is required."
 msgstr ""
+"Eine Datenbank ist erforderlich. Daher wird ebenso eines der beiden PHP "
+"Module, PDO-MySQL oder PDO-PostgreSQL, benötigt."
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:721
 #, fuzzy
