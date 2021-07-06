@@ -20,6 +20,7 @@ query (\$number: Int!) {
       maintainerCanModify
       headRefName
       headRepository {
+        nameWithOwner
         sshUrl
       }
       comments(first: 100) {
@@ -129,10 +130,11 @@ if [ -n "$PULL_REQUEST_NO" ]; then
   echo "Attempting to resolve pull request #$PR_NUMBER..."
 
   PR_ID=$(read_json_var "$PULL_REQUEST" .id)
+  PR_REPO_NAME=$(read_json_var "$PULL_REQUEST" .headRepository.nameWithOwner)
 
   # If the author disabled maintainer edits, tell him this once
   PR_IS_ACCESSIBLE=$(read_json_var "$PULL_REQUEST" .maintainerCanModify)
-  if [[ "$PR_IS_ACCESSIBLE" == "false" ]]; then
+  if [[ "$PR_REPO_NAME" != "Icinga/L10n" && "$PR_IS_ACCESSIBLE" == "false" ]]; then
     ICINGABOT_COMMENTED=false
 
     TOTAL_COMMENTS=$(read_json_var "$PULL_REQUEST" .comments.totalCount)
