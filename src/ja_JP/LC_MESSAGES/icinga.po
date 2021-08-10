@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-08-06 09:43+0000\n"
+"POT-Creation-Date: 2021-08-10 08:14+0000\n"
 "PO-Revision-Date: 2020-04-27 14:54+0200\n"
 "Last-Translator: papillon326 <udagawa@www2178ue.sakura.ne.jp>\n"
 "Language-Team: \n"
@@ -1258,7 +1258,7 @@ msgstr[0] "監視をスケジュールする"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:50
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostCheckCommandForm.php:29
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:57
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:60
 msgid "All Services"
 msgstr "全サービス"
 
@@ -1280,17 +1280,17 @@ msgid "Child Options"
 msgstr "子ホスト"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:67
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:74
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:77
 msgid "Do nothing with child hosts"
 msgstr "子ホストでは何もしない"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:68
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:75
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:78
 msgid "Schedule triggered downtime for all child hosts"
 msgstr "すべての子ホストを計画停止のトリガーに設定する"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:69
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:76
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:79
 msgid "Schedule non-triggered downtime for all child hosts"
 msgstr "すべての子ホストを計画停止の非トリガーに設定する"
 
@@ -1320,13 +1320,13 @@ msgid "Set the end date and time for the downtime."
 msgstr "計画停止の終了日時を設定します。"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:130
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:96
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:99
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:238
 msgid "The end time must be greater than the start time"
 msgstr "終了時刻は開始時刻より後の時間に設定してください"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:135
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:104
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:107
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:246
 msgid "A downtime must not be in the past"
 msgstr "計画メンテナンス期間は過去に設定できません"
@@ -4293,7 +4293,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:90
 #: sources.d/icingaweb2/application/controllers/GroupController.php:116
 #: sources.d/icingaweb2/application/controllers/UserController.php:80
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:60
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:62
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:145
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:34
 #: sources.d/icingaweb2/application/views/scripts/group/show.phtml:75
@@ -4322,7 +4322,7 @@ msgstr "ユーザ名"
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:99
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:99
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:104
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:70
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:72
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:155
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:42
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:64
@@ -16494,7 +16494,7 @@ msgstr "お知らせを編集"
 msgid "Remove Announcement"
 msgstr "お知らせの削除"
 
-#: sources.d/icingaweb2/application/controllers/AuthenticationController.php:89
+#: sources.d/icingaweb2/application/controllers/AuthenticationController.php:86
 msgid "Icinga Web 2 Login"
 msgstr "Icinga Web 2 ログイン"
 
@@ -17190,20 +17190,26 @@ msgstr "お知らせを削除しました"
 msgid "Failed to remove announcement"
 msgstr "お知らせを削除できませんでした"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:44
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:46
 #: sources.d/icingaweb2/application/views/scripts/authentication/logout.phtml:23
 msgid "Login"
 msgstr "ログイン"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:45
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:47
 msgid "Logging in"
 msgstr "ログイン中"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:78
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:80
 msgid "Stay logged in"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:153
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:99
+msgid ""
+"Staying logged in requires a database configuration backend and an "
+"appropriate OpenSSL encryption method"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:162
 msgid ""
 "No authentication methods available. Did you create authentication.ini when "
 "setting up Icinga Web 2?"
@@ -17211,7 +17217,7 @@ msgstr ""
 "利用可能な認証方法がありません。Icinga Web 2を設定する際にauthentication.ini"
 "を作成しましたか？"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:159
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:168
 msgid ""
 "All configured authentication methods failed. Please check the system log or "
 "Icinga Web 2 log for more information."
@@ -17219,7 +17225,7 @@ msgstr ""
 "設定した認証方法が失敗しました。詳細については、システムログまたはIcinga Web "
 "2のログを確認してください。"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:166
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:175
 msgid ""
 "Please note that not all authentication methods were available. Check the "
 "system log or Icinga Web 2 log for more information."
@@ -17227,11 +17233,11 @@ msgstr ""
 "すべての認証方法が利用できるわけではないことに注意してください。詳細について"
 "は、システムログまたはIcinga Web 2ログを確認してください。"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:171
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:180
 msgid "Incorrect username or password"
 msgstr "ユーザ名またはパスワードが違います"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:192
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:201
 msgid ""
 "You're currently not authenticated using any of the web server's "
 "authentication mechanisms. Make sure you'll configure such, otherwise you'll "
@@ -21138,21 +21144,21 @@ msgid "Scheduling host check.."
 msgid_plural "Scheduling host checks.."
 msgstr[0] "ホスト監視を設定中.."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:55
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:58
 msgid ""
 "Schedule downtime for all services on the hosts and the hosts themselves."
 msgstr ""
 "ホスト上のすべてのサービスとホスト自身の計画メンテナンス期間を設定します。"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:70
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:73
 msgid "Define what should be done with the child hosts of the hosts."
 msgstr "子ホストに設定する内容を選択します。"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:72
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:75
 msgid "Child Hosts"
 msgstr "子ホスト"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:138
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:172
 msgid "Scheduling host downtime.."
 msgid_plural "Scheduling host downtimes.."
 msgstr[0] "ホストのメンテナンス期間を設定中.."
@@ -25176,100 +25182,13 @@ msgstr "削除"
 msgid "Clear Filter"
 msgstr "フィルター"
 
-#~ msgid "The Icinga Project"
-#~ msgstr "Icingaプロジェクト"
-
-#~ msgid "- inherited -"
-#~ msgstr "- 継承 -"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "設定を保存しない"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "管理者権限を付与する。例：お知らせの管理"
-
-#~ msgid "Open authentication configuration"
-#~ msgstr "認証設定を行う画面へ"
-
+#, fuzzy
 #~ msgid ""
-#~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
-#~ "to use the same database as for authentication."
-#~ msgstr ""
-#~ "環境設定の保存場所として「データベース」を選択すると、Icinga Web 2は認証と"
-#~ "同じデータベースを使用します。"
-
-#~ msgid "Blacklist"
-#~ msgstr "ブラックリスト"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "ホスト変数から生成しました"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "イベント時間"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "コメントの種類"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "監視対象サービス"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "履歴"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "オブジェクトタイプ"
-
-#, fuzzy
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "Icinga Web 2を実行するには、PHPバージョン5.6が必要です。"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "PostgreSQL用のZendデータベースアダプタがありません。"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "PostgreSQL用のZendデータベースアダプタは利用可能です"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "MySQL用のZendデータベースアダプタが存在しません"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "MySQL用のZendデータベースアダプタは利用可能です"
-
-#~ msgid ""
-#~ "The Zend database adapter for PostgreSQL is required to access a "
-#~ "PostgreSQL database."
-#~ msgstr ""
-#~ "PostgreSQLデータベースにアクセスするには、PostgreSQL用のZendデータベースア"
-#~ "ダプタが必要です。"
-
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "PostgreSQL用Zendデータベースアダプタ"
-
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "To view the most recent state information in Icinga DB Web, the Redis "
 #~ "module for PHP is required."
 #~ msgstr ""
-#~ "PostgreSQLデータベースに格納されているIDOにアクセスするには、PHP用のPDO-"
-#~ "PostgreSQLモジュールが必要です。"
-
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr ""
-#~ "MySQLデータベースにアクセスするには、MySQL用のZendデータベースアダプタが必"
+#~ "Icinga 2のAPIを介して外部コマンドを送信するには、PHP用のcURLモジュールが必"
 #~ "要です。"
-
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "MySQL用Zendデータベースアダプタ"
 
 #~ msgid ""
 #~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
@@ -25278,10 +25197,97 @@ msgstr "フィルター"
 #~ "MySQLデータベースに保存されているIDOにアクセスするには、PHP用のPDO-MySQLモ"
 #~ "ジュールが必要です。"
 
-#, fuzzy
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "MySQL用Zendデータベースアダプタ"
+
 #~ msgid ""
-#~ "To view the most recent state information in Icinga DB Web, the Redis "
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr ""
+#~ "MySQLデータベースにアクセスするには、MySQL用のZendデータベースアダプタが必"
+#~ "要です。"
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
 #~ "module for PHP is required."
 #~ msgstr ""
-#~ "Icinga 2のAPIを介して外部コマンドを送信するには、PHP用のcURLモジュールが必"
-#~ "要です。"
+#~ "PostgreSQLデータベースに格納されているIDOにアクセスするには、PHP用のPDO-"
+#~ "PostgreSQLモジュールが必要です。"
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "PostgreSQL用Zendデータベースアダプタ"
+
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "PostgreSQLデータベースにアクセスするには、PostgreSQL用のZendデータベースア"
+#~ "ダプタが必要です。"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "MySQL用のZendデータベースアダプタは利用可能です"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "MySQL用のZendデータベースアダプタが存在しません"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "PostgreSQL用のZendデータベースアダプタは利用可能です"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "PostgreSQL用のZendデータベースアダプタがありません。"
+
+#, fuzzy
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "Icinga Web 2を実行するには、PHPバージョン5.6が必要です。"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "オブジェクトタイプ"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "履歴"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "監視対象サービス"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "コメントの種類"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "イベント時間"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "ホスト変数から生成しました"
+
+#~ msgid "Blacklist"
+#~ msgstr "ブラックリスト"
+
+#~ msgid ""
+#~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
+#~ "to use the same database as for authentication."
+#~ msgstr ""
+#~ "環境設定の保存場所として「データベース」を選択すると、Icinga Web 2は認証と"
+#~ "同じデータベースを使用します。"
+
+#~ msgid "Open authentication configuration"
+#~ msgstr "認証設定を行う画面へ"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "管理者権限を付与する。例：お知らせの管理"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "設定を保存しない"
+
+#~ msgid "- inherited -"
+#~ msgstr "- 継承 -"
+
+#~ msgid "The Icinga Project"
+#~ msgstr "Icingaプロジェクト"
