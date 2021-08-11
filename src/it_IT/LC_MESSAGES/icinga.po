@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-08-06 09:43+0000\n"
+"POT-Creation-Date: 2021-08-10 08:14+0000\n"
 "PO-Revision-Date: 2020-04-27 14:45+0200\n"
 "Last-Translator: Francesco Mazzi <fmazzi@comune.genova.it>\n"
 "Language-Team: \n"
@@ -1271,7 +1271,7 @@ msgstr[1] "Schedula Controlli"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:50
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostCheckCommandForm.php:29
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:57
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:60
 msgid "All Services"
 msgstr "Tutti i Servizi"
 
@@ -1293,17 +1293,17 @@ msgid "Child Options"
 msgstr "Host Figli"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:67
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:74
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:77
 msgid "Do nothing with child hosts"
 msgstr "Non applicare agli Host figli"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:68
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:75
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:78
 msgid "Schedule triggered downtime for all child hosts"
 msgstr "Pianifica Manutenzione dipendente per tutti gli Host figli"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:69
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:76
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:79
 msgid "Schedule non-triggered downtime for all child hosts"
 msgstr "Pianifica Manutenzione indipendente per tutti gli Host figli"
 
@@ -1333,13 +1333,13 @@ msgid "Set the end date and time for the downtime."
 msgstr "Impostare la data e l'ora della fine della manutenzione."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:130
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:96
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:99
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:238
 msgid "The end time must be greater than the start time"
 msgstr ""
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:135
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:104
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:107
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:246
 msgid "A downtime must not be in the past"
 msgstr ""
@@ -4269,7 +4269,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:90
 #: sources.d/icingaweb2/application/controllers/GroupController.php:116
 #: sources.d/icingaweb2/application/controllers/UserController.php:80
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:60
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:62
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:145
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:34
 #: sources.d/icingaweb2/application/views/scripts/group/show.phtml:75
@@ -4298,7 +4298,7 @@ msgstr "Nome Utente"
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:99
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:99
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:104
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:70
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:72
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:155
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:42
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:64
@@ -16001,7 +16001,7 @@ msgstr "Aggiorna Annuncio"
 msgid "Remove Announcement"
 msgstr "Rimuovi Annuncio"
 
-#: sources.d/icingaweb2/application/controllers/AuthenticationController.php:89
+#: sources.d/icingaweb2/application/controllers/AuthenticationController.php:86
 msgid "Icinga Web 2 Login"
 msgstr "Icinga Web 2 Login"
 
@@ -16700,20 +16700,26 @@ msgstr "Annuncio rimosso"
 msgid "Failed to remove announcement"
 msgstr "Impossibile rimuovere l'annuncio"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:44
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:46
 #: sources.d/icingaweb2/application/views/scripts/authentication/logout.phtml:23
 msgid "Login"
 msgstr "Accedi"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:45
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:47
 msgid "Logging in"
 msgstr "Accesso in corso"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:78
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:80
 msgid "Stay logged in"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:153
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:99
+msgid ""
+"Staying logged in requires a database configuration backend and an "
+"appropriate OpenSSL encryption method"
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:162
 msgid ""
 "No authentication methods available. Did you create authentication.ini when "
 "setting up Icinga Web 2?"
@@ -16721,7 +16727,7 @@ msgstr ""
 "Nessun metodo di autenticazione trovato. E' stato creato il file "
 "authentication.ini durante l'installazione di Icinga Web 2?"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:159
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:168
 msgid ""
 "All configured authentication methods failed. Please check the system log or "
 "Icinga Web 2 log for more information."
@@ -16729,7 +16735,7 @@ msgstr ""
 "Tutti i metodi di autenticazione configurati hanno fallito. Controllare i "
 "log di sistema o di Icinga Web 2 per maggiori informazioni."
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:166
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:175
 msgid ""
 "Please note that not all authentication methods were available. Check the "
 "system log or Icinga Web 2 log for more information."
@@ -16737,11 +16743,11 @@ msgstr ""
 "Si fa notare che non tutti i metodi di autenticazione sono disponibili. "
 "Controllare il log di sistema o di Icinga Web 2 per maggiori dettagli."
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:171
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:180
 msgid "Incorrect username or password"
 msgstr "Utente o password errati"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:192
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:201
 msgid ""
 "You're currently not authenticated using any of the web server's "
 "authentication mechanisms. Make sure you'll configure such, otherwise you'll "
@@ -20673,20 +20679,20 @@ msgid_plural "Scheduling host checks.."
 msgstr[0] "Schedulazione controllo host.."
 msgstr[1] "Schedulazione controlli host.."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:55
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:58
 msgid ""
 "Schedule downtime for all services on the hosts and the hosts themselves."
 msgstr "PIanifica Manutenzione per l'host e tutti i suoi servizi."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:70
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:73
 msgid "Define what should be done with the child hosts of the hosts."
 msgstr "Definire che azione compiere con gli Host figli"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:72
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:75
 msgid "Child Hosts"
 msgstr "Host Figli"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:138
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:172
 msgid "Scheduling host downtime.."
 msgid_plural "Scheduling host downtimes.."
 msgstr[0] "Pianificazione manutenzione host.."
@@ -24819,68 +24825,13 @@ msgstr ""
 msgid "Clear Filter"
 msgstr "Filtro"
 
-#~ msgid "The Icinga Project"
-#~ msgstr "Il Progetto Icinga"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Non salvare le Preferenze"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "Concedi permessi di amministratore, ad esempio gestire gli annunci"
-
+#, fuzzy
 #~ msgid ""
-#~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
-#~ "to use the same database as for authentication."
-#~ msgstr ""
-#~ "Attenzione: salvando le preferenze degli utenti su \"Database\", Icinga "
-#~ "Web 2 utilizzerà la stessa risorsa anche per l'autenticazione."
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Tipo Commento"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Lista servizi"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Storico"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Tipo Oggetto"
-
-#, fuzzy
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "Icinga Web 2 richiede PHP 5.6."
-
-#~ msgid ""
-#~ "The Zend database adapter for PostgreSQL is required to access a "
-#~ "PostgreSQL database."
-#~ msgstr ""
-#~ "Zend database adapter per PostgreSQL è necessario per poter accedere ad "
-#~ "un database PostgreSQL."
-
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "Zend database adapter per PostgreSQL"
-
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "To view the most recent state information in Icinga DB Web, the Redis "
 #~ "module for PHP is required."
 #~ msgstr ""
-#~ "Il modulo PDO-MySQL per PHP è necessario per poter accedere ai dati IDO "
-#~ "memorizzati su PostgreSQL."
-
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr ""
-#~ "Zend database adapter per MySQL è necessario per poter accedere ad un "
-#~ "database MySQL."
-
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "Zend database adapter per MySQL"
+#~ "Se vuoi poter esportare viste e report in PDF, è necessario installare il "
+#~ "modulo DOM per PHP."
 
 #~ msgid ""
 #~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
@@ -24889,10 +24840,65 @@ msgstr "Filtro"
 #~ "Il modulo PDO-MySQL per PHP è necessario per poter accedere ai dati IDO "
 #~ "memorizzati su MySQL."
 
-#, fuzzy
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "Zend database adapter per MySQL"
+
 #~ msgid ""
-#~ "To view the most recent state information in Icinga DB Web, the Redis "
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr ""
+#~ "Zend database adapter per MySQL è necessario per poter accedere ad un "
+#~ "database MySQL."
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
 #~ "module for PHP is required."
 #~ msgstr ""
-#~ "Se vuoi poter esportare viste e report in PDF, è necessario installare il "
-#~ "modulo DOM per PHP."
+#~ "Il modulo PDO-MySQL per PHP è necessario per poter accedere ai dati IDO "
+#~ "memorizzati su PostgreSQL."
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "Zend database adapter per PostgreSQL"
+
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "Zend database adapter per PostgreSQL è necessario per poter accedere ad "
+#~ "un database PostgreSQL."
+
+#, fuzzy
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "Icinga Web 2 richiede PHP 5.6."
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Tipo Oggetto"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Storico"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Lista servizi"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Tipo Commento"
+
+#~ msgid ""
+#~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
+#~ "to use the same database as for authentication."
+#~ msgstr ""
+#~ "Attenzione: salvando le preferenze degli utenti su \"Database\", Icinga "
+#~ "Web 2 utilizzerà la stessa risorsa anche per l'autenticazione."
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "Concedi permessi di amministratore, ad esempio gestire gli annunci"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Non salvare le Preferenze"
+
+#~ msgid "The Icinga Project"
+#~ msgstr "Il Progetto Icinga"
