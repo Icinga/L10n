@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-08-23 15:55+0000\n"
+"POT-Creation-Date: 2021-08-24 16:48+0000\n"
 "PO-Revision-Date: 2020-04-27 14:45+0200\n"
 "Last-Translator: Francesco Mazzi <fmazzi@comune.genova.it>\n"
 "Language-Team: \n"
@@ -236,10 +236,10 @@ msgstr ""
 
 #: sources.d/icingadb-web/application/controllers/CommentsController.php:198
 #: sources.d/icingadb-web/application/controllers/DowntimesController.php:203
-#: sources.d/icingadb-web/application/controllers/HistoryController.php:132
+#: sources.d/icingadb-web/application/controllers/HistoryController.php:128
 #: sources.d/icingadb-web/application/controllers/HostgroupsController.php:119
 #: sources.d/icingadb-web/application/controllers/HostsController.php:189
-#: sources.d/icingadb-web/application/controllers/NotificationsController.php:135
+#: sources.d/icingadb-web/application/controllers/NotificationsController.php:130
 #: sources.d/icingadb-web/application/controllers/ServicegroupsController.php:118
 #: sources.d/icingadb-web/application/controllers/ServicesController.php:203
 #: sources.d/icingadb-web/application/controllers/TacticalController.php:86
@@ -420,7 +420,7 @@ msgstr "Controllo Funzionalità"
 msgid "History"
 msgstr "History"
 
-#: sources.d/icingadb-web/application/controllers/HistoryController.php:51
+#: sources.d/icingadb-web/application/controllers/HistoryController.php:49
 #: sources.d/icingadb-web/library/Icingadb/Model/History.php:59
 msgid "Event Time"
 msgstr ""
@@ -676,7 +676,7 @@ msgstr ""
 msgid "Notifications"
 msgstr "Notifiche"
 
-#: sources.d/icingadb-web/application/controllers/NotificationsController.php:47
+#: sources.d/icingadb-web/application/controllers/NotificationsController.php:45
 msgid "Send Time"
 msgstr ""
 
@@ -4696,13 +4696,13 @@ msgstr "'%s' non è un numero valido"
 msgid "Show bulk processing actions for all filtered results"
 msgstr "Permetti invio risultati passivi a host e servizi"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:565
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:569
 #, fuzzy, php-format
 msgctxt "..<customvar-name>"
 msgid " %s"
 msgstr "il %s"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:621
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:625
 msgid "This route does not support the requested output format"
 msgstr ""
 
@@ -7278,11 +7278,11 @@ msgstr "documentazione"
 msgid "Icinga Director Background Daemon"
 msgstr "Icinga Director Background Daemon"
 
-#: sources.d/icingaweb2-module-director/application/controllers/DashboardController.php:44
+#: sources.d/icingaweb2-module-director/application/controllers/DashboardController.php:45
 msgid "Icinga Director - Main Dashboard"
 msgstr "Icinga Director - Dashboard principale"
 
-#: sources.d/icingaweb2-module-director/application/controllers/DashboardController.php:72
+#: sources.d/icingaweb2-module-director/application/controllers/DashboardController.php:73
 #, fuzzy
 msgid "No dashboard available, you might have not enough permissions"
 msgstr "Nessuna dashboard disponibile, potreste non avere i permessi necessari"
@@ -11188,6 +11188,15 @@ msgstr "Ricevi avvisi quando qualcosa va storto"
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/AutomationDashboard.php:15
 msgid "Automate all tasks"
 msgstr "Automatizza tutte le operazioni"
+
+#: sources.d/icingaweb2-module-director/library/Director/Dashboard/BranchesDashboard.php:19
+#, php-format
+msgid "You're currently working in a Configuration Branch: %s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/Dashboard/BranchesDashboard.php:24
+msgid "Prepare your configuration in a safe Environment"
+msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/CommandsDashboard.php:17
 #, fuzzy
@@ -25713,274 +25722,146 @@ msgstr ""
 msgid "Clear Filter"
 msgstr "Filtro"
 
-#~ msgid "start using"
-#~ msgstr "inizia ad utilizzare"
+#, fuzzy
+#~ msgid "This item has been commented"
+#~ msgstr "La configurazione è stata convalidata correttamente."
 
-#~ msgid "e.g. "
-#~ msgstr "per es."
+#, fuzzy
+#~ msgid "modifications"
+#~ msgstr "Notifiche"
 
-#~ msgid "database schema"
-#~ msgstr "schema database"
+#, fuzzy
+#~ msgid "This object has been %s in this configuration %s"
+#~ msgstr "Questo set è stato ereditato da %s"
 
-#~ msgid "click here"
-#~ msgstr "clicca qui"
-
-#~ msgid "Zone (template) name"
-#~ msgstr "Nome (template) Zona"
-
-#~ msgid "Name for the Icinga zone (template) you are going to create"
-#~ msgstr "Nome per la zona Icinga (template) che stai per creare"
-
-#~ msgid "Manage deployments, access audit log and history"
+#, fuzzy
+#~ msgid ""
+#~ "To view the most recent state information in Icinga DB Web, the Redis "
+#~ "module for PHP is required."
 #~ msgstr ""
-#~ "Gestisci distribuzioni, registro di audit degli accessi e la cronologia"
-
-#~ msgid "Alert your users"
-#~ msgstr "Avvisa i tuoi utenti"
-
-#~ msgid "Whether the field should be merged, replaced or ignored"
-#~ msgstr "Il campo deve essere unito, sostituito o ignorato?"
-
-#~ msgid "Purge existing values."
-#~ msgstr "Eliminare i valori esistenti."
-
-#~ msgid "Unable to store the configuration to \"%s\""
-#~ msgstr "Impossibile salvare la configuraazione a \"%s\""
-
-#~ msgid "Run"
-#~ msgstr "Esegui"
-
-#~ msgid "Import runs"
-#~ msgstr "Importa esecuzioni"
-
-#~ msgid "Import / Sync"
-#~ msgstr "Importa / Sincronizza"
-
-#~ msgid "Filter string"
-#~ msgstr "Filtro stringa"
-
-#~ msgid "Edit sync rule"
-#~ msgstr "Modifica regola di sincronizzazione"
-
-#~ msgid "Edit entry"
-#~ msgstr "Modifica voce"
-
-#~ msgid "Deployments / History"
-#~ msgstr "Distrubuzioni / Cronologia"
-
-#~ msgid "Add entry"
-#~ msgstr "Aggiungi voce"
-
-#~ msgid "%s template \"%s\": custom fields"
-#~ msgstr "%s template \"%s\": campo personalizzato"
-
-#~ msgid "to a host group"
-#~ msgstr "ad un gruppo host"
-
-#~ msgid "check command"
-#~ msgstr "Comando Check"
-
-#~ msgid "by host group property"
-#~ msgstr "per proprietà del gruppo host"
-
-#~ msgid "There are pending database schema migrations"
-#~ msgstr "Le migrazioni del database sono in corso"
-
-#~ msgid "The unique name of the field"
-#~ msgstr "Il nome unico del campo"
-
-#~ msgid "Service configs"
-#~ msgstr "Configurazioni Servizio"
-
-#~ msgid "Expression"
-#~ msgstr "Espressione"
+#~ "Se vuoi poter esportare viste e report in PDF, è necessario installare il "
+#~ "modulo DOM per PHP."
 
 #~ msgid ""
-#~ "Data fields allow you to customize input controls your custom variables."
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
 #~ msgstr ""
-#~ "I campi dati consentono di personalizzare i controlli di input delle "
-#~ "variabili personalizzate."
+#~ "Il modulo PDO-MySQL per PHP è necessario per poter accedere ai dati IDO "
+#~ "memorizzati su MySQL."
 
-#~ msgid "Config history"
-#~ msgstr "Cronologia Configurazione"
-
-#~ msgid "Command-specific custom vars"
-#~ msgstr "Variabili specifiche del comando definite dall'utente"
-
-#~ msgid "Allow to use only these db resources (comma separated list)"
-#~ msgstr ""
-#~ "Permettete di utilizzare solo queste risorse db (elenco separato da "
-#~ "virgole)"
-
-#~ msgid "Allow to use only host templates matching this filter"
-#~ msgstr ""
-#~ "Permettete di utilizzare solo template di host che corrispondono  a "
-#~ "questo filtro"
-
-#~ msgid "Allow to see template details"
-#~ msgstr "Permetti di vedere i dettagli del template"
-
-#~ msgid "Service sets"
-#~ msgstr "Service-Sets"
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "Zend database adapter per MySQL"
 
 #~ msgid ""
-#~ "This is an external object. It has been imported from Icinga 2 through "
-#~ "the Core API and cannot be managed with the Icinga Director. It is "
-#~ "however perfectly valid to create objects using this or referring to this "
-#~ "object. You might also want to define related Fields to make work based "
-#~ "on this object more enjoyable."
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
 #~ msgstr ""
-#~ "Questo è un oggetto esterno. È stato creato da Icinga 2 attraverso l'API "
-#~ "di base e non può essere gestito con il Director di Icinga.È comunque "
-#~ "perfettamente valido creare oggetti utilizzando o facendo riferimento a "
-#~ "questo oggetto. È anche possibile creare campi correlati per facilitare "
-#~ "il lavoro."
-
-#~ msgid "Template tree"
-#~ msgstr "Albero dei template"
-
-#~ msgid "Sync run details"
-#~ msgstr "Dettagli di sincronizzazione"
-
-#~ msgid "Show unfiltered"
-#~ msgstr "Mostra non filtrato"
-
-#~ msgid "Object name"
-#~ msgstr "Nome oggetto"
-
-#~ msgid "No object found"
-#~ msgstr "Nessun oggetto trovato"
-
-#~ msgid "Job %s"
-#~ msgstr "Lavoro %s"
-
-#~ msgid "Icinga %s"
-#~ msgstr "Icinga %s"
-
-#~ msgid "Icinga "
-#~ msgstr "Icinga "
-
-#~ msgid "Entries"
-#~ msgstr "Voci"
-
-#~ msgid "Edit sync property rule"
-#~ msgstr "Modifica regola di sincronizzazione"
-
-#~ msgid "Edit import source"
-#~ msgstr "Modifica fonte importazione"
-
-#~ msgid "Deploy to master"
-#~ msgstr "Distrubuisci al master"
-
-#~ msgid "Create immediately"
-#~ msgstr "Crea subito"
-
-#~ msgid "Configs"
-#~ msgstr "Configurazioni"
-
-#~ msgid "Clone Icinga %s"
-#~ msgstr "Clona Icinga %s"
-
-#~ msgid "Apply Icinga %s"
-#~ msgstr "Applica Icinga %s"
-
-#~ msgid "Add list"
-#~ msgstr "Aggiungi elenco"
-
-#~ msgid "Add job"
-#~ msgstr "Aggiungi lavoro"
-
-#~ msgid "Add a job"
-#~ msgstr "Aggiungi un lavoro"
-
-#~ msgid "Activity log entry"
-#~ msgstr "Registrazione del registro delle attività"
-
-#~ msgid "s"
-#~ msgstr "s"
-
-#~ msgid "Set Members"
-#~ msgstr "Imposta Membri"
-
-#~ msgid "Filter available service sets"
-#~ msgstr "Filtro service sets disponibile"
-
-#~ msgid "This feature is still experimental"
-#~ msgstr "Questa feature è ancora sperimentale"
-
-#~ msgid "Search is simple! Try to combine multiple words"
-#~ msgstr "La ricerca è facile! Prova a combinare più parole"
-
-#~ msgid "SQL Query"
-#~ msgstr "SQL-Query"
-
-#~ msgid "Prio"
-#~ msgstr "Prio"
-
-#~ msgid "Move up (raise priority)"
-#~ msgstr "Muovi in alto (aumenta prioritá)"
-
-#~ msgid "Move down (lower priority)"
-#~ msgstr "Muovi in basso (abbassa prioritá)"
-
-#~ msgid "Count Query"
-#~ msgstr "Count-Query"
-
-#~ msgid "Change priority"
-#~ msgstr "Cambia prioritá"
-
-#~ msgid "the update method"
-#~ msgstr "metodo di aggiornamento"
-
-#~ msgid "the display name"
-#~ msgstr "Nome sul display"
-
-#~ msgid "Whether this should be a template"
-#~ msgstr "È un template?"
-
-#~ msgid "Timeperiod template name"
-#~ msgstr "Nome del template del periodo"
-
-#~ msgid "Timeperiod template"
-#~ msgstr "Template del periodo"
-
-#~ msgid "Timeperiod object"
-#~ msgstr "Periodo"
-
-#~ msgid "Timeperiod"
-#~ msgstr "Periodo"
-
-#~ msgid "Serviceset"
-#~ msgstr "Service-Set"
-
-#~ msgid "Please define a Service Template first"
-#~ msgstr "Si prega di definire prima un template di servizio"
-
-#~ msgid "Name for the Icinga timperiod template you are going to create"
-#~ msgstr ""
-#~ "Nome per il template del periodo di tempo di Icinga che si sta per creare"
-
-#~ msgid "Name for the Icinga timeperiod you are going to create"
-#~ msgstr "Nome per il periodo di Icinga che stai per creare"
-
-#~ msgid "This must be an import source column (property)"
-#~ msgstr "Questa deve essere una colonna di fonte di importazione (proprietà)"
+#~ "Zend database adapter per MySQL è necessario per poter accedere ad un "
+#~ "database MySQL."
 
 #~ msgid ""
-#~ "This allows you to configure an assignment filter. Please feel free to "
-#~ "combine as many nested operators as you want"
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
 #~ msgstr ""
-#~ "Questo permette di configurare un filtro di assegnazione. Sentitevi "
-#~ "liberi di  combinare tutti gli operatori annidati che volete"
+#~ "Il modulo PDO-MySQL per PHP è necessario per poter accedere ai dati IDO "
+#~ "memorizzati su PostgreSQL."
 
-#~ msgid "The parent host."
-#~ msgstr "L'host parente."
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "Zend database adapter per PostgreSQL"
 
-#~ msgid "Add Service: %s"
-#~ msgstr "Aggiungi servizio: %s"
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "Zend database adapter per PostgreSQL è necessario per poter accedere ad "
+#~ "un database PostgreSQL."
 
-#~ msgid "%s (where %s)"
-#~ msgstr "%s (dove %s)"
+#, fuzzy
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "Icinga Web 2 richiede PHP 5.6."
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Tipo Oggetto"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Storico"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Lista servizi"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Tipo Commento"
+
+#~ msgid ""
+#~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
+#~ "to use the same database as for authentication."
+#~ msgstr ""
+#~ "Attenzione: salvando le preferenze degli utenti su \"Database\", Icinga "
+#~ "Web 2 utilizzerà la stessa risorsa anche per l'autenticazione."
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "Concedi permessi di amministratore, ad esempio gestire gli annunci"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Non salvare le Preferenze"
+
+#~ msgid "The Icinga Project"
+#~ msgstr "Il Progetto Icinga"
+
+#~ msgid "%s has been blacklisted on %s"
+#~ msgstr "%s é stato messo in blacklist %s"
+
+#~ msgid "%s is no longer blacklisted on %s"
+#~ msgstr "%s non é più nella lista di blacklist %s"
+
+#~ msgid "- inherited -"
+#~ msgstr "- eereditato -"
+
+#~ msgid "Allow to configure notifications"
+#~ msgstr "Consenti la configurazione di notifiche"
+
+#~ msgid "Blacklist"
+#~ msgstr "Blacklist"
+
+#~ msgid "Configure this Agent  via Self Service API"
+#~ msgstr "Configurare questo agente tramite l'API self-service"
+
+#~ msgid ""
+#~ "Define what should happen when an object with a matching key already "
+#~ "exists. You could merge its properties (import source wins), replace it "
+#~ "completely with the imported object or ignore it (helpful for one-time "
+#~ "imports)"
+#~ msgstr ""
+#~ "Definire cosa dovrebbe accadere quando esiste già un oggetto con una "
+#~ "chiave corrispondente. È possibile unire le sue proprietà (importazione "
+#~ "sorgente vince), sostituirlo completamente con l'oggetto importato o "
+#~ "ignorarlo (utile per le importazioni singole)"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "Generato da host vars"
+
+#~ msgid "Keep only matching rows (Whitelist)"
+#~ msgstr "Mantieni solo le righe corrispondenti (Whitelist)"
+
+#~ msgid "Numeric position"
+#~ msgstr "Posizione numerica"
+
+#~ msgid ""
+#~ "Often the expected result is provided in a property like \"objects\". "
+#~ "Please specify this if required"
+#~ msgstr ""
+#~ "Spesso il risultato atteso è fornito in una proprietà come \"oggetti\". "
+#~ "Si prega di specificare questo se richiesto"
+
+#~ msgid "Reject the whole row (Blacklist)"
+#~ msgstr "Rifiuta l'intera fila (Blacklist)"
+
+#~ msgid "This Service has been blacklisted on this host"
+#~ msgstr "Questo servizio è stato messo nella lista nera di questo host"
 
 #~ msgid ""
 #~ "This is where you manage your Icinga 2 infrastructure. When adding a new "
@@ -25999,143 +25880,271 @@ msgstr "Filtro"
 #~ "scelta sbagliata portando ad un vicolo cieco che costringe l'utente a "
 #~ "ripulire il sistema dalle modifiche apportate."
 
-#~ msgid "This Service has been blacklisted on this host"
-#~ msgstr "Questo servizio è stato messo nella lista nera di questo host"
+#~ msgid "%s (where %s)"
+#~ msgstr "%s (dove %s)"
 
-#~ msgid "Reject the whole row (Blacklist)"
-#~ msgstr "Rifiuta l'intera fila (Blacklist)"
+#~ msgid "Add Service: %s"
+#~ msgstr "Aggiungi servizio: %s"
 
-#~ msgid ""
-#~ "Often the expected result is provided in a property like \"objects\". "
-#~ "Please specify this if required"
-#~ msgstr ""
-#~ "Spesso il risultato atteso è fornito in una proprietà come \"oggetti\". "
-#~ "Si prega di specificare questo se richiesto"
-
-#~ msgid "Numeric position"
-#~ msgstr "Posizione numerica"
-
-#~ msgid "Keep only matching rows (Whitelist)"
-#~ msgstr "Mantieni solo le righe corrispondenti (Whitelist)"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "Generato da host vars"
+#~ msgid "The parent host."
+#~ msgstr "L'host parente."
 
 #~ msgid ""
-#~ "Define what should happen when an object with a matching key already "
-#~ "exists. You could merge its properties (import source wins), replace it "
-#~ "completely with the imported object or ignore it (helpful for one-time "
-#~ "imports)"
+#~ "This allows you to configure an assignment filter. Please feel free to "
+#~ "combine as many nested operators as you want"
 #~ msgstr ""
-#~ "Definire cosa dovrebbe accadere quando esiste già un oggetto con una "
-#~ "chiave corrispondente. È possibile unire le sue proprietà (importazione "
-#~ "sorgente vince), sostituirlo completamente con l'oggetto importato o "
-#~ "ignorarlo (utile per le importazioni singole)"
+#~ "Questo permette di configurare un filtro di assegnazione. Sentitevi "
+#~ "liberi di  combinare tutti gli operatori annidati che volete"
 
-#~ msgid "Configure this Agent  via Self Service API"
-#~ msgstr "Configurare questo agente tramite l'API self-service"
+#~ msgid "This must be an import source column (property)"
+#~ msgstr "Questa deve essere una colonna di fonte di importazione (proprietà)"
 
-#~ msgid "Blacklist"
-#~ msgstr "Blacklist"
+#~ msgid "Name for the Icinga timeperiod you are going to create"
+#~ msgstr "Nome per il periodo di Icinga che stai per creare"
 
-#~ msgid "Allow to configure notifications"
-#~ msgstr "Consenti la configurazione di notifiche"
+#~ msgid "Name for the Icinga timperiod template you are going to create"
+#~ msgstr ""
+#~ "Nome per il template del periodo di tempo di Icinga che si sta per creare"
 
-#~ msgid "- inherited -"
-#~ msgstr "- eereditato -"
+#~ msgid "Please define a Service Template first"
+#~ msgstr "Si prega di definire prima un template di servizio"
 
-#~ msgid "%s is no longer blacklisted on %s"
-#~ msgstr "%s non é più nella lista di blacklist %s"
+#~ msgid "Serviceset"
+#~ msgstr "Service-Set"
 
-#~ msgid "%s has been blacklisted on %s"
-#~ msgstr "%s é stato messo in blacklist %s"
+#~ msgid "Timeperiod"
+#~ msgstr "Periodo"
 
-#~ msgid "The Icinga Project"
-#~ msgstr "Il Progetto Icinga"
+#~ msgid "Timeperiod object"
+#~ msgstr "Periodo"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Non salvare le Preferenze"
+#~ msgid "Timeperiod template"
+#~ msgstr "Template del periodo"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "Concedi permessi di amministratore, ad esempio gestire gli annunci"
+#~ msgid "Timeperiod template name"
+#~ msgstr "Nome del template del periodo"
+
+#~ msgid "Whether this should be a template"
+#~ msgstr "È un template?"
+
+#~ msgid "the display name"
+#~ msgstr "Nome sul display"
+
+#~ msgid "the update method"
+#~ msgstr "metodo di aggiornamento"
+
+#~ msgid "Change priority"
+#~ msgstr "Cambia prioritá"
+
+#~ msgid "Count Query"
+#~ msgstr "Count-Query"
+
+#~ msgid "Move down (lower priority)"
+#~ msgstr "Muovi in basso (abbassa prioritá)"
+
+#~ msgid "Move up (raise priority)"
+#~ msgstr "Muovi in alto (aumenta prioritá)"
+
+#~ msgid "Prio"
+#~ msgstr "Prio"
+
+#~ msgid "SQL Query"
+#~ msgstr "SQL-Query"
+
+#~ msgid "Search is simple! Try to combine multiple words"
+#~ msgstr "La ricerca è facile! Prova a combinare più parole"
+
+#~ msgid "This feature is still experimental"
+#~ msgstr "Questa feature è ancora sperimentale"
+
+#~ msgid "Filter available service sets"
+#~ msgstr "Filtro service sets disponibile"
+
+#~ msgid "Set Members"
+#~ msgstr "Imposta Membri"
+
+#~ msgid "s"
+#~ msgstr "s"
+
+#~ msgid "Activity log entry"
+#~ msgstr "Registrazione del registro delle attività"
+
+#~ msgid "Add a job"
+#~ msgstr "Aggiungi un lavoro"
+
+#~ msgid "Add job"
+#~ msgstr "Aggiungi lavoro"
+
+#~ msgid "Add list"
+#~ msgstr "Aggiungi elenco"
+
+#~ msgid "Apply Icinga %s"
+#~ msgstr "Applica Icinga %s"
+
+#~ msgid "Clone Icinga %s"
+#~ msgstr "Clona Icinga %s"
+
+#~ msgid "Configs"
+#~ msgstr "Configurazioni"
+
+#~ msgid "Create immediately"
+#~ msgstr "Crea subito"
+
+#~ msgid "Deploy to master"
+#~ msgstr "Distrubuisci al master"
+
+#~ msgid "Edit import source"
+#~ msgstr "Modifica fonte importazione"
+
+#~ msgid "Edit sync property rule"
+#~ msgstr "Modifica regola di sincronizzazione"
+
+#~ msgid "Entries"
+#~ msgstr "Voci"
+
+#~ msgid "Icinga "
+#~ msgstr "Icinga "
+
+#~ msgid "Icinga %s"
+#~ msgstr "Icinga %s"
+
+#~ msgid "Job %s"
+#~ msgstr "Lavoro %s"
+
+#~ msgid "No object found"
+#~ msgstr "Nessun oggetto trovato"
+
+#~ msgid "Object name"
+#~ msgstr "Nome oggetto"
+
+#~ msgid "Show unfiltered"
+#~ msgstr "Mostra non filtrato"
+
+#~ msgid "Sync run details"
+#~ msgstr "Dettagli di sincronizzazione"
+
+#~ msgid "Template tree"
+#~ msgstr "Albero dei template"
 
 #~ msgid ""
-#~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
-#~ "to use the same database as for authentication."
+#~ "This is an external object. It has been imported from Icinga 2 through "
+#~ "the Core API and cannot be managed with the Icinga Director. It is "
+#~ "however perfectly valid to create objects using this or referring to this "
+#~ "object. You might also want to define related Fields to make work based "
+#~ "on this object more enjoyable."
 #~ msgstr ""
-#~ "Attenzione: salvando le preferenze degli utenti su \"Database\", Icinga "
-#~ "Web 2 utilizzerà la stessa risorsa anche per l'autenticazione."
+#~ "Questo è un oggetto esterno. È stato creato da Icinga 2 attraverso l'API "
+#~ "di base e non può essere gestito con il Director di Icinga.È comunque "
+#~ "perfettamente valido creare oggetti utilizzando o facendo riferimento a "
+#~ "questo oggetto. È anche possibile creare campi correlati per facilitare "
+#~ "il lavoro."
 
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Tipo Commento"
+#~ msgid "Service sets"
+#~ msgstr "Service-Sets"
 
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Lista servizi"
+#~ msgid "Allow to see template details"
+#~ msgstr "Permetti di vedere i dettagli del template"
 
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Storico"
+#~ msgid "Allow to use only host templates matching this filter"
+#~ msgstr ""
+#~ "Permettete di utilizzare solo template di host che corrispondono  a "
+#~ "questo filtro"
 
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Tipo Oggetto"
+#~ msgid "Allow to use only these db resources (comma separated list)"
+#~ msgstr ""
+#~ "Permettete di utilizzare solo queste risorse db (elenco separato da "
+#~ "virgole)"
 
-#, fuzzy
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "Icinga Web 2 richiede PHP 5.6."
+#~ msgid "Command-specific custom vars"
+#~ msgstr "Variabili specifiche del comando definite dall'utente"
+
+#~ msgid "Config history"
+#~ msgstr "Cronologia Configurazione"
 
 #~ msgid ""
-#~ "The Zend database adapter for PostgreSQL is required to access a "
-#~ "PostgreSQL database."
+#~ "Data fields allow you to customize input controls your custom variables."
 #~ msgstr ""
-#~ "Zend database adapter per PostgreSQL è necessario per poter accedere ad "
-#~ "un database PostgreSQL."
+#~ "I campi dati consentono di personalizzare i controlli di input delle "
+#~ "variabili personalizzate."
 
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "Zend database adapter per PostgreSQL"
+#~ msgid "Expression"
+#~ msgstr "Espressione"
 
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
+#~ msgid "Service configs"
+#~ msgstr "Configurazioni Servizio"
+
+#~ msgid "The unique name of the field"
+#~ msgstr "Il nome unico del campo"
+
+#~ msgid "There are pending database schema migrations"
+#~ msgstr "Le migrazioni del database sono in corso"
+
+#~ msgid "by host group property"
+#~ msgstr "per proprietà del gruppo host"
+
+#~ msgid "check command"
+#~ msgstr "Comando Check"
+
+#~ msgid "to a host group"
+#~ msgstr "ad un gruppo host"
+
+#~ msgid "%s template \"%s\": custom fields"
+#~ msgstr "%s template \"%s\": campo personalizzato"
+
+#~ msgid "Add entry"
+#~ msgstr "Aggiungi voce"
+
+#~ msgid "Deployments / History"
+#~ msgstr "Distrubuzioni / Cronologia"
+
+#~ msgid "Edit entry"
+#~ msgstr "Modifica voce"
+
+#~ msgid "Edit sync rule"
+#~ msgstr "Modifica regola di sincronizzazione"
+
+#~ msgid "Filter string"
+#~ msgstr "Filtro stringa"
+
+#~ msgid "Import / Sync"
+#~ msgstr "Importa / Sincronizza"
+
+#~ msgid "Import runs"
+#~ msgstr "Importa esecuzioni"
+
+#~ msgid "Run"
+#~ msgstr "Esegui"
+
+#~ msgid "Unable to store the configuration to \"%s\""
+#~ msgstr "Impossibile salvare la configuraazione a \"%s\""
+
+#~ msgid "Purge existing values."
+#~ msgstr "Eliminare i valori esistenti."
+
+#~ msgid "Whether the field should be merged, replaced or ignored"
+#~ msgstr "Il campo deve essere unito, sostituito o ignorato?"
+
+#~ msgid "Alert your users"
+#~ msgstr "Avvisa i tuoi utenti"
+
+#~ msgid "Manage deployments, access audit log and history"
 #~ msgstr ""
-#~ "Il modulo PDO-MySQL per PHP è necessario per poter accedere ai dati IDO "
-#~ "memorizzati su PostgreSQL."
+#~ "Gestisci distribuzioni, registro di audit degli accessi e la cronologia"
 
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr ""
-#~ "Zend database adapter per MySQL è necessario per poter accedere ad un "
-#~ "database MySQL."
+#~ msgid "Name for the Icinga zone (template) you are going to create"
+#~ msgstr "Nome per la zona Icinga (template) che stai per creare"
 
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "Zend database adapter per MySQL"
+#~ msgid "Zone (template) name"
+#~ msgstr "Nome (template) Zona"
 
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
-#~ msgstr ""
-#~ "Il modulo PDO-MySQL per PHP è necessario per poter accedere ai dati IDO "
-#~ "memorizzati su MySQL."
+#~ msgid "click here"
+#~ msgstr "clicca qui"
 
-#, fuzzy
-#~ msgid ""
-#~ "To view the most recent state information in Icinga DB Web, the Redis "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "Se vuoi poter esportare viste e report in PDF, è necessario installare il "
-#~ "modulo DOM per PHP."
+#~ msgid "database schema"
+#~ msgstr "schema database"
 
-#, fuzzy
-#~ msgid "This object has been %s in this configuration %s"
-#~ msgstr "Questo set è stato ereditato da %s"
+#~ msgid "e.g. "
+#~ msgstr "per es."
 
-#, fuzzy
-#~ msgid "modifications"
-#~ msgstr "Notifiche"
-
-#, fuzzy
-#~ msgid "This item has been commented"
-#~ msgstr "La configurazione è stata convalidata correttamente."
+#~ msgid "start using"
+#~ msgstr "inizia ad utilizzare"
