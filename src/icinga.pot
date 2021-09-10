@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n 621ee8e\n"
+"Project-Id-Version: Icinga L10n d47509f\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-09-07 13:56+0000\n"
+"POT-Creation-Date: 2021-09-10 12:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,8 +125,8 @@ msgstr ""
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:45
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:57
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:66
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:105
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:121
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:113
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:129
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:83
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:175
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:270
@@ -850,8 +850,8 @@ msgstr ""
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:50
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:61
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:70
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:109
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:125
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:117
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:133
 #: sources.d/icingaweb2-module-director/application/forms/IcingaEndpointForm.php:36
 #: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:145
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/NetworkAdaptersTable.php:54
@@ -1178,7 +1178,13 @@ msgid_plural "Removed downtime from %d objects successfully"
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/application/forms/Command/Object/DeleteDowntimeForm.php:48
+#: sources.d/icingadb-web/application/forms/Command/Object/DeleteDowntimeForm.php:56
+msgid ""
+"Downtime cannot be removed at runtime because it is based on a configured "
+"scheduled downtime."
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/Command/Object/DeleteDowntimeForm.php:60
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:93
 msgid "Delete downtime"
 msgid_plural "Delete downtimes"
@@ -1704,7 +1710,7 @@ msgstr ""
 msgid "Failed to read file \"%s\": %s"
 msgstr ""
 
-#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:378
+#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:421
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:373
 #: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:464
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:296
@@ -1715,7 +1721,7 @@ msgstr ""
 msgid "Validate Configuration"
 msgstr ""
 
-#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:379
+#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:422
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:374
 #: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:465
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:297
@@ -1726,29 +1732,29 @@ msgstr ""
 msgid "Validation In Progress"
 msgstr ""
 
-#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:444
+#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:488
 #, php-format
 msgid "Failed to connect to primary Redis: %s"
 msgstr ""
 
-#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:451
+#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:495
 msgid ""
 "Primary connection established but failed to verify Icinga is connected as "
 "well."
 msgstr ""
 
-#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:458
+#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:502
 #, php-format
 msgid "Failed to connect to secondary Redis: %s"
 msgstr ""
 
-#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:463
+#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:507
 msgid ""
 "Secondary connection established but failed to verify Icinga is connected as "
 "well."
 msgstr ""
 
-#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:467
+#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:511
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:90
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:89
 #: sources.d/icingaweb2-module-aws/application/forms/Config/KeysForm.php:192
@@ -2536,83 +2542,87 @@ msgstr ""
 msgid "Comment Has Been Removed (History)"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:61
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:62
 msgid "Downtime Environment Id"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:62
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:63
 msgid "Downtime Triggered By Id"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:63
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:64
 msgid "Downtime Parent Id"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:64
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:65
 msgid "Downtime Object Type"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:65
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:66
 msgid "Downtime Host Id"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:66
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:67
 msgid "Downtime Service Id"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:67
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:68
 msgid "Downtime Name Checksum"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:68
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:69
 msgid "Downtime Properties Checksum"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:69
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:70
 msgid "Downtime Name"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:70
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:71
 msgid "Downtime Author"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:71
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:72
 msgid "Downtime Comment"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:72
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:73
 msgid "Downtime Entry Time"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:73
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:74
 msgid "Downtime Scheduled Start"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:74
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:75
 msgid "Downtime Scheduled End"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:75
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:76
 msgid "Downtime Is Flexible"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:76
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:77
 msgid "Downtime Is In Effect"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:77
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:78
 msgid "Downtime Actual Start"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:78
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:79
 msgid "Downtime Actual End"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:79
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:80
+msgid "Downtime Scheduled By"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:81
 msgid "Downtime Zone Id"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:80
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:82
 msgid "Downtime Duration"
 msgstr ""
 
@@ -4027,7 +4037,7 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:98
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:144
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:183
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:191
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:188
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:201
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/SecurityStep.php:80
@@ -4114,7 +4124,7 @@ msgid "Yes"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:95
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:157
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:165
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:346
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:347
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:444
@@ -4215,7 +4225,7 @@ msgid ""
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisPage.php:18
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:163
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:171
 msgid "Icinga DB Redis"
 msgstr ""
 
@@ -4223,35 +4233,35 @@ msgstr ""
 msgid "Please fill out the connection details to access the Icinga DB Redis."
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:100
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:108
 msgid ""
 "The Icinga DB Redis will be accessed using the following connection details:"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:115
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:123
 msgid "Primary"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:130
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:138
 msgid "Secondary"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:144
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:152
 msgid ""
 "Icinga DB Web will authenticate against Redis with a client certificate and "
 "private key over a secured connection"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:151
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:159
 msgid "Icinga DB Web will use secured Redis connections"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:174
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:182
 #, php-format
 msgid "Module configuration update successful: %s"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:180
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:188
 #, php-format
 msgid "Module configuration update failed: %s"
 msgstr ""
@@ -4344,8 +4354,8 @@ msgid "Usergroup %s"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:120
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:203
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:291
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:205
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:293
 #, php-format
 msgid "\"%s\" is not a valid relation"
 msgstr ""
@@ -4389,26 +4399,26 @@ msgstr ""
 msgid "Switch to detailed view"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:219
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:303
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:221
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:305
 msgid "Is not a valid column"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:346
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:348
 msgid "Show bulk processing actions for all filtered results"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:577
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:579
 msgid "Page"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:646
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:648
 #, php-format
 msgctxt "..<customvar-name>"
 msgid " %s"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:702
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:704
 msgid "This route does not support the requested output format"
 msgstr ""
 
@@ -4484,7 +4494,7 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:57
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:109
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:58
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:63
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:10
 msgid "Details"
 msgstr ""
@@ -4951,7 +4961,7 @@ msgid "No downtimes scheduled."
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:225
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:74
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:82
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:205
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:650
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:109
@@ -5045,6 +5055,7 @@ msgid "Max"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:69
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:155
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:25
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:115
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:40
@@ -5054,6 +5065,7 @@ msgid "Warning"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:70
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:158
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:55
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:26
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:114
@@ -5078,15 +5090,103 @@ msgstr ""
 msgid "Submit a one time or so called passive result for the %s check"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:59
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:64
 msgid "E-Mail"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:60
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:65
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:41
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:22
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:34
 msgid "Pager"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:66
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hostgroups.phtml:32
+msgid "Host States"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:67
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hostgroups.phtml:34
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/servicegroups.phtml:29
+msgid "Service States"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:68
+msgid "Types"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:108
+#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:23
+msgid "Problem"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:111
+#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:28
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:429
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-description.phtml:20
+msgid "Acknowledgement"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:114
+#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:24
+msgid "Recovery"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:117
+msgid "Downtime Start"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:120
+msgid "Downtime End"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:123
+msgid "Downtime Removed"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:126
+msgid "Flapping Start"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:129
+msgid "Flapping End"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:132
+msgid "Custom"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:146
+#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:20
+#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:133
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:25
+msgid "Up"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:149
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:53
+#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:21
+#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:134
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:32
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:39
+msgid "Down"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:152
+#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:117
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:82
+msgid "Ok"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:161
+#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:27
+#: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:54
+#: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:42
+#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:116
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:117
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:124
+msgid "Unknown"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Health.php:29
@@ -5148,14 +5248,6 @@ msgid "%d Host"
 msgid_plural "%d Hosts"
 msgstr[0] ""
 msgstr[1] ""
-
-#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:53
-#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:21
-#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:134
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:32
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:39
-msgid "Down"
-msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:70
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:72
@@ -11055,31 +11147,8 @@ msgstr ""
 msgid "(Host) group resolve cache"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:20
-#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:133
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:25
-msgid "Up"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:27
-#: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:54
-#: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:42
-#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:116
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:117
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:124
-msgid "Unknown"
-msgstr ""
-
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:22
 msgid "State changes"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:23
-msgid "Problem"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:24
-msgid "Recovery"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:25
@@ -11091,12 +11160,6 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/detail-content.phtml:6
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:23
 msgid "Problem handling"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:28
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:429
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-description.phtml:20
-msgid "Acknowledgement"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:29
@@ -20654,11 +20717,6 @@ msgstr ""
 msgid "Today"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:117
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:82
-msgid "Ok"
-msgstr ""
-
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:135
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:46
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:53
@@ -21322,15 +21380,6 @@ msgstr[1] ""
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/hostgroups.phtml:11
 #, php-format
 msgid "List all hosts in the group \"%s\""
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hostgroups.phtml:32
-msgid "Host States"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hostgroups.phtml:34
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/servicegroups.phtml:29
-msgid "Service States"
 msgstr ""
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hostgroups.phtml:154
