@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-09-21 13:55+0000\n"
+"POT-Creation-Date: 2021-09-27 12:13+0000\n"
 "PO-Revision-Date: 2020-04-27 14:37+0200\n"
 "Last-Translator: Munzir Taha <munzirtaha@gmail.com>\n"
 "Language-Team: English <trans-ar@lists.fedoraproject.org>\n"
@@ -74,7 +74,7 @@ msgstr "المضيف غير موجود"
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:107
 #: sources.d/icingadb-web/application/forms/Command/Object/SendCustomNotificationForm.php:75
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:33
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:99
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:100
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:65
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:230
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:315
@@ -2416,6 +2416,11 @@ msgstr ""
 #, fuzzy
 msgid "Object Attributes"
 msgstr "ملخص التحذيرات"
+
+#: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:207
+#: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:253
+msgid "n. a."
+msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ServiceLink.php:26
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:101
@@ -4952,7 +4957,7 @@ msgstr ""
 msgid "Is not a valid column"
 msgstr "'%s' ليس رقما صالحا"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:348
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:345
 #, fuzzy
 msgid "Show bulk processing actions for all filtered results"
 msgstr "السماح بمعالجة نتائج فحص المضيف والخدمة"
@@ -5044,14 +5049,14 @@ msgid "This acknowledgement is sticky."
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:57
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:109
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:110
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:63
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:10
 msgid "Details"
 msgstr "تفاصيل"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:54
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:69
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:55
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:70
 #, php-format
 msgid "%d item"
 msgid_plural "%d items"
@@ -5062,9 +5067,13 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:85
+msgid "empty string"
+msgstr ""
+
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:123
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:175
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:148
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:153
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:289
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:254
 msgid "Scheduled Start"
@@ -5072,7 +5081,7 @@ msgstr "بداية الجدولة"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:136
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:190
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:152
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:157
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:293
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:255
 msgid "Scheduled End"
@@ -5098,70 +5107,76 @@ msgstr ""
 msgid "End"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:103
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:104
 #, php-format
 msgctxt "<username> ..: <comment>"
 msgid "%s commented: %s"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:113
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:114
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:238
 msgid "Triggered By"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:116
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:117
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:241
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:660
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:124
 msgid "Parent"
 msgstr "أب"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:124
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:125
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:256
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseDowntimeListItem.php:137
 #, php-format
 msgid "{{#link}}Flexible Downtime{{/link}} for %s"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:125
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:126
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:257
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseDowntimeListItem.php:143
 #, php-format
 msgid "{{#link}}Fixed Downtime{{/link}} for %s"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:136
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:137
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:229
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:52
 msgid "Created"
 msgstr "أُنشيء"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:140
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:141
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/SyncRunDetails.php:25
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:511
 msgid "Start time"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:144
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:150
+#, fuzzy
+msgid "Not started yet"
+msgstr "حالة ناعمة"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:147
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:512
 msgid "End time"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:156
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:161
 msgid "Scheduled Duration"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:163
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:168
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:191
 msgid "Flexible Duration"
 msgstr "مدة مرنة"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:184
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:189
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:136
 msgid "Children"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:195
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:200
 msgid "Progress"
 msgstr ""
 
@@ -5320,6 +5335,12 @@ msgstr "إلغاء"
 msgid "Expires On"
 msgstr "انتهاء صلاحية"
 
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:340
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:443
+#, fuzzy
+msgid "Never"
+msgstr "الخطورة"
+
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:345
 #, fuzzy
 msgid "This comment is tied to an acknowledgement"
@@ -5429,6 +5450,14 @@ msgstr "حالات الخدمة"
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostDetail.php:29
 msgid "This host has no services"
 msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostMetaInfo.php:41
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostMetaInfo.php:45
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:64
+#, fuzzy
+msgctxt "address"
+msgid "None"
+msgstr "بلا"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:53
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:48
@@ -5618,7 +5647,7 @@ msgstr[5] ""
 msgid "Summary"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:65
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:66
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistEntryForm.php:30
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:49
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatalistEntryTable.php:55
@@ -5627,7 +5656,7 @@ msgstr ""
 msgid "Label"
 msgstr "عنوان"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:66
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:67
 #: sources.d/icingaweb2-module-director/application/forms/CustomvarForm.php:21
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:50
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:59
@@ -5638,17 +5667,17 @@ msgstr "عنوان"
 msgid "Value"
 msgstr "قيمة"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:67
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:68
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:38
 msgid "Min"
 msgstr "أدنى"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:68
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:69
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:39
 msgid "Max"
 msgstr "أقصى"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:69
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:70
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:155
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:25
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:115
@@ -5658,7 +5687,7 @@ msgstr "أقصى"
 msgid "Warning"
 msgstr "تحذير"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:70
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:71
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:158
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:55
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:26
@@ -5669,9 +5698,11 @@ msgstr "تحذير"
 msgid "Critical"
 msgstr "ضروري"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:129
-msgid "no value given"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:132
+#, fuzzy
+msgctxt "value"
+msgid "None"
+msgstr "بلا"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:68
 msgctxt "verb"
@@ -5689,11 +5720,25 @@ msgid "E-Mail"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:65
+#, fuzzy
+msgctxt "phone-number"
+msgid "None"
+msgstr "بلا"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:65
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:41
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:22
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:34
 msgid "Pager"
 msgstr "جهاز إخطار"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:66
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:67
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:68
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/AdditionalTableActions.php:125
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/ToggleFlagList.php:125
+msgid "All"
+msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:66
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hostgroups.phtml:32
@@ -15761,11 +15806,6 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/AdditionalTableActions.php:125
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/ToggleFlagList.php:125
-msgid "All"
-msgstr ""
-
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:24
 #: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:49
 msgid "Schedule"
@@ -25366,46 +25406,27 @@ msgstr ""
 msgid "Clear Filter"
 msgstr "مرشح"
 
-#, fuzzy
-#~ msgid ""
-#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
-#~ "required."
-#~ msgstr ""
-#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
-#~ "MySQL للـ PHP مطلوبة."
+#~ msgid "The Icinga Project"
+#~ msgstr "مشروع إسنجا"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "عدم تخزين التفضيلات"
 
 #, fuzzy
-#~ msgid "This item has been commented"
-#~ msgstr "تم التحقق من الإعداد بنجاح."
+#~ msgid "History Event Type"
+#~ msgstr "نوع التعليق"
 
 #, fuzzy
-#~ msgid "modifications"
-#~ msgstr "تنبيهات"
+#~ msgid "History Service Id"
+#~ msgstr "سرد الخدمات"
 
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
-#~ msgstr ""
-#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
-#~ "MySQL للـ PHP مطلوبة."
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "المحفوظات"
 
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "محول زند لقاعدة بيانات ماي سيكول"
-
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr "مطلوب محول قاعدة بيانات زند لـ MySQL للوصول إلى قاعدة بيانات MySQL."
-
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات PostgreSQL فإن وحدة PDO-"
-#~ "PostgreSQL للـ PHP مطلوبة."
-
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "محول زند لقاعدة بيانات بوستجرى إس كيو إل"
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "نوع الكائن"
 
 #~ msgid ""
 #~ "The Zend database adapter for PostgreSQL is required to access a "
@@ -25414,24 +25435,43 @@ msgstr "مرشح"
 #~ "مطلوب محول قاعدة بيانات زند لـ PostgreSQL للوصول إلى قاعدة بيانات "
 #~ "PostgreSQL."
 
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "نوع الكائن"
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "محول زند لقاعدة بيانات بوستجرى إس كيو إل"
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات PostgreSQL فإن وحدة PDO-"
+#~ "PostgreSQL للـ PHP مطلوبة."
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr "مطلوب محول قاعدة بيانات زند لـ MySQL للوصول إلى قاعدة بيانات MySQL."
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "محول زند لقاعدة بيانات ماي سيكول"
+
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
+#~ msgstr ""
+#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
+#~ "MySQL للـ PHP مطلوبة."
 
 #, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "المحفوظات"
+#~ msgid "modifications"
+#~ msgstr "تنبيهات"
 
 #, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "سرد الخدمات"
+#~ msgid "This item has been commented"
+#~ msgstr "تم التحقق من الإعداد بنجاح."
 
 #, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "نوع التعليق"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "عدم تخزين التفضيلات"
-
-#~ msgid "The Icinga Project"
-#~ msgstr "مشروع إسنجا"
+#~ msgid ""
+#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
+#~ "required."
+#~ msgstr ""
+#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
+#~ "MySQL للـ PHP مطلوبة."
