@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-09-21 13:55+0000\n"
+"POT-Creation-Date: 2021-09-27 12:13+0000\n"
 "PO-Revision-Date: 2020-04-27 14:54+0200\n"
 "Last-Translator: papillon326 <udagawa@www2178ue.sakura.ne.jp>\n"
 "Language-Team: \n"
@@ -74,7 +74,7 @@ msgstr "ナビゲーションはありません"
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:107
 #: sources.d/icingadb-web/application/forms/Command/Object/SendCustomNotificationForm.php:75
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:33
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:99
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:100
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:65
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:230
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:315
@@ -2333,6 +2333,11 @@ msgstr "ほかの利用可能なフィールド"
 #, fuzzy
 msgid "Object Attributes"
 msgstr "タイプ属性"
+
+#: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:207
+#: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:253
+msgid "n. a."
+msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ServiceLink.php:26
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:101
@@ -4911,7 +4916,7 @@ msgstr "テーブル表示に切り替え"
 msgid "Is not a valid column"
 msgstr "'%s' は無効な数字です。"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:348
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:345
 #, fuzzy
 msgid "Show bulk processing actions for all filtered results"
 msgstr "ホストおよびサービス監視の結果の操作を許可"
@@ -5003,22 +5008,26 @@ msgid "This acknowledgement is sticky."
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:57
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:109
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:110
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:63
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:10
 msgid "Details"
 msgstr "詳細"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:54
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:69
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:55
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:70
 #, php-format
 msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] ""
 
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:85
+msgid "empty string"
+msgstr ""
+
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:123
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:175
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:148
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:153
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:289
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:254
 msgid "Scheduled Start"
@@ -5026,7 +5035,7 @@ msgstr "開始予定"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:136
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:190
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:152
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:157
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:293
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:255
 msgid "Scheduled End"
@@ -5052,71 +5061,77 @@ msgstr "開始日時"
 msgid "End"
 msgstr "終了日時"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:103
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:104
 #, php-format
 msgctxt "<username> ..: <comment>"
 msgid "%s commented: %s"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:113
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:114
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:238
 #, fuzzy
 msgid "Triggered By"
 msgstr "トリガー時刻"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:116
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:117
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:241
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:660
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:124
 msgid "Parent"
 msgstr "親タブ"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:124
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:125
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:256
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseDowntimeListItem.php:137
 #, php-format
 msgid "{{#link}}Flexible Downtime{{/link}} for %s"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:125
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:126
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:257
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseDowntimeListItem.php:143
 #, php-format
 msgid "{{#link}}Fixed Downtime{{/link}} for %s"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:136
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:137
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:229
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:52
 msgid "Created"
 msgstr "作成"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:140
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:141
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/SyncRunDetails.php:25
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:511
 msgid "Start time"
 msgstr "開始時間"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:144
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:150
+#, fuzzy
+msgid "Not started yet"
+msgstr "メンテナンス期間開始"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:147
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:512
 msgid "End time"
 msgstr "終了時刻"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:156
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:161
 msgid "Scheduled Duration"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:163
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:168
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:191
 msgid "Flexible Duration"
 msgstr "Flexible の期間"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:184
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:189
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:136
 msgid "Children"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:195
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:200
 msgid "Progress"
 msgstr ""
 
@@ -5272,6 +5287,12 @@ msgstr "キャンセル"
 msgid "Expires On"
 msgstr "期限切れ"
 
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:340
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:443
+#, fuzzy
+msgid "Never"
+msgstr "重要度"
+
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:345
 #, fuzzy
 msgid "This comment is tied to an acknowledgement"
@@ -5382,6 +5403,14 @@ msgstr "サービスの状態"
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostDetail.php:29
 msgid "This host has no services"
 msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostMetaInfo.php:41
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostMetaInfo.php:45
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:64
+#, fuzzy
+msgctxt "address"
+msgid "None"
+msgstr "なし"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:53
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:48
@@ -5559,7 +5588,7 @@ msgstr[0] ""
 msgid "Summary"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:65
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:66
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistEntryForm.php:30
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:49
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatalistEntryTable.php:55
@@ -5568,7 +5597,7 @@ msgstr ""
 msgid "Label"
 msgstr "ラベル"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:66
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:67
 #: sources.d/icingaweb2-module-director/application/forms/CustomvarForm.php:21
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:50
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:59
@@ -5579,17 +5608,17 @@ msgstr "ラベル"
 msgid "Value"
 msgstr "値"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:67
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:68
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:38
 msgid "Min"
 msgstr "分"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:68
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:69
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:39
 msgid "Max"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:69
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:70
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:155
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:25
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:115
@@ -5599,7 +5628,7 @@ msgstr ""
 msgid "Warning"
 msgstr "Warning (警告)"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:70
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:71
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:158
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:55
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:26
@@ -5610,10 +5639,11 @@ msgstr "Warning (警告)"
 msgid "Critical"
 msgstr "Critical (危険)"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:129
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:132
 #, fuzzy
-msgid "no value given"
-msgstr "値が設定されていません（null）"
+msgctxt "value"
+msgid "None"
+msgstr "なし"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:68
 msgctxt "verb"
@@ -5631,11 +5661,25 @@ msgid "E-Mail"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:65
+#, fuzzy
+msgctxt "phone-number"
+msgid "None"
+msgstr "なし"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:65
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:41
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:22
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:34
 msgid "Pager"
 msgstr "ページャー"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:66
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:67
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:68
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/AdditionalTableActions.php:125
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/ToggleFlagList.php:125
+msgid "All"
+msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:66
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hostgroups.phtml:32
@@ -16159,11 +16203,6 @@ msgstr "クラスタゾーン"
 msgid "Reset"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/AdditionalTableActions.php:125
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/ToggleFlagList.php:125
-msgid "All"
-msgstr ""
-
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:24
 #: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:49
 msgid "Schedule"
@@ -25583,25 +25622,107 @@ msgstr "削除"
 msgid "Clear Filter"
 msgstr "フィルター"
 
-#, fuzzy
+#~ msgid "The Icinga Project"
+#~ msgstr "Icingaプロジェクト"
+
+#~ msgid "- inherited -"
+#~ msgstr "- 継承 -"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "設定を保存しない"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "管理者権限を付与する。例：お知らせの管理"
+
+#~ msgid "Open authentication configuration"
+#~ msgstr "認証設定を行う画面へ"
+
 #~ msgid ""
-#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
-#~ "required."
+#~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
+#~ "to use the same database as for authentication."
+#~ msgstr ""
+#~ "環境設定の保存場所として「データベース」を選択すると、Icinga Web 2は認証と"
+#~ "同じデータベースを使用します。"
+
+#~ msgid "Blacklist"
+#~ msgstr "ブラックリスト"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "ホスト変数から生成しました"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "イベント時間"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "コメントの種類"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "監視対象サービス"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "履歴"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "オブジェクトタイプ"
+
+#, fuzzy
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "Icinga Web 2を実行するには、PHPバージョン5.6が必要です。"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "PostgreSQL用のZendデータベースアダプタがありません。"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "PostgreSQL用のZendデータベースアダプタは利用可能です"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "MySQL用のZendデータベースアダプタが存在しません"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "MySQL用のZendデータベースアダプタは利用可能です"
+
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "PostgreSQLデータベースにアクセスするには、PostgreSQL用のZendデータベースア"
+#~ "ダプタが必要です。"
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "PostgreSQL用Zendデータベースアダプタ"
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "PostgreSQLデータベースに格納されているIDOにアクセスするには、PHP用のPDO-"
+#~ "PostgreSQLモジュールが必要です。"
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr ""
+#~ "MySQLデータベースにアクセスするには、MySQL用のZendデータベースアダプタが必"
+#~ "要です。"
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "MySQL用Zendデータベースアダプタ"
+
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
 #~ msgstr ""
 #~ "MySQLデータベースに保存されているIDOにアクセスするには、PHP用のPDO-MySQLモ"
 #~ "ジュールが必要です。"
-
-#, fuzzy
-#~ msgid "This item has been commented"
-#~ msgstr "このオブジェクトは有効化されています。"
-
-#, fuzzy
-#~ msgid "modifications"
-#~ msgstr "通知"
-
-#, fuzzy
-#~ msgid "This object has been %s in this configuration %s"
-#~ msgstr "このセットは%sから継承されました"
 
 #, fuzzy
 #~ msgid ""
@@ -25611,104 +25732,26 @@ msgstr "フィルター"
 #~ "Icinga 2のAPIを介して外部コマンドを送信するには、PHP用のcURLモジュールが必"
 #~ "要です。"
 
+#, fuzzy
+#~ msgid "This object has been %s in this configuration %s"
+#~ msgstr "このセットは%sから継承されました"
+
+#, fuzzy
+#~ msgid "modifications"
+#~ msgstr "通知"
+
+#, fuzzy
+#~ msgid "This item has been commented"
+#~ msgstr "このオブジェクトは有効化されています。"
+
+#, fuzzy
 #~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
+#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
+#~ "required."
 #~ msgstr ""
 #~ "MySQLデータベースに保存されているIDOにアクセスするには、PHP用のPDO-MySQLモ"
 #~ "ジュールが必要です。"
 
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "MySQL用Zendデータベースアダプタ"
-
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr ""
-#~ "MySQLデータベースにアクセスするには、MySQL用のZendデータベースアダプタが必"
-#~ "要です。"
-
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "PostgreSQLデータベースに格納されているIDOにアクセスするには、PHP用のPDO-"
-#~ "PostgreSQLモジュールが必要です。"
-
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "PostgreSQL用Zendデータベースアダプタ"
-
-#~ msgid ""
-#~ "The Zend database adapter for PostgreSQL is required to access a "
-#~ "PostgreSQL database."
-#~ msgstr ""
-#~ "PostgreSQLデータベースにアクセスするには、PostgreSQL用のZendデータベースア"
-#~ "ダプタが必要です。"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "MySQL用のZendデータベースアダプタは利用可能です"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "MySQL用のZendデータベースアダプタが存在しません"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "PostgreSQL用のZendデータベースアダプタは利用可能です"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "PostgreSQL用のZendデータベースアダプタがありません。"
-
 #, fuzzy
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "Icinga Web 2を実行するには、PHPバージョン5.6が必要です。"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "オブジェクトタイプ"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "履歴"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "監視対象サービス"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "コメントの種類"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "イベント時間"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "ホスト変数から生成しました"
-
-#~ msgid "Blacklist"
-#~ msgstr "ブラックリスト"
-
-#~ msgid ""
-#~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
-#~ "to use the same database as for authentication."
-#~ msgstr ""
-#~ "環境設定の保存場所として「データベース」を選択すると、Icinga Web 2は認証と"
-#~ "同じデータベースを使用します。"
-
-#~ msgid "Open authentication configuration"
-#~ msgstr "認証設定を行う画面へ"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "管理者権限を付与する。例：お知らせの管理"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "設定を保存しない"
-
-#~ msgid "- inherited -"
-#~ msgstr "- 継承 -"
-
-#~ msgid "The Icinga Project"
-#~ msgstr "Icingaプロジェクト"
+#~ msgid "no value given"
+#~ msgstr "値が設定されていません（null）"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 9cdbfb1\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-09-21 13:55+0000\n"
+"POT-Creation-Date: 2021-09-27 12:13+0000\n"
 "PO-Revision-Date: 2020-04-30 16:15+0200\n"
 "Last-Translator: Juan Cruz Fernandez <juancruz.f87@gmail.com>\n"
 "Language-Team: \n"
@@ -69,7 +69,7 @@ msgstr "Navegación no encontrada"
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:107
 #: sources.d/icingadb-web/application/forms/Command/Object/SendCustomNotificationForm.php:75
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:33
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:99
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:100
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:65
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:230
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:315
@@ -2374,6 +2374,11 @@ msgstr ""
 #, fuzzy
 msgid "Object Attributes"
 msgstr "Resumen de alertas"
+
+#: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:207
+#: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:253
+msgid "n. a."
+msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ServiceLink.php:26
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:101
@@ -4925,7 +4930,7 @@ msgstr ""
 msgid "Is not a valid column"
 msgstr "'%s' no es un número valido"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:348
+#: sources.d/icingadb-web/library/Icingadb/Web/Controller.php:345
 #, fuzzy
 msgid "Show bulk processing actions for all filtered results"
 msgstr ""
@@ -5019,23 +5024,27 @@ msgid "This acknowledgement is sticky."
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:57
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:109
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:110
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:63
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:10
 msgid "Details"
 msgstr "Detalles"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:54
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:69
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:55
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:70
 #, php-format
 msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] ""
 msgstr[1] ""
 
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CustomVarTable.php:85
+msgid "empty string"
+msgstr ""
+
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:123
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:175
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:148
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:153
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:289
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:254
 msgid "Scheduled Start"
@@ -5043,7 +5052,7 @@ msgstr "Inicio programado"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:136
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:190
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:152
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:157
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:293
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:255
 msgid "Scheduled End"
@@ -5069,71 +5078,77 @@ msgstr "Iniciar"
 msgid "End"
 msgstr "Fin"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:103
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:104
 #, php-format
 msgctxt "<username> ..: <comment>"
 msgid "%s commented: %s"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:113
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:114
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:238
 #, fuzzy
 msgid "Triggered By"
 msgstr "Tiempo de disparador"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:116
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:117
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:241
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:660
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:124
 msgid "Parent"
 msgstr "Padre"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:124
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:125
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:256
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseDowntimeListItem.php:137
 #, fuzzy, php-format
 msgid "{{#link}}Flexible Downtime{{/link}} for %s"
 msgstr "Tiempo de inactividad flexible por %s"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:125
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:126
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:257
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseDowntimeListItem.php:143
 #, php-format
 msgid "{{#link}}Fixed Downtime{{/link}} for %s"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:136
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:137
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:229
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:52
 msgid "Created"
 msgstr "Creado"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:140
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:141
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/SyncRunDetails.php:25
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:511
 msgid "Start time"
 msgstr "Hora de inicio"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:144
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:150
+#, fuzzy
+msgid "Not started yet"
+msgstr "El tiempo de inactividad comenzó"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:147
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:512
 msgid "End time"
 msgstr "Tiempo de finalización"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:156
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:161
 msgid "Scheduled Duration"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:163
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:168
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:191
 msgid "Flexible Duration"
 msgstr "Duración flexible"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:184
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:189
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:136
 msgid "Children"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:195
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:200
 msgid "Progress"
 msgstr ""
 
@@ -5289,6 +5304,12 @@ msgstr "Cancelar"
 msgid "Expires On"
 msgstr "Caduca"
 
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:340
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:443
+#, fuzzy
+msgid "Never"
+msgstr "Severidad"
+
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:345
 #, fuzzy
 msgid "This comment is tied to an acknowledgement"
@@ -5398,6 +5419,14 @@ msgstr "Estados de servicio"
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostDetail.php:29
 msgid "This host has no services"
 msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostMetaInfo.php:41
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostMetaInfo.php:45
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:64
+#, fuzzy
+msgctxt "address"
+msgid "None"
+msgstr "Ningún"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:53
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:48
@@ -5582,7 +5611,7 @@ msgstr[1] ""
 msgid "Summary"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:65
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:66
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistEntryForm.php:30
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:49
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatalistEntryTable.php:55
@@ -5591,7 +5620,7 @@ msgstr ""
 msgid "Label"
 msgstr "Etiqueta"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:66
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:67
 #: sources.d/icingaweb2-module-director/application/forms/CustomvarForm.php:21
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:50
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:59
@@ -5602,17 +5631,17 @@ msgstr "Etiqueta"
 msgid "Value"
 msgstr "Valor"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:67
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:68
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:38
 msgid "Min"
 msgstr "Mín"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:68
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:69
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:39
 msgid "Max"
 msgstr "Máximo"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:69
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:70
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:155
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:25
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:115
@@ -5622,7 +5651,7 @@ msgstr "Máximo"
 msgid "Warning"
 msgstr "Advertencia"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:70
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:71
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:158
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:55
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:26
@@ -5633,9 +5662,11 @@ msgstr "Advertencia"
 msgid "Critical"
 msgstr "Critico"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:129
-msgid "no value given"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:132
+#, fuzzy
+msgctxt "value"
+msgid "None"
+msgstr "Ningún"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:68
 msgctxt "verb"
@@ -5653,11 +5684,25 @@ msgid "E-Mail"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:65
+#, fuzzy
+msgctxt "phone-number"
+msgid "None"
+msgstr "Ningún"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:65
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:41
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:22
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:34
 msgid "Pager"
 msgstr "Localizador"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:66
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:67
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:68
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/AdditionalTableActions.php:125
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/ToggleFlagList.php:125
+msgid "All"
+msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:66
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hostgroups.phtml:32
@@ -15720,11 +15765,6 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/AdditionalTableActions.php:125
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/ToggleFlagList.php:125
-msgid "All"
-msgstr ""
-
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:24
 #: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:49
 msgid "Schedule"
@@ -25551,103 +25591,17 @@ msgstr "El tiempo de borrado"
 msgid "Clear Filter"
 msgstr "Filtro"
 
-#, fuzzy
-#~ msgid ""
-#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
-#~ "required."
-#~ msgstr ""
-#~ "Para acceder al IDO almacenado en una base de datos MySQL, se requiere el "
-#~ "módulo PDO-MySQL para PHP."
+#~ msgid "The Icinga Project"
+#~ msgstr "EL proyecto Icinga"
 
-#, fuzzy
-#~ msgid "This item has been commented"
-#~ msgstr "La configuración fue validada de manera exitosa."
+#~ msgid "Don't Store Preferences"
+#~ msgstr "No guardar las preferencias"
 
-#, fuzzy
-#~ msgid "modifications"
-#~ msgstr "Notificaciones"
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "Conceder permisos de administrador, ej. manejar anuncios"
 
-#, fuzzy
-#~ msgid ""
-#~ "To view the most recent state information in Icinga DB Web, the Redis "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "Para enviar comandos externos a través de la API de Icinga 2, se requiere "
-#~ "el módulo cURL para PHP."
-
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
-#~ msgstr ""
-#~ "Para acceder al IDO almacenado en una base de datos MySQL, se requiere el "
-#~ "módulo PDO-MySQL para PHP."
-
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "Adaptador de base de datos Zend para MySQL"
-
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr ""
-#~ "Se requiere el adaptador de base de datos Zend para MySQL para acceder a "
-#~ "una base de datos MySQL."
-
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "Para acceder al IDO almacenado en una base de datos PostgreSQL, se "
-#~ "requiere el módulo PDO-PostgreSQL para PHP."
-
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "Adaptador de base de datos Zend para PostgreSQL"
-
-#~ msgid ""
-#~ "The Zend database adapter for PostgreSQL is required to access a "
-#~ "PostgreSQL database."
-#~ msgstr ""
-#~ "El adaptador de base de datos Zend para PostgreSQL es necesario para "
-#~ "acceder a una base de datos PostgreSQL."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "El adaptador de base de datos Zend para MySQL está disponible."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "Falta el adaptador de base de datos Zend para MySQL."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "El adaptador de base de datos Zend para PostgreSQL está disponible."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "Falta el adaptador de base de datos Zend para PostgreSQL."
-
-#, fuzzy
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "La ejecución de Icinga Web 2 requiere la versión 5.6 de PHP."
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Tipo de objeto"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Historia"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Lista de servicios"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Tipo de comentario"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Tiempo del evento"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Abrir configuración de autenticación"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -25657,14 +25611,100 @@ msgstr "Filtro"
 #~ "preferencias hace que Icinga Web 2 use la misma base de datos que para la "
 #~ "autenticación."
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Abrir configuración de autenticación"
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Tiempo del evento"
 
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "Conceder permisos de administrador, ej. manejar anuncios"
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Tipo de comentario"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "No guardar las preferencias"
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Lista de servicios"
 
-#~ msgid "The Icinga Project"
-#~ msgstr "EL proyecto Icinga"
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Historia"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Tipo de objeto"
+
+#, fuzzy
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "La ejecución de Icinga Web 2 requiere la versión 5.6 de PHP."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "Falta el adaptador de base de datos Zend para PostgreSQL."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "El adaptador de base de datos Zend para PostgreSQL está disponible."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "Falta el adaptador de base de datos Zend para MySQL."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "El adaptador de base de datos Zend para MySQL está disponible."
+
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "El adaptador de base de datos Zend para PostgreSQL es necesario para "
+#~ "acceder a una base de datos PostgreSQL."
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "Adaptador de base de datos Zend para PostgreSQL"
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Para acceder al IDO almacenado en una base de datos PostgreSQL, se "
+#~ "requiere el módulo PDO-PostgreSQL para PHP."
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr ""
+#~ "Se requiere el adaptador de base de datos Zend para MySQL para acceder a "
+#~ "una base de datos MySQL."
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "Adaptador de base de datos Zend para MySQL"
+
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
+#~ msgstr ""
+#~ "Para acceder al IDO almacenado en una base de datos MySQL, se requiere el "
+#~ "módulo PDO-MySQL para PHP."
+
+#, fuzzy
+#~ msgid ""
+#~ "To view the most recent state information in Icinga DB Web, the Redis "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Para enviar comandos externos a través de la API de Icinga 2, se requiere "
+#~ "el módulo cURL para PHP."
+
+#, fuzzy
+#~ msgid "modifications"
+#~ msgstr "Notificaciones"
+
+#, fuzzy
+#~ msgid "This item has been commented"
+#~ msgstr "La configuración fue validada de manera exitosa."
+
+#, fuzzy
+#~ msgid ""
+#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
+#~ "required."
+#~ msgstr ""
+#~ "Para acceder al IDO almacenado en una base de datos MySQL, se requiere el "
+#~ "módulo PDO-MySQL para PHP."
