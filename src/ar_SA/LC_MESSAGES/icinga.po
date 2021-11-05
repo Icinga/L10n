@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-11-04 14:16+0000\n"
+"POT-Creation-Date: 2021-11-05 12:41+0000\n"
 "PO-Revision-Date: 2020-04-27 14:37+0200\n"
 "Last-Translator: Munzir Taha <munzirtaha@gmail.com>\n"
 "Language-Team: English <trans-ar@lists.fedoraproject.org>\n"
@@ -1031,25 +1031,25 @@ msgid "Disabled event handlers checks successfully"
 msgstr "تعطيل معالجات الحدث.."
 
 #: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:83
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:85
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:93
 #, fuzzy
 msgid "Enabled flap detection successfully"
 msgstr "تفعيل كشف التذبذب.."
 
 #: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:85
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:87
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:95
 #, fuzzy
 msgid "Disabled flap detection successfully"
 msgstr "تعطيل فحص التذبذب.."
 
 #: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:91
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:93
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:101
 #, fuzzy
 msgid "Enabled notifications successfully"
 msgstr "تفعيل التنبيهات.."
 
 #: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:93
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:95
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:103
 #, fuzzy
 msgid "Disabled notifications successfully"
 msgstr "تعطيل التنبيهات"
@@ -1065,7 +1065,7 @@ msgid "Disabled performance data successfully"
 msgstr "تعطيل بيانات الأداء.."
 
 #: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:106
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:100
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:108
 msgid "Invalid feature option"
 msgstr ""
 
@@ -1680,30 +1680,40 @@ msgstr "تعطيل الفحوصات النشطة.."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:77
 #, fuzzy
+msgid "Enabled passive checks successfully"
+msgstr "تفعيل فحوصات نشطة.."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:79
+#, fuzzy
+msgid "Disabled passive checks successfully"
+msgstr "تعطيل الفحوصات النشطة.."
+
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:85
+#, fuzzy
 msgid "Enabled event handler successfully"
 msgstr "تفعيل معالجات حدث.."
 
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:79
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:87
 #, fuzzy
 msgid "Disabled event handler checks successfully"
 msgstr "تعطيل معالجات الحدث.."
 
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:125
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:133
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:84
 msgid "Multiple Values"
 msgstr ""
 
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:127
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:135
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:87
 msgid "Leave Unchanged"
 msgstr ""
 
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:128
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:136
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:88
 msgid "Disable All"
 msgstr ""
 
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:129
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:137
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:89
 msgid "Enable All"
 msgstr ""
@@ -25526,41 +25536,30 @@ msgid "Clear Filter"
 msgstr "مرشح"
 
 #, fuzzy
-#~ msgid ""
-#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
-#~ "required."
-#~ msgstr ""
-#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
-#~ "MySQL للـ PHP مطلوبة."
+#~ msgid "in:"
+#~ msgstr "أدنى"
+
+#~ msgid "The Icinga Project"
+#~ msgstr "مشروع إسنجا"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "عدم تخزين التفضيلات"
 
 #, fuzzy
-#~ msgid "This item has been commented"
-#~ msgstr "تم التحقق من الإعداد بنجاح."
+#~ msgid "History Event Type"
+#~ msgstr "نوع التعليق"
 
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
-#~ msgstr ""
-#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
-#~ "MySQL للـ PHP مطلوبة."
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "سرد الخدمات"
 
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "محول زند لقاعدة بيانات ماي سيكول"
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "المحفوظات"
 
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr "مطلوب محول قاعدة بيانات زند لـ MySQL للوصول إلى قاعدة بيانات MySQL."
-
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات PostgreSQL فإن وحدة PDO-"
-#~ "PostgreSQL للـ PHP مطلوبة."
-
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "محول زند لقاعدة بيانات بوستجرى إس كيو إل"
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "نوع الكائن"
 
 #~ msgid ""
 #~ "The Zend database adapter for PostgreSQL is required to access a "
@@ -25569,28 +25568,39 @@ msgstr "مرشح"
 #~ "مطلوب محول قاعدة بيانات زند لـ PostgreSQL للوصول إلى قاعدة بيانات "
 #~ "PostgreSQL."
 
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "نوع الكائن"
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "محول زند لقاعدة بيانات بوستجرى إس كيو إل"
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات PostgreSQL فإن وحدة PDO-"
+#~ "PostgreSQL للـ PHP مطلوبة."
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr "مطلوب محول قاعدة بيانات زند لـ MySQL للوصول إلى قاعدة بيانات MySQL."
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "محول زند لقاعدة بيانات ماي سيكول"
+
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
+#~ msgstr ""
+#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
+#~ "MySQL للـ PHP مطلوبة."
 
 #, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "المحفوظات"
+#~ msgid "This item has been commented"
+#~ msgstr "تم التحقق من الإعداد بنجاح."
 
 #, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "سرد الخدمات"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "نوع التعليق"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "عدم تخزين التفضيلات"
-
-#~ msgid "The Icinga Project"
-#~ msgstr "مشروع إسنجا"
-
-#, fuzzy
-#~ msgid "in:"
-#~ msgstr "أدنى"
+#~ msgid ""
+#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
+#~ "required."
+#~ msgstr ""
+#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
+#~ "MySQL للـ PHP مطلوبة."
