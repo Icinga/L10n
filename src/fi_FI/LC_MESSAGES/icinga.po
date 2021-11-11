@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-11-10 15:22+0000\n"
+"POT-Creation-Date: 2021-11-11 15:51+0000\n"
 "PO-Revision-Date: 2020-04-27 14:34+0200\n"
 "Last-Translator: Mikko Peltokangas <mikko@peltokangas.org>\n"
 "Language-Team: \n"
@@ -1821,6 +1821,35 @@ msgstr ""
 msgid "The configuration has been successfully validated."
 msgstr ""
 
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:23
+msgid "Use icinga DB as backend for all modules"
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:24
+msgid "Use icinga db as backend resource for all modules"
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:33
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:394
+msgid "Save to the Preferences"
+msgstr "Tallenna asetuksiin"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:44
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:406
+msgid "Save for the current Session"
+msgstr "Tallenna istunto"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:100
+#, fuzzy
+msgid "Preference successfully saved"
+msgstr "Asetukset tallennettu"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:102
+#, fuzzy
+msgid "Preference successfully saved for the current session"
+msgstr "Istunnon asetukset tallennettu"
+
 #: sources.d/icingadb-web/application/views/scripts/joystickPagination-icingadb.phtml:5
 #: sources.d/icingaweb2/application/views/scripts/joystickPagination.phtml:5
 #, php-format
@@ -2271,20 +2300,34 @@ msgstr ""
 msgid "Configure the database backend"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:544
+#: sources.d/icingadb-web/configuration.php:546
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:55
+#: sources.d/icingaweb2-module-graphite/configuration.php:12
+#: sources.d/icingaweb2-module-reporting/configuration.php:24
+#: sources.d/icingaweb2-module-x509/configuration.php:24
+#: sources.d/icingaweb2/application/views/scripts/config/userbackend/reorder.phtml:38
+#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:4
+msgid "Backend"
+msgstr ""
+
+#: sources.d/icingadb-web/configuration.php:547
+msgid "Configure IcingaDB as the Backend"
+msgstr ""
+
+#: sources.d/icingadb-web/configuration.php:553
 msgid "Redis"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:545
+#: sources.d/icingadb-web/configuration.php:554
 msgid "Configure the Redis connections"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:549
+#: sources.d/icingadb-web/configuration.php:558
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:62
 msgid "Command Transports"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:550
+#: sources.d/icingadb-web/configuration.php:559
 msgid "Configure command transports"
 msgstr ""
 
@@ -6488,15 +6531,6 @@ msgstr "Kuvaus"
 msgid ""
 "A slightly more detailed description for this process, about 100-150 "
 "characters long"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:55
-#: sources.d/icingaweb2-module-graphite/configuration.php:12
-#: sources.d/icingaweb2-module-reporting/configuration.php:24
-#: sources.d/icingaweb2-module-x509/configuration.php:24
-#: sources.d/icingaweb2/application/views/scripts/config/userbackend/reorder.phtml:38
-#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:4
-msgid "Backend"
 msgstr ""
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:57
@@ -18113,11 +18147,6 @@ msgid ""
 "being displayed"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:394
-msgid "Save to the Preferences"
-msgstr "Tallenna asetuksiin"
-
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:139
 msgid "Preferences successfully saved"
 msgstr "Asetukset tallennettu"
@@ -18240,10 +18269,6 @@ msgstr ""
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:381
 msgid "Default number of items per page for list views"
 msgstr ""
-
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:406
-msgid "Save for the current Session"
-msgstr "Tallenna istunto"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:65
 msgid "Role Name"
@@ -24514,8 +24539,8 @@ msgstr ""
 msgid "Clear Filter"
 msgstr "Suodatettu"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Älä talleta asetuksia"
-
 #~ msgid "The Icinga Project"
 #~ msgstr "The Icinga Project"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Älä talleta asetuksia"

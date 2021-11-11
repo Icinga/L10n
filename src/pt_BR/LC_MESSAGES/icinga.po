@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-11-10 15:22+0000\n"
+"POT-Creation-Date: 2021-11-11 15:51+0000\n"
 "PO-Revision-Date: 2020-04-27 14:55+0200\n"
 "Last-Translator: Carlos Cesario <carloscesario@gmail.com>\n"
 "Language-Team: \n"
@@ -1868,6 +1868,35 @@ msgstr ""
 msgid "The configuration has been successfully validated."
 msgstr ""
 
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:23
+msgid "Use icinga DB as backend for all modules"
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:24
+msgid "Use icinga db as backend resource for all modules"
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:33
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:394
+msgid "Save to the Preferences"
+msgstr "Salvar preferências"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:44
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:406
+msgid "Save for the current Session"
+msgstr "Salvar para a sessão atual"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:100
+#, fuzzy
+msgid "Preference successfully saved"
+msgstr "Preferências salvas com sucesso"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:102
+#, fuzzy
+msgid "Preference successfully saved for the current session"
+msgstr "Preferências salvas com sucesso para a sessão atual"
+
 #: sources.d/icingadb-web/application/views/scripts/joystickPagination-icingadb.phtml:5
 #: sources.d/icingaweb2/application/views/scripts/joystickPagination.phtml:5
 #, php-format
@@ -2337,20 +2366,34 @@ msgstr "Visão geral dos eventos"
 msgid "Configure the database backend"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:544
+#: sources.d/icingadb-web/configuration.php:546
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:55
+#: sources.d/icingaweb2-module-graphite/configuration.php:12
+#: sources.d/icingaweb2-module-reporting/configuration.php:24
+#: sources.d/icingaweb2-module-x509/configuration.php:24
+#: sources.d/icingaweb2/application/views/scripts/config/userbackend/reorder.phtml:38
+#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:4
+msgid "Backend"
+msgstr ""
+
+#: sources.d/icingadb-web/configuration.php:547
+msgid "Configure IcingaDB as the Backend"
+msgstr ""
+
+#: sources.d/icingadb-web/configuration.php:553
 msgid "Redis"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:545
+#: sources.d/icingadb-web/configuration.php:554
 msgid "Configure the Redis connections"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:549
+#: sources.d/icingadb-web/configuration.php:558
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:62
 msgid "Command Transports"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:550
+#: sources.d/icingadb-web/configuration.php:559
 msgid "Configure command transports"
 msgstr ""
 
@@ -6838,15 +6881,6 @@ msgstr "Descrição"
 msgid ""
 "A slightly more detailed description for this process, about 100-150 "
 "characters long"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:55
-#: sources.d/icingaweb2-module-graphite/configuration.php:12
-#: sources.d/icingaweb2-module-reporting/configuration.php:24
-#: sources.d/icingaweb2-module-x509/configuration.php:24
-#: sources.d/icingaweb2/application/views/scripts/config/userbackend/reorder.phtml:38
-#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:4
-msgid "Backend"
 msgstr ""
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:57
@@ -18480,11 +18514,6 @@ msgid ""
 "being displayed"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:394
-msgid "Save to the Preferences"
-msgstr "Salvar preferências"
-
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:139
 msgid "Preferences successfully saved"
 msgstr "Preferências salvas com sucesso"
@@ -18607,10 +18636,6 @@ msgstr ""
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:381
 msgid "Default number of items per page for list views"
 msgstr ""
-
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:406
-msgid "Save for the current Session"
-msgstr "Salvar para a sessão atual"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:65
 msgid "Role Name"
@@ -24941,17 +24966,17 @@ msgstr "Apagar comentário"
 msgid "Clear Filter"
 msgstr "Filtrado"
 
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Não salvar as preferências"
+
 #, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Tipo do objeto"
+#~ msgid "History Event Type"
+#~ msgstr "Tipo do comentário"
 
 #, fuzzy
 #~ msgid "History Host Id"
 #~ msgstr "Histórico"
 
 #, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Tipo do comentário"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Não salvar as preferências"
+#~ msgid "History Object Type"
+#~ msgstr "Tipo do objeto"
