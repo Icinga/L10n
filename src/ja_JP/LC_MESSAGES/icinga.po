@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-11-10 15:22+0000\n"
+"POT-Creation-Date: 2021-11-11 15:51+0000\n"
 "PO-Revision-Date: 2020-04-27 14:54+0200\n"
 "Last-Translator: papillon326 <udagawa@www2178ue.sakura.ne.jp>\n"
 "Language-Team: \n"
@@ -1867,6 +1867,35 @@ msgstr ""
 msgid "The configuration has been successfully validated."
 msgstr "構成は正常に検証されました。"
 
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:23
+msgid "Use icinga DB as backend for all modules"
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:24
+msgid "Use icinga db as backend resource for all modules"
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:33
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:394
+msgid "Save to the Preferences"
+msgstr "設定を保存"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:44
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:406
+msgid "Save for the current Session"
+msgstr "現在のセッション用に保存"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:100
+#, fuzzy
+msgid "Preference successfully saved"
+msgstr "アカウント設定を保存しました"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:102
+#, fuzzy
+msgid "Preference successfully saved for the current session"
+msgstr "現在のセッション用にアカウント設定を保存しました"
+
 #: sources.d/icingadb-web/application/views/scripts/joystickPagination-icingadb.phtml:5
 #: sources.d/icingaweb2/application/views/scripts/joystickPagination.phtml:5
 #, php-format
@@ -2355,20 +2384,34 @@ msgstr "イベント概要の表示"
 msgid "Configure the database backend"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:544
+#: sources.d/icingadb-web/configuration.php:546
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:55
+#: sources.d/icingaweb2-module-graphite/configuration.php:12
+#: sources.d/icingaweb2-module-reporting/configuration.php:24
+#: sources.d/icingaweb2-module-x509/configuration.php:24
+#: sources.d/icingaweb2/application/views/scripts/config/userbackend/reorder.phtml:38
+#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:4
+msgid "Backend"
+msgstr "バックエンド"
+
+#: sources.d/icingadb-web/configuration.php:547
+msgid "Configure IcingaDB as the Backend"
+msgstr ""
+
+#: sources.d/icingadb-web/configuration.php:553
 msgid "Redis"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:545
+#: sources.d/icingadb-web/configuration.php:554
 msgid "Configure the Redis connections"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:549
+#: sources.d/icingadb-web/configuration.php:558
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:62
 msgid "Command Transports"
 msgstr "コマンド転送方法一覧"
 
-#: sources.d/icingadb-web/configuration.php:550
+#: sources.d/icingadb-web/configuration.php:559
 msgid "Configure command transports"
 msgstr ""
 
@@ -6939,15 +6982,6 @@ msgid ""
 "A slightly more detailed description for this process, about 100-150 "
 "characters long"
 msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:55
-#: sources.d/icingaweb2-module-graphite/configuration.php:12
-#: sources.d/icingaweb2-module-reporting/configuration.php:24
-#: sources.d/icingaweb2-module-x509/configuration.php:24
-#: sources.d/icingaweb2/application/views/scripts/config/userbackend/reorder.phtml:38
-#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:4
-msgid "Backend"
-msgstr "バックエンド"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:57
 msgid ""
@@ -19153,11 +19187,6 @@ msgstr ""
 "ナビゲーション項目のアイコンを設定します。アイコンを表示したくない場合は空白"
 "のままにしてください。"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:394
-msgid "Save to the Preferences"
-msgstr "設定を保存"
-
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:139
 msgid "Preferences successfully saved"
 msgstr "アカウント設定を保存しました"
@@ -19288,10 +19317,6 @@ msgstr "デフォルトのページサイズ"
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:381
 msgid "Default number of items per page for list views"
 msgstr "1ページあたりに表示するデフォルトの項目数を設定してください"
-
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:406
-msgid "Save for the current Session"
-msgstr "現在のセッション用に保存"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:65
 msgid "Role Name"
@@ -25780,8 +25805,126 @@ msgid "Clear Filter"
 msgstr "フィルター"
 
 #, fuzzy
-#~ msgid "no value given"
-#~ msgstr "値が設定されていません（null）"
+#~ msgid "in:"
+#~ msgstr "分"
+
+#~ msgid "The Icinga Project"
+#~ msgstr "Icingaプロジェクト"
+
+#~ msgid "- inherited -"
+#~ msgstr "- 継承 -"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "設定を保存しない"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "管理者権限を付与する。例：お知らせの管理"
+
+#~ msgid "Open authentication configuration"
+#~ msgstr "認証設定を行う画面へ"
+
+#~ msgid ""
+#~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
+#~ "to use the same database as for authentication."
+#~ msgstr ""
+#~ "環境設定の保存場所として「データベース」を選択すると、Icinga Web 2は認証と"
+#~ "同じデータベースを使用します。"
+
+#~ msgid "Blacklist"
+#~ msgstr "ブラックリスト"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "ホスト変数から生成しました"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "イベント時間"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "コメントの種類"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "監視対象サービス"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "履歴"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "オブジェクトタイプ"
+
+#, fuzzy
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "Icinga Web 2を実行するには、PHPバージョン5.6が必要です。"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "PostgreSQL用のZendデータベースアダプタがありません。"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "PostgreSQL用のZendデータベースアダプタは利用可能です"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "MySQL用のZendデータベースアダプタが存在しません"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "MySQL用のZendデータベースアダプタは利用可能です"
+
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "PostgreSQLデータベースにアクセスするには、PostgreSQL用のZendデータベースア"
+#~ "ダプタが必要です。"
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "PostgreSQL用Zendデータベースアダプタ"
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "PostgreSQLデータベースに格納されているIDOにアクセスするには、PHP用のPDO-"
+#~ "PostgreSQLモジュールが必要です。"
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr ""
+#~ "MySQLデータベースにアクセスするには、MySQL用のZendデータベースアダプタが必"
+#~ "要です。"
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "MySQL用Zendデータベースアダプタ"
+
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
+#~ msgstr ""
+#~ "MySQLデータベースに保存されているIDOにアクセスするには、PHP用のPDO-MySQLモ"
+#~ "ジュールが必要です。"
+
+#, fuzzy
+#~ msgid ""
+#~ "To view the most recent state information in Icinga DB Web, the Redis "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Icinga 2のAPIを介して外部コマンドを送信するには、PHP用のcURLモジュールが必"
+#~ "要です。"
+
+#, fuzzy
+#~ msgid "This object has been %s in this configuration %s"
+#~ msgstr "このセットは%sから継承されました"
+
+#, fuzzy
+#~ msgid "This item has been commented"
+#~ msgstr "このオブジェクトは有効化されています。"
 
 #, fuzzy
 #~ msgid ""
@@ -25792,123 +25935,5 @@ msgstr "フィルター"
 #~ "ジュールが必要です。"
 
 #, fuzzy
-#~ msgid "This item has been commented"
-#~ msgstr "このオブジェクトは有効化されています。"
-
-#, fuzzy
-#~ msgid "This object has been %s in this configuration %s"
-#~ msgstr "このセットは%sから継承されました"
-
-#, fuzzy
-#~ msgid ""
-#~ "To view the most recent state information in Icinga DB Web, the Redis "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "Icinga 2のAPIを介して外部コマンドを送信するには、PHP用のcURLモジュールが必"
-#~ "要です。"
-
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
-#~ msgstr ""
-#~ "MySQLデータベースに保存されているIDOにアクセスするには、PHP用のPDO-MySQLモ"
-#~ "ジュールが必要です。"
-
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "MySQL用Zendデータベースアダプタ"
-
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr ""
-#~ "MySQLデータベースにアクセスするには、MySQL用のZendデータベースアダプタが必"
-#~ "要です。"
-
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "PostgreSQLデータベースに格納されているIDOにアクセスするには、PHP用のPDO-"
-#~ "PostgreSQLモジュールが必要です。"
-
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "PostgreSQL用Zendデータベースアダプタ"
-
-#~ msgid ""
-#~ "The Zend database adapter for PostgreSQL is required to access a "
-#~ "PostgreSQL database."
-#~ msgstr ""
-#~ "PostgreSQLデータベースにアクセスするには、PostgreSQL用のZendデータベースア"
-#~ "ダプタが必要です。"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "MySQL用のZendデータベースアダプタは利用可能です"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "MySQL用のZendデータベースアダプタが存在しません"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "PostgreSQL用のZendデータベースアダプタは利用可能です"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "PostgreSQL用のZendデータベースアダプタがありません。"
-
-#, fuzzy
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "Icinga Web 2を実行するには、PHPバージョン5.6が必要です。"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "オブジェクトタイプ"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "履歴"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "監視対象サービス"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "コメントの種類"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "イベント時間"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "ホスト変数から生成しました"
-
-#~ msgid "Blacklist"
-#~ msgstr "ブラックリスト"
-
-#~ msgid ""
-#~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
-#~ "to use the same database as for authentication."
-#~ msgstr ""
-#~ "環境設定の保存場所として「データベース」を選択すると、Icinga Web 2は認証と"
-#~ "同じデータベースを使用します。"
-
-#~ msgid "Open authentication configuration"
-#~ msgstr "認証設定を行う画面へ"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "管理者権限を付与する。例：お知らせの管理"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "設定を保存しない"
-
-#~ msgid "- inherited -"
-#~ msgstr "- 継承 -"
-
-#~ msgid "The Icinga Project"
-#~ msgstr "Icingaプロジェクト"
-
-#, fuzzy
-#~ msgid "in:"
-#~ msgstr "分"
+#~ msgid "no value given"
+#~ msgstr "値が設定されていません（null）"

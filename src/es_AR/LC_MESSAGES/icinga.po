@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 9cdbfb1\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-11-10 15:22+0000\n"
+"POT-Creation-Date: 2021-11-11 15:51+0000\n"
 "PO-Revision-Date: 2020-04-30 16:15+0200\n"
 "Last-Translator: Juan Cruz Fernandez <juancruz.f87@gmail.com>\n"
 "Language-Team: \n"
@@ -1902,6 +1902,35 @@ msgstr ""
 msgid "The configuration has been successfully validated."
 msgstr "La configuración fue validada de manera exitosa."
 
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:23
+msgid "Use icinga DB as backend for all modules"
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:24
+msgid "Use icinga db as backend resource for all modules"
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:33
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:394
+msgid "Save to the Preferences"
+msgstr "Guardar en las preferencias"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:44
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:406
+msgid "Save for the current Session"
+msgstr "Guardar para la sesión actual"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:100
+#, fuzzy
+msgid "Preference successfully saved"
+msgstr "Preferencias guardadas exitosamente"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:102
+#, fuzzy
+msgid "Preference successfully saved for the current session"
+msgstr "Preferencias  guardadas exitosamente para la sesión activa"
+
 #: sources.d/icingadb-web/application/views/scripts/joystickPagination-icingadb.phtml:5
 #: sources.d/icingaweb2/application/views/scripts/joystickPagination.phtml:5
 #, php-format
@@ -2397,20 +2426,34 @@ msgstr "Abrir resumen de evento"
 msgid "Configure the database backend"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:544
+#: sources.d/icingadb-web/configuration.php:546
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:55
+#: sources.d/icingaweb2-module-graphite/configuration.php:12
+#: sources.d/icingaweb2-module-reporting/configuration.php:24
+#: sources.d/icingaweb2-module-x509/configuration.php:24
+#: sources.d/icingaweb2/application/views/scripts/config/userbackend/reorder.phtml:38
+#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:4
+msgid "Backend"
+msgstr "Backend"
+
+#: sources.d/icingadb-web/configuration.php:547
+msgid "Configure IcingaDB as the Backend"
+msgstr ""
+
+#: sources.d/icingadb-web/configuration.php:553
 msgid "Redis"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:545
+#: sources.d/icingadb-web/configuration.php:554
 msgid "Configure the Redis connections"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:549
+#: sources.d/icingadb-web/configuration.php:558
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:62
 msgid "Command Transports"
 msgstr "Comandos de transporte"
 
-#: sources.d/icingadb-web/configuration.php:550
+#: sources.d/icingadb-web/configuration.php:559
 msgid "Configure command transports"
 msgstr ""
 
@@ -6967,15 +7010,6 @@ msgid ""
 "A slightly more detailed description for this process, about 100-150 "
 "characters long"
 msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:55
-#: sources.d/icingaweb2-module-graphite/configuration.php:12
-#: sources.d/icingaweb2-module-reporting/configuration.php:24
-#: sources.d/icingaweb2-module-x509/configuration.php:24
-#: sources.d/icingaweb2/application/views/scripts/config/userbackend/reorder.phtml:38
-#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:4
-msgid "Backend"
-msgstr "Backend"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:57
 msgid ""
@@ -18744,11 +18778,6 @@ msgstr ""
 "El icono de este item de navegación. Dejar en blanco si  no quieres que se "
 "muestre   ningún icono"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:394
-msgid "Save to the Preferences"
-msgstr "Guardar en las preferencias"
-
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:139
 msgid "Preferences successfully saved"
 msgstr "Preferencias guardadas exitosamente"
@@ -18884,10 +18913,6 @@ msgstr "Tamaño de página por defecto"
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:381
 msgid "Default number of items per page for list views"
 msgstr "Número de items por página por defecto para visualización de listas"
-
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:406
-msgid "Save for the current Session"
-msgstr "Guardar para la sesión actual"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:65
 msgid "Role Name"
@@ -25747,98 +25772,20 @@ msgid "Clear Filter"
 msgstr "Filtro"
 
 #, fuzzy
-#~ msgid ""
-#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
-#~ "required."
-#~ msgstr ""
-#~ "Para acceder al IDO almacenado en una base de datos MySQL, se requiere el "
-#~ "módulo PDO-MySQL para PHP."
+#~ msgid "in:"
+#~ msgstr "Mín"
 
-#, fuzzy
-#~ msgid "This item has been commented"
-#~ msgstr "La configuración fue validada de manera exitosa."
+#~ msgid "The Icinga Project"
+#~ msgstr "EL proyecto Icinga"
 
-#, fuzzy
-#~ msgid ""
-#~ "To view the most recent state information in Icinga DB Web, the Redis "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "Para enviar comandos externos a través de la API de Icinga 2, se requiere "
-#~ "el módulo cURL para PHP."
+#~ msgid "Don't Store Preferences"
+#~ msgstr "No guardar las preferencias"
 
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
-#~ msgstr ""
-#~ "Para acceder al IDO almacenado en una base de datos MySQL, se requiere el "
-#~ "módulo PDO-MySQL para PHP."
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "Conceder permisos de administrador, ej. manejar anuncios"
 
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "Adaptador de base de datos Zend para MySQL"
-
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr ""
-#~ "Se requiere el adaptador de base de datos Zend para MySQL para acceder a "
-#~ "una base de datos MySQL."
-
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "Para acceder al IDO almacenado en una base de datos PostgreSQL, se "
-#~ "requiere el módulo PDO-PostgreSQL para PHP."
-
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "Adaptador de base de datos Zend para PostgreSQL"
-
-#~ msgid ""
-#~ "The Zend database adapter for PostgreSQL is required to access a "
-#~ "PostgreSQL database."
-#~ msgstr ""
-#~ "El adaptador de base de datos Zend para PostgreSQL es necesario para "
-#~ "acceder a una base de datos PostgreSQL."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "El adaptador de base de datos Zend para MySQL está disponible."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "Falta el adaptador de base de datos Zend para MySQL."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "El adaptador de base de datos Zend para PostgreSQL está disponible."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "Falta el adaptador de base de datos Zend para PostgreSQL."
-
-#, fuzzy
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "La ejecución de Icinga Web 2 requiere la versión 5.6 de PHP."
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Tipo de objeto"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Historia"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Lista de servicios"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Tipo de comentario"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Tiempo del evento"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Abrir configuración de autenticación"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -25848,18 +25795,96 @@ msgstr "Filtro"
 #~ "preferencias hace que Icinga Web 2 use la misma base de datos que para la "
 #~ "autenticación."
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Abrir configuración de autenticación"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "Conceder permisos de administrador, ej. manejar anuncios"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "No guardar las preferencias"
-
-#~ msgid "The Icinga Project"
-#~ msgstr "EL proyecto Icinga"
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Tiempo del evento"
 
 #, fuzzy
-#~ msgid "in:"
-#~ msgstr "Mín"
+#~ msgid "History Event Type"
+#~ msgstr "Tipo de comentario"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Lista de servicios"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Historia"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Tipo de objeto"
+
+#, fuzzy
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "La ejecución de Icinga Web 2 requiere la versión 5.6 de PHP."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "Falta el adaptador de base de datos Zend para PostgreSQL."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "El adaptador de base de datos Zend para PostgreSQL está disponible."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "Falta el adaptador de base de datos Zend para MySQL."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "El adaptador de base de datos Zend para MySQL está disponible."
+
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "El adaptador de base de datos Zend para PostgreSQL es necesario para "
+#~ "acceder a una base de datos PostgreSQL."
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "Adaptador de base de datos Zend para PostgreSQL"
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Para acceder al IDO almacenado en una base de datos PostgreSQL, se "
+#~ "requiere el módulo PDO-PostgreSQL para PHP."
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr ""
+#~ "Se requiere el adaptador de base de datos Zend para MySQL para acceder a "
+#~ "una base de datos MySQL."
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "Adaptador de base de datos Zend para MySQL"
+
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
+#~ msgstr ""
+#~ "Para acceder al IDO almacenado en una base de datos MySQL, se requiere el "
+#~ "módulo PDO-MySQL para PHP."
+
+#, fuzzy
+#~ msgid ""
+#~ "To view the most recent state information in Icinga DB Web, the Redis "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Para enviar comandos externos a través de la API de Icinga 2, se requiere "
+#~ "el módulo cURL para PHP."
+
+#, fuzzy
+#~ msgid "This item has been commented"
+#~ msgstr "La configuración fue validada de manera exitosa."
+
+#, fuzzy
+#~ msgid ""
+#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
+#~ "required."
+#~ msgstr ""
+#~ "Para acceder al IDO almacenado en una base de datos MySQL, se requiere el "
+#~ "módulo PDO-MySQL para PHP."

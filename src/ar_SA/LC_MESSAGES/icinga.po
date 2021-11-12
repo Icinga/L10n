@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-11-10 15:22+0000\n"
+"POT-Creation-Date: 2021-11-11 15:51+0000\n"
 "PO-Revision-Date: 2020-04-27 14:37+0200\n"
 "Last-Translator: Munzir Taha <munzirtaha@gmail.com>\n"
 "Language-Team: English <trans-ar@lists.fedoraproject.org>\n"
@@ -1963,6 +1963,35 @@ msgstr ""
 msgid "The configuration has been successfully validated."
 msgstr "تم التحقق من الإعداد بنجاح."
 
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:23
+msgid "Use icinga DB as backend for all modules"
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:24
+msgid "Use icinga db as backend resource for all modules"
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:33
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:394
+msgid "Save to the Preferences"
+msgstr "حفظ للتفضيلات"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:44
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:406
+msgid "Save for the current Session"
+msgstr "حفظ للجلسة  الحالية"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:100
+#, fuzzy
+msgid "Preference successfully saved"
+msgstr "حُفظت الإعدادات بنجاح"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:102
+#, fuzzy
+msgid "Preference successfully saved for the current session"
+msgstr "حُفظت الإعدادات بنجاح للجلسة الحالية"
+
 #: sources.d/icingadb-web/application/views/scripts/joystickPagination-icingadb.phtml:5
 #: sources.d/icingaweb2/application/views/scripts/joystickPagination.phtml:5
 #, php-format
@@ -2442,20 +2471,34 @@ msgstr "نظرة عامة على الحدث"
 msgid "Configure the database backend"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:544
+#: sources.d/icingadb-web/configuration.php:546
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:55
+#: sources.d/icingaweb2-module-graphite/configuration.php:12
+#: sources.d/icingaweb2-module-reporting/configuration.php:24
+#: sources.d/icingaweb2-module-x509/configuration.php:24
+#: sources.d/icingaweb2/application/views/scripts/config/userbackend/reorder.phtml:38
+#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:4
+msgid "Backend"
+msgstr "خلفية"
+
+#: sources.d/icingadb-web/configuration.php:547
+msgid "Configure IcingaDB as the Backend"
+msgstr ""
+
+#: sources.d/icingadb-web/configuration.php:553
 msgid "Redis"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:545
+#: sources.d/icingadb-web/configuration.php:554
 msgid "Configure the Redis connections"
 msgstr ""
 
-#: sources.d/icingadb-web/configuration.php:549
+#: sources.d/icingadb-web/configuration.php:558
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:62
 msgid "Command Transports"
 msgstr "نواقل الأمر"
 
-#: sources.d/icingadb-web/configuration.php:550
+#: sources.d/icingadb-web/configuration.php:559
 msgid "Configure command transports"
 msgstr ""
 
@@ -7006,15 +7049,6 @@ msgid ""
 "A slightly more detailed description for this process, about 100-150 "
 "characters long"
 msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:55
-#: sources.d/icingaweb2-module-graphite/configuration.php:12
-#: sources.d/icingaweb2-module-reporting/configuration.php:24
-#: sources.d/icingaweb2-module-x509/configuration.php:24
-#: sources.d/icingaweb2/application/views/scripts/config/userbackend/reorder.phtml:38
-#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:4
-msgid "Backend"
-msgstr "خلفية"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:57
 msgid ""
@@ -18700,11 +18734,6 @@ msgid ""
 "being displayed"
 msgstr "أيقونة عنصر التنقل هذا. دعها فارغة إن لم ترد عرض الأيقونة"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:394
-msgid "Save to the Preferences"
-msgstr "حفظ للتفضيلات"
-
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:139
 msgid "Preferences successfully saved"
 msgstr "حُفظت الإعدادات بنجاح"
@@ -18833,10 +18862,6 @@ msgstr ""
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:381
 msgid "Default number of items per page for list views"
 msgstr ""
-
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:406
-msgid "Save for the current Session"
-msgstr "حفظ للجلسة  الحالية"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:65
 msgid "Role Name"
@@ -25561,41 +25586,30 @@ msgid "Clear Filter"
 msgstr "مرشح"
 
 #, fuzzy
-#~ msgid ""
-#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
-#~ "required."
-#~ msgstr ""
-#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
-#~ "MySQL للـ PHP مطلوبة."
+#~ msgid "in:"
+#~ msgstr "أدنى"
+
+#~ msgid "The Icinga Project"
+#~ msgstr "مشروع إسنجا"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "عدم تخزين التفضيلات"
 
 #, fuzzy
-#~ msgid "This item has been commented"
-#~ msgstr "تم التحقق من الإعداد بنجاح."
+#~ msgid "History Event Type"
+#~ msgstr "نوع التعليق"
 
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
-#~ msgstr ""
-#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
-#~ "MySQL للـ PHP مطلوبة."
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "سرد الخدمات"
 
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "محول زند لقاعدة بيانات ماي سيكول"
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "المحفوظات"
 
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr "مطلوب محول قاعدة بيانات زند لـ MySQL للوصول إلى قاعدة بيانات MySQL."
-
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات PostgreSQL فإن وحدة PDO-"
-#~ "PostgreSQL للـ PHP مطلوبة."
-
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "محول زند لقاعدة بيانات بوستجرى إس كيو إل"
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "نوع الكائن"
 
 #~ msgid ""
 #~ "The Zend database adapter for PostgreSQL is required to access a "
@@ -25604,28 +25618,39 @@ msgstr "مرشح"
 #~ "مطلوب محول قاعدة بيانات زند لـ PostgreSQL للوصول إلى قاعدة بيانات "
 #~ "PostgreSQL."
 
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "نوع الكائن"
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "محول زند لقاعدة بيانات بوستجرى إس كيو إل"
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات PostgreSQL فإن وحدة PDO-"
+#~ "PostgreSQL للـ PHP مطلوبة."
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr "مطلوب محول قاعدة بيانات زند لـ MySQL للوصول إلى قاعدة بيانات MySQL."
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "محول زند لقاعدة بيانات ماي سيكول"
+
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
+#~ msgstr ""
+#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
+#~ "MySQL للـ PHP مطلوبة."
 
 #, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "المحفوظات"
+#~ msgid "This item has been commented"
+#~ msgstr "تم التحقق من الإعداد بنجاح."
 
 #, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "سرد الخدمات"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "نوع التعليق"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "عدم تخزين التفضيلات"
-
-#~ msgid "The Icinga Project"
-#~ msgstr "مشروع إسنجا"
-
-#, fuzzy
-#~ msgid "in:"
-#~ msgstr "أدنى"
+#~ msgid ""
+#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
+#~ "required."
+#~ msgstr ""
+#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
+#~ "MySQL للـ PHP مطلوبة."

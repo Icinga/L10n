@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-11-10 15:22+0000\n"
+"POT-Creation-Date: 2021-11-11 15:51+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1924,6 +1924,35 @@ msgstr ""
 msgid "The configuration has been successfully validated."
 msgstr "Конфігурацію було успішно валідовано."
 
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:23
+msgid "Use icinga DB as backend for all modules"
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:24
+msgid "Use icinga db as backend resource for all modules"
+msgstr ""
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:33
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:394
+msgid "Save to the Preferences"
+msgstr "Зберегти до користувацьких налаштувань"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:44
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:406
+msgid "Save for the current Session"
+msgstr "Зберегти для поточної сесії"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:100
+#, fuzzy
+msgid "Preference successfully saved"
+msgstr "Користувацькі налаштування успішно збережено"
+
+#: sources.d/icingadb-web/application/forms/SetAsBackendConfigForm.php:102
+#, fuzzy
+msgid "Preference successfully saved for the current session"
+msgstr "Користувацькі налаштування успішно збережено для поточної сесії"
+
 #: sources.d/icingadb-web/application/views/scripts/joystickPagination-icingadb.phtml:5
 #: sources.d/icingaweb2/application/views/scripts/joystickPagination.phtml:5
 #, php-format
@@ -2418,20 +2447,35 @@ msgstr "Відкрити огляд подій"
 msgid "Configure the database backend"
 msgstr "Налаштування бекенду бази даних"
 
-#: sources.d/icingadb-web/configuration.php:544
+#: sources.d/icingadb-web/configuration.php:546
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:55
+#: sources.d/icingaweb2-module-graphite/configuration.php:12
+#: sources.d/icingaweb2-module-reporting/configuration.php:24
+#: sources.d/icingaweb2-module-x509/configuration.php:24
+#: sources.d/icingaweb2/application/views/scripts/config/userbackend/reorder.phtml:38
+#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:4
+msgid "Backend"
+msgstr "Бекенд"
+
+#: sources.d/icingadb-web/configuration.php:547
+#, fuzzy
+msgid "Configure IcingaDB as the Backend"
+msgstr "Налаштування бекенду бази даних"
+
+#: sources.d/icingadb-web/configuration.php:553
 msgid "Redis"
 msgstr "Redis"
 
-#: sources.d/icingadb-web/configuration.php:545
+#: sources.d/icingadb-web/configuration.php:554
 msgid "Configure the Redis connections"
 msgstr "Налаштування з'єднань Redis"
 
-#: sources.d/icingadb-web/configuration.php:549
+#: sources.d/icingadb-web/configuration.php:558
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/config/index.phtml:62
 msgid "Command Transports"
 msgstr "Командні транспорти"
 
-#: sources.d/icingadb-web/configuration.php:550
+#: sources.d/icingadb-web/configuration.php:559
 msgid "Configure command transports"
 msgstr "Налаштування командних транспортів"
 
@@ -7026,15 +7070,6 @@ msgid ""
 "A slightly more detailed description for this process, about 100-150 "
 "characters long"
 msgstr "Більш детальний опис цього процесу, приблизно 100-150 символів"
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:55
-#: sources.d/icingaweb2-module-graphite/configuration.php:12
-#: sources.d/icingaweb2-module-reporting/configuration.php:24
-#: sources.d/icingaweb2-module-x509/configuration.php:24
-#: sources.d/icingaweb2/application/views/scripts/config/userbackend/reorder.phtml:38
-#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:4
-msgid "Backend"
-msgstr "Бекенд"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:57
 msgid ""
@@ -19437,11 +19472,6 @@ msgstr ""
 "Іконка цього об'єкту навігації. Залишити пустим якщо у відображення іконки "
 "немає необхідності"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:394
-msgid "Save to the Preferences"
-msgstr "Зберегти до користувацьких налаштувань"
-
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:139
 msgid "Preferences successfully saved"
 msgstr "Користувацькі налаштування успішно збережено"
@@ -19576,10 +19606,6 @@ msgstr "Розмір сторінки за замовчуванням"
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:381
 msgid "Default number of items per page for list views"
 msgstr "Кількість елементів у списках на сторінку за замовчуванням"
-
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:406
-msgid "Save for the current Session"
-msgstr "Зберегти для поточної сесії"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:65
 msgid "Role Name"
@@ -26347,189 +26373,58 @@ msgstr "Видалити"
 msgid "Clear Filter"
 msgstr "Розрізати/Фільтрувати"
 
-#, fuzzy
-#~ msgid "Change UUID"
-#~ msgstr "UUID екземпляру"
+#~ msgid "Page %d"
+#~ msgstr "Сторінка %d"
 
 #, fuzzy
-#~ msgid "no value given"
-#~ msgstr "Не задавати значення (null)"
+#~ msgid "in:"
+#~ msgstr "Мін"
 
-#~ msgid ""
-#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
-#~ "required."
+#~ msgid "The Icinga Project"
+#~ msgstr "The Icinga Project"
+
+#~ msgid "No permission for %s"
+#~ msgstr "Немає дозволу для %s"
+
+#~ msgid "%s does not exist"
+#~ msgstr "%s не існує"
+
+#~ msgid "- inherited -"
+#~ msgstr "- унаслідувано -"
+
+#~ msgid "Delete Command Transport"
+#~ msgstr "Видалити Командний Транспорт"
+
+#~ msgid "Update Command Transport"
+#~ msgstr "Оновити Командний Транспорт"
+
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Підтвердити скасування %d простоїв."
+
+#~ msgid "Cancel downtimes"
+#~ msgstr "Скасувати простої"
+
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "Скасувати %d простоїв"
+
+#~ msgid "Update command transport %s"
+#~ msgstr "Оновити командний транспорт: %s"
+
+#~ msgid "Delete command transport %s"
+#~ msgstr "Видалити командний транспорт: %s"
+
+#~ msgid "Cancel Downtime"
+#~ msgstr "Відмінити простій"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Не зберігати користувацькі налаштування"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
 #~ msgstr ""
-#~ "Для доступу до бази даних MySQL Icinga DB необхідний PHP модуль PDO-MySQL."
+#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
 
-#~ msgid "Show all %d notifications"
-#~ msgstr "Показати всі %d сповіщення"
-
-#, fuzzy
-#~ msgid "This item has been commented"
-#~ msgstr "Цей об'єкт було увімкнено"
-
-#, fuzzy
-#~ msgid "This object has been %s in this configuration %s"
-#~ msgstr "Цей набір було успадковано від %s"
-
-#~ msgid "Unset"
-#~ msgstr "Не задано"
-
-#, fuzzy
-#~ msgid "Can't connect to Icinga Redis: phpredis>=4.3.0 required"
-#~ msgstr "Неможливо з'єднатися з Icinga Redis: %s"
-
-#~ msgid ""
-#~ "To view the most recent state information in Icinga DB Web, the Redis "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "Для перегляду останньої інформації у Icinga DB Web, необхідний PHP модуль "
-#~ "Redis."
-
-#~ msgid "The Redis module for PHP in version 4.3 and above requires PHP 7+"
-#~ msgstr "PHP модуль Redis версії новішої за 4.3 потребує PHP 7+"
-
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
-#~ msgstr ""
-#~ "Для доступу до IDO у базі даних MySQL необхідний модуль PHP PDO-MySQL."
-
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "Адаптер Zend для бази даних MySQL"
-
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr ""
-#~ "Для доступу до бази даних MySQL необхідний адаптер Zend для баз даних "
-#~ "MySQL."
-
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "Для доступу до IDO у базі даних PostgreSQL необхідний модуль PHP PDO-"
-#~ "PostgreSQL."
-
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "Адаптер Zend для бази даних PostgreSQL"
-
-#~ msgid ""
-#~ "The Zend database adapter for PostgreSQL is required to access a "
-#~ "PostgreSQL database."
-#~ msgstr ""
-#~ "Для доступу до бази даних PostgreSQL необхідний адаптер Zend для баз "
-#~ "даних PostgreSQL."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "Адаптер Zend для бази даних MySQL доступний."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "Адаптер Zend для бази даних MySQL відсутній."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "Адаптер Zend для бази даних PostgreSQL доступний."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "Адаптер Zend для бази даних PostgreSQL відстутній."
-
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "У версії 0.5+ необхідний IPL модуль для Icinga Web 2."
-
-#~ msgid "Action %d"
-#~ msgstr "Дія %d"
-
-#~ msgid "Note %d"
-#~ msgstr "Нотатка %d"
-
-#~ msgid "Continue with filter"
-#~ msgstr "Продовжити з фільтром"
-
-#~ msgid "Configure security related settings"
-#~ msgstr "Налаштування безпеки"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Тип об'єкту"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Історія"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Сервіси на моніторингу"
-
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Тип події"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Час події"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "Згенеровані з змінних хостів"
-
-#~ msgid ""
-#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
-#~ msgstr ""
-#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
-#~ "Web"
-
-#~ msgid "Keep only matching rows (Whitelist)"
-#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
-
-#~ msgid "Reject the whole row (Blacklist)"
-#~ msgstr "Відкинути весь рядок (blacklist)"
-
-#~ msgid "%s is no longer blacklisted on %s"
-#~ msgstr "%s більше не у чорному списку %s"
-
-#~ msgid "%s has been blacklisted on %s"
-#~ msgstr "%s було додано у чорний список %s"
-
-#~ msgid "Blacklist"
-#~ msgstr "Чорний список"
-
-#~ msgid "This Service has been blacklisted on this host"
-#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
-
-#~ msgid "Service Critical"
-#~ msgid_plural "Services Critical"
-#~ msgstr[0] "Критичний сервіс"
-#~ msgstr[1] "Критичних сервіси"
-#~ msgstr[2] "Критичних сервісів"
-
-#~ msgid "Host Down"
-#~ msgid_plural "Hosts Down"
-#~ msgstr[0] "Хост недоступний"
-#~ msgstr[1] "Хост недоступні"
-#~ msgstr[2] "Хост недоступні"
-
-#~ msgid "Open console with VMRC"
-#~ msgstr "Відкрити консоль VMRC"
-
-#~ msgid "Console"
-#~ msgstr "Консоль"
-
-#~ msgid "Vendor / Model"
-#~ msgstr "Вендор / Модель"
-
-#~ msgid "NICs"
-#~ msgstr "NIC"
-
-#~ msgid ""
-#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
-#~ "is it part of the description (indented with a single space)"
-#~ msgstr ""
-#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
-#~ "і не є частиною опису (починається з одного пробілу)"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Відкрити налаштування автентифікації"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -26539,55 +26434,186 @@ msgstr "Розрізати/Фільтрувати"
 #~ "користувацьких налаштувань призведе Icinga Web 2 до їх збереження у тій "
 #~ "же базі даних що використовується для автентифікації."
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Відкрити налаштування автентифікації"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgid ""
+#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
+#~ "is it part of the description (indented with a single space)"
 #~ msgstr ""
-#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
+#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
+#~ "і не є частиною опису (починається з одного пробілу)"
 
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Не зберігати користувацькі налаштування"
+#~ msgid "NICs"
+#~ msgstr "NIC"
 
-#~ msgid "Cancel Downtime"
-#~ msgstr "Відмінити простій"
+#~ msgid "Vendor / Model"
+#~ msgstr "Вендор / Модель"
 
-#~ msgid "Delete command transport %s"
-#~ msgstr "Видалити командний транспорт: %s"
+#~ msgid "Console"
+#~ msgstr "Консоль"
 
-#~ msgid "Update command transport %s"
-#~ msgstr "Оновити командний транспорт: %s"
+#~ msgid "Open console with VMRC"
+#~ msgstr "Відкрити консоль VMRC"
 
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "Скасувати %d простоїв"
+#~ msgid "Host Down"
+#~ msgid_plural "Hosts Down"
+#~ msgstr[0] "Хост недоступний"
+#~ msgstr[1] "Хост недоступні"
+#~ msgstr[2] "Хост недоступні"
 
-#~ msgid "Cancel downtimes"
-#~ msgstr "Скасувати простої"
+#~ msgid "Service Critical"
+#~ msgid_plural "Services Critical"
+#~ msgstr[0] "Критичний сервіс"
+#~ msgstr[1] "Критичних сервіси"
+#~ msgstr[2] "Критичних сервісів"
 
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Підтвердити скасування %d простоїв."
+#~ msgid "This Service has been blacklisted on this host"
+#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
 
-#~ msgid "Update Command Transport"
-#~ msgstr "Оновити Командний Транспорт"
+#~ msgid "Blacklist"
+#~ msgstr "Чорний список"
 
-#~ msgid "Delete Command Transport"
-#~ msgstr "Видалити Командний Транспорт"
+#~ msgid "%s has been blacklisted on %s"
+#~ msgstr "%s було додано у чорний список %s"
 
-#~ msgid "- inherited -"
-#~ msgstr "- унаслідувано -"
+#~ msgid "%s is no longer blacklisted on %s"
+#~ msgstr "%s більше не у чорному списку %s"
 
-#~ msgid "%s does not exist"
-#~ msgstr "%s не існує"
+#~ msgid "Reject the whole row (Blacklist)"
+#~ msgstr "Відкинути весь рядок (blacklist)"
 
-#~ msgid "No permission for %s"
-#~ msgstr "Немає дозволу для %s"
+#~ msgid "Keep only matching rows (Whitelist)"
+#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
 
-#~ msgid "The Icinga Project"
-#~ msgstr "The Icinga Project"
+#~ msgid ""
+#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
+#~ msgstr ""
+#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
+#~ "Web"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "Згенеровані з змінних хостів"
 
 #, fuzzy
-#~ msgid "in:"
-#~ msgstr "Мін"
+#~ msgid "History Event Time"
+#~ msgstr "Час події"
 
-#~ msgid "Page %d"
-#~ msgstr "Сторінка %d"
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Тип події"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Сервіси на моніторингу"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Історія"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Тип об'єкту"
+
+#~ msgid "Configure security related settings"
+#~ msgstr "Налаштування безпеки"
+
+#~ msgid "Continue with filter"
+#~ msgstr "Продовжити з фільтром"
+
+#~ msgid "Note %d"
+#~ msgstr "Нотатка %d"
+
+#~ msgid "Action %d"
+#~ msgstr "Дія %d"
+
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "У версії 0.5+ необхідний IPL модуль для Icinga Web 2."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "Адаптер Zend для бази даних PostgreSQL відстутній."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "Адаптер Zend для бази даних PostgreSQL доступний."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "Адаптер Zend для бази даних MySQL відсутній."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "Адаптер Zend для бази даних MySQL доступний."
+
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "Для доступу до бази даних PostgreSQL необхідний адаптер Zend для баз "
+#~ "даних PostgreSQL."
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "Адаптер Zend для бази даних PostgreSQL"
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Для доступу до IDO у базі даних PostgreSQL необхідний модуль PHP PDO-"
+#~ "PostgreSQL."
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr ""
+#~ "Для доступу до бази даних MySQL необхідний адаптер Zend для баз даних "
+#~ "MySQL."
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "Адаптер Zend для бази даних MySQL"
+
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
+#~ msgstr ""
+#~ "Для доступу до IDO у базі даних MySQL необхідний модуль PHP PDO-MySQL."
+
+#~ msgid "The Redis module for PHP in version 4.3 and above requires PHP 7+"
+#~ msgstr "PHP модуль Redis версії новішої за 4.3 потребує PHP 7+"
+
+#~ msgid ""
+#~ "To view the most recent state information in Icinga DB Web, the Redis "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Для перегляду останньої інформації у Icinga DB Web, необхідний PHP модуль "
+#~ "Redis."
+
+#, fuzzy
+#~ msgid "Can't connect to Icinga Redis: phpredis>=4.3.0 required"
+#~ msgstr "Неможливо з'єднатися з Icinga Redis: %s"
+
+#~ msgid "Unset"
+#~ msgstr "Не задано"
+
+#, fuzzy
+#~ msgid "This object has been %s in this configuration %s"
+#~ msgstr "Цей набір було успадковано від %s"
+
+#, fuzzy
+#~ msgid "This item has been commented"
+#~ msgstr "Цей об'єкт було увімкнено"
+
+#~ msgid "Show all %d notifications"
+#~ msgstr "Показати всі %d сповіщення"
+
+#~ msgid ""
+#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
+#~ "required."
+#~ msgstr ""
+#~ "Для доступу до бази даних MySQL Icinga DB необхідний PHP модуль PDO-MySQL."
+
+#, fuzzy
+#~ msgid "no value given"
+#~ msgstr "Не задавати значення (null)"
+
+#, fuzzy
+#~ msgid "Change UUID"
+#~ msgstr "UUID екземпляру"
