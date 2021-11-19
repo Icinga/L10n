@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-11-15 22:50+0000\n"
+"POT-Creation-Date: 2021-11-18 13:04+0000\n"
 "PO-Revision-Date: 2020-04-27 14:37+0200\n"
 "Last-Translator: Munzir Taha <munzirtaha@gmail.com>\n"
 "Language-Team: English <trans-ar@lists.fedoraproject.org>\n"
@@ -1480,7 +1480,7 @@ msgstr[5] ""
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:70
 #, fuzzy, php-format
 msgid "Scheduled downtime successfully"
-msgid_plural "Scheduled downtime for %d services successfully"
+msgid_plural "Scheduled downtime for %d hosts successfully"
 msgstr[0] "جدولة أزمنة توقف"
 msgstr[1] "جدولة أزمنة توقف"
 msgstr[2] "جدولة أزمنة توقف"
@@ -6466,7 +6466,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-audit/configuration.php:9
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:65
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/DeploymentInfo.php:82
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:38
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:39
 #: sources.d/icingaweb2-module-vspheredb/configuration.php:29
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:77
 msgid "Configuration"
@@ -6719,8 +6719,8 @@ msgstr ""
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:507
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:56
 #: sources.d/icingaweb2-module-director/application/controllers/BasketsController.php:20
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:146
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:164
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:167
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:185
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseInfluxDatabaseForm.php:158
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/FormElementStealer.php:38
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:164
@@ -7115,8 +7115,8 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:307
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:348
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:519
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:65
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:121
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:86
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:142
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/PerfdataController.php:50
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:47
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/AddMemberForm.php:126
@@ -8201,7 +8201,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Web/ActionBar/AutomationObjectActionBar.php:38
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:121
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/SyncRuleTabs.php:37
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:157
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:178
 msgid "Modify"
 msgstr ""
 
@@ -15071,33 +15071,45 @@ msgstr ""
 msgid "Compute Cluster"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:31
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:32
 #, fuzzy
 msgid "vSphereDB Database Configuration"
 msgstr "عرض إعداد المورد"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:64
-msgid "vCenter Servers"
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:53
+msgid ""
+"The database has no vSphereDB schema. Waiting for the Background Daemon to "
+"initialize the database"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:61
+msgid ""
+"The database has pending DB migrations. Please restart the Background daemon "
+"to apply them"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:85
+msgid "vCenter Servers"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:106
 msgid "Got no connection information. Is the Damon running?"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:97
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:118
 msgid "Please define your first Server Connection"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:129
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:169
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:150
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:190
 msgid "Monitoring Integration"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:139
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:160
 msgid "No integration has been configured"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:147
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:168
 msgid "New Monitoring Integration"
 msgstr ""
 
@@ -15398,36 +15410,36 @@ msgstr ""
 msgid "The connection has been deleted"
 msgstr "تم التحقق من الإعداد بنجاح."
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:76
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:77
 msgid "VCenters"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:85
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:86
 #, fuzzy
 msgid "Add Connection"
 msgstr "اتصال LDAP"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:102
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:103
 #, fuzzy
 msgid "Monitored vCenters"
 msgstr "مراقبة المميزات"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:120
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:121
 #, php-format
 msgid "No vCenter available. You might want to check your %s or your %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:122
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:123
 #, fuzzy
 msgid "Server Connections"
 msgstr "فعل خدمة"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:126
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:127
 #, fuzzy
 msgid "Daemon Status"
 msgstr "الحالة"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:185
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:186
 #, fuzzy
 msgid "Daemon is not running"
 msgstr "الخلفية %s لا تعمل"
@@ -25979,55 +25991,9 @@ msgid "Clear Filter"
 msgstr "مرشح"
 
 #, fuzzy
-#~ msgid "in:"
-#~ msgstr "أدنى"
-
-#~ msgid "The Icinga Project"
-#~ msgstr "مشروع إسنجا"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "عدم تخزين التفضيلات"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "سرد الخدمات"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "المحفوظات"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "نوع الكائن"
-
 #~ msgid ""
-#~ "The Zend database adapter for PostgreSQL is required to access a "
-#~ "PostgreSQL database."
-#~ msgstr ""
-#~ "مطلوب محول قاعدة بيانات زند لـ PostgreSQL للوصول إلى قاعدة بيانات "
-#~ "PostgreSQL."
-
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "محول زند لقاعدة بيانات بوستجرى إس كيو إل"
-
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات PostgreSQL فإن وحدة PDO-"
-#~ "PostgreSQL للـ PHP مطلوبة."
-
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr "مطلوب محول قاعدة بيانات زند لـ MySQL للوصول إلى قاعدة بيانات MySQL."
-
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "محول زند لقاعدة بيانات ماي سيكول"
-
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
+#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
+#~ "required."
 #~ msgstr ""
 #~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
 #~ "MySQL للـ PHP مطلوبة."
@@ -26036,10 +26002,56 @@ msgstr "مرشح"
 #~ msgid "This item has been commented"
 #~ msgstr "تم التحقق من الإعداد بنجاح."
 
-#, fuzzy
 #~ msgid ""
-#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
-#~ "required."
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
 #~ msgstr ""
 #~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
 #~ "MySQL للـ PHP مطلوبة."
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "محول زند لقاعدة بيانات ماي سيكول"
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr "مطلوب محول قاعدة بيانات زند لـ MySQL للوصول إلى قاعدة بيانات MySQL."
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات PostgreSQL فإن وحدة PDO-"
+#~ "PostgreSQL للـ PHP مطلوبة."
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "محول زند لقاعدة بيانات بوستجرى إس كيو إل"
+
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "مطلوب محول قاعدة بيانات زند لـ PostgreSQL للوصول إلى قاعدة بيانات "
+#~ "PostgreSQL."
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "نوع الكائن"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "المحفوظات"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "سرد الخدمات"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "عدم تخزين التفضيلات"
+
+#~ msgid "The Icinga Project"
+#~ msgstr "مشروع إسنجا"
+
+#, fuzzy
+#~ msgid "in:"
+#~ msgstr "أدنى"

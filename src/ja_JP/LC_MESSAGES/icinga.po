@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-11-15 22:50+0000\n"
+"POT-Creation-Date: 2021-11-18 13:04+0000\n"
 "PO-Revision-Date: 2020-04-27 14:54+0200\n"
 "Last-Translator: papillon326 <udagawa@www2178ue.sakura.ne.jp>\n"
 "Language-Team: \n"
@@ -1398,7 +1398,7 @@ msgstr[0] "監視をスケジュールする"
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:70
 #, fuzzy, php-format
 msgid "Scheduled downtime successfully"
-msgid_plural "Scheduled downtime for %d services successfully"
+msgid_plural "Scheduled downtime for %d hosts successfully"
 msgstr[0] "計画メンテナンス期間"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:64
@@ -6398,7 +6398,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-audit/configuration.php:9
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:65
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/DeploymentInfo.php:82
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:38
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:39
 #: sources.d/icingaweb2-module-vspheredb/configuration.php:29
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:77
 msgid "Configuration"
@@ -6651,8 +6651,8 @@ msgstr ""
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:507
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:56
 #: sources.d/icingaweb2-module-director/application/controllers/BasketsController.php:20
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:146
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:164
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:167
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:185
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseInfluxDatabaseForm.php:158
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/FormElementStealer.php:38
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:164
@@ -7048,8 +7048,8 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:307
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:348
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:519
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:65
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:121
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:86
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:142
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/PerfdataController.php:50
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:47
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/AddMemberForm.php:126
@@ -8145,7 +8145,7 @@ msgstr "インポートソースの追加"
 #: sources.d/icingaweb2-module-director/library/Director/Web/ActionBar/AutomationObjectActionBar.php:38
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:121
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/SyncRuleTabs.php:37
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:157
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:178
 msgid "Modify"
 msgstr "編集"
 
@@ -15469,34 +15469,49 @@ msgstr ""
 msgid "Compute Cluster"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:31
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:32
 #, fuzzy
 msgid "vSphereDB Database Configuration"
 msgstr "リソース構成を表示"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:64
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:53
+msgid ""
+"The database has no vSphereDB schema. Waiting for the Background Daemon to "
+"initialize the database"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:61
+#, fuzzy
+msgid ""
+"The database has pending DB migrations. Please restart the Background daemon "
+"to apply them"
+msgstr ""
+"利用可能なデータフィールドがありません。作成するように管理者に依頼してくださ"
+"い。"
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:85
 msgid "vCenter Servers"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:85
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:106
 msgid "Got no connection information. Is the Damon running?"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:97
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:118
 #, fuzzy
 msgid "Please define your first Server Connection"
 msgstr "%sを先に定義してください"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:129
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:169
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:150
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:190
 msgid "Monitoring Integration"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:139
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:160
 msgid "No integration has been configured"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:147
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:168
 msgid "New Monitoring Integration"
 msgstr ""
 
@@ -15797,36 +15812,36 @@ msgstr ""
 msgid "The connection has been deleted"
 msgstr "このオブジェクトは有効化されています。"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:76
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:77
 msgid "VCenters"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:85
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:86
 #, fuzzy
 msgid "Add Connection"
 msgstr "条件フォーマット"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:102
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:103
 #, fuzzy
 msgid "Monitored vCenters"
 msgstr "監視対象サービス"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:120
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:121
 #, php-format
 msgid "No vCenter available. You might want to check your %s or your %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:122
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:123
 #, fuzzy
 msgid "Server Connections"
 msgstr "接続するデータベース"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:126
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:127
 #, fuzzy
 msgid "Daemon Status"
 msgstr "ステータス"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:185
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:186
 #, fuzzy
 msgid "Daemon is not running"
 msgstr "バックエンド %s は起動していません"
@@ -26214,122 +26229,8 @@ msgid "Clear Filter"
 msgstr "フィルター"
 
 #, fuzzy
-#~ msgid "in:"
-#~ msgstr "分"
-
-#~ msgid "The Icinga Project"
-#~ msgstr "Icingaプロジェクト"
-
-#~ msgid "- inherited -"
-#~ msgstr "- 継承 -"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "設定を保存しない"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "管理者権限を付与する。例：お知らせの管理"
-
-#~ msgid "Open authentication configuration"
-#~ msgstr "認証設定を行う画面へ"
-
-#~ msgid ""
-#~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
-#~ "to use the same database as for authentication."
-#~ msgstr ""
-#~ "環境設定の保存場所として「データベース」を選択すると、Icinga Web 2は認証と"
-#~ "同じデータベースを使用します。"
-
-#~ msgid "Blacklist"
-#~ msgstr "ブラックリスト"
-
-#~ msgid "Generated from host vars"
-#~ msgstr "ホスト変数から生成しました"
-
-#, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "イベント時間"
-
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "監視対象サービス"
-
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "履歴"
-
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "オブジェクトタイプ"
-
-#, fuzzy
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "Icinga Web 2を実行するには、PHPバージョン5.6が必要です。"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "PostgreSQL用のZendデータベースアダプタがありません。"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "PostgreSQL用のZendデータベースアダプタは利用可能です"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "MySQL用のZendデータベースアダプタが存在しません"
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "MySQL用のZendデータベースアダプタは利用可能です"
-
-#~ msgid ""
-#~ "The Zend database adapter for PostgreSQL is required to access a "
-#~ "PostgreSQL database."
-#~ msgstr ""
-#~ "PostgreSQLデータベースにアクセスするには、PostgreSQL用のZendデータベースア"
-#~ "ダプタが必要です。"
-
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "PostgreSQL用Zendデータベースアダプタ"
-
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "PostgreSQLデータベースに格納されているIDOにアクセスするには、PHP用のPDO-"
-#~ "PostgreSQLモジュールが必要です。"
-
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr ""
-#~ "MySQLデータベースにアクセスするには、MySQL用のZendデータベースアダプタが必"
-#~ "要です。"
-
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "MySQL用Zendデータベースアダプタ"
-
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
-#~ msgstr ""
-#~ "MySQLデータベースに保存されているIDOにアクセスするには、PHP用のPDO-MySQLモ"
-#~ "ジュールが必要です。"
-
-#, fuzzy
-#~ msgid ""
-#~ "To view the most recent state information in Icinga DB Web, the Redis "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "Icinga 2のAPIを介して外部コマンドを送信するには、PHP用のcURLモジュールが必"
-#~ "要です。"
-
-#, fuzzy
-#~ msgid "This object has been %s in this configuration %s"
-#~ msgstr "このセットは%sから継承されました"
-
-#, fuzzy
-#~ msgid "This item has been commented"
-#~ msgstr "このオブジェクトは有効化されています。"
+#~ msgid "no value given"
+#~ msgstr "値が設定されていません（null）"
 
 #, fuzzy
 #~ msgid ""
@@ -26340,5 +26241,119 @@ msgstr "フィルター"
 #~ "ジュールが必要です。"
 
 #, fuzzy
-#~ msgid "no value given"
-#~ msgstr "値が設定されていません（null）"
+#~ msgid "This item has been commented"
+#~ msgstr "このオブジェクトは有効化されています。"
+
+#, fuzzy
+#~ msgid "This object has been %s in this configuration %s"
+#~ msgstr "このセットは%sから継承されました"
+
+#, fuzzy
+#~ msgid ""
+#~ "To view the most recent state information in Icinga DB Web, the Redis "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Icinga 2のAPIを介して外部コマンドを送信するには、PHP用のcURLモジュールが必"
+#~ "要です。"
+
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
+#~ msgstr ""
+#~ "MySQLデータベースに保存されているIDOにアクセスするには、PHP用のPDO-MySQLモ"
+#~ "ジュールが必要です。"
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "MySQL用Zendデータベースアダプタ"
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr ""
+#~ "MySQLデータベースにアクセスするには、MySQL用のZendデータベースアダプタが必"
+#~ "要です。"
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "PostgreSQLデータベースに格納されているIDOにアクセスするには、PHP用のPDO-"
+#~ "PostgreSQLモジュールが必要です。"
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "PostgreSQL用Zendデータベースアダプタ"
+
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "PostgreSQLデータベースにアクセスするには、PostgreSQL用のZendデータベースア"
+#~ "ダプタが必要です。"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "MySQL用のZendデータベースアダプタは利用可能です"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "MySQL用のZendデータベースアダプタが存在しません"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "PostgreSQL用のZendデータベースアダプタは利用可能です"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "PostgreSQL用のZendデータベースアダプタがありません。"
+
+#, fuzzy
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "Icinga Web 2を実行するには、PHPバージョン5.6が必要です。"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "オブジェクトタイプ"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "履歴"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "監視対象サービス"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "イベント時間"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "ホスト変数から生成しました"
+
+#~ msgid "Blacklist"
+#~ msgstr "ブラックリスト"
+
+#~ msgid ""
+#~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
+#~ "to use the same database as for authentication."
+#~ msgstr ""
+#~ "環境設定の保存場所として「データベース」を選択すると、Icinga Web 2は認証と"
+#~ "同じデータベースを使用します。"
+
+#~ msgid "Open authentication configuration"
+#~ msgstr "認証設定を行う画面へ"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "管理者権限を付与する。例：お知らせの管理"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "設定を保存しない"
+
+#~ msgid "- inherited -"
+#~ msgstr "- 継承 -"
+
+#~ msgid "The Icinga Project"
+#~ msgstr "Icingaプロジェクト"
+
+#, fuzzy
+#~ msgid "in:"
+#~ msgstr "分"
