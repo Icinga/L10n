@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-11-18 13:04+0000\n"
+"POT-Creation-Date: 2021-11-24 16:10+0000\n"
 "PO-Revision-Date: 2021-02-12 17:02+0500\n"
 "Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
 "Language-Team: TranslAster <https://github.com/translaster>\n"
@@ -150,7 +150,7 @@ msgstr "Время ввода"
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:237
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:181
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:219
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:264
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:266
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:15
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:598
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:12
@@ -546,8 +546,8 @@ msgstr "Последнее изменение состояния"
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:248
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:286
 #: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:18
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:268
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:289
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:270
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:291
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:101
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:90
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:90
@@ -7542,8 +7542,8 @@ msgstr "Добавить выбранные объекты в корзину к�
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:138
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:535
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:344
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:146
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:207
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:149
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:209
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:522
 #: sources.d/icingaweb2-module-director/library/Director/Web/ActionBar/DirectorBaseActionBar.php:35
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ActionController.php:182
@@ -8332,17 +8332,17 @@ msgstr "Добавить службу в \"%s\""
 msgid "Apply \"%s\""
 msgstr "Применить \"%s\""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:178
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:180
 #, php-format
 msgid "(on %s)"
 msgstr "(на %s)"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:215
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:217
 #, php-format
 msgid "Apply: %s"
 msgstr "Применить: %s"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:285
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:287
 msgid "ServiceSet"
 msgstr "НаборСлужб"
 
@@ -11200,7 +11200,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:45
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:78
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:78
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:74
 msgid "Object Type"
 msgstr "Тип объекта"
 
@@ -12949,6 +12949,8 @@ msgid "UUID: from binary to hex"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/CubeLinks.php:35
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:43
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:66
 msgid "Modify a host"
 msgstr ""
 
@@ -12958,12 +12960,26 @@ msgid "This allows you to modify properties for \"%s\""
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/CubeLinks.php:52
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:72
 #, php-format
 msgid "Modify %d hosts"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/CubeLinks.php:54
 msgid "This allows you to modify properties for all chosen hosts at once"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:45
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:68
+#, php-format
+msgid ""
+"This allows you to modify properties for \"%s\" (deployed from director)"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:74
+msgid ""
+"This allows you to modify properties for all chosen hosts (deployed from "
+"director) at once"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/Resolver/CommandUsage.php:50
@@ -15230,7 +15246,7 @@ msgid "Sizing"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/DatastoreController.php:93
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:83
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:79
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmDatastoresTable.php:53
 msgid "Datastore"
 msgstr "Хранилище данных"
@@ -15482,7 +15498,7 @@ msgid "Hardware"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:106
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:81
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:77
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Controller/ObjectsController.php:142
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmsOnDatastoreTable.php:50
 msgid "Virtual Machine"
@@ -15574,22 +15590,22 @@ msgstr "Среднее число %s считываний / %s записей"
 msgid "Latency %s Read / %s Write"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:80
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:76
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:88
 msgid "Host Systems"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:82
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:78
 msgid "Compute Resource"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:88
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:84
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VCenterSummaryTable.php:182
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VsphereApiConnectionTable.php:10
 msgid "VCenter"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:90
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:86
 msgid "- any -"
 msgstr ""
 
@@ -25964,42 +25980,108 @@ msgstr "Удалить"
 msgid "Clear Filter"
 msgstr "Пользовательский фильтр LDAP"
 
-#~ msgid ""
-#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
-#~ "required."
-#~ msgstr ""
-#~ "Для доступа к базе данных MySQL БД Icinga требуется модуль PDO-MySQL для "
-#~ "PHP."
+#~ msgid "Main Configuration"
+#~ msgstr "Основная конфигурация"
 
-#~ msgid "Show all %d notifications"
-#~ msgstr "Показать все %d уведомлений"
+#~ msgid "\"vspheredb/admin\" permissions are required to continue"
+#~ msgstr "для продолжения работы требуются разрешения \"vspheredb/admin\""
+
+#~ msgid "Alarm History"
+#~ msgstr "История Аварий"
+
+#~ msgid "Page %d"
+#~ msgstr "Страница %d"
 
 #, fuzzy
-#~ msgid "This item has been commented"
-#~ msgstr "%s \"%s\" был создан"
+#~ msgid "in:"
+#~ msgstr "Мин"
 
-#~ msgid "Unset"
-#~ msgstr "Сброс"
+#~ msgid "The Icinga Project"
+#~ msgstr "Проект Icinga"
 
-#~ msgid ""
-#~ "To view the most recent state information in Icinga DB Web, the Redis "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "Для просмотра самой последней информации о состоянии в веб БД Icinga "
-#~ "требуется модуль Redis для PHP."
+#~ msgid "No permission for %s"
+#~ msgstr "Нет разрешения для %s"
 
-#~ msgid "The Redis module for PHP in version 4.3 and above requires PHP 7+"
-#~ msgstr "Модуль Redis для PHP в версии 4.3 и выше требует PHP 7+"
+#~ msgid "%s does not exist"
+#~ msgstr "%s не существует"
 
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
-#~ msgstr ""
-#~ "Для доступа к IDO, хранящемуся в базе данных MySQL, требуется модуль PDO-"
-#~ "MySQL для PHP."
+#~ msgid "- inherited -"
+#~ msgstr "- наследованный -"
 
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "Адаптер базы данных Zend для MySQL"
+#~ msgid "Delete Command Transport"
+#~ msgstr "Удаление транспорта команд"
+
+#~ msgid "Update Command Transport"
+#~ msgstr "Обновление транспорта команд"
+
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Подтвердите отмену %d времени простоя."
+
+#~ msgid "Cancel downtimes"
+#~ msgstr "Отменить времени простоя"
+
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "Отменить %d время простоя"
+
+#~ msgid "Update command transport %s"
+#~ msgstr "Обновление транспорта команд %s"
+
+#~ msgid "Delete command transport %s"
+#~ msgstr "Удалить транспорт команд %s"
+
+#~ msgid "Cancel Downtime"
+#~ msgstr "Отменить время простоя"
+
+#~ msgid "Icinga DB"
+#~ msgstr "БД Icinga"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Не хранить предпочтения"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgstr "Предоставьте права администратора, напр. управлению объявлениями"
+
+#~ msgid "Open authentication configuration"
+#~ msgstr "Открыть конфигурацию аутентификации"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Последняя проверка службы"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "История"
+
+#~ msgid "Configure security related settings"
+#~ msgstr "Настройка параметров, связанных с безопасностью"
+
+#~ msgid "Continue with filter"
+#~ msgstr "Продолжить с фильтром"
+
+#~ msgid "Note %d"
+#~ msgstr "%d примечание"
+
+#~ msgid "Action %d"
+#~ msgstr "Действие %d"
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "Адаптер базы данных Zend для PostgreSQL отсутствует."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "Адаптер базы данных Zend для PostgreSQL доступен."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "Адаптер базы данных Zend для MySQL отсутствует."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "Адаптер базы данных Zend для MySQL доступен."
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "Адаптер базы данных Zend для PostgreSQL"
 
 #~ msgid ""
 #~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
@@ -26008,105 +26090,39 @@ msgstr "Пользовательский фильтр LDAP"
 #~ "Для доступа к IDO, хранящемуся в базе данных PostgreSQL, требуется модуль "
 #~ "PDO-PostgreSQL для PHP."
 
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "Адаптер базы данных Zend для PostgreSQL"
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "Адаптер базы данных Zend для MySQL"
 
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "Адаптер базы данных Zend для MySQL доступен."
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
+#~ msgstr ""
+#~ "Для доступа к IDO, хранящемуся в базе данных MySQL, требуется модуль PDO-"
+#~ "MySQL для PHP."
 
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "Адаптер базы данных Zend для MySQL отсутствует."
+#~ msgid "The Redis module for PHP in version 4.3 and above requires PHP 7+"
+#~ msgstr "Модуль Redis для PHP в версии 4.3 и выше требует PHP 7+"
 
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "Адаптер базы данных Zend для PostgreSQL доступен."
+#~ msgid ""
+#~ "To view the most recent state information in Icinga DB Web, the Redis "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Для просмотра самой последней информации о состоянии в веб БД Icinga "
+#~ "требуется модуль Redis для PHP."
 
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "Адаптер базы данных Zend для PostgreSQL отсутствует."
-
-#~ msgid "Action %d"
-#~ msgstr "Действие %d"
-
-#~ msgid "Note %d"
-#~ msgstr "%d примечание"
-
-#~ msgid "Continue with filter"
-#~ msgstr "Продолжить с фильтром"
-
-#~ msgid "Configure security related settings"
-#~ msgstr "Настройка параметров, связанных с безопасностью"
+#~ msgid "Unset"
+#~ msgstr "Сброс"
 
 #, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "История"
+#~ msgid "This item has been commented"
+#~ msgstr "%s \"%s\" был создан"
 
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Последняя проверка службы"
+#~ msgid "Show all %d notifications"
+#~ msgstr "Показать все %d уведомлений"
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Открыть конфигурацию аутентификации"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
-#~ msgstr "Предоставьте права администратора, напр. управлению объявлениями"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Не хранить предпочтения"
-
-#~ msgid "Icinga DB"
-#~ msgstr "БД Icinga"
-
-#~ msgid "Cancel Downtime"
-#~ msgstr "Отменить время простоя"
-
-#~ msgid "Delete command transport %s"
-#~ msgstr "Удалить транспорт команд %s"
-
-#~ msgid "Update command transport %s"
-#~ msgstr "Обновление транспорта команд %s"
-
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "Отменить %d время простоя"
-
-#~ msgid "Cancel downtimes"
-#~ msgstr "Отменить времени простоя"
-
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Подтвердите отмену %d времени простоя."
-
-#~ msgid "Update Command Transport"
-#~ msgstr "Обновление транспорта команд"
-
-#~ msgid "Delete Command Transport"
-#~ msgstr "Удаление транспорта команд"
-
-#~ msgid "- inherited -"
-#~ msgstr "- наследованный -"
-
-#~ msgid "%s does not exist"
-#~ msgstr "%s не существует"
-
-#~ msgid "No permission for %s"
-#~ msgstr "Нет разрешения для %s"
-
-#~ msgid "The Icinga Project"
-#~ msgstr "Проект Icinga"
-
-#, fuzzy
-#~ msgid "in:"
-#~ msgstr "Мин"
-
-#~ msgid "Page %d"
-#~ msgstr "Страница %d"
-
-#~ msgid "Alarm History"
-#~ msgstr "История Аварий"
-
-#~ msgid "\"vspheredb/admin\" permissions are required to continue"
-#~ msgstr "для продолжения работы требуются разрешения \"vspheredb/admin\""
-
-#~ msgid "Main Configuration"
-#~ msgstr "Основная конфигурация"
+#~ msgid ""
+#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
+#~ "required."
+#~ msgstr ""
+#~ "Для доступа к базе данных MySQL БД Icinga требуется модуль PDO-MySQL для "
+#~ "PHP."

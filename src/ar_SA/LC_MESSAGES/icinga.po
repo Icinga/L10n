@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-11-18 13:04+0000\n"
+"POT-Creation-Date: 2021-11-24 16:10+0000\n"
 "PO-Revision-Date: 2020-04-27 14:37+0200\n"
 "Last-Translator: Munzir Taha <munzirtaha@gmail.com>\n"
 "Language-Team: English <trans-ar@lists.fedoraproject.org>\n"
@@ -149,7 +149,7 @@ msgstr "زمن الدخول"
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:237
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:181
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:219
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:264
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:266
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:15
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:598
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:12
@@ -549,8 +549,8 @@ msgstr "آخر تغيير حالة"
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:248
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:286
 #: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:18
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:268
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:289
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:270
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:291
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:101
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:90
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:90
@@ -7662,8 +7662,8 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:138
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:535
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:344
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:146
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:207
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:149
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:209
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:522
 #: sources.d/icingaweb2-module-director/library/Director/Web/ActionBar/DirectorBaseActionBar.php:35
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ActionController.php:182
@@ -8438,17 +8438,17 @@ msgstr ""
 msgid "Apply \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:178
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:180
 #, php-format
 msgid "(on %s)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:215
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:217
 #, php-format
 msgid "Apply: %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:285
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:287
 msgid "ServiceSet"
 msgstr ""
 
@@ -11215,7 +11215,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:45
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:78
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:78
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:74
 msgid "Object Type"
 msgstr ""
 
@@ -12940,6 +12940,8 @@ msgid "UUID: from binary to hex"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/CubeLinks.php:35
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:43
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:66
 msgid "Modify a host"
 msgstr ""
 
@@ -12949,12 +12951,26 @@ msgid "This allows you to modify properties for \"%s\""
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/CubeLinks.php:52
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:72
 #, php-format
 msgid "Modify %d hosts"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/CubeLinks.php:54
 msgid "This allows you to modify properties for all chosen hosts at once"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:45
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:68
+#, php-format
+msgid ""
+"This allows you to modify properties for \"%s\" (deployed from director)"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:74
+msgid ""
+"This allows you to modify properties for all chosen hosts (deployed from "
+"director) at once"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/Resolver/CommandUsage.php:50
@@ -15193,7 +15209,7 @@ msgid "Sizing"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/DatastoreController.php:93
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:83
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:79
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmDatastoresTable.php:53
 msgid "Datastore"
 msgstr ""
@@ -15450,7 +15466,7 @@ msgid "Hardware"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:106
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:81
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:77
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Controller/ObjectsController.php:142
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmsOnDatastoreTable.php:50
 msgid "Virtual Machine"
@@ -15542,23 +15558,23 @@ msgstr ""
 msgid "Latency %s Read / %s Write"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:80
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:76
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:88
 msgid "Host Systems"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:82
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:78
 #, fuzzy
 msgid "Compute Resource"
 msgstr "تحديث مورد"
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:88
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:84
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VCenterSummaryTable.php:182
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VsphereApiConnectionTable.php:10
 msgid "VCenter"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:90
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:86
 msgid "- any -"
 msgstr ""
 
@@ -25991,41 +26007,26 @@ msgid "Clear Filter"
 msgstr "مرشح"
 
 #, fuzzy
-#~ msgid ""
-#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
-#~ "required."
-#~ msgstr ""
-#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
-#~ "MySQL للـ PHP مطلوبة."
+#~ msgid "in:"
+#~ msgstr "أدنى"
+
+#~ msgid "The Icinga Project"
+#~ msgstr "مشروع إسنجا"
+
+#~ msgid "Don't Store Preferences"
+#~ msgstr "عدم تخزين التفضيلات"
 
 #, fuzzy
-#~ msgid "This item has been commented"
-#~ msgstr "تم التحقق من الإعداد بنجاح."
+#~ msgid "History Service Id"
+#~ msgstr "سرد الخدمات"
 
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
-#~ msgstr ""
-#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
-#~ "MySQL للـ PHP مطلوبة."
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "المحفوظات"
 
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "محول زند لقاعدة بيانات ماي سيكول"
-
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr "مطلوب محول قاعدة بيانات زند لـ MySQL للوصول إلى قاعدة بيانات MySQL."
-
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات PostgreSQL فإن وحدة PDO-"
-#~ "PostgreSQL للـ PHP مطلوبة."
-
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "محول زند لقاعدة بيانات بوستجرى إس كيو إل"
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "نوع الكائن"
 
 #~ msgid ""
 #~ "The Zend database adapter for PostgreSQL is required to access a "
@@ -26034,24 +26035,39 @@ msgstr "مرشح"
 #~ "مطلوب محول قاعدة بيانات زند لـ PostgreSQL للوصول إلى قاعدة بيانات "
 #~ "PostgreSQL."
 
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "نوع الكائن"
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "محول زند لقاعدة بيانات بوستجرى إس كيو إل"
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات PostgreSQL فإن وحدة PDO-"
+#~ "PostgreSQL للـ PHP مطلوبة."
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr "مطلوب محول قاعدة بيانات زند لـ MySQL للوصول إلى قاعدة بيانات MySQL."
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "محول زند لقاعدة بيانات ماي سيكول"
+
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
+#~ msgstr ""
+#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
+#~ "MySQL للـ PHP مطلوبة."
 
 #, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "المحفوظات"
+#~ msgid "This item has been commented"
+#~ msgstr "تم التحقق من الإعداد بنجاح."
 
 #, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "سرد الخدمات"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "عدم تخزين التفضيلات"
-
-#~ msgid "The Icinga Project"
-#~ msgstr "مشروع إسنجا"
-
-#, fuzzy
-#~ msgid "in:"
-#~ msgstr "أدنى"
+#~ msgid ""
+#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
+#~ "required."
+#~ msgstr ""
+#~ "للوصول إلى الـ IDO المخزنة في قاعدة بيانات \"ماي سيكول\" فإن وحدة PDO-"
+#~ "MySQL للـ PHP مطلوبة."
