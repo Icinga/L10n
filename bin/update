@@ -75,18 +75,12 @@ for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
            --default-domain=icinga \
            --output=$repo_name/messages.pot
 
-  # Re-add the PoEdit header extensions
+  # Use current year in the copyright for new templates without one yet
   REPLACE_CODE=$(cat << PYTHON
-import sys, re
-result = re.sub(
-    r'msgid \"\"\nmsgstr \"\"(\n\".*\")+',
-    '\g<0>\n'
-        + '\"X-Poedit-Basepath: ../../../../src\\\\\\\\n\"\n'
-        + '\"X-Poedit-SearchPath-0: sources.d\\\\\\\\n\"',
-    sys.stdin.read()
-)
+import sys
+input = sys.stdin.read()
 from datetime import date
-result = result.replace(
+result = input.replace(
     '# Copyright (C) YEAR Icinga GmbH',
     '# Copyright (C) {0} Icinga GmbH'.format(date.today().year),
     1
@@ -114,14 +108,6 @@ if [ $CHANGES -eq 0 ]; then
   echo "No new messages found.";
   git checkout */messages.pot
 else
-  for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
-    # Update intermediate (in-progress) catalogs
-    LOCALES=$(find $repo_name -mindepth 1 -maxdepth 1 -type d -regextype grep -regex '\./[a-z]\{2\}_[A-Z]\{2\}' -printf "%P ")
-    for locale_name in $LOCALES; do
-      msgmerge --update --backup=none --lang=$locale_name --sort-by-file $repo_name/$locale_name/LC_MESSAGES/$repo_name.po $repo_name/messages.pot
-    done
-  done
-
   echo "New messages found!";
   # Working tree is left dirty as the following step creates a new pull request
 fi
