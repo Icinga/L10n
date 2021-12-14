@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ipl-L10n 368fb33\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-12-10 15:39+0000\n"
+"POT-Creation-Date: 2021-12-14 09:43+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -154,6 +154,7 @@ msgstr "Час запису"
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:71
 #: sources.d/icingaweb2-module-director/library/Director/TranslationDummy.php:13
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableEndpoint.php:20
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableService.php:106
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmLocationInfoTable.php:73
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:124
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/MemoryUsage.php:35
@@ -759,6 +760,7 @@ msgstr "Сітка сервісів"
 
 #: sources.d/icingadb-web/application/controllers/ServicesController.php:232
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:80
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableService.php:107
 #: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:100
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:172
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:713
@@ -1438,7 +1440,7 @@ msgstr[2] "Запланувати перевірки"
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:70
 #, fuzzy, php-format
 msgid "Scheduled downtime successfully"
-msgid_plural "Scheduled downtime for %d services successfully"
+msgid_plural "Scheduled downtime for %d hosts successfully"
 msgstr[0] "Запланований простій"
 msgstr[1] "Запланований простій"
 msgstr[2] "Запланований простій"
@@ -5448,7 +5450,6 @@ msgid "Flexible Duration"
 msgstr "Гнучка тривалість"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:158
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:136
 msgid "Children"
 msgstr "Дочірні"
 
@@ -6733,8 +6734,8 @@ msgstr "Завантажити налаштування процесу"
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:487
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:213
 #: sources.d/icingaweb2-module-director/application/controllers/SchemaController.php:80
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:250
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:263
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:249
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:262
 msgid "Download"
 msgstr "Завантажити"
 
@@ -7359,41 +7360,50 @@ msgstr "Вплив на бізнес"
 msgid "Show Overview"
 msgstr "Показати загальний огляд"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:209
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:138
+#, fuzzy
+msgctxt "businessprocess.nodes"
+msgid "Child"
+msgid_plural "Children"
+msgstr[0] "Дочірні"
+msgstr[1] "Дочірні"
+msgstr[2] "Дочірні"
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:215
 msgid "Show tiles for this subtree"
 msgstr "Показати плитки для цього піддерева"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:216
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:222
 msgid "Show this subtree as a tree"
 msgstr "Показати це піддерево як дерево"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:229
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:235
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:215
 msgid "Show this process as part of its original configuration"
 msgstr "Показати цей процес як частину його первинної конфігурації"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:245
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:251
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:323
 msgid "More information"
 msgstr "Більше інформації"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:299
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:305
 msgid "Show the business impact of this node by simulating a specific state"
 msgstr "Показати вплив на бізнес цього вузла симулювавши конкретний стан"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:311
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:317
 msgid "Modify this monitored node"
 msgstr "Змінити цей вузол під моніторингом"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:328
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:334
 msgid "Modify this business process node"
 msgstr "Змінити цей вузол бізнес-процесу"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:342
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:348
 msgid "Add a new sub-node to this business process"
 msgstr "Додати новий підвузол до цього бізнес-процесу"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:359
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:365
 msgid "Delete this node"
 msgstr "Видалити цей вузол"
 
@@ -7698,8 +7708,8 @@ msgstr "Додати обрані об'єкти до кошика налашту
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:115
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:355
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:138
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:535
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:344
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:542
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:365
 #: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:149
 #: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:209
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:522
@@ -8145,55 +8155,55 @@ msgid ""
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:214
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:285
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:291
 msgid "Individual Service objects"
 msgstr "Окремі об'єкти сервісів"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:245
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:316
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:248
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:323
 #, php-format
 msgid "%s (Applied Service set)"
 msgstr "%s (набір застосованих сервісів)"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:256
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:331
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:259
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:338
 msgid "Applied services"
 msgstr "Застосовані сервіси"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:279
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:282
 msgid "Configuration (read-only)"
 msgstr "Налаштування (лише читання)"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:280
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:283
 #, php-format
 msgid "Services on %s"
 msgstr "Сервіси на %s"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:366
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:373
 #, php-format
 msgid "%s (Service set)"
 msgstr "%s (набір сервісів)"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:398
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:405
 #, php-format
 msgid "Applied service: %s"
 msgstr "Застосований сервіс: %s"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:441
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:448
 #, php-format
 msgid "Inherited service: %s"
 msgstr "Успадкований сервіс: %s"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:514
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:521
 #, php-format
 msgid "%s on %s (from set: %s)"
 msgstr "%s на %s (з набору: %s)"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:568
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:575
 msgid "Show"
 msgstr "Показати"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:592
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:599
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/HostActions.php:36
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:43
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectTabs.php:132
@@ -8227,7 +8237,7 @@ msgid "Import run"
 msgstr "Запуск імпорту"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:91
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:127
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:134
 #, php-format
 msgid "Import source: %s"
 msgstr "Джерело імпорту: %s"
@@ -8244,7 +8254,12 @@ msgstr ""
 msgid "Add import source"
 msgstr "Додати джерело імпорту"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:121
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:108
+#, fuzzy
+msgid "Creating Import Sources"
+msgstr "Джерела імпорту"
+
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:125
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:451
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/HostActions.php:55
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:56
@@ -8256,7 +8271,14 @@ msgstr "Додати джерело імпорту"
 msgid "Modify"
 msgstr "Редагувати"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:140
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:126
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:284
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:314
+#, fuzzy
+msgid "Modifying Import Sources"
+msgstr "Джерела імпорту"
+
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:147
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:446
 #: sources.d/icingaweb2-module-director/library/Director/Web/ActionBar/AutomationObjectActionBar.php:44
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectController.php:336
@@ -8265,35 +8287,40 @@ msgstr "Редагувати"
 msgid "Clone"
 msgstr "Клонувати"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:159
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:148
+#, fuzzy
+msgid "Cloning Import Sources"
+msgstr "Джерела імпорту"
+
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:169
 #, php-format
 msgid "Import source preview: %s"
 msgstr "Попередній перегляд джерела імпорту: %s"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:165
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:175
 msgid "Download JSON"
 msgstr "Завантажити JSON"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:236
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:250
 #, php-format
 msgid "Property modifiers: %s"
 msgstr "Модифікатори властивостей: %s"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:238
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:252
 msgid "Add property modifier"
 msgstr "Додати модифікатор властивостей"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:251
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:265
 #, php-format
 msgid "Import run history: %s"
 msgstr "Історія імпорту: %s"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:265
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:279
 #, php-format
 msgid "%s: add Property Modifier"
 msgstr "%s: додати модифікатор властивостей"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:291
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:309
 #, php-format
 msgid "%s: Property Modifier"
 msgstr "%s: модифікатор властивостей"
@@ -10260,9 +10287,10 @@ msgstr "День(днів)"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeRangeForm.php:24
 #: sources.d/icingaweb2-module-director/application/forms/IcingaTimePeriodRangeForm.php:23
+#, fuzzy
 msgid ""
-"Might be, monday, tuesday, 2016-01-28 - have a look at the documentation for "
-"more examples"
+"Might be monday, tuesday or 2016-01-28 - have a look at the documentation "
+"for more examples"
 msgstr ""
 "Може бути, monday, tuesday, 2016-01-28 - перегляньте документацію для "
 "додаткових прикладів"
@@ -10729,7 +10757,8 @@ msgstr "Перевірку цього джерела імпорту провал
 
 #: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:30
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierGetPropertyFromOtherImportSource.php:61
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/PropertymodifierTable.php:113
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/PropertymodifierTable.php:129
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/PropertymodifierTable.php:132
 msgid "Property"
 msgstr "Властивість"
 
@@ -10878,6 +10907,10 @@ msgstr "Є очікувані міграції бази даних"
 #, php-format
 msgid "Your database looks good, you are ready to %s"
 msgstr "Ваша база даних виглядає добре, ви готові до %s"
+
+#: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:78
+msgid "start working with the Icinga Director"
+msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:98
 msgid ""
@@ -11911,9 +11944,10 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/CommandTemplatesDashlet.php:12
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/ExternalNotificationCommandsDashlet.php:12
+#, fuzzy
 msgid ""
 "External Notification Commands have been defined in your local Icinga 2 "
-"Configuration. "
+"Configuration."
 msgstr ""
 "Зовнішні команди сповіщення були визначені у вашій локальній конфігурації "
 "Icinga 2. "
@@ -12132,7 +12166,8 @@ msgstr ""
 "запуск потребується після кожної зміни інфраструктури"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/NotificationApplyDashlet.php:19
-msgid "Apply notifications with specific properties according to given rules. "
+#, fuzzy
+msgid "Apply notifications with specific properties according to given rules."
 msgstr ""
 "Застосувати сповіщення з окремими властивостями відповідно наданим правилам. "
 
@@ -14288,19 +14323,19 @@ msgstr ""
 "Запит квитка для цього агенту не зміг виконатися з вашої кінцевої точки "
 "розгортання: %s"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:246
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:245
 msgid "For manual configuration"
 msgstr "Для ручної конфігурації"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:247
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:246
 msgid "Ticket"
 msgstr "Квиток"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:248
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:247
 msgid "Windows Kickstart Script"
 msgstr "Швидкий старт для Windows"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:257
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:256
 msgid ""
 "This requires the Icinga Agent to be installed. It generates and signs it's "
 "certificate and it also generates a minimal icinga2.conf to get your agent "
@@ -14309,20 +14344,20 @@ msgstr ""
 "Потребує встановленого агенту Icinga. Генерує та підписує власний сертифікат "
 "та також генерує мінісмальний icinga2.conf для під'єднання агенту до батьків"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:261
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:260
 msgid "Linux commandline"
 msgstr "Командна стрічка Linux"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:268
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:267
 msgid "Just download and run this script on your Linux Client Machine:"
 msgstr "Завантажте та запустіть цей скрипт на вашій клієнтській машині Linux:"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ActivityLogTable.php:91
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ActivityLogTable.php:90
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/BranchActivityTable.php:59
 msgid "Jump to this object"
 msgstr "Перейти до цього об'єкту"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ActivityLogTable.php:101
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ActivityLogTable.php:100
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/BranchActivityTable.php:75
 msgid "Show details related to this change"
 msgstr "Показати деталі цієї зміни"
@@ -14455,8 +14490,8 @@ msgid "via"
 msgstr "через"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaAppliedServiceTable.php:32
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaHostServiceTable.php:150
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:154
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableService.php:103
 msgid "Servicename"
 msgstr "Назва сервісу"
 
@@ -14544,11 +14579,11 @@ msgstr "Загалом"
 msgid "This template is not in use"
 msgstr "Цей шаблон не використовується"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplatesTable.php:51
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplatesTable.php:52
 msgid "Template Name"
 msgstr "Ім'я шаблону"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplatesTable.php:63
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplatesTable.php:64
 msgid " - not in use -"
 msgstr " - не використовується -"
 
@@ -22337,9 +22372,14 @@ msgstr ""
 msgid "Hosts Down"
 msgstr "Недоступних хостів"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:97
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:100
 msgid "Services Critical"
 msgstr "У критичному стані"
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:101
+#, fuzzy
+msgid "Services Unknown"
+msgstr "Сервіси на %s"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:24
 msgid "Show the number of historical event records grouped by time and type"
@@ -26834,86 +26874,186 @@ msgstr "Видалити"
 msgid "Clear Filter"
 msgstr "Розрізати/Фільтрувати"
 
-#~ msgid "Main Configuration"
-#~ msgstr "Головна конфігурація"
-
-#~ msgid "\"vspheredb/admin\" permissions are required to continue"
-#~ msgstr "Для продовження необхідний дозвіл \"vspheredb/admin\""
-
-#~ msgid ""
-#~ "This module can collect Performance Data from your vCenters or ESXi "
-#~ "Hosts. Different on "
-#~ msgstr ""
-#~ "Цей модуль може збирати дані продуктивності з ваших vCenterів або ESXi "
-#~ "хостів. На відміну від "
-
-#~ msgid "Alarm History"
-#~ msgstr "Історія аварій"
-
-#~ msgid "MO Ref"
-#~ msgstr "MO Ref"
-
-#~ msgid "Is Template"
-#~ msgstr "Є шаблоном"
-
-#~ msgid "true"
-#~ msgstr "true"
-
-#~ msgid "false"
-#~ msgstr "false"
-
-#~ msgid "Page %d"
-#~ msgstr "Сторінка %d"
+#, fuzzy
+#~ msgid "Change UUID"
+#~ msgstr "UUID екземпляру"
 
 #, fuzzy
-#~ msgid "in:"
-#~ msgstr "Мін"
+#~ msgid "no value given"
+#~ msgstr "Не задавати значення (null)"
 
-#~ msgid "The Icinga Project"
-#~ msgstr "The Icinga Project"
-
-#~ msgid "No permission for %s"
-#~ msgstr "Немає дозволу для %s"
-
-#~ msgid "%s does not exist"
-#~ msgstr "%s не існує"
-
-#~ msgid "- inherited -"
-#~ msgstr "- унаслідувано -"
-
-#~ msgid "Delete Command Transport"
-#~ msgstr "Видалити Командний Транспорт"
-
-#~ msgid "Update Command Transport"
-#~ msgstr "Оновити Командний Транспорт"
-
-#~ msgid "Confirm cancellation of %d downtimes."
-#~ msgstr "Підтвердити скасування %d простоїв."
-
-#~ msgid "Cancel downtimes"
-#~ msgstr "Скасувати простої"
-
-#~ msgid "Cancel %d downtimes"
-#~ msgstr "Скасувати %d простоїв"
-
-#~ msgid "Update command transport %s"
-#~ msgstr "Оновити командний транспорт: %s"
-
-#~ msgid "Delete command transport %s"
-#~ msgstr "Видалити командний транспорт: %s"
-
-#~ msgid "Cancel Downtime"
-#~ msgstr "Відмінити простій"
-
-#~ msgid "Don't Store Preferences"
-#~ msgstr "Не зберігати користувацькі налаштування"
-
-#~ msgid "Grant admin permissions, e.g. manage announcements"
+#~ msgid ""
+#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
+#~ "required."
 #~ msgstr ""
-#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
+#~ "Для доступу до бази даних MySQL Icinga DB необхідний PHP модуль PDO-MySQL."
 
-#~ msgid "Open authentication configuration"
-#~ msgstr "Відкрити налаштування автентифікації"
+#~ msgid "Show all %d notifications"
+#~ msgstr "Показати всі %d сповіщення"
+
+#, fuzzy
+#~ msgid "This item has been commented"
+#~ msgstr "Цей об'єкт було увімкнено"
+
+#, fuzzy
+#~ msgid "This object has been %s in this configuration %s"
+#~ msgstr "Цей набір було успадковано від %s"
+
+#~ msgid "Unset"
+#~ msgstr "Не задано"
+
+#, fuzzy
+#~ msgid "Can't connect to Icinga Redis: phpredis>=4.3.0 required"
+#~ msgstr "Неможливо з'єднатися з Icinga Redis: %s"
+
+#~ msgid ""
+#~ "To view the most recent state information in Icinga DB Web, the Redis "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Для перегляду останньої інформації у Icinga DB Web, необхідний PHP модуль "
+#~ "Redis."
+
+#~ msgid "The Redis module for PHP in version 4.3 and above requires PHP 7+"
+#~ msgstr "PHP модуль Redis версії новішої за 4.3 потребує PHP 7+"
+
+#~ msgid ""
+#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
+#~ "is required."
+#~ msgstr ""
+#~ "Для доступу до IDO у базі даних MySQL необхідний модуль PHP PDO-MySQL."
+
+#~ msgid "Zend database adapter for MySQL"
+#~ msgstr "Адаптер Zend для бази даних MySQL"
+
+#~ msgid ""
+#~ "The Zend database adapter for MySQL is required to access a MySQL "
+#~ "database."
+#~ msgstr ""
+#~ "Для доступу до бази даних MySQL необхідний адаптер Zend для баз даних "
+#~ "MySQL."
+
+#~ msgid ""
+#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
+#~ "module for PHP is required."
+#~ msgstr ""
+#~ "Для доступу до IDO у базі даних PostgreSQL необхідний модуль PHP PDO-"
+#~ "PostgreSQL."
+
+#~ msgid "Zend database adapter for PostgreSQL"
+#~ msgstr "Адаптер Zend для бази даних PostgreSQL"
+
+#~ msgid ""
+#~ "The Zend database adapter for PostgreSQL is required to access a "
+#~ "PostgreSQL database."
+#~ msgstr ""
+#~ "Для доступу до бази даних PostgreSQL необхідний адаптер Zend для баз "
+#~ "даних PostgreSQL."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is available."
+#~ msgstr "Адаптер Zend для бази даних MySQL доступний."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for MySQL is missing."
+#~ msgstr "Адаптер Zend для бази даних MySQL відсутній."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is available."
+#~ msgstr "Адаптер Zend для бази даних PostgreSQL доступний."
+
+#~ msgctxt "setup.requirement.class"
+#~ msgid "The Zend database adapter for PostgreSQL is missing."
+#~ msgstr "Адаптер Zend для бази даних PostgreSQL відстутній."
+
+#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
+#~ msgstr "У версії 0.5+ необхідний IPL модуль для Icinga Web 2."
+
+#~ msgid "Action %d"
+#~ msgstr "Дія %d"
+
+#~ msgid "Note %d"
+#~ msgstr "Нотатка %d"
+
+#~ msgid "Continue with filter"
+#~ msgstr "Продовжити з фільтром"
+
+#~ msgid "Configure security related settings"
+#~ msgstr "Налаштування безпеки"
+
+#, fuzzy
+#~ msgid "History Object Type"
+#~ msgstr "Тип об'єкту"
+
+#, fuzzy
+#~ msgid "History Host Id"
+#~ msgstr "Історія"
+
+#, fuzzy
+#~ msgid "History Service Id"
+#~ msgstr "Сервіси на моніторингу"
+
+#, fuzzy
+#~ msgid "History Event Type"
+#~ msgstr "Тип події"
+
+#, fuzzy
+#~ msgid "History Event Time"
+#~ msgstr "Час події"
+
+#~ msgid "Generated from host vars"
+#~ msgstr "Згенеровані з змінних хостів"
+
+#~ msgid ""
+#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
+#~ msgstr ""
+#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
+#~ "Web"
+
+#~ msgid "Keep only matching rows (Whitelist)"
+#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
+
+#~ msgid "Reject the whole row (Blacklist)"
+#~ msgstr "Відкинути весь рядок (blacklist)"
+
+#~ msgid "%s is no longer blacklisted on %s"
+#~ msgstr "%s більше не у чорному списку %s"
+
+#~ msgid "%s has been blacklisted on %s"
+#~ msgstr "%s було додано у чорний список %s"
+
+#~ msgid "Blacklist"
+#~ msgstr "Чорний список"
+
+#~ msgid "This Service has been blacklisted on this host"
+#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+
+#~ msgid "Service Critical"
+#~ msgid_plural "Services Critical"
+#~ msgstr[0] "Критичний сервіс"
+#~ msgstr[1] "Критичних сервіси"
+#~ msgstr[2] "Критичних сервісів"
+
+#~ msgid "Host Down"
+#~ msgid_plural "Hosts Down"
+#~ msgstr[0] "Хост недоступний"
+#~ msgstr[1] "Хост недоступні"
+#~ msgstr[2] "Хост недоступні"
+
+#~ msgid "Open console with VMRC"
+#~ msgstr "Відкрити консоль VMRC"
+
+#~ msgid "Vendor / Model"
+#~ msgstr "Вендор / Модель"
+
+#~ msgid "NICs"
+#~ msgstr "NIC"
+
+#~ msgid ""
+#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
+#~ "is it part of the description (indented with a single space)"
+#~ msgstr ""
+#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
+#~ "і не є частиною опису (починається з одного пробілу)"
 
 #~ msgid ""
 #~ "Note that choosing \"Database\" as preference storage causes Icinga Web 2 "
@@ -26923,183 +27063,83 @@ msgstr "Розрізати/Фільтрувати"
 #~ "користувацьких налаштувань призведе Icinga Web 2 до їх збереження у тій "
 #~ "же базі даних що використовується для автентифікації."
 
-#~ msgid ""
-#~ "Can't process line %d in %s: Line does not specify a key:value pair nor "
-#~ "is it part of the description (indented with a single space)"
+#~ msgid "Open authentication configuration"
+#~ msgstr "Відкрити налаштування автентифікації"
+
+#~ msgid "Grant admin permissions, e.g. manage announcements"
 #~ msgstr ""
-#~ "Не вдалося обробити стрічку %d у %s: стрічка не вказує пару ключ:значення "
-#~ "і не є частиною опису (починається з одного пробілу)"
+#~ "Надати адміністраторські повноваження, наприклад, управляти оголошеннями"
 
-#~ msgid "NICs"
-#~ msgstr "NIC"
+#~ msgid "Don't Store Preferences"
+#~ msgstr "Не зберігати користувацькі налаштування"
 
-#~ msgid "Vendor / Model"
-#~ msgstr "Вендор / Модель"
+#~ msgid "Cancel Downtime"
+#~ msgstr "Відмінити простій"
 
-#~ msgid "Open console with VMRC"
-#~ msgstr "Відкрити консоль VMRC"
+#~ msgid "Delete command transport %s"
+#~ msgstr "Видалити командний транспорт: %s"
 
-#~ msgid "Host Down"
-#~ msgid_plural "Hosts Down"
-#~ msgstr[0] "Хост недоступний"
-#~ msgstr[1] "Хост недоступні"
-#~ msgstr[2] "Хост недоступні"
+#~ msgid "Update command transport %s"
+#~ msgstr "Оновити командний транспорт: %s"
 
-#~ msgid "Service Critical"
-#~ msgid_plural "Services Critical"
-#~ msgstr[0] "Критичний сервіс"
-#~ msgstr[1] "Критичних сервіси"
-#~ msgstr[2] "Критичних сервісів"
+#~ msgid "Cancel %d downtimes"
+#~ msgstr "Скасувати %d простоїв"
 
-#~ msgid "This Service has been blacklisted on this host"
-#~ msgstr "Цей сервіс було поміщено у чорний список на цьому хості"
+#~ msgid "Cancel downtimes"
+#~ msgstr "Скасувати простої"
 
-#~ msgid "Blacklist"
-#~ msgstr "Чорний список"
+#~ msgid "Confirm cancellation of %d downtimes."
+#~ msgstr "Підтвердити скасування %d простоїв."
 
-#~ msgid "%s has been blacklisted on %s"
-#~ msgstr "%s було додано у чорний список %s"
+#~ msgid "Update Command Transport"
+#~ msgstr "Оновити Командний Транспорт"
 
-#~ msgid "%s is no longer blacklisted on %s"
-#~ msgstr "%s більше не у чорному списку %s"
+#~ msgid "Delete Command Transport"
+#~ msgstr "Видалити Командний Транспорт"
 
-#~ msgid "Reject the whole row (Blacklist)"
-#~ msgstr "Відкинути весь рядок (blacklist)"
+#~ msgid "- inherited -"
+#~ msgstr "- унаслідувано -"
 
-#~ msgid "Keep only matching rows (Whitelist)"
-#~ msgstr "Зберегти лише відповідаючі рядки (whitelist)"
+#~ msgid "%s does not exist"
+#~ msgstr "%s не існує"
 
-#~ msgid ""
-#~ "Module \"ipl\" is not enabled. This module is mandatory for Icinga DB Web"
-#~ msgstr ""
-#~ "Модуль \"ipl\" не увімкнено. Цей модуль необхідний для роботи Icinga DB "
-#~ "Web"
+#~ msgid "No permission for %s"
+#~ msgstr "Немає дозволу для %s"
 
-#~ msgid "Generated from host vars"
-#~ msgstr "Згенеровані з змінних хостів"
+#~ msgid "The Icinga Project"
+#~ msgstr "The Icinga Project"
 
 #, fuzzy
-#~ msgid "History Event Time"
-#~ msgstr "Час події"
+#~ msgid "in:"
+#~ msgstr "Мін"
 
-#, fuzzy
-#~ msgid "History Event Type"
-#~ msgstr "Тип події"
+#~ msgid "Page %d"
+#~ msgstr "Сторінка %d"
 
-#, fuzzy
-#~ msgid "History Service Id"
-#~ msgstr "Сервіси на моніторингу"
+#~ msgid "false"
+#~ msgstr "false"
 
-#, fuzzy
-#~ msgid "History Host Id"
-#~ msgstr "Історія"
+#~ msgid "true"
+#~ msgstr "true"
 
-#, fuzzy
-#~ msgid "History Object Type"
-#~ msgstr "Тип об'єкту"
+#~ msgid "Is Template"
+#~ msgstr "Є шаблоном"
 
-#~ msgid "Configure security related settings"
-#~ msgstr "Налаштування безпеки"
+#~ msgid "MO Ref"
+#~ msgstr "MO Ref"
 
-#~ msgid "Continue with filter"
-#~ msgstr "Продовжити з фільтром"
-
-#~ msgid "Note %d"
-#~ msgstr "Нотатка %d"
-
-#~ msgid "Action %d"
-#~ msgstr "Дія %d"
-
-#~ msgid "The IPL module for Icinga Web 2 is required in version 0.5+."
-#~ msgstr "У версії 0.5+ необхідний IPL модуль для Icinga Web 2."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is missing."
-#~ msgstr "Адаптер Zend для бази даних PostgreSQL відстутній."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for PostgreSQL is available."
-#~ msgstr "Адаптер Zend для бази даних PostgreSQL доступний."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is missing."
-#~ msgstr "Адаптер Zend для бази даних MySQL відсутній."
-
-#~ msgctxt "setup.requirement.class"
-#~ msgid "The Zend database adapter for MySQL is available."
-#~ msgstr "Адаптер Zend для бази даних MySQL доступний."
+#~ msgid "Alarm History"
+#~ msgstr "Історія аварій"
 
 #~ msgid ""
-#~ "The Zend database adapter for PostgreSQL is required to access a "
-#~ "PostgreSQL database."
+#~ "This module can collect Performance Data from your vCenters or ESXi "
+#~ "Hosts. Different on "
 #~ msgstr ""
-#~ "Для доступу до бази даних PostgreSQL необхідний адаптер Zend для баз "
-#~ "даних PostgreSQL."
+#~ "Цей модуль може збирати дані продуктивності з ваших vCenterів або ESXi "
+#~ "хостів. На відміну від "
 
-#~ msgid "Zend database adapter for PostgreSQL"
-#~ msgstr "Адаптер Zend для бази даних PostgreSQL"
+#~ msgid "\"vspheredb/admin\" permissions are required to continue"
+#~ msgstr "Для продовження необхідний дозвіл \"vspheredb/admin\""
 
-#~ msgid ""
-#~ "To access the IDO stored in a PostgreSQL database the PDO-PostgreSQL "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "Для доступу до IDO у базі даних PostgreSQL необхідний модуль PHP PDO-"
-#~ "PostgreSQL."
-
-#~ msgid ""
-#~ "The Zend database adapter for MySQL is required to access a MySQL "
-#~ "database."
-#~ msgstr ""
-#~ "Для доступу до бази даних MySQL необхідний адаптер Zend для баз даних "
-#~ "MySQL."
-
-#~ msgid "Zend database adapter for MySQL"
-#~ msgstr "Адаптер Zend для бази даних MySQL"
-
-#~ msgid ""
-#~ "To access the IDO stored in a MySQL database the PDO-MySQL module for PHP "
-#~ "is required."
-#~ msgstr ""
-#~ "Для доступу до IDO у базі даних MySQL необхідний модуль PHP PDO-MySQL."
-
-#~ msgid "The Redis module for PHP in version 4.3 and above requires PHP 7+"
-#~ msgstr "PHP модуль Redis версії новішої за 4.3 потребує PHP 7+"
-
-#~ msgid ""
-#~ "To view the most recent state information in Icinga DB Web, the Redis "
-#~ "module for PHP is required."
-#~ msgstr ""
-#~ "Для перегляду останньої інформації у Icinga DB Web, необхідний PHP модуль "
-#~ "Redis."
-
-#, fuzzy
-#~ msgid "Can't connect to Icinga Redis: phpredis>=4.3.0 required"
-#~ msgstr "Неможливо з'єднатися з Icinga Redis: %s"
-
-#~ msgid "Unset"
-#~ msgstr "Не задано"
-
-#, fuzzy
-#~ msgid "This object has been %s in this configuration %s"
-#~ msgstr "Цей набір було успадковано від %s"
-
-#, fuzzy
-#~ msgid "This item has been commented"
-#~ msgstr "Цей об'єкт було увімкнено"
-
-#~ msgid "Show all %d notifications"
-#~ msgstr "Показати всі %d сповіщення"
-
-#~ msgid ""
-#~ "To access Icinga DB's MySQL database the PDO-MySQL module for PHP is "
-#~ "required."
-#~ msgstr ""
-#~ "Для доступу до бази даних MySQL Icinga DB необхідний PHP модуль PDO-MySQL."
-
-#, fuzzy
-#~ msgid "no value given"
-#~ msgstr "Не задавати значення (null)"
-
-#, fuzzy
-#~ msgid "Change UUID"
-#~ msgstr "UUID екземпляру"
+#~ msgid "Main Configuration"
+#~ msgstr "Головна конфігурація"

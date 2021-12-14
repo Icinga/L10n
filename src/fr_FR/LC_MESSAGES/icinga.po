@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Icinga L10n 0691d18\n"
 "Report-Msgid-Bugs-To: https://github.com/Icinga/L10n/issues\n"
-"POT-Creation-Date: 2021-12-10 15:39+0000\n"
+"POT-Creation-Date: 2021-12-14 09:43+0000\n"
 "PO-Revision-Date: 2021-07-13 14:54-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -149,6 +149,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:71
 #: sources.d/icingaweb2-module-director/library/Director/TranslationDummy.php:13
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableEndpoint.php:20
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableService.php:106
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmLocationInfoTable.php:73
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:124
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/MemoryUsage.php:35
@@ -748,6 +749,7 @@ msgstr ""
 
 #: sources.d/icingadb-web/application/controllers/ServicesController.php:232
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:80
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableService.php:107
 #: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:100
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:172
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:713
@@ -1368,7 +1370,7 @@ msgstr[1] ""
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:70
 #, php-format
 msgid "Scheduled downtime successfully"
-msgid_plural "Scheduled downtime for %d services successfully"
+msgid_plural "Scheduled downtime for %d hosts successfully"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -4856,7 +4858,6 @@ msgid "Flexible Duration"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:158
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:136
 msgid "Children"
 msgstr ""
 
@@ -6093,8 +6094,8 @@ msgstr ""
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:487
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:213
 #: sources.d/icingaweb2-module-director/application/controllers/SchemaController.php:80
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:250
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:263
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:249
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:262
 msgid "Download"
 msgstr ""
 
@@ -6709,41 +6710,48 @@ msgstr ""
 msgid "Show Overview"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:209
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:138
+msgctxt "businessprocess.nodes"
+msgid "Child"
+msgid_plural "Children"
+msgstr[0] ""
+msgstr[1] ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:215
 msgid "Show tiles for this subtree"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:216
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:222
 msgid "Show this subtree as a tree"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:229
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:235
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:215
 msgid "Show this process as part of its original configuration"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:245
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:251
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:323
 msgid "More information"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:299
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:305
 msgid "Show the business impact of this node by simulating a specific state"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:311
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:317
 msgid "Modify this monitored node"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:328
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:334
 msgid "Modify this business process node"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:342
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:348
 msgid "Add a new sub-node to this business process"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:359
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:365
 msgid "Delete this node"
 msgstr ""
 
@@ -7042,8 +7050,8 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:115
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:355
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:138
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:535
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:344
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:542
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:365
 #: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:149
 #: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:209
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:522
@@ -7473,55 +7481,55 @@ msgid ""
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:214
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:285
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:291
 msgid "Individual Service objects"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:245
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:316
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:248
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:323
 #, php-format
 msgid "%s (Applied Service set)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:256
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:331
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:259
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:338
 msgid "Applied services"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:279
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:282
 msgid "Configuration (read-only)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:280
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:283
 #, php-format
 msgid "Services on %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:366
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:373
 #, php-format
 msgid "%s (Service set)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:398
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:405
 #, php-format
 msgid "Applied service: %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:441
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:448
 #, php-format
 msgid "Inherited service: %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:514
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:521
 #, php-format
 msgid "%s on %s (from set: %s)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:568
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:575
 msgid "Show"
 msgstr "Afficher"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:592
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:599
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/HostActions.php:36
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:43
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectTabs.php:132
@@ -7555,7 +7563,7 @@ msgid "Import run"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:91
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:127
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:134
 #, php-format
 msgid "Import source: %s"
 msgstr ""
@@ -7572,7 +7580,11 @@ msgstr ""
 msgid "Add import source"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:121
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:108
+msgid "Creating Import Sources"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:125
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:451
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/HostActions.php:55
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:56
@@ -7584,7 +7596,14 @@ msgstr ""
 msgid "Modify"
 msgstr "Modifier"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:140
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:126
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:284
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:314
+#, fuzzy
+msgid "Modifying Import Sources"
+msgstr "Modifier « %s »"
+
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:147
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:446
 #: sources.d/icingaweb2-module-director/library/Director/Web/ActionBar/AutomationObjectActionBar.php:44
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectController.php:336
@@ -7593,35 +7612,39 @@ msgstr "Modifier"
 msgid "Clone"
 msgstr "Clôner"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:159
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:148
+msgid "Cloning Import Sources"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:169
 #, php-format
 msgid "Import source preview: %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:165
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:175
 msgid "Download JSON"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:236
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:250
 #, php-format
 msgid "Property modifiers: %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:238
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:252
 msgid "Add property modifier"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:251
-#, php-format
-msgid "Import run history: %s"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:265
 #, php-format
+msgid "Import run history: %s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:279
+#, php-format
 msgid "%s: add Property Modifier"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:291
+#: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:309
 #, php-format
 msgid "%s: Property Modifier"
 msgstr ""
@@ -9425,8 +9448,8 @@ msgstr "Jour(s)"
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeRangeForm.php:24
 #: sources.d/icingaweb2-module-director/application/forms/IcingaTimePeriodRangeForm.php:23
 msgid ""
-"Might be, monday, tuesday, 2016-01-28 - have a look at the documentation for "
-"more examples"
+"Might be monday, tuesday or 2016-01-28 - have a look at the documentation "
+"for more examples"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeRangeForm.php:29
@@ -9841,7 +9864,8 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:30
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierGetPropertyFromOtherImportSource.php:61
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/PropertymodifierTable.php:113
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/PropertymodifierTable.php:129
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/PropertymodifierTable.php:132
 msgid "Property"
 msgstr ""
 
@@ -9962,6 +9986,10 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:76
 #, php-format
 msgid "Your database looks good, you are ready to %s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:78
+msgid "start working with the Icinga Director"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:98
@@ -10883,7 +10911,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/ExternalNotificationCommandsDashlet.php:12
 msgid ""
 "External Notification Commands have been defined in your local Icinga 2 "
-"Configuration. "
+"Configuration."
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/CommandTemplatesDashlet.php:19
@@ -11087,7 +11115,7 @@ msgid ""
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/NotificationApplyDashlet.php:19
-msgid "Apply notifications with specific properties according to given rules. "
+msgid "Apply notifications with specific properties according to given rules."
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/NotificationCommandsDashlet.php:12
@@ -13049,39 +13077,39 @@ msgid ""
 "endpoint: %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:246
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:245
 msgid "For manual configuration"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:247
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:246
 msgid "Ticket"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:248
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:247
 msgid "Windows Kickstart Script"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:257
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:256
 msgid ""
 "This requires the Icinga Agent to be installed. It generates and signs it's "
 "certificate and it also generates a minimal icinga2.conf to get your agent "
 "connected to it's parents"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:261
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:260
 msgid "Linux commandline"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:268
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:267
 msgid "Just download and run this script on your Linux Client Machine:"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ActivityLogTable.php:91
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ActivityLogTable.php:90
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/BranchActivityTable.php:59
 msgid "Jump to this object"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ActivityLogTable.php:101
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ActivityLogTable.php:100
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/BranchActivityTable.php:75
 msgid "Show details related to this change"
 msgstr ""
@@ -13212,8 +13240,8 @@ msgid "via"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaAppliedServiceTable.php:32
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaHostServiceTable.php:150
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:154
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableService.php:103
 msgid "Servicename"
 msgstr ""
 
@@ -13300,11 +13328,11 @@ msgstr ""
 msgid "This template is not in use"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplatesTable.php:51
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplatesTable.php:52
 msgid "Template Name"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplatesTable.php:63
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplatesTable.php:64
 msgid " - not in use -"
 msgstr ""
 
@@ -20717,9 +20745,14 @@ msgstr ""
 msgid "Hosts Down"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:97
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:100
 msgid "Services Critical"
 msgstr ""
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:101
+#, fuzzy
+msgid "Services Unknown"
+msgstr "Services"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:24
 msgid "Show the number of historical event records grouped by time and type"
