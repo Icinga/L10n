@@ -1,0 +1,15 @@
+name: Weblate Update
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  trigger-update:
+    name: Weblate Update Trigger
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository update
+        run: 'curl -d operation=pull -H "Authorization: Token ${{ secrets.WEBLATE_TOKEN }}" https://translate.icinga.com/api/projects/icinga/repository/'
