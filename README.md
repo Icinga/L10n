@@ -1,3 +1,7 @@
+<a href="http://translate.icinga.com/engage/icinga/">
+<img src="http://translate.icinga.com/widgets/icinga/-/287x66-white.png" alt="Translation status" />
+</a>
+
 # Icinga - L10n
 
 L10n (short for *Localization*) is the central location for all translations available
