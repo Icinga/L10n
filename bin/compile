@@ -1,0 +1,20 @@
+#!/bin/bash
+
+declare -A CATALOGS=()
+
+COMPONENTS=$(find . -mindepth 1 -maxdepth 1 -type d -not -name "sources.d" -printf "%P ")
+for component_name in $COMPONENTS; do
+  echo "Checking $component_name for catalogs"
+  LOCALES=$(find $component_name -mindepth 1 -maxdepth 1 -type d -printf "%P ")
+  echo "Component locales found: $LOCALES"
+  for locale_name in $LOCALES; do
+    CATALOGS[$locale_name]+=" $component_name/$locale_name/LC_MESSAGES/icinga.po"
+  done
+done
+
+for locale_name in "${!CATALOGS[@]}"; do
+  echo "Compiling catalogs for $locale_name"
+  mkdir -p ../locale/$locale_name/LC_MESSAGES
+  echo "${CATALOGS[$locale_name]}" | xargs msgcat -o ../locale/$locale_name/LC_MESSAGES/icinga.po --lang $locale_name
+  msgfmt -o ../locale/$locale_name/LC_MESSAGES/icinga.mo -c ../locale/$locale_name/LC_MESSAGES/icinga.po
+done

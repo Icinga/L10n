@@ -17,7 +17,7 @@ SOURCE_REPOSITORIES=(
   icingaweb2-module-businessprocess
   #icingaweb2-module-doc
   #icingaweb2-module-fileshipper
-  #icingaweb2-module-jira
+  icingaweb2-module-jira
   #icingaweb2-module-nagvis
   icingaweb2-module-pdfexport
   #icingaweb2-module-pnp
@@ -43,45 +43,43 @@ for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
   fi
 done
 
-# Create a list of files xgettext should scan
-find -L sources.d -regex ".*\.\(php\|phtml\)" ! -path "*/vendor/*" ! -path "*/test/*" > catalog.txt
+for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
+  if [ ! -d $repo_name ]; then
+    mkdir $repo_name
+  fi
 
-xgettext --language=PHP \
-         --keyword=translate \
-         --keyword=translate:1,2c \
-         --keyword=translatePlural:1,2 \
-         --keyword=translatePlural:1,2,4c \
-         --keyword=mt:2 \
-         --keyword=mt:2,3c \
-         --keyword=mtp:2,3 \
-         --keyword=mtp:2,3,5c \
-         --keyword=t \
-         --keyword=t:1,2c \
-         --keyword=tp:1,2 \
-         --keyword=tp:1,2,4c \
-         --keyword=N_ \
-         --from-code=utf-8 \
-         --files-from=catalog.txt \
-         --sort-by-file \
-         --copyright-holder="Icinga GmbH" \
-         --package-name="Icinga L10n" \
-         --package-version=$(git describe --always) \
-         --msgid-bugs-address=https://github.com/Icinga/L10n/issues \
-         --default-domain=icinga \
-         --output=icinga.pot
+  # Create a list of files xgettext should scan
+  find -L sources.d/$repo_name -regex ".*\.\(php\|phtml\)" ! -path "*/vendor/*" ! -path "*/test/*" > $repo_name/catalog.txt
 
-# Re-add the PoEdit header extensions
-REPLACE_CODE=$(cat << PYTHON
-import sys, re
-result = re.sub(
-    r'msgid \"\"\nmsgstr \"\"(\n\".*\")+',
-    '\g<0>\n'
-        + '\"X-Poedit-Basepath: ../../../src\\\\\\\\n\"\n'
-        + '\"X-Poedit-SearchPath-0: sources.d\\\\\\\\n\"',
-    sys.stdin.read()
-)
+  xgettext --language=PHP \
+           --keyword=translate \
+           --keyword=translate:1,2c \
+           --keyword=translatePlural:1,2 \
+           --keyword=translatePlural:1,2,4c \
+           --keyword=mt:2 \
+           --keyword=mt:2,3c \
+           --keyword=mtp:2,3 \
+           --keyword=mtp:2,3,5c \
+           --keyword=t \
+           --keyword=t:1,2c \
+           --keyword=tp:1,2 \
+           --keyword=tp:1,2,4c \
+           --keyword=N_ \
+           --from-code=utf-8 \
+           --files-from=$repo_name/catalog.txt \
+           --sort-by-file \
+           --copyright-holder="Icinga GmbH" \
+           --package-name="Icinga L10n" \
+           --package-version=$(git describe --always) \
+           --default-domain=icinga \
+           --output=$repo_name/messages.pot
+
+  # Use current year in the copyright for new templates without one yet
+  REPLACE_CODE=$(cat << PYTHON
+import sys
+input = sys.stdin.read()
 from datetime import date
-result = result.replace(
+result = input.replace(
     '# Copyright (C) YEAR Icinga GmbH',
     '# Copyright (C) {0} Icinga GmbH'.format(date.today().year),
     1
@@ -89,12 +87,13 @@ result = result.replace(
 sys.stdout.write(result)
 PYTHON
 )
-cat icinga.pot | python -c "$REPLACE_CODE" > temp; mv temp icinga.pot
+  cat $repo_name/messages.pot | python3 -c "$REPLACE_CODE" > temp; mv temp $repo_name/messages.pot
 
-# Cleanup created files and directories
-rm catalog.txt
-for repo_name in "${FETCHED_REPOS[@]}"; do
-  rm -rf sources.d/$repo_name
+  # Cleanup created files and directories
+  rm $repo_name/catalog.txt
+  if [[ " ${FETCHED_REPOS[*]} " =~ " ${repo_name} " ]]; then
+    rm -rf sources.d/$repo_name
+  fi
 done
 
 # Check for changes (new messages) that need to be committed
@@ -106,56 +105,8 @@ git diff -U0 \
 
 if [ $CHANGES -eq 0 ]; then
   echo "No new messages found.";
-  git checkout icinga.pot;
+  git checkout */messages.pot
 else
-  STATS=""
-
-  # Update intermediate (in-progress) catalogs
-  LOCALES=$(find . -mindepth 1 -maxdepth 1 -type d -regextype grep -regex '\./[a-z]\{2\}_[A-Z]\{2\}' -printf "%P ")
-  for locale_name in $LOCALES; do
-    msgmerge --update --backup=none --lang=$locale_name --sort-by-file $locale_name/LC_MESSAGES/icinga.po icinga.pot
-
-    STATS_OUT=$(LC_ALL=C msgfmt --statistics $locale_name/LC_MESSAGES/icinga.po 2>&1 >/dev/null)
-    if [ -f "messages.mo" ]; then
-      rm "messages.mo"
-    fi
-
-    # TODO: Make this a function? (is also used in bin/validate)
-    TRANSLATED=0
-    UNTRANSLATED=0
-    FUZZY=0
-
-    RE="[0-9]+"
-    LAST_LINE=$(echo "$STATS_OUT" | tail -1)
-    for chars in $LAST_LINE; do
-      if [[ "$chars" =~ $RE ]] && [[ ${BASH_REMATCH[0]} ]]; then
-        LAST_CNT="${BASH_REMATCH[0]}"
-      else
-        case $chars in
-          "translated")
-            TRANSLATED=$LAST_CNT
-          ;;
-          "fuzzy")
-            FUZZY=$LAST_CNT
-          ;;
-          "untranslated")
-            UNTRANSLATED=$LAST_CNT
-          ;;
-        esac
-      fi
-    done
-
-    PROGRESS=$(python -c "print (int(round(($TRANSLATED.0 / ($TRANSLATED + $UNTRANSLATED + $FUZZY)) * 100)))")
-    STATS+=" $locale_name:$PROGRESS%"
-  done
-
-  # Update locale statistics
-  python -c "import json; \
-    print ( \
-      json.dumps({k: v for k, v in (kv for kv in (s.split(':') for s in '$STATS'.strip().split()))}) \
-    ) \
-  " > ../.github/stats.json
-
   echo "New messages found!";
   # Working tree is left dirty as the following step creates a new pull request
 fi
