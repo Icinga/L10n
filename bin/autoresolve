@@ -175,8 +175,8 @@ if [ "$manage_remote" == true ]; then
   git checkout -b pull/$PR_NUMBER $PR_AUTHOR/$PR_BRANCH
 fi
 
-# Attempt to merge master, should fail
-git merge --no-ff --no-commit origin/master || true
+# Attempt to merge main, should fail
+git merge --no-ff --no-commit origin/main || true
 
 if [ ! -f .git/MERGE_HEAD ]; then
   echo "Merge aborted or succeeded for some unknown reason. Cancelling pull request resolution"
@@ -207,7 +207,7 @@ while IFS= read -r line; do
 done <<< "$GIT_STATUS"
 
 # Finish the merge
-echo -e "Update with base 'origin/master'\n\nResolves source catalog conflicts" > .git/MERGE_MSG
+echo -e "Update with base 'origin/main'\n\nResolves source catalog conflicts" > .git/MERGE_MSG
 GIT_EDITOR=true git merge --continue
 
 if [ "$manage_remote" == true ]; then
