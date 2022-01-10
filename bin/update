@@ -38,8 +38,15 @@ FETCHED_REPOS=();
 for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
   if [ ! -d "sources.d/$repo_name" ]; then
     FETCHED_REPOS+=( $repo_name );
-    wget -q -O - https://github.com/Icinga/$repo_name/archive/main.tar.gz | tar xz
-    mv $repo_name-main/ sources.d/$repo_name
+
+    DEFAULT_BRANCH="master"
+    HTTP_STATUS=$(curl -Is https://api.github.com/repos/Icinga/$repo_name/branches/master | head -n 1 | awk '{ print $2 }')
+    if [ "$HTTP_STATUS" == "301" ]; then
+      DEFAULT_BRANCH="main"
+    fi
+
+    wget -q -O - https://github.com/Icinga/$repo_name/archive/$DEFAULT_BRANCH.tar.gz | tar xz
+    mv $repo_name-$DEFAULT_BRANCH/ sources.d/$repo_name
   fi
 done
 
