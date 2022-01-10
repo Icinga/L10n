@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2021 Icinga GmbH
+# Copyright (C) 2022 Icinga GmbH
 # This file is distributed under the same license as the Icinga L10n package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n 8b87730\n"
+"Project-Id-Version: Icinga L10n c6cc3c8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 16:18+0000\n"
+"POT-Creation-Date: 2022-01-10 08:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,8 +66,8 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:138
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:546
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:365
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:155
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:215
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:169
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:229
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:522
 #: sources.d/icingaweb2-module-director/library/Director/Web/ActionBar/DirectorBaseActionBar.php:35
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ActionController.php:182
@@ -539,7 +539,7 @@ msgid "Creating Service Sets"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:141
-#: sources.d/icingaweb2-module-director/application/controllers/ServicesetController.php:69
+#: sources.d/icingaweb2-module-director/application/controllers/ServicesetController.php:68
 msgid "Add service"
 msgstr ""
 
@@ -905,32 +905,32 @@ msgid ""
 "where you can register new hosts"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:117
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:131
 #, php-format
 msgid "Add a service to \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:122
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:136
 #, php-format
 msgid "Apply \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:146
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:160
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectController.php:164
 msgid "Modifying Templates"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:186
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:200
 #, php-format
 msgid "(on %s)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:223
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:237
 #, php-format
 msgid "Apply: %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:272
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:286
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:15
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:598
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:12
@@ -941,8 +941,8 @@ msgstr ""
 msgid "Host"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:276
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:297
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:290
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:311
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:101
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:90
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:90
@@ -957,21 +957,21 @@ msgstr ""
 msgid "Services"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:293
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:307
 msgid "ServiceSet"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServicesetController.php:52
+#: sources.d/icingaweb2-module-director/application/controllers/ServicesetController.php:51
 #, php-format
 msgid "Add a service set to \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServicesetController.php:65
+#: sources.d/icingaweb2-module-director/application/controllers/ServicesetController.php:64
 #, php-format
 msgid "Services in this set: %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/ServicesetController.php:84
+#: sources.d/icingaweb2-module-director/application/controllers/ServicesetController.php:83
 #, php-format
 msgid "Hosts using this set: %s"
 msgstr ""
@@ -1725,6 +1725,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiFieldsTable.php:79
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiObjectsTable.php:57
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiPrototypesTable.php:40
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:42
 msgid "Name"
 msgstr ""
 
@@ -5683,7 +5684,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/CubeLinks.php:35
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:43
-#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:66
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:65
 msgid "Modify a host"
 msgstr ""
 
@@ -5693,7 +5694,7 @@ msgid "This allows you to modify properties for \"%s\""
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/CubeLinks.php:52
-#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:72
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:71
 #, php-format
 msgid "Modify %d hosts"
 msgstr ""
@@ -5703,13 +5704,13 @@ msgid "This allows you to modify properties for all chosen hosts at once"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:45
-#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:68
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:67
 #, php-format
 msgid ""
 "This allows you to modify properties for \"%s\" (deployed from director)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:74
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/IcingaDbCubeLinks.php:73
 msgid ""
 "This allows you to modify properties for all chosen hosts (deployed from "
 "director) at once"
@@ -6662,7 +6663,7 @@ msgstr ""
 msgid "Imported rows"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:62
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:57
 #, php-format
 msgid "%s (%d members)"
 msgstr ""
