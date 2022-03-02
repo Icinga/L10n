@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n 63f5183\n"
+"Project-Id-Version: Icinga L10n 55f58fa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-28 12:06+0000\n"
+"POT-Creation-Date: 2022-03-02 13:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -554,6 +554,9 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:533
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:111
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:130
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:29
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:28
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:29
 msgid "State"
 msgstr ""
 
@@ -593,6 +596,7 @@ msgstr ""
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:20
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:78
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:133
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:25
 msgid "Type"
 msgstr ""
 
@@ -1294,6 +1298,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:31
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:30
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:29
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:97
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:274
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:94
@@ -3498,6 +3503,10 @@ msgstr ""
 msgid "Required parameter '%s' missing"
 msgstr ""
 
+#: sources.d/icingaweb2/library/Icinga/Common/PdfExport.php:59
+msgid "Page"
+msgstr ""
+
 #: sources.d/icingaweb2/library/Icinga/Date/DateFormatter.php:167
 #, php-format
 msgctxt "An event happened on the given date or date and time"
@@ -3603,7 +3612,7 @@ msgstr ""
 msgid "Filter column \"%s\" not found in table \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2/library/Icinga/Web/Controller/ActionController.php:268
+#: sources.d/icingaweb2/library/Icinga/Web/Controller/ActionController.php:273
 msgid "Method Not Allowed"
 msgstr ""
 
@@ -4336,6 +4345,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:46
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:69
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:47
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:26
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:53
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:65
 msgid "Comment"
@@ -4459,6 +4469,7 @@ msgid "Downtime not found"
 msgstr ""
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimeController.php:67
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:30
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-description.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:114
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:128
@@ -4977,6 +4988,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:19
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:26
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:30
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/service-header.phtml:51
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:277
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:258
@@ -6338,10 +6350,10 @@ msgid "Active Checks Disabled"
 msgstr ""
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Link.php:37
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:57
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:66
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:68
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:82
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:90
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:99
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-detail.phtml:27
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:37
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:214
@@ -6355,8 +6367,8 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:56
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/servicegrid-flipped.phtml:93
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/servicegrid.phtml:94
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:76
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:103
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:85
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:112
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-detail.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:25
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:202
@@ -6913,14 +6925,14 @@ msgstr ""
 msgid "No comments found matching the filter"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:45
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:51
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:73
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:48
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:54
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hostgroups.phtml:286
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:81
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:90
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:114
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/servicegroups.phtml:174
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:136
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:145
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:249
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/show-more.phtml:6
 msgid "Show More"
@@ -7132,14 +7144,14 @@ msgstr ""
 msgid "No hosts found matching the filter."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:35
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:48
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:44
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:57
 #, php-format
 msgid "Overdue %s"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:43
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:56
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:52
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:65
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/host-header.phtml:17
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/service-header.phtml:18
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/service-header.phtml:45
@@ -7152,7 +7164,7 @@ msgid "No notifications found matching the filter."
 msgstr ""
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:46
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:69
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:78
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-detail.phtml:5
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:192
@@ -8853,6 +8865,18 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Navigation/Renderer/BackendAvailabilityNavigationItemRenderer.php:86
 #, php-format
 msgid "Monitoring backend %s is not running"
+msgstr ""
+
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Widget/CustomVarTable.php:142
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Widget/CustomVarTable.php:165
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Widget/CustomVarTable.php:188
+msgid "empty string"
 msgstr ""
 
 #: sources.d/icingaweb2/modules/setup/application/clicommands/ConfigCommand.php:39
