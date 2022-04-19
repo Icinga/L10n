@@ -6,15 +6,15 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n 1033144\n"
+"Project-Id-Version: Icinga L10n fe1ec02\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-06 18:22+0000\n"
+"POT-Creation-Date: 2022-04-18 16:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/AlarmsController.php:22
@@ -34,13 +34,13 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/DatastoreController.php:97
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/EventsController.php:160
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:141
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:114
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:142
 msgid "Events"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/AlarmsController.php:78
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/EventsController.php:163
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:118
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:146
 msgid "Alarms"
 msgstr ""
 
@@ -77,7 +77,7 @@ msgid "vSphereDB Database Configuration"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:39
-#: sources.d/icingaweb2-module-vspheredb/configuration.php:29
+#: sources.d/icingaweb2-module-vspheredb/configuration.php:32
 msgid "Configuration"
 msgstr ""
 
@@ -233,6 +233,8 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/DatastoresController.php:19
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/DatastoresController.php:29
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:38
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:76
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/OverviewController.php:21
 #: sources.d/icingaweb2-module-vspheredb/configuration.php:20
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Controller/ObjectsController.php:154
@@ -276,6 +278,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/HostsController.php:19
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/HostsController.php:29
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:32
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/OverviewController.php:24
 #: sources.d/icingaweb2-module-vspheredb/configuration.php:17
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Controller/ObjectsController.php:150
@@ -283,6 +286,139 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/SwitchesTable.php:28
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VCenterSummaryTable.php:112
 msgid "Hosts"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:29
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:118
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:150
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/ConfigTabs.php:48
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/HostMonitoringInfo.php:42
+msgid "Monitoring"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:35
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:75
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmsController.php:27
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmsController.php:53
+#: sources.d/icingaweb2-module-vspheredb/configuration.php:14
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:113
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/HostVmsInfoTable.php:21
+msgid "Virtual Machines"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:44
+msgid "Back to overview"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:49
+msgid ""
+"Select any folder (or the root node) to define (and override) Monitoring "
+"Rules for all related child nodes"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:57
+#: sources.d/icingaweb2-module-vspheredb/configuration.php:26
+msgid "Monitoring Rules"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:63
+#, php-format
+msgid ""
+"The Icinga Module for vSphere® ships a lot of data, state and sensor values. "
+"If you want to define related Icinga Service checks for Alarming reasons, "
+"Monitoring Rules are %s."
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:66
+msgid "the way to go"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:68
+#, php-format
+msgid ""
+"Instead of checking every single Disk, just define rules (and exemptions "
+"from those) for %s."
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:70
+msgid "all of them"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:71
+msgid "Defining Rules"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:73
+#, php-format
+msgid "Define rules for %s, %s and %s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:74
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:76
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:88
+msgid "Host Systems"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:78
+msgid "Defining Check Commands"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:80
+#, php-format
+msgid "Check our %s for instructions of how to set them up"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:81
+msgid "documentation"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:125
+msgid "Rules"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:130
+msgid "Global VM Monitoring Rules"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:136
+#, php-format
+msgid "vCenter VM Monitoring Rules: %s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:145
+#, php-format
+msgid "DataCenter VM Monitoring Rules: %s (%s)"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:151
+#, php-format
+msgid "Folder VM Monitoring Rules: %s (%s)"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:166
+msgid "No change has been applied"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:168
+#, php-format
+msgid "Settings for %s have been modified"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:171
+#, php-format
+msgid "Settings for %s have been stored"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:173
+#, php-format
+msgid "Settings for %s have been removed"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:181
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/FormElementStealer.php:38
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:138
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:164
+msgid "Store"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/OverviewController.php:27
@@ -488,28 +624,29 @@ msgstr ""
 msgid "Daemon is not running"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:63
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:110
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:65
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:138
 msgid "Hardware"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:106
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:96
+msgid "Hide Settings"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:103
+msgid "Show Settings"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:134
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:77
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Controller/ObjectsController.php:146
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmsOnDatastoreTable.php:50
 msgid "Virtual Machine"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmsController.php:27
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmsController.php:53
-#: sources.d/icingaweb2-module-vspheredb/configuration.php:14
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:113
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/HostVmsInfoTable.php:21
-msgid "Virtual Machines"
-msgstr ""
-
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VmsController.php:36
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VmsController.php:89
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskUsageRuleDefinition.php:31
 msgid "Disk Usage"
 msgstr ""
 
@@ -536,7 +673,7 @@ msgstr ""
 msgid "Virtualization (VMware)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/configuration.php:26
+#: sources.d/icingaweb2-module-vspheredb/configuration.php:29
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsGuestDiskUsageTable.php:60
 msgid "History"
 msgstr ""
@@ -573,6 +710,237 @@ msgid ""
 "directly on a host managed by VirtualCenter shows up in this state."
 msgstr ""
 
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/ConfigurationPolicyRuleSet.php:13
+msgid "Configuration Policy"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DefaultRuleSet.php:14
+msgid "Default Rules"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskHealthRuleSet.php:14
+msgid "Disk Health"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskUsageRuleDefinition.php:159
+msgid "Apply to specific disks only"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskUsageRuleDefinition.php:163
+msgid "Ignore specific disks"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskUsageRuleDefinition.php:167
+msgid "Threshold Precedence"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskUsageRuleDefinition.php:169
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseDbResourceForm.php:85
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/Element/VCenterSelection.php:27
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/LogLevelForm.php:56
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:280
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/PerfdataConsumerForm.php:76
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:127
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterShipMetricsForm.php:95
+msgid "- please choose -"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskUsageRuleDefinition.php:170
+msgid "Better threshold wins"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskUsageRuleDefinition.php:171
+msgid "Worse threshold wins"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskUsageRuleDefinition.php:175
+msgid "Raise Warning with less then X percent free"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskUsageRuleDefinition.php:179
+msgid "Raise Critical with less then X percent free"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskUsageRuleDefinition.php:183
+msgid "Raise Warning with less then X MBytes free"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskUsageRuleDefinition.php:187
+msgid "Raise Critical with less then X MBytes free"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:29
+msgid "Guest Utilities Policy"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:99
+msgid "When the vCenter says \"outdated\""
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:102
+msgid "When not installed"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:105
+msgid "When installed, but not running"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:108
+msgid "On version 2147483647"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:110
+#, php-format
+msgid "Please read %s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:115
+msgid "Raise Warning for versions lower than"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:119
+msgid "Raise Critical for versions lower than"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:32
+msgid "Power State"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:125
+msgid "When powered off"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:128
+msgid "When suspended"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:131
+msgid "When unknown"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:132
+msgid "Might be disconnected"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:135
+msgid "Raise WARNING for uptime less than"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:136
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:140
+msgid "Please provide the uptime in seconds"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:139
+msgid "Raise CRITICAL for uptime less than"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:143
+msgid "Raise WARNING for uptime greater than"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:144
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:148
+msgid "Please provide the uptime in days"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:147
+msgid "Raise CRITICAL for uptime greater than"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/SnapshotsRuleDefinition.php:24
+msgid "Snapshot Policy"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/SnapshotsRuleDefinition.php:78
+msgid "Raise Warning if more than X snapshots"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/SnapshotsRuleDefinition.php:82
+msgid "Raise Critical if more than X snapshots"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/SnapshotsRuleDefinition.php:86
+msgid "Raise Warning for snapshots older than X days"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/SnapshotsRuleDefinition.php:90
+msgid "Raise Critical for snapshots older than X days"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/VMwareObjectStateRuleDefinition.php:26
+msgid "VMware Object State"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/VMwareObjectStateRuleDefinition.php:63
+msgid "When VMware shows YELLOW"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/VMwareObjectStateRuleDefinition.php:66
+msgid "When VMware shows GRAY"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/VMwareObjectStateRuleDefinition.php:67
+msgid "VM might be unreachable"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/VMwareObjectStateRuleDefinition.php:70
+msgid "When VMware shows RED"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/MonitoringRulesTree.php:44
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/MonitoringRulesTree.php:71
+msgid "All vCenters"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:117
+msgid "new instance"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:162
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Table/ObjectRulesCheckTable.php:115
+#, php-format
+msgid "inherited from %s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:163
+msgid "default"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:264
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/PerfdataConsumerForm.php:44
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:71
+msgid "Enabled"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:273
+msgid "Not configured / Inherited"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:274
+msgid "Do nothing"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:275
+msgid "Trigger a Warning state"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:276
+msgid "Trigger a Critical state"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:277
+msgid "Trigger an Unknown state"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Table/ObjectRulesCheckTable.php:63
+msgid "Check set has been disabled"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Table/ObjectRulesCheckTable.php:74
+msgid "Check rule has been disabled"
+msgstr ""
+
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/PerformanceData/IcingaRrd/RrdImg.php:13
 #, php-format
 msgid "Throughput (bits/s, %s RX / %s TX)"
@@ -602,11 +970,6 @@ msgstr ""
 msgid "Object Type"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:76
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:88
-msgid "Host Systems"
-msgstr ""
-
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:78
 msgid "Compute Resource"
 msgstr ""
@@ -619,6 +982,17 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:86
 msgid "- any -"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Monitoring/DetailviewExtension.php:86
+#, php-format
+msgid "ESXi Host: %s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Monitoring/DetailviewExtension.php:89
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmsOnDatastoreTable.php:65
+#, php-format
+msgid "Virtual Machine: %s"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Controller/ObjectsController.php:23
@@ -662,16 +1036,6 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseDbResourceForm.php:84
 msgid "DB Resource"
-msgstr ""
-
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseDbResourceForm.php:85
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/Element/VCenterSelection.php:27
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/LogLevelForm.php:56
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:274
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/PerfdataConsumerForm.php:76
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:127
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterShipMetricsForm.php:95
-msgid "- please choose -"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseDbResourceForm.php:92
@@ -765,12 +1129,6 @@ msgstr ""
 msgid "- filter by parent -"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/FormElementStealer.php:38
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:138
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:164
-msgid "Store"
-msgstr ""
-
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/FormElementStealer.php:57
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:144
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:168
@@ -854,14 +1212,14 @@ msgstr ""
 msgid "Set"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:32
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:33
 msgid ""
 "The vSphereDB module can hook into the Icinga monitoring module. This allows "
 "to show context information related to your Virtualization infrastructure "
 "next to each monitored Host."
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:38
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:39
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/HostVirtualizationInfoTable.php:43
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmLocationInfoTable.php:78
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/VCenterTabs.php:28
@@ -974,11 +1332,6 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/PerfdataConsumerForm.php:41
 msgid "Arbitrary unique name for this Performance Data Consumer"
-msgstr ""
-
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/PerfdataConsumerForm.php:44
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:71
-msgid "Enabled"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/PerfdataConsumerForm.php:74
@@ -1702,11 +2055,6 @@ msgstr ""
 msgid "No snapshots have been created for this VM"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmsOnDatastoreTable.php:65
-#, php-format
-msgid "Virtual Machine: %s"
-msgstr ""
-
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmsOnDatastoreTable.php:90
 #, php-format
 msgid "Information is outdated, last update took place %s"
@@ -1722,11 +2070,6 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/ConfigTabs.php:42
 msgid "Performance Data"
-msgstr ""
-
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/ConfigTabs.php:48
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/HostMonitoringInfo.php:42
-msgid "Monitoring"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/MainTabs.php:47
