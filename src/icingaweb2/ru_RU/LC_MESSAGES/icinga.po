@@ -5,21 +5,23 @@
 # Contributors:
 # Yuri Konotopov <ykonotopov@gmail.com>, 2015.
 # Dmitriy Q <dmitry@atsip.ru>, 2021.
-#
+# Dmitriy Q <krotesk@mail.ru>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-18 16:45+0000\n"
-"PO-Revision-Date: 2021-11-03 12:23+0500\n"
-"Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
-"Language-Team: TranslAster <https://github.com/translaster>\n"
+"PO-Revision-Date: 2022-06-01 00:45+0000\n"
+"Last-Translator: Dmitriy Q <krotesk@mail.ru>\n"
+"Language-Team: Russian <https://translate.icinga.com/projects/icinga/"
+"icingaweb2/ru/>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #: sources.d/icingaweb2/application/controllers/AboutController.php:17
 #: sources.d/icingaweb2/application/controllers/AboutController.php:21
@@ -5746,23 +5748,28 @@ msgstr "Используемый срок действия"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:82
 msgid "If the acknowledgement should expire, check this option."
-msgstr ""
+msgstr "Если срок действия подтверждения истекает, установите этот флажок."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:99
 msgid ""
 "Enter the expire date and time for this acknowledgement here. Icinga will "
 "delete the acknowledgement after this time expired."
 msgstr ""
+"Введите здесь дату и время истечения срока действия этого подтверждения. "
+"Icinga удалит подтверждение по истечении этого времени."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:120
 msgid "Sticky Acknowledgement"
-msgstr ""
+msgstr "Липкое подтверждение"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:123
 msgid ""
 "If you want the acknowledgement to remain until the host or service recovers "
 "even if the host or service changes state, check this option."
 msgstr ""
+"Если вы хотите, чтобы подтверждение сохранялось до тех пор, пока хост или "
+"служба не восстановятся, даже если они изменят свое состояние - установите "
+"этот флажок."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:132
 msgid "Send Notification"
@@ -5773,6 +5780,8 @@ msgid ""
 "If you do not want an acknowledgement notification to be sent out to the "
 "appropriate contacts, uncheck this option."
 msgstr ""
+"Если вы не хотите, чтобы уведомление с подтверждением отправлялось "
+"соответствующим контактам, снимите этот флажок."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:166
 msgid "Acknowledging problem.."
@@ -5784,6 +5793,7 @@ msgstr[2] "Подтвержденных проблем.."
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:22
 msgid "This command is used to add host or service comments."
 msgstr ""
+"Эта команда используется для добавления комментариев к хосту или службе."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:31
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/comments.phtml:7
@@ -5804,16 +5814,20 @@ msgid ""
 "If you uncheck this option, the comment will automatically be deleted the "
 "next time Icinga is restarted."
 msgstr ""
+"Если вы снимите этот флажок - комментарий будет автоматически удален при "
+"следующем перезапуске Icinga."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:79
 msgid "If the comment should expire, check this option."
-msgstr ""
+msgstr "Если срок действия комментария истекает - установите этот флажок."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:95
 msgid ""
 "Enter the expire date and time for this comment here. Icinga will delete the "
 "comment after this time expired."
 msgstr ""
+"Введите дату и время окончания срока действия этого комментария здесь. "
+"Icinga удалит комментарий по истечении этого времени."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:142
 msgid "Adding comment.."
@@ -5869,6 +5883,8 @@ msgstr[2] "Удаление времен простоя.."
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:20
 msgid "This command is used to submit passive host or service check results."
 msgstr ""
+"Эта команда используется для отправки результатов проверки пассивного хоста "
+"или службы."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:31
 msgid "Submit Passive Check Result"
@@ -5883,7 +5899,7 @@ msgstr "Состояние"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:56
 msgid "The state this check result should report"
-msgstr ""
+msgstr "Состояние, о котором должен сообщать результат этой проверки"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:58
 msgctxt "icinga.state"
@@ -5907,13 +5923,15 @@ msgstr "НЕИЗВЕСТНО"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:71
 msgid "The plugin output of this check result"
-msgstr ""
+msgstr "Вывод плагина этого результата проверки"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:81
 msgid ""
 "The performance data of this check result. Leave empty if this check result "
 "has no performance data"
 msgstr ""
+"Данные о производительности этого результата проверки. Оставьте пустым, если "
+"этот результат проверки не содержит данных о производительности"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:113
 msgid "Processing check result.."
@@ -5941,16 +5959,16 @@ msgstr "НЕДОСТУПНО"
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:92
 msgid "Remove acknowledgement"
 msgid_plural "Remove acknowledgements"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Удаление подтверждения"
+msgstr[1] "Удаление подтверждений"
+msgstr[2] "Удаление подтверждений"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:115
 msgid "Removing acknowledgement.."
 msgid_plural "Removing acknowledgements.."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Удаление подтверждения.."
+msgstr[1] "Удаление подтверждений.."
+msgstr[2] "Удаление подтверждений.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostCheckCommandForm.php:29
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:60
@@ -5959,7 +5977,7 @@ msgstr "Все службы"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostCheckCommandForm.php:32
 msgid "Schedule check for all services on the hosts and the hosts themselves."
-msgstr ""
+msgstr "Запланируйте проверку всех служб на хостах и самих хостов."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostCheckCommandForm.php:61
 msgid "Scheduling host check.."
