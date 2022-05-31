@@ -26,7 +26,7 @@ msgstr ""
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:48
 #: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:44
 msgid "About"
-msgstr "About"
+msgstr "Про систему"
 
 #: sources.d/icingaweb2/application/controllers/AboutController.php:22
 msgid "About Icinga Web 2"
@@ -117,7 +117,7 @@ msgstr "Повідомлення"
 #: sources.d/icingaweb2/application/forms/Announcement/AnnouncementForm.php:59
 #: sources.d/icingaweb2/application/views/scripts/announcements/index.phtml:35
 msgid "Start"
-msgstr "Старт"
+msgstr "Початок"
 
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:50
 #: sources.d/icingaweb2/application/forms/Announcement/AnnouncementForm.php:69
@@ -436,7 +436,7 @@ msgstr "Створено о"
 #: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:270
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:573
 msgid "Last modified"
-msgstr "Востаннє модифіковано"
+msgstr "Востаннє змінено"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:103
 #: sources.d/icingaweb2/application/controllers/GroupController.php:192
@@ -500,9 +500,7 @@ msgstr "Користувача \"%s\" було видалено з групи \"
 #: sources.d/icingaweb2/application/controllers/GroupController.php:335
 #, php-format
 msgid "Failed to fetch any users from backend %s. Please check your log"
-msgstr ""
-"Не вдалося отримати жодних користувачів з бекенду %s. Будь ласка, перевірте "
-"свій лог"
+msgstr "Не вдалося отримати жодних користувачів з бекенду %s. Перевірте лог"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:356
 #, php-format
@@ -646,7 +644,7 @@ msgstr "Спільне"
 
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:193
 msgid "Unshare this navigation item"
-msgstr "Відмінити спільність цього об'єкту навігації"
+msgstr "Не ділитися цим об'єктом навігації"
 
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:200
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:205
@@ -656,7 +654,7 @@ msgstr "Відмінити спільність цього об'єкту нав�
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:102
 #: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:76
 msgid "Shared Navigation"
-msgstr "Спільні об'єкти навігації"
+msgstr "Спільна навігація"
 
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:204
 msgid "List and configure shared navigation items"
@@ -716,7 +714,7 @@ msgstr "Об'єкт навігації \"%s\" тепер не є спільни�
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:396
 #, php-format
 msgid "Failed to unshare navigation item \"%s\""
-msgstr "Не вдалося відмінити спільність об'єкту навігації \"%s\""
+msgstr "Не вдалося перестати ділитися об'єктом навігації \"%s\""
 
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:441
 msgid "Navigation not found"
@@ -754,7 +752,7 @@ msgstr "Оновити роль"
 #: sources.d/icingaweb2/application/controllers/RoleController.php:114
 #: sources.d/icingaweb2/application/controllers/RoleController.php:137
 msgid "Role not found"
-msgstr "Рол не знайдено"
+msgstr "Роль не знайдено"
 
 #: sources.d/icingaweb2/application/controllers/RoleController.php:131
 #: sources.d/icingaweb2/application/controllers/RoleController.php:140
@@ -1060,7 +1058,7 @@ msgid ""
 "All configured authentication methods failed. Please check the system log or "
 "Icinga Web 2 log for more information."
 msgstr ""
-"Усі налаштовані методи автентифікації були провалені.  Будь ласка, перевірте "
+"Усі налаштовані методи автентифікації були провалені. Будь ласка, перевірте "
 "системний лог або лог Icinga Web 2 для отримання додаткової інформації."
 
 #: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:175
@@ -1068,8 +1066,8 @@ msgid ""
 "Please note that not all authentication methods were available. Check the "
 "system log or Icinga Web 2 log for more information."
 msgstr ""
-"Майте на увазі, що не всі автентифікаційні методи були доступні.  Будь "
-"ласка, перевірте системний лог або лог Icinga Web 2 для отримання додаткової "
+"Майте на увазі, що не всі автентифікаційні методи були доступні. Будь ласка, "
+"перевірте системний лог або лог Icinga Web 2 для отримання додаткової "
 "інформації."
 
 #: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:180
@@ -1184,10 +1182,10 @@ msgid ""
 msgstr ""
 "Якщо користувач здійснює вхід не вказавши домен (наприклад, \"jdoe\" замість "
 "\"jdoe@example.com\"), цей домен за замовчуванням буде застосований до "
-"користувача. Майте на увазі, що якщо жоден з автентифікаційних бекендів LDAP "
-"не сконфігуровано відповідальним за цей домен або якщо жоден з "
-"автентифікаційних бекендів не містить імена користувачів з доменною "
-"частиною, користувачі не зможуть здійснити вхід."
+"користувача. Якщо жоден з автентифікаційних бекендів LDAP не сконфігуровано "
+"відповідальним за цей домен або якщо жоден з автентифікаційних бекендів не "
+"містить імена користувачів з доменною частиною, користувачі не зможуть "
+"здійснити вхід."
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:39
 msgid "Logging Type"
@@ -1403,7 +1401,7 @@ msgstr "Хост"
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:115
 msgid "The hostname of the database"
-msgstr "Ім'я хосту бази даних"
+msgstr "Ім'я хоста бази даних"
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:124
 msgid "The port to use"
@@ -1449,7 +1447,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:123
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:100
 msgid "SSL Do Not Verify Server Certificate"
-msgstr "SSL не перевіряти сертифікат сервера"
+msgstr "Не перевіряти сертифікат сервера"
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:186
 msgid "Whether to disable verification of the server certificate"
@@ -1529,7 +1527,7 @@ msgid ""
 "The hostname or address of the LDAP server to use for authentication. You "
 "can also provide multiple hosts separated by a space"
 msgstr ""
-"Назва хосту або адреса сервера LDAP для використання при автентифікації. Ви "
+"Назва хоста або адреса сервера LDAP для використання при автентифікації. Ви "
 "також можете надати декілька хостів розділених пробілами"
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/LdapResourceForm.php:61
@@ -1634,7 +1632,7 @@ msgstr "Для зміни приватного ключа ви повинні п
 #: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:135
 #, php-format
 msgid "The private key for the user \"%s\" is already exists."
-msgstr "Приватний ключ для користувача \"%s\"  вже існує."
+msgstr "Приватний ключ для користувача \"%s\" вже існує."
 
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:66
 #, php-format
@@ -1860,8 +1858,8 @@ msgid ""
 "Configuration successfully stored. Though, one or more module hooks failed "
 "to run. See logs for details"
 msgstr ""
-"Конфігурацію успішно збережено. Однак, один або кілька модулів не вдалося "
-"запустити. Перегляньте лог-файли для отримання детальної інформації"
+"Конфігурацію успішно збережено. Один або кілька модулів не вдалося "
+"запустити. Перегляньте лог-файли"
 
 #: sources.d/icingaweb2/application/forms/Config/UserBackend/DbBackendForm.php:53
 #: sources.d/icingaweb2/application/forms/Config/UserBackend/ExternalBackendForm.php:32
@@ -1940,12 +1938,12 @@ msgstr ""
 #: sources.d/icingaweb2/application/forms/Config/UserBackend/LdapBackendForm.php:139
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:233
 msgid "LDAP User Object Class"
-msgstr "Клас об'єкту LDAP User"
+msgstr "Клас об'єкта LDAP User"
 
 #: sources.d/icingaweb2/application/forms/Config/UserBackend/LdapBackendForm.php:140
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:234
 msgid "The object class used for storing users on the LDAP server."
-msgstr "Клас об'єкту що слугує для збереження користувачів на сервері LDAP."
+msgstr "Клас об'єкта що слугує для збереження користувачів на сервері LDAP."
 
 #: sources.d/icingaweb2/application/forms/Config/UserBackend/LdapBackendForm.php:151
 msgid "LDAP Filter"
@@ -1965,9 +1963,7 @@ msgstr ""
 msgid ""
 "The filter needs to be expressed as standard LDAP expression. (e.g. "
 "&(foo=bar)(bar=foo) or foo=bar)"
-msgstr ""
-"Фільтр має бути виражений стандартним LDAP виразом. (наприклад, &(foo=bar)"
-"(bar=foo) або foo=bar)"
+msgstr "Фільтр має бути виражений стандартним LDAP виразом"
 
 #: sources.d/icingaweb2/application/forms/Config/UserBackend/LdapBackendForm.php:174
 msgid "The filter is invalid. Please check your syntax."
@@ -2012,14 +2008,13 @@ msgid ""
 "usernames with a domain part or if it is not necessary in your setup to "
 "authenticate users based on their domains, leave this field empty."
 msgstr ""
-"Домен за який відповідає сервер LDAP при автентифікації. Зазначте, що при "
-"вказанні домену тут, бекенд LDAP буде автентифікувати лише користувачів що "
-"вказали домен при вході. Якщо домен користувача співпадає з доменом "
-"налаштованим тут, цей бекенд відповідає за автентифікацію користувача на "
-"основі ім'я користувача без доменної частини. Якщо ваш бекенд LDAP зберігає "
-"імена користувачів з доменною частиною або якщо у вашій інсталяції не "
-"обов'язково автентифіковувати користувачів на основі їх доменів, залиште це "
-"поле пустим."
+"Домен за який відповідає сервер LDAP при автентифікації. При вказанні домену "
+"тут, бекенд LDAP буде автентифікувати лише користувачів що вказали домен при "
+"вході. Якщо домен користувача співпадає з доменом налаштованим тут, цей "
+"бекенд відповідає за автентифікацію користувача на основі ім'я користувача "
+"без доменної частини. Якщо ваш бекенд LDAP зберігає імена користувачів з "
+"доменною частиною або якщо у вашій інсталяції не обов'язково "
+"автентифіковувати користувачів на основі їх доменів, залиште це поле пустим."
 
 #: sources.d/icingaweb2/application/forms/Config/UserBackend/LdapBackendForm.php:245
 msgid "Discover the domain"
@@ -2046,7 +2041,7 @@ msgstr ""
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:87
 #, php-format
 msgid "Invalid backend type \"%s\" provided"
-msgstr "Invalid backend type \"%s\" provided"
+msgstr "Надано некоректний тип бекенду \"%s\""
 
 #: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:177
 #, php-format
@@ -2173,11 +2168,11 @@ msgstr "Вкладений груповий пошук"
 
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:140
 msgid "LDAP Group Object Class"
-msgstr "Клас об'єкту LDAP Group"
+msgstr "Клас об'єкта LDAP Group"
 
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:141
 msgid "The object class used for storing groups on the LDAP server."
-msgstr "Клас об'єкту що слугує для збереження груп на сервері LDAP."
+msgstr "Клас об'єкта що слугує для збереження груп на сервері LDAP."
 
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:151
 msgid "LDAP Group Filter"
@@ -2197,8 +2192,7 @@ msgid ""
 "The filter needs to be expressed as standard LDAP expression, without outer "
 "parentheses. (e.g. &(foo=bar)(bar=foo) or foo=bar)"
 msgstr ""
-"Фільтр має бути виражений стандартним LDAP виразом, без обрамлення дужками. "
-"(наприклад, &(foo=bar)(bar=foo) або foo=bar)"
+"Фільтр має бути виражений стандартним LDAP виразом, без обрамлення дужками"
 
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:169
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:262
@@ -2225,7 +2219,7 @@ msgstr "Назва атрибуту що використовується для
 
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:208
 msgid "LDAP Group Base DN"
-msgstr "LDAP Group Base DN"
+msgstr "Base DN групи LDAP"
 
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:210
 msgid ""
@@ -2247,7 +2241,7 @@ msgstr ""
 
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:289
 msgid "LDAP User Base DN"
-msgstr "LDAP User Base DN"
+msgstr "Base DN користувача LDAP"
 
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:303
 msgid "The domain the LDAP server is responsible for."
@@ -2333,7 +2327,7 @@ msgstr "Додати до дашборду"
 
 #: sources.d/icingaweb2/application/forms/Dashboard/DashletForm.php:56
 msgid "Brackets ([, ]) cannot be used here"
-msgstr "Дужки ([, ]) не можуть тут використовуватися"
+msgstr "Дужки ([, ]) не можуть бути використані"
 
 #: sources.d/icingaweb2/application/forms/Dashboard/DashletForm.php:81
 #: sources.d/icingaweb2/application/forms/Navigation/DashletForm.php:27
@@ -2431,9 +2425,8 @@ msgid ""
 "Unable to unshare navigation item \"%s\". It is dependent from item \"%s\". "
 "Dependent items can only be unshared by unsharing their parent"
 msgstr ""
-"Неможливо відмінити спільність об'єкту навігації \"%s\". Він залежить від "
-"об'єкту \"%s\". Залежні об'єкти можуть припинити бути спільними лише коли "
-"припинять бути спільними їх батьки"
+"Неможливо припинити ділитися об'єктом навігації \"%s\". Він залежить від "
+"об'єкта \"%s\". Спочатку необхідно припинити ділитися його батьками"
 
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:577
 msgid ""
@@ -2442,12 +2435,11 @@ msgstr "Назва цього об'єкта навігації яка викор
 
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:595
 msgid "Tick this box to share this item with others"
-msgstr "Встановіть прапорець для того щоб поділитись цим об'єктом з іншими"
+msgstr "Встановіть прапорець для того щоб поділитись цим об'єктом"
 
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:607
 msgid "Comma separated list of usernames to share this item with"
-msgstr ""
-"Розділений комами список імен користувачів з якими поділяться даним об'єктом"
+msgstr "Розділений комами список імен користувачів з якими поділяться об'єктом"
 
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:617
 msgid "Comma separated list of group names to share this item with"
@@ -2455,7 +2447,7 @@ msgstr "Розділений комами список назв груп з як
 
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:640
 msgid "The type of this navigation item"
-msgstr "Тип цього об'єкту навігації"
+msgstr "Тип цього об'єкта навігації"
 
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:660
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:124
@@ -2498,7 +2490,7 @@ msgstr "Ціль"
 
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationItemForm.php:39
 msgid "The target where to open this navigation item's url"
-msgstr "Ціль відкриття URL цього об'єкту навігації"
+msgstr "Ціль відкриття URL цього об'єкта навігації"
 
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationItemForm.php:41
 msgid "New Window"
@@ -2523,7 +2515,7 @@ msgid ""
 "make sure to prepend an appropriate protocol identifier (e.g. http://example."
 "tld)"
 msgstr ""
-"URL цього об'єкту навігації. Залишити пустим якщо необхідно відображати лише "
+"URL цього об'єкта навігації. Залишити пустим якщо необхідно відображати лише "
 "назву. Для URL з ім'ям користувача та паролем та для всіх зовнішніх URL "
 "впевніться у доданні коректного ідентифікатора протоколу (наприклад, http://"
 "example.tld)"
@@ -2541,7 +2533,7 @@ msgid ""
 "The icon of this navigation item. Leave blank if you do not want a icon "
 "being displayed"
 msgstr ""
-"Іконка цього об'єкту навігації. Залишити пустим якщо у відображення іконки "
+"Іконка цього об'єкта навігації. Залишити пустим якщо у відображення іконки "
 "немає необхідності"
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:49
@@ -2730,7 +2722,7 @@ msgstr "Зберегти для поточної сесії"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:65
 msgid "Role Name"
-msgstr "Назва Ролі"
+msgstr "Назва ролі"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:66
 msgid "The name of the role"
@@ -2894,7 +2886,7 @@ msgstr "Загальний доступ до модулів"
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:595
 #, php-format
 msgid "Allow access to module %s"
-msgstr "Дозволити доступ до модуля  %s"
+msgstr "Дозволити доступ до модуля %s"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:603
 msgid "Full Module Access"
@@ -2910,7 +2902,7 @@ msgstr "Згорнути"
 
 #: sources.d/icingaweb2/application/layouts/scripts/parts/navigation.phtml:12
 msgid "Accessibility Skip Links"
-msgstr "Accessibility Skip Links"
+msgstr "Пропуск посилань для людей з обмеженими можливостями"
 
 #: sources.d/icingaweb2/application/layouts/scripts/parts/navigation.phtml:15
 msgid "Skip to Content"
@@ -2929,7 +2921,7 @@ msgstr "Версія Icinga Web 2"
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:40
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:24
 msgid "Git commit"
-msgstr "Git commit"
+msgstr "Коміт Git"
 
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:15
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/PhpVersionRequirement.php:15
@@ -2940,7 +2932,7 @@ msgstr "Версія PHP"
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:18
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:34
 msgid "Git commit date"
-msgstr "Дата git commit"
+msgstr "Дата коміту git"
 
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:21
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:138
@@ -3229,7 +3221,7 @@ msgstr "Впеівніться що вебсервер здатний на за�
 
 #: sources.d/icingaweb2/application/views/scripts/dashboard/error.phtml:11
 msgid "Error details"
-msgstr "Детальна інформація про помилку"
+msgstr "Інформація про помилку"
 
 #: sources.d/icingaweb2/application/views/scripts/dashboard/index.phtml:12
 msgid "Welcome to Icinga Web!"
@@ -3509,7 +3501,7 @@ msgstr "Створити новий об'єкт навігації"
 
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:23
 msgid "You did not create any navigation item yet."
-msgstr "Ви ще не створили жодного об'єкту навігації."
+msgstr "Ви ще не створили жодного об'єкта навігації."
 
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:47
 #, php-format
@@ -3776,7 +3768,7 @@ msgstr "Містить дані у стовпчиковій або лінійн�
 
 #: sources.d/icingaweb2/library/Icinga/Chart/PieChart.php:55
 msgid "Pie Chart"
-msgstr "Секторна діаграма"
+msgstr "Діаграма"
 
 #: sources.d/icingaweb2/library/Icinga/Chart/PieChart.php:56
 msgid "Contains data in a pie chart."
@@ -4611,7 +4603,7 @@ msgstr "Середнє (хв)"
 # context unknown
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:438
 msgid "<b>{title}:</b> {value}m min. reaction time"
-msgstr "<b>{title}:</b> {value}m min. reaction time"
+msgstr "<b>{title}:</b> {value}хв мін. час реагування"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:444
 msgid "Max (min)"
@@ -4620,7 +4612,7 @@ msgstr "Макс (хв)"
 # context unknown
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:448
 msgid "<b>{title}:</b> {value}m max. reaction time"
-msgstr "<b>{title}:</b> {value}m max. reaction time"
+msgstr "<b>{title}:</b> {value}хв макс. час реагування"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:463
 msgid "Defect Chart"
@@ -5053,7 +5045,7 @@ msgstr "Стійкий"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:452
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:57
 msgid "Expires"
-msgstr "Закінчується"
+msgstr "Спливає"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:453
 msgid "Expiration time"
@@ -5325,7 +5317,7 @@ msgstr "Тяжкість стану сервіса"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:172
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:168
 msgid "Current Service State"
-msgstr "Поточний стан сервісу"
+msgstr "Поточний стан сервіса"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:172
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:713
@@ -5340,7 +5332,7 @@ msgstr "Назва сервіса"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:174
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:170
 msgid "Last Service Check"
-msgstr "Остання перевірка сервісу"
+msgstr "Остання перевірка сервіса"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:175
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:176
@@ -5684,7 +5676,7 @@ msgstr "Сервіс не знайдено"
 # Plural version??
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:84
 msgid "Acknowledge Service Problem"
-msgstr "Підтвердити проблему сервісу"
+msgstr "Підтвердити проблему сервіса"
 
 # Plural version??
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:96
@@ -5721,7 +5713,7 @@ msgstr "Додати коментарі до сервіса"
 # Plural version??
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:211
 msgid "Acknowledge Service Problems"
-msgstr "Підтвердити проблеми сервісу"
+msgstr "Підтвердити проблеми сервіса"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:223
 msgid "Reschedule Service Checks"
@@ -6225,7 +6217,7 @@ msgstr "НЕДОСТУПНИЙ"
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:134
 msgctxt "icinga.state"
 msgid "UNREACHABLE"
-msgstr "НЕДОСЯЖНО"
+msgstr "НЕДОСЯЖНИЙ"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:73
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:92
@@ -6752,7 +6744,7 @@ msgid ""
 "you want this action being displayed regardless of the object"
 msgstr ""
 "Показати цю дію лише для об'єктів що проходять цей фільтр. Залишити пустим "
-"якщо ви хочете відображати цю дію незалежно від об'єкту"
+"якщо ви хочете відображати цю дію незалежно від об'єкта"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Navigation/ActionForm.php:61
 #, php-format
@@ -6885,7 +6877,7 @@ msgstr "Сьогодні"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:94
 msgid "Object type"
-msgstr "Тип об'єкту"
+msgstr "Тип об'єкта"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:114
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:41
@@ -6984,7 +6976,7 @@ msgstr "Показати детальну інформацію про хост %
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:112
 #, php-format
 msgid "Show detailed information for service %s on host %s"
-msgstr "Показати детальну інформацію про сервіс %s хосту %s"
+msgstr "Показати детальну інформацію про сервіс %s хоста %s"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:36
 msgid "Label"
@@ -7165,40 +7157,40 @@ msgstr "Фіксовані простої мають чітко визначен
 msgid ""
 "This flexible service downtime was started on %s at %s and lasts for %s "
 "until %s at %s."
-msgstr "Гнучкий простій сервісу розпочато %s о %s з тривалістю %s до %s о %s."
+msgstr "Гнучкий простій сервіса розпочато %s о %s з тривалістю %s до %s о %s."
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:74
 #, php-format
 msgid ""
 "This flexible host downtime was started on %s at %s and lasts for %s until "
 "%s at %s."
-msgstr "Гнучкий простій хосту розпочато %s о %s з тривалістю %s до %s о %s."
+msgstr "Гнучкий простій хоста розпочато %s о %s з тривалістю %s до %s о %s."
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:84
 #, php-format
 msgid ""
 "This flexible service downtime has been scheduled to start between %s - %s "
 "and to last for %s."
-msgstr "Гнучкий простій сервісу було заплановано між %s - %s з тривалістю %s."
+msgstr "Гнучкий простій сервіса було заплановано між %s - %s з тривалістю %s."
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:85
 #, php-format
 msgid ""
 "This flexible host downtime has been scheduled to start between %s - %s and "
 "to last for %s."
-msgstr "Гнучкий простій хосту було заплановано між %s - %s з тривалістю %s."
+msgstr "Гнучкий простій хоста було заплановано між %s - %s з тривалістю %s."
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:95
 #, php-format
 msgid ""
 "This fixed service downtime was started on %s at %s and expires on %s at %s."
-msgstr "Фіксований простій сервісу розпочався %s о %s та завершиться %s о %s."
+msgstr "Фіксований простій сервіса розпочався %s о %s та завершиться %s о %s."
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:96
 #, php-format
 msgid ""
 "This fixed host downtime was started on %s at %s and expires on %s at %s."
-msgstr "Фіксований простій хосту розпочався %s о %s та завершиться %s о %s."
+msgstr "Фіксований простій хоста розпочався %s о %s та завершиться %s о %s."
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:105
 #, php-format
@@ -7206,7 +7198,7 @@ msgid ""
 "This fixed service downtime has been scheduled to start on %s at %s and to "
 "end on %s at %s."
 msgstr ""
-"Початок фіксованого простою сервісу було заплановано на %s о %s та кінець на "
+"Початок фіксованого простою сервіса було заплановано на %s о %s та кінець на "
 "%s о %s."
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:106
@@ -7215,7 +7207,7 @@ msgid ""
 "This fixed host downtime has been scheduled to start on %s at %s and to end "
 "on %s at %s."
 msgstr ""
-"Початок фіксованого простою хосту було заплановано на %s о %s та кінець на "
+"Початок фіксованого простою хоста було заплановано на %s о %s та кінець на "
 "%s о %s."
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:116
@@ -7262,7 +7254,7 @@ msgstr "дата/час початку запланованого простою
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:143
 msgid "The date/time the scheduled downtime actually ended"
-msgstr "Дата/час завершення завершення запланованого простою"
+msgstr "Дата/час завершення запланованого простою"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:151
 msgid "In effect"
@@ -7581,9 +7573,9 @@ msgstr "Більше"
 #, php-format
 msgid "%u Host"
 msgid_plural "%u Hosts"
-msgstr[0] "%d хост"
-msgstr[1] "%d хости"
-msgstr[2] "%d хостів"
+msgstr[0] "%u хост"
+msgstr[1] "%u хости"
+msgstr[2] "%u хостів"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/components/hostssummary.phtml:17
 #, php-format
@@ -7840,9 +7832,9 @@ msgstr[2] "%u не оброблених сервісів"
 #, php-format
 msgid "List %s unhandled service problem on host %s"
 msgid_plural "List %s unhandled service problems on host %s"
-msgstr[0] "Показати %s необроблену проблему з сервісами хосту %s"
-msgstr[1] "Показати %s необроблені проблеми з сервісами хосту %s"
-msgstr[2] "Показати %s необроблених проблем з сервісами хосту %s"
+msgstr[0] "Показати %s необроблену проблему з сервісами хоста %s"
+msgstr[1] "Показати %s необроблені проблеми з сервісами хоста %s"
+msgstr[2] "Показати %s необроблених проблем з сервісами хоста %s"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:18
 msgid "No notifications found matching the filter."
@@ -8077,7 +8069,7 @@ msgstr "ЗАВЕРШУЄТЬСЯ"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:6
 msgctxt "Downtime status"
 msgid "EXPIRES"
-msgstr "ЗАВЕРШУЄТЬСЯ"
+msgstr "СПЛИВАЄ"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:6
 msgctxt "Downtime status"
@@ -8759,7 +8751,7 @@ msgstr[2] "Показати %u хостів з подавленими спові
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:164
 msgid "List all hosts, for which notifications are enabled entirely"
-msgstr "Показати всі хости для яких увімкнено сповіщення повністю"
+msgstr "Показати всі хости для яких повністю увімкнено сповіщення"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:184
 #, php-format
@@ -9082,7 +9074,7 @@ msgstr "у %s"
 #, php-format
 msgctxt "timeline.link.title.week.and.year"
 msgid "in week %s of %s"
-msgstr "у тиждень %s  %s"
+msgstr "у тиждень %s %s"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/timeline/index.phtml:48
 #, php-format
@@ -9251,7 +9243,7 @@ msgstr "Дія для хоста"
 
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:127
 msgid "Service Action"
-msgstr "Дія для сервісу"
+msgstr "Дія для сервіса"
 
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:135
 msgid "Problems"
@@ -9354,7 +9346,7 @@ msgstr "Прострочені результати перевірки хост�
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:351
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:339
 msgid "Late Service Check Results"
-msgstr "Прострочені результати перевірки сервісу"
+msgstr "Прострочені результати перевірки сервіса"
 
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:356
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:344
@@ -9589,7 +9581,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:180
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:181
 msgid "UP"
-msgstr "ДОСТУПНО"
+msgstr "ДОСТУПНИЙ"
 
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:183
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:184
@@ -9599,7 +9591,7 @@ msgstr "НЕДОСТУПНИЙ"
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:186
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:187
 msgid "UNREACHABLE"
-msgstr "НЕДОСЯЖНО"
+msgstr "НЕДОСЯЖНИЙ"
 
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:189
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:204
@@ -9722,11 +9714,11 @@ msgstr "Показати всі записи подій хоста %s"
 
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Navigation/Renderer/BackendAvailabilityNavigationItemRenderer.php:70
 msgid "Active host checks are disabled"
-msgstr "Активні перевірки хосту вимкнено"
+msgstr "Активні перевірки хоста вимкнено"
 
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Navigation/Renderer/BackendAvailabilityNavigationItemRenderer.php:75
 msgid "Active service checks are disabled"
-msgstr "Активні перевірки сервісу вимкнено"
+msgstr "Активні перевірки сервіса вимкнено"
 
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Navigation/Renderer/BackendAvailabilityNavigationItemRenderer.php:80
 msgid "Notifications are disabled"
@@ -9777,7 +9769,7 @@ msgstr "Успішно створено конфігураційну дирек�
 
 #: sources.d/icingaweb2/modules/setup/application/clicommands/ConfigCommand.php:129
 msgid "Argument type is mandatory."
-msgstr "Тип аргументу є обов'язковим."
+msgstr "Тип аргумента є обов'язковим."
 
 #: sources.d/icingaweb2/modules/setup/application/clicommands/ConfigCommand.php:134
 msgid "Unknown type"
@@ -10317,7 +10309,7 @@ msgstr "Системна група з назвою \"icingaweb2\" існує"
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/form/setup-welcome.phtml:86
 #, php-format
 msgid "The user \"%s\" is a member of the system group \"icingaweb2\""
-msgstr "Користувач \"%s\" є учасником системної групи  \"icingaweb2\""
+msgstr "Користувач \"%s\" є учасником системної групи \"icingaweb2\""
 
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/form/setup-welcome.phtml:88
 msgid "Your webserver's user is a member of the system group \"icingaweb2\""
@@ -10333,7 +10325,7 @@ msgstr "У разі відсутності IcingaCLI токен можливо �
 
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/form/setup-welcome.phtml:104
 msgid "<your-webserver-user>"
-msgstr "<your-webserver-user>"
+msgstr "ваш-користувач-вебсервера"
 
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/form/setup-welcome.phtml:107
 #, php-format
@@ -10351,7 +10343,7 @@ msgstr "Документація Icinga Web 2"
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/index/index.phtml:23
 msgctxt "setup.progress"
 msgid "Welcome"
-msgstr "Welcome"
+msgstr "Вітаємо"
 
 #: sources.d/icingaweb2/modules/setup/application/views/scripts/index/index.phtml:34
 msgctxt "setup.progress"
@@ -10533,7 +10525,7 @@ msgstr "автентифікація вебсерверу"
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/AuthenticationStep.php:143
 msgid "User Object Class"
-msgstr "Клас об'єкту LDAP User"
+msgstr "Клас об'єкта LDAP User"
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/AuthenticationStep.php:147
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/UserGroupStep.php:149
@@ -10841,7 +10833,7 @@ msgstr "Групи користувачів"
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/UserGroupStep.php:145
 msgid "Group Object Class"
-msgstr "Клас об'єкту LDAP Group"
+msgstr "Клас об'єкта LDAP Group"
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/UserGroupStep.php:153
 msgid "Group Name Attribute"
@@ -10944,8 +10936,7 @@ msgstr ""
 msgid ""
 "Now please configure the database resource where to store user preferences."
 msgstr ""
-"Будь ласка, налаштуйте ресурс бази даних для збереження користувацьких "
-"налаштувань."
+"Налаштуйте ресурс бази даних для збереження користувацьких налаштувань."
 
 #: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:216
 msgid ""
