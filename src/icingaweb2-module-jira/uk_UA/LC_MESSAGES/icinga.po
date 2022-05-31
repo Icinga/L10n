@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-11 16:07+0000\n"
+"POT-Creation-Date: 2022-05-27 13:52+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,53 +20,55 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
-#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:28
+#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:30
 msgid ""
 "This page serves no special purpose right now, but gives some insight into "
 "available projects and Custom Fields"
 msgstr ""
+"Ця сторінка наразі не має окремого призначення але надає деякі відомості про "
+"наявні проєкти та користувацькі поля"
 
-#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:57
+#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:58
 #, php-format
 msgid "Icinga Director has not been configured on this system: %s"
-msgstr ""
+msgstr "Icinga Director не було сконфігуровано на цій системі: %s"
 
-#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:134
+#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:133
 msgid "Director Config"
-msgstr ""
+msgstr "Налаштування Director"
 
-#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:137
+#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:136
 msgid "Inspect"
 msgstr "Оглянути"
 
-#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:21
+#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:25
 msgid "Ticket Search"
-msgstr ""
+msgstr "Пошук квитків"
 
-#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:24
+#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:28
 msgid "with closed ones"
-msgstr ""
+msgstr "з закритими"
 
-#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:32
+#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:36
 msgid "No issue found"
-msgstr ""
+msgstr "Не знайдено записів"
 
-#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:52
+#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:56
 msgid "Create JIRA Issue"
-msgstr ""
+msgstr "Створити запис Jira"
 
-#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:89
+#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:102
 #: sources.d/icingaweb2-module-jira/configuration.php:8
 msgid "Issues"
-msgstr ""
+msgstr "Записи"
 
-#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:96
+#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:109
 msgid "Create"
 msgstr "Створити"
 
 #: sources.d/icingaweb2-module-jira/configuration.php:4
 msgid "Jira"
-msgstr ""
+msgstr "Jira"
 
 #: sources.d/icingaweb2-module-jira/configuration.php:10
 msgid "Configuration"
@@ -74,9 +76,9 @@ msgstr "Налаштування"
 
 #: sources.d/icingaweb2-module-jira/configuration.php:15
 msgid "Allow to manually create issues"
-msgstr ""
+msgstr "Дозволити створювати записи вручну"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Controller.php:37
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Controller.php:53
 #, php-format
 msgid "ERROR: %s"
 msgstr "ПОМИЛКА: %s"
@@ -87,93 +89,103 @@ msgstr "- будь ласка оберіть -"
 
 #: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:50
 msgid "JIRA project"
-msgstr ""
+msgstr "Проєкт JIRA"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:77
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:79
 msgid "Issue type"
-msgstr ""
+msgstr "Тип запису"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:84
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:86
 msgid "Summary"
 msgstr "Загалом"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:88
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:90
 msgid "Summary of this incident"
-msgstr ""
+msgstr "Підсумок цього інциденту"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:92
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:94
 msgid "Description"
 msgstr "Опис"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:97
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:99
 msgid "Message body of this issue"
-msgstr ""
+msgstr "Тіло повідомлення цього запису"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:101
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:103
 msgid "Template"
 msgstr "Шаблон"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:106
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:108
 msgid "Acknowledge"
 msgstr "Підтвердити"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:108
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:110
 msgid "Yes"
 msgstr "Так"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:109
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:111
 msgid "No"
 msgstr "Ні"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:113
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:115
 msgid ""
 "Whether the Icinga problem should be acknowledged. The newly created JIRA "
 "issue will be linked in the related comment."
 msgstr ""
+"Чи проблема Icinga має бути підтверджена. Посилання на новостворений запис "
+"JIRA буде у коментарях."
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:119
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:121
 msgid "Create Issue"
-msgstr ""
+msgstr "Створити запис"
 
 #: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/TemplateForm.php:30
 #, php-format
 msgid "Unable to talk to JIRA, please check your configuration: %s"
+msgstr "Неможливо зв'язатися з JIRA, перевірте налаштування: %s"
+
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/RenderingHelper.php:35
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/RenderingHelper.php:42
+msgid "Show Icinga Host State"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:49
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/RenderingHelper.php:53
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/RenderingHelper.php:61
+msgid "Show Icinga Service State"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:52
 msgid "Issue"
-msgstr ""
+msgstr "Запис"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:54
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:56
 msgid "Project"
-msgstr ""
+msgstr "Проєкт"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:58
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:60
 msgid "Issue Type"
-msgstr ""
+msgstr "Тип запису"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:63
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:65
 msgid "Status"
 msgstr "Статус"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:64
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:66
 msgid "Priority"
-msgstr ""
+msgstr "Пріоритет"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:68
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:70
 msgid "Created"
 msgstr "Створено"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:73
-#, fuzzy
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:75
 msgid "Host"
 msgstr "Хост"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:79
-#, fuzzy
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:81
 msgid "Service"
 msgstr "Сервіс"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:85
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:87
 msgid "Created by"
-msgstr ""
+msgstr "Створено"

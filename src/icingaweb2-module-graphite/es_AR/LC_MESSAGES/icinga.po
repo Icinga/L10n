@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-11 16:07+0000\n"
+"POT-Creation-Date: 2022-05-27 13:52+0000\n"
 "PO-Revision-Date: 2020-04-30 16:15+0200\n"
 "Last-Translator: Juan Cruz Fernandez <juancruz.f87@gmail.com>\n"
 "Language-Team: \n"
@@ -19,53 +19,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:69
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:82
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:162
 msgid "No such host"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:89
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:107
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:137
 msgid "No such service"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:120
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:195
 msgid "No such template"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:131
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:206
 msgid "No such graph"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:145
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:224
 msgid ""
 "Graphite Web yields more than one metric for the given filter. Please "
 "specify a more precise filter."
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:36
-#: sources.d/icingaweb2-module-graphite/configuration.php:7
+#: sources.d/icingaweb2-module-graphite/application/controllers/HostsController.php:37
+#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:54
+#: sources.d/icingaweb2-module-graphite/configuration.php:12
+#: sources.d/icingaweb2-module-graphite/configuration.php:15
 msgid "Hosts"
 msgstr "Huéspedes"
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:37
-msgid "List hosts"
-msgstr "Listar anfitriones"
-
-#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:55
-#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:101
+#: sources.d/icingaweb2-module-graphite/application/controllers/HostsController.php:48
+#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:73
+#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:139
+#: sources.d/icingaweb2-module-graphite/application/controllers/ServicesController.php:50
 msgid "Hostname"
 msgstr "Nombre del anfitrion"
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:74
-#: sources.d/icingaweb2-module-graphite/configuration.php:8
+#: sources.d/icingaweb2-module-graphite/application/controllers/HostsController.php:110
+#: sources.d/icingaweb2-module-graphite/application/controllers/ServicesController.php:113
+msgid "Adjust Filter"
+msgstr ""
+
+#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:55
+msgid "List hosts"
+msgstr "Listar anfitriones"
+
+#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:112
+#: sources.d/icingaweb2-module-graphite/application/controllers/ServicesController.php:35
+#: sources.d/icingaweb2-module-graphite/configuration.php:13
+#: sources.d/icingaweb2-module-graphite/configuration.php:16
 msgid "Services"
 msgstr "Servicios"
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:75
+#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:113
 msgid "List services"
 msgstr "Lista de servicios"
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:100
+#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:138
 msgid "Service Name"
+msgstr "Nombre del Servicio"
+
+#: sources.d/icingaweb2-module-graphite/application/controllers/ServicesController.php:49
+#, fuzzy
+msgid "Servicename"
 msgstr "Nombre del Servicio"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:14
@@ -90,32 +108,32 @@ msgid "The above range's unit"
 msgstr ""
 
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:37
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:48
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:46
 msgid "Minutes"
 msgstr "Minutos"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:38
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:56
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:54
 msgid "Hours"
 msgstr "Horas"
 
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:39
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:64
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:62
 msgid "Days"
 msgstr ""
 
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:40
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:72
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:70
 msgid "Weeks"
 msgstr ""
 
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:41
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:80
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:78
 msgid "Months"
 msgstr ""
 
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:42
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:88
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:86
 msgid "Years"
 msgstr ""
 
@@ -190,148 +208,148 @@ msgstr ""
 msgid "Check this to not verify the remote's TLS certificate"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:49
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:47
 msgid "Show the last … minutes"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:51
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:49
 #, php-format
 msgid "%d minute"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:52
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:50
 #, php-format
 msgid "%d minutes"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:57
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:55
 msgid "Show the last … hours"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:59
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:57
 #, php-format
 msgid "%d hour"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:60
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:58
 #, php-format
 msgid "%d hours"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:65
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:63
 msgid "Show the last … days"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:67
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:65
 #, php-format
 msgid "%d day"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:68
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:66
 #, php-format
 msgid "%d days"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:73
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:71
 msgid "Show the last … weeks"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:75
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:73
 #, php-format
 msgid "%d week"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:76
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:74
 #, php-format
 msgid "%d weeks"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:81
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:79
 msgid "Show the last … months"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:83
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:81
 #, php-format
 msgid "%d month"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:84
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:82
 #, php-format
 msgid "%d months"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:89
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:87
 msgid "Show the last … years"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:91
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:89
 #, php-format
 msgid "%d year"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:92
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:90
 #, php-format
 msgid "%d years"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:46
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:55
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:45
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:54
 msgid "Start"
 msgstr "Iniciar"
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:47
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:56
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:46
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:55
 msgid "Start of the date/time range"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:64
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:73
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:63
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:72
 msgid "End"
 msgstr "Fin"
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:65
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:74
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:64
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:73
 msgid "End of the date/time range"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:82
+#: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CustomForm.php:81
 msgid "Update"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/application/views/scripts/list/hosts.phtml:51
-#: sources.d/icingaweb2-module-graphite/application/views/scripts/list/services.phtml:61
+#: sources.d/icingaweb2-module-graphite/application/views/scripts/list/hosts.phtml:52
+#: sources.d/icingaweb2-module-graphite/application/views/scripts/list/services.phtml:62
 msgid "Show More"
 msgstr "Mostrar más"
 
-#: sources.d/icingaweb2-module-graphite/application/views/scripts/list/hosts.phtml:63
+#: sources.d/icingaweb2-module-graphite/application/views/scripts/list/hosts.phtml:64
 msgid "No hosts found matching the filter."
 msgstr "No se encontraron anfitriones que coincidan con el filtro."
 
-#: sources.d/icingaweb2-module-graphite/application/views/scripts/list/services.phtml:73
+#: sources.d/icingaweb2-module-graphite/application/views/scripts/list/services.phtml:74
 msgid "No services found matching the filter."
 msgstr "No se han encontrado servicios que coincidan con el filtro."
 
-#: sources.d/icingaweb2-module-graphite/configuration.php:6
+#: sources.d/icingaweb2-module-graphite/configuration.php:9
 msgid "Graphite"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/configuration.php:11
+#: sources.d/icingaweb2-module-graphite/configuration.php:20
 msgid "Configure the Graphite Web backend"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/configuration.php:12
+#: sources.d/icingaweb2-module-graphite/configuration.php:21
 msgid "Backend"
 msgstr "Backend"
 
-#: sources.d/icingaweb2-module-graphite/configuration.php:17
+#: sources.d/icingaweb2-module-graphite/configuration.php:26
 msgid "Advanced configuration"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/configuration.php:18
+#: sources.d/icingaweb2-module-graphite/configuration.php:27
 msgid "Advanced"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/configuration.php:22
+#: sources.d/icingaweb2-module-graphite/configuration.php:31
 msgid "Allow debugging directly via the web UI"
 msgstr ""
 
@@ -339,7 +357,7 @@ msgstr ""
 msgid "Graphs"
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/library/Graphite/Web/Controller/TimeRangePickerTrait.php:54
+#: sources.d/icingaweb2-module-graphite/library/Graphite/Web/Controller/TimeRangePickerTrait.php:53
 msgid "Specify custom time range"
 msgstr ""
 
@@ -347,7 +365,11 @@ msgstr ""
 msgid "The username must not contain colons."
 msgstr ""
 
-#: sources.d/icingaweb2-module-graphite/library/Graphite/Web/Widget/Graphs.php:387
+#: sources.d/icingaweb2-module-graphite/library/Graphite/Web/Widget/Graphs.php:414
 #, php-format
 msgid "Please %scorrect%s the configuration of the Graphite module."
+msgstr ""
+
+#: sources.d/icingaweb2-module-graphite/library/Graphite/Web/Widget/IcingadbGraphs.php:49
+msgid "No items found."
 msgstr ""
