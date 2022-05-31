@@ -4,21 +4,23 @@
 #
 # Contributors:
 # Dmitriy Q <dmitry@atsip.ru>, 2021.
-#
+# Dmitriy Q <krotesk@mail.ru>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-18 11:12+0000\n"
-"PO-Revision-Date: 2021-11-03 12:23+0500\n"
-"Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
-"Language-Team: TranslAster <https://github.com/translaster>\n"
+"PO-Revision-Date: 2022-06-01 00:45+0000\n"
+"Last-Translator: Dmitriy Q <krotesk@mail.ru>\n"
+"Language-Team: Russian <https://translate.icinga.com/projects/icinga/"
+"icingadb-web/ru/>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #: sources.d/icingadb-web/application/controllers/CommandTransportController.php:31
 msgid "Create Command Transport"
@@ -626,7 +628,7 @@ msgstr "Имя транспорта"
 #: sources.d/icingadb-web/application/forms/ApiTransportForm.php:34
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:46
 msgid "Hostname or address of the Icinga master"
-msgstr ""
+msgstr "Имя xоста или адрес для Icinga Master"
 
 #: sources.d/icingadb-web/application/forms/ApiTransportForm.php:40
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:50
@@ -680,6 +682,8 @@ msgid ""
 "Some commands were not transmitted. Please check the log. The first error "
 "follows."
 msgstr ""
+"Некоторые команды не были переданы. Пожалуйста, проверьте журнал. Далее "
+"следует первая ошибка."
 
 #: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:34
 msgid "Active Host Checks"
@@ -709,7 +713,7 @@ msgstr "Данные производительности"
 
 #: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:59
 msgid "Enabled active host checks successfully"
-msgstr ""
+msgstr "Проверка активного хоста включена успешно"
 
 #: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:61
 #, fuzzy
@@ -718,7 +722,7 @@ msgstr "Отключенные проверки узлов"
 
 #: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:67
 msgid "Enabled active service checks successfully"
-msgstr ""
+msgstr "Проверка активной службы успешно включена"
 
 #: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:69
 #, fuzzy
@@ -826,13 +830,16 @@ msgstr ""
 
 #: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:119
 msgid "Sticky Acknowledgement"
-msgstr ""
+msgstr "Липкое подтверждение"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:122
 msgid ""
 "If you want the acknowledgement to remain until the host or service recovers "
 "even if the host or service changes state, check this option."
 msgstr ""
+"Если вы хотите, чтобы подтверждение сохранялось до тех пор, пока хост или "
+"служба не восстановятся, даже если они изменят свое состояние - установите "
+"этот флажок."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:138
 #: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:94
@@ -841,7 +848,7 @@ msgstr "Используемый срок действия"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:139
 msgid "If the acknowledgement should expire, check this option."
-msgstr ""
+msgstr "Если срок действия подтверждения истекает, установите этот флажок."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:157
 msgid "Choose the date and time when Icinga should delete the acknowledgement."
@@ -868,10 +875,11 @@ msgstr[2] ""
 #: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:62
 msgid "This command is used to add host or service comments."
 msgstr ""
+"Эта команда используется для добавления комментариев к хосту или службе."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:95
 msgid "If the comment should expire, check this option."
-msgstr ""
+msgstr "Если срок действия комментария истекает - установите этот флажок."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:112
 msgid "Choose the date and time when Icinga should delete the comment."
@@ -951,6 +959,8 @@ msgstr[2] "Отправить результат пассивной провер
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:61
 msgid "This command is used to submit passive host or service check results."
 msgstr ""
+"Эта команда используется для отправки результатов проверки пассивного хоста "
+"или службы."
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:80
 msgid "Status"
@@ -958,7 +968,7 @@ msgstr "Состояние"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:81
 msgid "The state this check result should report"
-msgstr ""
+msgstr "Состояние, о котором должен сообщать результат этой проверки"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:83
 msgctxt "icinga.state"
@@ -996,13 +1006,15 @@ msgstr "Вывод"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:101
 msgid "The plugin output of this check result"
-msgstr ""
+msgstr "Вывод плагина этого результата проверки"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:113
 msgid ""
 "The performance data of this check result. Leave empty if this check result "
 "has no performance data"
 msgstr ""
+"Данные о производительности этого результата проверки. Оставьте пустым, если "
+"этот результат проверки не содержит данных о производительности"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:129
 #: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:196
@@ -1024,9 +1036,9 @@ msgstr[2] "Пользователь успешно добавлен"
 #: sources.d/icingadb-web/application/forms/Command/Object/RemoveAcknowledgementForm.php:60
 msgid "Remove acknowledgement"
 msgid_plural "Remove acknowledgements"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Удаление подтверждения"
+msgstr[1] "Удаление подтверждений"
+msgstr[2] "Удаление подтверждений"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleCheckForm.php:35
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleCheckForm.php:40
