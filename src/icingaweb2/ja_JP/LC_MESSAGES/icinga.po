@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-11 16:07+0000\n"
+"POT-Creation-Date: 2022-06-13 14:45+0000\n"
 "PO-Revision-Date: 2020-04-27 14:54+0200\n"
 "Last-Translator: papillon326 <udagawa@www2178ue.sakura.ne.jp>\n"
 "Language-Team: \n"
@@ -22,7 +22,8 @@ msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/AboutController.php:17
 #: sources.d/icingaweb2/application/controllers/AboutController.php:21
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:47
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:48
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:44
 msgid "About"
 msgstr "Icingaについて"
 
@@ -37,10 +38,10 @@ msgid "Update your account"
 msgstr "アカウント情報の編集"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:28
-#: sources.d/icingaweb2/application/controllers/AccountController.php:81
+#: sources.d/icingaweb2/application/controllers/AccountController.php:80
 #: sources.d/icingaweb2/application/controllers/MyDevicesController.php:28
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:136
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:124
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:126
 msgid "My Account"
 msgstr "アカウント情報"
 
@@ -58,7 +59,7 @@ msgstr "自身のナビゲーションを一覧表示"
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:256
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:312
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:356
-#: sources.d/icingaweb2/application/views/scripts/layout/menu.phtml:16
+#: sources.d/icingaweb2/application/views/scripts/layout/menu.phtml:17
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:29
 #: sources.d/icingaweb2/application/views/scripts/pivottablePagination.phtml:16
 msgid "Navigation"
@@ -79,7 +80,8 @@ msgstr "サービス"
 
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:17
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:31
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:62
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:63
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:52
 msgid "Announcements"
 msgstr "お知らせ"
 
@@ -91,7 +93,7 @@ msgstr "すべてのお知らせを一覧表示します"
 #: sources.d/icingaweb2/application/views/scripts/announcements/index.phtml:33
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:407
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:450
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:251
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:248
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:42
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:39
 msgid "Author"
@@ -171,7 +173,8 @@ msgstr "ユーザグループバックエンドの一覧"
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:116
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:128
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:84
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:108
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:110
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:81
 msgid "Modules"
 msgstr "モジュール設定"
 
@@ -336,13 +339,11 @@ msgstr "ダッシュボードを編集"
 #: sources.d/icingaweb2/application/controllers/DashboardController.php:209
 #: sources.d/icingaweb2/application/controllers/HealthController.php:23
 #: sources.d/icingaweb2/application/controllers/HealthController.php:33
-#: sources.d/icingaweb2/application/controllers/RoleController.php:65
+#: sources.d/icingaweb2/application/controllers/RoleController.php:66
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:575
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:101
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:121
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:19
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:28
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:330
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:327
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:20
 msgid "Name"
 msgstr "名前"
@@ -385,7 +386,7 @@ msgstr "エラー"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:26
 #: sources.d/icingaweb2/application/controllers/GroupController.php:411
-#: sources.d/icingaweb2/application/controllers/RoleController.php:385
+#: sources.d/icingaweb2/application/controllers/RoleController.php:391
 #: sources.d/icingaweb2/application/controllers/UserController.php:366
 msgid "User Groups"
 msgstr "グループ一覧"
@@ -399,7 +400,7 @@ msgstr "ユーザグループバックエンド"
 #: sources.d/icingaweb2/application/views/scripts/group/list.phtml:50
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:118
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:123
-#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:573
+#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:571
 msgid "User Group"
 msgstr "ユーザグループ"
 
@@ -418,9 +419,9 @@ msgstr "作成日時"
 #: sources.d/icingaweb2/application/views/scripts/group/show.phtml:37
 #: sources.d/icingaweb2/application/views/scripts/user/show.phtml:40
 #: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:107
-#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:272
+#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:270
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:126
-#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:575
+#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:573
 msgid "Last modified"
 msgstr "最終更新日"
 
@@ -442,10 +443,10 @@ msgstr "グループ \"%s\" はありません"
 #: sources.d/icingaweb2/application/views/scripts/user/list.phtml:51
 #: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:101
 #: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:104
-#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:269
+#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:267
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:117
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:121
-#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:572
+#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:570
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:109
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:102
 #: sources.d/icingaweb2/modules/setup/application/forms/AdminAccountPage.php:156
@@ -499,14 +500,14 @@ msgid "Group"
 msgstr "グループ"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:377
-#: sources.d/icingaweb2/application/controllers/RoleController.php:34
-#: sources.d/icingaweb2/application/controllers/RoleController.php:351
+#: sources.d/icingaweb2/application/controllers/RoleController.php:35
+#: sources.d/icingaweb2/application/controllers/RoleController.php:357
 #: sources.d/icingaweb2/application/controllers/UserController.php:333
 msgid "Roles"
 msgstr "ルール一覧"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:379
-#: sources.d/icingaweb2/application/controllers/RoleController.php:353
+#: sources.d/icingaweb2/application/controllers/RoleController.php:359
 #: sources.d/icingaweb2/application/controllers/UserController.php:335
 msgid ""
 "Configure roles to permit or restrict users and groups accessing Icinga Web 2"
@@ -515,29 +516,29 @@ msgstr ""
 "を設定"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:388
-#: sources.d/icingaweb2/application/controllers/RoleController.php:362
+#: sources.d/icingaweb2/application/controllers/RoleController.php:368
 #: sources.d/icingaweb2/application/controllers/UserController.php:344
 msgid "Audit a user's or group's privileges"
 msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:389
-#: sources.d/icingaweb2/application/controllers/RoleController.php:147
-#: sources.d/icingaweb2/application/controllers/RoleController.php:363
+#: sources.d/icingaweb2/application/controllers/RoleController.php:148
+#: sources.d/icingaweb2/application/controllers/RoleController.php:369
 #: sources.d/icingaweb2/application/controllers/UserController.php:345
 msgid "Audit"
 msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:400
-#: sources.d/icingaweb2/application/controllers/RoleController.php:373
+#: sources.d/icingaweb2/application/controllers/RoleController.php:379
 #: sources.d/icingaweb2/application/controllers/UserController.php:355
 msgid "List users of authentication backends"
 msgstr "認証バックエンドのユーザ一覧表示"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:401
 #: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:35
-#: sources.d/icingaweb2/application/controllers/RoleController.php:66
-#: sources.d/icingaweb2/application/controllers/RoleController.php:288
-#: sources.d/icingaweb2/application/controllers/RoleController.php:374
+#: sources.d/icingaweb2/application/controllers/RoleController.php:67
+#: sources.d/icingaweb2/application/controllers/RoleController.php:294
+#: sources.d/icingaweb2/application/controllers/RoleController.php:380
 #: sources.d/icingaweb2/application/controllers/UserController.php:26
 #: sources.d/icingaweb2/application/controllers/UserController.php:356
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/AddMemberForm.php:118
@@ -548,7 +549,7 @@ msgid "Users"
 msgstr "ユーザ"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:410
-#: sources.d/icingaweb2/application/controllers/RoleController.php:384
+#: sources.d/icingaweb2/application/controllers/RoleController.php:390
 #: sources.d/icingaweb2/application/controllers/UserController.php:365
 msgid "List groups of user group backends"
 msgstr "ユーザグループバックエンドのグループ一覧表示"
@@ -570,21 +571,25 @@ msgstr "モジュール"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:533
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:111
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:130
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:29
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:28
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:29
 msgid "State"
 msgstr "状態"
 
 #: sources.d/icingaweb2/application/controllers/HealthController.php:48
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:54
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:55
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:48
 msgid "Health"
 msgstr "director の設定状況"
 
 #: sources.d/icingaweb2/application/controllers/ListController.php:57
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:143
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:145
 msgid "Application Log"
 msgstr "アプリケーションのログ"
 
 #: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:34
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:68
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:69
 #: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserList.php:81
 msgid "List of users who stay logged in"
 msgstr ""
@@ -611,6 +616,7 @@ msgstr "サービス"
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:20
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:78
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:133
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:25
 msgid "Type"
 msgstr "タイプ"
 
@@ -628,7 +634,8 @@ msgstr "このナビゲーションの項目を共有解除"
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:205
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:213
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:19
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:100
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:102
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:76
 msgid "Shared Navigation"
 msgstr "共有ナビゲーション設定"
 
@@ -697,8 +704,8 @@ msgstr "ナビゲーションの項目 %s の共有を解除できませんで�
 msgid "Navigation not found"
 msgstr "ナビゲーションはありません"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:67
-#: sources.d/icingaweb2/application/controllers/RoleController.php:323
+#: sources.d/icingaweb2/application/controllers/RoleController.php:68
+#: sources.d/icingaweb2/application/controllers/RoleController.php:329
 #: sources.d/icingaweb2/application/forms/Config/User/CreateMembershipForm.php:79
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:615
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:94
@@ -706,75 +713,75 @@ msgstr "ナビゲーションはありません"
 msgid "Groups"
 msgstr "グループ"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:68
+#: sources.d/icingaweb2/application/controllers/RoleController.php:69
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:133
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:117
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:439
 msgid "Permissions"
 msgstr "権限"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:89
+#: sources.d/icingaweb2/application/controllers/RoleController.php:90
 msgid "Create Role"
 msgstr "ルール作成"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:92
+#: sources.d/icingaweb2/application/controllers/RoleController.php:93
 msgid "New Role"
 msgstr "新規ルールの作成"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:108
-#: sources.d/icingaweb2/application/controllers/RoleController.php:117
+#: sources.d/icingaweb2/application/controllers/RoleController.php:109
+#: sources.d/icingaweb2/application/controllers/RoleController.php:118
 msgid "Update Role"
 msgstr "ルールの変更"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:114
-#: sources.d/icingaweb2/application/controllers/RoleController.php:137
+#: sources.d/icingaweb2/application/controllers/RoleController.php:115
+#: sources.d/icingaweb2/application/controllers/RoleController.php:138
 msgid "Role not found"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:131
-#: sources.d/icingaweb2/application/controllers/RoleController.php:140
+#: sources.d/icingaweb2/application/controllers/RoleController.php:132
+#: sources.d/icingaweb2/application/controllers/RoleController.php:141
 msgid "Remove Role"
 msgstr "ルールの削除"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:168
+#: sources.d/icingaweb2/application/controllers/RoleController.php:169
 #, fuzzy
 msgid "Enter user or group name"
 msgstr "ユーザグループバックエンド %s の編集"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:169
+#: sources.d/icingaweb2/application/controllers/RoleController.php:170
 msgid "Inspect"
 msgstr "検査"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:189
+#: sources.d/icingaweb2/application/controllers/RoleController.php:190
 #, fuzzy
 msgid "No user or group selected."
 msgstr "ユーザグループ %s を削除"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:194
+#: sources.d/icingaweb2/application/controllers/RoleController.php:195
 #, fuzzy, php-format
 msgid "Privilege Audit for User \"%s\""
 msgstr "ユーザ \"%s\" の変更に失敗しました"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:200
+#: sources.d/icingaweb2/application/controllers/RoleController.php:201
 #, fuzzy, php-format
 msgid "Privilege Audit for Group \"%s\""
 msgstr "グループ \"%s\" の変更に失敗しました"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:225
+#: sources.d/icingaweb2/application/controllers/RoleController.php:226
 #, fuzzy
 msgid "All roles"
 msgstr "許可されたロール"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:227
+#: sources.d/icingaweb2/application/controllers/RoleController.php:228
 msgid "Show privileges of all roles"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:238
+#: sources.d/icingaweb2/application/controllers/RoleController.php:239
 #, php-format
 msgid "Only show privileges of role %s"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:335
+#: sources.d/icingaweb2/application/controllers/RoleController.php:341
 msgid "Your search does not match any user or group"
 msgstr ""
 
@@ -787,7 +794,7 @@ msgstr "ユーザバックエンド"
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:25
 #: sources.d/icingaweb2/application/views/scripts/user/show.phtml:33
 #: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:105
-#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:270
+#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:268
 msgid "Active"
 msgstr "有効"
 
@@ -1117,25 +1124,10 @@ msgstr ""
 "ません。"
 
 #: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:82
-msgid "User Preference Storage Type"
-msgstr "ユーザ設定の保存先"
-
-#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:84
-msgid "File System (INI Files)"
-msgstr "ファイルシステム(INI ファイル)"
-
-#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:85
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:272
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:190
-#: sources.d/icingaweb2/modules/setup/application/forms/AuthenticationPage.php:50
-msgid "Database"
-msgstr "データベース"
-
-#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:115
 msgid "Please choose"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:120
+#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:87
 #, fuzzy
 msgid "Configuration Database"
 msgstr "構成バスケット"
@@ -1166,13 +1158,13 @@ msgid "The type of logging to utilize."
 msgstr "利用するログの種類を選択してください。"
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:43
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:76
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:69
 msgctxt "app.config.logging.type"
 msgid "Webserver Log"
 msgstr "Webサーバログ"
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:44
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:87
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:80
 msgctxt "app.config.logging.type"
 msgid "File"
 msgstr "ファイル"
@@ -1191,31 +1183,31 @@ msgid "The maximum logging level to emit."
 msgstr "出力するログの最大レベルを選択してください。"
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:59
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:102
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:95
 msgctxt "app.config.logging.level"
 msgid "Error"
 msgstr "エラー"
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:60
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:103
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:96
 msgctxt "app.config.logging.level"
 msgid "Warning"
 msgstr "警告"
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:61
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:104
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:97
 msgctxt "app.config.logging.level"
 msgid "Information"
 msgstr "情報"
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:62
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:105
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:98
 msgctxt "app.config.logging.level"
 msgid "Debug"
 msgstr "デバッグ"
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:74
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:82
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:75
 msgid "Application Prefix"
 msgstr "アプリケーションプレフィックス"
 
@@ -1245,7 +1237,7 @@ msgid "The full path to the log file to write messages to."
 msgstr "メッセージを書き込むログファイルのフルパス"
 
 #: sources.d/icingaweb2/application/forms/Config/General/ThemingConfigForm.php:34
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:194
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:195
 msgid "default"
 msgstr "デフォルト"
 
@@ -1338,16 +1330,17 @@ msgstr "使用するデータベース名を入力してください"
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:114
 #: sources.d/icingaweb2/application/forms/Config/Resource/LdapResourceForm.php:46
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:248
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:451
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:245
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:448
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/ApiTransportForm.php:29
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/RemoteTransportForm.php:138
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:29
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:31
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:30
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:29
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:97
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:274
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:289
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:94
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:244
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:74
@@ -1451,7 +1444,7 @@ msgid "The list of permissible ciphers"
 msgstr "許可するCipherを入力してください"
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/FileResourceForm.php:41
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:88
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:81
 msgid "Filepath"
 msgstr "ファイルパス"
 
@@ -1555,31 +1548,31 @@ msgstr ""
 "リモートのIcingaインスタンスにログインするためのユーザー。このユーザーはキー"
 "ベースでのSSHログインが可能でなければならないことに注意してください。"
 
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:61
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:64
 msgid "The given SSH key is invalid"
 msgstr "指定されたSSH keyは無効です"
 
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:70
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:83
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:73
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:86
 msgid "Private Key"
 msgstr "秘密鍵"
 
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:71
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:74
 msgid "The private key which will be used for the SSH connections"
 msgstr "SSH接続に使用される秘密鍵を入力してください"
 
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:88
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:91
 #, php-format
 msgid "Remove the %s resource"
 msgstr "%s リソースを削除"
 
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:90
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:93
 msgid "To modify the private key you must recreate this resource."
 msgstr "秘密鍵を変更するには、リソースを再作成してください。"
 
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:135
-#, php-format
-msgid "The private key for the user \"%s\" is already exists."
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:137
+#, fuzzy, php-format
+msgid "The private key for the user \"%s\" already exists."
 msgstr "ユーザ \"%s\" の秘密鍵はすでに存在します。"
 
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:66
@@ -1988,6 +1981,12 @@ msgstr "無効なバックエンドの種類です: \"%s\" "
 msgid "A user backend with the name \"%s\" does already exist"
 msgstr "\"%s\" というユーザバックエンドはすでに存在します。"
 
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:272
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:190
+#: sources.d/icingaweb2/modules/setup/application/forms/AuthenticationPage.php:50
+msgid "Database"
+msgstr "データベース"
+
 #: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:286
 #: sources.d/icingaweb2/modules/setup/application/forms/AuthenticationPage.php:55
 msgid "External"
@@ -2006,7 +2005,7 @@ msgid "The type of the resource to use for this authenticaton provider"
 msgstr "ユーザ認証のプロバイダで利用するリソースの種類を選択してください"
 
 #: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:388
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:301
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:304
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Setup/IdoResourcePage.php:183
 #: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:244
 #: sources.d/icingaweb2/modules/setup/application/forms/DatabaseCreationPage.php:201
@@ -2494,7 +2493,7 @@ msgstr ""
 "プラットフォームに対応するロケールがないため、言語設定が適用できません。正し"
 "い言語パックをインストールし、Webサーバを再起動してください。"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:200
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:201
 msgctxt "Form element label"
 msgid "Theme"
 msgstr "背景画像設定"
@@ -2513,8 +2512,8 @@ msgid "Light"
 msgstr ""
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:243
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:36
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:295
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:37
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:41
 msgid "System"
 msgstr "システム"
 
@@ -2809,11 +2808,11 @@ msgstr "%s モジュールへのアクセスを許可"
 msgid "Full Module Access"
 msgstr ""
 
-#: sources.d/icingaweb2/application/layouts/scripts/layout.phtml:81
+#: sources.d/icingaweb2/application/layouts/scripts/layout.phtml:80
 msgid "Expand"
 msgstr ""
 
-#: sources.d/icingaweb2/application/layouts/scripts/layout.phtml:82
+#: sources.d/icingaweb2/application/layouts/scripts/layout.phtml:81
 msgid "Collapse"
 msgstr ""
 
@@ -2829,75 +2828,78 @@ msgstr "コンテンツをスキップ"
 msgid "Toggle Menu"
 msgstr "トグルメニュー"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:8
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:18
 msgid "Icinga Web 2 Version"
 msgstr ""
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:12
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:24
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:40
 msgid "Git commit"
 msgstr ""
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:15
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:29
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/PhpVersionRequirement.php:15
 msgid "PHP Version"
 msgstr "PHP バージョン"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:18
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:34
 msgid "Git commit date"
 msgstr ""
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:21
-msgid "Copyright"
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:46
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:49
+msgid "Get Icinga Support"
 msgstr ""
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:42
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:39
-msgid "Icinga on Twitter"
-msgstr ""
-
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:51
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:51
-msgid "Icinga on Facebook"
-msgstr ""
-
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:63
-msgid "Report a bug"
-msgstr "バグを報告"
-
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:73
-msgid "Support"
-msgstr "サポート"
-
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:83
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:59
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:62
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:72
 msgid "Icinga Community"
 msgstr "Icinga コミュニティ"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:93
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:75
+msgid "Report a bug"
+msgstr "バグを報告"
+
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:86
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:89
 msgid "Icinga Documentation"
 msgstr "Icinga の公式ドキュメント"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:97
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:96
 #, fuzzy
 msgid "Loaded Libraries"
 msgstr "読み込まれたモジュール"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:102
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:122
-#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:35
-msgid "Version"
-msgstr "バージョン"
-
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:117
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:110
 #, fuzzy
 msgid "Loaded Modules"
 msgstr "読み込まれたモジュール"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:134
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:124
+#, fuzzy
+msgid "Configure"
+msgstr "設定"
+
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:127
 #: sources.d/icingaweb2/application/views/scripts/config/modules.phtml:34
 #, php-format
 msgid "Show the overview of the %s module"
 msgstr "%s モジュールの概要を表示"
+
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:138
+msgid "Copyright"
+msgstr ""
+
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:157
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:39
+msgid "Icinga on Twitter"
+msgstr ""
+
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:166
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:51
+msgid "Icinga on Facebook"
+msgstr ""
 
 #: sources.d/icingaweb2/application/views/scripts/account/index.phtml:6
 msgid "Account"
@@ -2990,6 +2992,10 @@ msgstr "そのようなモジュールはインストールされていません
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:30
 msgid "Module can't be enabled due to unmet dependencies"
 msgstr ""
+
+#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:35
+msgid "Version"
+msgstr "バージョン"
 
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:45
 msgid "Description"
@@ -3349,7 +3355,7 @@ msgstr "サービス"
 msgid "Flip grid axes"
 msgstr "座標軸を反転"
 
-#: sources.d/icingaweb2/application/views/scripts/layout/menu.phtml:11
+#: sources.d/icingaweb2/application/views/scripts/layout/menu.phtml:12
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SearchDashboard.php:33
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SearchDashboard.php:50
 msgid "Search"
@@ -3445,7 +3451,7 @@ msgid "Hosts"
 msgstr "ホスト"
 
 #: sources.d/icingaweb2/application/views/scripts/pivottablePagination.phtml:35
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:126
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:123
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:46
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:69
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:77
@@ -3611,7 +3617,7 @@ msgstr "このモジュールに依存関係はありません"
 msgid "Module \"%s\" can't be enabled. Module has unmet dependencies"
 msgstr "モジュール\"%s\"は有効にできません。エラーが発生しました："
 
-#: sources.d/icingaweb2/library/Icinga/Application/Modules/Module.php:1055
+#: sources.d/icingaweb2/library/Icinga/Application/Modules/Module.php:857
 msgid "This module has no description"
 msgstr "このモジュールには説明がありません"
 
@@ -3623,13 +3629,13 @@ msgstr ""
 #: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:101
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:117
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:118
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:234
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:249
 msgid "(Case insensitive)"
 msgstr "(大文字小文字区別しない)"
 
-#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:271
+#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:269
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:125
-#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:574
+#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:572
 msgid "Created At"
 msgstr "作成日"
 
@@ -3656,6 +3662,11 @@ msgstr "円グラフにデータを作成します。"
 #, php-format
 msgid "Required parameter '%s' missing"
 msgstr "必須項目'%s' が入力されていません"
+
+#: sources.d/icingaweb2/library/Icinga/Common/PdfExport.php:59
+#, fuzzy
+msgid "Page"
+msgstr "ページャー"
 
 #: sources.d/icingaweb2/library/Icinga/Date/DateFormatter.php:167
 #, php-format
@@ -3762,7 +3773,7 @@ msgstr "フィルタカラム \"%s\" はありません"
 msgid "Filter column \"%s\" not found in table \"%s\""
 msgstr "フィルタカラム \"%s\" は \"%s\" テーブル内にありません"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Controller/ActionController.php:268
+#: sources.d/icingaweb2/library/Icinga/Web/Controller/ActionController.php:273
 msgid "Method Not Allowed"
 msgstr "許可されていない方法"
 
@@ -3881,74 +3892,79 @@ msgstr ""
 "URLにダブルクオートは利用できません。ダブルクオートを利用したい場合は、代わり"
 "に%22を使用してください。"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:46
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:47
 msgid "Open about page"
 msgstr "Icingaについてのページへ"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:53
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:54
 #, fuzzy
 msgid "Open health overview"
 msgstr "イベント概要の表示"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:61
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:62
 msgid "List announcements"
 msgstr "お知らせの一覧"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:69
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:70
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:56
 #, fuzzy
 msgid "User Sessions"
 msgstr "ホストの状態"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:77
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:79
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:63
 msgid "Configuration"
 msgstr "設定"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:84
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:86
 msgid "Open application configuration"
 msgstr "アプリケーションの設定を行う画面へ"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:85
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:87
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:67
 msgid "Application"
 msgstr "アプリケーション"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:91
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:93
 #, fuzzy
 msgid "Open access control configuration"
 msgstr "アプリケーションの設定を行う画面へ"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:92
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:94
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:71
 msgid "Access Control"
 msgstr ""
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:99
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:101
 msgid "Open shared navigation configuration"
 msgstr "共有ナビゲーションの設定を行う画面へ"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:107
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:109
 msgid "Open module configuration"
 msgstr "モジュール設定を行う画面へ"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:123
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:125
 msgid "Open your account preferences"
 msgstr "アカウント情報の設定画面へ"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:130
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:132
 msgid "Log out"
 msgstr "ログアウト"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:131
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:133
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:90
 msgid "Logout"
 msgstr "ログアウト"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:142
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:144
 msgid "Open Application Log"
 msgstr "アプリケーションログを開く"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/Navigation.php:467
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/Navigation.php:449
 msgid "Menu Entry"
 msgstr "メニューの登録"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/Navigation.php:549
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/Navigation.php:531
 #, php-format
 msgid ""
 "Failed to fully parse navigation configuration. Ensure that all referenced "
@@ -3998,22 +4014,22 @@ msgstr "%s （ベース: %s）"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:75
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:86
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:201
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:202
 msgid "UNKNOWN"
 msgstr ""
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:80
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:192
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:193
 msgid "OK"
 msgstr "OK (正常)"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:82
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:195
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:196
 msgid "WARNING"
 msgstr ""
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:84
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:198
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:199
 msgid "CRITICAL"
 msgstr ""
 
@@ -4170,12 +4186,12 @@ msgstr "検索中"
 msgid "Page not found"
 msgstr "ページが見つかりません"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:163
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:164
 #, fuzzy
 msgid "Can't search:"
 msgstr "検索できません"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:169
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:170
 msgid "No results:"
 msgstr ""
 
@@ -4331,13 +4347,13 @@ msgstr " %s ドキュメント"
 msgid "Documentation directory '%s' is not readable"
 msgstr "ドキュメント '%s' が読み込めません"
 
-#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocSearchRenderer.php:115
+#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocSearchRenderer.php:96
 #, php-format
 msgctxt "search.render.section.link"
 msgid "Show all matches of \"%s\" in the chapter \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocSearchRenderer.php:123
+#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocSearchRenderer.php:104
 #, php-format
 msgctxt "search.render.section.link"
 msgid "Show all matches of \"%s\" in the section \"%s\" of the chapter \"%s\""
@@ -4348,148 +4364,21 @@ msgstr ""
 msgid "Chapter %s not found"
 msgstr "%s の章が見つかりません"
 
-#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocTocRenderer.php:88
+#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocTocRenderer.php:68
 msgid "Documentation is empty."
 msgstr "ドキュメントが空です"
 
-#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocTocRenderer.php:113
+#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocTocRenderer.php:93
 #, php-format
 msgctxt "toc.render.section.link"
 msgid "Show the chapter \"%s\""
 msgstr "\"%s\" の章を表示します"
 
-#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocTocRenderer.php:117
+#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocTocRenderer.php:97
 #, php-format
 msgctxt "toc.render.section.link"
 msgid "Show the section \"%s\" of the chapter \"%s\""
 msgstr "セクション \"%s\" を表示します(章：\"%s\")"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:51
-msgid ""
-"Show recent alerts and visualize notifications and problems based on their "
-"amount and chronological distribution"
-msgstr "通知と障害の発生数と発生時刻から視覚化し、アラートと合わせて表示します"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:54
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:58
-msgid "Alert Summary"
-msgstr "警告概要"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:192
-msgid "unchanged"
-msgstr "変更なし"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:194
-msgid "down"
-msgstr "停止"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:196
-msgid "up"
-msgstr "起動"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:325
-msgid "Healing Chart"
-msgstr "ヒーリングチャート"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:326
-msgid "Notifications and average reaction time per hour."
-msgstr "1時間あたりの通知と平均応答時間"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:329
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:424
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:467
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:474
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:276
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:52
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:58
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:64
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:70
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:76
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:82
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:88
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:127
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:50
-#: sources.d/icingaweb2/modules/monitoring/application/forms/EventOverviewForm.php:74
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:138
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:142
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/detail-content.phtml:25
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:139
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:144
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/notifications.phtml:2
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:129
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:131
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:271
-msgid "Notifications"
-msgstr "通知"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:434
-msgid "Avg (min)"
-msgstr "平均(分)"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:438
-msgid "<b>{title}:</b> {value}m min. reaction time"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:444
-msgid "Max (min)"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:448
-msgid "<b>{title}:</b> {value}m max. reaction time"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:463
-msgid "Defect Chart"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:464
-msgid "Notifications and defects per hour"
-msgstr "1時間あたりの通知と不具合"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:484
-msgid "Defects"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:535
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:142
-msgid "One day"
-msgstr "1日"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:536
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:143
-msgid "One week"
-msgstr "1週間"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:537
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:144
-msgid "One month"
-msgstr "1ヵ月"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:538
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:145
-msgid "One year"
-msgstr "1年"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:540
-msgid "Report interval"
-msgstr "通知間隔"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:623
-msgid "Value for interval not valid"
-msgstr "間隔の値が無効です"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:639
-msgid "Hour"
-msgstr "時間"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:642
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:645
-msgid "Day"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:648
-msgid "Month"
-msgstr "月"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentController.php:50
 msgid "Comment not found"
@@ -4503,8 +4392,9 @@ msgstr "コメントが見つかりません"
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:46
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:69
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:47
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:51
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:63
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:26
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:53
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:65
 msgid "Comment"
 msgstr "コメント"
 
@@ -4515,7 +4405,7 @@ msgstr "コメントの詳細情報を表示します。"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentController.php:74
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentsController.php:59
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentsController.php:64
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:425
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:422
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:99
 #: sources.d/icingaweb2/modules/monitoring/application/forms/EventOverviewForm.php:64
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:60
@@ -4628,9 +4518,10 @@ msgid "Downtime not found"
 msgstr "メンテナンス期間はありません"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimeController.php:67
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:30
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-description.phtml:15
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:112
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:126
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:114
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:128
 msgid "Downtime"
 msgstr "メンテナンス期間"
 
@@ -4641,7 +4532,7 @@ msgstr "メンテナンス期間の詳細情報を表示します。"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimeController.php:94
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimesController.php:66
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimesController.php:71
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:216
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:213
 #: sources.d/icingaweb2/modules/monitoring/application/forms/EventOverviewForm.php:54
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:97
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:96
@@ -4669,7 +4560,7 @@ msgid "Event not found"
 msgstr "イベントがありません"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:100
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:632
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:629
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:265
 msgid "Event Overview"
 msgstr "イベント概要"
@@ -5063,10 +4954,10 @@ msgid "List hosts"
 msgstr "ホスト一覧"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:89
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:499
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:538
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:582
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:619
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:496
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:535
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:579
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:616
 msgid "Severity"
 msgstr "重要度"
 
@@ -5075,8 +4966,8 @@ msgid "Current State"
 msgstr "現在の状態"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:91
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:177
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:712
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:174
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:709
 msgid "Hostname"
 msgstr "ホスト名"
 
@@ -5089,253 +4980,277 @@ msgid "Last Check"
 msgstr "最終監視日時"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:94
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:174
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:171
 msgid "Last State Change"
 msgstr "最終状態変更"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:127
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:124
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:205
 msgid "List services"
 msgstr "サービス一覧"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:170
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:167
 msgid "Service Severity"
 msgstr "サービスの重要度"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:171
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:168
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/event/show.phtml:15
 msgid "Current Service State"
 msgstr "現在のサービスの状態"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:172
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:713
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:169
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:710
 msgid "Service Name"
 msgstr "サービス名"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:173
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:170
 msgid "Last Service Check"
 msgstr "最終サービス監視"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:175
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:172
 msgid "Host Severity"
 msgstr "ホストの重要度"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:176
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:173
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/event/show.phtml:16
 msgid "Current Host State"
 msgstr "現在のホストの状態"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:178
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:175
 msgid "Host Address"
 msgstr "ホストアドレス"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:179
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:176
 msgid "Last Host Check"
 msgstr "最終ホスト監視"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:217
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:214
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:247
 msgid "List downtimes"
 msgstr "メンテナンス期間の一覧"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:247
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:244
 msgid "Is In Effect"
 msgstr "影響あり"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:249
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:452
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:246
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:449
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:17
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:19
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:26
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:30
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/service-header.phtml:51
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:277
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:292
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:258
 msgid "Service"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:250
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:247
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:43
 msgid "Entry Time"
 msgstr "登録時刻"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:252
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:249
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:111
 msgid "Start Time"
 msgstr "開始時刻"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:253
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:250
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:121
 msgid "End Time"
 msgstr "終了時刻"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:254
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:251
 msgid "Scheduled Start"
 msgstr "開始予定"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:255
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:252
 msgid "Scheduled End"
 msgstr "終了予定"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:256
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:253
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:53
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:135
 msgid "Duration"
 msgstr "継続"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:277
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:273
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:52
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:58
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:64
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:70
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:76
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:82
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:88
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:127
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:50
+#: sources.d/icingaweb2/modules/monitoring/application/forms/EventOverviewForm.php:74
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:138
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:142
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/detail-content.phtml:25
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:139
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:144
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/notifications.phtml:2
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:129
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:131
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:271
+msgid "Notifications"
+msgstr "通知"
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:274
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:273
 msgid "List notifications"
 msgstr "通知一覧"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:296
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:293
 msgid "Notification Start"
 msgstr "通知開始"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:315
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ShowController.php:25
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:312
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ShowController.php:26
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/contacts.phtml:17
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:225
 msgid "Contacts"
 msgstr "コンタクト"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:316
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:313
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:227
 msgid "List contacts"
 msgstr "コンタクト一覧"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:331
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:328
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contactgroups.phtml:24
 msgid "Alias"
 msgstr "別名"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:332
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:329
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:21
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:42
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:24
 msgid "Email"
 msgstr "Eメール"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:333
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:330
 msgid "Pager Address / Number"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:343
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:340
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:259
 msgid "Event Grid"
 msgstr "イベントグリッド"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:343
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:340
 msgid "Show the Event Grid"
 msgstr "イベントグリッドの表示"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:397
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:394
 msgid "Contact Groups"
 msgstr "コンタクトグループ一覧"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:398
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:395
 msgid "List contact groups"
 msgstr "コンタクトグループ一覧"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:409
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:406
 msgid "Contactgroup Name"
 msgstr "コンタクトグループ名"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:410
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:407
 msgid "Contactgroup Alias"
 msgstr "コンタクトグループのエイリアス"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:426
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:423
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:241
 msgid "List comments"
 msgstr "コメント一覧"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:450
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:447
 msgid "Comment Timestamp"
 msgstr "コメント日時"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:453
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:450
 msgid "Comment Type"
 msgstr "コメントの種類"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:454
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:451
 msgid "Expiration"
 msgstr "有効期限"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:476
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:473
 msgid "Service Groups"
 msgstr "サービスグループ"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:477
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:474
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:211
 msgid "List service groups"
 msgstr "サービスグループ一覧"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:498
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:537
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:495
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:534
 msgid "Service Group Name"
 msgstr "サービスグループ名"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:500
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:539
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:584
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:622
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:497
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:536
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:581
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:619
 msgid "Total Services"
 msgstr "サービス数"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:515
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:512
 msgid "Service Group Grid"
 msgstr "サービスグループグリッド"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:516
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:513
 msgid "Show the Service Group Grid"
 msgstr "サービスグループグリッドの表示"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:552
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:549
 msgid "Host Groups"
 msgstr "ホストグループ"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:553
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:550
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:217
 msgid "List host groups"
 msgstr "ホストグループ一覧"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:581
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:620
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:578
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:617
 msgid "Host Group Name"
 msgstr "ホストグループ名"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:583
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:621
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:580
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:618
 msgid "Total Hosts"
 msgstr "ホスト数"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:599
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:596
 msgid "Host Group Grid"
 msgstr "ホストグループグリッド"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:600
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:597
 msgid "Show the Host Group Grid"
 msgstr "ホストグループグリッドの表示"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:633
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:630
 msgid "List event records"
 msgstr "イベントレコード一覧"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:652
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:649
 msgid "Occurence"
 msgstr "発生順"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:664
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:661
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:171
 msgid "Service Grid"
 msgstr "サービスグリッド"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:664
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:661
 msgid "Show the Service Grid"
 msgstr "サービスグリッドの表示"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:686
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:683
 msgid "Problems Only"
 msgstr ""
 
@@ -5393,12 +5308,12 @@ msgstr "サービスの計画メンテナンス期間"
 msgid "Submit Passive Service Check Results"
 msgstr "サービス監視の結果からパッシブ監視を行う"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ShowController.php:39
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ShowController.php:40
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:6
 msgid "Contact details"
 msgstr "コンタクトの詳細"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ShowController.php:40
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ShowController.php:41
 msgid "Contact"
 msgstr ""
 
@@ -5458,6 +5373,22 @@ msgstr "終了したメンテナンス期間"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:141
 msgid "4 Hours"
 msgstr "4時間"
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:142
+msgid "One day"
+msgstr "1日"
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:143
+msgid "One week"
+msgstr "1週間"
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:144
+msgid "One month"
+msgstr "1ヵ月"
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:145
+msgid "One year"
+msgstr "1年"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:147
 msgid "TimeLine interval"
@@ -6194,12 +6125,12 @@ msgstr "リソース %s の構成を表示します"
 msgid "Show resource configuration"
 msgstr "リソース構成を表示"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:303
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:306
 msgid "Check this to not to validate the IDO schema of the chosen resource."
 msgstr ""
 "選択したリソースのIDOスキーマを検証しない場合は、監視をいれてください。"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:324
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:327
 msgid ""
 "Cannot find the IDO schema. Please verify that the given database contains "
 "the schema and that the configured user has access to it."
@@ -6208,7 +6139,7 @@ msgstr ""
 "と、および構成されたユーザーがそのスキーマにアクセスできることを確認してくだ"
 "さい。"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:349
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:352
 msgid ""
 "There is currently no icinga instance writing to the IDO. Make sure that a "
 "icinga instance is configured and able to write to the IDO."
@@ -6216,7 +6147,7 @@ msgstr ""
 "現在IDOに書き込んでいるicingaインスタンスはありません。icingaインスタンスが構"
 "成されており、IDOに書き込むことができることを確認してください。"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:355
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:358
 msgid ""
 "There is currently more than one icinga instance writing to the IDO. You'll "
 "see all objects from all instances without any differentation. If this is "
@@ -6557,10 +6488,10 @@ msgid "Active Checks Disabled"
 msgstr "アクティブ監視無効"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Link.php:37
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:57
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:66
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:68
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:82
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:90
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:99
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-detail.phtml:27
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:37
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:214
@@ -6574,8 +6505,8 @@ msgstr "ホスト%s の詳細情報を表示します"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:56
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/servicegrid-flipped.phtml:93
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/servicegrid.phtml:94
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:76
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:103
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:85
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:112
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-detail.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:25
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:202
@@ -6604,48 +6535,6 @@ msgstr ""
 #, php-format
 msgid "%d more ..."
 msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:11
-msgid "Alert summary"
-msgstr "警告概要"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:15
-msgid "Notifications and Problems"
-msgstr "通知と障害"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:22
-msgid "Time to Reaction (Ack, Recover)"
-msgstr "応答までの時間(Ack, Recover)"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:29
-msgid "Trend"
-msgstr "動向"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:33
-msgid "Average"
-msgstr "平均"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:35
-msgid "notifications per hour"
-msgstr "一時間当たりの通知"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:37
-msgid "in the last hour"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:39
-msgid "Trend for the last 24h"
-msgstr "直近24時間の動向"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:56
-msgid "Top 5 Recent Alerts"
-msgstr "最近のアラート5件"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:69
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:255
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:288
-msgid "History"
-msgstr "履歴"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:12
 msgid "Comment detail information"
@@ -7076,8 +6965,8 @@ msgid "%d unhandled problems"
 msgstr "%d 個の未処理の障害"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:31
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:15
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:29
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:16
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:30
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:30
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/acknowledgement.phtml:77
 msgid "Acknowledge"
@@ -7153,14 +7042,14 @@ msgstr "リスケジュール"
 msgid "No comments found matching the filter"
 msgstr "条件に一致するコメントはありません"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:45
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:51
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:73
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:48
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:54
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hostgroups.phtml:286
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:108
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:90
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:114
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/servicegroups.phtml:174
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:136
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:145
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:249
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/show-more.phtml:6
 msgid "Show More"
@@ -7370,14 +7259,14 @@ msgstr "ホストグループ \"%s\" の全サービスを一覧表示します"
 msgid "No hosts found matching the filter."
 msgstr "条件に一致するホストはありません。"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:35
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:48
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:44
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:57
 #, php-format
 msgid "Overdue %s"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:43
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:56
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:52
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:65
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/host-header.phtml:17
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/service-header.phtml:18
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/service-header.phtml:45
@@ -7385,24 +7274,12 @@ msgctxt "Soft state"
 msgid "Soft"
 msgstr "ソフトステート"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:67
-#, php-format
-msgid "%u unhandled service"
-msgid_plural "%u unhandled services"
-msgstr[0] "未処理サービス %u"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:80
-#, php-format
-msgid "List %s unhandled service problem on host %s"
-msgid_plural "List %s unhandled service problems on host %s"
-msgstr[0] "未処理サービス %s の障害を一覧表示します(ホスト: %s)"
-
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:18
 msgid "No notifications found matching the filter."
 msgstr "条件に一致する通知はありません。"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:46
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:69
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:78
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-detail.phtml:5
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:192
@@ -7640,11 +7517,6 @@ msgstr "計画メンテナンス期間を削除"
 msgid "List all %d downtimes"
 msgstr "%d 個のメンテナンス期間をすべて表示"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:33
-msgctxt "date.verbose"
-msgid "%A, %B %e, %Y"
-msgstr ""
-
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:35
 #, php-format
 msgid "Flapping with a %.2f%% state change rate"
@@ -7804,41 +7676,41 @@ msgstr "IPv6 アドレス"
 msgid "IPv4 address"
 msgstr "IPv4アドレス"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:23
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:37
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:24
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:38
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/acknowledgement.phtml:85
 msgid ""
 "Acknowledge this problem, suppress all future notifications for it and tag "
 "it as being handled"
 msgstr "障害を承認し、以降すべての通知を停止して処理中のタグを付けます"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:58
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:60
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/comments.phtml:14
 msgid "Add a new comment to this host"
 msgstr "このホストにコメントを追加します"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:70
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:72
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/comments.phtml:26
 msgid "Add a new comment to this service"
 msgstr "このサービスにコメントを追加します"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:80
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:94
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:82
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:96
 msgid "Notification"
 msgstr "通知"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:88
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:90
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/notifications.phtml:18
 msgid "Send a custom notification to contacts responsible for this host"
 msgstr "このホストを担当するコンタクトにカスタム通知を送信します"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:102
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:104
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/notifications.phtml:33
 msgid "Send a custom notification to contacts responsible for this service"
 msgstr "このサービスを担当するコンタクトにカスタム通知を送信します"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:120
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:134
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:122
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:136
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:29
 msgid ""
@@ -8276,7 +8148,7 @@ msgstr[0] "現在状態がPENDINGのホスト %u 個を一覧表示します"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/ok_hosts.phtml:78
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:157
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:309
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:297
 msgid "Service Problems"
 msgstr "障害発生中のサービス一覧"
 
@@ -8656,7 +8528,7 @@ msgid "Problems"
 msgstr "障害"
 
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:143
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:319
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:307
 msgid "Host Problems"
 msgstr "障害発生中のホスト一覧"
 
@@ -8702,6 +8574,11 @@ msgstr "概要の表示"
 msgid "List users"
 msgstr "ユーザ一覧"
 
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:255
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:288
+msgid "History"
+msgstr "履歴"
+
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:261
 msgid "Open event grid"
 msgstr "イベントグリッドの表示"
@@ -8718,67 +8595,59 @@ msgstr "タイムラインの表示"
 msgid "Reporting"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:296
-msgid "Monitoring Health"
-msgstr "監視情報"
-
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:298
-msgid "Open monitoring health"
-msgstr "監視情報についてのページへ"
-
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:307
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:295
 msgid "Current Incidents"
 msgstr "現在の状況"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:314
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:302
 msgid "Recently Recovered Services"
 msgstr "最近回復したサービス一覧"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:344
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:332
 msgid "Overdue"
 msgstr "遅延状況"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:346
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:334
 msgid "Late Host Check Results"
 msgstr "遅延しているホスト監視"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:351
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:339
 msgid "Late Service Check Results"
 msgstr "遅延しているサービス監視"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:356
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:344
 msgid "Acknowledgements Active For At Least Three Days"
 msgstr "3日以上障害が検知されている状態"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:361
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:349
 msgid "Downtimes Active For More Than Three Days"
 msgstr "3日以上停止状態"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:369
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:357
 msgid "Muted"
 msgstr "無効"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:371
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:359
 msgid "Disabled Service Notifications"
 msgstr "無効になっているサービス通知"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:376
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:364
 msgid "Disabled Host Notifications"
 msgstr "無効になっているホスト通知"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:381
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:369
 msgid "Disabled Service Checks"
 msgstr "無効になっているサービス監視"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:386
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:374
 msgid "Disabled Host Checks"
 msgstr "無効になっているホスト監視"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:391
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:379
 msgid "Acknowledged Problem Services"
 msgstr "障害が承認されているサービス"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:396
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:384
 msgid "Acknowledged Problem Hosts"
 msgstr "障害が承認されているホスト"
 
@@ -8860,7 +8729,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/AuthenticationStep.php:211
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/AuthenticationStep.php:233
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/DatabaseStep.php:257
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:134
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:127
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:195
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/UserGroupStep.php:180
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/UserGroupStep.php:193
@@ -8922,12 +8791,12 @@ msgstr ""
 "制限 %s を適用できません。(フィルター%s を使っている場合) 下記のように指定し"
 "てください: %s"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:356
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:371
 #, php-format
 msgid "The sort column \"%s\" is not allowed in \"%s\"."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:447
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:462
 #, php-format
 msgid "The filter column \"%s\" is not allowed here."
 msgstr "フィルターの \"%s\" は許可されていません。"
@@ -8960,28 +8829,28 @@ msgstr ""
 "Icinga 2のAPIを介して外部コマンドを送信するには、PHP用のcURLモジュールが必要"
 "です。"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:180
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:181
 msgid "UP"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:183
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:184
 msgid "DOWN"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:186
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:187
 msgid "UNREACHABLE"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:189
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:204
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:190
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:205
 msgid "PENDING"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/MonitoredObject.php:727
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/MonitoredObject.php:761
 msgid "host"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/MonitoredObject.php:730
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/MonitoredObject.php:764
 msgid "service"
 msgstr "サービス"
 
@@ -9099,6 +8968,17 @@ msgstr "通知は無効です"
 #, php-format
 msgid "Monitoring backend %s is not running"
 msgstr "Monitoringバックエンド \"%s\" は起動していません"
+
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Widget/CustomVarTable.php:142
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Widget/CustomVarTable.php:165
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Widget/CustomVarTable.php:188
+msgid "empty string"
+msgstr ""
 
 #: sources.d/icingaweb2/modules/setup/application/clicommands/ConfigCommand.php:39
 #: sources.d/icingaweb2/modules/setup/application/clicommands/ConfigCommand.php:151
@@ -9474,7 +9354,7 @@ msgstr ""
 "安全に次のステップに進むことができます。エラーは次のとおりです：%s "
 
 #: sources.d/icingaweb2/modules/setup/application/forms/GeneralConfigPage.php:21
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:50
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:48
 msgctxt "setup.page.title"
 msgid "Application Configuration"
 msgstr "アプリケーション設定"
@@ -10092,54 +9972,49 @@ msgid "Failed to fully setup the database. An error occured:"
 msgstr ""
 "データベースを完全にセットアップできませんでした。エラーが発生しました："
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:51
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:49
 msgctxt "app.config"
 msgid "General"
 msgstr "一般"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:52
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:50
 msgctxt "app.config"
 msgid "Logging"
 msgstr "ログ出力"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:57
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:55
 msgid "An exception's stacktrace is shown to every user by default."
 msgstr "例外のスタックトレースは、デフォルトですべてのユーザーに表示されます。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:58
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:56
 msgid "An exception's stacktrace is hidden from every user by default."
 msgstr ""
 "例外のスタックトレースは、デフォルトではすべてのユーザーから隠されています。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:62
-#, php-format
-msgid "Preferences will be stored per user account in INI files at: %s"
-msgstr "設定はユーザーアカウントごとにINIファイルの %s に保存されます。"
-
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:64
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:58
 msgid "Preferences will be stored using a database."
 msgstr "設定はデータベースを使って保存されます。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:70
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:63
 msgid "Logging will be disabled."
 msgstr "ログ出力が無効化されます"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:97
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:90
 msgctxt "app.config.logging"
 msgid "Type"
 msgstr "タイプ"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:101
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:94
 msgctxt "app.config.logging"
 msgid "Level"
 msgstr "レベル"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:125
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:118
 #, php-format
 msgid "General configuration has been successfully written to: %s"
 msgstr "一般設定は次の場所に正常に書き込まれました: %s"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:131
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:124
 #, php-format
 msgid "General configuration could not be written to: %s. An error occured:"
 msgstr "一般設定を次の場所に書き込めませんでした: %s 。エラーが発生しました："
@@ -10293,18 +10168,12 @@ msgctxt "setup.summary.btn.finish"
 msgid "Setup Icinga Web 2"
 msgstr "Icinga Web 2 のセットアップ"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:579
-msgid ""
-"Running Icinga Web 2 requires PHP version 7.3. Older versions are only "
-"supported up until version 2.11."
-msgstr ""
-
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:588
-#, fuzzy
-msgid "Running Icinga Web 2 requires PHP version 7.3."
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:574
+#, fuzzy, php-format
+msgid "Running Icinga Web 2 requires PHP version %s."
 msgstr "Icinga Web 2を実行するには、PHPバージョン5.6が必要です。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:598
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:583
 msgid ""
 "Icinga Web 2 is developed for and tested on Linux. While we cannot guarantee "
 "they will, other platforms may also perform as well."
@@ -10312,16 +10181,16 @@ msgstr ""
 "Icinga Web 2はLinux用に開発され、テストされています。 保証はできませんが、他"
 "のプラットフォームでも同様に動作するかもしれません。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:608
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:593
 msgid "The Icinga PHP library (IPL) is required for Icinga Web 2 and modules"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:617
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:602
 msgid ""
 "The Icinga PHP Thirdparty library is required for Icinga Web 2 and modules"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:625
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:610
 msgid ""
 "The PHP module for OpenSSL is required to generate cryptographically safe "
 "password salts."
@@ -10329,7 +10198,7 @@ msgstr ""
 "OpenSSL用のPHPモジュールは、暗号的に安全なパスワードソルトを生成するために必"
 "要です"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:633
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:618
 #, fuzzy
 msgid ""
 "The XML module for PHP is required for Markdown and custom HTML annotations."
@@ -10337,7 +10206,7 @@ msgstr ""
 "PHP用のJSONモジュールは、APIだけでなくさまざまなエクスポート機能にも必要で"
 "す。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:641
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:626
 msgid ""
 "The JSON module for PHP is required for various export functionalities as "
 "well as APIs."
@@ -10345,14 +10214,14 @@ msgstr ""
 "PHP用のJSONモジュールは、APIだけでなくさまざまなエクスポート機能にも必要で"
 "す。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:649
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:634
 #, fuzzy
 msgid "For message localization, the gettext module for PHP is required."
 msgstr ""
 "ビューやレポートをPDFにエクスポートできるようにするには、PHP用のDOMモジュール"
 "が必要です。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:657
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:642
 #, fuzzy
 msgid ""
 "For language, timezone and date/time format negotiation, the INTL module for "
@@ -10361,7 +10230,7 @@ msgstr ""
 "ユーザに言語、タイムゾーン、および日付/時刻フォーマットの交渉の恩恵を受けるに"
 "は、PHP用のINTLモジュールが必要です。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:665
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:650
 #, fuzzy
 msgid ""
 "For charts and exports of views and reports to PDF, the DOM module for PHP "
@@ -10370,27 +10239,27 @@ msgstr ""
 "ビューやレポートをPDFにエクスポートできるようにするには、PHP用のDOMモジュール"
 "が必要です。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:674
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:659
 msgid ""
 "If you'd like to authenticate users using LDAP the corresponding PHP module "
 "is required."
 msgstr ""
 "LDAPを使用してユーザーを認証したい場合は、対応するPHPモジュールが必要です。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:683
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:668
 #, fuzzy
 msgid ""
 "In case you want views being exported to PDF, you'll need the mbstring "
 "extension for PHP."
 msgstr "ビューをPDFにエクスポートしたい場合は、PHP用のGD拡張子が必要です"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:692
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:677
 msgid ""
 "In case you want views being exported to PDF, you'll need the GD extension "
 "for PHP."
 msgstr "ビューをPDFにエクスポートしたい場合は、PHP用のGD拡張子が必要です"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:701
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:686
 msgid ""
 "In case you want graphs being exported to PDF as well, you'll need the "
 "ImageMagick extension for PHP."
@@ -10398,7 +10267,7 @@ msgstr ""
 "グラフもPDFにエクスポートしたい場合は、PHP用のImageMagickエクステンションが必"
 "要です。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:712
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:697
 msgid ""
 "To store users or preferences in a MySQL database the PDO-MySQL module for "
 "PHP is required."
@@ -10406,7 +10275,7 @@ msgstr ""
 "MySQLデータベースにユーザーまたは設定を保存するには、PHP用のPDO-MySQLモジュー"
 "ルが必要です。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:721
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:706
 msgid ""
 "To store users or preferences in a PostgreSQL database the PDO-PostgreSQL "
 "module for PHP is required."
@@ -10414,18 +10283,18 @@ msgstr ""
 "ユーザーまたは設定をPostgreSQLデータベースに保存するには、PHP用のPDO-"
 "PostgreSQLモジュールが必要です。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:733
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:718
 msgid ""
 "A database is mandatory, therefore at least one module PDO-MySQL or PDO-"
 "PostgreSQL for PHP is required."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:742
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:727
 #, fuzzy
 msgid "Read- and writable storage directory"
 msgstr "読み書き可能な設定ディレクトリ"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:745
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:730
 #, fuzzy
 msgid ""
 "The Icinga Web 2 storage directory defaults to \"/var/lib/icingaweb2\", if "
@@ -10434,10 +10303,105 @@ msgstr ""
 "環境変数 \"ICINGAWEB_CONFIGDIR\"で明示的に設定されていない場合、Icinga Web 2"
 "設定ディレクトリはデフォルトで \"/etc /icingaweb2\"になります。"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:754
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:739
 msgid ""
 "The Icinga Web 2 configuration directory defaults to \"/etc/icingaweb2\", if "
 "not explicitly set in the environment variable \"ICINGAWEB_CONFIGDIR\"."
 msgstr ""
 "環境変数 \"ICINGAWEB_CONFIGDIR\"で明示的に設定されていない場合、Icinga Web 2"
 "設定ディレクトリはデフォルトで \"/etc /icingaweb2\"になります。"
+
+#~ msgid "User Preference Storage Type"
+#~ msgstr "ユーザ設定の保存先"
+
+#~ msgid "File System (INI Files)"
+#~ msgstr "ファイルシステム(INI ファイル)"
+
+#, php-format
+#~ msgid "Preferences will be stored per user account in INI files at: %s"
+#~ msgstr "設定はユーザーアカウントごとにINIファイルの %s に保存されます。"
+
+#~ msgid "Monitoring Health"
+#~ msgstr "監視情報"
+
+#~ msgid "Open monitoring health"
+#~ msgstr "監視情報についてのページへ"
+
+#~ msgid ""
+#~ "Show recent alerts and visualize notifications and problems based on "
+#~ "their amount and chronological distribution"
+#~ msgstr ""
+#~ "通知と障害の発生数と発生時刻から視覚化し、アラートと合わせて表示します"
+
+#~ msgid "Alert Summary"
+#~ msgstr "警告概要"
+
+#~ msgid "unchanged"
+#~ msgstr "変更なし"
+
+#~ msgid "down"
+#~ msgstr "停止"
+
+#~ msgid "up"
+#~ msgstr "起動"
+
+#~ msgid "Healing Chart"
+#~ msgstr "ヒーリングチャート"
+
+#~ msgid "Notifications and average reaction time per hour."
+#~ msgstr "1時間あたりの通知と平均応答時間"
+
+#~ msgid "Avg (min)"
+#~ msgstr "平均(分)"
+
+#~ msgid "Notifications and defects per hour"
+#~ msgstr "1時間あたりの通知と不具合"
+
+#~ msgid "Report interval"
+#~ msgstr "通知間隔"
+
+#~ msgid "Value for interval not valid"
+#~ msgstr "間隔の値が無効です"
+
+#~ msgid "Hour"
+#~ msgstr "時間"
+
+#~ msgid "Month"
+#~ msgstr "月"
+
+#~ msgid "Alert summary"
+#~ msgstr "警告概要"
+
+#~ msgid "Notifications and Problems"
+#~ msgstr "通知と障害"
+
+#~ msgid "Time to Reaction (Ack, Recover)"
+#~ msgstr "応答までの時間(Ack, Recover)"
+
+#~ msgid "Trend"
+#~ msgstr "動向"
+
+#~ msgid "Average"
+#~ msgstr "平均"
+
+#~ msgid "notifications per hour"
+#~ msgstr "一時間当たりの通知"
+
+#~ msgid "Trend for the last 24h"
+#~ msgstr "直近24時間の動向"
+
+#~ msgid "Top 5 Recent Alerts"
+#~ msgstr "最近のアラート5件"
+
+#, php-format
+#~ msgid "%u unhandled service"
+#~ msgid_plural "%u unhandled services"
+#~ msgstr[0] "未処理サービス %u"
+
+#, php-format
+#~ msgid "List %s unhandled service problem on host %s"
+#~ msgid_plural "List %s unhandled service problems on host %s"
+#~ msgstr[0] "未処理サービス %s の障害を一覧表示します(ホスト: %s)"
+
+#~ msgid "Support"
+#~ msgstr "サポート"

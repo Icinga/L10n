@@ -5,25 +5,28 @@
 # Contributors:
 # Yuri Konotopov <ykonotopov@gmail.com>, 2015.
 # Dmitriy Q <dmitry@atsip.ru>, 2021.
-#
+# Dmitriy Q <krotesk@mail.ru>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-11 16:07+0000\n"
-"PO-Revision-Date: 2021-11-03 12:23+0500\n"
-"Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
-"Language-Team: TranslAster <https://github.com/translaster>\n"
+"POT-Creation-Date: 2022-06-13 14:45+0000\n"
+"PO-Revision-Date: 2022-06-14 09:57+0000\n"
+"Last-Translator: Dmitriy Q <krotesk@mail.ru>\n"
+"Language-Team: Russian <https://translate.icinga.com/projects/icinga/"
+"icingaweb2/ru/>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #: sources.d/icingaweb2/application/controllers/AboutController.php:17
 #: sources.d/icingaweb2/application/controllers/AboutController.php:21
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:47
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:48
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:44
 msgid "About"
 msgstr "О программе"
 
@@ -38,10 +41,10 @@ msgid "Update your account"
 msgstr "Обновление вашего аккаунта"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:28
-#: sources.d/icingaweb2/application/controllers/AccountController.php:81
+#: sources.d/icingaweb2/application/controllers/AccountController.php:80
 #: sources.d/icingaweb2/application/controllers/MyDevicesController.php:28
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:136
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:124
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:126
 msgid "My Account"
 msgstr "Мой аккаунт"
 
@@ -59,7 +62,7 @@ msgstr "Список и настройка собственных элемент
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:256
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:312
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:356
-#: sources.d/icingaweb2/application/views/scripts/layout/menu.phtml:16
+#: sources.d/icingaweb2/application/views/scripts/layout/menu.phtml:17
 #: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:29
 #: sources.d/icingaweb2/application/views/scripts/pivottablePagination.phtml:16
 msgid "Navigation"
@@ -69,7 +72,7 @@ msgstr "Навигация"
 #: sources.d/icingaweb2/application/controllers/MyDevicesController.php:43
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:152
 msgid "List of devices you are logged in"
-msgstr ""
+msgstr "Список устройств c которых вы вошли в систему"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:40
 #: sources.d/icingaweb2/application/controllers/MyDevicesController.php:44
@@ -79,7 +82,8 @@ msgstr "Мои устройства"
 
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:17
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:31
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:62
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:63
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:52
 msgid "Announcements"
 msgstr "Уведомления"
 
@@ -91,7 +95,7 @@ msgstr "Список всех уведомлений"
 #: sources.d/icingaweb2/application/views/scripts/announcements/index.phtml:33
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:407
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:450
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:251
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:248
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:42
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:39
 msgid "Author"
@@ -170,7 +174,8 @@ msgstr "Бэкэнды управления доступом"
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:116
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:128
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:84
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:108
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:110
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:81
 msgid "Modules"
 msgstr "Модули"
 
@@ -336,13 +341,11 @@ msgstr "Обновление панели"
 #: sources.d/icingaweb2/application/controllers/DashboardController.php:209
 #: sources.d/icingaweb2/application/controllers/HealthController.php:23
 #: sources.d/icingaweb2/application/controllers/HealthController.php:33
-#: sources.d/icingaweb2/application/controllers/RoleController.php:65
+#: sources.d/icingaweb2/application/controllers/RoleController.php:66
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:575
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:101
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:121
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:19
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:28
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:330
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:327
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:20
 msgid "Name"
 msgstr "Название"
@@ -385,7 +388,7 @@ msgstr "Ошибка"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:26
 #: sources.d/icingaweb2/application/controllers/GroupController.php:411
-#: sources.d/icingaweb2/application/controllers/RoleController.php:385
+#: sources.d/icingaweb2/application/controllers/RoleController.php:391
 #: sources.d/icingaweb2/application/controllers/UserController.php:366
 msgid "User Groups"
 msgstr "Пользовательские группы"
@@ -399,7 +402,7 @@ msgstr "Бэкэнд пользовательской группы"
 #: sources.d/icingaweb2/application/views/scripts/group/list.phtml:50
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:118
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:123
-#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:573
+#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:571
 msgid "User Group"
 msgstr "Пользовательская группа"
 
@@ -418,9 +421,9 @@ msgstr "Создано в"
 #: sources.d/icingaweb2/application/views/scripts/group/show.phtml:37
 #: sources.d/icingaweb2/application/views/scripts/user/show.phtml:40
 #: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:107
-#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:272
+#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:270
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:126
-#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:575
+#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:573
 msgid "Last modified"
 msgstr "Последнее изменение"
 
@@ -442,10 +445,10 @@ msgstr "Группа \"%s\" не найдена"
 #: sources.d/icingaweb2/application/views/scripts/user/list.phtml:51
 #: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:101
 #: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:104
-#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:269
+#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:267
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:117
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:121
-#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:572
+#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:570
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:109
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:102
 #: sources.d/icingaweb2/modules/setup/application/forms/AdminAccountPage.php:156
@@ -500,14 +503,14 @@ msgid "Group"
 msgstr "Группа"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:377
-#: sources.d/icingaweb2/application/controllers/RoleController.php:34
-#: sources.d/icingaweb2/application/controllers/RoleController.php:351
+#: sources.d/icingaweb2/application/controllers/RoleController.php:35
+#: sources.d/icingaweb2/application/controllers/RoleController.php:357
 #: sources.d/icingaweb2/application/controllers/UserController.php:333
 msgid "Roles"
 msgstr "Роли"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:379
-#: sources.d/icingaweb2/application/controllers/RoleController.php:353
+#: sources.d/icingaweb2/application/controllers/RoleController.php:359
 #: sources.d/icingaweb2/application/controllers/UserController.php:335
 msgid ""
 "Configure roles to permit or restrict users and groups accessing Icinga Web 2"
@@ -516,29 +519,29 @@ msgstr ""
 "к Icinga Web 2"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:388
-#: sources.d/icingaweb2/application/controllers/RoleController.php:362
+#: sources.d/icingaweb2/application/controllers/RoleController.php:368
 #: sources.d/icingaweb2/application/controllers/UserController.php:344
 msgid "Audit a user's or group's privileges"
-msgstr ""
+msgstr "Проверка привилегий пользователя или группы"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:389
-#: sources.d/icingaweb2/application/controllers/RoleController.php:147
-#: sources.d/icingaweb2/application/controllers/RoleController.php:363
+#: sources.d/icingaweb2/application/controllers/RoleController.php:148
+#: sources.d/icingaweb2/application/controllers/RoleController.php:369
 #: sources.d/icingaweb2/application/controllers/UserController.php:345
 msgid "Audit"
 msgstr "Аудит"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:400
-#: sources.d/icingaweb2/application/controllers/RoleController.php:373
+#: sources.d/icingaweb2/application/controllers/RoleController.php:379
 #: sources.d/icingaweb2/application/controllers/UserController.php:355
 msgid "List users of authentication backends"
 msgstr "Список пользователей бэкэндов аутентификации"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:401
 #: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:35
-#: sources.d/icingaweb2/application/controllers/RoleController.php:66
-#: sources.d/icingaweb2/application/controllers/RoleController.php:288
-#: sources.d/icingaweb2/application/controllers/RoleController.php:374
+#: sources.d/icingaweb2/application/controllers/RoleController.php:67
+#: sources.d/icingaweb2/application/controllers/RoleController.php:294
+#: sources.d/icingaweb2/application/controllers/RoleController.php:380
 #: sources.d/icingaweb2/application/controllers/UserController.php:26
 #: sources.d/icingaweb2/application/controllers/UserController.php:356
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/AddMemberForm.php:118
@@ -549,7 +552,7 @@ msgid "Users"
 msgstr "Пользователи"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:410
-#: sources.d/icingaweb2/application/controllers/RoleController.php:384
+#: sources.d/icingaweb2/application/controllers/RoleController.php:390
 #: sources.d/icingaweb2/application/controllers/UserController.php:365
 msgid "List groups of user group backends"
 msgstr "Список групп бэкендов групп пользователей"
@@ -571,29 +574,35 @@ msgstr "Модуль"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:533
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:111
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:130
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:29
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:28
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:29
 msgid "State"
 msgstr "Состояние"
 
 #: sources.d/icingaweb2/application/controllers/HealthController.php:48
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:54
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:55
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:48
 msgid "Health"
 msgstr "Состояние"
 
 #: sources.d/icingaweb2/application/controllers/ListController.php:57
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:143
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:145
 msgid "Application Log"
 msgstr "Журнал приложения"
 
 #: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:34
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:68
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:69
 #: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserList.php:81
 msgid "List of users who stay logged in"
-msgstr ""
+msgstr "Список пользователей, которые остаются в системе"
 
 #: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:49
 #: sources.d/icingaweb2/application/controllers/MyDevicesController.php:63
 msgid "Users can't stay logged in without a database configuration backend"
 msgstr ""
+"Пользователи не могут оставаться в системе без серверной части конфигурации "
+"базы данных"
 
 #: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:60
 msgid "List of devices"
@@ -610,6 +619,7 @@ msgstr "Устройства"
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:20
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:78
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:133
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:25
 msgid "Type"
 msgstr "Тип"
 
@@ -627,7 +637,8 @@ msgstr "Скрыть этот элемент навигации"
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:205
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:213
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:19
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:100
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:102
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:76
 msgid "Shared Navigation"
 msgstr "Общая навигация"
 
@@ -696,8 +707,8 @@ msgstr "Не удалось разделить элемент навигации
 msgid "Navigation not found"
 msgstr "Навигация не найдена"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:67
-#: sources.d/icingaweb2/application/controllers/RoleController.php:323
+#: sources.d/icingaweb2/application/controllers/RoleController.php:68
+#: sources.d/icingaweb2/application/controllers/RoleController.php:329
 #: sources.d/icingaweb2/application/forms/Config/User/CreateMembershipForm.php:79
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:615
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:94
@@ -705,75 +716,75 @@ msgstr "Навигация не найдена"
 msgid "Groups"
 msgstr "Группы"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:68
+#: sources.d/icingaweb2/application/controllers/RoleController.php:69
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:133
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:117
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:439
 msgid "Permissions"
 msgstr "Разрешения"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:89
+#: sources.d/icingaweb2/application/controllers/RoleController.php:90
 msgid "Create Role"
 msgstr "Создание роли"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:92
+#: sources.d/icingaweb2/application/controllers/RoleController.php:93
 msgid "New Role"
 msgstr "Новая роль"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:108
-#: sources.d/icingaweb2/application/controllers/RoleController.php:117
+#: sources.d/icingaweb2/application/controllers/RoleController.php:109
+#: sources.d/icingaweb2/application/controllers/RoleController.php:118
 msgid "Update Role"
 msgstr "Обновить роль"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:114
-#: sources.d/icingaweb2/application/controllers/RoleController.php:137
+#: sources.d/icingaweb2/application/controllers/RoleController.php:115
+#: sources.d/icingaweb2/application/controllers/RoleController.php:138
 msgid "Role not found"
 msgstr "Роль не найдена"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:131
-#: sources.d/icingaweb2/application/controllers/RoleController.php:140
+#: sources.d/icingaweb2/application/controllers/RoleController.php:132
+#: sources.d/icingaweb2/application/controllers/RoleController.php:141
 msgid "Remove Role"
 msgstr "Удалить роль"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:168
+#: sources.d/icingaweb2/application/controllers/RoleController.php:169
 #, fuzzy
 msgid "Enter user or group name"
 msgstr "Редактировать группу пользователей бэкэнда %s"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:169
+#: sources.d/icingaweb2/application/controllers/RoleController.php:170
 msgid "Inspect"
 msgstr "Проверить"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:189
+#: sources.d/icingaweb2/application/controllers/RoleController.php:190
 msgid "No user or group selected."
 msgstr "Нет выбранных групп или пользователей."
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:194
+#: sources.d/icingaweb2/application/controllers/RoleController.php:195
 #, fuzzy, php-format
 msgid "Privilege Audit for User \"%s\""
 msgstr "Не удалось изменить пользователя \"%s\""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:200
+#: sources.d/icingaweb2/application/controllers/RoleController.php:201
 #, fuzzy, php-format
 msgid "Privilege Audit for Group \"%s\""
 msgstr "Не удалось изменить группу \"%s\""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:225
+#: sources.d/icingaweb2/application/controllers/RoleController.php:226
 msgid "All roles"
 msgstr "Все роли"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:227
+#: sources.d/icingaweb2/application/controllers/RoleController.php:228
 msgid "Show privileges of all roles"
-msgstr ""
+msgstr "Показывать привилегии всех ролей"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:238
+#: sources.d/icingaweb2/application/controllers/RoleController.php:239
 #, php-format
 msgid "Only show privileges of role %s"
-msgstr ""
+msgstr "Показывать только привилегии роли %s"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:335
+#: sources.d/icingaweb2/application/controllers/RoleController.php:341
 msgid "Your search does not match any user or group"
-msgstr ""
+msgstr "Ваш поиск не соответствует ни одному пользователю или группе"
 
 #: sources.d/icingaweb2/application/controllers/UserController.php:58
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/LdapUserGroupBackendForm.php:77
@@ -784,7 +795,7 @@ msgstr "Бэкэнд пользователя"
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:25
 #: sources.d/icingaweb2/application/views/scripts/user/show.phtml:33
 #: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:105
-#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:270
+#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:268
 msgid "Active"
 msgstr "Активный"
 
@@ -1009,13 +1020,15 @@ msgstr "Пароль"
 
 #: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:80
 msgid "Stay logged in"
-msgstr ""
+msgstr "Оставаться в системе"
 
 #: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:99
 msgid ""
 "Staying logged in requires a database configuration backend and an "
 "appropriate OpenSSL encryption method"
 msgstr ""
+"Для входа в систему требуется серверная часть конфигурации базы данных и "
+"соответствующий метод шифрования OpenSSL"
 
 #: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:162
 msgid ""
@@ -1117,25 +1130,10 @@ msgstr ""
 "отображаться в списке отключенных модулей."
 
 #: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:82
-msgid "User Preference Storage Type"
-msgstr "Тип хранения предпочтений пользователя"
-
-#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:84
-msgid "File System (INI Files)"
-msgstr "Файловая система (файлы INI)"
-
-#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:85
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:272
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:190
-#: sources.d/icingaweb2/modules/setup/application/forms/AuthenticationPage.php:50
-msgid "Database"
-msgstr "База данных"
-
-#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:115
 msgid "Please choose"
 msgstr "Пожалуйста, выберите"
 
-#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:120
+#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:87
 #, fuzzy
 msgid "Configuration Database"
 msgstr "Настройка корзин"
@@ -1152,6 +1150,13 @@ msgid ""
 "responsible for this domain or if none of your authentication backends holds "
 "usernames with the domain part, users will not be able to login."
 msgstr ""
+"Если пользователь входит в систему без указания какого-либо домена "
+"(например, \"jdoe\" вместо \"jdoe@example.com \") то пользователю будет "
+"присвоен этот домен по умолчанию. Обратите внимание, что если ни один из "
+"ваших серверных модулей аутентификации LDAP не настроен для ответственности "
+"за этот домен или ни один из ваших серверных модулей аутентификации не "
+"содержит имен пользователей с доменной частью - пользователи не смогут войти "
+"в систему."
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:39
 msgid "Logging Type"
@@ -1162,13 +1167,13 @@ msgid "The type of logging to utilize."
 msgstr "Тип ведения журнала для использования."
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:43
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:76
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:69
 msgctxt "app.config.logging.type"
 msgid "Webserver Log"
 msgstr "Журнал веб-сервера"
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:44
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:87
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:80
 msgctxt "app.config.logging.type"
 msgid "File"
 msgstr "Файл"
@@ -1187,31 +1192,31 @@ msgid "The maximum logging level to emit."
 msgstr "Максимальный уровень протоколирования."
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:59
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:102
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:95
 msgctxt "app.config.logging.level"
 msgid "Error"
 msgstr "Ошибка"
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:60
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:103
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:96
 msgctxt "app.config.logging.level"
 msgid "Warning"
 msgstr "Предупреждение"
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:61
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:104
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:97
 msgctxt "app.config.logging.level"
 msgid "Information"
 msgstr "Информация"
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:62
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:105
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:98
 msgctxt "app.config.logging.level"
 msgid "Debug"
 msgstr "Отладка"
 
 #: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:74
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:82
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:75
 msgid "Application Prefix"
 msgstr "Префикс приложения"
 
@@ -1241,7 +1246,7 @@ msgid "The full path to the log file to write messages to."
 msgstr "Полный путь к файлу журнала для записи сообщений."
 
 #: sources.d/icingaweb2/application/forms/Config/General/ThemingConfigForm.php:34
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:194
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:195
 msgid "default"
 msgstr "по-умолчанию"
 
@@ -1333,16 +1338,17 @@ msgstr "Название базы данных для использования
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:114
 #: sources.d/icingaweb2/application/forms/Config/Resource/LdapResourceForm.php:46
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:248
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:451
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:245
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:448
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/ApiTransportForm.php:29
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/RemoteTransportForm.php:138
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:29
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:31
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:30
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:29
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:97
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:274
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:289
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:94
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:244
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:74
@@ -1447,7 +1453,7 @@ msgid "The list of permissible ciphers"
 msgstr "Перечень допустимых шифров"
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/FileResourceForm.php:41
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:88
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:81
 msgid "Filepath"
 msgstr "Путь к файлу"
 
@@ -1552,31 +1558,31 @@ msgstr ""
 "обратите внимание, что для этого пользователя должен быть возможен SSH-вход "
 "по ключу"
 
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:61
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:64
 msgid "The given SSH key is invalid"
 msgstr "Данный ключ SSH недействителен"
 
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:70
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:83
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:73
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:86
 msgid "Private Key"
 msgstr "Приватный ключ"
 
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:71
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:74
 msgid "The private key which will be used for the SSH connections"
 msgstr "Приватный ключ, используемый для SSH-соединений"
 
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:88
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:91
 #, php-format
 msgid "Remove the %s resource"
 msgstr "Удалить ресурс %s"
 
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:90
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:93
 msgid "To modify the private key you must recreate this resource."
 msgstr "Для изменения приватного ключа необходимо заново создать этот ресурс."
 
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:135
-#, php-format
-msgid "The private key for the user \"%s\" is already exists."
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:137
+#, fuzzy, php-format
+msgid "The private key for the user \"%s\" already exists."
 msgstr "Приватный ключ для пользователя \"%s\" уже существует."
 
 #: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:66
@@ -2001,6 +2007,12 @@ msgstr "Указан неверный тип бэкэнда \"%s\""
 msgid "A user backend with the name \"%s\" does already exist"
 msgstr "Пользователь бэкэнда с именем \"%s\" уже существует"
 
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:272
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:190
+#: sources.d/icingaweb2/modules/setup/application/forms/AuthenticationPage.php:50
+msgid "Database"
+msgstr "База данных"
+
 #: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:286
 #: sources.d/icingaweb2/modules/setup/application/forms/AuthenticationPage.php:55
 msgid "External"
@@ -2019,7 +2031,7 @@ msgid "The type of the resource to use for this authenticaton provider"
 msgstr "Тип ресурса, используемый для данного поставщика аутентификации"
 
 #: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:388
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:301
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:304
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Setup/IdoResourcePage.php:183
 #: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:244
 #: sources.d/icingaweb2/modules/setup/application/forms/DatabaseCreationPage.php:201
@@ -2517,7 +2529,7 @@ msgstr ""
 "отсутствует соответствующий языковой стандарт. Убедитесь, что установлен "
 "правильный языковой пакет, а затем перезагрузите веб-сервер."
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:200
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:201
 msgctxt "Form element label"
 msgid "Theme"
 msgstr "Тема"
@@ -2533,11 +2545,11 @@ msgstr "Темный"
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:239
 msgid "Light"
-msgstr ""
+msgstr "Легкий"
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:243
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:36
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:295
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:37
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:41
 msgid "System"
 msgstr "Система"
 
@@ -2613,6 +2625,8 @@ msgid ""
 "This option allows you to speed up or to slow down the global page content "
 "auto refresh"
 msgstr ""
+"Этот параметр позволяет ускорить или замедлить автоматическое обновление "
+"глобального содержимого страницы"
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:366
 msgctxt "refresh_speed"
@@ -2627,12 +2641,12 @@ msgstr "По умолчанию"
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:368
 msgctxt "refresh_speed"
 msgid "Moderate"
-msgstr ""
+msgstr "Умеренный"
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:369
 msgctxt "refresh_speed"
 msgid "Slow"
-msgstr ""
+msgstr "Медленный"
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:380
 msgid "Default page size"
@@ -2656,11 +2670,11 @@ msgstr "Имя для роли"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:73
 msgid "Inherit From"
-msgstr ""
+msgstr "Унаследовать от"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:74
 msgid "Choose a role from which to inherit privileges"
-msgstr ""
+msgstr "Выберите роль, от которой будут наследоваться привилегии"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:77
 msgctxt "parent role"
@@ -2695,15 +2709,15 @@ msgstr "Неограниченный доступ"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:114
 msgid "Access to any data is completely unrestricted"
-msgstr ""
+msgstr "Доступ к любым данным полностью неограничен"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:135
 msgid "Grant access by toggling a switch below"
-msgstr ""
+msgstr "Предоставьте доступ, переключив переключатель ниже"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:138
 msgid "Deny access by toggling a switch below"
-msgstr ""
+msgstr "Запретить доступ, переключив переключатель ниже"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:225
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:127
@@ -2771,7 +2785,7 @@ msgstr "Разрешить общий доступ к элементам нав�
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:552
 msgid "Allow to fully manage access-control"
-msgstr ""
+msgstr "Позволяют полностью управлять доступом"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:555
 #, fuzzy
@@ -2790,7 +2804,7 @@ msgstr "Разрешенные роли"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:564
 msgid "Allow all account related functionalities"
-msgstr ""
+msgstr "Разрешить все функции, связанные с учетной записью"
 
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:567
 #, fuzzy
@@ -2835,11 +2849,11 @@ msgstr "Разрешить доступ к модулю %s"
 msgid "Full Module Access"
 msgstr "Полный доступ к модулю"
 
-#: sources.d/icingaweb2/application/layouts/scripts/layout.phtml:81
+#: sources.d/icingaweb2/application/layouts/scripts/layout.phtml:80
 msgid "Expand"
 msgstr "Расширенно"
 
-#: sources.d/icingaweb2/application/layouts/scripts/layout.phtml:82
+#: sources.d/icingaweb2/application/layouts/scripts/layout.phtml:81
 msgid "Collapse"
 msgstr "Крах"
 
@@ -2855,73 +2869,76 @@ msgstr "Перейти к содержимому"
 msgid "Toggle Menu"
 msgstr "Переключатель меню"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:8
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:18
 msgid "Icinga Web 2 Version"
 msgstr "Версия Icinga Web 2"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:12
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:24
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:40
 msgid "Git commit"
 msgstr "Git commit"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:15
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:29
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/PhpVersionRequirement.php:15
 msgid "PHP Version"
 msgstr "Версия PHP"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:18
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:34
 msgid "Git commit date"
 msgstr "Git commit date"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:21
-msgid "Copyright"
-msgstr "Авторские права"
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:46
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:49
+msgid "Get Icinga Support"
+msgstr "Получить поддержку Icinga"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:42
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:39
-msgid "Icinga on Twitter"
-msgstr "Icinga в Twitter"
-
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:51
-#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:51
-msgid "Icinga on Facebook"
-msgstr "Icinga в Facebook"
-
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:63
-msgid "Report a bug"
-msgstr "Сообщить об ошибке"
-
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:73
-msgid "Support"
-msgstr "Поддержка"
-
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:83
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:59
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:62
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:72
 msgid "Icinga Community"
 msgstr "Комьюнити Icinga"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:93
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:75
+msgid "Report a bug"
+msgstr "Сообщить об ошибке"
+
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:86
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:89
 msgid "Icinga Documentation"
 msgstr "Документация Icinga"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:97
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:96
 msgid "Loaded Libraries"
-msgstr ""
+msgstr "Загруженные библиотеки"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:102
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:122
-#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:35
-msgid "Version"
-msgstr "Версия"
-
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:117
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:110
 msgid "Loaded Modules"
 msgstr "Загруженные модули"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:134
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:124
+#, fuzzy
+msgid "Configure"
+msgstr "Настройки"
+
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:127
 #: sources.d/icingaweb2/application/views/scripts/config/modules.phtml:34
 #, php-format
 msgid "Show the overview of the %s module"
 msgstr "Показать обзор модуля %s"
+
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:138
+msgid "Copyright"
+msgstr "Авторские права"
+
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:157
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:39
+msgid "Icinga on Twitter"
+msgstr "Icinga в Twitter"
+
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:166
+#: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:51
+msgid "Icinga on Facebook"
+msgstr "Icinga в Facebook"
 
 #: sources.d/icingaweb2/application/views/scripts/account/index.phtml:6
 msgid "Account"
@@ -3014,7 +3031,11 @@ msgstr "Такого модуля не установлено."
 
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:30
 msgid "Module can't be enabled due to unmet dependencies"
-msgstr ""
+msgstr "Модуль не может быть включен из-за неудовлетворенных зависимостей"
+
+#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:35
+msgid "Version"
+msgstr "Версия"
 
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:45
 msgid "Description"
@@ -3033,14 +3054,16 @@ msgid ""
 "Unmet dependencies found! Module can't be enabled unless all dependencies "
 "are met."
 msgstr ""
+"Обнаружены неудовлетворенные зависимости! Модуль не может быть включен до "
+"тех пор, пока не будут выполнены все зависимости."
 
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:64
 msgid "Libraries"
-msgstr ""
+msgstr "Библиотеки"
 
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:99
 msgid "not installed"
-msgstr ""
+msgstr "не установлен"
 
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:101
 msgid "disabled"
@@ -3048,7 +3071,7 @@ msgstr "отключено"
 
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:106
 msgid "or"
-msgstr ""
+msgstr "или"
 
 #: sources.d/icingaweb2/application/views/scripts/config/modules.phtml:19
 #, php-format
@@ -3216,6 +3239,8 @@ msgid ""
 "Library \"%s\" is required and missing. Please install a version of it "
 "matching the required one: %s"
 msgstr ""
+"Библиотека \"%s\" обязательна и отсутствует. Пожалуйста, установите её "
+"версию, соответствующую требуемой: %s"
 
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:35
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:70
@@ -3224,12 +3249,16 @@ msgid ""
 "Library \"%s\" is required and installed, but its version (%s) does not "
 "satisfy the required one: %s"
 msgstr ""
+"Библиотека \"%s\" требуется и установлена, но ее версия (%s) не "
+"удовлетворяет требуемой: %s"
 
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:41
 msgid ""
 "You have unmet dependencies. Please check Icinga Web 2's installation "
 "instructions."
 msgstr ""
+"У вас есть неудовлетворенные зависимости. Пожалуйста, ознакомьтесь с "
+"инструкциями по установке Icinga Web 2."
 
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:51
 #, php-format
@@ -3237,6 +3266,8 @@ msgid ""
 "Module \"%s\" is required and missing. Please install a version of it "
 "matching the required one: %s"
 msgstr ""
+"Модуль \"%s\" требуется и отсутствует. Пожалуйста, установите его версию, "
+"соответствующую требуемой: %s"
 
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:55
 #, php-format
@@ -3244,6 +3275,8 @@ msgid ""
 "Module \"%s\" is required and installed, but not enabled. Please enable "
 "module \"%1$s\"."
 msgstr ""
+"Модуль \"%s\" требуется и установлен, но не включен. Пожалуйста, включите "
+"модуль \"%1$s\"."
 
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:59
 #, php-format
@@ -3251,6 +3284,8 @@ msgid ""
 "Module \"%s\" is required and installed, but its version (%s) does not "
 "satisfy the required one: %s"
 msgstr ""
+"Модуль \"%s\" требуется и установлен, но его версия (%s) не удовлетворяет "
+"требуемой: %s"
 
 #: sources.d/icingaweb2/application/views/scripts/error/error.phtml:78
 #, php-format
@@ -3258,6 +3293,9 @@ msgid ""
 "This error might have occurred because module \"%s\" has unmet dependencies. "
 "Please check it's installation instructions and install missing dependencies."
 msgstr ""
+"Эта ошибка могла возникнуть из-за того, что модуль \"%s\" имеет "
+"неудовлетворенные зависимости. Пожалуйста, ознакомьтесь с инструкциями по "
+"установке и установите отсутствующие зависимости."
 
 #: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:25
 #, php-format
@@ -3306,9 +3344,9 @@ msgstr "Не найдено групп пользователей, соотве�
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/DeleteDowntimesCommandForm.php:63
 msgid "Remove"
 msgid_plural "Remove All"
-msgstr[0] "Удалить"
-msgstr[1] "Удалить"
-msgstr[2] "Удалить"
+msgstr[0] "Удалить весь"
+msgstr[1] "Удалить все"
+msgstr[2] "Удалить все"
 
 #: sources.d/icingaweb2/application/views/scripts/group/list.phtml:69
 #, php-format
@@ -3376,7 +3414,7 @@ msgstr "службы"
 msgid "Flip grid axes"
 msgstr "Повернуть оси сетки"
 
-#: sources.d/icingaweb2/application/views/scripts/layout/menu.phtml:11
+#: sources.d/icingaweb2/application/views/scripts/layout/menu.phtml:12
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SearchDashboard.php:33
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SearchDashboard.php:50
 msgid "Search"
@@ -3472,7 +3510,7 @@ msgid "Hosts"
 msgstr "Узлы"
 
 #: sources.d/icingaweb2/application/views/scripts/pivottablePagination.phtml:35
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:126
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:123
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:46
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:69
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:77
@@ -3499,7 +3537,7 @@ msgstr "Ролей не найдено."
 
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:31
 msgid "Inherits From"
-msgstr ""
+msgstr "Наследуется от"
 
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:43
 #: sources.d/icingaweb2/application/views/scripts/user/show.phtml:56
@@ -3599,11 +3637,11 @@ msgstr "Неактивно"
 
 #: sources.d/icingaweb2/application/views/scripts/user/show.phtml:44
 msgid "Role Memberships"
-msgstr ""
+msgstr "Участники роли"
 
 #: sources.d/icingaweb2/application/views/scripts/user/show.phtml:66
 msgid "No memberships found"
-msgstr ""
+msgstr "Участники не найдены"
 
 #: sources.d/icingaweb2/application/views/scripts/user/show.phtml:72
 msgid "Group Memberships"
@@ -3631,7 +3669,7 @@ msgstr "Не удается прочитать файл конфига \"%s\". �
 #: sources.d/icingaweb2/library/Icinga/Application/Modules/Manager.php:270
 #, php-format
 msgid "Enabling module \"%s\" although it has unmet dependencies"
-msgstr ""
+msgstr "Включение модуля \"%s\", хотя он имеет неудовлетворенные зависимости"
 
 #: sources.d/icingaweb2/library/Icinga/Application/Modules/Manager.php:273
 #, php-format
@@ -3640,7 +3678,7 @@ msgstr ""
 "Модуль \"%s\" не может быть включен. Модуль имеет неудовлетворенные "
 "зависимости"
 
-#: sources.d/icingaweb2/library/Icinga/Application/Modules/Module.php:1055
+#: sources.d/icingaweb2/library/Icinga/Application/Modules/Module.php:857
 msgid "This module has no description"
 msgstr "Этот модуль не имеет описания"
 
@@ -3648,17 +3686,19 @@ msgstr "Этот модуль не имеет описания"
 msgid ""
 "Unable to parse authentication configuration. Check the log for more details."
 msgstr ""
+"Не удалось проанализировать конфигурацию аутентификации. Проверьте лог для "
+"получения более подробной информации."
 
 #: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:101
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:117
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:118
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:234
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:249
 msgid "(Case insensitive)"
 msgstr "(Без учета регистра)"
 
-#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:271
+#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:269
 #: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:125
-#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:574
+#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:572
 msgid "Created At"
 msgstr "Создано в"
 
@@ -3685,6 +3725,10 @@ msgstr "Содержит данные в виде круговой диагра�
 #, php-format
 msgid "Required parameter '%s' missing"
 msgstr "Обязательный параметр '%s' отсутствует"
+
+#: sources.d/icingaweb2/library/Icinga/Common/PdfExport.php:59
+msgid "Page"
+msgstr "Страница"
 
 #: sources.d/icingaweb2/library/Icinga/Date/DateFormatter.php:167
 #, php-format
@@ -3793,7 +3837,7 @@ msgstr "Столбец фильтра \"%s\" не найден"
 msgid "Filter column \"%s\" not found in table \"%s\""
 msgstr "Столбец фильтра \"%s\" не найден в таблице \"%s\""
 
-#: sources.d/icingaweb2/library/Icinga/Web/Controller/ActionController.php:268
+#: sources.d/icingaweb2/library/Icinga/Web/Controller/ActionController.php:273
 msgid "Method Not Allowed"
 msgstr "Метод не разрешен"
 
@@ -3916,74 +3960,81 @@ msgid ""
 "The url must not contain raw double quotes. If you really need double "
 "quotes, use %22 instead."
 msgstr ""
+"URL-адрес не должен содержать необработанных двойных кавычек. Если вам "
+"действительно нужны двойные кавычки, вместо них используйте %22."
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:46
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:47
 msgid "Open about page"
 msgstr "Открыть страницу о программе"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:53
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:54
 #, fuzzy
 msgid "Open health overview"
 msgstr "Обзор события"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:61
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:62
 msgid "List announcements"
 msgstr "Список уведомлений"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:69
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:70
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:56
 msgid "User Sessions"
 msgstr "Сеансы пользователей"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:77
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:79
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:63
 msgid "Configuration"
 msgstr "Настройки"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:84
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:86
 msgid "Open application configuration"
 msgstr "Открыть конфигурацию приложения"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:85
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:87
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:67
 msgid "Application"
 msgstr "Приложение"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:91
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:93
 #, fuzzy
 msgid "Open access control configuration"
 msgstr "Открыть конфигурацию приложения"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:92
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:94
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:71
 msgid "Access Control"
 msgstr "Контроль доступа"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:99
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:101
 msgid "Open shared navigation configuration"
 msgstr "Откройте конфигурацию общей навигации"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:107
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:109
 msgid "Open module configuration"
 msgstr "Открыть конфигурацию модуля"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:123
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:125
 msgid "Open your account preferences"
 msgstr "Откройте настройки своего аккаунта"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:130
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:132
 msgid "Log out"
 msgstr "Выход"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:131
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:133
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:90
 msgid "Logout"
 msgstr "Выход"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:142
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:144
 msgid "Open Application Log"
 msgstr "Открыть журнал приложения"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/Navigation.php:467
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/Navigation.php:449
 msgid "Menu Entry"
 msgstr "Элемент меню"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/Navigation.php:549
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/Navigation.php:531
 #, php-format
 msgid ""
 "Failed to fully parse navigation configuration. Ensure that all referenced "
@@ -3996,10 +4047,11 @@ msgstr ""
 #, php-format
 msgid "List of devices and browsers %s is currently logged in:"
 msgstr ""
+"Список устройств и браузеров, %s которых в данный момент вошли в систему:"
 
 #: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:108
 msgid "OS"
-msgstr ""
+msgstr "ОС"
 
 #: sources.d/icingaweb2/library/Icinga/Web/RememberMeUserDevicesList.php:109
 msgid "Browser"
@@ -4030,40 +4082,40 @@ msgstr "%s к %s - это %s"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:75
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:86
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:201
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:202
 msgid "UNKNOWN"
 msgstr "НЕИЗВЕСТНО"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:80
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:192
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:193
 msgid "OK"
 msgstr "ОК"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:82
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:195
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:196
 msgid "WARNING"
 msgstr "ВНИМАНИЕ"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:84
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:198
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:199
 msgid "CRITICAL"
 msgstr "КРИТИЧНО"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:64
-#, php-format
+#, fuzzy, php-format
 msgid "Refused by %s and %s as well as one other"
 msgid_plural "Refused by %s and %s as well as %d others"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Отклонено %s и %s, а также %d другой"
+msgstr[1] "Отклонено %s и %s, а также %d других"
+msgstr[2] "Отклонено %s и %s, а также %d других"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:73
 #, fuzzy, php-format
 msgid "Refused by %s"
 msgid_plural "Refused by %s and %s"
-msgstr[0] "Удалить ключ %s"
-msgstr[1] "Удалить ключ %s"
-msgstr[2] "Удалить ключ %s"
+msgstr[0] "Отклонено %s и %s"
+msgstr[1] "%s и %s отклонено"
+msgstr[2] "%s и %s отклонено"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:83
 #, php-format
@@ -4083,27 +4135,27 @@ msgstr[2] ""
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:97
 msgid "Not granted or refused by any role"
-msgstr ""
+msgstr "Не предоставлено или отклонено какой-либо роли"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:212
-#, php-format
+#, fuzzy, php-format
 msgid "Restricted by %s and %s as well as one other"
 msgid_plural "Restricted by %s and %s as well as %d others"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Ограничено %s и %s, а также %d другой"
+msgstr[1] "Ограничено %s и %s, а также %d других"
+msgstr[2] "Ограничено %s и %s, а также %d других"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:221
 #, fuzzy, php-format
 msgid "Restricted by %s"
 msgid_plural "Restricted by %s and %s"
-msgstr[0] "Ограничения"
-msgstr[1] "Ограничения"
-msgstr[2] "Ограничения"
+msgstr[0] "Ограничены %s и %s"
+msgstr[1] "Ограничены %s и %s"
+msgstr[2] "Ограничены %s и %s"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:228
 msgid "Not restricted by any role"
-msgstr ""
+msgstr "Не ограничен какой-либо ролью"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:240
 #, fuzzy
@@ -4113,7 +4165,7 @@ msgstr "Разрешить все команды"
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:249
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:274
 msgid "Previews:"
-msgstr ""
+msgstr "Предпросмотр:"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:312
 msgid "Administrative Privileges"
@@ -4212,13 +4264,13 @@ msgstr "Поисковый"
 msgid "Page not found"
 msgstr "Страница не найдена"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:163
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:164
 msgid "Can't search:"
 msgstr "Невозможно найти:"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:169
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/SingleValueSearchControl.php:170
 msgid "No results:"
-msgstr ""
+msgstr "Безрезультатно:"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SortBox.php:196
 msgid "Sort by"
@@ -4290,45 +4342,45 @@ msgstr "Документация для модуля '%s' недоступна"
 #: sources.d/icingaweb2/modules/doc/application/controllers/ModuleController.php:61
 msgctxt "Tab title"
 msgid "Module Documentation"
-msgstr ""
+msgstr "Документация по модулю"
 
 #: sources.d/icingaweb2/modules/doc/application/controllers/ModuleController.php:77
 #, php-format
 msgid "Module '%s' is not installed"
-msgstr ""
+msgstr "Модуль '%s' не установлен"
 
 #: sources.d/icingaweb2/modules/doc/application/controllers/StyleController.php:29
 msgid "Style Guide"
-msgstr ""
+msgstr "Руководство по стилю"
 
 #: sources.d/icingaweb2/modules/doc/application/controllers/StyleController.php:35
 msgid "Icons"
-msgstr ""
+msgstr "Значки"
 
 #: sources.d/icingaweb2/modules/doc/application/controllers/StyleController.php:36
 msgid "List all available icons"
-msgstr ""
+msgstr "Список всех доступных значков"
 
 #: sources.d/icingaweb2/modules/doc/application/views/scripts/index/index.phtml:10
 msgid "Show the documentation's table of contents for Icinga Web 2"
-msgstr ""
+msgstr "Показать оглавление документации для Icinga Web 2"
 
 #: sources.d/icingaweb2/modules/doc/application/views/scripts/index/index.phtml:13
 msgid "Module documentations"
-msgstr ""
+msgstr "Документация по модулю"
 
 #: sources.d/icingaweb2/modules/doc/application/views/scripts/index/index.phtml:16
 msgid "List all modules for which documentation is available"
-msgstr ""
+msgstr "Список всех модулей, для которых доступна документация"
 
 #: sources.d/icingaweb2/modules/doc/application/views/scripts/module/index.phtml:13
 #, php-format
 msgid "Show the documentation's table of contents for the %s"
-msgstr ""
+msgstr "Показать оглавление документации для %s"
 
 #: sources.d/icingaweb2/modules/doc/application/views/scripts/search/index.phtml:5
 msgid "No documentation found matching the filter"
-msgstr ""
+msgstr "Не найдено документации, соответствующей фильтру"
 
 #: sources.d/icingaweb2/modules/doc/application/views/scripts/style/guide.phtml:69
 msgid "Comment List"
@@ -4343,7 +4395,7 @@ msgstr "прокомментировал"
 #: sources.d/icingaweb2/modules/doc/application/views/scripts/style/guide.phtml:75
 #: sources.d/icingaweb2/modules/doc/application/views/scripts/style/guide.phtml:88
 msgid "some time ago"
-msgstr ""
+msgstr "некоторое время назад"
 
 #: sources.d/icingaweb2/modules/doc/application/views/scripts/style/guide.phtml:101
 msgid "Blockquote"
@@ -4359,7 +4411,7 @@ msgstr "Разработчик - Стиль"
 
 #: sources.d/icingaweb2/modules/doc/configuration.php:24
 msgid "Doc"
-msgstr ""
+msgstr "Док"
 
 #: sources.d/icingaweb2/modules/doc/library/Doc/DocController.php:82
 #: sources.d/icingaweb2/modules/doc/library/Doc/DocController.php:112
@@ -4372,165 +4424,38 @@ msgstr "%s документация"
 msgid "Documentation directory '%s' is not readable"
 msgstr "Каталог документации '%s' не читается"
 
-#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocSearchRenderer.php:115
+#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocSearchRenderer.php:96
 #, php-format
 msgctxt "search.render.section.link"
 msgid "Show all matches of \"%s\" in the chapter \"%s\""
-msgstr ""
+msgstr "Показать все совпадения \"%s\" в разделе \"%s\""
 
-#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocSearchRenderer.php:123
+#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocSearchRenderer.php:104
 #, php-format
 msgctxt "search.render.section.link"
 msgid "Show all matches of \"%s\" in the section \"%s\" of the chapter \"%s\""
-msgstr ""
+msgstr "Показать все совпадения \"%s\" в разделе \"%s\" главы \"%s\""
 
 #: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocSectionRenderer.php:68
 #, php-format
 msgid "Chapter %s not found"
 msgstr "Глава %s не найдена"
 
-#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocTocRenderer.php:88
+#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocTocRenderer.php:68
 msgid "Documentation is empty."
 msgstr "Документация пуста."
 
-#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocTocRenderer.php:113
+#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocTocRenderer.php:93
 #, php-format
 msgctxt "toc.render.section.link"
 msgid "Show the chapter \"%s\""
-msgstr ""
+msgstr "Показать главу \"%s\""
 
-#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocTocRenderer.php:117
+#: sources.d/icingaweb2/modules/doc/library/Doc/Renderer/DocTocRenderer.php:97
 #, php-format
 msgctxt "toc.render.section.link"
 msgid "Show the section \"%s\" of the chapter \"%s\""
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:51
-msgid ""
-"Show recent alerts and visualize notifications and problems based on their "
-"amount and chronological distribution"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:54
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:58
-msgid "Alert Summary"
-msgstr "Сводка предупреждений"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:192
-msgid "unchanged"
-msgstr "неизменившийся"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:194
-msgid "down"
-msgstr "вниз"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:196
-msgid "up"
-msgstr "вверх"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:325
-msgid "Healing Chart"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:326
-msgid "Notifications and average reaction time per hour."
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:329
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:424
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:467
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:474
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:276
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:52
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:58
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:64
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:70
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:76
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:82
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:88
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:127
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:50
-#: sources.d/icingaweb2/modules/monitoring/application/forms/EventOverviewForm.php:74
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:138
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:142
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/detail-content.phtml:25
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:139
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:144
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/notifications.phtml:2
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:129
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:131
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:271
-msgid "Notifications"
-msgstr "Уведомления"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:434
-msgid "Avg (min)"
-msgstr "Среднее (мин)"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:438
-msgid "<b>{title}:</b> {value}m min. reaction time"
-msgstr "<b>{title}:</b> {value}м мин. время реакции"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:444
-msgid "Max (min)"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:448
-msgid "<b>{title}:</b> {value}m max. reaction time"
-msgstr "<b>{title}:</b> {value}м макс время реакции"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:463
-msgid "Defect Chart"
-msgstr "Диаграмма дефектов"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:464
-msgid "Notifications and defects per hour"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:484
-msgid "Defects"
-msgstr "Дефекты"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:535
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:142
-msgid "One day"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:536
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:143
-msgid "One week"
-msgstr "Одна неделя"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:537
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:144
-msgid "One month"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:538
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:145
-msgid "One year"
-msgstr "Один год"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:540
-msgid "Report interval"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:623
-msgid "Value for interval not valid"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:639
-msgid "Hour"
-msgstr "Час"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:642
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:645
-msgid "Day"
-msgstr "День"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/AlertsummaryController.php:648
-msgid "Month"
-msgstr "Месяц"
+msgstr "Показать раздел \"%s\" главы \"%s\""
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentController.php:50
 msgid "Comment not found"
@@ -4544,19 +4469,20 @@ msgstr "Комментарий не найден"
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:46
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:69
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:47
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:51
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:63
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:26
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:53
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:65
 msgid "Comment"
 msgstr "Комментарий"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentController.php:58
 msgid "Display detailed information about a comment."
-msgstr ""
+msgstr "Отображение подробной информации о комментарии."
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentController.php:74
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentsController.php:59
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentsController.php:64
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:425
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:422
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:99
 #: sources.d/icingaweb2/modules/monitoring/application/forms/EventOverviewForm.php:64
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:60
@@ -4568,7 +4494,7 @@ msgstr "Комментарии"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentsController.php:66
 msgid "Display detailed information about multiple comments."
-msgstr ""
+msgstr "Отображение подробной информации о нескольких комментариях."
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/CommentsController.php:95
 msgid "Remove all Comments"
@@ -4587,17 +4513,17 @@ msgstr "Бэкэнд"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:56
 #, php-format
 msgid "Edit Monitoring Backend %s"
-msgstr ""
+msgstr "Редактировать бэкенд мониторинга %s"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:73
 #, php-format
 msgid "Monitoring backend \"%s\" successfully updated"
-msgstr ""
+msgstr "Бэкенд мониторинга \"%s\" успешно обновлён"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:84
 #, php-format
 msgid "Monitoring backend \"%s\" not found"
-msgstr ""
+msgstr "Бэкенд мониторинга \"%s\" не найден"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:98
 msgid "Create New Monitoring Backend"
@@ -4605,17 +4531,17 @@ msgstr "Создание нового бэкэнда мониторинга"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:121
 msgid "Monitoring backend successfully created"
-msgstr ""
+msgstr "Бэкенд мониторинга успешно создан"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:144
 #, php-format
 msgid "Remove Monitoring Backend %s"
-msgstr ""
+msgstr "Удалить бэкенд мониторинга %s"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:154
 #, php-format
 msgid "Monitoring backend \"%s\" successfully removed"
-msgstr ""
+msgstr "Бэкенд мониторинга \"%s\" успешно удалён"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:177
 #, php-format
@@ -4627,6 +4553,8 @@ msgid ""
 "If you still have any environments or views referring to this transport, you "
 "won't be able to send commands anymore after deletion."
 msgstr ""
+"Если у вас все еще есть какие-либо среды или представления, относящиеся к "
+"этому транспорту, вы больше не сможете отправлять команды после удаления."
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ConfigController.php:194
 #, php-format
@@ -4667,20 +4595,21 @@ msgid "Downtime not found"
 msgstr "Время простоя не найдено"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimeController.php:67
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:30
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-description.phtml:15
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:112
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:126
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:114
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:128
 msgid "Downtime"
 msgstr "Время простоя"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimeController.php:68
 msgid "Display detailed information about a downtime."
-msgstr ""
+msgstr "Отображение подробной информации о простое."
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimeController.php:94
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimesController.php:66
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimesController.php:71
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:216
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:213
 #: sources.d/icingaweb2/modules/monitoring/application/forms/EventOverviewForm.php:54
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:97
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:96
@@ -4691,7 +4620,7 @@ msgstr "Времени простоя"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimesController.php:72
 msgid "Display detailed information about multiple downtimes."
-msgstr ""
+msgstr "Отображение подробной информации о нескольких простоях."
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/DowntimesController.php:99
 msgid "Remove all Downtimes"
@@ -4708,7 +4637,7 @@ msgid "Event not found"
 msgstr "Событие не найдено"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:100
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:632
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:629
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:265
 msgid "Event Overview"
 msgstr "Обзор события"
@@ -4770,7 +4699,7 @@ msgstr "Подтверждение удалено"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:116
 msgctxt "tooltip"
 msgid "Downtime scheduled"
-msgstr ""
+msgstr "Запланированный простой"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:244
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:121
@@ -4782,21 +4711,21 @@ msgstr "Время простоя удалено"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:126
 msgctxt "tooltip"
 msgid "Flapping started"
-msgstr ""
+msgstr "Флеппинг начался"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:248
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:132
 msgctxt "tooltip"
 msgid "Flapping stopped"
-msgstr ""
+msgstr "Флеппинг остановлен"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:250
 msgid "Hard state change"
-msgstr ""
+msgstr "Изменение жесткого состояния"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:252
 msgid "Soft state change"
-msgstr ""
+msgstr "Изменение мягкого состояния"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:254
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:154
@@ -4816,11 +4745,11 @@ msgstr "Время записи"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:370
 msgid "Is fixed"
-msgstr ""
+msgstr "Фиксированный"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:371
 msgid "Is in effect"
-msgstr ""
+msgstr "Действует"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:372
 msgid "Was started"
@@ -4832,11 +4761,11 @@ msgstr "Отменено"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:382
 msgid "Trigger time"
-msgstr ""
+msgstr "Время срабатывания"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:384
 msgid "Scheduled start time"
-msgstr ""
+msgstr "Запланированное время начала"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:388
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:140
@@ -4845,7 +4774,7 @@ msgstr "Фактическое время начала"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:392
 msgid "Scheduled end time"
-msgstr ""
+msgstr "Запланированное время окончания"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:400
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:145
@@ -4854,7 +4783,7 @@ msgstr "Фактическое время окончания"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:420
 msgid "User comment"
-msgstr ""
+msgstr "Комментарий пользователя"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:423
 msgid "Scheduled downtime"
@@ -4866,7 +4795,7 @@ msgstr "Запланированные времени простоя"
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:16
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-description.phtml:5
 msgid "Flapping"
-msgstr ""
+msgstr "Флэппинг"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:429
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-description.phtml:20
@@ -4891,16 +4820,16 @@ msgstr "Тип записи"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:451
 msgid "Is persistent"
-msgstr ""
+msgstr "Стойкий"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:452
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:57
 msgid "Expires"
-msgstr ""
+msgstr "Истекает"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:453
 msgid "Expiration time"
-msgstr ""
+msgstr "Время истечения"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:454
 msgid "Deletion time"
@@ -4908,12 +4837,12 @@ msgstr "Время удаления"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:461
 msgid "Flapping stopped normally"
-msgstr ""
+msgstr "Флепинг завершился нормально"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:464
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:492
 msgid "Flapping was disabled"
-msgstr ""
+msgstr "Флепинг был отключен"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:471
 msgid "Event time"
@@ -4926,31 +4855,31 @@ msgstr "Причина"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:473
 msgid "State change"
-msgstr ""
+msgstr "Изменение состояния"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:474
 msgid "Low threshold"
-msgstr ""
+msgstr "Низкий порог"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:475
 msgid "High threshold"
-msgstr ""
+msgstr "Высокий порог"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:480
 msgid "Normal notification"
-msgstr ""
+msgstr "Обычное уведомление"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:483
 msgid "Problem acknowledgement"
-msgstr ""
+msgstr "Подтверждение проблемы"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:486
 msgid "Flapping started"
-msgstr ""
+msgstr "Флепинг начался"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:489
 msgid "Flapping stopped"
-msgstr ""
+msgstr "Флеппинг закончился"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:495
 msgid "Downtime started"
@@ -4962,7 +4891,7 @@ msgstr "Завершение времени простоя"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:501
 msgid "Downtime was cancelled"
-msgstr ""
+msgstr "Простой был отменен"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:504
 msgid "Custom notification"
@@ -4988,11 +4917,11 @@ msgstr "Контакты уведомлены"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:543
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:70
 msgid "Output"
-msgstr ""
+msgstr "Вывод"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:532
 msgid "State time"
-msgstr ""
+msgstr "Время состояния"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:534
 msgid "Check source"
@@ -5009,31 +4938,33 @@ msgstr "%d из %d"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:540
 msgid "Last state"
-msgstr ""
+msgstr "Последнее состояние"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:541
 msgid "Last hard state"
-msgstr ""
+msgstr "Последнее жесткое состояние"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HealthController.php:30
 msgid ""
 "Show information about the current monitoring instance's process and it's "
 "performance as well as available features"
 msgstr ""
+"Отображение информации о процессе текущего экземпляра мониторинга и его "
+"производительности, а также доступных функциях"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HealthController.php:33
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HealthController.php:55
 msgid "Process Information"
-msgstr ""
+msgstr "Информация о процессе"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HealthController.php:41
 msgid "Show statistics about the monitored objects"
-msgstr ""
+msgstr "Показывать статистику по отслеживаемым объектам"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HealthController.php:43
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HealthController.php:116
 msgid "Stats"
-msgstr ""
+msgstr "Статистика"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HealthController.php:173
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/DisableNotificationsExpireCommandForm.php:24
@@ -5062,17 +4993,17 @@ msgstr "Расписание времени простоя узла"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostController.php:170
 msgid "Submit Passive Host Check Result"
-msgstr ""
+msgstr "Отправить результат пассивной проверки хоста"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostController.php:182
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostsController.php:257
 msgid "Send Custom Host Notification"
-msgstr ""
+msgstr "Отправить пользовательское уведомление хоста"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostsController.php:64
 #, php-format
 msgid "Show summarized information for %u hosts"
-msgstr ""
+msgstr "Показать сводную информацию для %u хостов"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostsController.php:197
 msgid "Add Host Comments"
@@ -5084,7 +5015,7 @@ msgstr "Подтверждение проблем узла"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostsController.php:221
 msgid "Reschedule Host Checks"
-msgstr ""
+msgstr "Перенос проверки хоста"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostsController.php:233
 msgid "Schedule Host Downtimes"
@@ -5092,18 +5023,18 @@ msgstr "Расписание времен простоя узла"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostsController.php:245
 msgid "Submit Passive Host Check Results"
-msgstr ""
+msgstr "Отправить результаты пассивной проверки хоста"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:52
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:199
 msgid "List hosts"
-msgstr ""
+msgstr "Список хостов"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:89
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:499
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:538
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:582
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:619
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:496
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:535
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:579
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:616
 msgid "Severity"
 msgstr "Влияние состояния"
 
@@ -5112,8 +5043,8 @@ msgid "Current State"
 msgstr "Состояние"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:91
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:177
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:712
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:174
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:709
 msgid "Hostname"
 msgstr "Имя узла"
 
@@ -5126,256 +5057,280 @@ msgid "Last Check"
 msgstr "Последняя проверка"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:94
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:174
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:171
 msgid "Last State Change"
 msgstr "Последнее изменение состояния"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:127
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:124
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:205
 msgid "List services"
-msgstr ""
+msgstr "Список служб"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:170
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:167
 msgid "Service Severity"
 msgstr "Влияние состояния службы"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:171
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:168
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/event/show.phtml:15
 msgid "Current Service State"
 msgstr "Состояние службы"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:172
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:713
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:169
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:710
 msgid "Service Name"
 msgstr "Название службы"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:173
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:170
 msgid "Last Service Check"
 msgstr "Последняя проверка службы"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:175
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:172
 msgid "Host Severity"
 msgstr "Влияние состояния узла"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:176
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:173
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/event/show.phtml:16
 msgid "Current Host State"
 msgstr "Состояние узла"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:178
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:175
 msgid "Host Address"
 msgstr "Адрес узла"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:179
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:176
 msgid "Last Host Check"
 msgstr "Последняя проверка узла"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:217
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:214
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:247
 msgid "List downtimes"
 msgstr "Список времен простоя"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:247
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:244
 msgid "Is In Effect"
 msgstr "В процессе"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:249
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:452
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:246
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:449
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:17
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:19
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:26
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:30
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/service-header.phtml:51
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:277
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:292
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:258
 #, fuzzy
 msgid "Service"
 msgstr "Служба"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:250
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:247
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:43
 msgid "Entry Time"
 msgstr "Время ввода"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:252
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:249
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:111
 msgid "Start Time"
 msgstr "Время начала"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:253
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:250
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:121
 msgid "End Time"
 msgstr "Время окончания"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:254
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:251
 msgid "Scheduled Start"
 msgstr "Запланированное начало"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:255
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:252
 msgid "Scheduled End"
 msgstr "Запланированное окончание"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:256
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:253
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:53
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:135
 msgid "Duration"
 msgstr "Длительность"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:277
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:273
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:52
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:58
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:64
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:70
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:76
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:82
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:88
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:127
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:50
+#: sources.d/icingaweb2/modules/monitoring/application/forms/EventOverviewForm.php:74
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:138
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:142
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/detail-content.phtml:25
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:139
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:144
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/notifications.phtml:2
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:129
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:131
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:271
+msgid "Notifications"
+msgstr "Уведомления"
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:274
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:273
 msgid "List notifications"
-msgstr ""
+msgstr "Список уведомлений"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:296
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:293
 msgid "Notification Start"
-msgstr ""
+msgstr "Начало уведомления"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:315
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ShowController.php:25
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:312
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ShowController.php:26
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/contacts.phtml:17
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:225
 msgid "Contacts"
 msgstr "Контакты"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:316
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:313
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:227
 msgid "List contacts"
 msgstr "Список контактов"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:331
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:328
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contactgroups.phtml:24
 msgid "Alias"
 msgstr "Альяс"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:332
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:329
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:21
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:42
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:24
 msgid "Email"
 msgstr "E-mail"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:333
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:330
 msgid "Pager Address / Number"
 msgstr "Адрес пейджера / номер"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:343
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:340
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:259
 msgid "Event Grid"
 msgstr "Сетка события"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:343
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:340
 msgid "Show the Event Grid"
-msgstr ""
+msgstr "Показать сетку событий"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:397
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:394
 msgid "Contact Groups"
 msgstr "Группы контакта"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:398
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:395
 msgid "List contact groups"
-msgstr ""
+msgstr "Список групп контактов"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:409
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:406
 msgid "Contactgroup Name"
 msgstr "Название контактной группы"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:410
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:407
 msgid "Contactgroup Alias"
 msgstr "Псевдоним контактной группы"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:426
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:423
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:241
 msgid "List comments"
 msgstr "Список комментариев"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:450
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:447
 msgid "Comment Timestamp"
 msgstr "Штамп времени комментария"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:453
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:450
 msgid "Comment Type"
 msgstr "Комментарий к типу"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:454
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:451
 msgid "Expiration"
 msgstr "Срок действия"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:476
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:473
 msgid "Service Groups"
 msgstr "Группы служб"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:477
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:474
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:211
 msgid "List service groups"
-msgstr ""
+msgstr "Список групп служб"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:498
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:537
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:495
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:534
 msgid "Service Group Name"
 msgstr "Название группы служб"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:500
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:539
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:584
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:622
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:497
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:536
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:581
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:619
 msgid "Total Services"
 msgstr "Всего служб"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:515
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:512
 msgid "Service Group Grid"
-msgstr ""
+msgstr "Сетка групп служб"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:516
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:513
 msgid "Show the Service Group Grid"
-msgstr ""
+msgstr "Показать сетку группы служб"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:552
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:549
 msgid "Host Groups"
 msgstr "Группы узлов"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:553
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:550
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:217
 msgid "List host groups"
-msgstr ""
+msgstr "Список групп хостов"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:581
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:620
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:578
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:617
 msgid "Host Group Name"
 msgstr "Название группы узлов"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:583
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:621
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:580
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:618
 msgid "Total Hosts"
 msgstr "Всего узлов"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:599
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:596
 msgid "Host Group Grid"
-msgstr ""
+msgstr "Сетка группы хостов"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:600
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:597
 msgid "Show the Host Group Grid"
-msgstr ""
+msgstr "Показать сетку группы хостов"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:633
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:630
 msgid "List event records"
-msgstr ""
+msgstr "Список записей событий"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:652
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:649
 msgid "Occurence"
-msgstr ""
+msgstr "Вхождение"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:664
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:661
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:171
 msgid "Service Grid"
 msgstr "Матрица служб"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:664
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:661
 msgid "Show the Service Grid"
-msgstr ""
+msgstr "Показать сетку служб"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:686
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:683
 msgid "Problems Only"
-msgstr ""
+msgstr "Только проблемы"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:38
 msgid "Service not found"
@@ -5399,17 +5354,17 @@ msgstr "Расписание времени простоя службы"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:132
 msgid "Submit Passive Service Check Result"
-msgstr ""
+msgstr "Отправить результат пассивной проверки обслуживания"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:144
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:259
 msgid "Send Custom Service Notification"
-msgstr ""
+msgstr "Отправить пользовательское уведомление о службе"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:71
 #, php-format
 msgid "Show summarized information for %u services"
-msgstr ""
+msgstr "Показать сводную информацию для %u служб"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:199
 msgid "Add Service Comments"
@@ -5421,7 +5376,7 @@ msgstr "Подтверждение проблем службы"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:223
 msgid "Reschedule Service Checks"
-msgstr ""
+msgstr "Перенести проверки служб"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:235
 msgid "Schedule Service Downtimes"
@@ -5429,14 +5384,14 @@ msgstr "Расписание времен простоя службы"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:247
 msgid "Submit Passive Service Check Results"
-msgstr ""
+msgstr "Отправить результаты пассивной проверки служб"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ShowController.php:39
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ShowController.php:40
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:6
 msgid "Contact details"
 msgstr "Детали контакта"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ShowController.php:40
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ShowController.php:41
 msgid "Contact"
 msgstr "Контакт"
 
@@ -5452,22 +5407,26 @@ msgid ""
 "Show an overview of all hosts and services, their current states and "
 "monitoring feature utilisation"
 msgstr ""
+"Отображение обзора всех узлов и служб, их текущего состояния и использования "
+"функций мониторинга"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:82
 msgid "Hosts Down"
-msgstr ""
+msgstr "Недоступные хосты"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:100
 msgid "Services Critical"
-msgstr ""
+msgstr "Критически важные службы"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:101
 msgid "Services Unknown"
-msgstr ""
+msgstr "Неизвестные службы"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:24
 msgid "Show the number of historical event records grouped by time and type"
 msgstr ""
+"Отображение количества записей исторических событий, сгруппированных по "
+"времени и типу"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:25
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:29
@@ -5477,7 +5436,7 @@ msgstr "Временная шкала"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:94
 msgid "Hard state changes"
-msgstr ""
+msgstr "Изменение жесткого состояния"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:104
 msgid "Acknowledgements"
@@ -5485,7 +5444,7 @@ msgstr "Подтверждения"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:109
 msgid "Started downtimes"
-msgstr ""
+msgstr "Начало простоя"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:114
 msgid "Ended downtimes"
@@ -5495,9 +5454,25 @@ msgstr "Завершение времени простоя"
 msgid "4 Hours"
 msgstr "4 часа"
 
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:142
+msgid "One day"
+msgstr "Один день"
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:143
+msgid "One week"
+msgstr "Одна неделя"
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:144
+msgid "One month"
+msgstr "Один месяц"
+
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:145
+msgid "One year"
+msgstr "Один год"
+
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TimelineController.php:147
 msgid "TimeLine interval"
-msgstr ""
+msgstr "Интервал временной шкалы"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/CommandForm.php:65
 #, php-format
@@ -5509,6 +5484,8 @@ msgid ""
 "This command is used to disable host and service notifications for a "
 "specific time."
 msgstr ""
+"Эта команда используется для отключения уведомлений хоста и службы на "
+"определенное время."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/DisableNotificationsExpireCommandForm.php:43
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:96
@@ -5518,11 +5495,11 @@ msgstr "Срок действия"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/DisableNotificationsExpireCommandForm.php:44
 msgid "Set the expire time."
-msgstr ""
+msgstr "Установите время срока действия."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/DisableNotificationsExpireCommandForm.php:61
 msgid "Disabling host and service notifications.."
-msgstr ""
+msgstr "Отключение уведомлений хоста и службы.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:70
 msgid "Disable notifications for a specific time on a program-wide basis"
@@ -5535,7 +5512,7 @@ msgstr "Временно отключить"
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:79
 #, php-format
 msgid "Notifications will be re-enabled in <strong>%s</strong>"
-msgstr ""
+msgstr "Уведомления будут повторно включены в <strong>%s</strong>"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:91
 msgid "Active Host Checks"
@@ -5556,7 +5533,7 @@ msgstr "Обработчики событий"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:8
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:10
 msgid "Flap Detection"
-msgstr ""
+msgstr "Обнаружение флэпа"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:150
 msgid "Obsessing Over Hosts"
@@ -5572,7 +5549,7 @@ msgstr "Пассивные проверки узла"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:177
 msgid "Passive Service Checks"
-msgstr ""
+msgstr "Пассивные проверки служб"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:188
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:79
@@ -5581,47 +5558,47 @@ msgstr "Данные производительности"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:222
 msgid "Enabling active host checks.."
-msgstr ""
+msgstr "Включение активных проверок хоста.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:223
 msgid "Disabling active host checks.."
-msgstr ""
+msgstr "Отключение активных проверок хоста.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:226
 msgid "Enabling active service checks.."
-msgstr ""
+msgstr "Включение активных проверок службы.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:227
 msgid "Disabling active service checks.."
-msgstr ""
+msgstr "Отключение активных проверок службы.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:230
 msgid "Enabling event handlers.."
-msgstr ""
+msgstr "Включение обработчиков событий.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:231
 msgid "Disabling event handlers.."
-msgstr ""
+msgstr "Отключение обработчиков событий.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:234
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:157
 msgid "Enabling flap detection.."
-msgstr ""
+msgstr "Включение обнаружения флэпа.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:235
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:158
 msgid "Disabling flap detection.."
-msgstr ""
+msgstr "Отключение обнаружения флэпа.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:238
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:149
 msgid "Enabling notifications.."
-msgstr ""
+msgstr "Включение уведомлений.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:239
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:150
 msgid "Disabling notifications.."
-msgstr ""
+msgstr "Отключение уведомлений.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:242
 msgid "Enabling obsessing over hosts.."
@@ -5641,27 +5618,27 @@ msgstr ""
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:250
 msgid "Enabling passive host checks.."
-msgstr ""
+msgstr "Включение пассивных проверок хоста.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:251
 msgid "Disabling passive host checks.."
-msgstr ""
+msgstr "Отключение пассивных проверок хоста.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:254
 msgid "Enabling passive service checks.."
-msgstr ""
+msgstr "Включение пассивных проверок служб.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:255
 msgid "Disabling passive service checks.."
-msgstr ""
+msgstr "Отключение пассивных проверок служб.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:258
 msgid "Enabling performance data.."
-msgstr ""
+msgstr "Включение данных о производительности.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/ToggleInstanceFeaturesCommandForm.php:259
 msgid "Disabling performance data.."
-msgstr ""
+msgstr "Отключение данных о производительности.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:23
 msgid ""
@@ -5669,6 +5646,9 @@ msgid ""
 "is acknowledged, future notifications about problems are temporarily "
 "disabled until the host or service recovers."
 msgstr ""
+"Эта команда используется для подтверждения проблем с хостом или службой. "
+"Когда проблема подтверждена, будущие уведомления о проблемах временно "
+"отключаются до тех пор, пока хост или служба не восстановятся."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:35
 msgid "Acknowledge problem"
@@ -5686,41 +5666,51 @@ msgid ""
 "information about the host or service that is having problems. Make sure you "
 "enter a brief description of what you are doing."
 msgstr ""
+"Если вы работаете с другими администраторами - вам может оказаться полезным "
+"поделиться информацией о хосте или службе, у которых возникли проблемы. "
+"Убедитесь, что вы ввели краткое описание того, что делаете."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:67
 msgid "Persistent Comment"
-msgstr ""
+msgstr "Постоянный комментарий"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:70
 msgid ""
 "If you would like the comment to remain even when the acknowledgement is "
 "removed, check this option."
 msgstr ""
+"Если вы хотите чтобы комментарий оставался даже после удаления "
+"подтверждения, выберите эту опцию."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:79
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:77
 msgid "Use Expire Time"
-msgstr ""
+msgstr "Используемый срок действия"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:82
 msgid "If the acknowledgement should expire, check this option."
-msgstr ""
+msgstr "Если срок действия подтверждения истекает, установите этот флажок."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:99
 msgid ""
 "Enter the expire date and time for this acknowledgement here. Icinga will "
 "delete the acknowledgement after this time expired."
 msgstr ""
+"Введите здесь дату и время истечения срока действия этого подтверждения. "
+"Icinga удалит подтверждение по истечении этого времени."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:120
 msgid "Sticky Acknowledgement"
-msgstr ""
+msgstr "Липкое подтверждение"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:123
 msgid ""
 "If you want the acknowledgement to remain until the host or service recovers "
 "even if the host or service changes state, check this option."
 msgstr ""
+"Если вы хотите, чтобы подтверждение сохранялось до тех пор, пока хост или "
+"служба не восстановятся, даже если они изменят свое состояние - установите "
+"этот флажок."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:132
 msgid "Send Notification"
@@ -5731,6 +5721,8 @@ msgid ""
 "If you do not want an acknowledgement notification to be sent out to the "
 "appropriate contacts, uncheck this option."
 msgstr ""
+"Если вы не хотите, чтобы уведомление с подтверждением отправлялось "
+"соответствующим контактам, снимите этот флажок."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:166
 msgid "Acknowledging problem.."
@@ -5742,6 +5734,7 @@ msgstr[2] "Подтвержденных проблем.."
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:22
 msgid "This command is used to add host or service comments."
 msgstr ""
+"Эта команда используется для добавления комментариев к хосту или службе."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:31
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/comments.phtml:7
@@ -5762,16 +5755,20 @@ msgid ""
 "If you uncheck this option, the comment will automatically be deleted the "
 "next time Icinga is restarted."
 msgstr ""
+"Если вы снимите этот флажок - комментарий будет автоматически удален при "
+"следующем перезапуске Icinga."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:79
 msgid "If the comment should expire, check this option."
-msgstr ""
+msgstr "Если срок действия комментария истекает - установите этот флажок."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:95
 msgid ""
 "Enter the expire date and time for this comment here. Icinga will delete the "
 "comment after this time expired."
 msgstr ""
+"Введите дату и время окончания срока действия этого комментария здесь. "
+"Icinga удалит комментарий по истечении этого времени."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:142
 msgid "Adding comment.."
@@ -5827,6 +5824,8 @@ msgstr[2] "Удаление времен простоя.."
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:20
 msgid "This command is used to submit passive host or service check results."
 msgstr ""
+"Эта команда используется для отправки результатов проверки пассивного хоста "
+"или службы."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:31
 msgid "Submit Passive Check Result"
@@ -5841,7 +5840,7 @@ msgstr "Состояние"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:56
 msgid "The state this check result should report"
-msgstr ""
+msgstr "Состояние, о котором должен сообщать результат этой проверки"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:58
 msgctxt "icinga.state"
@@ -5865,13 +5864,15 @@ msgstr "НЕИЗВЕСТНО"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:71
 msgid "The plugin output of this check result"
-msgstr ""
+msgstr "Вывод плагина этого результата проверки"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:81
 msgid ""
 "The performance data of this check result. Leave empty if this check result "
 "has no performance data"
 msgstr ""
+"Данные о производительности этого результата проверки. Оставьте пустым, если "
+"этот результат проверки не содержит данных о производительности"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:113
 msgid "Processing check result.."
@@ -5899,16 +5900,16 @@ msgstr "НЕДОСТУПНО"
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:92
 msgid "Remove acknowledgement"
 msgid_plural "Remove acknowledgements"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Удаление подтверждения"
+msgstr[1] "Удаление подтверждений"
+msgstr[2] "Удаление подтверждений"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/RemoveAcknowledgementCommandForm.php:115
 msgid "Removing acknowledgement.."
 msgid_plural "Removing acknowledgements.."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Удаление подтверждения.."
+msgstr[1] "Удаление подтверждений.."
+msgstr[2] "Удаление подтверждений.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostCheckCommandForm.php:29
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:60
@@ -5917,7 +5918,7 @@ msgstr "Все службы"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostCheckCommandForm.php:32
 msgid "Schedule check for all services on the hosts and the hosts themselves."
-msgstr ""
+msgstr "Запланируйте проверку всех служб на хостах и самих хостов."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostCheckCommandForm.php:61
 msgid "Scheduling host check.."
@@ -6080,13 +6081,15 @@ msgstr[2] ""
 msgid ""
 "This command is used to send custom notifications about hosts or services."
 msgstr ""
+"Команда используется для отправки пользовательских уведомлений о хостах или "
+"службах."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:30
 msgid "Send custom notification"
 msgid_plural "Send custom notifications"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Отправить пользовательское уведомление"
+msgstr[1] "Отправить пользовательских уведомления"
+msgstr[2] "Отправить пользовательских уведомлений"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:58
 msgid "Forced"
@@ -6097,6 +6100,8 @@ msgid ""
 "If you check this option, the notification is sent out regardless of time "
 "restrictions and whether or not notifications are enabled."
 msgstr ""
+"Если вы установите этот флажок - уведомление будет отправляться независимо "
+"от временных ограничений и от того, включены уведомления или нет."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:73
 msgid "Broadcast"
@@ -6107,13 +6112,15 @@ msgid ""
 "If you check this option, the notification is sent out to all normal and "
 "escalated contacts."
 msgstr ""
+"Если вы установите этот флажок - уведомление будет отправлено всем обычным и "
+"привилегированным контактам."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:104
 msgid "Sending custom notification.."
 msgid_plural "Sending custom notifications.."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Отправка пользовательского уведомления.."
+msgstr[1] "Отправка пользовательских уведомлений.."
+msgstr[2] "Отправка пользовательских уведомлений.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:38
 msgid "Active Checks"
@@ -6138,11 +6145,11 @@ msgstr "изменено"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:84
 msgid "Multiple Values"
-msgstr ""
+msgstr "Несколько значений"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:87
 msgid "Leave Unchanged"
-msgstr ""
+msgstr "Оставить без изменений"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:88
 msgid "Disable All"
@@ -6154,11 +6161,11 @@ msgstr "Включить всё"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:137
 msgid "Enabling active checks.."
-msgstr ""
+msgstr "Включение активных проверок.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:138
 msgid "Disabling active checks.."
-msgstr ""
+msgstr "Отключение активных проверок.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:141
 msgid "Enabling passive checks.."
@@ -6227,11 +6234,11 @@ msgstr ""
 msgid "Show resource configuration"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:303
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:306
 msgid "Check this to not to validate the IDO schema of the chosen resource."
 msgstr "Проверьте это, чтобы не проверять схему IDO выбранного ресурса."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:324
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:327
 msgid ""
 "Cannot find the IDO schema. Please verify that the given database contains "
 "the schema and that the configured user has access to it."
@@ -6239,13 +6246,13 @@ msgstr ""
 "Не удается найти схему IDO. Пожалуйста, убедитесь, что данная база данных "
 "содержит схему и настроенный пользователь имеет к ней доступ."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:349
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:352
 msgid ""
 "There is currently no icinga instance writing to the IDO. Make sure that a "
 "icinga instance is configured and able to write to the IDO."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:355
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:358
 msgid ""
 "There is currently more than one icinga instance writing to the IDO. You'll "
 "see all objects from all instances without any differentation. If this is "
@@ -6576,10 +6583,10 @@ msgid "Active Checks Disabled"
 msgstr "Активные проверки отключены"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Link.php:37
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:57
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:66
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:68
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:82
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:90
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:99
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-detail.phtml:27
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:37
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:214
@@ -6593,8 +6600,8 @@ msgstr "Показать подробную информацию об узле %
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:56
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/servicegrid-flipped.phtml:93
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/servicegrid.phtml:94
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:76
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:103
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:85
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:112
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-detail.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:25
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:202
@@ -6623,48 +6630,6 @@ msgstr "Макс"
 #, php-format
 msgid "%d more ..."
 msgstr "%d не показано..."
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:11
-msgid "Alert summary"
-msgstr "Сводка предупреждений"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:15
-msgid "Notifications and Problems"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:22
-msgid "Time to Reaction (Ack, Recover)"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:29
-msgid "Trend"
-msgstr "Тенденция"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:33
-msgid "Average"
-msgstr "Средний"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:35
-msgid "notifications per hour"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:37
-msgid "in the last hour"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:39
-msgid "Trend for the last 24h"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:56
-msgid "Top 5 Recent Alerts"
-msgstr "Топ-5 последних оповещений"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/alertsummary/index.phtml:69
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:255
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:288
-msgid "History"
-msgstr "История"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:12
 msgid "Comment detail information"
@@ -7075,8 +7040,8 @@ msgid "%d unhandled problems"
 msgstr ""
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:31
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:15
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:29
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:16
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:30
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:30
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/acknowledgement.phtml:77
 msgid "Acknowledge"
@@ -7158,14 +7123,14 @@ msgstr "Запланировать"
 msgid "No comments found matching the filter"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:45
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:51
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:73
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:48
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:54
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hostgroups.phtml:286
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:108
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:90
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:114
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/servicegroups.phtml:174
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:136
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:145
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:249
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/show-more.phtml:6
 msgid "Show More"
@@ -7387,14 +7352,14 @@ msgstr "Показать все службы всех узлов группы у
 msgid "No hosts found matching the filter."
 msgstr "Не найдены узлы в соответствии с фильтром."
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:35
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:48
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:44
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:57
 #, php-format
 msgid "Overdue %s"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:43
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:56
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:52
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:65
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/host-header.phtml:17
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/service-header.phtml:18
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/service-header.phtml:45
@@ -7402,28 +7367,12 @@ msgctxt "Soft state"
 msgid "Soft"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:67
-#, php-format
-msgid "%u unhandled service"
-msgid_plural "%u unhandled services"
-msgstr[0] "%u необработанная служба"
-msgstr[1] "%u необработанные службы"
-msgstr[2] "%u необработанных служб"
-
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:80
-#, php-format
-msgid "List %s unhandled service problem on host %s"
-msgid_plural "List %s unhandled service problems on host %s"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:18
 msgid "No notifications found matching the filter."
 msgstr ""
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/notifications.phtml:46
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:69
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:78
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-detail.phtml:5
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/downtime/downtime-header.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:192
@@ -7700,11 +7649,6 @@ msgstr "Удалить время простоя"
 msgid "List all %d downtimes"
 msgstr "Показать все %d время простоя"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:33
-msgctxt "date.verbose"
-msgid "%A, %B %e, %Y"
-msgstr "%A, %B %e, %Y"
-
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/event-history.phtml:35
 #, php-format
 msgid "Flapping with a %.2f%% state change rate"
@@ -7864,8 +7808,8 @@ msgstr "Адрес IPv6"
 msgid "IPv4 address"
 msgstr "Адрес IPv4"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:23
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:37
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:24
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:38
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/acknowledgement.phtml:85
 msgid ""
 "Acknowledge this problem, suppress all future notifications for it and tag "
@@ -7874,33 +7818,33 @@ msgstr ""
 "Подтвердить проблему, подавить все будущие уведомления об этой проблеме и "
 "отметить, что она находится в решении"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:58
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:60
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/comments.phtml:14
 msgid "Add a new comment to this host"
 msgstr "Добавить комментарий к данному узлу"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:70
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:72
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/comments.phtml:26
 msgid "Add a new comment to this service"
 msgstr "Добавить комментарий к данной службе"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:80
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:94
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:82
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:96
 msgid "Notification"
 msgstr "Оповещение"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:88
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:90
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/notifications.phtml:18
 msgid "Send a custom notification to contacts responsible for this host"
 msgstr "Отправить уведомление ответственным за данный узел"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:102
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:104
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/notifications.phtml:33
 msgid "Send a custom notification to contacts responsible for this service"
 msgstr "Отправить уведомление ответственным за данную службу"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:120
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:134
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:122
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:136
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:15
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:29
 msgid ""
@@ -8398,7 +8342,7 @@ msgstr[2] ""
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/ok_hosts.phtml:78
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:157
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:309
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:297
 msgid "Service Problems"
 msgstr "Проблемы служб"
 
@@ -8833,7 +8777,7 @@ msgid "Problems"
 msgstr "Проблемы"
 
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:143
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:319
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:307
 msgid "Host Problems"
 msgstr "Проблемы с узлами"
 
@@ -8879,6 +8823,11 @@ msgstr ""
 msgid "List users"
 msgstr ""
 
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:255
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:288
+msgid "History"
+msgstr "История"
+
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:261
 msgid "Open event grid"
 msgstr ""
@@ -8895,67 +8844,59 @@ msgstr ""
 msgid "Reporting"
 msgstr "Отчёты"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:296
-msgid "Monitoring Health"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:298
-msgid "Open monitoring health"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:307
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:295
 msgid "Current Incidents"
 msgstr "Актуальные события"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:314
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:302
 msgid "Recently Recovered Services"
 msgstr "Недавно восстановленные службы"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:344
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:332
 msgid "Overdue"
 msgstr "Просрочено"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:346
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:334
 msgid "Late Host Check Results"
 msgstr "Поздние результаты проверки узла"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:351
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:339
 msgid "Late Service Check Results"
 msgstr "Результаты поздней проверки службы"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:356
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:344
 msgid "Acknowledgements Active For At Least Three Days"
 msgstr "Подтверждения действительны не менее трех дней"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:361
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:349
 msgid "Downtimes Active For More Than Three Days"
 msgstr "Времени простоя активны более трех дней"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:369
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:357
 msgid "Muted"
 msgstr "Отключенные объекты"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:371
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:359
 msgid "Disabled Service Notifications"
 msgstr "Отключенные уведомления служб"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:376
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:364
 msgid "Disabled Host Notifications"
 msgstr "Отключенные уведомления узлов"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:381
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:369
 msgid "Disabled Service Checks"
 msgstr "Отключенные проверки служб"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:386
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:374
 msgid "Disabled Host Checks"
 msgstr "Отключенные проверки узлов"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:391
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:379
 msgid "Acknowledged Problem Services"
 msgstr "Обработанные события служб"
 
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:396
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:384
 msgid "Acknowledged Problem Hosts"
 msgstr "Обработанные события узлов"
 
@@ -9033,7 +8974,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/AuthenticationStep.php:211
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/AuthenticationStep.php:233
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/DatabaseStep.php:257
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:134
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:127
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:195
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/UserGroupStep.php:180
 #: sources.d/icingaweb2/modules/setup/library/Setup/Steps/UserGroupStep.php:193
@@ -9096,12 +9037,12 @@ msgstr ""
 "Невозможно применить ограничение %s с помощью фильтра %s. Можно использовать "
 "только следующие столбцы: %s"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:356
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:371
 #, php-format
 msgid "The sort column \"%s\" is not allowed in \"%s\"."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:447
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/DataView/DataView.php:462
 #, php-format
 msgid "The filter column \"%s\" is not allowed here."
 msgstr ""
@@ -9133,28 +9074,28 @@ msgid ""
 msgstr ""
 "Для отправки внешних команд через API Icinga 2 требуется модуль cURL для PHP."
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:180
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:181
 msgid "UP"
 msgstr "ВКЛЮЧЕН"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:183
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:184
 msgid "DOWN"
 msgstr "ОСТАНОВЛЕН"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:186
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:187
 msgid "UNREACHABLE"
 msgstr "НЕДОСТУПНО"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:189
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:204
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:190
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:205
 msgid "PENDING"
 msgstr "РАССМАТРИВАЕМЫЙ"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/MonitoredObject.php:727
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/MonitoredObject.php:761
 msgid "host"
 msgstr "узел"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/MonitoredObject.php:730
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/MonitoredObject.php:764
 msgid "service"
 msgstr "служба"
 
@@ -9264,6 +9205,19 @@ msgstr ""
 #, php-format
 msgid "Monitoring backend %s is not running"
 msgstr ""
+
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Widget/CustomVarTable.php:142
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Widget/CustomVarTable.php:165
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d элемент"
+msgstr[1] "%d элемента"
+msgstr[2] "%d элементов"
+
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Widget/CustomVarTable.php:188
+msgid "empty string"
+msgstr "пустая строка"
 
 #: sources.d/icingaweb2/modules/setup/application/clicommands/ConfigCommand.php:39
 #: sources.d/icingaweb2/modules/setup/application/clicommands/ConfigCommand.php:151
@@ -9619,7 +9573,7 @@ msgid ""
 msgstr ""
 
 #: sources.d/icingaweb2/modules/setup/application/forms/GeneralConfigPage.php:21
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:50
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:48
 msgctxt "setup.page.title"
 msgid "Application Configuration"
 msgstr "Конфигурация приложения"
@@ -10221,55 +10175,50 @@ msgstr ""
 msgid "Failed to fully setup the database. An error occured:"
 msgstr "Ошибка при полной настройке базы данных. Произошла ошибка:"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:51
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:49
 msgctxt "app.config"
 msgid "General"
 msgstr "Общее"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:52
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:50
 msgctxt "app.config"
 msgid "Logging"
 msgstr "Логирование"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:57
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:55
 msgid "An exception's stacktrace is shown to every user by default."
 msgstr ""
 "Стек трассировки исключений показывается каждому пользователю по умолчанию."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:58
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:56
 msgid "An exception's stacktrace is hidden from every user by default."
 msgstr ""
 "Трассировка стека исключений по умолчанию скрыта от каждого пользователя."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:62
-#, php-format
-msgid "Preferences will be stored per user account in INI files at: %s"
-msgstr ""
-
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:64
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:58
 msgid "Preferences will be stored using a database."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:70
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:63
 msgid "Logging will be disabled."
 msgstr "Логирование будет отключено."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:97
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:90
 msgctxt "app.config.logging"
 msgid "Type"
 msgstr "Тип"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:101
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:94
 msgctxt "app.config.logging"
 msgid "Level"
 msgstr "Уровень"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:125
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:118
 #, php-format
 msgid "General configuration has been successfully written to: %s"
 msgstr "Общая конфигурация была успешно записана в: %s"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:131
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:124
 #, php-format
 msgid "General configuration could not be written to: %s. An error occured:"
 msgstr "Общая конфигурация не может быть записана в: %s. Произошла ошибка:"
@@ -10414,57 +10363,51 @@ msgctxt "setup.summary.btn.finish"
 msgid "Setup Icinga Web 2"
 msgstr "Установки Icinga Web 2"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:579
-msgid ""
-"Running Icinga Web 2 requires PHP version 7.3. Older versions are only "
-"supported up until version 2.11."
-msgstr ""
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:574
+#, php-format
+msgid "Running Icinga Web 2 requires PHP version %s."
+msgstr "Модуль IPL для Icinga Web 2 требуется в версии %s."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:588
-#, fuzzy
-msgid "Running Icinga Web 2 requires PHP version 7.3."
-msgstr "Модуль IPL для Icinga Web 2 требуется в версии 0.5+."
-
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:598
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:583
 msgid ""
 "Icinga Web 2 is developed for and tested on Linux. While we cannot guarantee "
 "they will, other platforms may also perform as well."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:608
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:593
 msgid "The Icinga PHP library (IPL) is required for Icinga Web 2 and modules"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:617
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:602
 msgid ""
 "The Icinga PHP Thirdparty library is required for Icinga Web 2 and modules"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:625
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:610
 msgid ""
 "The PHP module for OpenSSL is required to generate cryptographically safe "
 "password salts."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:633
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:618
 msgid ""
 "The XML module for PHP is required for Markdown and custom HTML annotations."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:641
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:626
 msgid ""
 "The JSON module for PHP is required for various export functionalities as "
 "well as APIs."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:649
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:634
 #, fuzzy
 msgid "For message localization, the gettext module for PHP is required."
 msgstr ""
 "Чтобы иметь возможность экспортировать представления и отчеты в PDF, "
 "необходим модуль DOM для PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:657
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:642
 #, fuzzy
 msgid ""
 "For language, timezone and date/time format negotiation, the INTL module for "
@@ -10473,7 +10416,7 @@ msgstr ""
 "Чтобы иметь возможность экспортировать представления и отчеты в PDF, "
 "необходим модуль DOM для PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:665
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:650
 #, fuzzy
 msgid ""
 "For charts and exports of views and reports to PDF, the DOM module for PHP "
@@ -10482,31 +10425,31 @@ msgstr ""
 "Чтобы иметь возможность экспортировать представления и отчеты в PDF, "
 "необходим модуль DOM для PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:674
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:659
 msgid ""
 "If you'd like to authenticate users using LDAP the corresponding PHP module "
 "is required."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:683
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:668
 msgid ""
 "In case you want views being exported to PDF, you'll need the mbstring "
 "extension for PHP."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:692
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:677
 msgid ""
 "In case you want views being exported to PDF, you'll need the GD extension "
 "for PHP."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:701
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:686
 msgid ""
 "In case you want graphs being exported to PDF as well, you'll need the "
 "ImageMagick extension for PHP."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:712
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:697
 msgid ""
 "To store users or preferences in a MySQL database the PDO-MySQL module for "
 "PHP is required."
@@ -10514,7 +10457,7 @@ msgstr ""
 "Для хранения пользователей или персональных настроек в базе данных MySQL "
 "требуется модуль PDO-MySQL для PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:721
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:706
 msgid ""
 "To store users or preferences in a PostgreSQL database the PDO-PostgreSQL "
 "module for PHP is required."
@@ -10522,18 +10465,18 @@ msgstr ""
 "Для хранения пользователей или персональных настроек в базе данных "
 "PostgreSQL требуется модуль PDO-PostgreSQL для PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:733
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:718
 msgid ""
 "A database is mandatory, therefore at least one module PDO-MySQL or PDO-"
 "PostgreSQL for PHP is required."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:742
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:727
 #, fuzzy
 msgid "Read- and writable storage directory"
 msgstr "Каталог конфигурации для чтения и записи"
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:745
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:730
 #, fuzzy
 msgid ""
 "The Icinga Web 2 storage directory defaults to \"/var/lib/icingaweb2\", if "
@@ -10543,7 +10486,7 @@ msgstr ""
 "icingaweb2\", если он явно не задан в переменной окружения "
 "\"ICINGAWEB_CONFIGDIR\"."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:754
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:739
 msgid ""
 "The Icinga Web 2 configuration directory defaults to \"/etc/icingaweb2\", if "
 "not explicitly set in the environment variable \"ICINGAWEB_CONFIGDIR\"."
@@ -10551,3 +10494,71 @@ msgstr ""
 "Каталог конфигурации Icinga Web 2 по умолчанию расположен в \"/etc/"
 "icingaweb2\", если он явно не задан в переменной окружения "
 "\"ICINGAWEB_CONFIGDIR\"."
+
+#~ msgid "User Preference Storage Type"
+#~ msgstr "Тип хранения предпочтений пользователя"
+
+#~ msgid "File System (INI Files)"
+#~ msgstr "Файловая система (файлы INI)"
+
+#~ msgid "Alert Summary"
+#~ msgstr "Сводка предупреждений"
+
+#~ msgid "unchanged"
+#~ msgstr "неизменившийся"
+
+#~ msgid "down"
+#~ msgstr "вниз"
+
+#~ msgid "up"
+#~ msgstr "вверх"
+
+#~ msgid "Avg (min)"
+#~ msgstr "Среднее (мин)"
+
+#~ msgid "<b>{title}:</b> {value}m min. reaction time"
+#~ msgstr "<b>{title}:</b> {value}м мин. время реакции"
+
+#~ msgid "<b>{title}:</b> {value}m max. reaction time"
+#~ msgstr "<b>{title}:</b> {value}м макс время реакции"
+
+#~ msgid "Defect Chart"
+#~ msgstr "Диаграмма дефектов"
+
+#~ msgid "Defects"
+#~ msgstr "Дефекты"
+
+#~ msgid "Hour"
+#~ msgstr "Час"
+
+#~ msgid "Day"
+#~ msgstr "День"
+
+#~ msgid "Month"
+#~ msgstr "Месяц"
+
+#~ msgid "Alert summary"
+#~ msgstr "Сводка предупреждений"
+
+#~ msgid "Trend"
+#~ msgstr "Тенденция"
+
+#~ msgid "Average"
+#~ msgstr "Средний"
+
+#~ msgid "Top 5 Recent Alerts"
+#~ msgstr "Топ-5 последних оповещений"
+
+#~ msgctxt "date.verbose"
+#~ msgid "%A, %B %e, %Y"
+#~ msgstr "%A, %B %e, %Y"
+
+#, php-format
+#~ msgid "%u unhandled service"
+#~ msgid_plural "%u unhandled services"
+#~ msgstr[0] "%u необработанная служба"
+#~ msgstr[1] "%u необработанные службы"
+#~ msgstr[2] "%u необработанных служб"
+
+#~ msgid "Support"
+#~ msgstr "Поддержка"

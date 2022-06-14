@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-11 16:07+0000\n"
+"POT-Creation-Date: 2022-06-13 14:45+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,30 +20,30 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
-#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:38
+#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:35
 msgid "+ Add a dimension"
 msgstr "+ Додати вимір"
 
-#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:71
+#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:70
 msgid "Slice/Filter"
-msgstr "Розрізати/Фільтрувати"
+msgstr "Розподіл/Фільтр"
 
-#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:102
+#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:112
 #, php-format
 msgid "Remove dimension \"%s\""
 msgstr "Видалити вимір \"%s\""
 
-#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:108
+#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:123
 #, php-format
 msgid "Move dimension \"%s\" up"
 msgstr "Перемістити вимір \"%s\" догори"
 
-#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:114
+#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:135
 #, php-format
 msgid "Move dimension \"%s\" down"
 msgstr "Перемістити вимір \"%s\" донизу"
 
-#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:207
+#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:167
 msgid "New dimension has been added"
 msgstr "Було додано новий вимір"
 
@@ -55,9 +55,27 @@ msgstr "Куб"
 msgid "Reporting"
 msgstr "Звіти"
 
+#: sources.d/icingaweb2-module-cube/library/Cube/Hook/IcingaDbActionsHook.php:117
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/ActionLinks.php:53
+msgid "No action links have been provided for this cube"
+msgstr "Цьому кубу не були призначені жодні посилання для дій"
+
+#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/IcingaDbActions.php:27
 #: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:32
 msgid "Show hosts status"
 msgstr "Показати статус хостів"
+
+#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/IcingaDbActions.php:28
+#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/IcingaDbActions.php:35
+#, fuzzy
+msgid "This shows all matching hosts and their current state in Icinga DB Web"
+msgstr ""
+"Будуть показані всі релевантні хости та їх поточний стан у модулі моніторингу"
+
+#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/IcingaDbActions.php:34
+#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:46
+msgid "Show services status"
+msgstr "Показати статус сервісів"
 
 #: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:33
 msgid ""
@@ -65,10 +83,6 @@ msgid ""
 "module"
 msgstr ""
 "Будуть показані всі релевантні хости та їх поточний стан у модулі моніторингу"
-
-#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:46
-msgid "Show services status"
-msgstr "Показати статус сервісів"
 
 #: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:47
 msgid ""
@@ -78,31 +92,14 @@ msgstr ""
 "Будуть показані всі релевантні сервіси та їх поточний стан у модулі "
 "моніторингу"
 
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/ActionLinks.php:53
-msgid "No action links have been provided for this cube"
-msgstr "Цьому кубу не були призначені жодні посилання для дій"
-
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:34
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:37
 msgid "Cube details"
 msgstr "Деталі кубу"
 
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:88
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:95
 #, php-format
 msgid "Cube: %s"
 msgstr "Куб: %s"
-
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/Form/QuickBaseForm.php:101
-msgid "- please choose -"
-msgstr "- будь ласка оберіть -"
-
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/Form/QuickForm.php:178
-msgid "Submit"
-msgstr "Надіслати"
-
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/Form/QuickForm.php:390
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/Form/QuickForm.php:415
-msgid "Form has successfully been sent"
-msgstr "Форму було успішно надіслано"
 
 #: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:14
 msgid "Hosts"
@@ -111,3 +108,12 @@ msgstr "Хости"
 #: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:18
 msgid "Services"
 msgstr "Сервіси"
+
+#~ msgid "- please choose -"
+#~ msgstr "- будь ласка оберіть -"
+
+#~ msgid "Submit"
+#~ msgstr "Надіслати"
+
+#~ msgid "Form has successfully been sent"
+#~ msgstr "Форму було успішно надіслано"
