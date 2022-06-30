@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-13 14:45+0000\n"
+"POT-Creation-Date: 2022-06-29 15:40+0000\n"
 "PO-Revision-Date: 2022-05-31 09:37+0000\n"
 "Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
 "Language-Team: German <https://translate.icinga.com/projects/icinga/icingadb-"
@@ -966,7 +966,7 @@ msgstr[1] "Checks planen"
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:70
 #, fuzzy, php-format
 msgid "Scheduled downtime successfully"
-msgid_plural "Scheduled downtime for %d services successfully"
+msgid_plural "Scheduled downtime for %d hosts successfully"
 msgstr[0] "Downtime erfolgreich geplant"
 msgstr[1] "Downtime auf %d Hosts erfolgreich geplant"
 
@@ -1595,7 +1595,7 @@ msgstr "Host-Probleme"
 
 #: sources.d/icingadb-web/configuration.php:197
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:134
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/StateListItem.php:95
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/StateListItem.php:97
 msgid "Overdue"
 msgstr "Überfällig"
 
@@ -3942,31 +3942,39 @@ msgstr ""
 "Verbindung zu Redis hat."
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:104
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:41
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:52
 #, php-format
 msgid "Can't connect to Icinga Redis: %s"
 msgstr "Keine Verbindung zu Icinga Redis: %s"
 
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:34
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:37
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:35
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:41
 #, fuzzy
-msgid "Icinga DB is not running or not writing into the database"
+msgid ""
+"Icinga DB is not running or not writing into the database (make sure the "
+"icinga feature \"icingadb\" is enabled)"
 msgstr ""
 "Es sieht so aus, als ob die Icinga DB nicht läuft. Stelle sicher, dass "
 "Icinga DB läuft und in die Datenbank schreibt."
 
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:40
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:46
 #, fuzzy
 msgid "Icinga DB is running and writing into the database"
 msgstr ""
 "Es sieht so aus, als ob die Icinga DB nicht läuft. Stelle sicher, dass "
 "Icinga DB läuft und in die Datenbank schreibt."
 
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:34
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:35
+msgid ""
+"Can't check Icinga Redis: Icinga DB is not running or not writing into the "
+"database (make sure the icinga feature \"icingadb\" is enabled)"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:45
 msgid "Icinga Redis available and up to date."
 msgstr "Icinga Redis ist verfügbar und aktuell."
 
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:37
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:48
 #, fuzzy
 msgid ""
 "Icinga Redis outdated. Make sure Icinga 2 is running and connected to Redis."
@@ -4989,34 +4997,34 @@ msgstr[1] "Zeige %d Downtimes an"
 msgid "Summary"
 msgstr "Zusammenfassung"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:64
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:72
 msgid "Label"
 msgstr "Bezeichnung"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:65
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:73
 msgid "Value"
 msgstr "Wert"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:66
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:74
 msgid "Min"
 msgstr "Min"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:67
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:75
 msgid "Max"
 msgstr "Max"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:68
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:76
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:159
 msgid "Warning"
 msgstr "Warnung"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:69
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:77
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:162
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:55
 msgid "Critical"
 msgstr "Kritisch"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:129
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:137
 #, fuzzy
 msgctxt "value"
 msgid "None"
@@ -5362,6 +5370,12 @@ msgstr "Aktive Checks deaktiviert"
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/ServiceListItemDetailed.php:57
 #, php-format
 msgid "Service \"%s\" on \"%s\" is in flapping state"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/StateList.php:27
+msgid ""
+"Icinga Redis is currently unavailable. The shown information might be "
+"outdated."
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/StateListItem.php:46
