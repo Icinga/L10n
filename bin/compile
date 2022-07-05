@@ -2,6 +2,63 @@
 
 declare -A CATALOGS=()
 
+git_version=$(git describe --always)
+
+HEADER_FIXER=$(cat << PYTHON
+import sys, re
+input = sys.stdin.read()
+from datetime import datetime
+
+m1 = re.match(r'# #-#-#-#-#  icinga\.po  #-#-#-#-#.*\nmsgid ""', input, re.DOTALL)
+if m1: # Consists the header of multiple parts?
+    author_lines = set(re.findall(r'^# [^\n,]+,(?:(?: \d{4},)|(?: \d{4}.))+$', m1[0], re.MULTILINE))
+
+    # Collect all unique authors
+    author_map = {}
+    for author_line in author_lines:
+        m2 = re.match(r'# ([^<]+) <([^>]+)>,((?:(?: \d{4},)|(?: \d{4}.)))+', author_line)
+        if m2[2] not in author_map:
+            author_map[m2[2]] = {
+                'name': m2[1],
+                'years': []
+            }
+
+        for i in range(3, m2.lastindex + 1):
+            author_map[m2[2]]['years'].append(m2[i][1:5])
+
+    # Methods to extract sorting keys
+    def get_year(kv):
+        return max(kv[1]['years'])
+    def get_name(kv):
+        return kv[1]['name']
+
+    # Sort and render the authors list
+    authors = []
+    for author, data in sorted(sorted(author_map.items(), key=get_name), key=get_year):
+        authors.append('# ' + data['name'] + ' <' + author + '>, ' + ', '.join(set(sorted(data['years']))) + '.')
+
+    # The header values, of the first extracted header (Similar to --use-first of msgcat)
+    header_values = re.search(r'msgid ""\nmsgstr "".*?(("[^#][^"]+"\n)+)', input, re.DOTALL)[1]
+
+    # Edit/fill some header values
+    header_values = re.sub(r'(Project-Id-Version:)[^"]*', r'\1 ${git_version}\\\n', header_values)
+    header_values = re.sub(r'(PO-Revision-Date:)[^"]*',
+        r'\1 {:%Y-%m-%d %H:%M:%z}\\\n'.format(datetime.now().astimezone()), header_values)
+
+    result = re.search(r'(# #-#-#-#-#  icinga.po  #-#-#-#-#)\n(?!\1)(.*?)# Contributors:', m1[0], re.DOTALL)[2] \
+        + "# Contributors:\n" \
+        + "\n".join(authors) \
+        + "\nmsgid \"\"\n" \
+        + "msgstr \"\"\n" \
+        + header_values \
+        + input[input.index("\n#: "):]
+else:
+    result = input
+
+sys.stdout.write(result)
+PYTHON
+)
+
 COMPONENTS=$(find . -mindepth 1 -maxdepth 1 -type d -not -name "sources.d" -printf "%P ")
 for component_name in $COMPONENTS; do
   echo "Checking $component_name for catalogs"
@@ -15,6 +72,15 @@ done
 for locale_name in "${!CATALOGS[@]}"; do
   echo "Compiling catalogs for $locale_name"
   mkdir -p ../locale/$locale_name/LC_MESSAGES
-  echo "${CATALOGS[$locale_name]}" | xargs msgcat -o ../locale/$locale_name/LC_MESSAGES/icinga.po --lang $locale_name
+
+  rm ../locale/$locale_name/LC_MESSAGES/icinga.po
+  touch ../locale/$locale_name/LC_MESSAGES/icinga.po
+  for catalog in ${CATALOGS[$locale_name]}; do
+    msgattrib --translated --no-fuzzy --no-obsolete $catalog \
+      | msgcat -o ../locale/$locale_name/LC_MESSAGES/icinga.po --lang $locale_name \
+        ../locale/$locale_name/LC_MESSAGES/icinga.po -
+  done
+
+  cat ../locale/$locale_name/LC_MESSAGES/icinga.po | python3 -c "$HEADER_FIXER" > temp; mv temp ../locale/$locale_name/LC_MESSAGES/icinga.po
   msgfmt -o ../locale/$locale_name/LC_MESSAGES/icinga.mo -c ../locale/$locale_name/LC_MESSAGES/icinga.po
 done
