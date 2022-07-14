@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 15:40+0000\n"
+"POT-Creation-Date: 2022-07-14 13:45+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -36,7 +36,7 @@ msgstr "Таблиця"
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/AlarmsController.php:74
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/DatastoreController.php:97
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/EventsController.php:160
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:141
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:143
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:142
 msgid "Events"
 msgstr "Події"
@@ -267,20 +267,20 @@ msgstr "HeatMap подій"
 msgid "%s events, max %s per day"
 msgstr "%s подій, макс %s в день"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:122
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:124
 msgid "Host System"
 msgstr "Хостова система"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:127
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:129
 #, php-format
 msgid "Virtual Machines (%d)"
 msgstr "Віртуальні машини (%d)"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:133
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:135
 msgid "Sensors"
 msgstr "Сенсори"
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:137
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:139
 msgid "PCI Devices"
 msgstr "Пристрої PCI"
 
@@ -1583,6 +1583,16 @@ msgstr "відсутнє"
 msgid "more"
 msgstr "більше"
 
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/HostHbaTable.php:31
+#, php-format
+msgid "HBA (%s)"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/HostHbaTable.php:53
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/HostPhysicalNicTable.php:63
+msgid "driver"
+msgstr "драйвер"
+
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/HostPciDevicesTable.php:27
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/PerformanceCounterTable.php:58
 msgid "ID"
@@ -1608,10 +1618,6 @@ msgstr "повний дуплекс"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/HostPhysicalNicTable.php:57
 msgid "half duplex"
 msgstr "напівдуплекс"
-
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/HostPhysicalNicTable.php:63
-msgid "driver"
-msgstr "драйвер"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/MonitoredObjectMappingTable.php:24
 msgid "Source"
@@ -1658,7 +1664,7 @@ msgid "System Information"
 msgstr "Інформація про систему"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/HostSystemInfoTable.php:45
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:117
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:87
 msgid "Tools"
 msgstr "Гостьові інструменти"
 
@@ -1767,7 +1773,7 @@ msgstr "Версія локалі"
 msgid "Information"
 msgstr "Інформація"
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:89
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:90
 msgid "Annotation"
 msgstr "Аннотація"
 
@@ -2346,7 +2352,7 @@ msgstr "Недоступно - інший пристрій може бути в�
 msgid "Pending - this host has never been checked"
 msgstr "Очікується - цей хост ще ніколи не перевірявся"
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Link/Html5UiLink.php:45
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Link/Html5UiLink.php:53
 msgid "Open the VMware HTML 5 UI"
 msgstr "Відкрити VMWare HTML 5 UI"
 

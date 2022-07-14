@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 15:40+0000\n"
+"POT-Creation-Date: 2022-07-14 13:45+0000\n"
 "PO-Revision-Date: 2020-04-27 14:37+0200\n"
 "Last-Translator: Munzir Taha <munzirtaha@gmail.com>\n"
 "Language-Team: English <trans-ar@lists.fedoraproject.org>\n"
@@ -108,8 +108,6 @@ msgstr "زمن الدخول"
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:66
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:115
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:135
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:328
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:329
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:48
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:90
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:84
@@ -133,8 +131,6 @@ msgstr[5] ""
 #: sources.d/icingadb-web/application/controllers/CommentsController.php:48
 #: sources.d/icingadb-web/application/controllers/DowntimesController.php:49
 #: sources.d/icingadb-web/application/controllers/ServiceController.php:189
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:333
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:334
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:54
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:96
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:94
@@ -271,8 +267,8 @@ msgid "Health"
 msgstr ""
 
 #: sources.d/icingadb-web/application/controllers/HealthController.php:41
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:41
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:84
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:60
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:101
 msgid ""
 "It seems that Icinga DB is not running. Make sure Icinga DB is running and "
 "writing into the database."
@@ -314,6 +310,7 @@ msgstr "المحفوظات"
 #: sources.d/icingadb-web/application/controllers/HostController.php:139
 #: sources.d/icingadb-web/application/controllers/ServiceController.php:144
 #: sources.d/icingadb-web/library/Icingadb/Model/History.php:60
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:62
 msgid "Event Time"
 msgstr ""
 
@@ -1975,7 +1972,7 @@ msgid "No custom variables configured."
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:220
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:210
+#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:233
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:219
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:40
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UsergroupDetail.php:48
@@ -2009,79 +2006,142 @@ msgid "unknown"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/ActionUrl.php:37
+#: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:43
+#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:40
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:51
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:61
+#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:39
+#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:43
+#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:40
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:51
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:81
+#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:28
+#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:41
+#: sources.d/icingadb-web/library/Icingadb/Model/IconImage.php:36
+#: sources.d/icingadb-web/library/Icingadb/Model/NotesUrl.php:37
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:50
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:43
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:40
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:75
+#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:25
+#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:41
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:39
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:48
+#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:41
+#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:41
 #, fuzzy
-msgid "Acknowledgement Environment Id (History)"
-msgstr "تعليق غير موجود"
+msgid "Environment Id"
+msgstr "المضيف غير موجود"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:62
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:52
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:118
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:109
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:58
 #, fuzzy
-msgid "Acknowledgement Endpoint Id (History)"
-msgstr "إشعار استلام"
+msgid "Endpoint Id"
+msgstr "المضيف غير موجود"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:52
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:62
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:65
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:53
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:59
 #, fuzzy
-msgid "Acknowledgement Object Type (History)"
-msgstr "إشعار استلام"
+msgid "Object Type"
+msgstr "نوع التعليق"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:53
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:63
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:66
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:78
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:60
 #, fuzzy
-msgid "Acknowledgement Host Id (History)"
-msgstr "إشعارات استلام"
+msgid "Host Id"
+msgstr "المضيف غير موجود"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:60
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:64
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:67
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:61
 #, fuzzy
-msgid "Acknowledgement Service Id (History)"
-msgstr "إشعار استلام"
+msgid "Service Id"
+msgstr "شبكة الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:59
 #, fuzzy
-msgid "Acknowledgement Set Time (History)"
+msgid "Acknowledgement Set Time"
 msgstr "إشعار استلام"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:60
 #, fuzzy
-msgid "Acknowledgement Clear Time (History)"
+msgid "Acknowledgement Clear Time"
 msgstr "إشعار استلام"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:61
 #, fuzzy
-msgid "Acknowledgement Author (History)"
+msgid "Acknowledgement Author"
 msgstr "إشعارات استلام"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:62
 #, fuzzy
-msgid "Acknowledgement Cleared By (History)"
-msgstr "إشعار استلام"
+msgid "Acknowledgement Cleared By"
+msgstr "إشعارات استلام"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:63
 #, fuzzy
-msgid "Acknowledgement Comment (History)"
+msgid "Acknowledgement Comment"
 msgstr "إشعار استلام"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:64
 #, fuzzy
-msgid "Acknowledgement Expire Time (History)"
+msgid "Acknowledgement Expire Time"
 msgstr "إشعار استلام"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:65
 #, fuzzy
-msgid "Acknowledgement Is Sticky (History)"
+msgid "Acknowledgement Is Sticky"
 msgstr "إشعار استلام"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:66
 #, fuzzy
-msgid "Acknowledgement Is Persistent (History)"
+msgid "Acknowledgement Is Persistent"
 msgstr "إشعار استلام"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ActionUrl.php:36
 #, fuzzy
 msgid "Action Url"
 msgstr "فعل المضيف"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ActionUrl.php:37
-#, fuzzy
-msgid "Action Url Environment Id"
-msgstr "تعليق مستخدم"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Behavior/FlattenedObjectVars.php:64
 #, fuzzy, php-format
@@ -2090,15 +2150,22 @@ msgid " %s"
 msgstr "عند %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:65
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:81
+#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:44
+#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:116
+#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:64
+#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:107
+#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:49
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:60
+#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:47
 #, fuzzy
-msgid "Checkcommand Zone Id"
-msgstr "فحوصات المضيف"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:43
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:40
-#, fuzzy
-msgid "Checkcommand Environment Id"
-msgstr "تعليق غير موجود"
+msgid "Zone Id"
+msgstr "المضيف غير موجود"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:44
 #, fuzzy
@@ -2112,6 +2179,8 @@ msgid "Checkcommand Properties Checksum"
 msgstr "فحوصات المضيف والخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:46
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:91
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:82
 #, fuzzy
 msgid "Checkcommand Name"
 msgstr "أوامر"
@@ -2132,18 +2201,17 @@ msgid "Checkcommand Timeout"
 msgstr "أوامر"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:45
-msgid "Checkcommand Argument Command Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:38
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:92
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:83
+#, fuzzy
+msgid "Checkcommand Id"
+msgstr "أوامر"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:46
 #, fuzzy
-msgid "Checkcommand Argument Key"
+msgid "Checkcommand Argument Name"
 msgstr "أوامر"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:47
-#, fuzzy
-msgid "Checkcommand Argument Environment Id"
-msgstr "تعليق غير موجود"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:48
 #, fuzzy
@@ -2157,7 +2225,7 @@ msgstr "أوامر"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:50
 #, fuzzy
-msgid "Checkcommand Argument Order"
+msgid "Checkcommand Argument Position"
 msgstr "أوامر"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:51
@@ -2165,12 +2233,14 @@ msgid "Checkcommand Argument Description"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:52
-msgid "Checkcommand Argument Key Override"
-msgstr ""
+#, fuzzy
+msgid "Checkcommand Argument Actual Name"
+msgstr "أوامر"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:53
-msgid "Checkcommand Argument Repeat Key"
-msgstr ""
+#, fuzzy
+msgid "Checkcommand Argument Repeated"
+msgstr "أوامر"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:54
 msgid "Checkcommand Argument Required"
@@ -2178,47 +2248,23 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:55
 #, fuzzy
-msgid "Checkcommand Argument Set If"
+msgid "Checkcommand Argument Condition"
 msgstr "أوامر"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:56
-msgid "Checkcommand Argument Skip Key"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:38
 #, fuzzy
-msgid "Checkcommand Envvar Command Id"
-msgstr "تعليق غير موجود"
+msgid "Checkcommand Argument Without Name"
+msgstr "أوامر"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:39
 #, fuzzy
-msgid "Checkcommand Envvar Key"
+msgid "Checkcommand Envvar Name"
 msgstr "أوامر"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:42
 #, fuzzy
 msgid "Checkcommand Envvar Value"
 msgstr "أوامر"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:51
-#, fuzzy
-msgid "Comment Environment Id"
-msgstr "تعليق غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:52
-#, fuzzy
-msgid "Comment Object Type"
-msgstr "نوع التعليق"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:53
-#, fuzzy
-msgid "Comment Host Id"
-msgstr "تعليق غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:54
-#, fuzzy
-msgid "Comment Service Id"
-msgstr "نوع التعليق"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:55
 #, fuzzy
@@ -2235,11 +2281,13 @@ msgid "Comment Name"
 msgstr "نوع التعليق"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:62
 #, fuzzy
 msgid "Comment Author"
 msgstr "تعليق منشأ من قبل مستخدم"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:64
 #, fuzzy
 msgid "Comment Text"
 msgstr "نوع التعليق"
@@ -2249,133 +2297,60 @@ msgid "Comment Type"
 msgstr "نوع التعليق"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:61
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:61
 #, fuzzy
 msgid "Comment Entry Time"
 msgstr "زمن الدخول"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:62
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:66
 #, fuzzy
 msgid "Comment Is Persistent"
 msgstr "دائم"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:63
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:67
 #, fuzzy
 msgid "Comment Is Sticky"
 msgstr "تعليقات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:64
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:68
 #, fuzzy
 msgid "Comment Expire Time"
 msgstr "استخدام وقت انتهاء الصلاحية"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:65
-#, fuzzy
-msgid "Comment Zone Id"
-msgstr "تعليق غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:56
-#, fuzzy
-msgid "Comment Environment Id (History)"
-msgstr "تعليق غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:57
-#, fuzzy
-msgid "Comment Endpoint Id (History)"
-msgstr "تحرير ناقل الأمر %s"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:58
-#, fuzzy
-msgid "Comment Object Type (History)"
-msgstr "نوع التعليق"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:59
-#, fuzzy
-msgid "Comment Host Id (History)"
-msgstr "تعليق غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:60
-#, fuzzy
-msgid "Comment Service Id (History)"
-msgstr "نوع التعليق"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:61
-#, fuzzy
-msgid "Comment Entry Time (History)"
-msgstr "زمن الدخول"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:62
-#, fuzzy
-msgid "Comment Author (History)"
-msgstr "تعليق منشأ من قبل مستخدم"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:63
 #, fuzzy
-msgid "Comment Removed By (History)"
+msgid "Comment Removed By"
 msgstr "تعليق منشأ من قبل مستخدم"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:64
-msgid "Comment Comment (History)"
-msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:65
 #, fuzzy
-msgid "Comment Entry Type (History)"
+msgid "Comment Entry Type"
 msgstr "زمن الدخول"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:66
-#, fuzzy
-msgid "Comment Is Persistent (History)"
-msgstr "دائم"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:67
-#, fuzzy
-msgid "Comment Is Sticky (History)"
-msgstr "إشعار استلام"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:68
-#, fuzzy
-msgid "Comment Expire Time (History)"
-msgstr "استخدام وقت انتهاء الصلاحية"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:69
 #, fuzzy
-msgid "Comment Remove Time (History)"
+msgid "Comment Remove Time"
 msgstr "تعليق منشأ من قبل مستخدم"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:70
 #, fuzzy
-msgid "Comment Has Been Removed (History)"
+msgid "Comment Has Been Removed"
 msgstr "تعليق منشأ من قبل مستخدم"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:59
-#, fuzzy
-msgid "Downtime Environment Id"
-msgstr "زمن التوقف غير موجود"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:60
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:63
 #, fuzzy
-msgid "Downtime Triggered By Id"
+msgid "Triggered By Downtime Id"
 msgstr "عرض شبكة الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:61
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:64
 #, fuzzy
-msgid "Downtime Parent Id"
-msgstr "أب"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:62
-#, fuzzy
-msgid "Downtime Object Type"
-msgstr "نوع الكائن"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:63
-#, fuzzy
-msgid "Downtime Host Id"
-msgstr "زمن التوقف غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:64
-#, fuzzy
-msgid "Downtime Service Id"
-msgstr "عرض شبكة الخدمة"
+msgid "Parent Downtime Id"
+msgstr "أزمنة التوقف الحالية"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:65
 #, fuzzy
@@ -2393,26 +2368,31 @@ msgid "Downtime Name"
 msgstr "زمن التوقف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:68
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:69
 #, fuzzy
 msgid "Downtime Author"
 msgstr "زمن التوقف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:69
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:71
 #, fuzzy
 msgid "Downtime Comment"
 msgstr "زمن التوقف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:70
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:68
 #, fuzzy
 msgid "Downtime Entry Time"
 msgstr "زمن الدخول"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:71
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:74
 #, fuzzy
 msgid "Downtime Scheduled Start"
 msgstr "بداية الجدولة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:72
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:75
 #, fuzzy
 msgid "Downtime Scheduled End"
 msgstr "نهاية الجدولة"
@@ -2423,11 +2403,13 @@ msgid "Downtime Scheduled Duration"
 msgstr "بداية الجدولة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:74
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:72
 #, fuzzy
 msgid "Downtime Is Flexible"
 msgstr "زمن التوقف هذا مرن"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:75
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:73
 #, fuzzy
 msgid "Downtime Flexible Duration"
 msgstr "مدة مرنة"
@@ -2438,11 +2420,13 @@ msgid "Downtime Is In Effect"
 msgstr "ساري المفعول"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:77
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:76
 #, fuzzy
 msgid "Downtime Actual Start"
 msgstr "زمن التوقف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:78
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:77
 #, fuzzy
 msgid "Downtime Actual End"
 msgstr "زمن التوقف غير موجود"
@@ -2454,117 +2438,28 @@ msgstr "زمن التوقف غير موجود"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:80
 #, fuzzy
-msgid "Downtime Scheduled By"
-msgstr "نهاية الجدولة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:81
-#, fuzzy
-msgid "Downtime Zone Id"
-msgstr "زمن التوقف غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:61
-#, fuzzy
-msgid "Downtime Environment Id (History)"
-msgstr "زمن التوقف غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:62
-#, fuzzy
-msgid "Downtime Endpoint Id (History)"
-msgstr "زمن التوقف غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:63
-msgid "Downtime Triggered By Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:64
-#, fuzzy
-msgid "Downtime Parent Id (History)"
-msgstr "زمن التوقف غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:65
-#, fuzzy
-msgid "Downtime Object Type (History)"
-msgstr "نوع الكائن"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:66
-#, fuzzy
-msgid "Downtime Host Id (History)"
-msgstr "زمن التوقف غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:67
-#, fuzzy
-msgid "Downtime Service Id (History)"
-msgstr "عرض شبكة الخدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:68
-#, fuzzy
-msgid "Downtime Entry Time (History)"
-msgstr "زمن الدخول"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:69
-#, fuzzy
-msgid "Downtime Author (History)"
-msgstr "زمن التوقف"
+msgid "Scheduled By Downtime"
+msgstr "زمن توقف مضيف مجدول"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:70
 #, fuzzy
-msgid "Downtime Cancelled By (History)"
+msgid "Downtime Cancelled By"
 msgstr "زمن التوقف"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:71
-#, fuzzy
-msgid "Downtime Comment (History)"
-msgstr "زمن التوقف"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:72
-#, fuzzy
-msgid "Downtime Is Flexible (History)"
-msgstr "زمن التوقف هذا مرن"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:73
-#, fuzzy
-msgid "Downtime Flexible Duration (History)"
-msgstr "مدة مرنة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:74
-#, fuzzy
-msgid "Downtime Scheduled Start (History)"
-msgstr "بداية الجدولة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:75
-#, fuzzy
-msgid "Downtime Scheduled End (History)"
-msgstr "نهاية الجدولة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:76
-#, fuzzy
-msgid "Downtime Actual Start (History)"
-msgstr "زمن التوقف"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:77
-#, fuzzy
-msgid "Downtime Actual End (History)"
-msgstr "زمن التوقف غير موجود"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:78
 #, fuzzy
-msgid "Downtime Has Been Cancelled (History)"
+msgid "Downtime Has Been Cancelled"
 msgstr "زمن التوقف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:79
 #, fuzzy
-msgid "Downtime Trigger Time (History)"
+msgid "Downtime Trigger Time"
 msgstr "زمن الدخول"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:80
 #, fuzzy
-msgid "Downtime Cancel Time (History)"
+msgid "Downtime Cancel Time"
 msgstr "زمن التوقف"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:39
-#, fuzzy
-msgid "Endpoint Environment Id"
-msgstr "المضيف غير موجود"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:40
 #, fuzzy
@@ -2577,6 +2472,8 @@ msgid "Endpoint Properties Checksum"
 msgstr "فحوصات المضيف والخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:117
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:108
 msgid "Endpoint Name"
 msgstr ""
 
@@ -2585,25 +2482,10 @@ msgstr ""
 msgid "Endpoint Name (CI)"
 msgstr "اسم المضيف"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:44
-#, fuzzy
-msgid "Endpoint Zone Id"
-msgstr "المضيف غير موجود"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Environment.php:34
 #, fuzzy
 msgid "Environment Name"
 msgstr "نوع التعليق"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:42
-#, fuzzy
-msgid "Eventcommand Zone Id"
-msgstr "معالجات الحدث"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:43
-#, fuzzy
-msgid "Eventcommand Environment id"
-msgstr "تعليق غير موجود"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:44
 #, fuzzy
@@ -2616,6 +2498,8 @@ msgid "Eventcommand Properties Checksum"
 msgstr "فحوصات الخدمة نشطة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:46
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:107
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:98
 #, fuzzy
 msgid "Eventcommand Name"
 msgstr "معالجات الحدث"
@@ -2636,18 +2520,17 @@ msgid "Eventcommand Timeout"
 msgstr "معالجات الحدث"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:45
-msgid "Eventcommand Argument Command Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:38
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:108
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:99
+#, fuzzy
+msgid "Eventcommand Id"
+msgstr "معالجات الحدث"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:46
 #, fuzzy
-msgid "Eventcommand Argument Key"
+msgid "Eventcommand Argument Name"
 msgstr "معالجات الحدث"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:47
-#, fuzzy
-msgid "Eventcommand Argument Environment Id"
-msgstr "تعليق غير موجود"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:48
 #, fuzzy
@@ -2661,7 +2544,7 @@ msgstr "معالجات الحدث"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:50
 #, fuzzy
-msgid "Eventcommand Argument Order"
+msgid "Eventcommand Argument Position"
 msgstr "معالجات الحدث"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:51
@@ -2669,12 +2552,14 @@ msgid "Eventcommand Argument Description"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:52
-msgid "Eventcommand Argument Key Override"
-msgstr ""
+#, fuzzy
+msgid "Eventcommand Argument Actual Name"
+msgstr "معالجات الحدث"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:53
-msgid "Eventcommand Argument Repeat Key"
-msgstr ""
+#, fuzzy
+msgid "Eventcommand Argument Repeated"
+msgstr "معالجات الحدث"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:54
 msgid "Eventcommand Argument Required"
@@ -2682,26 +2567,18 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:55
 #, fuzzy
-msgid "Eventcommand Argument Set If"
+msgid "Eventcommand Argument Condition"
 msgstr "معالجات الحدث"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:56
-msgid "Eventcommand Argument Skip Key"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:38
-msgid "Eventcommand Envvar Command Id"
-msgstr ""
+#, fuzzy
+msgid "Eventcommand Argument Without Name"
+msgstr "معالجات الحدث"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:39
 #, fuzzy
-msgid "Eventcommand Envvar Key"
+msgid "Eventcommand Envvar Name"
 msgstr "معالجات الحدث"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:40
-#, fuzzy
-msgid "Eventcommand Envvar Environment Id"
-msgstr "تعليق غير موجود"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:41
 #, fuzzy
@@ -2713,83 +2590,36 @@ msgstr "فحوصات الخدمة السلبية"
 msgid "Eventcommand Envvar Value"
 msgstr "معالجات الحدث"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:51
-#, fuzzy
-msgid "Flapping Environment Id (History)"
-msgstr "بداية التنبيه"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:52
-msgid "Flapping Endpoint Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:53
-#, fuzzy
-msgid "Flapping Object Type (History)"
-msgstr "نوع الكائن"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:54
-msgid "Flapping Host Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:55
-msgid "Flapping Service Id (History)"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:56
-msgid "Flapping Start Time (History)"
-msgstr ""
+#, fuzzy
+msgid "Flapping Start Time"
+msgstr "التذبذب"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:57
-msgid "Flapping End Time (History)"
-msgstr ""
+#, fuzzy
+msgid "Flapping End Time"
+msgstr "التذبذب"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:58
-msgid "Flapping Percent State Change Start (History)"
+msgid "Flapping Percent State Change Start"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:59
-msgid "Flapping Percent State Change End (History)"
-msgstr ""
+#, fuzzy
+msgid "Flapping Percent State Change End"
+msgstr "آخر تغيير حالة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:60
-msgid "Flapping Threshold Low (History)"
+msgid "Flapping Threshold Low"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:61
-msgid "Flapping Threshold High (History)"
+msgid "Flapping Threshold High"
 msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:54
-#, fuzzy
-msgid "Environment Id (History)"
-msgstr "المضيف غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:55
-msgid "Endpoint Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:56
-#, fuzzy
-msgid "Event Object Type"
-msgstr "نوع التعليق"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:57
-msgid "Host Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:58
-#, fuzzy
-msgid "Service Id (History)"
-msgstr "الخدمة غير موجودة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/History.php:59
 msgid "Event Type"
 msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:81
-#, fuzzy
-msgid "Host Environment Id"
-msgstr "المضيف غير موجود"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:82
 #, fuzzy
@@ -2831,32 +2661,25 @@ msgstr "عنوان المضيف"
 msgid "Host Address (IPv6, Binary)"
 msgstr "عنوان المضيف"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:91
-#, fuzzy
-msgid "Host Checkcommand"
-msgstr "فحوصات المضيف"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:92
-#, fuzzy
-msgid "Host Checkcommand Id"
-msgstr "فحوصات المضيف"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:93
 #, fuzzy
 msgid "Host Max Check Attempts"
 msgstr "فحص المحاولات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:94
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:85
 #, fuzzy
-msgid "Host Check Timeperiod"
+msgid "Check Timeperiod Name"
 msgstr "فحص المدة الزمنية"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:95
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:86
 #, fuzzy
-msgid "Host Check Timeperiod Id"
+msgid "Check Timeperiod Id"
 msgstr "فحص المدة الزمنية"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:96
+#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:51
 #, fuzzy
 msgid "Host Check Timeout"
 msgstr "فحص الزمن"
@@ -2908,27 +2731,21 @@ msgstr ""
 msgid "Host Performance Data Enabled"
 msgstr "بيانات الأداء"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:107
-#, fuzzy
-msgid "Host Eventcommand"
-msgstr "المضيف غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:108
-msgid "Host Eventcommand Id"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:109
 msgid "Host Is Volatile"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:110
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:101
 #, fuzzy
-msgid "Host Action Url Id"
+msgid "Action Url Id"
 msgstr "فعل المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:111
-msgid "Host Notes Url Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:102
+#, fuzzy
+msgid "Notes Url Id"
+msgstr "ملاحظات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:112
 #, fuzzy
@@ -2936,37 +2753,23 @@ msgid "Host Notes"
 msgstr "حالات المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:113
-msgid "Host Icon Image Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:104
+#, fuzzy
+msgid "Icon Image Id"
+msgstr "خطورة الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:114
-msgid "Host Icon Image Alt"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:105
+#, fuzzy
+msgid "Icon Image Alt"
+msgstr "خطورة الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:115
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:106
+#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:44
 #, fuzzy
-msgid "Host Zone"
-msgstr "اسم المضيف"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:116
-#, fuzzy
-msgid "Host Zone Id"
-msgstr "المضيف غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:117
-#, fuzzy
-msgid "Host Command Endpoint"
-msgstr "ناقل الأمر"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:118
-#, fuzzy
-msgid "Host Command Endpoint Id"
-msgstr "تحرير ناقل الأمر %s"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:28
-#, fuzzy
-msgid "Host State Environment Id"
-msgstr "المضيف غير موجود"
+msgid "Zone Name"
+msgstr "اسم الدور"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:29
 #, fuzzy
@@ -2995,7 +2798,7 @@ msgstr "بداية التنبيه"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:34
 #, fuzzy
-msgid "Host State Attempt No."
+msgid "Host Check Attempt No."
 msgstr "فحص المحاولات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:35
@@ -3005,112 +2808,104 @@ msgstr "خطورة المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:36
 #, fuzzy
-msgid "Host State Output"
+msgid "Host Output"
 msgstr "حالات المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:37
 #, fuzzy
-msgid "Host State Long Output"
+msgid "Host Long Output"
 msgstr "حالات المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:38
 #, fuzzy
-msgid "Host State Performance Data"
+msgid "Host Performance Data"
 msgstr "بيانات الأداء"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:39
 #, fuzzy
-msgid "Host State Normalized Performance Data"
+msgid "Host Normalized Performance Data"
 msgstr "بيانات الأداء"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:40
 #, fuzzy
-msgid "Host State Check Commandline"
+msgid "Host Check Commandline"
 msgstr "فحوصات المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:41
 #, fuzzy
-msgid "Host State Is Problem"
+msgid "Host Has Problem"
 msgstr "مشاكل المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:42
 #, fuzzy
-msgid "Host State Is Handled"
+msgid "Host Is Handled"
 msgstr "حالات المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:43
 #, fuzzy
-msgid "Host State Is Reachable"
+msgid "Host Is Reachable"
 msgstr "حالات المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:44
 #, fuzzy
-msgid "Host State Is Flapping"
+msgid "Host Is Flapping"
 msgstr "حالات المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:45
 #, fuzzy
-msgid "Host State Is Overdue"
+msgid "Host Check Is Overdue"
 msgstr "حالات المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:46
 #, fuzzy
-msgid "Host State Is Acknowledged"
+msgid "Host Is Acknowledged"
 msgstr "غير معترف به"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:44
 #, fuzzy
-msgid "Host State Acknowledgement Comment Id"
+msgid "Acknowledgement Comment Id"
 msgstr "إشعار مثبت"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:48
 #, fuzzy
-msgid "Host State In Downtime"
+msgid "Host In Downtime"
 msgstr "في زمن التوقف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:49
 #, fuzzy
-msgid "Host State Execution Time"
+msgid "Host Check Execution Time"
 msgstr "وقت التنفيذ"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:50
 #, fuzzy
-msgid "Host State Latency"
+msgid "Host Check Latency"
 msgstr "حالات المضيف"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:51
-#, fuzzy
-msgid "Host State Timeout"
-msgstr "فحص الزمن"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:52
 #, fuzzy
-msgid "Host State Check Source"
+msgid "Host Check Source"
 msgstr "فحص المصدر"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:53
 #, fuzzy
-msgid "Host State Last Update"
+msgid "Host Last Update"
 msgstr "آخر تحديث للحالة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:54
 #, fuzzy
-msgid "Host State Last State Change"
+msgid "Host Last State Change"
 msgstr "آخر تغيير حالة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:55
 #, fuzzy
-msgid "Host State Next Check"
+msgid "Host Next Check"
 msgstr "فحوصات المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:56
 #, fuzzy
-msgid "Host State Next Update"
+msgid "Host Next Update"
 msgstr "آخر تحديث للحالة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:41
-msgid "Hostgroup Environment Id"
-msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:42
 #, fuzzy
@@ -3137,35 +2932,15 @@ msgstr "اسم مجموعة المضيف"
 msgid "Hostgroup Display Name"
 msgstr "اسم مجموعة المضيف"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:47
-#, fuzzy
-msgid "Hostgroup Zone Id"
-msgstr "مجموعات المضيف"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/IconImage.php:35
 #, fuzzy
 msgid "Icon Image"
 msgstr "خطورة الخدمة"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/IconImage.php:36
-#, fuzzy
-msgid "Icon Image Environment Id"
-msgstr "زمن التوقف غير موجود"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/NotesUrl.php:36
 #, fuzzy
 msgid "Notes Url"
 msgstr "ملاحظات"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotesUrl.php:37
-#, fuzzy
-msgid "Notes Url Environment Id"
-msgstr "المضيف غير موجود"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:50
-#, fuzzy
-msgid "Notification Environment Id"
-msgstr "بداية التنبيه"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:51
 #, fuzzy
@@ -3187,30 +2962,22 @@ msgstr "تنبيهات"
 msgid "Notification Name (CI)"
 msgstr "تنبيهات"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:55
-#, fuzzy
-msgid "Notification Host Id"
-msgstr "تنبيهات"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:56
-#, fuzzy
-msgid "Notification Service Id"
-msgstr "بداية التنبيه"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:45
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:38
 #, fuzzy
-msgid "Notification Command Id"
+msgid "Notificationcommand Id"
 msgstr "تنبيهات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:58
 #, fuzzy
-msgid "Notification Times Begin"
-msgstr "تنبيهات"
+msgid "Notification Escalate After"
+msgstr "بداية التنبيه"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:59
 #, fuzzy
-msgid "Notification Times End"
-msgstr "تنبيهات"
+msgid "Notification Escalate Until"
+msgstr "بداية التنبيه"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:60
 #, fuzzy
@@ -3218,9 +2985,11 @@ msgid "Notification Interval"
 msgstr "تنبيهات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:61
+#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:37
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:57
 #, fuzzy
-msgid "Notification Timeperiod Id"
-msgstr "بداية التنبيه"
+msgid "Timeperiod Id"
+msgstr "فحص المدة الزمنية"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:62
 #, fuzzy
@@ -3232,90 +3001,50 @@ msgstr "بداية التنبيه"
 msgid "Notification Types"
 msgstr "تنبيهات"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:64
-#, fuzzy
-msgid "Notification Zone Id"
-msgstr "تنبيهات"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:54
 #, fuzzy
-msgid "Notification History Id"
-msgstr "تنبيهات"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:55
-#, fuzzy
-msgid "Notification Environment Id (History)"
-msgstr "بداية التنبيه"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:56
-#, fuzzy
-msgid "Notification Endpoint Id (History)"
-msgstr "بداية التنبيه"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:57
-#, fuzzy
-msgid "Notification Object Type (History)"
-msgstr "بداية التنبيه"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:58
-#, fuzzy
-msgid "Notification Host Id (History)"
-msgstr "تنبيهات"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:59
-#, fuzzy
-msgid "Notification Service Id (History)"
-msgstr "بداية التنبيه"
+msgid "History Id"
+msgstr "المحفوظات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:60
 #, fuzzy
-msgid "Notification Id (History)"
+msgid "Notification Id"
 msgstr "تنبيهات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:61
 #, fuzzy
-msgid "Notification Type (History)"
+msgid "Notification Type"
 msgstr "تنبيهات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:62
 #, fuzzy
-msgid "Notification Sent On (History)"
+msgid "Notification Sent On"
 msgstr "بداية التنبيه"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:63
 #, fuzzy
-msgid "Notification Object State (History)"
-msgstr "بداية التنبيه"
+msgid "Hard State"
+msgstr "حالات المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:64
 #, fuzzy
-msgid "Notification Previous Object State (History)"
+msgid "Previous Hard State"
 msgstr "بداية التنبيه"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:65
 #, fuzzy
-msgid "Notification Author (History)"
+msgid "Notification Author"
 msgstr "بداية التنبيه"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:66
 #, fuzzy
-msgid "Notification Text (History)"
-msgstr "بداية التنبيه"
+msgid "Notification Text"
+msgstr "تنبيهات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:67
 #, fuzzy
-msgid "Notification Users Notified (History)"
-msgstr "التنبيهات معطلة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:42
-#, fuzzy
-msgid "Notificationcommand Zone Id"
-msgstr "تنبيهات"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:43
-#, fuzzy
-msgid "Notificationcommand Environment Id"
-msgstr "بداية التنبيه"
+msgid "Users Notified"
+msgstr "اسم المستخدم"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:44
 #, fuzzy
@@ -3347,20 +3076,10 @@ msgstr "تنبيهات"
 msgid "Notificationcommand Timeout"
 msgstr "تنبيهات"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:45
-#, fuzzy
-msgid "Notificationcommand Argument Command Id"
-msgstr "تنبيهات"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:46
 #, fuzzy
-msgid "Notificationcommand Argument Key"
+msgid "Notificationcommand Argument Name"
 msgstr "تنبيهات"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:47
-#, fuzzy
-msgid "Notificationcommand Argument Environment Id"
-msgstr "بداية التنبيه"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:48
 #, fuzzy
@@ -3374,7 +3093,7 @@ msgstr "تنبيهات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:50
 #, fuzzy
-msgid "Notificationcommand Argument Order"
+msgid "Notificationcommand Argument Position"
 msgstr "تنبيهات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:51
@@ -3384,12 +3103,12 @@ msgstr "تنبيهات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:52
 #, fuzzy
-msgid "Notificationcommand Argument Key Override"
+msgid "Notificationcommand Argument Actual Name"
 msgstr "تنبيهات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:53
 #, fuzzy
-msgid "Notificationcommand Argument Repeat Key"
+msgid "Notificationcommand Argument Repeated"
 msgstr "تنبيهات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:54
@@ -3399,28 +3118,18 @@ msgstr "تنبيهات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:55
 #, fuzzy
-msgid "Notificationcommand Argument Set If"
+msgid "Notificationcommand Argument Condition"
 msgstr "تنبيهات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:56
 #, fuzzy
-msgid "Notificationcommand Argument Skip Key"
+msgid "Notificationcommand Argument Without Name"
 msgstr "تنبيهات"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:38
-#, fuzzy
-msgid "Notificationcommand Envvar Command Id"
-msgstr "بداية التنبيه"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:39
 #, fuzzy
 msgid "Notificationcommand Envvar Key"
 msgstr "تنبيهات"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:40
-#, fuzzy
-msgid "Notificationcommand Envvar Environment Id"
-msgstr "بداية التنبيه"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:41
 #, fuzzy
@@ -3432,11 +3141,6 @@ msgstr "فحوصات الخدمة نشطة"
 msgid "Notificationcommand Envvar Value"
 msgstr "تنبيهات"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:75
-#, fuzzy
-msgid "Service Environment Id"
-msgstr "الخدمة غير موجودة"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:76
 #, fuzzy
 msgid "Service Name Checksum"
@@ -3446,11 +3150,6 @@ msgstr "فحوصات الخدمة"
 #, fuzzy
 msgid "Service Properties Checksum"
 msgstr "فحوصات الخدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:78
-#, fuzzy
-msgid "Service Host Id"
-msgstr "الخدمة غير موجودة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:80
 #, fuzzy
@@ -3462,32 +3161,13 @@ msgstr "اسم الخدمة"
 msgid "Service Display Name"
 msgstr "اسم الخدمة"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:82
-#, fuzzy
-msgid "Service Checkcommand"
-msgstr "فحوصات الخدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:83
-#, fuzzy
-msgid "Service Checkcommand Id"
-msgstr "فحوصات الخدمة"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:84
 #, fuzzy
 msgid "Service Max Check Attempts"
 msgstr "فحوصات الخدمة"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:85
-#, fuzzy
-msgid "Service Check Timeperiod"
-msgstr "فحص المدة الزمنية"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:86
-#, fuzzy
-msgid "Service Check Timeperiod Id"
-msgstr "فحص المدة الزمنية"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:87
+#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:48
 #, fuzzy
 msgid "Service Check Timeout"
 msgstr "فحوصات الخدمة"
@@ -3540,70 +3220,15 @@ msgstr ""
 msgid "Service Performance Data Enabled"
 msgstr "بيانات الأداء"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:98
-#, fuzzy
-msgid "Service Eventcommand"
-msgstr "الخدمة غير موجودة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:99
-#, fuzzy
-msgid "Service Eventcommand Id"
-msgstr "الخدمة غير موجودة"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:100
 #, fuzzy
 msgid "Service Is Volatile"
 msgstr "حالات الخدمة"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:101
-#, fuzzy
-msgid "Service Action Url Id"
-msgstr "فعل خدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:102
-#, fuzzy
-msgid "Service Notes Url Id"
-msgstr "الخدمة غير موجودة"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:103
 #, fuzzy
 msgid "Service Notes"
 msgstr "حالات الخدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:104
-#, fuzzy
-msgid "Service Icon Image Id"
-msgstr "خطورة الخدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:105
-#, fuzzy
-msgid "Service Icon Image Alt"
-msgstr "فعل خدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:106
-#, fuzzy
-msgid "Service Zone"
-msgstr "فعل خدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:107
-#, fuzzy
-msgid "Service Zone Id"
-msgstr "فعل خدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:108
-#, fuzzy
-msgid "Service Command Endpoint"
-msgstr "إضافة تعليق خدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:109
-#, fuzzy
-msgid "Service Command Endpoint Id"
-msgstr "إزالة ناقل أمر %s"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:25
-#, fuzzy
-msgid "Service State Environment Id"
-msgstr "الخدمة غير موجودة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:26
 #, fuzzy
@@ -3632,7 +3257,7 @@ msgstr "حالات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:31
 #, fuzzy
-msgid "Service State Attempt No."
+msgid "Service Check Attempt No."
 msgstr "فحوصات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:32
@@ -3642,113 +3267,98 @@ msgstr "خطورة الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:33
 #, fuzzy
-msgid "Service State Output"
+msgid "Service Output"
 msgstr "حالات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:34
 #, fuzzy
-msgid "Service State Long Output"
+msgid "Service Long Output"
 msgstr "حالات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:35
 #, fuzzy
-msgid "Service State Performance Data"
+msgid "Service Performance Data"
 msgstr "بيانات الأداء"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:36
 #, fuzzy
-msgid "Service State Normalized Performance Data"
+msgid "Service Normalized Performance Data"
 msgstr "بيانات الأداء"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:37
 #, fuzzy
-msgid "Service State Check Commandline"
+msgid "Service Check Commandline"
 msgstr "فحوصات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:38
 #, fuzzy
-msgid "Service State Is Problem"
+msgid "Service Has Problem"
 msgstr "مشاكل الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:39
 #, fuzzy
-msgid "Service State Is Handled"
+msgid "Service Is Handled"
 msgstr "حالات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:40
 #, fuzzy
-msgid "Service State Is Reachable"
+msgid "Service Is Reachable"
 msgstr "حالات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:41
 #, fuzzy
-msgid "Service State Is Flapping"
+msgid "Service Is Flapping"
 msgstr "حالات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:42
 #, fuzzy
-msgid "Service State Is Overdue"
+msgid "Service Check Is Overdue"
 msgstr "حالات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:43
 #, fuzzy
-msgid "Service State Is Acknowledged"
+msgid "Service Is Acknowledged"
 msgstr "حالات الخدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:44
-#, fuzzy
-msgid "Service State Acknowledgement Comment Id"
-msgstr "إشعار مثبت"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:45
 #, fuzzy
-msgid "Service State In Downtime"
+msgid "Service In Downtime"
 msgstr "حالات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:46
 #, fuzzy
-msgid "Service State Execution Time"
+msgid "Service Check Execution Time"
 msgstr "فحص زمن التنفيذ"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:47
 #, fuzzy
-msgid "Service State Latency"
+msgid "Service Check Latency"
 msgstr "حالات الخدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:48
-#, fuzzy
-msgid "Service State Timeout"
-msgstr "فحوصات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:49
 #, fuzzy
-msgid "Service State Check Source"
+msgid "Service Check Source"
 msgstr "فحوصات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:50
 #, fuzzy
-msgid "Service State Last Update"
+msgid "Service Last Update"
 msgstr "حالات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:51
 #, fuzzy
-msgid "Service State Last State Change"
+msgid "Service Last State Change"
 msgstr "آخر تغيير حالة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:52
 #, fuzzy
-msgid "Service State Next Check"
+msgid "Service Next Check"
 msgstr "فحوصات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:53
 #, fuzzy
-msgid "Service State Next Update"
+msgid "Service Next Update"
 msgstr "حالات الخدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:41
-#, fuzzy
-msgid "Servicegroup Environment Id"
-msgstr "اسم مجموعة خدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:42
 #, fuzzy
@@ -3775,83 +3385,55 @@ msgstr "اسم مجموعة خدمة"
 msgid "Servicegroup Display Name"
 msgstr "اسم مجموعة خدمة"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:47
-#, fuzzy
-msgid "Servicegroup Zone Id"
-msgstr "مجموعات خدمة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:57
-#, fuzzy
-msgid "State Environment Id (History)"
-msgstr "الخدمة غير موجودة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:58
-msgid "State Endpoint Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:59
-#, fuzzy
-msgid "State Object Type (History)"
-msgstr "نوع الكائن"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:60
-msgid "State Host Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:61
-msgid "State Service Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:62
-msgid "State Event Time (History)"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:63
-msgid "State Type (History)"
-msgstr ""
+#, fuzzy
+msgid "Event State Type"
+msgstr "حالات المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:64
-msgid "Soft State (History)"
-msgstr ""
+#, fuzzy
+msgid "Event Soft State"
+msgstr "حالات المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:65
-msgid "Hard State (History)"
-msgstr ""
+#, fuzzy
+msgid "Event Hard State"
+msgstr "حالات المضيف"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:66
-msgid "State Attempt No. (History)"
-msgstr ""
+#, fuzzy
+msgid "Event Check Attempt No."
+msgstr "فحص المحاولات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:67
-msgid "Previous Soft State (History)"
-msgstr ""
+#, fuzzy
+msgid "Event Previous Soft State"
+msgstr "بداية التنبيه"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:68
-msgid "Previous Hard State (History)"
-msgstr ""
+#, fuzzy
+msgid "Event Previous Hard State"
+msgstr "بداية التنبيه"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:69
-msgid "State Output (History)"
-msgstr ""
+#, fuzzy
+msgid "Event Output"
+msgstr "مخرج"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:70
-msgid "State Long Output (History)"
-msgstr ""
+#, fuzzy
+msgid "Event Long Output"
+msgstr "حالات الخدمة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:71
 #, fuzzy
-msgid "State Max Check Attempts (History)"
+msgid "Event Max Check Attempts"
 msgstr "فحص المحاولات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:72
 #, fuzzy
-msgid "State Check Source (History)"
+msgid "Event Check Source"
 msgstr "فحص المصدر"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:42
-#, fuzzy
-msgid "Timeperiod Environment Id"
-msgstr "تعليق مستخدم"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:43
 #, fuzzy
@@ -3883,34 +3465,15 @@ msgstr "اسم الخدمة"
 msgid "Timeperiod Prefer Includes"
 msgstr "فحص المدة الزمنية"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:49
-#, fuzzy
-msgid "Timeperiod Zone Id"
-msgstr "فحص المدة الزمنية"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:37
-msgid "Timeperiod Range Period Id"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:38
 #, fuzzy
-msgid "Timeperiod Range Key"
+msgid "Timeperiod Range Date(s)/Day"
 msgstr "فحص المدة الزمنية"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:39
-#, fuzzy
-msgid "Timeperiod Range Environment Id"
-msgstr "الخدمة غير موجودة"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:40
 #, fuzzy
-msgid "Timeperiod Range Value"
+msgid "Timeperiod Range Time"
 msgstr "فحص المدة الزمنية"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:48
-#, fuzzy
-msgid "User Environment Id"
-msgstr "تعليق مستخدم"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:49
 #, fuzzy
@@ -3951,29 +3514,15 @@ msgstr "جهاز إخطار"
 msgid "User Receives Notifications"
 msgstr "تنبيهات الخدمة المعطلة"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:57
-#, fuzzy
-msgid "User Timeperiod Id"
-msgstr "فحص المدة الزمنية"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:58
 #, fuzzy
-msgid "User States"
-msgstr "حالات المضيف"
+msgid "Notification State Filter"
+msgstr "بداية التنبيه"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:59
 #, fuzzy
-msgid "User Types"
-msgstr "مجموعات المستخدم"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:60
-#, fuzzy
-msgid "User Zone Id"
-msgstr "اسم المستخدم"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:41
-msgid "Usergroup Environment Id"
-msgstr ""
+msgid "Notification Type Filter"
+msgstr "تنبيهات"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:42
 #, fuzzy
@@ -3999,16 +3548,6 @@ msgstr "مجموعات المستخدمين"
 msgid "Usergroup Display Name"
 msgstr "مجموعات المستخدمين"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:47
-#, fuzzy
-msgid "Usergroup Zone Id"
-msgstr "مجموعات المستخدمين"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:41
-#, fuzzy
-msgid "Zone Environment Id"
-msgstr "زمن التوقف غير موجود"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:42
 #, fuzzy
 msgid "Zone Name Checksum"
@@ -4018,11 +3557,6 @@ msgstr "زمن التوقف"
 #, fuzzy
 msgid "Zone Properties Checksum"
 msgstr "فحوصات الخدمة نشطة"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:44
-#, fuzzy
-msgid "Zone Name"
-msgstr "اسم الدور"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:45
 #, fuzzy
@@ -4035,23 +3569,23 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:47
 #, fuzzy
-msgid "Zone Parent Id"
-msgstr "أب"
+msgid "Parent Zone Id"
+msgstr "تعليق غير موجود"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:48
 msgid "Zone Depth"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:75
-msgid ""
-"Icinga Redis is outdated. Make sure Icinga 2 is running and connected to "
-"Redis."
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:104
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:34
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:52
 #, php-format
 msgid "Can't connect to Icinga Redis: %s"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:92
+msgid ""
+"Icinga Redis is outdated. Make sure Icinga 2 is running and connected to "
+"Redis."
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:35
@@ -4444,12 +3978,12 @@ msgctxt "..<customvar-name>"
 msgid "Usergroup %s"
 msgstr "مجموعات المستخدمين"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:139
+#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:162
 #, fuzzy, php-format
 msgid "\"%s\" is not a valid relation"
 msgstr "\"%value%\" ليست خياراً صالحاً."
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:175
+#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:198
 #, fuzzy, php-format
 msgid "\"%s\" is not a valid column"
 msgstr "'%s' ليس رقما صالحا"
@@ -5514,6 +5048,586 @@ msgstr[5] ""
 #: sources.d/icingadb-web/library/Icingadb/Widget/ShowMore.php:43
 msgid "Show More"
 msgstr "عرض المزيد"
+
+#, fuzzy
+#~ msgid "Checkcommand Argument Set If"
+#~ msgstr "أوامر"
+
+#, fuzzy
+#~ msgid "Checkcommand Envvar Key"
+#~ msgstr "أوامر"
+
+#, fuzzy
+#~ msgid "Environment id"
+#~ msgstr "نوع التعليق"
+
+#, fuzzy
+#~ msgid "Eventcommand Argument Set If"
+#~ msgstr "معالجات الحدث"
+
+#, fuzzy
+#~ msgid "Eventcommand Envvar Key"
+#~ msgstr "معالجات الحدث"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Key"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Order"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Key Override"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Set If"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Skip Key"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Timeperiod Range Value"
+#~ msgstr "فحص المدة الزمنية"
+
+#, fuzzy
+#~ msgid "User States"
+#~ msgstr "حالات المضيف"
+
+#, fuzzy
+#~ msgid "User Types"
+#~ msgstr "مجموعات المستخدم"
+
+#, fuzzy
+#~ msgid "Acknowledgement Environment Id (History)"
+#~ msgstr "تعليق غير موجود"
+
+#, fuzzy
+#~ msgid "Acknowledgement Endpoint Id (History)"
+#~ msgstr "إشعار استلام"
+
+#, fuzzy
+#~ msgid "Acknowledgement Object Type (History)"
+#~ msgstr "إشعار استلام"
+
+#, fuzzy
+#~ msgid "Acknowledgement Host Id (History)"
+#~ msgstr "إشعارات استلام"
+
+#, fuzzy
+#~ msgid "Acknowledgement Service Id (History)"
+#~ msgstr "إشعار استلام"
+
+#, fuzzy
+#~ msgid "Acknowledgement Cleared By (History)"
+#~ msgstr "إشعار استلام"
+
+#, fuzzy
+#~ msgid "Action Url Environment Id"
+#~ msgstr "تعليق مستخدم"
+
+#, fuzzy
+#~ msgid "Checkcommand Zone Id"
+#~ msgstr "فحوصات المضيف"
+
+#, fuzzy
+#~ msgid "Checkcommand Environment Id"
+#~ msgstr "تعليق غير موجود"
+
+#, fuzzy
+#~ msgid "Checkcommand Argument Environment Id"
+#~ msgstr "تعليق غير موجود"
+
+#, fuzzy
+#~ msgid "Checkcommand Envvar Command Id"
+#~ msgstr "تعليق غير موجود"
+
+#, fuzzy
+#~ msgid "Comment Environment Id"
+#~ msgstr "تعليق غير موجود"
+
+#, fuzzy
+#~ msgid "Comment Object Type"
+#~ msgstr "نوع التعليق"
+
+#, fuzzy
+#~ msgid "Comment Host Id"
+#~ msgstr "تعليق غير موجود"
+
+#, fuzzy
+#~ msgid "Comment Service Id"
+#~ msgstr "نوع التعليق"
+
+#, fuzzy
+#~ msgid "Comment Environment Id (History)"
+#~ msgstr "تعليق غير موجود"
+
+#, fuzzy
+#~ msgid "Comment Endpoint Id (History)"
+#~ msgstr "تحرير ناقل الأمر %s"
+
+#, fuzzy
+#~ msgid "Comment Object Type (History)"
+#~ msgstr "نوع التعليق"
+
+#, fuzzy
+#~ msgid "Comment Host Id (History)"
+#~ msgstr "تعليق غير موجود"
+
+#, fuzzy
+#~ msgid "Comment Service Id (History)"
+#~ msgstr "نوع التعليق"
+
+#, fuzzy
+#~ msgid "Comment Entry Time (History)"
+#~ msgstr "زمن الدخول"
+
+#, fuzzy
+#~ msgid "Comment Author (History)"
+#~ msgstr "تعليق منشأ من قبل مستخدم"
+
+#, fuzzy
+#~ msgid "Comment Removed By (History)"
+#~ msgstr "تعليق منشأ من قبل مستخدم"
+
+#, fuzzy
+#~ msgid "Comment Entry Type (History)"
+#~ msgstr "زمن الدخول"
+
+#, fuzzy
+#~ msgid "Comment Is Persistent (History)"
+#~ msgstr "دائم"
+
+#, fuzzy
+#~ msgid "Comment Is Sticky (History)"
+#~ msgstr "إشعار استلام"
+
+#, fuzzy
+#~ msgid "Comment Expire Time (History)"
+#~ msgstr "استخدام وقت انتهاء الصلاحية"
+
+#, fuzzy
+#~ msgid "Downtime Environment Id"
+#~ msgstr "زمن التوقف غير موجود"
+
+#, fuzzy
+#~ msgid "Downtime Parent Id"
+#~ msgstr "أب"
+
+#, fuzzy
+#~ msgid "Downtime Object Type"
+#~ msgstr "نوع الكائن"
+
+#, fuzzy
+#~ msgid "Downtime Host Id"
+#~ msgstr "زمن التوقف غير موجود"
+
+#, fuzzy
+#~ msgid "Downtime Service Id"
+#~ msgstr "عرض شبكة الخدمة"
+
+#, fuzzy
+#~ msgid "Downtime Scheduled By"
+#~ msgstr "نهاية الجدولة"
+
+#, fuzzy
+#~ msgid "Downtime Zone Id"
+#~ msgstr "زمن التوقف غير موجود"
+
+#, fuzzy
+#~ msgid "Downtime Environment Id (History)"
+#~ msgstr "زمن التوقف غير موجود"
+
+#, fuzzy
+#~ msgid "Downtime Endpoint Id (History)"
+#~ msgstr "زمن التوقف غير موجود"
+
+#, fuzzy
+#~ msgid "Downtime Parent Id (History)"
+#~ msgstr "زمن التوقف غير موجود"
+
+#, fuzzy
+#~ msgid "Downtime Object Type (History)"
+#~ msgstr "نوع الكائن"
+
+#, fuzzy
+#~ msgid "Downtime Host Id (History)"
+#~ msgstr "زمن التوقف غير موجود"
+
+#, fuzzy
+#~ msgid "Downtime Service Id (History)"
+#~ msgstr "عرض شبكة الخدمة"
+
+#, fuzzy
+#~ msgid "Downtime Entry Time (History)"
+#~ msgstr "زمن الدخول"
+
+#, fuzzy
+#~ msgid "Downtime Author (History)"
+#~ msgstr "زمن التوقف"
+
+#, fuzzy
+#~ msgid "Downtime Cancelled By (History)"
+#~ msgstr "زمن التوقف"
+
+#, fuzzy
+#~ msgid "Downtime Comment (History)"
+#~ msgstr "زمن التوقف"
+
+#, fuzzy
+#~ msgid "Downtime Is Flexible (History)"
+#~ msgstr "زمن التوقف هذا مرن"
+
+#, fuzzy
+#~ msgid "Downtime Flexible Duration (History)"
+#~ msgstr "مدة مرنة"
+
+#, fuzzy
+#~ msgid "Downtime Scheduled Start (History)"
+#~ msgstr "بداية الجدولة"
+
+#, fuzzy
+#~ msgid "Downtime Scheduled End (History)"
+#~ msgstr "نهاية الجدولة"
+
+#, fuzzy
+#~ msgid "Downtime Actual Start (History)"
+#~ msgstr "زمن التوقف"
+
+#, fuzzy
+#~ msgid "Downtime Actual End (History)"
+#~ msgstr "زمن التوقف غير موجود"
+
+#, fuzzy
+#~ msgid "Endpoint Environment Id"
+#~ msgstr "المضيف غير موجود"
+
+#, fuzzy
+#~ msgid "Eventcommand Zone Id"
+#~ msgstr "معالجات الحدث"
+
+#, fuzzy
+#~ msgid "Eventcommand Environment id"
+#~ msgstr "تعليق غير موجود"
+
+#, fuzzy
+#~ msgid "Eventcommand Argument Environment Id"
+#~ msgstr "تعليق غير موجود"
+
+#, fuzzy
+#~ msgid "Eventcommand Envvar Environment Id"
+#~ msgstr "تعليق غير موجود"
+
+#, fuzzy
+#~ msgid "Flapping Environment Id (History)"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Flapping Object Type (History)"
+#~ msgstr "نوع الكائن"
+
+#, fuzzy
+#~ msgid "Environment Id (History)"
+#~ msgstr "المضيف غير موجود"
+
+#, fuzzy
+#~ msgid "Service Id (History)"
+#~ msgstr "الخدمة غير موجودة"
+
+#, fuzzy
+#~ msgid "Host Checkcommand"
+#~ msgstr "فحوصات المضيف"
+
+#, fuzzy
+#~ msgid "Host Checkcommand Id"
+#~ msgstr "فحوصات المضيف"
+
+#, fuzzy
+#~ msgid "Host Check Timeperiod"
+#~ msgstr "فحص المدة الزمنية"
+
+#, fuzzy
+#~ msgid "Host Eventcommand"
+#~ msgstr "المضيف غير موجود"
+
+#, fuzzy
+#~ msgid "Host Action Url Id"
+#~ msgstr "فعل المضيف"
+
+#, fuzzy
+#~ msgid "Host Zone"
+#~ msgstr "اسم المضيف"
+
+#, fuzzy
+#~ msgid "Host Command Endpoint"
+#~ msgstr "ناقل الأمر"
+
+#, fuzzy
+#~ msgid "Host Command Endpoint Id"
+#~ msgstr "تحرير ناقل الأمر %s"
+
+#, fuzzy
+#~ msgid "Host State Environment Id"
+#~ msgstr "المضيف غير موجود"
+
+#, fuzzy
+#~ msgid "Host State Is Problem"
+#~ msgstr "مشاكل المضيف"
+
+#, fuzzy
+#~ msgid "Host State Timeout"
+#~ msgstr "فحص الزمن"
+
+#, fuzzy
+#~ msgid "Hostgroup Zone Id"
+#~ msgstr "مجموعات المضيف"
+
+#, fuzzy
+#~ msgid "Icon Image Environment Id"
+#~ msgstr "زمن التوقف غير موجود"
+
+#, fuzzy
+#~ msgid "Notes Url Environment Id"
+#~ msgstr "المضيف غير موجود"
+
+#, fuzzy
+#~ msgid "Notification Environment Id"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Notification Host Id"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notification Service Id"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Notification Times Begin"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notification Times End"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notification Timeperiod Id"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Notification Zone Id"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notification History Id"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notification Environment Id (History)"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Notification Endpoint Id (History)"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Notification Object Type (History)"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Notification Host Id (History)"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notification Service Id (History)"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Notification Id (History)"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notification Type (History)"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notification Object State (History)"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Notification Previous Object State (History)"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Notification Text (History)"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Notification Users Notified (History)"
+#~ msgstr "التنبيهات معطلة"
+
+#, fuzzy
+#~ msgid "Notificationcommand Zone Id"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notificationcommand Environment Id"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Command Id"
+#~ msgstr "تنبيهات"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Environment Id"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Notificationcommand Envvar Command Id"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Notificationcommand Envvar Environment Id"
+#~ msgstr "بداية التنبيه"
+
+#, fuzzy
+#~ msgid "Service Environment Id"
+#~ msgstr "الخدمة غير موجودة"
+
+#, fuzzy
+#~ msgid "Service Host Id"
+#~ msgstr "الخدمة غير موجودة"
+
+#, fuzzy
+#~ msgid "Service Checkcommand"
+#~ msgstr "فحوصات الخدمة"
+
+#, fuzzy
+#~ msgid "Service Checkcommand Id"
+#~ msgstr "فحوصات الخدمة"
+
+#, fuzzy
+#~ msgid "Service Check Timeperiod"
+#~ msgstr "فحص المدة الزمنية"
+
+#, fuzzy
+#~ msgid "Service Check Timeperiod Id"
+#~ msgstr "فحص المدة الزمنية"
+
+#, fuzzy
+#~ msgid "Service Eventcommand"
+#~ msgstr "الخدمة غير موجودة"
+
+#, fuzzy
+#~ msgid "Service Eventcommand Id"
+#~ msgstr "الخدمة غير موجودة"
+
+#, fuzzy
+#~ msgid "Service Action Url Id"
+#~ msgstr "فعل خدمة"
+
+#, fuzzy
+#~ msgid "Service Notes Url Id"
+#~ msgstr "الخدمة غير موجودة"
+
+#, fuzzy
+#~ msgid "Service Icon Image Id"
+#~ msgstr "خطورة الخدمة"
+
+#, fuzzy
+#~ msgid "Service Icon Image Alt"
+#~ msgstr "فعل خدمة"
+
+#, fuzzy
+#~ msgid "Service Zone"
+#~ msgstr "فعل خدمة"
+
+#, fuzzy
+#~ msgid "Service Zone Id"
+#~ msgstr "فعل خدمة"
+
+#, fuzzy
+#~ msgid "Service Command Endpoint"
+#~ msgstr "إضافة تعليق خدمة"
+
+#, fuzzy
+#~ msgid "Service Command Endpoint Id"
+#~ msgstr "إزالة ناقل أمر %s"
+
+#, fuzzy
+#~ msgid "Service State Environment Id"
+#~ msgstr "الخدمة غير موجودة"
+
+#, fuzzy
+#~ msgid "Service State Is Problem"
+#~ msgstr "مشاكل الخدمة"
+
+#, fuzzy
+#~ msgid "Service State Acknowledgement Comment Id"
+#~ msgstr "إشعار مثبت"
+
+#, fuzzy
+#~ msgid "Service State Timeout"
+#~ msgstr "فحوصات الخدمة"
+
+#, fuzzy
+#~ msgid "Servicegroup Environment Id"
+#~ msgstr "اسم مجموعة خدمة"
+
+#, fuzzy
+#~ msgid "Servicegroup Zone Id"
+#~ msgstr "مجموعات خدمة"
+
+#, fuzzy
+#~ msgid "State Environment Id (History)"
+#~ msgstr "الخدمة غير موجودة"
+
+#, fuzzy
+#~ msgid "State Object Type (History)"
+#~ msgstr "نوع الكائن"
+
+#, fuzzy
+#~ msgid "State Max Check Attempts (History)"
+#~ msgstr "فحص المحاولات"
+
+#, fuzzy
+#~ msgid "State Check Source (History)"
+#~ msgstr "فحص المصدر"
+
+#, fuzzy
+#~ msgid "Timeperiod Environment Id"
+#~ msgstr "تعليق مستخدم"
+
+#, fuzzy
+#~ msgid "Timeperiod Zone Id"
+#~ msgstr "فحص المدة الزمنية"
+
+#, fuzzy
+#~ msgid "Timeperiod Range Environment Id"
+#~ msgstr "الخدمة غير موجودة"
+
+#, fuzzy
+#~ msgid "User Environment Id"
+#~ msgstr "تعليق مستخدم"
+
+#, fuzzy
+#~ msgid "User Timeperiod Id"
+#~ msgstr "فحص المدة الزمنية"
+
+#, fuzzy
+#~ msgid "Usergroup Zone Id"
+#~ msgstr "مجموعات المستخدمين"
+
+#, fuzzy
+#~ msgid "Zone Environment Id"
+#~ msgstr "زمن التوقف غير موجود"
+
+#, fuzzy
+#~ msgid "Zone Parent Id"
+#~ msgstr "أب"
 
 #, fuzzy
 #~ msgid "Open health overview"
