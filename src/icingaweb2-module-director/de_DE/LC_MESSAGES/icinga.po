@@ -25,8 +25,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 15:40+0000\n"
-"PO-Revision-Date: 2022-05-31 09:37+0000\n"
+"POT-Creation-Date: 2022-07-15 09:37+0000\n"
+"PO-Revision-Date: 2022-07-15 07:40+0000\n"
 "Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
 "Language-Team: German <https://translate.icinga.com/projects/icinga/"
 "icingaweb2-module-director/de/>\n"
@@ -345,7 +345,7 @@ msgstr "- bitte wählen -"
 #: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:426
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/ActivityLogInfo.php:368
 msgid "Diff"
-msgstr "Diff"
+msgstr "Vergleich"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:443
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectController.php:705
@@ -847,7 +847,7 @@ msgstr "Objekt-Inspektion"
 
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:144
 msgid "Icinga 2 API - Status"
-msgstr "Icinga 2  API - Status"
+msgstr "Icinga 2 API - Status"
 
 #: sources.d/icingaweb2-module-director/application/controllers/InspectController.php:168
 msgid "Inspect Packages"
@@ -865,7 +865,7 @@ msgstr "Auftrag: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/JobController.php:34
 msgid "New Job"
-msgstr "Neuer Job"
+msgstr "Neuer Auftrag"
 
 #: sources.d/icingaweb2-module-director/application/controllers/JobController.php:35
 #: sources.d/icingaweb2-module-director/application/controllers/JobsController.php:15
@@ -992,7 +992,6 @@ msgstr "Apply: %s"
 #: sources.d/icingaweb2-module-director/library/Director/TranslationDummy.php:13
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableEndpoint.php:20
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableService.php:106
-#, fuzzy
 msgid "Host"
 msgstr "Host"
 
@@ -1837,7 +1836,6 @@ msgstr "Es wurde noch keine passende Vorlage bereitgestellt"
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceVarForm.php:15
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:14
 #: sources.d/icingaweb2-module-director/library/Director/TranslationDummy.php:14
-#, fuzzy
 msgid "Service"
 msgstr "Service"
 
@@ -2298,15 +2296,15 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:175
 msgid "Ignore Soft States"
-msgstr "Soft-States ignorieren"
+msgstr "Zustands-Typ \"Soft\" ignorieren"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:177
 msgid ""
 "Whether to ignore soft states for the reachability calculation. Defaults to "
 "true."
 msgstr ""
-"Ob Soft-States für die Berechnung der Erreichbarkeit berücksichtigt werden "
-"sollen. Dies ist standardmäßig der Fall."
+"Ob der Zustands-Typ \"Soft\" für die Berechnung der Erreichbarkeit ignoriert "
+"werden soll. Dies ist standardmäßig der Fall."
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:200
 msgid "Parent Host"
@@ -3623,7 +3621,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:121
 msgid "Endpoint Name"
-msgstr "Name des Endpunkts"
+msgstr "Endpunkt Name"
 
 #: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:123
 msgid ""
@@ -4344,7 +4342,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:45
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:78
 msgid "Object Type"
-msgstr "Objekttyp"
+msgstr "Objekt-Typ"
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:46
 msgid "Choose an object type"
@@ -4552,21 +4550,19 @@ msgid "Allow readonly users to see where a Service came from"
 msgstr "Erlaube Nur-Lesen-Benutzern zu sehen woher ein Service kommt"
 
 #: sources.d/icingaweb2-module-director/configuration.php:43
-#, fuzzy
 msgid ""
 "Allow users to modify Hosts they are allowed to see in the monitoring module"
 msgstr ""
-"Das zeigt alle passenden Hosts und deren aktuellen Status im Monitoring-"
-"Modul an"
+"Erlaube Benutzern Hosts zu modifizieren, die sie im Monitoring Modul sehen "
+"können"
 
 #: sources.d/icingaweb2-module-director/configuration.php:47
-#, fuzzy
 msgid ""
 "Allow users to modify Service they are allowed to see in the monitoring "
 "module"
 msgstr ""
-"Das zeigt alle passenden Services und deren aktuellen Status im Monitoring-"
-"Modul an"
+"Erlaube Benutzern Services zu modifizieren, die sie im Monitoring Modul "
+"sehen können"
 
 #: sources.d/icingaweb2-module-director/configuration.php:49
 msgid "Allow unrestricted access to Icinga Director"
@@ -5156,12 +5152,12 @@ msgid ""
 "providers. The possibilities are endless, as you are allowed to define as "
 "many custom notification commands as you want"
 msgstr ""
-"Benachrichtigungen werden gesendet, wenn ein Host oder Services einen harten "
-"Nicht-OK-Zustand erreicht oder sich von einem solchen erholt. Es könnte "
-"zudem wünschenswert sein, Benachrichtigungen auch für spezielle Events wie "
-"den Beginn einer Downtime, das Bestätigen eines Problems und mehr zu "
-"versenden. Benachrichtigungen lassen sich auf Wunsch nur innerhalb "
-"bestimmter Zeitfenster versenden. Zudem können sie künstlich verzögert und / "
+"Benachrichtigungen werden gesendet, wenn ein Host oder Service einen Nicht-"
+"OK-Zustand (Typ \"Hard\") erreicht oder sich von einem solchen erholt. Es "
+"könnte zudem wünschenswert sein, Benachrichtigungen auch für spezielle "
+"Ereignisse wie den Beginn einer Downtime, das Bestätigen eines Problems und "
+"mehr zu versenden. Benachrichtigungen lassen sich auf Wunsch nur innerhalb "
+"bestimmter Zeiträume versenden. Zudem können sie künstlich verzögert und / "
 "oder in bestimmten Intervallen neu versandt werden.\n"
 "\n"
 "Wer Eskalationsebenen umsetzen möchte kombiniert diese Möglichkeiten. Man "
@@ -5169,9 +5165,10 @@ msgstr ""
 "für längere Zeit unbehandelt bleibt das Management mit einbeziehen.\n"
 "\n"
 "Man könnte E-Mails oder SMS versenden, Telefonanrufe durchführen und sich "
-"auf unterschiedlichsten Kanälen anpiepen lassen. Benachrichtigungen lassen "
-"sich natürlich auch an externe Serviceanbieter auslagern. Die Möglichkeiten "
-"sind endlos, nachdem man beliebig viele eigene Kommandos anbinden kann"
+"auf unterschiedlichsten Kanälen kontaktieren lassen. Benachrichtigungen "
+"lassen sich natürlich auch an externe Dienstleister auslagern. Die "
+"Möglichkeiten sind endlos, da man beliebig viele eigene Kommandos anbinden "
+"kann"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/ObjectsDashboard.php:15
 msgid "Define whatever you want to be monitored"
@@ -6767,8 +6764,8 @@ msgid ""
 "Retry interval, will be applied after a state change unless the next hard "
 "state is reached"
 msgstr ""
-"Wiederholungsintervall, wird nach einem Statuswechsel verwendet, bis der "
-"nächste Hard Status erreicht wurde"
+"Wiederholungsintervall, wird nach einer Zustands-Änderung verwendet, bis der "
+"nächste Zustand vom Typ \"Hard\" erreicht wurde"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1391
 msgid "Max check attempts"
@@ -6777,7 +6774,8 @@ msgstr "Maximale Checkwiederholungen"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1393
 msgid "Defines after how many check attempts a new hard state is reached"
 msgstr ""
-"Legt fest, nach wie vielen Versuchen ein neuer Hard State erreicht wird"
+"Legt fest, nach wie vielen Versuchen ein neuer Zustand vom Typ \"Hard\" "
+"erreicht wird"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1402
 msgid "Check timeout"
@@ -6858,7 +6856,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1477
 msgid "Flapping threshold (low)"
-msgstr "Flapping Schwellwert (niedrig)"
+msgstr "Unterer Flapping Schwellwert"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1479
 msgid ""
@@ -6942,7 +6940,7 @@ msgstr "Zustände"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1666
 msgid "The host/service states you want to get notifications for"
 msgstr ""
-"Die Host/Service Status, für die Benachrichtigungen versandt werden sollen"
+"Die Host/Service Zustände, für die Benachrichtigungen versandt werden sollen"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1673
 msgid "Transition types"
@@ -6951,12 +6949,12 @@ msgstr "Änderungsstypen"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1676
 msgid "The state transition types you want to get notifications for"
 msgstr ""
-"Die Arten von Statusänderungen, für die Benachrichtigungen verschickt werden "
-"sollen"
+"Die Art von Zustands-Änderungen, für die Benachrichtigungen verschickt "
+"werden sollen"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1688
 msgid "State and transition type filters"
-msgstr "Status- und Übergangstypen-Filter"
+msgstr "Zustands- und Übergangstypen-Filter"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:243
 msgid "- add more -"
@@ -7001,12 +6999,12 @@ msgstr "Nach oben bewegen"
 msgid "Move down"
 msgstr "Nach unten bewegen"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/QuickForm.php:220
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/QuickForm.php:221
 msgid "Submit"
 msgstr "Absenden"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/QuickForm.php:523
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/QuickForm.php:550
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/QuickForm.php:524
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/QuickForm.php:551
 msgid "Form has successfully been sent"
 msgstr "Formular wurde erfolgreich abgeschickt"
 
@@ -7346,7 +7344,7 @@ msgstr "via"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:154
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableService.php:103
 msgid "Servicename"
-msgstr "Servicename"
+msgstr "Service-Name"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaHostAppliedForServiceTable.php:102
 msgid "Service name"
@@ -7363,7 +7361,6 @@ msgid "This set has been inherited from %s"
 msgstr "Dieses Set wurde von %s geerbt"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:191
-#, fuzzy
 msgid "Remove"
 msgstr "Entfernen"
 

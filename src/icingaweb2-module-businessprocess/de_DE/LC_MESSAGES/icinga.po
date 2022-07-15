@@ -25,8 +25,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 15:40+0000\n"
-"PO-Revision-Date: 2022-05-31 09:37+0000\n"
+"POT-Creation-Date: 2022-07-15 09:37+0000\n"
+"PO-Revision-Date: 2022-07-12 08:43+0000\n"
 "Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
 "Language-Team: German <https://translate.icinga.com/projects/icinga/"
 "icingaweb2-module-businessprocess/de/>\n"
@@ -79,7 +79,7 @@ msgstr "%d angewendete Simulation(en) wurde(n) entfernt"
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:332
 #, php-format
 msgid "This process has %d pending change(s)."
-msgstr "Dieser Prozess hat %d ungesicherte Änderung(en)"
+msgstr "Dieser Prozess hat %d ungesicherte Änderung(en)."
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:340
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:130
@@ -128,7 +128,7 @@ msgstr "Änderungen hervorheben"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:485
 msgid "Diff"
-msgstr "Diff"
+msgstr "Vergleich"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:495
 msgid "Download process configuration"
@@ -240,7 +240,7 @@ msgstr "NICHT"
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:118
 #: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:65
 msgid "DEGRADED"
-msgstr ""
+msgstr "HERABGESETZT"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:121
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:119
@@ -336,25 +336,21 @@ msgstr "URL zu mehr Informationen über diesen Knoten"
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:238
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:183
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:221
-#, fuzzy
 msgid "Host"
 msgstr "Host"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:167
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:258
-#, fuzzy
 msgid "Service"
 msgstr "Service"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:168
-#, fuzzy
 msgid "Hosts from filter"
-msgstr "Benutzerdefinierter Filter"
+msgstr "Hosts basierend auf Filter"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:169
-#, fuzzy
 msgid "Services from filter"
-msgstr "Serviceprobleme"
+msgstr "Services basierend auf Filter"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:181
 msgid "Existing Process"
@@ -414,12 +410,12 @@ msgstr ""
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:328
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:237
 msgid "Override Host State"
-msgstr "Überschreibe Host-Zustand"
+msgstr "Überschreibe Host Zustand"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:329
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:238
 msgid "Enable host state overrides"
-msgstr "Aktiviere Host-Zustand Überschreibung"
+msgstr "Aktiviere Host Zustand Überschreibung"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:337
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:356
@@ -431,12 +427,12 @@ msgstr "Zustand überschreiben"
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:347
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:270
 msgid "Override Service State"
-msgstr "Überschreibe Service-Zustand"
+msgstr "Überschreibe Service Zustand"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:348
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:271
 msgid "Enable service state overrides"
-msgstr "Aktiviere Service-Zustand Überschreibung"
+msgstr "Aktiviere Service Zustand Überschreibung"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:389
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:288
@@ -476,7 +472,7 @@ msgid ""
 "Icinga Web Monitoring Backend where current object states for this process "
 "should be retrieved from"
 msgstr ""
-"Das Icinga Web Monitoring Backend von welchem die Status-Informationen für "
+"Das Icinga Web Monitoring Backend von welchem die Zustands-Informationen für "
 "diesen Prozess bezogen werden sollen"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:62
@@ -485,19 +481,19 @@ msgstr "Benutze das konfigurierte Standard-Backend"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:68
 msgid "State Type"
-msgstr "Status-Typ"
+msgstr "Zustands-Typ"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:71
 msgid "Whether this process should be based on Icinga hard or soft states"
-msgstr "Ob dieser Prozess auf Icinga's Hard- oder Softstates basieren soll"
+msgstr "Auf welchem Zustands-Typ (Hard oder Soft) dieser Prozess basieren soll"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:74
 msgid "Use SOFT states"
-msgstr "SOFT-States benutzen"
+msgstr "Zustands-Typ \"Soft\" benutzen"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:75
 msgid "Use HARD states"
-msgstr "HARD-States benutzen"
+msgstr "Zustands-Typ \"Hard\" benutzen"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:80
 msgid "Add to menu"
@@ -518,27 +514,27 @@ msgstr "Nein"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:92
 msgid "Allowed Users"
-msgstr ""
+msgstr "Erlaubte Nutzer"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:94
 msgid "Allowed Users (comma-separated)"
-msgstr ""
+msgstr "Erlaubte Nutzer (Komma-getrennt)"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:99
 msgid "Allowed Groups"
-msgstr ""
+msgstr "Erlaubte Gruppen"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:101
 msgid "Allowed Groups (comma-separated)"
-msgstr ""
+msgstr "Erlaubte Gruppen (Komma-getrennt)"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:106
 msgid "Allowed Roles"
-msgstr ""
+msgstr "Erlaubte Rollen"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:108
 msgid "Allowed Roles (comma-separated)"
-msgstr ""
+msgstr "Erlaubte Rollen (Komma-getrennt)"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:114
 msgid "Add"
@@ -662,11 +658,11 @@ msgstr "Simulation wurde entfernt"
 #: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:129
 #, php-format
 msgid "Use current state (%s)"
-msgstr "Aktuellen Status benutzen (%s)"
+msgstr "Aktuellen Zustand benutzen (%s)"
 
 #: sources.d/icingaweb2-module-businessprocess/application/views/helpers/FormStateOverrides.php:26
 msgid "Keep actual state"
-msgstr "Behalte eigentlichen Status"
+msgstr "Behalte tatsächlichen Zustand"
 
 #: sources.d/icingaweb2-module-businessprocess/application/views/scripts/host/show.phtml:10
 #: sources.d/icingaweb2-module-businessprocess/application/views/scripts/service/show.phtml:11
@@ -791,8 +787,8 @@ msgstr "Zeige Übersicht"
 #, php-format
 msgid "%u Child"
 msgid_plural "%u Children"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u Kind"
+msgstr[1] "%u Kinder"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:201
 msgid "Show tiles for this subtree"
@@ -851,7 +847,7 @@ msgstr "Neuen Geschäfts-Prozess hinzufügen"
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/State/MonitoringState.php:41
 #, php-format
 msgid "Could not retrieve process state: %s"
-msgstr "Konnte den Prozess-Status nicht ermitteln: %s"
+msgstr "Konnte den Prozess-Zustand nicht ermitteln: %s"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:45
 msgid "Welcome to your Business Process Overview"
