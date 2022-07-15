@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 15:40+0000\n"
+"POT-Creation-Date: 2022-07-15 09:37+0000\n"
 "PO-Revision-Date: 2022-06-14 09:57+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@mail.ru>\n"
 "Language-Team: Russian <https://translate.icinga.com/projects/icinga/"
@@ -107,8 +107,6 @@ msgstr "Время ввода"
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:66
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:115
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:135
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:328
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:329
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:48
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:90
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:84
@@ -129,8 +127,6 @@ msgstr[2] "Узлов"
 #: sources.d/icingadb-web/application/controllers/CommentsController.php:48
 #: sources.d/icingadb-web/application/controllers/DowntimesController.php:49
 #: sources.d/icingadb-web/application/controllers/ServiceController.php:189
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:333
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:334
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:54
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:96
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:94
@@ -262,8 +258,8 @@ msgid "Health"
 msgstr "Состояние"
 
 #: sources.d/icingadb-web/application/controllers/HealthController.php:41
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:41
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:84
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:60
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:101
 msgid ""
 "It seems that Icinga DB is not running. Make sure Icinga DB is running and "
 "writing into the database."
@@ -307,6 +303,7 @@ msgstr "История"
 #: sources.d/icingadb-web/application/controllers/HostController.php:139
 #: sources.d/icingadb-web/application/controllers/ServiceController.php:144
 #: sources.d/icingadb-web/library/Icingadb/Model/History.php:60
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:62
 msgid "Event Time"
 msgstr "Время события"
 
@@ -1909,7 +1906,7 @@ msgid "No custom variables configured."
 msgstr "Нет настроенных пользовательских переменных."
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:220
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:210
+#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:233
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:219
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:40
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UsergroupDetail.php:48
@@ -1943,74 +1940,141 @@ msgid "unknown"
 msgstr "неизвестен"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/ActionUrl.php:37
+#: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:43
+#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:40
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:51
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:61
+#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:39
+#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:43
+#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:40
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:51
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:81
+#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:28
+#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:41
+#: sources.d/icingadb-web/library/Icingadb/Model/IconImage.php:36
+#: sources.d/icingadb-web/library/Icingadb/Model/NotesUrl.php:37
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:50
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:43
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:40
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:75
+#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:25
+#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:41
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:39
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:48
+#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:41
+#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:41
 #, fuzzy
-msgid "Acknowledgement Environment Id (History)"
-msgstr "Комментарий идентификатора среды"
+msgid "Environment Id"
+msgstr "Идентификатор среды зоны"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:62
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:52
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:118
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:109
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:58
 #, fuzzy
-msgid "Acknowledgement Endpoint Id (History)"
-msgstr "Подтверждение установлено"
+msgid "Endpoint Id"
+msgstr "Влияние состояния узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:52
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:62
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:65
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:53
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:59
 #, fuzzy
-msgid "Acknowledgement Object Type (History)"
-msgstr "Срок действия подтверждения истек"
+msgid "Object Type"
+msgstr "Комментарий типа объекта"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:53
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:63
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:66
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:78
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:60
 #, fuzzy
-msgid "Acknowledgement Host Id (History)"
-msgstr "Подтверждение установлено"
+msgid "Host Id"
+msgstr "Влияние состояния узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:60
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:64
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:67
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:61
 #, fuzzy
-msgid "Acknowledgement Service Id (History)"
-msgstr "Подтверждение очищено автором"
+msgid "Service Id"
+msgstr "Служба"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:59
 #, fuzzy
-msgid "Acknowledgement Set Time (History)"
+msgid "Acknowledgement Set Time"
 msgstr "Подтверждение установлено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:60
-msgid "Acknowledgement Clear Time (History)"
-msgstr "Время очистки подтверждения (история)"
+#, fuzzy
+msgid "Acknowledgement Clear Time"
+msgstr "Подтверждение очищено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:61
-msgid "Acknowledgement Author (History)"
-msgstr "Автор подтверждения (история)"
+#, fuzzy
+msgid "Acknowledgement Author"
+msgstr "Подтверждение установлено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:62
-msgid "Acknowledgement Cleared By (History)"
-msgstr "Подтверждение очищено (история)"
+#, fuzzy
+msgid "Acknowledgement Cleared By"
+msgstr "Подтверждение очищено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:63
-msgid "Acknowledgement Comment (History)"
-msgstr "Подтвержденных комментариев (история)"
+#, fuzzy
+msgid "Acknowledgement Comment"
+msgstr "Подтверждение установлено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:64
 #, fuzzy
-msgid "Acknowledgement Expire Time (History)"
+msgid "Acknowledgement Expire Time"
 msgstr "Срок действия подтверждения истек"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:65
 #, fuzzy
-msgid "Acknowledgement Is Sticky (History)"
+msgid "Acknowledgement Is Sticky"
 msgstr "Это подтверждение неприятно."
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:66
 #, fuzzy
-msgid "Acknowledgement Is Persistent (History)"
+msgid "Acknowledgement Is Persistent"
 msgstr "Подтверждение установлено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ActionUrl.php:36
 msgid "Action Url"
 msgstr "URL действия"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ActionUrl.php:37
-#, fuzzy
-msgid "Action Url Environment Id"
-msgstr "Оповещение"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Behavior/FlattenedObjectVars.php:64
 #, php-format
@@ -2019,15 +2083,22 @@ msgid " %s"
 msgstr " %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:65
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:81
+#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:44
+#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:116
+#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:64
+#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:107
+#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:49
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:60
+#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:47
 #, fuzzy
-msgid "Checkcommand Zone Id"
-msgstr "Комментарии"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:43
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:40
-#, fuzzy
-msgid "Checkcommand Environment Id"
-msgstr "Комментарий идентификатора среды"
+msgid "Zone Id"
+msgstr "Влияние состояния узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:44
 #, fuzzy
@@ -2041,6 +2112,8 @@ msgid "Checkcommand Properties Checksum"
 msgstr "Проверки узлов и служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:46
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:91
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:82
 #, fuzzy
 msgid "Checkcommand Name"
 msgstr "Команда проверки %s"
@@ -2061,19 +2134,17 @@ msgid "Checkcommand Timeout"
 msgstr "Команда проверки %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:45
+#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:38
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:92
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:83
 #, fuzzy
-msgid "Checkcommand Argument Command Id"
-msgstr "Определение команды проверки"
+msgid "Checkcommand Id"
+msgstr "Команда проверки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:46
 #, fuzzy
-msgid "Checkcommand Argument Key"
+msgid "Checkcommand Argument Name"
 msgstr "Аргументы команды: %s"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:47
-#, fuzzy
-msgid "Checkcommand Argument Environment Id"
-msgstr "Комментарий идентификатора среды"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:48
 #, fuzzy
@@ -2087,8 +2158,8 @@ msgstr "Аргументы команды: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:50
 #, fuzzy
-msgid "Checkcommand Argument Order"
-msgstr "Аргументы команды: %s"
+msgid "Checkcommand Argument Position"
+msgstr "Определение команды проверки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:51
 #, fuzzy
@@ -2096,12 +2167,13 @@ msgid "Checkcommand Argument Description"
 msgstr "Определение команды проверки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:52
-msgid "Checkcommand Argument Key Override"
-msgstr ""
+#, fuzzy
+msgid "Checkcommand Argument Actual Name"
+msgstr "Аргументы команды: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:53
 #, fuzzy
-msgid "Checkcommand Argument Repeat Key"
+msgid "Checkcommand Argument Repeated"
 msgstr "Аргументы команды: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:54
@@ -2111,44 +2183,23 @@ msgstr "Определение команды проверки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:55
 #, fuzzy
-msgid "Checkcommand Argument Set If"
-msgstr "Аргументы команды: %s"
+msgid "Checkcommand Argument Condition"
+msgstr "Определение команды проверки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:56
 #, fuzzy
-msgid "Checkcommand Argument Skip Key"
-msgstr "Определение команды проверки"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:38
-#, fuzzy
-msgid "Checkcommand Envvar Command Id"
-msgstr "Комментарий идентификатора среды"
+msgid "Checkcommand Argument Without Name"
+msgstr "Аргументы команды: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:39
 #, fuzzy
-msgid "Checkcommand Envvar Key"
+msgid "Checkcommand Envvar Name"
 msgstr "Команда проверки %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:42
 #, fuzzy
 msgid "Checkcommand Envvar Value"
 msgstr "Команда проверки %s"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:51
-msgid "Comment Environment Id"
-msgstr "Комментарий идентификатора среды"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:52
-msgid "Comment Object Type"
-msgstr "Комментарий типа объекта"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:53
-msgid "Comment Host Id"
-msgstr "Комментарий идентификатора узла"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:54
-msgid "Comment Service Id"
-msgstr "Комментарий идентификатора службы"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:55
 msgid "Comment Name Checksum"
@@ -2163,10 +2214,12 @@ msgid "Comment Name"
 msgstr "Комментарий названия"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:62
 msgid "Comment Author"
 msgstr "Комментарий у автору"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:64
 msgid "Comment Text"
 msgstr "Комментарий к тексту"
 
@@ -2175,129 +2228,60 @@ msgid "Comment Type"
 msgstr "Комментарий к типу"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:61
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:61
 #, fuzzy
 msgid "Comment Entry Time"
 msgstr "Комментарии"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:62
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:66
 #, fuzzy
 msgid "Comment Is Persistent"
 msgstr "Комментарии"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:63
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:67
 #, fuzzy
 msgid "Comment Is Sticky"
 msgstr "Комментарии"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:64
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:68
 #, fuzzy
 msgid "Comment Expire Time"
 msgstr "Комментарии"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:65
-#, fuzzy
-msgid "Comment Zone Id"
-msgstr "Комментарии"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:56
-#, fuzzy
-msgid "Comment Environment Id (History)"
-msgstr "Комментарий идентификатора среды"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:57
-#, fuzzy
-msgid "Comment Endpoint Id (History)"
-msgstr "Комментарий идентификатора среды"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:58
-#, fuzzy
-msgid "Comment Object Type (History)"
-msgstr "Комментарий типа объекта"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:59
-#, fuzzy
-msgid "Comment Host Id (History)"
-msgstr "Комментарий идентификатора узла"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:60
-#, fuzzy
-msgid "Comment Service Id (History)"
-msgstr "Комментарий идентификатора службы"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:61
-#, fuzzy
-msgid "Comment Entry Time (History)"
-msgstr "Комментарии"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:62
-#, fuzzy
-msgid "Comment Author (History)"
-msgstr "Комментарий у автору"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:63
 #, fuzzy
-msgid "Comment Removed By (History)"
-msgstr "Комментарий удален автором"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:64
-msgid "Comment Comment (History)"
-msgstr ""
+msgid "Comment Removed By"
+msgstr "Комментарий удален"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:65
 #, fuzzy
-msgid "Comment Entry Type (History)"
-msgstr "Комментарии"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:66
-#, fuzzy
-msgid "Comment Is Persistent (History)"
-msgstr "Комментарии"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:67
-#, fuzzy
-msgid "Comment Is Sticky (History)"
-msgstr "Это подтверждение неприятно."
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:68
-#, fuzzy
-msgid "Comment Expire Time (History)"
+msgid "Comment Entry Type"
 msgstr "Комментарии"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:69
 #, fuzzy
-msgid "Comment Remove Time (History)"
+msgid "Comment Remove Time"
 msgstr "Комментарий удален автором"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:70
 #, fuzzy
-msgid "Comment Has Been Removed (History)"
+msgid "Comment Has Been Removed"
 msgstr "Комментарий удален автором"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:59
-msgid "Downtime Environment Id"
-msgstr "Идентификатор среды времени простоя"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:60
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:63
 #, fuzzy
-msgid "Downtime Triggered By Id"
-msgstr "Время простоя службы"
+msgid "Triggered By Downtime Id"
+msgstr "Фиксированное время простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:61
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:64
 #, fuzzy
-msgid "Downtime Parent Id"
-msgstr "Имя зоны"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:62
-msgid "Downtime Object Type"
-msgstr "Тип объекта времени простоя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:63
-msgid "Downtime Host Id"
-msgstr "Время простоя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:64
-msgid "Downtime Service Id"
-msgstr "Время простоя службы"
+msgid "Parent Downtime Id"
+msgstr "Текущие времени простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:65
 msgid "Downtime Name Checksum"
@@ -2313,24 +2297,29 @@ msgid "Downtime Name"
 msgstr "Время простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:68
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:69
 #, fuzzy
 msgid "Downtime Author"
 msgstr "Время простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:69
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:71
 #, fuzzy
 msgid "Downtime Comment"
 msgstr "Время простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:70
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:68
 msgid "Downtime Entry Time"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:71
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:74
 msgid "Downtime Scheduled Start"
 msgstr "Запланированное начало времени простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:72
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:75
 #, fuzzy
 msgid "Downtime Scheduled End"
 msgstr "Запланированное окончание"
@@ -2340,11 +2329,13 @@ msgid "Downtime Scheduled Duration"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:74
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:72
 #, fuzzy
 msgid "Downtime Is Flexible"
 msgstr "Время простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:75
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:73
 msgid "Downtime Flexible Duration"
 msgstr ""
 
@@ -2354,10 +2345,12 @@ msgid "Downtime Is In Effect"
 msgstr "В процессе"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:77
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:76
 msgid "Downtime Actual Start"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:78
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:77
 msgid "Downtime Actual End"
 msgstr ""
 
@@ -2368,115 +2361,28 @@ msgstr "Настройки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:80
 #, fuzzy
-msgid "Downtime Scheduled By"
-msgstr "Запланированное окончание"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:81
-#, fuzzy
-msgid "Downtime Zone Id"
-msgstr "Время простоя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:61
-#, fuzzy
-msgid "Downtime Environment Id (History)"
-msgstr "Идентификатор среды времени простоя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:62
-#, fuzzy
-msgid "Downtime Endpoint Id (History)"
-msgstr "Идентификатор среды времени простоя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:63
-msgid "Downtime Triggered By Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:64
-#, fuzzy
-msgid "Downtime Parent Id (History)"
-msgstr "Идентификатор среды времени простоя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:65
-#, fuzzy
-msgid "Downtime Object Type (History)"
-msgstr "Тип объекта времени простоя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:66
-#, fuzzy
-msgid "Downtime Host Id (History)"
-msgstr "Время простоя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:67
-#, fuzzy
-msgid "Downtime Service Id (History)"
-msgstr "Время простоя службы"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:68
-msgid "Downtime Entry Time (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:69
-#, fuzzy
-msgid "Downtime Author (History)"
-msgstr "Время простоя"
+msgid "Scheduled By Downtime"
+msgstr "Запланировать время простоя"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:70
 #, fuzzy
-msgid "Downtime Cancelled By (History)"
-msgstr "Время простоя отменено автором"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:71
-#, fuzzy
-msgid "Downtime Comment (History)"
-msgstr "Время простоя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:72
-#, fuzzy
-msgid "Downtime Is Flexible (History)"
-msgstr "Время простоя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:73
-#, fuzzy
-msgid "Downtime Flexible Duration (History)"
-msgstr "Гибкая продолжительность"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:74
-#, fuzzy
-msgid "Downtime Scheduled Start (History)"
-msgstr "Запланированное начало времени простоя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:75
-#, fuzzy
-msgid "Downtime Scheduled End (History)"
-msgstr "Запланированное окончание"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:76
-#, fuzzy
-msgid "Downtime Actual Start (History)"
-msgstr "Запланированное начало времени простоя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:77
-#, fuzzy
-msgid "Downtime Actual End (History)"
-msgstr "Время простоя"
+msgid "Downtime Cancelled By"
+msgstr "Время простоя отменено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:78
 #, fuzzy
-msgid "Downtime Has Been Cancelled (History)"
+msgid "Downtime Has Been Cancelled"
 msgstr "Время простоя отменено автором"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:79
-msgid "Downtime Trigger Time (History)"
-msgstr ""
+#, fuzzy
+msgid "Downtime Trigger Time"
+msgstr "Время простоя службы"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:80
 #, fuzzy
-msgid "Downtime Cancel Time (History)"
+msgid "Downtime Cancel Time"
 msgstr "Время простоя отменено автором"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:39
-#, fuzzy
-msgid "Endpoint Environment Id"
-msgstr "Комментарий идентификатора среды"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:40
 #, fuzzy
@@ -2489,6 +2395,8 @@ msgid "Endpoint Properties Checksum"
 msgstr "Проверки узлов и служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:117
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:108
 msgid "Endpoint Name"
 msgstr "Имя конечной точки"
 
@@ -2497,25 +2405,10 @@ msgstr "Имя конечной точки"
 msgid "Endpoint Name (CI)"
 msgstr "Имя конечной точки"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:44
-#, fuzzy
-msgid "Endpoint Zone Id"
-msgstr "Влияние состояния узла"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Environment.php:34
 #, fuzzy
 msgid "Environment Name"
 msgstr "Комментарий названия"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:42
-#, fuzzy
-msgid "Eventcommand Zone Id"
-msgstr "Обработчики событий"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:43
-#, fuzzy
-msgid "Eventcommand Environment id"
-msgstr "Комментарий идентификатора среды"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:44
 #, fuzzy
@@ -2528,6 +2421,8 @@ msgid "Eventcommand Properties Checksum"
 msgstr "Проверки узлов и служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:46
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:107
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:98
 #, fuzzy
 msgid "Eventcommand Name"
 msgstr "Обработчики событий"
@@ -2548,18 +2443,17 @@ msgid "Eventcommand Timeout"
 msgstr "Обработчики событий"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:45
-msgid "Eventcommand Argument Command Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:38
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:108
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:99
+#, fuzzy
+msgid "Eventcommand Id"
+msgstr "Обработчики событий"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:46
 #, fuzzy
-msgid "Eventcommand Argument Key"
+msgid "Eventcommand Argument Name"
 msgstr "Аргументы команды: %s"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:47
-#, fuzzy
-msgid "Eventcommand Argument Environment Id"
-msgstr "Комментарий идентификатора среды"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:48
 #, fuzzy
@@ -2573,7 +2467,7 @@ msgstr "Аргументы команды: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:50
 #, fuzzy
-msgid "Eventcommand Argument Order"
+msgid "Eventcommand Argument Position"
 msgstr "Аргументы команды: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:51
@@ -2581,12 +2475,14 @@ msgid "Eventcommand Argument Description"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:52
-msgid "Eventcommand Argument Key Override"
-msgstr ""
+#, fuzzy
+msgid "Eventcommand Argument Actual Name"
+msgstr "Аргументы команды: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:53
-msgid "Eventcommand Argument Repeat Key"
-msgstr ""
+#, fuzzy
+msgid "Eventcommand Argument Repeated"
+msgstr "Аргументы команды: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:54
 msgid "Eventcommand Argument Required"
@@ -2594,26 +2490,18 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:55
 #, fuzzy
-msgid "Eventcommand Argument Set If"
+msgid "Eventcommand Argument Condition"
 msgstr "Аргументы команды: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:56
-msgid "Eventcommand Argument Skip Key"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:38
-msgid "Eventcommand Envvar Command Id"
-msgstr ""
+#, fuzzy
+msgid "Eventcommand Argument Without Name"
+msgstr "Аргументы команды: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:39
 #, fuzzy
-msgid "Eventcommand Envvar Key"
+msgid "Eventcommand Envvar Name"
 msgstr "Обработчики событий"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:40
-#, fuzzy
-msgid "Eventcommand Envvar Environment Id"
-msgstr "Комментарий идентификатора среды"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:41
 #, fuzzy
@@ -2625,82 +2513,38 @@ msgstr "Проверки узлов и служб"
 msgid "Eventcommand Envvar Value"
 msgstr "Обработчики событий"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:51
-#, fuzzy
-msgid "Flapping Environment Id (History)"
-msgstr "Оповещение"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:52
-msgid "Flapping Endpoint Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:53
-msgid "Flapping Object Type (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:54
-msgid "Flapping Host Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:55
-msgid "Flapping Service Id (History)"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:56
-msgid "Flapping Start Time (History)"
-msgstr ""
+#, fuzzy
+msgid "Flapping Start Time"
+msgstr "Флепинг начался"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:57
-msgid "Flapping End Time (History)"
-msgstr ""
+#, fuzzy
+msgid "Flapping End Time"
+msgstr "Все узлы разрешены"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:58
-msgid "Flapping Percent State Change Start (History)"
+msgid "Flapping Percent State Change Start"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:59
-msgid "Flapping Percent State Change End (History)"
-msgstr ""
+#, fuzzy
+msgid "Flapping Percent State Change End"
+msgstr "Последнее изменение состояния"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:60
-msgid "Flapping Threshold Low (History)"
-msgstr ""
+#, fuzzy
+msgid "Flapping Threshold Low"
+msgstr "Флепинг начался"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:61
-msgid "Flapping Threshold High (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:54
 #, fuzzy
-msgid "Environment Id (History)"
-msgstr "Комментарий идентификатора среды"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:55
-#, fuzzy
-msgid "Endpoint Id (History)"
-msgstr "Конечные точки"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:56
-#, fuzzy
-msgid "Event Object Type"
-msgstr "Комментарий типа объекта"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:57
-msgid "Host Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:58
-#, fuzzy
-msgid "Service Id (History)"
-msgstr "Набор служб"
+msgid "Flapping Threshold High"
+msgstr "Флепинг начался"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/History.php:59
 msgid "Event Type"
 msgstr "Тип события"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:81
-msgid "Host Environment Id"
-msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:82
 #, fuzzy
@@ -2736,27 +2580,24 @@ msgstr "Адрес узла (IPv4, двоичный)"
 msgid "Host Address (IPv6, Binary)"
 msgstr "Адрес узла (IPv6, двоичный)"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:91
-msgid "Host Checkcommand"
-msgstr "Команда проверки узла"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:92
-msgid "Host Checkcommand Id"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:93
 msgid "Host Max Check Attempts"
 msgstr "Максимальное кол-во попыток проверки узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:94
-msgid "Host Check Timeperiod"
-msgstr "Период времени проверки узла"
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:85
+#, fuzzy
+msgid "Check Timeperiod Name"
+msgstr "Название периода времени"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:95
-msgid "Host Check Timeperiod Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:86
+#, fuzzy
+msgid "Check Timeperiod Id"
+msgstr "Период времени проверки узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:96
+#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:51
 msgid "Host Check Timeout"
 msgstr "Тайм-аут проверки узла"
 
@@ -2806,26 +2647,21 @@ msgstr ""
 msgid "Host Performance Data Enabled"
 msgstr "Данные производительности"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:107
-msgid "Host Eventcommand"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:108
-msgid "Host Eventcommand Id"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:109
 msgid "Host Is Volatile"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:110
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:101
 #, fuzzy
-msgid "Host Action Url Id"
-msgstr "Действие узла"
+msgid "Action Url Id"
+msgstr "URL действия"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:111
-msgid "Host Notes Url Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:102
+#, fuzzy
+msgid "Notes Url Id"
+msgstr "URL примечания"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:112
 #, fuzzy
@@ -2833,34 +2669,22 @@ msgid "Host Notes"
 msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:113
-msgid "Host Icon Image Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:104
+#, fuzzy
+msgid "Icon Image Id"
+msgstr "Изображение иконки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:114
-msgid "Host Icon Image Alt"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:105
+#, fuzzy
+msgid "Icon Image Alt"
+msgstr "Изображение иконки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:115
-msgid "Host Zone"
-msgstr "Область узла"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:116
-#, fuzzy
-msgid "Host Zone Id"
-msgstr "Влияние состояния узла"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:117
-msgid "Host Command Endpoint"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:118
-msgid "Host Command Endpoint Id"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:28
-#, fuzzy
-msgid "Host State Environment Id"
-msgstr "Идентификатор среды времени простоя"
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:106
+#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:44
+msgid "Zone Name"
+msgstr "Название зоны"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:29
 #, fuzzy
@@ -2887,7 +2711,8 @@ msgid "Host Previous Hard State"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:34
-msgid "Host State Attempt No."
+#, fuzzy
+msgid "Host Check Attempt No."
 msgstr "Нет попытки состояния узла."
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:35
@@ -2897,112 +2722,104 @@ msgstr "Влияние состояния узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:36
 #, fuzzy
-msgid "Host State Output"
+msgid "Host Output"
 msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:37
 #, fuzzy
-msgid "Host State Long Output"
+msgid "Host Long Output"
 msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:38
 #, fuzzy
-msgid "Host State Performance Data"
+msgid "Host Performance Data"
 msgstr "Данные производительности"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:39
 #, fuzzy
-msgid "Host State Normalized Performance Data"
+msgid "Host Normalized Performance Data"
 msgstr "Данные производительности"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:40
 #, fuzzy
-msgid "Host State Check Commandline"
+msgid "Host Check Commandline"
 msgstr "Команда проверки узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:41
 #, fuzzy
-msgid "Host State Is Problem"
+msgid "Host Has Problem"
 msgstr "Проблемы с узлами"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:42
 #, fuzzy
-msgid "Host State Is Handled"
+msgid "Host Is Handled"
 msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:43
 #, fuzzy
-msgid "Host State Is Reachable"
+msgid "Host Is Reachable"
 msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:44
 #, fuzzy
-msgid "Host State Is Flapping"
+msgid "Host Is Flapping"
 msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:45
 #, fuzzy
-msgid "Host State Is Overdue"
+msgid "Host Check Is Overdue"
 msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:46
 #, fuzzy
-msgid "Host State Is Acknowledged"
+msgid "Host Is Acknowledged"
 msgstr "Не обработано"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:44
 #, fuzzy
-msgid "Host State Acknowledgement Comment Id"
+msgid "Acknowledgement Comment Id"
 msgstr "Подтверждение установлено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:48
 #, fuzzy
-msgid "Host State In Downtime"
+msgid "Host In Downtime"
 msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:49
 #, fuzzy
-msgid "Host State Execution Time"
+msgid "Host Check Execution Time"
 msgstr "Время выполнения"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:50
 #, fuzzy
-msgid "Host State Latency"
+msgid "Host Check Latency"
 msgstr "Состояние узлов"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:51
-#, fuzzy
-msgid "Host State Timeout"
-msgstr "Тайм-аут проверки узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:52
 #, fuzzy
-msgid "Host State Check Source"
+msgid "Host Check Source"
 msgstr "Источник проверок"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:53
 #, fuzzy
-msgid "Host State Last Update"
+msgid "Host Last Update"
 msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:54
 #, fuzzy
-msgid "Host State Last State Change"
+msgid "Host Last State Change"
 msgstr "Последнее изменение состояния"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:55
 #, fuzzy
-msgid "Host State Next Check"
+msgid "Host Next Check"
 msgstr "Проверки узлов и служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:56
 #, fuzzy
-msgid "Host State Next Update"
+msgid "Host Next Update"
 msgstr "Состояние узлов"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:41
-msgid "Hostgroup Environment Id"
-msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:42
 #, fuzzy
@@ -3029,33 +2846,13 @@ msgstr "Название группы узлов"
 msgid "Hostgroup Display Name"
 msgstr "Название группы узлов"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:47
-#, fuzzy
-msgid "Hostgroup Zone Id"
-msgstr "Группы узлов"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/IconImage.php:35
 msgid "Icon Image"
 msgstr "Изображение иконки"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/IconImage.php:36
-#, fuzzy
-msgid "Icon Image Environment Id"
-msgstr "Идентификатор среды времени простоя"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/NotesUrl.php:36
 msgid "Notes Url"
 msgstr "URL примечания"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotesUrl.php:37
-#, fuzzy
-msgid "Notes Url Environment Id"
-msgstr "Идентификатор среды времени простоя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:50
-#, fuzzy
-msgid "Notification Environment Id"
-msgstr "Оповещение"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:51
 #, fuzzy
@@ -3075,133 +2872,90 @@ msgstr "Название оповещения"
 msgid "Notification Name (CI)"
 msgstr "Название оповещения (CI)"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:55
-#, fuzzy
-msgid "Notification Host Id"
-msgstr "Уведомления"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:56
-#, fuzzy
-msgid "Notification Service Id"
-msgstr "Оповещение"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:45
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:38
 #, fuzzy
-msgid "Notification Command Id"
+msgid "Notificationcommand Id"
 msgstr "Уведомления"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:58
 #, fuzzy
-msgid "Notification Times Begin"
-msgstr "Шаблоны уведомления"
+msgid "Notification Escalate After"
+msgstr "Состояния уведомлений"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:59
 #, fuzzy
-msgid "Notification Times End"
-msgstr "Шаблоны уведомления"
+msgid "Notification Escalate Until"
+msgstr "Состояния уведомлений"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:60
 msgid "Notification Interval"
 msgstr "Интервал оповещения"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:61
+#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:37
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:57
 #, fuzzy
-msgid "Notification Timeperiod Id"
-msgstr "Оповещение"
+msgid "Timeperiod Id"
+msgstr "Период времени %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:62
-msgid "Notification States"
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:58
+#, fuzzy
+msgid "Notification State Filter"
 msgstr "Состояния уведомлений"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:63
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:59
 #, fuzzy
-msgid "Notification Types"
-msgstr "Оповещение"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:64
-#, fuzzy
-msgid "Notification Zone Id"
+msgid "Notification Type Filter"
 msgstr "Оповещение"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:54
 #, fuzzy
-msgid "Notification History Id"
-msgstr "Уведомления"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:55
-#, fuzzy
-msgid "Notification Environment Id (History)"
-msgstr "Оповещение"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:56
-#, fuzzy
-msgid "Notification Endpoint Id (History)"
-msgstr "Оповещение"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:57
-#, fuzzy
-msgid "Notification Object Type (History)"
-msgstr "Оповещение"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:58
-#, fuzzy
-msgid "Notification Host Id (History)"
-msgstr "Уведомления"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:59
-#, fuzzy
-msgid "Notification Service Id (History)"
-msgstr "Оповещение"
+msgid "History Id"
+msgstr "История"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:60
 #, fuzzy
-msgid "Notification Id (History)"
+msgid "Notification Id"
 msgstr "Оповещение"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:61
 #, fuzzy
-msgid "Notification Type (History)"
+msgid "Notification Type"
 msgstr "Оповещение"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:62
 #, fuzzy
-msgid "Notification Sent On (History)"
+msgid "Notification Sent On"
 msgstr "Оповещение"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:63
 #, fuzzy
-msgid "Notification Object State (History)"
-msgstr "Оповещение"
+msgid "Hard State"
+msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:64
 #, fuzzy
-msgid "Notification Previous Object State (History)"
-msgstr "Оповещение"
+msgid "Previous Hard State"
+msgstr "Состояние служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:65
 #, fuzzy
-msgid "Notification Author (History)"
+msgid "Notification Author"
 msgstr "Оповещение"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:66
 #, fuzzy
-msgid "Notification Text (History)"
+msgid "Notification Text"
 msgstr "Оповещение"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:67
 #, fuzzy
-msgid "Notification Users Notified (History)"
-msgstr "Уведомления"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:42
-#, fuzzy
-msgid "Notificationcommand Zone Id"
-msgstr "Уведомления"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:43
-#, fuzzy
-msgid "Notificationcommand Environment Id"
-msgstr "Оповещение"
+msgid "Users Notified"
+msgstr "Пользователь не найден"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:44
 #, fuzzy
@@ -3233,20 +2987,10 @@ msgstr "Уведомления"
 msgid "Notificationcommand Timeout"
 msgstr "Уведомления"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:45
-#, fuzzy
-msgid "Notificationcommand Argument Command Id"
-msgstr "Уведомления"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:46
 #, fuzzy
-msgid "Notificationcommand Argument Key"
+msgid "Notificationcommand Argument Name"
 msgstr "Уведомления"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:47
-#, fuzzy
-msgid "Notificationcommand Argument Environment Id"
-msgstr "Оповещение"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:48
 #, fuzzy
@@ -3260,7 +3004,7 @@ msgstr "Уведомления"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:50
 #, fuzzy
-msgid "Notificationcommand Argument Order"
+msgid "Notificationcommand Argument Position"
 msgstr "Уведомления"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:51
@@ -3270,12 +3014,12 @@ msgstr "Уведомления"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:52
 #, fuzzy
-msgid "Notificationcommand Argument Key Override"
+msgid "Notificationcommand Argument Actual Name"
 msgstr "Уведомления"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:53
 #, fuzzy
-msgid "Notificationcommand Argument Repeat Key"
+msgid "Notificationcommand Argument Repeated"
 msgstr "Уведомления"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:54
@@ -3285,28 +3029,18 @@ msgstr "Уведомления"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:55
 #, fuzzy
-msgid "Notificationcommand Argument Set If"
+msgid "Notificationcommand Argument Condition"
 msgstr "Уведомления"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:56
 #, fuzzy
-msgid "Notificationcommand Argument Skip Key"
+msgid "Notificationcommand Argument Without Name"
 msgstr "Уведомления"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:38
-#, fuzzy
-msgid "Notificationcommand Envvar Command Id"
-msgstr "Оповещение"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:39
 #, fuzzy
 msgid "Notificationcommand Envvar Key"
 msgstr "Уведомления"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:40
-#, fuzzy
-msgid "Notificationcommand Envvar Environment Id"
-msgstr "Оповещение"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:41
 #, fuzzy
@@ -3318,11 +3052,6 @@ msgstr "Проверки узлов и служб"
 msgid "Notificationcommand Envvar Value"
 msgstr "Уведомления"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:75
-#, fuzzy
-msgid "Service Environment Id"
-msgstr "Влияние состояния службы"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:76
 #, fuzzy
 msgid "Service Name Checksum"
@@ -3332,11 +3061,6 @@ msgstr "Название службы"
 #, fuzzy
 msgid "Service Properties Checksum"
 msgstr "Проблемы служб"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:78
-#, fuzzy
-msgid "Service Host Id"
-msgstr "Группы служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:80
 #, fuzzy
@@ -3348,31 +3072,13 @@ msgstr "Название службы"
 msgid "Service Display Name"
 msgstr "Название службы"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:82
-#, fuzzy
-msgid "Service Checkcommand"
-msgstr "Последняя проверка службы"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:83
-#, fuzzy
-msgid "Service Checkcommand Id"
-msgstr "Последняя проверка службы"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:84
 #, fuzzy
 msgid "Service Max Check Attempts"
 msgstr "Попытки проверки"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:85
-#, fuzzy
-msgid "Service Check Timeperiod"
-msgstr "Влияние состояния службы"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:86
-msgid "Service Check Timeperiod Id"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:87
+#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:48
 #, fuzzy
 msgid "Service Check Timeout"
 msgstr "Последняя проверка службы"
@@ -3424,68 +3130,15 @@ msgstr ""
 msgid "Service Performance Data Enabled"
 msgstr "Данные производительности"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:98
-#, fuzzy
-msgid "Service Eventcommand"
-msgstr "Влияние состояния службы"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:99
-#, fuzzy
-msgid "Service Eventcommand Id"
-msgstr "Влияние состояния службы"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:100
 #, fuzzy
 msgid "Service Is Volatile"
 msgstr "Состояние служб"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:101
-#, fuzzy
-msgid "Service Action Url Id"
-msgstr "Действие службы"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:102
-#, fuzzy
-msgid "Service Notes Url Id"
-msgstr "Влияние состояния службы"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:103
 #, fuzzy
 msgid "Service Notes"
 msgstr "Состояние служб"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:104
-#, fuzzy
-msgid "Service Icon Image Id"
-msgstr "Влияние состояния службы"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:105
-#, fuzzy
-msgid "Service Icon Image Alt"
-msgstr "Действие службы"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:106
-#, fuzzy
-msgid "Service Zone"
-msgstr "Действие службы"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:107
-#, fuzzy
-msgid "Service Zone Id"
-msgstr "Действие службы"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:108
-msgid "Service Command Endpoint"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:109
-msgid "Service Command Endpoint Id"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:25
-#, fuzzy
-msgid "Service State Environment Id"
-msgstr "Влияние состояния службы"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:26
 #, fuzzy
@@ -3514,7 +3167,7 @@ msgstr "Состояние служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:31
 #, fuzzy
-msgid "Service State Attempt No."
+msgid "Service Check Attempt No."
 msgstr "Попытки проверки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:32
@@ -3524,113 +3177,98 @@ msgstr "Влияние состояния службы"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:33
 #, fuzzy
-msgid "Service State Output"
+msgid "Service Output"
 msgstr "Состояние служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:34
 #, fuzzy
-msgid "Service State Long Output"
+msgid "Service Long Output"
 msgstr "Состояние служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:35
 #, fuzzy
-msgid "Service State Performance Data"
+msgid "Service Performance Data"
 msgstr "Данные производительности"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:36
 #, fuzzy
-msgid "Service State Normalized Performance Data"
+msgid "Service Normalized Performance Data"
 msgstr "Данные производительности"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:37
 #, fuzzy
-msgid "Service State Check Commandline"
+msgid "Service Check Commandline"
 msgstr "Последняя проверка службы"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:38
 #, fuzzy
-msgid "Service State Is Problem"
+msgid "Service Has Problem"
 msgstr "Проблемы служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:39
 #, fuzzy
-msgid "Service State Is Handled"
+msgid "Service Is Handled"
 msgstr "Состояние служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:40
 #, fuzzy
-msgid "Service State Is Reachable"
+msgid "Service Is Reachable"
 msgstr "Состояние служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:41
 #, fuzzy
-msgid "Service State Is Flapping"
+msgid "Service Is Flapping"
 msgstr "Состояние служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:42
 #, fuzzy
-msgid "Service State Is Overdue"
+msgid "Service Check Is Overdue"
 msgstr "Состояние служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:43
 #, fuzzy
-msgid "Service State Is Acknowledged"
+msgid "Service Is Acknowledged"
 msgstr "Состояние служб"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:44
-#, fuzzy
-msgid "Service State Acknowledgement Comment Id"
-msgstr "Подтверждение установлено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:45
 #, fuzzy
-msgid "Service State In Downtime"
+msgid "Service In Downtime"
 msgstr "Состояние служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:46
 #, fuzzy
-msgid "Service State Execution Time"
+msgid "Service Check Execution Time"
 msgstr "Время выполнения проверки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:47
 #, fuzzy
-msgid "Service State Latency"
+msgid "Service Check Latency"
 msgstr "Состояние служб"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:48
-#, fuzzy
-msgid "Service State Timeout"
-msgstr "Последняя проверка службы"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:49
 #, fuzzy
-msgid "Service State Check Source"
+msgid "Service Check Source"
 msgstr "Название службы"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:50
 #, fuzzy
-msgid "Service State Last Update"
+msgid "Service Last Update"
 msgstr "Состояние служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:51
 #, fuzzy
-msgid "Service State Last State Change"
+msgid "Service Last State Change"
 msgstr "Последнее изменение состояния"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:52
 #, fuzzy
-msgid "Service State Next Check"
+msgid "Service Next Check"
 msgstr "Название службы"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:53
 #, fuzzy
-msgid "Service State Next Update"
+msgid "Service Next Update"
 msgstr "Состояние служб"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:41
-#, fuzzy
-msgid "Servicegroup Environment Id"
-msgstr "Название группы служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:42
 msgid "Servicegroup Name Checksum"
@@ -3653,83 +3291,55 @@ msgstr "Название группы служб (CI)"
 msgid "Servicegroup Display Name"
 msgstr "Название группы служб"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:47
-#, fuzzy
-msgid "Servicegroup Zone Id"
-msgstr "Группы служб"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:57
-#, fuzzy
-msgid "State Environment Id (History)"
-msgstr "Влияние состояния службы"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:58
-msgid "State Endpoint Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:59
-msgid "State Object Type (History)"
-msgstr "Тип состояния объекта (история)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:60
-msgid "State Host Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:61
-msgid "State Service Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:62
-msgid "State Event Time (History)"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:63
-msgid "State Type (History)"
-msgstr ""
+#, fuzzy
+msgid "Event State Type"
+msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:64
-msgid "Soft State (History)"
-msgstr ""
+#, fuzzy
+msgid "Event Soft State"
+msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:65
 #, fuzzy
-msgid "Hard State (History)"
-msgstr "История Аварий"
+msgid "Event Hard State"
+msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:66
-msgid "State Attempt No. (History)"
-msgstr ""
+#, fuzzy
+msgid "Event Check Attempt No."
+msgstr "Попытка проверки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:67
-msgid "Previous Soft State (History)"
-msgstr ""
+#, fuzzy
+msgid "Event Previous Soft State"
+msgstr "Состояние узлов"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:68
-msgid "Previous Hard State (History)"
-msgstr ""
+#, fuzzy
+msgid "Event Previous Hard State"
+msgstr "Состояние служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:69
-msgid "State Output (History)"
-msgstr ""
+#, fuzzy
+msgid "Event Output"
+msgstr "Вывод"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:70
-msgid "State Long Output (History)"
-msgstr ""
+#, fuzzy
+msgid "Event Long Output"
+msgstr "Состояние служб"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:71
 #, fuzzy
-msgid "State Max Check Attempts (History)"
+msgid "Event Max Check Attempts"
 msgstr "Максимальное кол-во попыток проверки узла"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:72
 #, fuzzy
-msgid "State Check Source (History)"
+msgid "Event Check Source"
 msgstr "Источник проверок"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:42
-#, fuzzy
-msgid "Timeperiod Environment Id"
-msgstr "Влияние состояния службы"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:43
 #, fuzzy
@@ -3759,34 +3369,15 @@ msgstr "Отображаемое имя пользователя"
 msgid "Timeperiod Prefer Includes"
 msgstr "Диапазоны периодов времени"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:49
-#, fuzzy
-msgid "Timeperiod Zone Id"
-msgstr "Диапазоны периодов времени"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:37
-#, fuzzy
-msgid "Timeperiod Range Period Id"
-msgstr "Диапазоны периодов времени"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:38
 #, fuzzy
-msgid "Timeperiod Range Key"
+msgid "Timeperiod Range Date(s)/Day"
 msgstr "Диапазоны периодов времени"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:39
-#, fuzzy
-msgid "Timeperiod Range Environment Id"
-msgstr "Влияние состояния службы"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:40
 #, fuzzy
-msgid "Timeperiod Range Value"
+msgid "Timeperiod Range Time"
 msgstr "Диапазоны периодов времени"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:48
-msgid "User Environment Id"
-msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:49
 msgid "User Name Checksum"
@@ -3821,26 +3412,6 @@ msgstr "Пейджер пользователя"
 msgid "User Receives Notifications"
 msgstr "Отключенные уведомления служб"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:57
-msgid "User Timeperiod Id"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:58
-msgid "User States"
-msgstr "Состояния пользователя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:59
-msgid "User Types"
-msgstr "Типы пользователя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:60
-msgid "User Zone Id"
-msgstr "Идентификатор зоны пользователя"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:41
-msgid "Usergroup Environment Id"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:42
 msgid "Usergroup Name Checksum"
 msgstr ""
@@ -3861,14 +3432,6 @@ msgstr "Название группы пользователей (CI)"
 msgid "Usergroup Display Name"
 msgstr "Отображаемое название группы пользователей"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:47
-msgid "Usergroup Zone Id"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:41
-msgid "Zone Environment Id"
-msgstr "Идентификатор среды зоны"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:42
 msgid "Zone Name Checksum"
 msgstr "Контрольная сумма названия зоны"
@@ -3876,10 +3439,6 @@ msgstr "Контрольная сумма названия зоны"
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:43
 msgid "Zone Properties Checksum"
 msgstr "Контрольная сумма свойств зоны"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:44
-msgid "Zone Name"
-msgstr "Название зоны"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:45
 msgid "Zone Name (CI)"
@@ -3890,25 +3449,26 @@ msgid "Zone Is Global"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:47
-msgid "Zone Parent Id"
-msgstr "Идентификатор родителя зоны"
+#, fuzzy
+msgid "Parent Zone Id"
+msgstr "Комментарии"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:48
 msgid "Zone Depth"
 msgstr "Глубина зоны"
 
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:75
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:34
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:52
+#, php-format
+msgid "Can't connect to Icinga Redis: %s"
+msgstr "Не удается подключиться к Icinga Redis: %s"
+
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:92
 msgid ""
 "Icinga Redis is outdated. Make sure Icinga 2 is running and connected to "
 "Redis."
 msgstr ""
 "Icinga Redis устарела. Убедитесь, что Icinga 2 работает и подключена к Redis."
-
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:104
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:52
-#, php-format
-msgid "Can't connect to Icinga Redis: %s"
-msgstr "Не удается подключиться к Icinga Redis: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:35
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:41
@@ -4310,12 +3870,12 @@ msgctxt "..<customvar-name>"
 msgid "Usergroup %s"
 msgstr "Группа пользователей %s"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:139
+#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:162
 #, php-format
 msgid "\"%s\" is not a valid relation"
 msgstr "\"%s\" недопустимое выражение"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:175
+#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:198
 #, php-format
 msgid "\"%s\" is not a valid column"
 msgstr "\"%s\" недопустимый столбец"
@@ -5336,6 +4896,566 @@ msgstr[2] "%d служб"
 #: sources.d/icingadb-web/library/Icingadb/Widget/ShowMore.php:43
 msgid "Show More"
 msgstr "Показать больше"
+
+#~ msgid "Notification States"
+#~ msgstr "Состояния уведомлений"
+
+#, fuzzy
+#~ msgid "Notification Types"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Checkcommand Argument Key"
+#~ msgstr "Аргументы команды: %s"
+
+#, fuzzy
+#~ msgid "Checkcommand Argument Order"
+#~ msgstr "Аргументы команды: %s"
+
+#, fuzzy
+#~ msgid "Checkcommand Argument Set If"
+#~ msgstr "Аргументы команды: %s"
+
+#, fuzzy
+#~ msgid "Checkcommand Argument Skip Key"
+#~ msgstr "Определение команды проверки"
+
+#, fuzzy
+#~ msgid "Checkcommand Envvar Key"
+#~ msgstr "Команда проверки %s"
+
+#, fuzzy
+#~ msgid "Environment id"
+#~ msgstr "Комментарий названия"
+
+#, fuzzy
+#~ msgid "Eventcommand Argument Set If"
+#~ msgstr "Аргументы команды: %s"
+
+#, fuzzy
+#~ msgid "Eventcommand Envvar Key"
+#~ msgstr "Обработчики событий"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Key"
+#~ msgstr "Уведомления"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Order"
+#~ msgstr "Уведомления"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Key Override"
+#~ msgstr "Уведомления"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Set If"
+#~ msgstr "Уведомления"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Skip Key"
+#~ msgstr "Уведомления"
+
+#, fuzzy
+#~ msgid "Timeperiod Range Value"
+#~ msgstr "Диапазоны периодов времени"
+
+#~ msgid "User States"
+#~ msgstr "Состояния пользователя"
+
+#~ msgid "User Types"
+#~ msgstr "Типы пользователя"
+
+#, fuzzy
+#~ msgid "Acknowledgement Environment Id (History)"
+#~ msgstr "Комментарий идентификатора среды"
+
+#, fuzzy
+#~ msgid "Acknowledgement Endpoint Id (History)"
+#~ msgstr "Подтверждение установлено"
+
+#, fuzzy
+#~ msgid "Acknowledgement Object Type (History)"
+#~ msgstr "Срок действия подтверждения истек"
+
+#, fuzzy
+#~ msgid "Acknowledgement Host Id (History)"
+#~ msgstr "Подтверждение установлено"
+
+#, fuzzy
+#~ msgid "Acknowledgement Service Id (History)"
+#~ msgstr "Подтверждение очищено автором"
+
+#, fuzzy
+#~ msgid "Acknowledgement Set Time (History)"
+#~ msgstr "Подтверждение установлено"
+
+#~ msgid "Acknowledgement Clear Time (History)"
+#~ msgstr "Время очистки подтверждения (история)"
+
+#~ msgid "Acknowledgement Author (History)"
+#~ msgstr "Автор подтверждения (история)"
+
+#~ msgid "Acknowledgement Cleared By (History)"
+#~ msgstr "Подтверждение очищено (история)"
+
+#~ msgid "Acknowledgement Comment (History)"
+#~ msgstr "Подтвержденных комментариев (история)"
+
+#, fuzzy
+#~ msgid "Action Url Environment Id"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Checkcommand Zone Id"
+#~ msgstr "Комментарии"
+
+#, fuzzy
+#~ msgid "Checkcommand Environment Id"
+#~ msgstr "Комментарий идентификатора среды"
+
+#, fuzzy
+#~ msgid "Checkcommand Argument Command Id"
+#~ msgstr "Определение команды проверки"
+
+#, fuzzy
+#~ msgid "Checkcommand Argument Environment Id"
+#~ msgstr "Комментарий идентификатора среды"
+
+#, fuzzy
+#~ msgid "Checkcommand Envvar Command Id"
+#~ msgstr "Комментарий идентификатора среды"
+
+#~ msgid "Comment Environment Id"
+#~ msgstr "Комментарий идентификатора среды"
+
+#~ msgid "Comment Object Type"
+#~ msgstr "Комментарий типа объекта"
+
+#~ msgid "Comment Host Id"
+#~ msgstr "Комментарий идентификатора узла"
+
+#~ msgid "Comment Service Id"
+#~ msgstr "Комментарий идентификатора службы"
+
+#, fuzzy
+#~ msgid "Comment Environment Id (History)"
+#~ msgstr "Комментарий идентификатора среды"
+
+#, fuzzy
+#~ msgid "Comment Endpoint Id (History)"
+#~ msgstr "Комментарий идентификатора среды"
+
+#, fuzzy
+#~ msgid "Comment Object Type (History)"
+#~ msgstr "Комментарий типа объекта"
+
+#, fuzzy
+#~ msgid "Comment Host Id (History)"
+#~ msgstr "Комментарий идентификатора узла"
+
+#, fuzzy
+#~ msgid "Comment Service Id (History)"
+#~ msgstr "Комментарий идентификатора службы"
+
+#, fuzzy
+#~ msgid "Comment Entry Time (History)"
+#~ msgstr "Комментарии"
+
+#, fuzzy
+#~ msgid "Comment Author (History)"
+#~ msgstr "Комментарий у автору"
+
+#, fuzzy
+#~ msgid "Comment Removed By (History)"
+#~ msgstr "Комментарий удален автором"
+
+#, fuzzy
+#~ msgid "Comment Entry Type (History)"
+#~ msgstr "Комментарии"
+
+#, fuzzy
+#~ msgid "Comment Is Persistent (History)"
+#~ msgstr "Комментарии"
+
+#, fuzzy
+#~ msgid "Comment Is Sticky (History)"
+#~ msgstr "Это подтверждение неприятно."
+
+#, fuzzy
+#~ msgid "Comment Expire Time (History)"
+#~ msgstr "Комментарии"
+
+#~ msgid "Downtime Environment Id"
+#~ msgstr "Идентификатор среды времени простоя"
+
+#, fuzzy
+#~ msgid "Downtime Parent Id"
+#~ msgstr "Имя зоны"
+
+#~ msgid "Downtime Object Type"
+#~ msgstr "Тип объекта времени простоя"
+
+#~ msgid "Downtime Host Id"
+#~ msgstr "Время простоя"
+
+#~ msgid "Downtime Service Id"
+#~ msgstr "Время простоя службы"
+
+#, fuzzy
+#~ msgid "Downtime Scheduled By"
+#~ msgstr "Запланированное окончание"
+
+#, fuzzy
+#~ msgid "Downtime Zone Id"
+#~ msgstr "Время простоя"
+
+#, fuzzy
+#~ msgid "Downtime Environment Id (History)"
+#~ msgstr "Идентификатор среды времени простоя"
+
+#, fuzzy
+#~ msgid "Downtime Endpoint Id (History)"
+#~ msgstr "Идентификатор среды времени простоя"
+
+#, fuzzy
+#~ msgid "Downtime Parent Id (History)"
+#~ msgstr "Идентификатор среды времени простоя"
+
+#, fuzzy
+#~ msgid "Downtime Object Type (History)"
+#~ msgstr "Тип объекта времени простоя"
+
+#, fuzzy
+#~ msgid "Downtime Host Id (History)"
+#~ msgstr "Время простоя"
+
+#, fuzzy
+#~ msgid "Downtime Service Id (History)"
+#~ msgstr "Время простоя службы"
+
+#, fuzzy
+#~ msgid "Downtime Author (History)"
+#~ msgstr "Время простоя"
+
+#, fuzzy
+#~ msgid "Downtime Cancelled By (History)"
+#~ msgstr "Время простоя отменено автором"
+
+#, fuzzy
+#~ msgid "Downtime Comment (History)"
+#~ msgstr "Время простоя"
+
+#, fuzzy
+#~ msgid "Downtime Is Flexible (History)"
+#~ msgstr "Время простоя"
+
+#, fuzzy
+#~ msgid "Downtime Flexible Duration (History)"
+#~ msgstr "Гибкая продолжительность"
+
+#, fuzzy
+#~ msgid "Downtime Scheduled Start (History)"
+#~ msgstr "Запланированное начало времени простоя"
+
+#, fuzzy
+#~ msgid "Downtime Scheduled End (History)"
+#~ msgstr "Запланированное окончание"
+
+#, fuzzy
+#~ msgid "Downtime Actual Start (History)"
+#~ msgstr "Запланированное начало времени простоя"
+
+#, fuzzy
+#~ msgid "Downtime Actual End (History)"
+#~ msgstr "Время простоя"
+
+#, fuzzy
+#~ msgid "Endpoint Environment Id"
+#~ msgstr "Комментарий идентификатора среды"
+
+#, fuzzy
+#~ msgid "Eventcommand Zone Id"
+#~ msgstr "Обработчики событий"
+
+#, fuzzy
+#~ msgid "Eventcommand Environment id"
+#~ msgstr "Комментарий идентификатора среды"
+
+#, fuzzy
+#~ msgid "Eventcommand Argument Environment Id"
+#~ msgstr "Комментарий идентификатора среды"
+
+#, fuzzy
+#~ msgid "Eventcommand Envvar Environment Id"
+#~ msgstr "Комментарий идентификатора среды"
+
+#, fuzzy
+#~ msgid "Flapping Environment Id (History)"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Environment Id (History)"
+#~ msgstr "Комментарий идентификатора среды"
+
+#, fuzzy
+#~ msgid "Endpoint Id (History)"
+#~ msgstr "Конечные точки"
+
+#, fuzzy
+#~ msgid "Service Id (History)"
+#~ msgstr "Набор служб"
+
+#~ msgid "Host Checkcommand"
+#~ msgstr "Команда проверки узла"
+
+#, fuzzy
+#~ msgid "Host Action Url Id"
+#~ msgstr "Действие узла"
+
+#~ msgid "Host Zone"
+#~ msgstr "Область узла"
+
+#, fuzzy
+#~ msgid "Host State Environment Id"
+#~ msgstr "Идентификатор среды времени простоя"
+
+#, fuzzy
+#~ msgid "Host State Is Problem"
+#~ msgstr "Проблемы с узлами"
+
+#, fuzzy
+#~ msgid "Host State Timeout"
+#~ msgstr "Тайм-аут проверки узла"
+
+#, fuzzy
+#~ msgid "Hostgroup Zone Id"
+#~ msgstr "Группы узлов"
+
+#, fuzzy
+#~ msgid "Icon Image Environment Id"
+#~ msgstr "Идентификатор среды времени простоя"
+
+#, fuzzy
+#~ msgid "Notes Url Environment Id"
+#~ msgstr "Идентификатор среды времени простоя"
+
+#, fuzzy
+#~ msgid "Notification Environment Id"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notification Host Id"
+#~ msgstr "Уведомления"
+
+#, fuzzy
+#~ msgid "Notification Service Id"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notification Times Begin"
+#~ msgstr "Шаблоны уведомления"
+
+#, fuzzy
+#~ msgid "Notification Times End"
+#~ msgstr "Шаблоны уведомления"
+
+#, fuzzy
+#~ msgid "Notification Timeperiod Id"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notification Zone Id"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notification History Id"
+#~ msgstr "Уведомления"
+
+#, fuzzy
+#~ msgid "Notification Environment Id (History)"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notification Endpoint Id (History)"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notification Object Type (History)"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notification Host Id (History)"
+#~ msgstr "Уведомления"
+
+#, fuzzy
+#~ msgid "Notification Service Id (History)"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notification Id (History)"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notification Type (History)"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notification Object State (History)"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notification Previous Object State (History)"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notification Text (History)"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notification Users Notified (History)"
+#~ msgstr "Уведомления"
+
+#, fuzzy
+#~ msgid "Notificationcommand Zone Id"
+#~ msgstr "Уведомления"
+
+#, fuzzy
+#~ msgid "Notificationcommand Environment Id"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Command Id"
+#~ msgstr "Уведомления"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Environment Id"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notificationcommand Envvar Command Id"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Notificationcommand Envvar Environment Id"
+#~ msgstr "Оповещение"
+
+#, fuzzy
+#~ msgid "Service Environment Id"
+#~ msgstr "Влияние состояния службы"
+
+#, fuzzy
+#~ msgid "Service Host Id"
+#~ msgstr "Группы служб"
+
+#, fuzzy
+#~ msgid "Service Checkcommand"
+#~ msgstr "Последняя проверка службы"
+
+#, fuzzy
+#~ msgid "Service Checkcommand Id"
+#~ msgstr "Последняя проверка службы"
+
+#, fuzzy
+#~ msgid "Service Check Timeperiod"
+#~ msgstr "Влияние состояния службы"
+
+#, fuzzy
+#~ msgid "Service Eventcommand"
+#~ msgstr "Влияние состояния службы"
+
+#, fuzzy
+#~ msgid "Service Eventcommand Id"
+#~ msgstr "Влияние состояния службы"
+
+#, fuzzy
+#~ msgid "Service Action Url Id"
+#~ msgstr "Действие службы"
+
+#, fuzzy
+#~ msgid "Service Notes Url Id"
+#~ msgstr "Влияние состояния службы"
+
+#, fuzzy
+#~ msgid "Service Icon Image Id"
+#~ msgstr "Влияние состояния службы"
+
+#, fuzzy
+#~ msgid "Service Icon Image Alt"
+#~ msgstr "Действие службы"
+
+#, fuzzy
+#~ msgid "Service Zone"
+#~ msgstr "Действие службы"
+
+#, fuzzy
+#~ msgid "Service Zone Id"
+#~ msgstr "Действие службы"
+
+#, fuzzy
+#~ msgid "Service State Environment Id"
+#~ msgstr "Влияние состояния службы"
+
+#, fuzzy
+#~ msgid "Service State Is Problem"
+#~ msgstr "Проблемы служб"
+
+#, fuzzy
+#~ msgid "Service State Acknowledgement Comment Id"
+#~ msgstr "Подтверждение установлено"
+
+#, fuzzy
+#~ msgid "Service State Timeout"
+#~ msgstr "Последняя проверка службы"
+
+#, fuzzy
+#~ msgid "Servicegroup Environment Id"
+#~ msgstr "Название группы служб"
+
+#, fuzzy
+#~ msgid "Servicegroup Zone Id"
+#~ msgstr "Группы служб"
+
+#, fuzzy
+#~ msgid "State Environment Id (History)"
+#~ msgstr "Влияние состояния службы"
+
+#~ msgid "State Object Type (History)"
+#~ msgstr "Тип состояния объекта (история)"
+
+#, fuzzy
+#~ msgid "Hard State (History)"
+#~ msgstr "История Аварий"
+
+#, fuzzy
+#~ msgid "State Max Check Attempts (History)"
+#~ msgstr "Максимальное кол-во попыток проверки узла"
+
+#, fuzzy
+#~ msgid "State Check Source (History)"
+#~ msgstr "Источник проверок"
+
+#, fuzzy
+#~ msgid "Timeperiod Environment Id"
+#~ msgstr "Влияние состояния службы"
+
+#, fuzzy
+#~ msgid "Timeperiod Zone Id"
+#~ msgstr "Диапазоны периодов времени"
+
+#, fuzzy
+#~ msgid "Timeperiod Range Period Id"
+#~ msgstr "Диапазоны периодов времени"
+
+#, fuzzy
+#~ msgid "Timeperiod Range Environment Id"
+#~ msgstr "Влияние состояния службы"
+
+#~ msgid "User Zone Id"
+#~ msgstr "Идентификатор зоны пользователя"
+
+#~ msgid "Zone Parent Id"
+#~ msgstr "Идентификатор родителя зоны"
 
 #, fuzzy
 #~ msgid "Open health overview"

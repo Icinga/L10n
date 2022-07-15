@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 15:40+0000\n"
+"POT-Creation-Date: 2022-07-15 09:37+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -104,8 +104,6 @@ msgstr "Час запису"
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:66
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:115
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:135
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:328
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:329
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:48
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:90
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:84
@@ -126,8 +124,6 @@ msgstr[2] "Хостів"
 #: sources.d/icingadb-web/application/controllers/CommentsController.php:48
 #: sources.d/icingadb-web/application/controllers/DowntimesController.php:49
 #: sources.d/icingadb-web/application/controllers/ServiceController.php:189
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:333
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:334
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:54
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:96
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:94
@@ -259,8 +255,8 @@ msgid "Health"
 msgstr "Здоров'я"
 
 #: sources.d/icingadb-web/application/controllers/HealthController.php:41
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:41
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:84
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:60
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:101
 msgid ""
 "It seems that Icinga DB is not running. Make sure Icinga DB is running and "
 "writing into the database."
@@ -304,6 +300,7 @@ msgstr "Історія"
 #: sources.d/icingadb-web/application/controllers/HostController.php:139
 #: sources.d/icingadb-web/application/controllers/ServiceController.php:144
 #: sources.d/icingadb-web/library/Icingadb/Model/History.php:60
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:62
 msgid "Event Time"
 msgstr "Час події"
 
@@ -1877,7 +1874,7 @@ msgid "No custom variables configured."
 msgstr "Не налаштовано користувацьких змінних."
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:220
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:210
+#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:233
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:219
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:40
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UsergroupDetail.php:48
@@ -1910,64 +1907,141 @@ msgid "unknown"
 msgstr "невідомо"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:54
-msgid "Acknowledgement Environment Id (History)"
-msgstr "ID оточення підтвердження (Історія)"
+#: sources.d/icingadb-web/library/Icingadb/Model/ActionUrl.php:37
+#: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:43
+#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:40
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:51
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:61
+#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:39
+#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:43
+#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:40
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:51
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:81
+#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:28
+#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:41
+#: sources.d/icingadb-web/library/Icingadb/Model/IconImage.php:36
+#: sources.d/icingadb-web/library/Icingadb/Model/NotesUrl.php:37
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:50
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:43
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:40
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:75
+#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:25
+#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:41
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:39
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:48
+#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:41
+#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:41
+#, fuzzy
+msgid "Environment Id"
+msgstr "ID оточення хоста (Історія)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:55
-msgid "Acknowledgement Endpoint Id (History)"
-msgstr "ID кінцевої точки підтвердження (Історія)"
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:62
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:52
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:118
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:109
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:58
+#, fuzzy
+msgid "Endpoint Id"
+msgstr "ID зони кінцевої точки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:56
-msgid "Acknowledgement Object Type (History)"
-msgstr "Тип об'єкта підтвердження (Історія)"
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:52
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:62
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:65
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:53
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:59
+#, fuzzy
+msgid "Object Type"
+msgstr "Тип об'єкта події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:57
-msgid "Acknowledgement Host Id (History)"
-msgstr "ID хоста підтвердження (Історія)"
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:53
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:63
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:66
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:78
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:60
+#, fuzzy
+msgid "Host Id"
+msgstr "ID зони хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:58
-msgid "Acknowledgement Service Id (History)"
-msgstr "ID сервіса підтвердження (Історія)"
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:60
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:64
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:67
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:61
+#, fuzzy
+msgid "Service Id"
+msgstr "Сервіс"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:59
-msgid "Acknowledgement Set Time (History)"
-msgstr "Час створення підтвердження (Історія)"
+#, fuzzy
+msgid "Acknowledgement Set Time"
+msgstr "Підтвердження додано"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:60
-msgid "Acknowledgement Clear Time (History)"
-msgstr "Час завершення підтвердження (Історія)"
+#, fuzzy
+msgid "Acknowledgement Clear Time"
+msgstr "Підтвердження видалено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:61
-msgid "Acknowledgement Author (History)"
-msgstr "Автор підтвердження (Історія)"
+#, fuzzy
+msgid "Acknowledgement Author"
+msgstr "Підтвердження додано"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:62
-msgid "Acknowledgement Cleared By (History)"
-msgstr "Підтвердження видалене (Історія)"
+#, fuzzy
+msgid "Acknowledgement Cleared By"
+msgstr "Підтвердження видалено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:63
-msgid "Acknowledgement Comment (History)"
-msgstr "Коментар підтвердження (Історія)"
+#, fuzzy
+msgid "Acknowledgement Comment"
+msgstr "Підтвердження додано"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:64
-msgid "Acknowledgement Expire Time (History)"
+#, fuzzy
+msgid "Acknowledgement Expire Time"
 msgstr "Час спливання підтвердження (Історія)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:65
-msgid "Acknowledgement Is Sticky (History)"
+#, fuzzy
+msgid "Acknowledgement Is Sticky"
 msgstr "Закріплене підтвердження (Історія)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:66
-msgid "Acknowledgement Is Persistent (History)"
+#, fuzzy
+msgid "Acknowledgement Is Persistent"
 msgstr "Постійне підтвердження (Історія)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ActionUrl.php:36
 msgid "Action Url"
 msgstr "URL дії"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ActionUrl.php:37
-msgid "Action Url Environment Id"
-msgstr "ID оточення URL дії"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Behavior/FlattenedObjectVars.php:64
 #, php-format
@@ -1976,13 +2050,22 @@ msgid " %s"
 msgstr " %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:42
-msgid "Checkcommand Zone Id"
-msgstr "ID зони команди перевірки"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:43
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:40
-msgid "Checkcommand Environment Id"
-msgstr "ID оточення команди перевірки"
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:65
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:81
+#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:44
+#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:116
+#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:64
+#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:107
+#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:49
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:60
+#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:47
+#, fuzzy
+msgid "Zone Id"
+msgstr "ID зони хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:44
 msgid "Checkcommand Name Checksum"
@@ -1994,6 +2077,8 @@ msgid "Checkcommand Properties Checksum"
 msgstr "Контрольна сума властивостей команди перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:46
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:91
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:82
 msgid "Checkcommand Name"
 msgstr "Ім'я команди перевірки"
 
@@ -2010,16 +2095,17 @@ msgid "Checkcommand Timeout"
 msgstr "Таймаут команди перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:45
-msgid "Checkcommand Argument Command Id"
-msgstr "ID команди аргумента команди перевірки"
+#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:38
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:92
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:83
+#, fuzzy
+msgid "Checkcommand Id"
+msgstr "Команда перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:46
-msgid "Checkcommand Argument Key"
-msgstr "Ключ аргумента команди перевірки"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:47
-msgid "Checkcommand Argument Environment Id"
-msgstr "ID оточення аргумента команди перевірки"
+#, fuzzy
+msgid "Checkcommand Argument Name"
+msgstr "Значення аргумента команди перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:48
 msgid "Checkcommand Argument Properties Checksum"
@@ -2030,19 +2116,22 @@ msgid "Checkcommand Argument Value"
 msgstr "Значення аргумента команди перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:50
-msgid "Checkcommand Argument Order"
-msgstr "Порядок аргументів команди перевірки"
+#, fuzzy
+msgid "Checkcommand Argument Position"
+msgstr "Опис аргумента команди перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:51
 msgid "Checkcommand Argument Description"
 msgstr "Опис аргумента команди перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:52
-msgid "Checkcommand Argument Key Override"
-msgstr "Перезапис ключа аргумента команди перевірки"
+#, fuzzy
+msgid "Checkcommand Argument Actual Name"
+msgstr "Значення аргумента команди перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:53
-msgid "Checkcommand Argument Repeat Key"
+#, fuzzy
+msgid "Checkcommand Argument Repeated"
 msgstr "Повтор ключа аргумента команди перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:54
@@ -2050,40 +2139,23 @@ msgid "Checkcommand Argument Required"
 msgstr "Необхідність аргумента команди перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:55
-msgid "Checkcommand Argument Set If"
-msgstr "Задати аргумент команди перевірки якщо"
+#, fuzzy
+msgid "Checkcommand Argument Condition"
+msgstr "Опис аргумента команди перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:56
-msgid "Checkcommand Argument Skip Key"
-msgstr "Ключ пропуску аргумента команди перевірки"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:38
-msgid "Checkcommand Envvar Command Id"
-msgstr "ID змінних оточення команди перевірки"
+#, fuzzy
+msgid "Checkcommand Argument Without Name"
+msgstr "Значення аргумента команди перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:39
-msgid "Checkcommand Envvar Key"
-msgstr "Ключ змінної оточення команди перевірки"
+#, fuzzy
+msgid "Checkcommand Envvar Name"
+msgstr "Значення змінної оточення команди перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:42
 msgid "Checkcommand Envvar Value"
 msgstr "Значення змінної оточення команди перевірки"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:51
-msgid "Comment Environment Id"
-msgstr "ID оточення коментаря"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:52
-msgid "Comment Object Type"
-msgstr "Тип об'єкта коментаря"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:53
-msgid "Comment Host Id"
-msgstr "ID хоста коментаря"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:54
-msgid "Comment Service Id"
-msgstr "ID сервіса коментаря"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:55
 msgid "Comment Name Checksum"
@@ -2098,10 +2170,12 @@ msgid "Comment Name"
 msgstr "Ім'я коментаря"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:62
 msgid "Comment Author"
 msgstr "Автор коментаря"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:64
 msgid "Comment Text"
 msgstr "Текст коментаря"
 
@@ -2110,108 +2184,56 @@ msgid "Comment Type"
 msgstr "Тип коментаря"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:61
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:61
 msgid "Comment Entry Time"
 msgstr "Час вводу коментаря"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:62
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:66
 msgid "Comment Is Persistent"
 msgstr "Стійкий коментар"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:63
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:67
 msgid "Comment Is Sticky"
 msgstr "Прикріплений коментар"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:64
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:68
 msgid "Comment Expire Time"
 msgstr "Час закінчення коментаря"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:65
-msgid "Comment Zone Id"
-msgstr "ID зони коментаря"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:56
-msgid "Comment Environment Id (History)"
-msgstr "ID оточення коментаря (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:57
-msgid "Comment Endpoint Id (History)"
-msgstr "ID кінцевої точки коментаря (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:58
-msgid "Comment Object Type (History)"
-msgstr "Тип об'єкта коментаря (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:59
-msgid "Comment Host Id (History)"
-msgstr "ID хоста коментаря (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:60
-msgid "Comment Service Id (History)"
-msgstr "ID сервіса коментаря (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:61
-msgid "Comment Entry Time (History)"
-msgstr "Час створення коментаря (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:62
-msgid "Comment Author (History)"
-msgstr "Автор коментаря (Історія)"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:63
-msgid "Comment Removed By (History)"
-msgstr "Коментар видалено (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:64
-msgid "Comment Comment (History)"
-msgstr "Коментар коментаря (Історія)"
+#, fuzzy
+msgid "Comment Removed By"
+msgstr "Коментар видалено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:65
-msgid "Comment Entry Type (History)"
-msgstr "Тип запису коментаря (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:66
-msgid "Comment Is Persistent (History)"
-msgstr "Постійний коментар (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:67
-msgid "Comment Is Sticky (History)"
-msgstr "Прикріплений коментар (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:68
-msgid "Comment Expire Time (History)"
-msgstr "Кінцевий час коментаря (Історія)"
+#, fuzzy
+msgid "Comment Entry Type"
+msgstr "Час вводу коментаря"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:69
-msgid "Comment Remove Time (History)"
+#, fuzzy
+msgid "Comment Remove Time"
 msgstr "Час видалення коментаря (Історія)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:70
-msgid "Comment Has Been Removed (History)"
+#, fuzzy
+msgid "Comment Has Been Removed"
 msgstr "Коментар було видалено (Історія)"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:59
-msgid "Downtime Environment Id"
-msgstr "ID оточення простою"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:60
-msgid "Downtime Triggered By Id"
-msgstr "ID спрацювання простою"
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:63
+#, fuzzy
+msgid "Triggered By Downtime Id"
+msgstr "Спрацювало через"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:61
-msgid "Downtime Parent Id"
-msgstr "ID батьківського простою"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:62
-msgid "Downtime Object Type"
-msgstr "Тип об'єкта простою"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:63
-msgid "Downtime Host Id"
-msgstr "ID простою хоста"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:64
-msgid "Downtime Service Id"
-msgstr "ID простою сервіса"
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:64
+#, fuzzy
+msgid "Parent Downtime Id"
+msgstr "Поточні простої"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:65
 msgid "Downtime Name Checksum"
@@ -2226,22 +2248,27 @@ msgid "Downtime Name"
 msgstr "Ім'я простою"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:68
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:69
 msgid "Downtime Author"
 msgstr "Автор простою"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:69
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:71
 msgid "Downtime Comment"
 msgstr "Коментар простою"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:70
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:68
 msgid "Downtime Entry Time"
 msgstr "Час запису простою"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:71
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:74
 msgid "Downtime Scheduled Start"
 msgstr "Початок простою за розкладом"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:72
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:75
 msgid "Downtime Scheduled End"
 msgstr "Завершення простою за розкладом"
 
@@ -2250,10 +2277,12 @@ msgid "Downtime Scheduled Duration"
 msgstr "Тривалість запланованого простою"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:74
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:72
 msgid "Downtime Is Flexible"
 msgstr "Гнучкий простій"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:75
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:73
 msgid "Downtime Flexible Duration"
 msgstr "Тривалість гнучкого простою"
 
@@ -2262,10 +2291,12 @@ msgid "Downtime Is In Effect"
 msgstr "Простій діє"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:77
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:76
 msgid "Downtime Actual Start"
 msgstr "Дійсний початок простою"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:78
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:77
 msgid "Downtime Actual End"
 msgstr "Дійсне завершення простою"
 
@@ -2274,96 +2305,29 @@ msgid "Downtime Duration"
 msgstr "Тривалість простою"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:80
-msgid "Downtime Scheduled By"
-msgstr "Простій додано до розкладу"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:81
-msgid "Downtime Zone Id"
-msgstr "ID зони простою"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:61
-msgid "Downtime Environment Id (History)"
-msgstr "ID оточення простою (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:62
-msgid "Downtime Endpoint Id (History)"
-msgstr "ID кінцевої точки простою (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:63
-msgid "Downtime Triggered By Id (History)"
-msgstr "ID спрацювання простою (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:64
-msgid "Downtime Parent Id (History)"
-msgstr "ID батьківського простою (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:65
-msgid "Downtime Object Type (History)"
-msgstr "Тип об'єкта простою (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:66
-msgid "Downtime Host Id (History)"
-msgstr "ID хоста простою (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:67
-msgid "Downtime Service Id (History)"
-msgstr "ID сервіса простою (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:68
-msgid "Downtime Entry Time (History)"
-msgstr "Час створення простою (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:69
-msgid "Downtime Author (History)"
-msgstr "Автор простою (Історія)"
+#, fuzzy
+msgid "Scheduled By Downtime"
+msgstr "Запланувати простій"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:70
-msgid "Downtime Cancelled By (History)"
-msgstr "Простій скасовано (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:71
-msgid "Downtime Comment (History)"
-msgstr "Коментар простою (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:72
-msgid "Downtime Is Flexible (History)"
-msgstr "Гнучкий простій (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:73
-msgid "Downtime Flexible Duration (History)"
-msgstr "Тривалість гнучкого простою (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:74
-msgid "Downtime Scheduled Start (History)"
-msgstr "Початок простою за розкладом (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:75
-msgid "Downtime Scheduled End (History)"
-msgstr "Завершення простою за розкладом (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:76
-msgid "Downtime Actual Start (History)"
-msgstr "Дійсний початок простою (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:77
-msgid "Downtime Actual End (History)"
-msgstr "Дійсне завершення простою (Історія)"
+#, fuzzy
+msgid "Downtime Cancelled By"
+msgstr "Простій відмінено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:78
-msgid "Downtime Has Been Cancelled (History)"
+#, fuzzy
+msgid "Downtime Has Been Cancelled"
 msgstr "Дійсне завершення скасовано (Історія)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:79
-msgid "Downtime Trigger Time (History)"
+#, fuzzy
+msgid "Downtime Trigger Time"
 msgstr "Час спрацювання простою (Історія)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:80
-msgid "Downtime Cancel Time (History)"
+#, fuzzy
+msgid "Downtime Cancel Time"
 msgstr "Час скасування простою (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:39
-msgid "Endpoint Environment Id"
-msgstr "ID оточення кінцевої точки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:40
 msgid "Endpoint Name Checksum"
@@ -2374,6 +2338,8 @@ msgid "Endpoint Properties Checksum"
 msgstr "Контрольна сума властивостей кінцевої точки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:117
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:108
 msgid "Endpoint Name"
 msgstr "Ім'я кінцевої точки"
 
@@ -2381,21 +2347,9 @@ msgstr "Ім'я кінцевої точки"
 msgid "Endpoint Name (CI)"
 msgstr "Ім'я кінцевої точки (CI)"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:44
-msgid "Endpoint Zone Id"
-msgstr "ID зони кінцевої точки"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Environment.php:34
 msgid "Environment Name"
 msgstr "Ім'я оточення"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:42
-msgid "Eventcommand Zone Id"
-msgstr "ID зони команди події"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:43
-msgid "Eventcommand Environment id"
-msgstr "ID оточення команди події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:44
 msgid "Eventcommand Name Checksum"
@@ -2406,6 +2360,8 @@ msgid "Eventcommand Properties Checksum"
 msgstr "Контрольна сума властивостей команди події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:46
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:107
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:98
 msgid "Eventcommand Name"
 msgstr "Ім'я команди події"
 
@@ -2422,16 +2378,17 @@ msgid "Eventcommand Timeout"
 msgstr "Таймаут команди події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:45
-msgid "Eventcommand Argument Command Id"
-msgstr "ID команди аргумента команди події"
+#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:38
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:108
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:99
+#, fuzzy
+msgid "Eventcommand Id"
+msgstr "Команда події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:46
-msgid "Eventcommand Argument Key"
-msgstr "Аргумент команди події"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:47
-msgid "Eventcommand Argument Environment Id"
-msgstr "ID оточення аргумента команди події"
+#, fuzzy
+msgid "Eventcommand Argument Name"
+msgstr "Значення аргумента команди події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:48
 msgid "Eventcommand Argument Properties Checksum"
@@ -2442,19 +2399,22 @@ msgid "Eventcommand Argument Value"
 msgstr "Значення аргумента команди події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:50
-msgid "Eventcommand Argument Order"
-msgstr "Порядок аргумента команди події"
+#, fuzzy
+msgid "Eventcommand Argument Position"
+msgstr "Опис аргумента команди події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:51
 msgid "Eventcommand Argument Description"
 msgstr "Опис аргумента команди події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:52
-msgid "Eventcommand Argument Key Override"
-msgstr "Перезапис аргумента команди події"
+#, fuzzy
+msgid "Eventcommand Argument Actual Name"
+msgstr "Значення аргумента команди події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:53
-msgid "Eventcommand Argument Repeat Key"
+#, fuzzy
+msgid "Eventcommand Argument Repeated"
 msgstr "Повтор аргумента команди події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:54
@@ -2462,24 +2422,19 @@ msgid "Eventcommand Argument Required"
 msgstr "Необхідність аргумента команди події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:55
-msgid "Eventcommand Argument Set If"
-msgstr "Призначити аргумент команди події якщо"
+#, fuzzy
+msgid "Eventcommand Argument Condition"
+msgstr "Опис аргумента команди події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:56
-msgid "Eventcommand Argument Skip Key"
-msgstr "Ключ пропуску аргумента команди події"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:38
-msgid "Eventcommand Envvar Command Id"
-msgstr "ID команди змінної оточення команди події"
+#, fuzzy
+msgid "Eventcommand Argument Without Name"
+msgstr "Значення аргумента команди події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:39
-msgid "Eventcommand Envvar Key"
-msgstr "Ключ змінної оточення команди події"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:40
-msgid "Eventcommand Envvar Environment Id"
-msgstr "ID оточення змінної команди події"
+#, fuzzy
+msgid "Eventcommand Envvar Name"
+msgstr "Значення змінної оточення команди події"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:41
 msgid "Eventcommand Envvar Properties Checksum"
@@ -2489,77 +2444,39 @@ msgstr "Контрольна сума властивостей змінної о
 msgid "Eventcommand Envvar Value"
 msgstr "Значення змінної оточення команди події"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:51
-msgid "Flapping Environment Id (History)"
-msgstr "ID оточення флепінгу (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:52
-msgid "Flapping Endpoint Id (History)"
-msgstr "ID кінцевої точки флепінгу (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:53
-msgid "Flapping Object Type (History)"
-msgstr "Тип об'єкта з флепінгом (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:54
-msgid "Flapping Host Id (History)"
-msgstr "ID хоста з флепінгом (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:55
-msgid "Flapping Service Id (History)"
-msgstr "ID сервіса з флепінгом (нижня)"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:56
-msgid "Flapping Start Time (History)"
-msgstr "Початок флепінгу (Історія)"
+#, fuzzy
+msgid "Flapping Start Time"
+msgstr "Початок флепінгу"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:57
-msgid "Flapping End Time (History)"
-msgstr "Кінець флепінгу (Історія)"
+#, fuzzy
+msgid "Flapping End Time"
+msgstr "Кінець флепінгу"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:58
-msgid "Flapping Percent State Change Start (History)"
+#, fuzzy
+msgid "Flapping Percent State Change Start"
 msgstr "Початок зміни стану відсотку флепінга (Історія)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:59
-msgid "Flapping Percent State Change End (History)"
+#, fuzzy
+msgid "Flapping Percent State Change End"
 msgstr "Кінець зміни стану відсотку флепінга (Історія)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:60
-msgid "Flapping Threshold Low (History)"
-msgstr "Нижня межа флепінгу (Історія)"
+#, fuzzy
+msgid "Flapping Threshold Low"
+msgstr "Межа флепінгу хоста (нижня)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:61
-msgid "Flapping Threshold High (History)"
-msgstr "Верхня межа флепінгу (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:54
-msgid "Environment Id (History)"
-msgstr "ID оточення (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:55
-msgid "Endpoint Id (History)"
-msgstr "ID кінцевої точки (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:56
-msgid "Event Object Type"
-msgstr "Тип об'єкта події"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:57
-msgid "Host Id (History)"
-msgstr "ID хоста (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:58
-msgid "Service Id (History)"
-msgstr "ID сервіса (Історія)"
+#, fuzzy
+msgid "Flapping Threshold High"
+msgstr "Межа флепінгу хоста (верхня)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/History.php:59
 msgid "Event Type"
 msgstr "Тип події"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:81
-msgid "Host Environment Id"
-msgstr "ID оточення хоста (Історія)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:82
 msgid "Host Name Checksum"
@@ -2593,27 +2510,24 @@ msgstr "Адреса хоста (IPv4, бінарний)"
 msgid "Host Address (IPv6, Binary)"
 msgstr "Адреса хоста (IPv6, бінарний)"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:91
-msgid "Host Checkcommand"
-msgstr "Команда перевірки хоста"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:92
-msgid "Host Checkcommand Id"
-msgstr "ID команди перевірки хоста"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:93
 msgid "Host Max Check Attempts"
 msgstr "Максимальна кількість спроб перевірки хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:94
-msgid "Host Check Timeperiod"
-msgstr "Часовий період перевірки хоста"
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:85
+#, fuzzy
+msgid "Check Timeperiod Name"
+msgstr "Ім'я часового проміжку"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:95
-msgid "Host Check Timeperiod Id"
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:86
+#, fuzzy
+msgid "Check Timeperiod Id"
 msgstr "ID часового періоду перевірки хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:96
+#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:51
 msgid "Host Check Timeout"
 msgstr "Таймаут перевірки хоста"
 
@@ -2657,57 +2571,43 @@ msgstr "Межа флепінгу хоста (верхня)"
 msgid "Host Performance Data Enabled"
 msgstr "Дані продуктивності хоста увімкнено"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:107
-msgid "Host Eventcommand"
-msgstr "Команда події хоста"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:108
-msgid "Host Eventcommand Id"
-msgstr "ID команди події хоста"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:109
 msgid "Host Is Volatile"
 msgstr "Хост волатильний"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:110
-msgid "Host Action Url Id"
-msgstr "ID дії для хоста"
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:101
+#, fuzzy
+msgid "Action Url Id"
+msgstr "URL дії"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:111
-msgid "Host Notes Url Id"
-msgstr "ID URL нотаток хоста"
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:102
+#, fuzzy
+msgid "Notes Url Id"
+msgstr "URL нотаток"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:112
 msgid "Host Notes"
 msgstr "Нотатки хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:113
-msgid "Host Icon Image Id"
-msgstr "ID зображення іконки хоста"
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:104
+#, fuzzy
+msgid "Icon Image Id"
+msgstr "Зображення іконки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:114
-msgid "Host Icon Image Alt"
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:105
+#, fuzzy
+msgid "Icon Image Alt"
 msgstr "Альтернативне зображення іконки хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:115
-msgid "Host Zone"
-msgstr "Зона хоста"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:116
-msgid "Host Zone Id"
-msgstr "ID зони хоста"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:117
-msgid "Host Command Endpoint"
-msgstr "Командна кінцева точка хоста"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:118
-msgid "Host Command Endpoint Id"
-msgstr "ID командної кінцевої точки хоста"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:28
-msgid "Host State Environment Id"
-msgstr "ID оточення стану хоста"
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:106
+#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:44
+msgid "Zone Name"
+msgstr "Ім'я зони"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:29
 msgid "Host State Type"
@@ -2731,7 +2631,8 @@ msgid "Host Previous Hard State"
 msgstr "Попередній твердий стан хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:34
-msgid "Host State Attempt No."
+#, fuzzy
+msgid "Host Check Attempt No."
 msgstr "Спроба стану хоста №"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:35
@@ -2739,92 +2640,105 @@ msgid "Host State Severity"
 msgstr "Тяжкість стану хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:36
-msgid "Host State Output"
+#, fuzzy
+msgid "Host Output"
 msgstr "Вивід стану хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:37
-msgid "Host State Long Output"
+#, fuzzy
+msgid "Host Long Output"
 msgstr "Повний вивід стану хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:38
-msgid "Host State Performance Data"
+#, fuzzy
+msgid "Host Performance Data"
 msgstr "Дані продуктивності стану хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:39
-msgid "Host State Normalized Performance Data"
+#, fuzzy
+msgid "Host Normalized Performance Data"
 msgstr "Нормалізовані дані продуктивності стану хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:40
-msgid "Host State Check Commandline"
+#, fuzzy
+msgid "Host Check Commandline"
 msgstr "Командна стрічка перевірки стану хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:41
-msgid "Host State Is Problem"
-msgstr "Хост у стані Проблемний"
+#, fuzzy
+msgid "Host Has Problem"
+msgstr "Проблеми хостів"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:42
-msgid "Host State Is Handled"
+#, fuzzy
+msgid "Host Is Handled"
 msgstr "Хост у стані Оброблений"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:43
-msgid "Host State Is Reachable"
+#, fuzzy
+msgid "Host Is Reachable"
 msgstr "Хост у стані Доступний"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:44
-msgid "Host State Is Flapping"
+#, fuzzy
+msgid "Host Is Flapping"
 msgstr "Хост у стані Флепінг"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:45
-msgid "Host State Is Overdue"
+#, fuzzy
+msgid "Host Check Is Overdue"
 msgstr "Хост у стані Прострочений"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:46
-msgid "Host State Is Acknowledged"
+#, fuzzy
+msgid "Host Is Acknowledged"
 msgstr "Хост у стані Підтверджений"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:47
-msgid "Host State Acknowledgement Comment Id"
+#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:44
+#, fuzzy
+msgid "Acknowledgement Comment Id"
 msgstr "ID коментаря ствердження стану хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:48
-msgid "Host State In Downtime"
+#, fuzzy
+msgid "Host In Downtime"
 msgstr "Хост у стані Простій"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:49
-msgid "Host State Execution Time"
+#, fuzzy
+msgid "Host Check Execution Time"
 msgstr "Час виконання стану хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:50
-msgid "Host State Latency"
+#, fuzzy
+msgid "Host Check Latency"
 msgstr "Затримка стану хоста"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:51
-msgid "Host State Timeout"
-msgstr "Таймаут стану хоста"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:52
-msgid "Host State Check Source"
+#, fuzzy
+msgid "Host Check Source"
 msgstr "Джерело перевірки стану хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:53
-msgid "Host State Last Update"
+#, fuzzy
+msgid "Host Last Update"
 msgstr "Останнє оновлення стану хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:54
-msgid "Host State Last State Change"
+#, fuzzy
+msgid "Host Last State Change"
 msgstr "Остання зміна стану хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:55
-msgid "Host State Next Check"
+#, fuzzy
+msgid "Host Next Check"
 msgstr "Наступна перевірка стану хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:56
-msgid "Host State Next Update"
+#, fuzzy
+msgid "Host Next Update"
 msgstr "Наступне оновлення стану хоста"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:41
-msgid "Hostgroup Environment Id"
-msgstr "ID оточення групи хостів"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:42
 msgid "Hostgroup Name Checksum"
@@ -2846,29 +2760,13 @@ msgstr "Ім'я групи хостів (CI)"
 msgid "Hostgroup Display Name"
 msgstr "Відображуване ім'я групи хостів"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:47
-msgid "Hostgroup Zone Id"
-msgstr "ID зони групи хостів"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/IconImage.php:35
 msgid "Icon Image"
 msgstr "Зображення іконки"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/IconImage.php:36
-msgid "Icon Image Environment Id"
-msgstr "ID оточення зображення іконки"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/NotesUrl.php:36
 msgid "Notes Url"
 msgstr "URL нотаток"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotesUrl.php:37
-msgid "Notes Url Environment Id"
-msgstr "ID оточення URL нотаток"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:50
-msgid "Notification Environment Id"
-msgstr "ID оточення сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:51
 msgid "Notification Name Checksum"
@@ -2886,109 +2784,90 @@ msgstr "Ім'я сповіщення"
 msgid "Notification Name (CI)"
 msgstr "Ім'я сповіщення (CI)"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:55
-msgid "Notification Host Id"
-msgstr "ID хоста сповіщення"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:56
-msgid "Notification Service Id"
-msgstr "ID сервіса сповіщення"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:57
-msgid "Notification Command Id"
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:45
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:38
+#, fuzzy
+msgid "Notificationcommand Id"
 msgstr "ID команди сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:58
-msgid "Notification Times Begin"
-msgstr "Початок часу сповіщення"
+#, fuzzy
+msgid "Notification Escalate After"
+msgstr "Стани сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:59
-msgid "Notification Times End"
-msgstr "Кінець часу сповіщення"
+#, fuzzy
+msgid "Notification Escalate Until"
+msgstr "Стани сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:60
 msgid "Notification Interval"
 msgstr "Інтервал сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:61
-msgid "Notification Timeperiod Id"
-msgstr "ID часового періоду сповіщення"
+#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:37
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:57
+#, fuzzy
+msgid "Timeperiod Id"
+msgstr "Часовий проміжок %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:62
-msgid "Notification States"
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:58
+#, fuzzy
+msgid "Notification State Filter"
 msgstr "Стани сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:63
-msgid "Notification Types"
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:59
+#, fuzzy
+msgid "Notification Type Filter"
 msgstr "Типи сповіщення"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:64
-msgid "Notification Zone Id"
-msgstr "ID зони сповіщення"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:54
-msgid "Notification History Id"
-msgstr "ID історії сповіщення"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:55
-msgid "Notification Environment Id (History)"
-msgstr "ID оточення сповіщення (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:56
-msgid "Notification Endpoint Id (History)"
-msgstr "ID кінцевої точки сповіщення (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:57
-msgid "Notification Object Type (History)"
-msgstr "Тип об'єкта сповіщення (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:58
-msgid "Notification Host Id (History)"
-msgstr "ID хоста сповіщення (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:59
-msgid "Notification Service Id (History)"
-msgstr "ID сервіса сповіщення (Історія)"
+#, fuzzy
+msgid "History Id"
+msgstr "Історія"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:60
-msgid "Notification Id (History)"
-msgstr "ID сповіщення (Історія)"
+#, fuzzy
+msgid "Notification Id"
+msgstr "Сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:61
-msgid "Notification Type (History)"
-msgstr "Тип сповіщення (Історія)"
+#, fuzzy
+msgid "Notification Type"
+msgstr "Типи сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:62
-msgid "Notification Sent On (History)"
+#, fuzzy
+msgid "Notification Sent On"
 msgstr "Сповіщення надіслано (Історія)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:63
-msgid "Notification Object State (History)"
-msgstr "Стан об'єкта сповіщення (Історія)"
+#, fuzzy
+msgid "Hard State"
+msgstr "Твердий стан хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:64
-msgid "Notification Previous Object State (History)"
-msgstr "Попередній стан об'єкта сповіщення (Історія)"
+#, fuzzy
+msgid "Previous Hard State"
+msgstr "Попередній твердий стан хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:65
-msgid "Notification Author (History)"
+#, fuzzy
+msgid "Notification Author"
 msgstr "Автор сповіщення (Історія)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:66
-msgid "Notification Text (History)"
-msgstr "Текст сповіщення (Історія)"
+#, fuzzy
+msgid "Notification Text"
+msgstr "Типи сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:67
-msgid "Notification Users Notified (History)"
-msgstr "Сповіщено користувачів (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:42
-msgid "Notificationcommand Zone Id"
-msgstr "ID зони команди сповіщення"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:43
-msgid "Notificationcommand Environment Id"
-msgstr "ID оточення команди сповіщення"
+#, fuzzy
+msgid "Users Notified"
+msgstr "Користувача не знайдено"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:44
 msgid "Notificationcommand Name Checksum"
@@ -3014,17 +2893,10 @@ msgstr "Команда сповіщення"
 msgid "Notificationcommand Timeout"
 msgstr "Таймаут команди сповіщення"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:45
-msgid "Notificationcommand Argument Command Id"
-msgstr "ID команди аргумента команди сповіщення"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:46
-msgid "Notificationcommand Argument Key"
-msgstr "Ключ аргумента команди сповіщення"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:47
-msgid "Notificationcommand Argument Environment Id"
-msgstr "ID оточення аргумента команди сповіщення"
+#, fuzzy
+msgid "Notificationcommand Argument Name"
+msgstr "Значення аргумента команди сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:48
 msgid "Notificationcommand Argument Properties Checksum"
@@ -3035,19 +2907,22 @@ msgid "Notificationcommand Argument Value"
 msgstr "Значення аргумента команди сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:50
-msgid "Notificationcommand Argument Order"
-msgstr "Порядок аргумента команди сповіщення"
+#, fuzzy
+msgid "Notificationcommand Argument Position"
+msgstr "Опис аргумента команди сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:51
 msgid "Notificationcommand Argument Description"
 msgstr "Опис аргумента команди сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:52
-msgid "Notificationcommand Argument Key Override"
-msgstr "Перезапис ключа аргумента команди сповіщення"
+#, fuzzy
+msgid "Notificationcommand Argument Actual Name"
+msgstr "Значення аргумента команди сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:53
-msgid "Notificationcommand Argument Repeat Key"
+#, fuzzy
+msgid "Notificationcommand Argument Repeated"
 msgstr "Ключ повтору аргумента команди сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:54
@@ -3055,24 +2930,18 @@ msgid "Notificationcommand Argument Required"
 msgstr "Необхідність аргумента команди сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:55
-msgid "Notificationcommand Argument Set If"
-msgstr "Встановлення аргумента команди сповіщення якщо"
+#, fuzzy
+msgid "Notificationcommand Argument Condition"
+msgstr "Опис аргумента команди сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:56
-msgid "Notificationcommand Argument Skip Key"
-msgstr "Ключ пропуску аргумента команди сповіщення"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:38
-msgid "Notificationcommand Envvar Command Id"
-msgstr "ID команди змінної оточення команди сповіщення"
+#, fuzzy
+msgid "Notificationcommand Argument Without Name"
+msgstr "Значення аргумента команди сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:39
 msgid "Notificationcommand Envvar Key"
 msgstr "Ключ змінної оточення команди сповіщення"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:40
-msgid "Notificationcommand Envvar Environment Id"
-msgstr "ID оточення змінної оточення команди сповіщення"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:41
 msgid "Notificationcommand Envvar Properties Checksum"
@@ -3082,10 +2951,6 @@ msgstr "Контрольна сума властивостей змінної о
 msgid "Notificationcommand Envvar Value"
 msgstr "Значення змінної оточення команди сповіщення"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:75
-msgid "Service Environment Id"
-msgstr "ID оточення сервіса"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:76
 msgid "Service Name Checksum"
 msgstr "Контрольна сума імені сервіса"
@@ -3093,10 +2958,6 @@ msgstr "Контрольна сума імені сервіса"
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:77
 msgid "Service Properties Checksum"
 msgstr "Контрольна сума властивостей сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:78
-msgid "Service Host Id"
-msgstr "ID хоста сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:80
 msgid "Service Name (CI)"
@@ -3106,27 +2967,12 @@ msgstr "Ім'я сервіса (CI)"
 msgid "Service Display Name"
 msgstr "Відображуване ім'я сервіса"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:82
-msgid "Service Checkcommand"
-msgstr "Команда перевірки сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:83
-msgid "Service Checkcommand Id"
-msgstr "ID команди перевірки сервіса"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:84
 msgid "Service Max Check Attempts"
 msgstr "Максимальна кількість спроб перевірки сервіса"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:85
-msgid "Service Check Timeperiod"
-msgstr "Часовий період перевірки сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:86
-msgid "Service Check Timeperiod Id"
-msgstr "ID часового періоду перевірки сервіса"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:87
+#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:48
 msgid "Service Check Timeout"
 msgstr "Таймаут перевірки сервіса"
 
@@ -3170,57 +3016,13 @@ msgstr "Верхня межа флепінгу сервіса"
 msgid "Service Performance Data Enabled"
 msgstr "Дані продуктивності сервіса увімкнено"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:98
-msgid "Service Eventcommand"
-msgstr "Команда події сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:99
-msgid "Service Eventcommand Id"
-msgstr "ID команди події сервіса"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:100
 msgid "Service Is Volatile"
 msgstr "Сервіс волатильний"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:101
-msgid "Service Action Url Id"
-msgstr "ID URL дії для сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:102
-msgid "Service Notes Url Id"
-msgstr "ID URL нотаток сервіса"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:103
 msgid "Service Notes"
 msgstr "Нотатки сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:104
-msgid "Service Icon Image Id"
-msgstr "ID зображення іконки сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:105
-msgid "Service Icon Image Alt"
-msgstr "Альтернативне зображення іконки сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:106
-msgid "Service Zone"
-msgstr "Зона сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:107
-msgid "Service Zone Id"
-msgstr "ID зони сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:108
-msgid "Service Command Endpoint"
-msgstr "Командна кінцева точка сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:109
-msgid "Service Command Endpoint Id"
-msgstr "ID командної кінцевої точки сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:25
-msgid "Service State Environment Id"
-msgstr "ID оточення стану сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:26
 msgid "Service State Type"
@@ -3244,7 +3046,8 @@ msgid "Service Previous Hard State"
 msgstr "Попередній твердий стан сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:31
-msgid "Service State Attempt No."
+#, fuzzy
+msgid "Service Check Attempt No."
 msgstr "Спроба перевірки стану сервіса №"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:32
@@ -3252,92 +3055,99 @@ msgid "Service State Severity"
 msgstr "Тяжкість стану сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:33
-msgid "Service State Output"
+#, fuzzy
+msgid "Service Output"
 msgstr "Вивід стану сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:34
-msgid "Service State Long Output"
+#, fuzzy
+msgid "Service Long Output"
 msgstr "Повний вивід стану сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:35
-msgid "Service State Performance Data"
+#, fuzzy
+msgid "Service Performance Data"
 msgstr "Дані продуктивності стану сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:36
-msgid "Service State Normalized Performance Data"
+#, fuzzy
+msgid "Service Normalized Performance Data"
 msgstr "Нормалізовані дані продуктивності стану сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:37
-msgid "Service State Check Commandline"
+#, fuzzy
+msgid "Service Check Commandline"
 msgstr "Командна стрічка перевірки стану сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:38
-msgid "Service State Is Problem"
-msgstr "Сервіс у стані Проблемний"
+#, fuzzy
+msgid "Service Has Problem"
+msgstr "Проблеми сервісів"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:39
-msgid "Service State Is Handled"
+#, fuzzy
+msgid "Service Is Handled"
 msgstr "Сервіс у стані Оброблений"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:40
-msgid "Service State Is Reachable"
+#, fuzzy
+msgid "Service Is Reachable"
 msgstr "Сервіс у стані Доступний"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:41
-msgid "Service State Is Flapping"
+#, fuzzy
+msgid "Service Is Flapping"
 msgstr "Сервіс у стані Флепінг"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:42
-msgid "Service State Is Overdue"
+#, fuzzy
+msgid "Service Check Is Overdue"
 msgstr "Сервіс у стані Прострочений"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:43
-msgid "Service State Is Acknowledged"
+#, fuzzy
+msgid "Service Is Acknowledged"
 msgstr "Сервіс у стані Підтверджений"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:44
-msgid "Service State Acknowledgement Comment Id"
-msgstr "ID коментаря підтвердження стану сервіса"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:45
-msgid "Service State In Downtime"
+#, fuzzy
+msgid "Service In Downtime"
 msgstr "Сервіс у стані Простій"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:46
-msgid "Service State Execution Time"
+#, fuzzy
+msgid "Service Check Execution Time"
 msgstr "Час виконання стану сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:47
-msgid "Service State Latency"
+#, fuzzy
+msgid "Service Check Latency"
 msgstr "Затримка стану сервіса"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:48
-msgid "Service State Timeout"
-msgstr "Таймаут стану сервіса"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:49
-msgid "Service State Check Source"
+#, fuzzy
+msgid "Service Check Source"
 msgstr "Джерело перевірки стану сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:50
-msgid "Service State Last Update"
+#, fuzzy
+msgid "Service Last Update"
 msgstr "Останнє оновлення стану сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:51
-msgid "Service State Last State Change"
+#, fuzzy
+msgid "Service Last State Change"
 msgstr "Остання зміна стану сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:52
-msgid "Service State Next Check"
+#, fuzzy
+msgid "Service Next Check"
 msgstr "Наступна перевірка стану сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:53
-msgid "Service State Next Update"
+#, fuzzy
+msgid "Service Next Update"
 msgstr "Наступне оновлення стану сервіса"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:41
-msgid "Servicegroup Environment Id"
-msgstr "ID оточення групи сервісів"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:42
 msgid "Servicegroup Name Checksum"
@@ -3359,77 +3169,55 @@ msgstr "Ім'я групи сервісів (CI)"
 msgid "Servicegroup Display Name"
 msgstr "Відображуване ім'я групи сервісів"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:47
-msgid "Servicegroup Zone Id"
-msgstr "ID зони групи сервісів"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:57
-msgid "State Environment Id (History)"
-msgstr "ID оточення стану (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:58
-msgid "State Endpoint Id (History)"
-msgstr "ID кінцевої точки стану (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:59
-msgid "State Object Type (History)"
-msgstr "Тип об'єкта стану (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:60
-msgid "State Host Id (History)"
-msgstr "ID стану хоста (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:61
-msgid "State Service Id (History)"
-msgstr "ID стану сервіса (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:62
-msgid "State Event Time (History)"
-msgstr "Час події стану (Історія)"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:63
-msgid "State Type (History)"
-msgstr "Тип стану (Історія)"
+#, fuzzy
+msgid "Event State Type"
+msgstr "Тип стану хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:64
-msgid "Soft State (History)"
-msgstr "М'який стан (Історія)"
+#, fuzzy
+msgid "Event Soft State"
+msgstr "М'який стан хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:65
-msgid "Hard State (History)"
-msgstr "Твердий стан (Історія)"
+#, fuzzy
+msgid "Event Hard State"
+msgstr "Твердий стан хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:66
-msgid "State Attempt No. (History)"
-msgstr "Спроба стану № (Історія)"
+#, fuzzy
+msgid "Event Check Attempt No."
+msgstr "Спроба перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:67
-msgid "Previous Soft State (History)"
-msgstr "Попередній м'який стан (Історія)"
+#, fuzzy
+msgid "Event Previous Soft State"
+msgstr "Попередній твердий стан хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:68
-msgid "Previous Hard State (History)"
-msgstr "Попередній твердий стан (Історія)"
+#, fuzzy
+msgid "Event Previous Hard State"
+msgstr "Попередній твердий стан хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:69
-msgid "State Output (History)"
-msgstr "Вивід стану (Історія)"
+#, fuzzy
+msgid "Event Output"
+msgstr "Вивід"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:70
-msgid "State Long Output (History)"
-msgstr "Повний вивід стану (Історія)"
+#, fuzzy
+msgid "Event Long Output"
+msgstr "Повний вивід стану сервіса"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:71
-msgid "State Max Check Attempts (History)"
-msgstr "Максимальна кількість спроб перевірки стану (Історія)"
+#, fuzzy
+msgid "Event Max Check Attempts"
+msgstr "Максимальна кількість спроб перевірки хоста"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:72
-msgid "State Check Source (History)"
-msgstr "Джерело перевірки стану (Історія)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:42
-msgid "Timeperiod Environment Id"
-msgstr "ID оточення часового проміжку"
+#, fuzzy
+msgid "Event Check Source"
+msgstr "Джерело перевірки"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:43
 msgid "Timeperiod Name Checksum"
@@ -3455,29 +3243,15 @@ msgstr "Відображуване ім'я часового проміжку"
 msgid "Timeperiod Prefer Includes"
 msgstr "Віддавати перевагу включенням"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:49
-msgid "Timeperiod Zone Id"
-msgstr "ID зони часового проміжку"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:37
-msgid "Timeperiod Range Period Id"
-msgstr "ID періоду часового проміжку"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:38
-msgid "Timeperiod Range Key"
+#, fuzzy
+msgid "Timeperiod Range Date(s)/Day"
 msgstr "Ключ тривалості часового проміжку"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:39
-msgid "Timeperiod Range Environment Id"
-msgstr "ID оточення періоду часового проміжку"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:40
-msgid "Timeperiod Range Value"
-msgstr "Значення періоду часового проміжку"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:48
-msgid "User Environment Id"
-msgstr "ID оточення користувача"
+#, fuzzy
+msgid "Timeperiod Range Time"
+msgstr "Ключ тривалості часового проміжку"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:49
 msgid "User Name Checksum"
@@ -3511,26 +3285,6 @@ msgstr "Пейджер користувача"
 msgid "User Receives Notifications"
 msgstr "Користувач отримує сповіщення"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:57
-msgid "User Timeperiod Id"
-msgstr "ID часового періоду користувача"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:58
-msgid "User States"
-msgstr "Стани користувача"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:59
-msgid "User Types"
-msgstr "Типи користувачів"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:60
-msgid "User Zone Id"
-msgstr "ID зони користувача"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:41
-msgid "Usergroup Environment Id"
-msgstr "ID оточення групи користувачів"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:42
 msgid "Usergroup Name Checksum"
 msgstr "Контрольна сума імені групи користувачів"
@@ -3551,14 +3305,6 @@ msgstr "Ім'я групи користувачів (CI)"
 msgid "Usergroup Display Name"
 msgstr "Відображуване ім'я групи користувачів"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:47
-msgid "Usergroup Zone Id"
-msgstr "ID зони групи користувачів"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:41
-msgid "Zone Environment Id"
-msgstr "ID оточення зони"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:42
 msgid "Zone Name Checksum"
 msgstr "Контрольна сума імені зони"
@@ -3566,10 +3312,6 @@ msgstr "Контрольна сума імені зони"
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:43
 msgid "Zone Properties Checksum"
 msgstr "Контрольна сума властивостей зони"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:44
-msgid "Zone Name"
-msgstr "Ім'я зони"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:45
 msgid "Zone Name (CI)"
@@ -3580,26 +3322,27 @@ msgid "Zone Is Global"
 msgstr "Глобальна зона"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:47
-msgid "Zone Parent Id"
-msgstr "ID батьківської зони"
+#, fuzzy
+msgid "Parent Zone Id"
+msgstr "ID зони коментаря"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:48
 msgid "Zone Depth"
 msgstr "Глибина зони"
 
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:75
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:34
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:52
+#, php-format
+msgid "Can't connect to Icinga Redis: %s"
+msgstr "Неможливо з'єднатися з Icinga Redis: %s"
+
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:92
 msgid ""
 "Icinga Redis is outdated. Make sure Icinga 2 is running and connected to "
 "Redis."
 msgstr ""
 "Icinga Redis застарів. Впевніться що Icinga 2 запущено та під'єднано до "
 "Redis."
-
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:104
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:52
-#, php-format
-msgid "Can't connect to Icinga Redis: %s"
-msgstr "Неможливо з'єднатися з Icinga Redis: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:35
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:41
@@ -3992,12 +3735,12 @@ msgctxt "..<customvar-name>"
 msgid "Usergroup %s"
 msgstr "Група користувачів %s"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:139
+#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:162
 #, php-format
 msgid "\"%s\" is not a valid relation"
 msgstr "\"%s\" не є коректним відношенням"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:175
+#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:198
 #, php-format
 msgid "\"%s\" is not a valid column"
 msgstr "'%s' не є коректною колонкою"
@@ -4994,6 +4737,586 @@ msgstr[2] "%d сервісів"
 #: sources.d/icingadb-web/library/Icingadb/Widget/ShowMore.php:43
 msgid "Show More"
 msgstr "Більше"
+
+#~ msgid "Notification States"
+#~ msgstr "Стани сповіщення"
+
+#~ msgid "Notification Types"
+#~ msgstr "Типи сповіщення"
+
+#~ msgid "Checkcommand Argument Key"
+#~ msgstr "Ключ аргумента команди перевірки"
+
+#~ msgid "Checkcommand Argument Order"
+#~ msgstr "Порядок аргументів команди перевірки"
+
+#~ msgid "Checkcommand Argument Key Override"
+#~ msgstr "Перезапис ключа аргумента команди перевірки"
+
+#~ msgid "Checkcommand Argument Set If"
+#~ msgstr "Задати аргумент команди перевірки якщо"
+
+#~ msgid "Checkcommand Argument Skip Key"
+#~ msgstr "Ключ пропуску аргумента команди перевірки"
+
+#~ msgid "Checkcommand Envvar Key"
+#~ msgstr "Ключ змінної оточення команди перевірки"
+
+#, fuzzy
+#~ msgid "Environment id"
+#~ msgstr "Ім'я оточення"
+
+#~ msgid "Eventcommand Argument Key"
+#~ msgstr "Аргумент команди події"
+
+#~ msgid "Eventcommand Argument Order"
+#~ msgstr "Порядок аргумента команди події"
+
+#~ msgid "Eventcommand Argument Key Override"
+#~ msgstr "Перезапис аргумента команди події"
+
+#~ msgid "Eventcommand Argument Set If"
+#~ msgstr "Призначити аргумент команди події якщо"
+
+#~ msgid "Eventcommand Argument Skip Key"
+#~ msgstr "Ключ пропуску аргумента команди події"
+
+#~ msgid "Eventcommand Envvar Key"
+#~ msgstr "Ключ змінної оточення команди події"
+
+#~ msgid "Notificationcommand Argument Key"
+#~ msgstr "Ключ аргумента команди сповіщення"
+
+#~ msgid "Notificationcommand Argument Order"
+#~ msgstr "Порядок аргумента команди сповіщення"
+
+#~ msgid "Notificationcommand Argument Key Override"
+#~ msgstr "Перезапис ключа аргумента команди сповіщення"
+
+#~ msgid "Notificationcommand Argument Set If"
+#~ msgstr "Встановлення аргумента команди сповіщення якщо"
+
+#~ msgid "Notificationcommand Argument Skip Key"
+#~ msgstr "Ключ пропуску аргумента команди сповіщення"
+
+#~ msgid "Timeperiod Range Value"
+#~ msgstr "Значення періоду часового проміжку"
+
+#~ msgid "User States"
+#~ msgstr "Стани користувача"
+
+#~ msgid "User Types"
+#~ msgstr "Типи користувачів"
+
+#~ msgid "Acknowledgement Environment Id (History)"
+#~ msgstr "ID оточення підтвердження (Історія)"
+
+#~ msgid "Acknowledgement Endpoint Id (History)"
+#~ msgstr "ID кінцевої точки підтвердження (Історія)"
+
+#~ msgid "Acknowledgement Object Type (History)"
+#~ msgstr "Тип об'єкта підтвердження (Історія)"
+
+#~ msgid "Acknowledgement Host Id (History)"
+#~ msgstr "ID хоста підтвердження (Історія)"
+
+#~ msgid "Acknowledgement Service Id (History)"
+#~ msgstr "ID сервіса підтвердження (Історія)"
+
+#~ msgid "Acknowledgement Set Time (History)"
+#~ msgstr "Час створення підтвердження (Історія)"
+
+#~ msgid "Acknowledgement Clear Time (History)"
+#~ msgstr "Час завершення підтвердження (Історія)"
+
+#~ msgid "Acknowledgement Author (History)"
+#~ msgstr "Автор підтвердження (Історія)"
+
+#~ msgid "Acknowledgement Cleared By (History)"
+#~ msgstr "Підтвердження видалене (Історія)"
+
+#~ msgid "Acknowledgement Comment (History)"
+#~ msgstr "Коментар підтвердження (Історія)"
+
+#~ msgid "Action Url Environment Id"
+#~ msgstr "ID оточення URL дії"
+
+#~ msgid "Checkcommand Zone Id"
+#~ msgstr "ID зони команди перевірки"
+
+#~ msgid "Checkcommand Environment Id"
+#~ msgstr "ID оточення команди перевірки"
+
+#~ msgid "Checkcommand Argument Command Id"
+#~ msgstr "ID команди аргумента команди перевірки"
+
+#~ msgid "Checkcommand Argument Environment Id"
+#~ msgstr "ID оточення аргумента команди перевірки"
+
+#~ msgid "Checkcommand Envvar Command Id"
+#~ msgstr "ID змінних оточення команди перевірки"
+
+#~ msgid "Comment Environment Id"
+#~ msgstr "ID оточення коментаря"
+
+#~ msgid "Comment Object Type"
+#~ msgstr "Тип об'єкта коментаря"
+
+#~ msgid "Comment Host Id"
+#~ msgstr "ID хоста коментаря"
+
+#~ msgid "Comment Service Id"
+#~ msgstr "ID сервіса коментаря"
+
+#~ msgid "Comment Environment Id (History)"
+#~ msgstr "ID оточення коментаря (Історія)"
+
+#~ msgid "Comment Endpoint Id (History)"
+#~ msgstr "ID кінцевої точки коментаря (Історія)"
+
+#~ msgid "Comment Object Type (History)"
+#~ msgstr "Тип об'єкта коментаря (Історія)"
+
+#~ msgid "Comment Host Id (History)"
+#~ msgstr "ID хоста коментаря (Історія)"
+
+#~ msgid "Comment Service Id (History)"
+#~ msgstr "ID сервіса коментаря (Історія)"
+
+#~ msgid "Comment Entry Time (History)"
+#~ msgstr "Час створення коментаря (Історія)"
+
+#~ msgid "Comment Author (History)"
+#~ msgstr "Автор коментаря (Історія)"
+
+#~ msgid "Comment Removed By (History)"
+#~ msgstr "Коментар видалено (Історія)"
+
+#~ msgid "Comment Comment (History)"
+#~ msgstr "Коментар коментаря (Історія)"
+
+#~ msgid "Comment Entry Type (History)"
+#~ msgstr "Тип запису коментаря (Історія)"
+
+#~ msgid "Comment Is Persistent (History)"
+#~ msgstr "Постійний коментар (Історія)"
+
+#~ msgid "Comment Is Sticky (History)"
+#~ msgstr "Прикріплений коментар (Історія)"
+
+#~ msgid "Comment Expire Time (History)"
+#~ msgstr "Кінцевий час коментаря (Історія)"
+
+#~ msgid "Downtime Environment Id"
+#~ msgstr "ID оточення простою"
+
+#~ msgid "Downtime Triggered By Id"
+#~ msgstr "ID спрацювання простою"
+
+#~ msgid "Downtime Parent Id"
+#~ msgstr "ID батьківського простою"
+
+#~ msgid "Downtime Object Type"
+#~ msgstr "Тип об'єкта простою"
+
+#~ msgid "Downtime Host Id"
+#~ msgstr "ID простою хоста"
+
+#~ msgid "Downtime Service Id"
+#~ msgstr "ID простою сервіса"
+
+#~ msgid "Downtime Scheduled By"
+#~ msgstr "Простій додано до розкладу"
+
+#~ msgid "Downtime Zone Id"
+#~ msgstr "ID зони простою"
+
+#~ msgid "Downtime Environment Id (History)"
+#~ msgstr "ID оточення простою (Історія)"
+
+#~ msgid "Downtime Endpoint Id (History)"
+#~ msgstr "ID кінцевої точки простою (Історія)"
+
+#~ msgid "Downtime Triggered By Id (History)"
+#~ msgstr "ID спрацювання простою (Історія)"
+
+#~ msgid "Downtime Parent Id (History)"
+#~ msgstr "ID батьківського простою (Історія)"
+
+#~ msgid "Downtime Object Type (History)"
+#~ msgstr "Тип об'єкта простою (Історія)"
+
+#~ msgid "Downtime Host Id (History)"
+#~ msgstr "ID хоста простою (Історія)"
+
+#~ msgid "Downtime Service Id (History)"
+#~ msgstr "ID сервіса простою (Історія)"
+
+#~ msgid "Downtime Entry Time (History)"
+#~ msgstr "Час створення простою (Історія)"
+
+#~ msgid "Downtime Author (History)"
+#~ msgstr "Автор простою (Історія)"
+
+#~ msgid "Downtime Cancelled By (History)"
+#~ msgstr "Простій скасовано (Історія)"
+
+#~ msgid "Downtime Comment (History)"
+#~ msgstr "Коментар простою (Історія)"
+
+#~ msgid "Downtime Is Flexible (History)"
+#~ msgstr "Гнучкий простій (Історія)"
+
+#~ msgid "Downtime Flexible Duration (History)"
+#~ msgstr "Тривалість гнучкого простою (Історія)"
+
+#~ msgid "Downtime Scheduled Start (History)"
+#~ msgstr "Початок простою за розкладом (Історія)"
+
+#~ msgid "Downtime Scheduled End (History)"
+#~ msgstr "Завершення простою за розкладом (Історія)"
+
+#~ msgid "Downtime Actual Start (History)"
+#~ msgstr "Дійсний початок простою (Історія)"
+
+#~ msgid "Downtime Actual End (History)"
+#~ msgstr "Дійсне завершення простою (Історія)"
+
+#~ msgid "Endpoint Environment Id"
+#~ msgstr "ID оточення кінцевої точки"
+
+#~ msgid "Eventcommand Zone Id"
+#~ msgstr "ID зони команди події"
+
+#~ msgid "Eventcommand Environment id"
+#~ msgstr "ID оточення команди події"
+
+#~ msgid "Eventcommand Argument Command Id"
+#~ msgstr "ID команди аргумента команди події"
+
+#~ msgid "Eventcommand Argument Environment Id"
+#~ msgstr "ID оточення аргумента команди події"
+
+#~ msgid "Eventcommand Envvar Command Id"
+#~ msgstr "ID команди змінної оточення команди події"
+
+#~ msgid "Eventcommand Envvar Environment Id"
+#~ msgstr "ID оточення змінної команди події"
+
+#~ msgid "Flapping Environment Id (History)"
+#~ msgstr "ID оточення флепінгу (Історія)"
+
+#~ msgid "Flapping Endpoint Id (History)"
+#~ msgstr "ID кінцевої точки флепінгу (Історія)"
+
+#~ msgid "Flapping Object Type (History)"
+#~ msgstr "Тип об'єкта з флепінгом (Історія)"
+
+#~ msgid "Flapping Host Id (History)"
+#~ msgstr "ID хоста з флепінгом (Історія)"
+
+#~ msgid "Flapping Service Id (History)"
+#~ msgstr "ID сервіса з флепінгом (нижня)"
+
+#~ msgid "Flapping Start Time (History)"
+#~ msgstr "Початок флепінгу (Історія)"
+
+#~ msgid "Flapping End Time (History)"
+#~ msgstr "Кінець флепінгу (Історія)"
+
+#~ msgid "Flapping Threshold Low (History)"
+#~ msgstr "Нижня межа флепінгу (Історія)"
+
+#~ msgid "Flapping Threshold High (History)"
+#~ msgstr "Верхня межа флепінгу (Історія)"
+
+#~ msgid "Environment Id (History)"
+#~ msgstr "ID оточення (Історія)"
+
+#~ msgid "Endpoint Id (History)"
+#~ msgstr "ID кінцевої точки (Історія)"
+
+#~ msgid "Host Id (History)"
+#~ msgstr "ID хоста (Історія)"
+
+#~ msgid "Service Id (History)"
+#~ msgstr "ID сервіса (Історія)"
+
+#~ msgid "Host Checkcommand"
+#~ msgstr "Команда перевірки хоста"
+
+#~ msgid "Host Checkcommand Id"
+#~ msgstr "ID команди перевірки хоста"
+
+#~ msgid "Host Check Timeperiod"
+#~ msgstr "Часовий період перевірки хоста"
+
+#~ msgid "Host Eventcommand"
+#~ msgstr "Команда події хоста"
+
+#~ msgid "Host Eventcommand Id"
+#~ msgstr "ID команди події хоста"
+
+#~ msgid "Host Action Url Id"
+#~ msgstr "ID дії для хоста"
+
+#~ msgid "Host Notes Url Id"
+#~ msgstr "ID URL нотаток хоста"
+
+#~ msgid "Host Icon Image Id"
+#~ msgstr "ID зображення іконки хоста"
+
+#~ msgid "Host Zone"
+#~ msgstr "Зона хоста"
+
+#~ msgid "Host Command Endpoint"
+#~ msgstr "Командна кінцева точка хоста"
+
+#~ msgid "Host Command Endpoint Id"
+#~ msgstr "ID командної кінцевої точки хоста"
+
+#~ msgid "Host State Environment Id"
+#~ msgstr "ID оточення стану хоста"
+
+#~ msgid "Host State Is Problem"
+#~ msgstr "Хост у стані Проблемний"
+
+#~ msgid "Host State Timeout"
+#~ msgstr "Таймаут стану хоста"
+
+#~ msgid "Hostgroup Environment Id"
+#~ msgstr "ID оточення групи хостів"
+
+#~ msgid "Hostgroup Zone Id"
+#~ msgstr "ID зони групи хостів"
+
+#~ msgid "Icon Image Environment Id"
+#~ msgstr "ID оточення зображення іконки"
+
+#~ msgid "Notes Url Environment Id"
+#~ msgstr "ID оточення URL нотаток"
+
+#~ msgid "Notification Environment Id"
+#~ msgstr "ID оточення сповіщення"
+
+#~ msgid "Notification Host Id"
+#~ msgstr "ID хоста сповіщення"
+
+#~ msgid "Notification Service Id"
+#~ msgstr "ID сервіса сповіщення"
+
+#~ msgid "Notification Times Begin"
+#~ msgstr "Початок часу сповіщення"
+
+#~ msgid "Notification Times End"
+#~ msgstr "Кінець часу сповіщення"
+
+#~ msgid "Notification Timeperiod Id"
+#~ msgstr "ID часового періоду сповіщення"
+
+#~ msgid "Notification Zone Id"
+#~ msgstr "ID зони сповіщення"
+
+#~ msgid "Notification History Id"
+#~ msgstr "ID історії сповіщення"
+
+#~ msgid "Notification Environment Id (History)"
+#~ msgstr "ID оточення сповіщення (Історія)"
+
+#~ msgid "Notification Endpoint Id (History)"
+#~ msgstr "ID кінцевої точки сповіщення (Історія)"
+
+#~ msgid "Notification Object Type (History)"
+#~ msgstr "Тип об'єкта сповіщення (Історія)"
+
+#~ msgid "Notification Host Id (History)"
+#~ msgstr "ID хоста сповіщення (Історія)"
+
+#~ msgid "Notification Service Id (History)"
+#~ msgstr "ID сервіса сповіщення (Історія)"
+
+#~ msgid "Notification Id (History)"
+#~ msgstr "ID сповіщення (Історія)"
+
+#~ msgid "Notification Type (History)"
+#~ msgstr "Тип сповіщення (Історія)"
+
+#~ msgid "Notification Object State (History)"
+#~ msgstr "Стан об'єкта сповіщення (Історія)"
+
+#~ msgid "Notification Previous Object State (History)"
+#~ msgstr "Попередній стан об'єкта сповіщення (Історія)"
+
+#~ msgid "Notification Text (History)"
+#~ msgstr "Текст сповіщення (Історія)"
+
+#~ msgid "Notification Users Notified (History)"
+#~ msgstr "Сповіщено користувачів (Історія)"
+
+#~ msgid "Notificationcommand Zone Id"
+#~ msgstr "ID зони команди сповіщення"
+
+#~ msgid "Notificationcommand Environment Id"
+#~ msgstr "ID оточення команди сповіщення"
+
+#~ msgid "Notificationcommand Argument Command Id"
+#~ msgstr "ID команди аргумента команди сповіщення"
+
+#~ msgid "Notificationcommand Argument Environment Id"
+#~ msgstr "ID оточення аргумента команди сповіщення"
+
+#~ msgid "Notificationcommand Envvar Command Id"
+#~ msgstr "ID команди змінної оточення команди сповіщення"
+
+#~ msgid "Notificationcommand Envvar Environment Id"
+#~ msgstr "ID оточення змінної оточення команди сповіщення"
+
+#~ msgid "Service Environment Id"
+#~ msgstr "ID оточення сервіса"
+
+#~ msgid "Service Host Id"
+#~ msgstr "ID хоста сервіса"
+
+#~ msgid "Service Checkcommand"
+#~ msgstr "Команда перевірки сервіса"
+
+#~ msgid "Service Checkcommand Id"
+#~ msgstr "ID команди перевірки сервіса"
+
+#~ msgid "Service Check Timeperiod"
+#~ msgstr "Часовий період перевірки сервіса"
+
+#~ msgid "Service Check Timeperiod Id"
+#~ msgstr "ID часового періоду перевірки сервіса"
+
+#~ msgid "Service Eventcommand"
+#~ msgstr "Команда події сервіса"
+
+#~ msgid "Service Eventcommand Id"
+#~ msgstr "ID команди події сервіса"
+
+#~ msgid "Service Action Url Id"
+#~ msgstr "ID URL дії для сервіса"
+
+#~ msgid "Service Notes Url Id"
+#~ msgstr "ID URL нотаток сервіса"
+
+#~ msgid "Service Icon Image Id"
+#~ msgstr "ID зображення іконки сервіса"
+
+#~ msgid "Service Icon Image Alt"
+#~ msgstr "Альтернативне зображення іконки сервіса"
+
+#~ msgid "Service Zone"
+#~ msgstr "Зона сервіса"
+
+#~ msgid "Service Zone Id"
+#~ msgstr "ID зони сервіса"
+
+#~ msgid "Service Command Endpoint"
+#~ msgstr "Командна кінцева точка сервіса"
+
+#~ msgid "Service Command Endpoint Id"
+#~ msgstr "ID командної кінцевої точки сервіса"
+
+#~ msgid "Service State Environment Id"
+#~ msgstr "ID оточення стану сервіса"
+
+#~ msgid "Service State Is Problem"
+#~ msgstr "Сервіс у стані Проблемний"
+
+#~ msgid "Service State Acknowledgement Comment Id"
+#~ msgstr "ID коментаря підтвердження стану сервіса"
+
+#~ msgid "Service State Timeout"
+#~ msgstr "Таймаут стану сервіса"
+
+#~ msgid "Servicegroup Environment Id"
+#~ msgstr "ID оточення групи сервісів"
+
+#~ msgid "Servicegroup Zone Id"
+#~ msgstr "ID зони групи сервісів"
+
+#~ msgid "State Environment Id (History)"
+#~ msgstr "ID оточення стану (Історія)"
+
+#~ msgid "State Endpoint Id (History)"
+#~ msgstr "ID кінцевої точки стану (Історія)"
+
+#~ msgid "State Object Type (History)"
+#~ msgstr "Тип об'єкта стану (Історія)"
+
+#~ msgid "State Host Id (History)"
+#~ msgstr "ID стану хоста (Історія)"
+
+#~ msgid "State Service Id (History)"
+#~ msgstr "ID стану сервіса (Історія)"
+
+#~ msgid "State Event Time (History)"
+#~ msgstr "Час події стану (Історія)"
+
+#~ msgid "State Type (History)"
+#~ msgstr "Тип стану (Історія)"
+
+#~ msgid "Soft State (History)"
+#~ msgstr "М'який стан (Історія)"
+
+#~ msgid "Hard State (History)"
+#~ msgstr "Твердий стан (Історія)"
+
+#~ msgid "State Attempt No. (History)"
+#~ msgstr "Спроба стану № (Історія)"
+
+#~ msgid "Previous Soft State (History)"
+#~ msgstr "Попередній м'який стан (Історія)"
+
+#~ msgid "Previous Hard State (History)"
+#~ msgstr "Попередній твердий стан (Історія)"
+
+#~ msgid "State Output (History)"
+#~ msgstr "Вивід стану (Історія)"
+
+#~ msgid "State Long Output (History)"
+#~ msgstr "Повний вивід стану (Історія)"
+
+#~ msgid "State Max Check Attempts (History)"
+#~ msgstr "Максимальна кількість спроб перевірки стану (Історія)"
+
+#~ msgid "State Check Source (History)"
+#~ msgstr "Джерело перевірки стану (Історія)"
+
+#~ msgid "Timeperiod Environment Id"
+#~ msgstr "ID оточення часового проміжку"
+
+#~ msgid "Timeperiod Zone Id"
+#~ msgstr "ID зони часового проміжку"
+
+#~ msgid "Timeperiod Range Period Id"
+#~ msgstr "ID періоду часового проміжку"
+
+#~ msgid "Timeperiod Range Environment Id"
+#~ msgstr "ID оточення періоду часового проміжку"
+
+#~ msgid "User Environment Id"
+#~ msgstr "ID оточення користувача"
+
+#~ msgid "User Timeperiod Id"
+#~ msgstr "ID часового періоду користувача"
+
+#~ msgid "User Zone Id"
+#~ msgstr "ID зони користувача"
+
+#~ msgid "Usergroup Environment Id"
+#~ msgstr "ID оточення групи користувачів"
+
+#~ msgid "Usergroup Zone Id"
+#~ msgstr "ID зони групи користувачів"
+
+#~ msgid "Zone Environment Id"
+#~ msgstr "ID оточення зони"
+
+#~ msgid "Zone Parent Id"
+#~ msgstr "ID батьківської зони"
 
 #~ msgid "Open health overview"
 #~ msgstr "Відкрити огляд здоров'я"

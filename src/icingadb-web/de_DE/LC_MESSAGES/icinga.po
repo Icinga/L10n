@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 15:40+0000\n"
+"POT-Creation-Date: 2022-07-15 09:37+0000\n"
 "PO-Revision-Date: 2022-07-14 15:21+0000\n"
 "Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
 "Language-Team: German <https://translate.icinga.com/projects/icinga/icingadb-"
@@ -104,8 +104,6 @@ msgstr "Eingabezeitpunkt"
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:66
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:115
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:135
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:328
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:329
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:48
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:90
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:84
@@ -125,8 +123,6 @@ msgstr[1] "Hosts"
 #: sources.d/icingadb-web/application/controllers/CommentsController.php:48
 #: sources.d/icingadb-web/application/controllers/DowntimesController.php:49
 #: sources.d/icingadb-web/application/controllers/ServiceController.php:189
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:333
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:334
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:54
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:96
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:94
@@ -257,8 +253,6 @@ msgid "Health"
 msgstr "Zustand"
 
 #: sources.d/icingadb-web/application/controllers/HealthController.php:41
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:41
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:84
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:60
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:101
 msgid ""
@@ -1883,11 +1877,10 @@ msgid "No custom variables configured."
 msgstr "Keine benutzerdefinierte Variablen konfiguriert."
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:220
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:210
+#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:233
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:219
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:40
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UsergroupDetail.php:48
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:233
 msgid "Custom Variables"
 msgstr "Benutzerdefinierte Variablen"
 
@@ -1917,64 +1910,128 @@ msgid "unknown"
 msgstr "unbekannt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:54
-msgid "Acknowledgement Environment Id (History)"
-msgstr "Bestätigung Umgebungs-ID (Historie)"
+#: sources.d/icingadb-web/library/Icingadb/Model/ActionUrl.php:37
+#: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:43
+#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:40
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:51
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:61
+#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:39
+#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:43
+#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:40
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:51
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:81
+#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:28
+#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:41
+#: sources.d/icingadb-web/library/Icingadb/Model/IconImage.php:36
+#: sources.d/icingadb-web/library/Icingadb/Model/NotesUrl.php:37
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:50
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:43
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:40
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:75
+#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:25
+#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:41
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:39
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:48
+#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:41
+#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:41
+msgid "Environment Id"
+msgstr "Umgebungs-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:55
-msgid "Acknowledgement Endpoint Id (History)"
-msgstr "Bestätigung Endpunkt-ID (Historie)"
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:62
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:52
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:118
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:109
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:58
+msgid "Endpoint Id"
+msgstr "Endpunkt-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:56
-msgid "Acknowledgement Object Type (History)"
-msgstr "Bestätigung Objekt-Typ (Historie)"
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:52
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:62
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:65
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:53
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:59
+msgid "Object Type"
+msgstr "Objekt-Typ"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:57
-msgid "Acknowledgement Host Id (History)"
-msgstr "Bestätigung Host-ID (Historie)"
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:53
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:63
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:66
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:57
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:78
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:60
+msgid "Host Id"
+msgstr "Host-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:58
-msgid "Acknowledgement Service Id (History)"
-msgstr "Bestätigung Service-ID (Historie)"
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:54
+#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:60
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:64
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:67
+#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:55
+#: sources.d/icingadb-web/library/Icingadb/Model/History.php:58
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:56
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:59
+#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:61
+msgid "Service Id"
+msgstr "Service-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:59
-msgid "Acknowledgement Set Time (History)"
-msgstr "Bestätigung Eintragungs-Zeitpunkt (Historie)"
+msgid "Acknowledgement Set Time"
+msgstr "Bestätigung gesetzt um"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:60
-msgid "Acknowledgement Clear Time (History)"
-msgstr "Bestätigung Lösch-Zeitpunkt (Historie)"
+msgid "Acknowledgement Clear Time"
+msgstr "Bestätigung entfernt um"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:61
-msgid "Acknowledgement Author (History)"
-msgstr "Bestätigung Autor (Historie)"
+msgid "Acknowledgement Author"
+msgstr "Bestätigungs-Autor"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:62
-msgid "Acknowledgement Cleared By (History)"
-msgstr "Bestätigung entfernt von (Historie)"
+msgid "Acknowledgement Cleared By"
+msgstr "Bestätigung entfernt von"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:63
-msgid "Acknowledgement Comment (History)"
-msgstr "Bestätigung Kommentar (Historie)"
+msgid "Acknowledgement Comment"
+msgstr "Bestätigungs-Kommentar"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:64
-msgid "Acknowledgement Expire Time (History)"
-msgstr "Bestätigung Verfallszeitpunkt (Historie)"
+msgid "Acknowledgement Expire Time"
+msgstr "Bestätigungs-Verfallszeitpunkt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:65
-msgid "Acknowledgement Is Sticky (History)"
-msgstr "Bestätigung ist Sticky (Historie)"
+msgid "Acknowledgement Is Sticky"
+msgstr "Bestätigung ist Sticky"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:66
-msgid "Acknowledgement Is Persistent (History)"
-msgstr "Bestätigung ist persistent (Historie)"
+msgid "Acknowledgement Is Persistent"
+msgstr "Bestätigung ist persistent"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ActionUrl.php:36
 msgid "Action Url"
 msgstr "Aktions-Url"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ActionUrl.php:37
-msgid "Action Url Environment Id"
-msgstr "Aktions-Url Umgebungs-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Behavior/FlattenedObjectVars.php:64
 #, php-format
@@ -1983,13 +2040,21 @@ msgid " %s"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:42
-msgid "Checkcommand Zone Id"
-msgstr "Check-Kommando Zonen-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:43
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:40
-msgid "Checkcommand Environment Id"
-msgstr "Check-Kommando Umgebungs-ID"
+#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:65
+#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:81
+#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:44
+#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:116
+#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:64
+#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:42
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:107
+#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:47
+#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:49
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:60
+#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:47
+msgid "Zone Id"
+msgstr "Zonen-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:44
 msgid "Checkcommand Name Checksum"
@@ -2019,16 +2084,15 @@ msgid "Checkcommand Timeout"
 msgstr "Check-Kommando Zeitüberschreitung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:45
-msgid "Checkcommand Argument Command Id"
-msgstr "Check-Kommando-Argument Kommando-ID"
+#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:38
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:92
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:83
+msgid "Checkcommand Id"
+msgstr "Check-Kommando-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:46
-msgid "Checkcommand Argument Key"
-msgstr "Check-Kommando-Argument Schlüssel"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:47
-msgid "Checkcommand Argument Environment Id"
-msgstr "Check-Kommando-Argument Umgebungs-ID"
+msgid "Checkcommand Argument Name"
+msgstr "Check-Kommando-Argument Name"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:48
 msgid "Checkcommand Argument Properties Checksum"
@@ -2039,60 +2103,40 @@ msgid "Checkcommand Argument Value"
 msgstr "Check-Kommando-Argument Wert"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:50
-msgid "Checkcommand Argument Order"
-msgstr "Check-Kommando-Argument Reihenfolge"
+msgid "Checkcommand Argument Position"
+msgstr "Check-Kommando-Argument Position"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:51
 msgid "Checkcommand Argument Description"
 msgstr "Check-Kommando-Argument Beschreibung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:52
-msgid "Checkcommand Argument Key Override"
-msgstr "Check-Kommando-Argument Schlüssel-Überschreibung"
+msgid "Checkcommand Argument Actual Name"
+msgstr "Check-Kommando-Argument Tatsächlicher Name"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:53
-msgid "Checkcommand Argument Repeat Key"
-msgstr "Check-Kommando-Argument Schlüssel wiederholen"
+msgid "Checkcommand Argument Repeated"
+msgstr "Check-Kommando-Argument wird wiederholt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:54
 msgid "Checkcommand Argument Required"
 msgstr "Check-Kommando-Argument erforderlich"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:55
-msgid "Checkcommand Argument Set If"
-msgstr "Check-Kommando-Argument setzen wenn"
+msgid "Checkcommand Argument Condition"
+msgstr "Check-Kommando-Argument Bedingung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:56
-msgid "Checkcommand Argument Skip Key"
-msgstr "Check-Kommando-Argument Schlüssel überspringen"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:38
-msgid "Checkcommand Envvar Command Id"
-msgstr "Check-Kommando Umgebungsvariable Kommando-ID"
+msgid "Checkcommand Argument Without Name"
+msgstr "Check-Kommando-Argument ohne Name"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:39
-msgid "Checkcommand Envvar Key"
-msgstr "Check-Kommando Umgebungsvariable Schlüssel"
+msgid "Checkcommand Envvar Name"
+msgstr "Check-Kommando-Umgebungsvariable Name"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:42
 msgid "Checkcommand Envvar Value"
 msgstr "Check-Kommando-Umgebungsvariable Wert"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:51
-msgid "Comment Environment Id"
-msgstr "Kommentar Umgebungs-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:52
-msgid "Comment Object Type"
-msgstr "Kommentar-Objekttyp"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:53
-msgid "Comment Host Id"
-msgstr "Kommentar Host-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:54
-msgid "Comment Service Id"
-msgstr "Kommentar Service-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:55
 msgid "Comment Name Checksum"
@@ -2140,93 +2184,31 @@ msgstr "Kommentar ist Sticky"
 msgid "Comment Expire Time"
 msgstr "Kommentar Ablaufzeitpunkt"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:65
-msgid "Comment Zone Id"
-msgstr "Kommentar Zonen-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:56
-msgid "Comment Environment Id (History)"
-msgstr "Kommentar Umgebungs-ID (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:57
-msgid "Comment Endpoint Id (History)"
-msgstr "Kommentar Endpunkt-ID (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:58
-msgid "Comment Object Type (History)"
-msgstr "Kommentar Objekt-Typ (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:59
-msgid "Comment Host Id (History)"
-msgstr "Kommentar Host-ID (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:60
-msgid "Comment Service Id (History)"
-msgstr "Kommentar Service-ID (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:61
-msgid "Comment Entry Time (History)"
-msgstr "Kommentar Eingabezeitpunkt (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:62
-msgid "Comment Author (History)"
-msgstr "Kommentar Autor (Historie)"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:63
-msgid "Comment Removed By (History)"
-msgstr "Kommentar gelöscht von (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:64
-msgid "Comment Comment (History)"
-msgstr "Kommentar Text (Historie)"
+msgid "Comment Removed By"
+msgstr "Kommentar gelöscht von"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:65
-msgid "Comment Entry Type (History)"
-msgstr "Kommentar Eingabe-Typ (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:66
-msgid "Comment Is Persistent (History)"
-msgstr "Kommentar ist Persistent (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:67
-msgid "Comment Is Sticky (History)"
-msgstr "Kommentar ist Sticky (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:68
-msgid "Comment Expire Time (History)"
-msgstr "Kommentar Ablaufzeitpunkt (Historie)"
+msgid "Comment Entry Type"
+msgstr "Kommentar Eingabezeitpunkt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:69
-msgid "Comment Remove Time (History)"
-msgstr "Kommentar Lösch-Zeitpunkt (Historie)"
+msgid "Comment Remove Time"
+msgstr "Kommentar Lösch-Zeitpunkt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:70
-msgid "Comment Has Been Removed (History)"
-msgstr "Kommentar wurde gelöscht (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:59
-msgid "Downtime Environment Id"
-msgstr "Downtime Umgebungs-ID"
+msgid "Comment Has Been Removed"
+msgstr "Kommentar wurde gelöscht"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:60
-msgid "Downtime Triggered By Id"
-msgstr "Downtime ausgelöst durch ID"
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:63
+msgid "Triggered By Downtime Id"
+msgstr "Ausgelöst durch Downtime-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:61
-msgid "Downtime Parent Id"
-msgstr "Downtime Übergeordnete ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:62
-msgid "Downtime Object Type"
-msgstr "Downtime Objekt-Typ"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:63
-msgid "Downtime Host Id"
-msgstr "Downtime Host-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:64
-msgid "Downtime Service Id"
-msgstr "Downtime Service-ID"
+#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:64
+msgid "Parent Downtime Id"
+msgstr "Übergeordnete Downtime-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:65
 msgid "Downtime Name Checksum"
@@ -2298,96 +2280,24 @@ msgid "Downtime Duration"
 msgstr "Downtime Dauer"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:80
-msgid "Downtime Scheduled By"
-msgstr "Downtime geplant von"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:81
-msgid "Downtime Zone Id"
-msgstr "Downtime Zonen-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:61
-msgid "Downtime Environment Id (History)"
-msgstr "Downtime Umgebung-ID (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:62
-msgid "Downtime Endpoint Id (History)"
-msgstr "Downtime Endpunkt-ID (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:63
-msgid "Downtime Triggered By Id (History)"
-msgstr "Downtime ausgelöst durch ID (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:64
-msgid "Downtime Parent Id (History)"
-msgstr "Downtime übergeordnete ID (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:65
-msgid "Downtime Object Type (History)"
-msgstr "Downtime Objekt-Typ (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:66
-msgid "Downtime Host Id (History)"
-msgstr "Downtime Host-ID (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:67
-msgid "Downtime Service Id (History)"
-msgstr "Downtime Service-ID (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:68
-msgid "Downtime Entry Time (History)"
-msgstr "Downtime Eingabe-Zeitpunkt (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:69
-msgid "Downtime Author (History)"
-msgstr "Downtime Autor (Historie)"
+msgid "Scheduled By Downtime"
+msgstr "Geplant von einer Downtime"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:70
-msgid "Downtime Cancelled By (History)"
-msgstr "Downtime abgebrochen von (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:71
-msgid "Downtime Comment (History)"
-msgstr "Downtime Kommentar (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:72
-msgid "Downtime Is Flexible (History)"
-msgstr "Downtime ist flexibel (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:73
-msgid "Downtime Flexible Duration (History)"
-msgstr "Downtime Flexible Dauer (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:74
-msgid "Downtime Scheduled Start (History)"
-msgstr "Downtime geplanter Start (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:75
-msgid "Downtime Scheduled End (History)"
-msgstr "Downtime geplantes Ende (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:76
-msgid "Downtime Actual Start (History)"
-msgstr "Downtime tatsächlicher Start (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:77
-msgid "Downtime Actual End (History)"
-msgstr "Downtime tatsächliches Ende (Historie)"
+msgid "Downtime Cancelled By"
+msgstr "Downtime abgebrochen von"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:78
-msgid "Downtime Has Been Cancelled (History)"
-msgstr "Downtime wurde abgebrochen (Historie)"
+msgid "Downtime Has Been Cancelled"
+msgstr "Downtime wurde abgebrochen"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:79
-msgid "Downtime Trigger Time (History)"
-msgstr "Downtime Auslöse-Zeitpunkt (Historie)"
+msgid "Downtime Trigger Time"
+msgstr "Downtime Auslöse-Zeitpunkt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:80
-msgid "Downtime Cancel Time (History)"
-msgstr "Downtime Abbruch-Zeitpunkt (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:39
-msgid "Endpoint Environment Id"
-msgstr "Endpunkt Umgebung-ID"
+msgid "Downtime Cancel Time"
+msgstr "Downtime Abbruch-Zeitpunkt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:40
 msgid "Endpoint Name Checksum"
@@ -2407,21 +2317,9 @@ msgstr "Endpunkt Name"
 msgid "Endpoint Name (CI)"
 msgstr "Endpunkt Name (CI)"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:44
-msgid "Endpoint Zone Id"
-msgstr "Endpunkt Zonen-ID"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Environment.php:34
 msgid "Environment Name"
 msgstr "Umgebung Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:42
-msgid "Eventcommand Zone Id"
-msgstr "Event-Kommando Zonen-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:43
-msgid "Eventcommand Environment id"
-msgstr "Event-Kommando Umgebungs-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:44
 msgid "Eventcommand Name Checksum"
@@ -2450,16 +2348,15 @@ msgid "Eventcommand Timeout"
 msgstr "Event-Kommando Zeitüberschreitung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:45
-msgid "Eventcommand Argument Command Id"
-msgstr "Event-Kommando-Argument Kommando-ID"
+#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:38
+#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:108
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:99
+msgid "Eventcommand Id"
+msgstr "Event-Kommando-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:46
-msgid "Eventcommand Argument Key"
-msgstr "Event-Kommando-Argument Schlüssel"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:47
-msgid "Eventcommand Argument Environment Id"
-msgstr "Event-Kommando-Argument Umgebungs-ID"
+msgid "Eventcommand Argument Name"
+msgstr "Event-Kommando-Argument Name"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:48
 msgid "Eventcommand Argument Properties Checksum"
@@ -2470,7 +2367,7 @@ msgid "Eventcommand Argument Value"
 msgstr "Event-Kommando-Argument Wert"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:50
-msgid "Eventcommand Argument Order"
+msgid "Eventcommand Argument Position"
 msgstr "Event-Kommando-Argument Position"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:51
@@ -2478,36 +2375,28 @@ msgid "Eventcommand Argument Description"
 msgstr "Event-Kommando-Argument Beschreibung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:52
-msgid "Eventcommand Argument Key Override"
-msgstr "Event-Kommando-Argument Schlüssel Überschreibung"
+msgid "Eventcommand Argument Actual Name"
+msgstr "Event-Kommando-Argument tatsächlicher Name"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:53
-msgid "Eventcommand Argument Repeat Key"
-msgstr "Event-Kommando-Argument Schlüssel wiederholen"
+msgid "Eventcommand Argument Repeated"
+msgstr "Event-Kommando-Argument wird wiederholt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:54
 msgid "Eventcommand Argument Required"
 msgstr "Event-Kommando-Argument Erforderlich"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:55
-msgid "Eventcommand Argument Set If"
-msgstr "Event-Kommando-Argument setzen wenn"
+msgid "Eventcommand Argument Condition"
+msgstr "Event-Kommando-Argument Bedingung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:56
-msgid "Eventcommand Argument Skip Key"
-msgstr "Event-Kommando-Argument Schlüssel überspringen"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:38
-msgid "Eventcommand Envvar Command Id"
-msgstr ""
+msgid "Eventcommand Argument Without Name"
+msgstr "Event-Kommando-Argument ohne Name"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:39
-msgid "Eventcommand Envvar Key"
-msgstr "Event-Kommando Envvar Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:40
-msgid "Eventcommand Envvar Environment Id"
-msgstr ""
+msgid "Eventcommand Envvar Name"
+msgstr "Event-Kommando-Umgebungsvariable Wert"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:41
 msgid "Eventcommand Envvar Properties Checksum"
@@ -2517,77 +2406,33 @@ msgstr "Prüfsumme (Event-Kommando-Umgebungsvariable Eigenschaften)"
 msgid "Eventcommand Envvar Value"
 msgstr "Event-Kommando-Umgebungsvariable Wert"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:51
-msgid "Flapping Environment Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:52
-msgid "Flapping Endpoint Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:53
-msgid "Flapping Object Type (History)"
-msgstr "Flapping Objekt-Typ (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:54
-msgid "Flapping Host Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:55
-msgid "Flapping Service Id (History)"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:56
-msgid "Flapping Start Time (History)"
-msgstr "Flapping Start-Zeit (Historie)"
+msgid "Flapping Start Time"
+msgstr "Flapping gestartet um"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:57
-msgid "Flapping End Time (History)"
-msgstr "Flapping End-Zeit (Historie)"
+msgid "Flapping End Time"
+msgstr "Flapping beendet um"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:58
-msgid "Flapping Percent State Change Start (History)"
-msgstr "Flapping Start Zustandswechsel-Rate in % (Historie)"
+msgid "Flapping Percent State Change Start"
+msgstr "Flapping Start Zustands-Wechsel Rate in %"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:59
-msgid "Flapping Percent State Change End (History)"
-msgstr "Flapping Ende Zustandswechsel-Rate in % (Historie)"
+msgid "Flapping Percent State Change End"
+msgstr "Flapping Ende Zustands-Wechsel Rate in %"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:60
-msgid "Flapping Threshold Low (History)"
-msgstr "Untere Flapping Schwelle (Historie)"
+msgid "Flapping Threshold Low"
+msgstr "Untere Flapping Schwelle"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:61
-msgid "Flapping Threshold High (History)"
-msgstr "Obere Flapping Schwelle (Historie)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:54
-msgid "Environment Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:55
-msgid "Endpoint Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:56
-msgid "Event Object Type"
-msgstr "Event Objekt-Typ"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:57
-msgid "Host Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:58
-msgid "Service Id (History)"
-msgstr ""
+msgid "Flapping Threshold High"
+msgstr "Obere Flapping Schwelle"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/History.php:59
 msgid "Event Type"
 msgstr "Ereignis Typ"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:81
-msgid "Host Environment Id"
-msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:82
 msgid "Host Name Checksum"
@@ -2621,25 +2466,19 @@ msgstr "Host-Adresse (IPv4, Binär)"
 msgid "Host Address (IPv6, Binary)"
 msgstr "Host-Adresse (IPv6, Binär)"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:91
-msgid "Host Checkcommand"
-msgstr "Host Check-Kommando"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:92
-msgid "Host Checkcommand Id"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:93
 msgid "Host Max Check Attempts"
 msgstr "Maximale Host Check-Versuche"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:94
-msgid "Host Check Timeperiod"
-msgstr "Host Check-Zeitraum"
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:85
+msgid "Check Timeperiod Name"
+msgstr "Check-Zeitraum Name"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:95
-msgid "Host Check Timeperiod Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:86
+msgid "Check Timeperiod Id"
+msgstr "Check-Zeitraum-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:96
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:51
@@ -2686,57 +2525,39 @@ msgstr "Obere Host Flapping Schwelle"
 msgid "Host Performance Data Enabled"
 msgstr "Host Performancedaten aktiv"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:107
-msgid "Host Eventcommand"
-msgstr "Host Event-Kommando"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:108
-msgid "Host Eventcommand Id"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:109
 msgid "Host Is Volatile"
 msgstr "Host ist Volatil"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:110
-msgid "Host Action Url Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:101
+msgid "Action Url Id"
+msgstr "Aktions-Url-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:111
-msgid "Host Notes Url Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:102
+msgid "Notes Url Id"
+msgstr "Hinweis-Url-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:112
 msgid "Host Notes"
 msgstr "Host Notizen"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:113
-msgid "Host Icon Image Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:104
+msgid "Icon Image Id"
+msgstr "Icon-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:114
-msgid "Host Icon Image Alt"
-msgstr "Host Icon Alt"
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:105
+msgid "Icon Image Alt"
+msgstr "Icon Alt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:115
-msgid "Host Zone"
-msgstr "Host-Zone"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:116
-msgid "Host Zone Id"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:117
-msgid "Host Command Endpoint"
-msgstr "Host Kommando-Endpunkt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:118
-msgid "Host Command Endpoint Id"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:28
-msgid "Host State Environment Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:106
+#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:44
+msgid "Zone Name"
+msgstr "Zonenname"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:29
 msgid "Host State Type"
@@ -2759,109 +2580,93 @@ msgid "Host Previous Hard State"
 msgstr "Vorheriger Host Zustand (Hard)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:34
-msgid "Host State Attempt No."
-msgstr "Host-Zustand Versuch Nr."
+msgid "Host Check Attempt No."
+msgstr "Host-Check Versuch Nr."
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:35
 msgid "Host State Severity"
 msgstr "Host Zustands-Schweregrad"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:36
-msgid "Host State Output"
-msgstr "Host-Status Ausgabe"
+msgid "Host Output"
+msgstr "Host Ausgabe"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:37
-msgid "Host State Long Output"
-msgstr "Host-Status Lange Ausgabe"
+msgid "Host Long Output"
+msgstr "Lange Host Ausgabe"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:38
-msgid "Host State Performance Data"
-msgstr "Host-Status Performancedaten"
+msgid "Host Performance Data"
+msgstr "Host Performancedaten"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:39
-msgid "Host State Normalized Performance Data"
-msgstr "Normalisierte Host-Status Performancedaten"
+msgid "Host Normalized Performance Data"
+msgstr "Normalisierte Host Performancedaten"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:40
-msgid "Host State Check Commandline"
-msgstr "Host-State Check-Kommandozeile"
+msgid "Host Check Commandline"
+msgstr "Host-Check Kommandozeile"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:41
-msgid "Host State Is Problem"
-msgstr "Host-State ist Problematisch"
+msgid "Host Has Problem"
+msgstr "Host hat ein Problem"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:42
-msgid "Host State Is Handled"
-msgstr "Host-State wird behandelt"
+msgid "Host Is Handled"
+msgstr "Host wird behandelt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:43
-msgid "Host State Is Reachable"
-msgstr "Host-State ist Erreichbar"
+msgid "Host Is Reachable"
+msgstr "Host ist Erreichbar"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:44
-msgid "Host State Is Flapping"
-msgstr "Host-State ist Flapping"
+msgid "Host Is Flapping"
+msgstr "Host ist Flapping"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:45
-msgid "Host State Is Overdue"
-msgstr "Host-State ist überfällig"
+msgid "Host Check Is Overdue"
+msgstr "Host-Check ist überfällig"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:46
-msgid "Host State Is Acknowledged"
-msgstr "Host-State ist bestätigt"
+msgid "Host Is Acknowledged"
+msgstr "Host ist bestätigt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:47
-msgid "Host State Acknowledgement Comment Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:44
+msgid "Acknowledgement Comment Id"
+msgstr "Bestätigungs-Kommentar-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:48
-#, fuzzy
-msgid "Host State In Downtime"
-msgstr "In einer Downtime"
+msgid "Host In Downtime"
+msgstr "Host ist in einer Downtime"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:49
-#, fuzzy
-msgid "Host State Execution Time"
-msgstr "Ausführungsdauer"
+msgid "Host Check Execution Time"
+msgstr "Host-Check Ausführungsdauer"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:50
-#, fuzzy
-msgid "Host State Latency"
-msgstr "Host-Zustände"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:51
-#, fuzzy
-msgid "Host State Timeout"
-msgstr "Check-Timeout"
+msgid "Host Check Latency"
+msgstr "Host-Check Latenz"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:52
-#, fuzzy
-msgid "Host State Check Source"
-msgstr "Check-Quelle"
+msgid "Host Check Source"
+msgstr "Host-Check Quelle"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:53
-#, fuzzy
-msgid "Host State Last Update"
-msgstr "Letze Status-Aktualisierung"
+msgid "Host Last Update"
+msgstr "Letzte Host Aktualisierung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:54
-#, fuzzy
-msgid "Host State Last State Change"
-msgstr "Letzte Statusänderung"
+msgid "Host Last State Change"
+msgstr "Letzte Host Zustands-Änderung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:55
-#, fuzzy
-msgid "Host State Next Check"
-msgstr "Host-Checks"
+msgid "Host Next Check"
+msgstr "Nächster Host-Check"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:56
-#, fuzzy
-msgid "Host State Next Update"
-msgstr "Letze Status-Aktualisierung"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:41
-msgid "Hostgroup Environment Id"
-msgstr ""
+msgid "Host Next Update"
+msgstr "Nächste Host Aktualisierung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:42
 msgid "Hostgroup Name Checksum"
@@ -2883,29 +2688,13 @@ msgstr "Hostgruppenname (CI)"
 msgid "Hostgroup Display Name"
 msgstr "Hostgruppen-Anzeigename"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:47
-msgid "Hostgroup Zone Id"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/IconImage.php:35
 msgid "Icon Image"
 msgstr "Icon"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/IconImage.php:36
-msgid "Icon Image Environment Id"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/NotesUrl.php:36
 msgid "Notes Url"
 msgstr "Hinweis-URL"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotesUrl.php:37
-msgid "Notes Url Environment Id"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:50
-msgid "Notification Environment Id"
-msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:51
 msgid "Notification Name Checksum"
@@ -2923,111 +2712,75 @@ msgstr "Benachrichtigungsname"
 msgid "Notification Name (CI)"
 msgstr "Benachrichtigungsname (CI)"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:55
-msgid "Notification Host Id"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:56
-msgid "Notification Service Id"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:57
-msgid "Notification Command Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:45
+#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:38
+msgid "Notificationcommand Id"
+msgstr "Benachrichtigungs-Kommando-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:58
-msgid "Notification Times Begin"
-msgstr ""
+msgid "Notification Escalate After"
+msgstr "Benachrichtigung eskalieren nach"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:59
-msgid "Notification Times End"
-msgstr ""
+msgid "Notification Escalate Until"
+msgstr "Benachrichtigung eskalieren bis"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:60
 msgid "Notification Interval"
 msgstr "Benachrichtigungsintervall"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:61
-msgid "Notification Timeperiod Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:37
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:57
+msgid "Timeperiod Id"
+msgstr "Zeitraum-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:62
-msgid "Notification States"
-msgstr "Benachrichtigungs-Status"
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:58
+msgid "Notification State Filter"
+msgstr "Zustands-Filter für Benachrichtigungen"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:63
-msgid "Notification Types"
-msgstr "Benachrichtigungstypen"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:64
-msgid "Notification Zone Id"
-msgstr ""
+#: sources.d/icingadb-web/library/Icingadb/Model/User.php:59
+msgid "Notification Type Filter"
+msgstr "Typ-Filter für Benachrichtigungen"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:54
-msgid "Notification History Id"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:55
-msgid "Notification Environment Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:56
-msgid "Notification Endpoint Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:57
-msgid "Notification Object Type (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:58
-msgid "Notification Host Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:59
-msgid "Notification Service Id (History)"
-msgstr ""
+msgid "History Id"
+msgstr "Event-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:60
-msgid "Notification Id (History)"
-msgstr ""
+msgid "Notification Id"
+msgstr "Benachrichtigungs-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:61
-msgid "Notification Type (History)"
-msgstr "Benachrichtigungstyp (Historie)"
+msgid "Notification Type"
+msgstr "Benachrichtigungstyp"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:62
-msgid "Notification Sent On (History)"
-msgstr "Benachrichtigung gesendet um (Historie)"
+msgid "Notification Sent On"
+msgstr "Benachrichtigung gesendet um"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:63
-msgid "Notification Object State (History)"
-msgstr ""
+msgid "Hard State"
+msgstr "Zustand (Hard)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:64
-msgid "Notification Previous Object State (History)"
-msgstr ""
+msgid "Previous Hard State"
+msgstr "Vorheriger Zustand (Hard)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:65
-msgid "Notification Author (History)"
-msgstr ""
+msgid "Notification Author"
+msgstr "Benachrichtigungs-Autor"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:66
-msgid "Notification Text (History)"
-msgstr ""
+msgid "Notification Text"
+msgstr "Benachrichtigungstext"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:67
-msgid "Notification Users Notified (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:42
-#, fuzzy
-msgid "Notificationcommand Zone Id"
-msgstr "Benachrichtigungskommando"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:43
-#, fuzzy
-msgid "Notificationcommand Environment Id"
-msgstr "Benachrichtigungskommando"
+msgid "Users Notified"
+msgstr "Benachrichtigte Benutzer"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:44
 msgid "Notificationcommand Name Checksum"
@@ -3053,19 +2806,9 @@ msgstr "Benachrichtigungs-Kommando"
 msgid "Notificationcommand Timeout"
 msgstr "Benachrichtigungs-Kommando Zeitüberschreitung"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:45
-#, fuzzy
-msgid "Notificationcommand Argument Command Id"
-msgstr "Benachrichtigungskommandos"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:46
-msgid "Notificationcommand Argument Key"
+msgid "Notificationcommand Argument Name"
 msgstr "Benachrichtigungs-Kommando-Argument Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:47
-#, fuzzy
-msgid "Notificationcommand Argument Environment Id"
-msgstr "Benachrichtigungskommando"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:48
 msgid "Notificationcommand Argument Properties Checksum"
@@ -3076,7 +2819,7 @@ msgid "Notificationcommand Argument Value"
 msgstr "Benachrichtigungs-Kommando-Argument Wert"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:50
-msgid "Notificationcommand Argument Order"
+msgid "Notificationcommand Argument Position"
 msgstr "Benachrichtigungs-Kommando-Argument Position"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:51
@@ -3084,11 +2827,11 @@ msgid "Notificationcommand Argument Description"
 msgstr "Benachrichtigungs-Kommando-Argument Beschreibung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:52
-msgid "Notificationcommand Argument Key Override"
-msgstr "Benachrichtigungs-Kommando-Argument Tatsächlicher Name"
+msgid "Notificationcommand Argument Actual Name"
+msgstr "Benachrichtigungs-Kommando-Argument tatsächlicher Name"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:53
-msgid "Notificationcommand Argument Repeat Key"
+msgid "Notificationcommand Argument Repeated"
 msgstr "Benachrichtigungs-Kommando-Argument wird wiederholt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:54
@@ -3096,26 +2839,16 @@ msgid "Notificationcommand Argument Required"
 msgstr "Benachrichtigungs-Kommando-Argument ist erforderlich"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:55
-msgid "Notificationcommand Argument Set If"
+msgid "Notificationcommand Argument Condition"
 msgstr "Benachrichtigungs-Kommando-Argument Bedingung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:56
-msgid "Notificationcommand Argument Skip Key"
+msgid "Notificationcommand Argument Without Name"
 msgstr "Benachrichtigungs-Kommando-Argument ohne Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:38
-#, fuzzy
-msgid "Notificationcommand Envvar Command Id"
-msgstr "Benachrichtigungskommando"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:39
 msgid "Notificationcommand Envvar Key"
 msgstr "Benachrichtigungs-Kommando-Umgebungsvariable Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:40
-#, fuzzy
-msgid "Notificationcommand Envvar Environment Id"
-msgstr "Benachrichtigungskommando"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:41
 msgid "Notificationcommand Envvar Properties Checksum"
@@ -3125,11 +2858,6 @@ msgstr "Prüfsumme (Benachrichtigungs-Kommando-Umgebungsvariable Eigenschaften)"
 msgid "Notificationcommand Envvar Value"
 msgstr "Benachrichtigungs-Kommando-Umgebungsvariable Wert"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:75
-#, fuzzy
-msgid "Service Environment Id"
-msgstr "Service nicht gefunden"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:76
 msgid "Service Name Checksum"
 msgstr "Prüfsumme (Service-Name)"
@@ -3137,11 +2865,6 @@ msgstr "Prüfsumme (Service-Name)"
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:77
 msgid "Service Properties Checksum"
 msgstr "Prüfsumme (Service Eigenschaften)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:78
-#, fuzzy
-msgid "Service Host Id"
-msgstr "Service-Set"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:80
 msgid "Service Name (CI)"
@@ -3151,29 +2874,9 @@ msgstr "Service-Name (CI)"
 msgid "Service Display Name"
 msgstr "Service Anzeigename"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:82
-#, fuzzy
-msgid "Service Checkcommand"
-msgstr "Service-Checks"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:83
-#, fuzzy
-msgid "Service Checkcommand Id"
-msgstr "Service-Checks"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:84
 msgid "Service Max Check Attempts"
 msgstr "Maximale Service-Check Wiederholungen"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:85
-#, fuzzy
-msgid "Service Check Timeperiod"
-msgstr "Ausführungszeitabschnitt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:86
-#, fuzzy
-msgid "Service Check Timeperiod Id"
-msgstr "Ausführungszeitabschnitt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:87
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:48
@@ -3220,68 +2923,13 @@ msgstr "Obere Service Flapping Schwelle"
 msgid "Service Performance Data Enabled"
 msgstr "Service Performancedaten aktiv"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:98
-#, fuzzy
-msgid "Service Eventcommand"
-msgstr "Event-Kommando"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:99
-#, fuzzy
-msgid "Service Eventcommand Id"
-msgstr "Event-Kommando"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:100
 msgid "Service Is Volatile"
 msgstr "Service ist flüchtig"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:101
-#, fuzzy
-msgid "Service Action Url Id"
-msgstr "Service-Aktion"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:102
-#, fuzzy
-msgid "Service Notes Url Id"
-msgstr "Service nicht gefunden"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:103
 msgid "Service Notes"
 msgstr "Service Hinweise"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:104
-#, fuzzy
-msgid "Service Icon Image Id"
-msgstr "Servicename"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:105
-#, fuzzy
-msgid "Service Icon Image Alt"
-msgstr "Icon Bild alternativ"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:106
-#, fuzzy
-msgid "Service Zone"
-msgstr "Servicename"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:107
-#, fuzzy
-msgid "Service Zone Id"
-msgstr "Services auf %s"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:108
-#, fuzzy
-msgid "Service Command Endpoint"
-msgstr "Kommandoendpunkt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:109
-#, fuzzy
-msgid "Service Command Endpoint Id"
-msgstr "Kommandoendpunkt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:25
-#, fuzzy
-msgid "Service State Environment Id"
-msgstr "Service nicht gefunden"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:26
 msgid "Service State Type"
@@ -3304,122 +2952,88 @@ msgid "Service Previous Hard State"
 msgstr "Vorheriger Service Zustand (Hard)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:31
-msgid "Service State Attempt No."
-msgstr "Service-Status Versuch Nr."
+msgid "Service Check Attempt No."
+msgstr "Service-Check Versuch Nr."
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:32
 msgid "Service State Severity"
 msgstr "Service Zustands-Schweregrad"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:33
-#, fuzzy
-msgid "Service State Output"
-msgstr "Service-Zustände"
+msgid "Service Output"
+msgstr "Service Ausgabe"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:34
-#, fuzzy
-msgid "Service State Long Output"
-msgstr "Service-Zustände"
+msgid "Service Long Output"
+msgstr "Lange Service Ausgabe"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:35
-#, fuzzy
-msgid "Service State Performance Data"
-msgstr "Performancedaten"
+msgid "Service Performance Data"
+msgstr "Service Performancedaten"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:36
-#, fuzzy
-msgid "Service State Normalized Performance Data"
-msgstr "Performancedaten"
+msgid "Service Normalized Performance Data"
+msgstr "Normalisierte Service Performancedaten"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:37
-#, fuzzy
-msgid "Service State Check Commandline"
-msgstr "Service-Checks"
+msgid "Service Check Commandline"
+msgstr "Service-Check Kommandozeile"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:38
-#, fuzzy
-msgid "Service State Is Problem"
-msgstr "Serviceprobleme"
+msgid "Service Has Problem"
+msgstr "Service hat ein Problem"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:39
-#, fuzzy
-msgid "Service State Is Handled"
-msgstr "Service-Zustände"
+msgid "Service Is Handled"
+msgstr "Service wird behandelt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:40
-#, fuzzy
-msgid "Service State Is Reachable"
-msgstr "Service-Zustände"
+msgid "Service Is Reachable"
+msgstr "Service ist Erreichbar"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:41
-#, fuzzy
-msgid "Service State Is Flapping"
-msgstr "%u flapping Service"
+msgid "Service Is Flapping"
+msgstr "Service ist Flapping"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:42
-#, fuzzy
-msgid "Service State Is Overdue"
-msgstr "Service-Zustände"
+msgid "Service Check Is Overdue"
+msgstr "Service-Check ist überfällig"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:43
-#, fuzzy
-msgid "Service State Is Acknowledged"
-msgstr "Service-Zustände"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:44
-#, fuzzy
-msgid "Service State Acknowledgement Comment Id"
-msgstr "Sticky Bestätigung"
+msgid "Service Is Acknowledged"
+msgstr "Service ist bestätigt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:45
-#, fuzzy
-msgid "Service State In Downtime"
-msgstr "Service-Zustände"
+msgid "Service In Downtime"
+msgstr "Service ist in einer Downtime"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:46
-#, fuzzy
-msgid "Service State Execution Time"
-msgstr "Auswahlmöglichkeite für Service-Vorlagen"
+msgid "Service Check Execution Time"
+msgstr "Service-Check Ausführungsdauer"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:47
-#, fuzzy
-msgid "Service State Latency"
-msgstr "Service-Zustände"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:48
-#, fuzzy
-msgid "Service State Timeout"
-msgstr "Service-Checks"
+msgid "Service Check Latency"
+msgstr "Service-Check Latenz"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:49
-#, fuzzy
-msgid "Service State Check Source"
-msgstr "Service-Checks"
+msgid "Service Check Source"
+msgstr "Service-Check Quelle"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:50
-#, fuzzy
-msgid "Service State Last Update"
-msgstr "Service-Zustände"
+msgid "Service Last Update"
+msgstr "Letzte Service Aktualisierung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:51
-#, fuzzy
-msgid "Service State Last State Change"
-msgstr "Letzte Statusänderung"
+msgid "Service Last State Change"
+msgstr "Letzte Service Zustands-Änderung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:52
-#, fuzzy
-msgid "Service State Next Check"
-msgstr "Service-Checks"
+msgid "Service Next Check"
+msgstr "Nächster Service-Check"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:53
-#, fuzzy
-msgid "Service State Next Update"
-msgstr "Service-Zustände"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:41
-#, fuzzy
-msgid "Servicegroup Environment Id"
-msgstr "Servicegruppenname"
+msgid "Service Next Update"
+msgstr "Nächste Service Aktualisierung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:42
 msgid "Servicegroup Name Checksum"
@@ -3441,85 +3055,45 @@ msgstr "Servicegruppenname (CI)"
 msgid "Servicegroup Display Name"
 msgstr "Servicegruppen-Anzeigename"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:47
-#, fuzzy
-msgid "Servicegroup Zone Id"
-msgstr "Servicegruppe"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:57
-#, fuzzy
-msgid "State Environment Id (History)"
-msgstr "Service nicht gefunden"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:58
-msgid "State Endpoint Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:59
-#, fuzzy
-msgid "State Object Type (History)"
-msgstr "Alle Objekt-Typen"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:60
-msgid "State Host Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:61
-msgid "State Service Id (History)"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:62
-#, fuzzy
-msgid "State Event Time (History)"
-msgstr "Aktualisiere Ereignis Typ %s"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:63
-#, fuzzy
-msgid "State Type (History)"
-msgstr "Statustyp"
+msgid "Event State Type"
+msgstr "Ereignis Zustands-Typ"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:64
-msgid "Soft State (History)"
-msgstr ""
+msgid "Event Soft State"
+msgstr "Ereignis-Zustand (Soft)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:65
-msgid "Hard State (History)"
-msgstr ""
+msgid "Event Hard State"
+msgstr "Ereignis-Zustand (Hard)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:66
-msgid "State Attempt No. (History)"
-msgstr ""
+msgid "Event Check Attempt No."
+msgstr "Event-Check Versuch Nr."
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:67
-msgid "Previous Soft State (History)"
-msgstr ""
+msgid "Event Previous Soft State"
+msgstr "Vorheriger Event-Zustand (Soft)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:68
-msgid "Previous Hard State (History)"
-msgstr ""
+msgid "Event Previous Hard State"
+msgstr "Vorheriger Host Zustand (Hard)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:69
-msgid "State Output (History)"
-msgstr ""
+msgid "Event Output"
+msgstr "Event Ausgabe"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:70
-msgid "State Long Output (History)"
-msgstr ""
+msgid "Event Long Output"
+msgstr "Lange Event Ausgabe"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:71
-#, fuzzy
-msgid "State Max Check Attempts (History)"
-msgstr "Maximale Checkwiederholungen"
+msgid "Event Max Check Attempts"
+msgstr "Maximale Event-Check Versuche"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:72
-#, fuzzy
-msgid "State Check Source (History)"
-msgstr "Check-Quelle"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:42
-#, fuzzy
-msgid "Timeperiod Environment Id"
-msgstr "Benutzerkommentar"
+msgid "Event Check Source"
+msgstr "Event-Check Quelle"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:43
 msgid "Timeperiod Name Checksum"
@@ -3545,33 +3119,13 @@ msgstr "Zeitraum Anzeigename"
 msgid "Timeperiod Prefer Includes"
 msgstr "Zeitraum Includes bevorzugen"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:49
-#, fuzzy
-msgid "Timeperiod Zone Id"
-msgstr "Ausführungszeitabschnitt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:37
-#, fuzzy
-msgid "Timeperiod Range Period Id"
-msgstr "Zeiträume"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:38
-msgid "Timeperiod Range Key"
+msgid "Timeperiod Range Date(s)/Day"
 msgstr "Zeitraum Bereichs-Datum/Tag"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:39
-#, fuzzy
-msgid "Timeperiod Range Environment Id"
-msgstr "Service nicht gefunden"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:40
-msgid "Timeperiod Range Value"
+msgid "Timeperiod Range Time"
 msgstr "Zeitraum Bereichs-Uhrzeit"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:48
-#, fuzzy
-msgid "User Environment Id"
-msgstr "Benutzerkommentar"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/User.php:49
 msgid "User Name Checksum"
@@ -3605,28 +3159,6 @@ msgstr "Benutzer Pager"
 msgid "User Receives Notifications"
 msgstr "Benutzer empfängt Benachrichtigungen"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:57
-#, fuzzy
-msgid "User Timeperiod Id"
-msgstr "Ausführungszeitabschnitt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:58
-msgid "User States"
-msgstr "Status-Filter für Benachrichtigungen"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:59
-msgid "User Types"
-msgstr "Typ-Filter für Benachrichtigungen"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:60
-#, fuzzy
-msgid "User Zone Id"
-msgstr "Cluster Zone"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:41
-msgid "Usergroup Environment Id"
-msgstr ""
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:42
 msgid "Usergroup Name Checksum"
 msgstr "Prüfsumme (Benutzergruppenname)"
@@ -3647,16 +3179,6 @@ msgstr "Benutzergruppenname (CI)"
 msgid "Usergroup Display Name"
 msgstr "Benutzergruppen-Anzeigename"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:47
-#, fuzzy
-msgid "Usergroup Zone Id"
-msgstr "Benutzergruppe"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:41
-#, fuzzy
-msgid "Zone Environment Id"
-msgstr "Downtime Umgebung-ID"
-
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:42
 msgid "Zone Name Checksum"
 msgstr "Prüfsumme (Zonenname)"
@@ -3664,12 +3186,6 @@ msgstr "Prüfsumme (Zonenname)"
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:43
 msgid "Zone Properties Checksum"
 msgstr "Prüfsumme (Zoneneigenschaften)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:115
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:106
-#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:44
-msgid "Zone Name"
-msgstr "Zonenname"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:45
 msgid "Zone Name (CI)"
@@ -3680,15 +3196,19 @@ msgid "Zone Is Global"
 msgstr "Zone ist global"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:47
-#, fuzzy
-msgid "Zone Parent Id"
-msgstr "Zonenname"
+msgid "Parent Zone Id"
+msgstr "Übergeordnete Zonen-ID"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:48
 msgid "Zone Depth"
 msgstr "Zonentiefe"
 
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:75
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:34
+#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:52
+#, php-format
+msgid "Can't connect to Icinga Redis: %s"
+msgstr "Keine Verbindung zu Icinga Redis: %s"
+
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:92
 msgid ""
 "Icinga Redis is outdated. Make sure Icinga 2 is running and connected to "
@@ -3696,13 +3216,6 @@ msgid ""
 msgstr ""
 "Icinga Redis ist veraltet. Stelle sicher, dass Icinga 2 läuft und eine "
 "Verbindung zu Redis hat."
-
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:104
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:52
-#: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:34
-#, php-format
-msgid "Can't connect to Icinga Redis: %s"
-msgstr "Keine Verbindung zu Icinga Redis: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:35
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:41
@@ -4098,13 +3611,11 @@ msgctxt "..<customvar-name>"
 msgid "Usergroup %s"
 msgstr "Benutzergruppe %s"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:139
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:162
 #, php-format
 msgid "\"%s\" is not a valid relation"
 msgstr "\"%s\" ist keine valide Beziehung"
 
-#: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:175
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:198
 #, php-format
 msgid "\"%s\" is not a valid column"
@@ -5098,625 +4609,679 @@ msgstr[0] "%d Service"
 msgstr[1] "%d Services"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ShowMore.php:43
-#: sources.d/icingadb-web/library/Icingadb/Widget/ShowMore.php:45
 msgid "Show More"
 msgstr "Mehr zeigen"
 
-#: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:54
-#: sources.d/icingadb-web/library/Icingadb/Model/ActionUrl.php:37
-#: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:43
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:47
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:40
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:51
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:56
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:59
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:61
-#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:39
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:47
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:40
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:51
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:54
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:81
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:28
-#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:41
-#: sources.d/icingadb-web/library/Icingadb/Model/IconImage.php:36
-#: sources.d/icingadb-web/library/Icingadb/Model/NotesUrl.php:37
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:50
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:55
-#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:43
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:47
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:40
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:75
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:25
-#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:41
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:57
-#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:42
-#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:39
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:48
-#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:41
-#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:41
-#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:43
-msgid "Environment Id"
-msgstr "Umgebungs-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:55
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:57
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:62
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:52
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:55
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:118
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:56
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:109
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:58
-msgid "Endpoint Id"
-msgstr "Endpunkt-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:56
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:52
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:58
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:62
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:65
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:53
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:56
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:57
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:59
-msgid "Object Type"
-msgstr "Objekt-Typ"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:57
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:53
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:59
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:63
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:66
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:54
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:57
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:55
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:58
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:78
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:60
-msgid "Host Id"
-msgstr "Host-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:58
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:54
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:60
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:64
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:67
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:55
-#: sources.d/icingadb-web/library/Icingadb/Model/History.php:58
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:56
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:59
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:61
-msgid "Service Id"
-msgstr "Service-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:59
-msgid "Acknowledgement Set Time"
-msgstr "Bestätigung gesetzt um"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:60
-msgid "Acknowledgement Clear Time"
-msgstr "Bestätigung entfernt um"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:61
-msgid "Acknowledgement Author"
-msgstr "Bestätigungs-Autor"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:62
-msgid "Acknowledgement Cleared By"
-msgstr "Bestätigung entfernt von"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:63
-msgid "Acknowledgement Comment"
-msgstr "Bestätigungs-Kommentar"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:64
-msgid "Acknowledgement Expire Time"
-msgstr "Bestätigungs-Verfallszeitpunkt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:65
-msgid "Acknowledgement Is Sticky"
-msgstr "Bestätigung ist Sticky"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/AcknowledgementHistory.php:66
-msgid "Acknowledgement Is Persistent"
-msgstr "Bestätigung ist persistent"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Checkcommand.php:42
-#: sources.d/icingadb-web/library/Icingadb/Model/Comment.php:65
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:81
-#: sources.d/icingadb-web/library/Icingadb/Model/Endpoint.php:44
-#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:42
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:116
-#: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:47
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:64
-#: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:42
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:107
-#: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:47
-#: sources.d/icingadb-web/library/Icingadb/Model/Timeperiod.php:49
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:60
-#: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:47
-msgid "Zone Id"
-msgstr "Zonen-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:45
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:38
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:92
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:83
-msgid "Checkcommand Id"
-msgstr "Check-Kommando-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:63
-msgid "Comment Removed By"
-msgstr "Kommentar gelöscht von"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:65
-msgid "Comment Entry Type"
-msgstr "Kommentar Eingabezeitpunkt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:69
-msgid "Comment Remove Time"
-msgstr "Kommentar Lösch-Zeitpunkt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CommentHistory.php:70
-msgid "Comment Has Been Removed"
-msgstr "Kommentar wurde gelöscht"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:60
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:63
-msgid "Triggered By Downtime Id"
-msgstr "Ausgelöst durch Downtime-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:61
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:64
-msgid "Parent Downtime Id"
-msgstr "Übergeordnete Downtime-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:80
-msgid "Scheduled By Downtime"
-msgstr "Geplant von einer Downtime"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:70
-msgid "Downtime Cancelled By"
-msgstr "Downtime abgebrochen von"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:78
-msgid "Downtime Has Been Cancelled"
-msgstr "Downtime wurde abgebrochen"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:79
-msgid "Downtime Trigger Time"
-msgstr "Downtime Auslöse-Zeitpunkt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:80
-msgid "Downtime Cancel Time"
-msgstr "Downtime Abbruch-Zeitpunkt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Eventcommand.php:43
-msgid "Environment id"
-msgstr "Umgebungs-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:45
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:38
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:108
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:99
-msgid "Eventcommand Id"
-msgstr "Event-Kommando-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:56
-msgid "Flapping Start Time"
-msgstr "Flapping gestartet um"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:57
-msgid "Flapping End Time"
-msgstr "Flapping beendet um"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:58
-msgid "Flapping Percent State Change Start"
-msgstr "Flapping Start Zustands-Wechsel Rate in %"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:59
-msgid "Flapping Percent State Change End"
-msgstr "Flapping Ende Zustands-Wechsel Rate in %"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:60
-msgid "Flapping Threshold Low"
-msgstr "Untere Flapping Schwelle"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/FlappingHistory.php:61
-msgid "Flapping Threshold High"
-msgstr "Obere Flapping Schwelle"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:94
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:85
-msgid "Check Timeperiod Name"
-msgstr "Check-Zeitraum Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:95
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:86
-msgid "Check Timeperiod Id"
-msgstr "Check-Zeitraum-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:110
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:101
-msgid "Action Url Id"
-msgstr "Aktions-Url-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:111
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:102
-msgid "Notes Url Id"
-msgstr "Hinweis-Url-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:113
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:104
-msgid "Icon Image Id"
-msgstr "Icon-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Host.php:114
-#: sources.d/icingadb-web/library/Icingadb/Model/Service.php:105
-msgid "Icon Image Alt"
-msgstr "Icon Alt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:34
-msgid "Host Check Attempt No."
-msgstr "Host-Check Versuch Nr."
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:36
-msgid "Host Output"
-msgstr "Host Ausgabe"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:37
-msgid "Host Long Output"
-msgstr "Lange Host Ausgabe"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:38
-msgid "Host Performance Data"
-msgstr "Host Performancedaten"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:39
-msgid "Host Normalized Performance Data"
-msgstr "Normalisierte Host Performancedaten"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:40
-msgid "Host Check Commandline"
-msgstr "Host-Check Kommandozeile"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:41
-msgid "Host Has Problem"
-msgstr "Host hat ein Problem"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:42
-msgid "Host Is Handled"
-msgstr "Host wird behandelt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:43
-msgid "Host Is Reachable"
-msgstr "Host ist Erreichbar"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:44
-msgid "Host Is Flapping"
-msgstr "Host ist Flapping"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:45
-msgid "Host Check Is Overdue"
-msgstr "Host-Check ist überfällig"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:46
-msgid "Host Is Acknowledged"
-msgstr "Host ist bestätigt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:47
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:44
-msgid "Acknowledgement Comment Id"
-msgstr "Bestätigungs-Kommentar-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:48
-msgid "Host In Downtime"
-msgstr "Host ist in einer Downtime"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:49
-msgid "Host Check Execution Time"
-msgstr "Host-Check Ausführungsdauer"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:50
-msgid "Host Check Latency"
-msgstr "Host-Check Latenz"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:52
-msgid "Host Check Source"
-msgstr "Host-Check Quelle"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:53
-msgid "Host Last Update"
-msgstr "Letzte Host Aktualisierung"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:54
-msgid "Host Last State Change"
-msgstr "Letzte Host Zustands-Änderung"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:55
-msgid "Host Next Check"
-msgstr "Nächster Host-Check"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:56
-msgid "Host Next Update"
-msgstr "Nächste Host Aktualisierung"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:57
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:45
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandEnvvar.php:38
-msgid "Notificationcommand Id"
-msgstr "Benachrichtigungs-Kommando-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:58
-msgid "Notification Escalate After"
-msgstr "Benachrichtigung eskalieren nach"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:59
-msgid "Notification Escalate Until"
-msgstr "Benachrichtigung eskalieren bis"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Notification.php:61
-#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:37
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:57
-msgid "Timeperiod Id"
-msgstr "Zeitraum-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:54
-msgid "History Id"
-msgstr "Event-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:60
-msgid "Notification Id"
-msgstr "Benachrichtigungs-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:61
-msgid "Notification Type"
-msgstr "Benachrichtigungstyp"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:62
-msgid "Notification Sent On"
-msgstr "Benachrichtigung gesendet um"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:63
-msgid "Hard State"
-msgstr "Zustand (Hard)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:64
-msgid "Previous Hard State"
-msgstr "Vorheriger Zustand (Hard)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:65
-msgid "Notification Author"
-msgstr "Benachrichtigungs-Autor"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:66
-msgid "Notification Text"
-msgstr "Benachrichtigungstext"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:67
-msgid "Users Notified"
-msgstr "Benachrichtigte Benutzer"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:31
-msgid "Service Check Attempt No."
-msgstr "Service-Check Versuch Nr."
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:33
-msgid "Service Output"
-msgstr "Service Ausgabe"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:34
-msgid "Service Long Output"
-msgstr "Lange Service Ausgabe"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:35
-msgid "Service Performance Data"
-msgstr "Service Performancedaten"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:36
-msgid "Service Normalized Performance Data"
-msgstr "Normalisierte Service Performancedaten"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:37
-msgid "Service Check Commandline"
-msgstr "Service-Check Kommandozeile"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:38
-msgid "Service Has Problem"
-msgstr "Service hat ein Problem"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:39
-msgid "Service Is Handled"
-msgstr "Service wird behandelt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:40
-msgid "Service Is Reachable"
-msgstr "Service ist Erreichbar"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:41
-msgid "Service Is Flapping"
-msgstr "Service ist Flapping"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:42
-msgid "Service Check Is Overdue"
-msgstr "Service-Check ist überfällig"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:43
-msgid "Service Is Acknowledged"
-msgstr "Service ist bestätigt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:45
-msgid "Service In Downtime"
-msgstr "Service ist in einer Downtime"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:46
-msgid "Service Check Execution Time"
-msgstr "Service-Check Ausführungsdauer"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:47
-msgid "Service Check Latency"
-msgstr "Service-Check Latenz"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:49
-msgid "Service Check Source"
-msgstr "Service-Check Quelle"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:50
-msgid "Service Last Update"
-msgstr "Letzte Service Aktualisierung"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:51
-msgid "Service Last State Change"
-msgstr "Letzte Service Zustands-Änderung"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:52
-msgid "Service Next Check"
-msgstr "Nächster Service-Check"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:53
-msgid "Service Next Update"
-msgstr "Nächste Service Aktualisierung"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:63
-msgid "Event State Type"
-msgstr "Ereignis Zustands-Typ"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:64
-msgid "Event Soft State"
-msgstr "Ereignis-Zustand (Soft)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:65
-msgid "Event Hard State"
-msgstr "Ereignis-Zustand (Hard)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:66
-msgid "Event Check Attempt No."
-msgstr "Event-Check Versuch Nr."
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:67
-msgid "Event Previous Soft State"
-msgstr "Vorheriger Event-Zustand (Soft)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:68
-msgid "Event Previous Hard State"
-msgstr "Vorheriger Host Zustand (Hard)"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:69
-msgid "Event Output"
-msgstr "Event Ausgabe"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:70
-msgid "Event Long Output"
-msgstr "Lange Event Ausgabe"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:71
-msgid "Event Max Check Attempts"
-msgstr "Maximale Event-Check Versuche"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:72
-msgid "Event Check Source"
-msgstr "Event-Check Quelle"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:47
-msgid "Parent Zone Id"
-msgstr "Übergeordnete Zonen-ID"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:46
-msgid "Checkcommand Argument Name"
-msgstr "Check-Kommando-Argument Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:50
-msgid "Checkcommand Argument Position"
-msgstr "Check-Kommando-Argument Position"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:52
-msgid "Checkcommand Argument Actual Name"
-msgstr "Check-Kommando-Argument Tatsächlicher Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:53
-msgid "Checkcommand Argument Repeated"
-msgstr "Check-Kommando-Argument wird wiederholt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:55
-msgid "Checkcommand Argument Condition"
-msgstr "Check-Kommando-Argument Bedingung"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandArgument.php:56
-msgid "Checkcommand Argument Without Name"
-msgstr "Check-Kommando-Argument ohne Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/CheckcommandEnvvar.php:39
-msgid "Checkcommand Envvar Name"
-msgstr "Check-Kommando-Umgebungsvariable Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:46
-msgid "Eventcommand Argument Name"
-msgstr "Event-Kommando-Argument Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:50
-msgid "Eventcommand Argument Position"
-msgstr "Event-Kommando-Argument Position"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:52
-msgid "Eventcommand Argument Actual Name"
-msgstr "Event-Kommando-Argument tatsächlicher Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:53
-msgid "Eventcommand Argument Repeated"
-msgstr "Event-Kommando-Argument wird wiederholt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:55
-msgid "Eventcommand Argument Condition"
-msgstr "Event-Kommando-Argument Bedingung"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandArgument.php:56
-msgid "Eventcommand Argument Without Name"
-msgstr "Event-Kommando-Argument ohne Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/EventcommandEnvvar.php:39
-msgid "Eventcommand Envvar Name"
-msgstr "Event-Kommando-Umgebungsvariable Wert"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:46
-msgid "Notificationcommand Argument Name"
-msgstr "Benachrichtigungs-Kommando-Argument Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:50
-msgid "Notificationcommand Argument Position"
-msgstr "Benachrichtigungs-Kommando-Argument Position"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:52
-msgid "Notificationcommand Argument Actual Name"
-msgstr "Benachrichtigungs-Kommando-Argument tatsächlicher Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:53
-msgid "Notificationcommand Argument Repeated"
-msgstr "Benachrichtigungs-Kommando-Argument wird wiederholt"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:55
-msgid "Notificationcommand Argument Condition"
-msgstr "Benachrichtigungs-Kommando-Argument Bedingung"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/NotificationcommandArgument.php:56
-msgid "Notificationcommand Argument Without Name"
-msgstr "Benachrichtigungs-Kommando-Argument ohne Name"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:38
-msgid "Timeperiod Range Date(s)/Day"
-msgstr "Zeitraum Bereichs-Datum/Tag"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/TimeperiodRange.php:40
-msgid "Timeperiod Range Time"
-msgstr "Zeitraum Bereichs-Uhrzeit"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:58
-msgid "Notification State Filter"
-msgstr "Zustands-Filter für Benachrichtigungen"
-
-#: sources.d/icingadb-web/library/Icingadb/Model/User.php:59
-msgid "Notification Type Filter"
-msgstr "Typ-Filter für Benachrichtigungen"
+#~ msgid "Acknowledgement Environment Id (History)"
+#~ msgstr "Bestätigung Umgebungs-ID (Historie)"
+
+#~ msgid "Acknowledgement Endpoint Id (History)"
+#~ msgstr "Bestätigung Endpunkt-ID (Historie)"
+
+#~ msgid "Acknowledgement Object Type (History)"
+#~ msgstr "Bestätigung Objekt-Typ (Historie)"
+
+#~ msgid "Acknowledgement Host Id (History)"
+#~ msgstr "Bestätigung Host-ID (Historie)"
+
+#~ msgid "Acknowledgement Service Id (History)"
+#~ msgstr "Bestätigung Service-ID (Historie)"
+
+#~ msgid "Acknowledgement Set Time (History)"
+#~ msgstr "Bestätigung Eintragungs-Zeitpunkt (Historie)"
+
+#~ msgid "Acknowledgement Clear Time (History)"
+#~ msgstr "Bestätigung Lösch-Zeitpunkt (Historie)"
+
+#~ msgid "Acknowledgement Author (History)"
+#~ msgstr "Bestätigung Autor (Historie)"
+
+#~ msgid "Acknowledgement Cleared By (History)"
+#~ msgstr "Bestätigung entfernt von (Historie)"
+
+#~ msgid "Acknowledgement Comment (History)"
+#~ msgstr "Bestätigung Kommentar (Historie)"
+
+#~ msgid "Acknowledgement Expire Time (History)"
+#~ msgstr "Bestätigung Verfallszeitpunkt (Historie)"
+
+#~ msgid "Acknowledgement Is Sticky (History)"
+#~ msgstr "Bestätigung ist Sticky (Historie)"
+
+#~ msgid "Acknowledgement Is Persistent (History)"
+#~ msgstr "Bestätigung ist persistent (Historie)"
+
+#~ msgid "Action Url Environment Id"
+#~ msgstr "Aktions-Url Umgebungs-ID"
+
+#~ msgid "Checkcommand Zone Id"
+#~ msgstr "Check-Kommando Zonen-ID"
+
+#~ msgid "Checkcommand Environment Id"
+#~ msgstr "Check-Kommando Umgebungs-ID"
+
+#~ msgid "Checkcommand Argument Command Id"
+#~ msgstr "Check-Kommando-Argument Kommando-ID"
+
+#~ msgid "Checkcommand Argument Key"
+#~ msgstr "Check-Kommando-Argument Schlüssel"
+
+#~ msgid "Checkcommand Argument Environment Id"
+#~ msgstr "Check-Kommando-Argument Umgebungs-ID"
+
+#~ msgid "Checkcommand Argument Order"
+#~ msgstr "Check-Kommando-Argument Reihenfolge"
+
+#~ msgid "Checkcommand Argument Key Override"
+#~ msgstr "Check-Kommando-Argument Schlüssel-Überschreibung"
+
+#~ msgid "Checkcommand Argument Repeat Key"
+#~ msgstr "Check-Kommando-Argument Schlüssel wiederholen"
+
+#~ msgid "Checkcommand Argument Set If"
+#~ msgstr "Check-Kommando-Argument setzen wenn"
+
+#~ msgid "Checkcommand Argument Skip Key"
+#~ msgstr "Check-Kommando-Argument Schlüssel überspringen"
+
+#~ msgid "Checkcommand Envvar Command Id"
+#~ msgstr "Check-Kommando Umgebungsvariable Kommando-ID"
+
+#~ msgid "Checkcommand Envvar Key"
+#~ msgstr "Check-Kommando Umgebungsvariable Schlüssel"
+
+#~ msgid "Comment Environment Id"
+#~ msgstr "Kommentar Umgebungs-ID"
+
+#~ msgid "Comment Object Type"
+#~ msgstr "Kommentar-Objekttyp"
+
+#~ msgid "Comment Host Id"
+#~ msgstr "Kommentar Host-ID"
+
+#~ msgid "Comment Service Id"
+#~ msgstr "Kommentar Service-ID"
+
+#~ msgid "Comment Zone Id"
+#~ msgstr "Kommentar Zonen-ID"
+
+#~ msgid "Comment Environment Id (History)"
+#~ msgstr "Kommentar Umgebungs-ID (Historie)"
+
+#~ msgid "Comment Endpoint Id (History)"
+#~ msgstr "Kommentar Endpunkt-ID (Historie)"
+
+#~ msgid "Comment Object Type (History)"
+#~ msgstr "Kommentar Objekt-Typ (Historie)"
+
+#~ msgid "Comment Host Id (History)"
+#~ msgstr "Kommentar Host-ID (Historie)"
+
+#~ msgid "Comment Service Id (History)"
+#~ msgstr "Kommentar Service-ID (Historie)"
+
+#~ msgid "Comment Entry Time (History)"
+#~ msgstr "Kommentar Eingabezeitpunkt (Historie)"
+
+#~ msgid "Comment Author (History)"
+#~ msgstr "Kommentar Autor (Historie)"
+
+#~ msgid "Comment Removed By (History)"
+#~ msgstr "Kommentar gelöscht von (Historie)"
+
+#~ msgid "Comment Comment (History)"
+#~ msgstr "Kommentar Text (Historie)"
+
+#~ msgid "Comment Entry Type (History)"
+#~ msgstr "Kommentar Eingabe-Typ (Historie)"
+
+#~ msgid "Comment Is Persistent (History)"
+#~ msgstr "Kommentar ist Persistent (Historie)"
+
+#~ msgid "Comment Is Sticky (History)"
+#~ msgstr "Kommentar ist Sticky (Historie)"
+
+#~ msgid "Comment Expire Time (History)"
+#~ msgstr "Kommentar Ablaufzeitpunkt (Historie)"
+
+#~ msgid "Comment Remove Time (History)"
+#~ msgstr "Kommentar Lösch-Zeitpunkt (Historie)"
+
+#~ msgid "Comment Has Been Removed (History)"
+#~ msgstr "Kommentar wurde gelöscht (Historie)"
+
+#~ msgid "Downtime Environment Id"
+#~ msgstr "Downtime Umgebungs-ID"
+
+#~ msgid "Downtime Triggered By Id"
+#~ msgstr "Downtime ausgelöst durch ID"
+
+#~ msgid "Downtime Parent Id"
+#~ msgstr "Downtime Übergeordnete ID"
+
+#~ msgid "Downtime Object Type"
+#~ msgstr "Downtime Objekt-Typ"
+
+#~ msgid "Downtime Host Id"
+#~ msgstr "Downtime Host-ID"
+
+#~ msgid "Downtime Service Id"
+#~ msgstr "Downtime Service-ID"
+
+#~ msgid "Downtime Scheduled By"
+#~ msgstr "Downtime geplant von"
+
+#~ msgid "Downtime Zone Id"
+#~ msgstr "Downtime Zonen-ID"
+
+#~ msgid "Downtime Environment Id (History)"
+#~ msgstr "Downtime Umgebung-ID (Historie)"
+
+#~ msgid "Downtime Endpoint Id (History)"
+#~ msgstr "Downtime Endpunkt-ID (Historie)"
+
+#~ msgid "Downtime Triggered By Id (History)"
+#~ msgstr "Downtime ausgelöst durch ID (Historie)"
+
+#~ msgid "Downtime Parent Id (History)"
+#~ msgstr "Downtime übergeordnete ID (Historie)"
+
+#~ msgid "Downtime Object Type (History)"
+#~ msgstr "Downtime Objekt-Typ (Historie)"
+
+#~ msgid "Downtime Host Id (History)"
+#~ msgstr "Downtime Host-ID (Historie)"
+
+#~ msgid "Downtime Service Id (History)"
+#~ msgstr "Downtime Service-ID (Historie)"
+
+#~ msgid "Downtime Entry Time (History)"
+#~ msgstr "Downtime Eingabe-Zeitpunkt (Historie)"
+
+#~ msgid "Downtime Author (History)"
+#~ msgstr "Downtime Autor (Historie)"
+
+#~ msgid "Downtime Cancelled By (History)"
+#~ msgstr "Downtime abgebrochen von (Historie)"
+
+#~ msgid "Downtime Comment (History)"
+#~ msgstr "Downtime Kommentar (Historie)"
+
+#~ msgid "Downtime Is Flexible (History)"
+#~ msgstr "Downtime ist flexibel (Historie)"
+
+#~ msgid "Downtime Flexible Duration (History)"
+#~ msgstr "Downtime Flexible Dauer (Historie)"
+
+#~ msgid "Downtime Scheduled Start (History)"
+#~ msgstr "Downtime geplanter Start (Historie)"
+
+#~ msgid "Downtime Scheduled End (History)"
+#~ msgstr "Downtime geplantes Ende (Historie)"
+
+#~ msgid "Downtime Actual Start (History)"
+#~ msgstr "Downtime tatsächlicher Start (Historie)"
+
+#~ msgid "Downtime Actual End (History)"
+#~ msgstr "Downtime tatsächliches Ende (Historie)"
+
+#~ msgid "Downtime Has Been Cancelled (History)"
+#~ msgstr "Downtime wurde abgebrochen (Historie)"
+
+#~ msgid "Downtime Trigger Time (History)"
+#~ msgstr "Downtime Auslöse-Zeitpunkt (Historie)"
+
+#~ msgid "Downtime Cancel Time (History)"
+#~ msgstr "Downtime Abbruch-Zeitpunkt (Historie)"
+
+#~ msgid "Endpoint Environment Id"
+#~ msgstr "Endpunkt Umgebung-ID"
+
+#~ msgid "Endpoint Zone Id"
+#~ msgstr "Endpunkt Zonen-ID"
+
+#~ msgid "Eventcommand Zone Id"
+#~ msgstr "Event-Kommando Zonen-ID"
+
+#~ msgid "Eventcommand Environment id"
+#~ msgstr "Event-Kommando Umgebungs-ID"
+
+#~ msgid "Eventcommand Argument Command Id"
+#~ msgstr "Event-Kommando-Argument Kommando-ID"
+
+#~ msgid "Eventcommand Argument Key"
+#~ msgstr "Event-Kommando-Argument Schlüssel"
+
+#~ msgid "Eventcommand Argument Environment Id"
+#~ msgstr "Event-Kommando-Argument Umgebungs-ID"
+
+#~ msgid "Eventcommand Argument Order"
+#~ msgstr "Event-Kommando-Argument Position"
+
+#~ msgid "Eventcommand Argument Key Override"
+#~ msgstr "Event-Kommando-Argument Schlüssel Überschreibung"
+
+#~ msgid "Eventcommand Argument Repeat Key"
+#~ msgstr "Event-Kommando-Argument Schlüssel wiederholen"
+
+#~ msgid "Eventcommand Argument Set If"
+#~ msgstr "Event-Kommando-Argument setzen wenn"
+
+#~ msgid "Eventcommand Argument Skip Key"
+#~ msgstr "Event-Kommando-Argument Schlüssel überspringen"
+
+#~ msgid "Eventcommand Envvar Key"
+#~ msgstr "Event-Kommando Envvar Name"
+
+#~ msgid "Flapping Object Type (History)"
+#~ msgstr "Flapping Objekt-Typ (Historie)"
+
+#~ msgid "Flapping Start Time (History)"
+#~ msgstr "Flapping Start-Zeit (Historie)"
+
+#~ msgid "Flapping End Time (History)"
+#~ msgstr "Flapping End-Zeit (Historie)"
+
+#~ msgid "Flapping Percent State Change Start (History)"
+#~ msgstr "Flapping Start Zustandswechsel-Rate in % (Historie)"
+
+#~ msgid "Flapping Percent State Change End (History)"
+#~ msgstr "Flapping Ende Zustandswechsel-Rate in % (Historie)"
+
+#~ msgid "Flapping Threshold Low (History)"
+#~ msgstr "Untere Flapping Schwelle (Historie)"
+
+#~ msgid "Flapping Threshold High (History)"
+#~ msgstr "Obere Flapping Schwelle (Historie)"
+
+#~ msgid "Event Object Type"
+#~ msgstr "Event Objekt-Typ"
+
+#~ msgid "Host Checkcommand"
+#~ msgstr "Host Check-Kommando"
+
+#~ msgid "Host Check Timeperiod"
+#~ msgstr "Host Check-Zeitraum"
+
+#~ msgid "Host Eventcommand"
+#~ msgstr "Host Event-Kommando"
+
+#~ msgid "Host Icon Image Alt"
+#~ msgstr "Host Icon Alt"
+
+#~ msgid "Host Zone"
+#~ msgstr "Host-Zone"
+
+#~ msgid "Host Command Endpoint"
+#~ msgstr "Host Kommando-Endpunkt"
+
+#~ msgid "Host State Attempt No."
+#~ msgstr "Host-Zustand Versuch Nr."
+
+#~ msgid "Host State Output"
+#~ msgstr "Host-Status Ausgabe"
+
+#~ msgid "Host State Long Output"
+#~ msgstr "Host-Status Lange Ausgabe"
+
+#~ msgid "Host State Performance Data"
+#~ msgstr "Host-Status Performancedaten"
+
+#~ msgid "Host State Normalized Performance Data"
+#~ msgstr "Normalisierte Host-Status Performancedaten"
+
+#~ msgid "Host State Check Commandline"
+#~ msgstr "Host-State Check-Kommandozeile"
+
+#~ msgid "Host State Is Problem"
+#~ msgstr "Host-State ist Problematisch"
+
+#~ msgid "Host State Is Handled"
+#~ msgstr "Host-State wird behandelt"
+
+#~ msgid "Host State Is Reachable"
+#~ msgstr "Host-State ist Erreichbar"
+
+#~ msgid "Host State Is Flapping"
+#~ msgstr "Host-State ist Flapping"
+
+#~ msgid "Host State Is Overdue"
+#~ msgstr "Host-State ist überfällig"
+
+#~ msgid "Host State Is Acknowledged"
+#~ msgstr "Host-State ist bestätigt"
+
+#, fuzzy
+#~ msgid "Host State In Downtime"
+#~ msgstr "In einer Downtime"
+
+#, fuzzy
+#~ msgid "Host State Execution Time"
+#~ msgstr "Ausführungsdauer"
+
+#, fuzzy
+#~ msgid "Host State Latency"
+#~ msgstr "Host-Zustände"
+
+#, fuzzy
+#~ msgid "Host State Timeout"
+#~ msgstr "Check-Timeout"
+
+#, fuzzy
+#~ msgid "Host State Check Source"
+#~ msgstr "Check-Quelle"
+
+#, fuzzy
+#~ msgid "Host State Last Update"
+#~ msgstr "Letze Status-Aktualisierung"
+
+#, fuzzy
+#~ msgid "Host State Last State Change"
+#~ msgstr "Letzte Statusänderung"
+
+#, fuzzy
+#~ msgid "Host State Next Check"
+#~ msgstr "Host-Checks"
+
+#, fuzzy
+#~ msgid "Host State Next Update"
+#~ msgstr "Letze Status-Aktualisierung"
+
+#~ msgid "Notification States"
+#~ msgstr "Benachrichtigungs-Status"
+
+#~ msgid "Notification Types"
+#~ msgstr "Benachrichtigungstypen"
+
+#~ msgid "Notification Type (History)"
+#~ msgstr "Benachrichtigungstyp (Historie)"
+
+#~ msgid "Notification Sent On (History)"
+#~ msgstr "Benachrichtigung gesendet um (Historie)"
+
+#, fuzzy
+#~ msgid "Notificationcommand Zone Id"
+#~ msgstr "Benachrichtigungskommando"
+
+#, fuzzy
+#~ msgid "Notificationcommand Environment Id"
+#~ msgstr "Benachrichtigungskommando"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Command Id"
+#~ msgstr "Benachrichtigungskommandos"
+
+#~ msgid "Notificationcommand Argument Key"
+#~ msgstr "Benachrichtigungs-Kommando-Argument Name"
+
+#, fuzzy
+#~ msgid "Notificationcommand Argument Environment Id"
+#~ msgstr "Benachrichtigungskommando"
+
+#~ msgid "Notificationcommand Argument Order"
+#~ msgstr "Benachrichtigungs-Kommando-Argument Position"
+
+#~ msgid "Notificationcommand Argument Key Override"
+#~ msgstr "Benachrichtigungs-Kommando-Argument Tatsächlicher Name"
+
+#~ msgid "Notificationcommand Argument Repeat Key"
+#~ msgstr "Benachrichtigungs-Kommando-Argument wird wiederholt"
+
+#~ msgid "Notificationcommand Argument Set If"
+#~ msgstr "Benachrichtigungs-Kommando-Argument Bedingung"
+
+#~ msgid "Notificationcommand Argument Skip Key"
+#~ msgstr "Benachrichtigungs-Kommando-Argument ohne Name"
+
+#, fuzzy
+#~ msgid "Notificationcommand Envvar Command Id"
+#~ msgstr "Benachrichtigungskommando"
+
+#, fuzzy
+#~ msgid "Notificationcommand Envvar Environment Id"
+#~ msgstr "Benachrichtigungskommando"
+
+#, fuzzy
+#~ msgid "Service Environment Id"
+#~ msgstr "Service nicht gefunden"
+
+#, fuzzy
+#~ msgid "Service Host Id"
+#~ msgstr "Service-Set"
+
+#, fuzzy
+#~ msgid "Service Checkcommand"
+#~ msgstr "Service-Checks"
+
+#, fuzzy
+#~ msgid "Service Checkcommand Id"
+#~ msgstr "Service-Checks"
+
+#, fuzzy
+#~ msgid "Service Check Timeperiod"
+#~ msgstr "Ausführungszeitabschnitt"
+
+#, fuzzy
+#~ msgid "Service Check Timeperiod Id"
+#~ msgstr "Ausführungszeitabschnitt"
+
+#, fuzzy
+#~ msgid "Service Eventcommand"
+#~ msgstr "Event-Kommando"
+
+#, fuzzy
+#~ msgid "Service Eventcommand Id"
+#~ msgstr "Event-Kommando"
+
+#, fuzzy
+#~ msgid "Service Action Url Id"
+#~ msgstr "Service-Aktion"
+
+#, fuzzy
+#~ msgid "Service Notes Url Id"
+#~ msgstr "Service nicht gefunden"
+
+#, fuzzy
+#~ msgid "Service Icon Image Id"
+#~ msgstr "Servicename"
+
+#, fuzzy
+#~ msgid "Service Icon Image Alt"
+#~ msgstr "Icon Bild alternativ"
+
+#, fuzzy
+#~ msgid "Service Zone"
+#~ msgstr "Servicename"
+
+#, fuzzy
+#~ msgid "Service Zone Id"
+#~ msgstr "Services auf %s"
+
+#, fuzzy
+#~ msgid "Service Command Endpoint"
+#~ msgstr "Kommandoendpunkt"
+
+#, fuzzy
+#~ msgid "Service Command Endpoint Id"
+#~ msgstr "Kommandoendpunkt"
+
+#, fuzzy
+#~ msgid "Service State Environment Id"
+#~ msgstr "Service nicht gefunden"
+
+#~ msgid "Service State Attempt No."
+#~ msgstr "Service-Status Versuch Nr."
+
+#, fuzzy
+#~ msgid "Service State Output"
+#~ msgstr "Service-Zustände"
+
+#, fuzzy
+#~ msgid "Service State Long Output"
+#~ msgstr "Service-Zustände"
+
+#, fuzzy
+#~ msgid "Service State Performance Data"
+#~ msgstr "Performancedaten"
+
+#, fuzzy
+#~ msgid "Service State Normalized Performance Data"
+#~ msgstr "Performancedaten"
+
+#, fuzzy
+#~ msgid "Service State Check Commandline"
+#~ msgstr "Service-Checks"
+
+#, fuzzy
+#~ msgid "Service State Is Problem"
+#~ msgstr "Serviceprobleme"
+
+#, fuzzy
+#~ msgid "Service State Is Handled"
+#~ msgstr "Service-Zustände"
+
+#, fuzzy
+#~ msgid "Service State Is Reachable"
+#~ msgstr "Service-Zustände"
+
+#, fuzzy
+#~ msgid "Service State Is Flapping"
+#~ msgstr "%u flapping Service"
+
+#, fuzzy
+#~ msgid "Service State Is Overdue"
+#~ msgstr "Service-Zustände"
+
+#, fuzzy
+#~ msgid "Service State Is Acknowledged"
+#~ msgstr "Service-Zustände"
+
+#, fuzzy
+#~ msgid "Service State Acknowledgement Comment Id"
+#~ msgstr "Sticky Bestätigung"
+
+#, fuzzy
+#~ msgid "Service State In Downtime"
+#~ msgstr "Service-Zustände"
+
+#, fuzzy
+#~ msgid "Service State Execution Time"
+#~ msgstr "Auswahlmöglichkeite für Service-Vorlagen"
+
+#, fuzzy
+#~ msgid "Service State Latency"
+#~ msgstr "Service-Zustände"
+
+#, fuzzy
+#~ msgid "Service State Timeout"
+#~ msgstr "Service-Checks"
+
+#, fuzzy
+#~ msgid "Service State Check Source"
+#~ msgstr "Service-Checks"
+
+#, fuzzy
+#~ msgid "Service State Last Update"
+#~ msgstr "Service-Zustände"
+
+#, fuzzy
+#~ msgid "Service State Last State Change"
+#~ msgstr "Letzte Statusänderung"
+
+#, fuzzy
+#~ msgid "Service State Next Check"
+#~ msgstr "Service-Checks"
+
+#, fuzzy
+#~ msgid "Service State Next Update"
+#~ msgstr "Service-Zustände"
+
+#, fuzzy
+#~ msgid "Servicegroup Environment Id"
+#~ msgstr "Servicegruppenname"
+
+#, fuzzy
+#~ msgid "Servicegroup Zone Id"
+#~ msgstr "Servicegruppe"
+
+#, fuzzy
+#~ msgid "State Environment Id (History)"
+#~ msgstr "Service nicht gefunden"
+
+#, fuzzy
+#~ msgid "State Object Type (History)"
+#~ msgstr "Alle Objekt-Typen"
+
+#, fuzzy
+#~ msgid "State Event Time (History)"
+#~ msgstr "Aktualisiere Ereignis Typ %s"
+
+#, fuzzy
+#~ msgid "State Type (History)"
+#~ msgstr "Statustyp"
+
+#, fuzzy
+#~ msgid "State Max Check Attempts (History)"
+#~ msgstr "Maximale Checkwiederholungen"
+
+#, fuzzy
+#~ msgid "State Check Source (History)"
+#~ msgstr "Check-Quelle"
+
+#, fuzzy
+#~ msgid "Timeperiod Environment Id"
+#~ msgstr "Benutzerkommentar"
+
+#, fuzzy
+#~ msgid "Timeperiod Zone Id"
+#~ msgstr "Ausführungszeitabschnitt"
+
+#, fuzzy
+#~ msgid "Timeperiod Range Period Id"
+#~ msgstr "Zeiträume"
+
+#~ msgid "Timeperiod Range Key"
+#~ msgstr "Zeitraum Bereichs-Datum/Tag"
+
+#, fuzzy
+#~ msgid "Timeperiod Range Environment Id"
+#~ msgstr "Service nicht gefunden"
+
+#~ msgid "Timeperiod Range Value"
+#~ msgstr "Zeitraum Bereichs-Uhrzeit"
+
+#, fuzzy
+#~ msgid "User Environment Id"
+#~ msgstr "Benutzerkommentar"
+
+#, fuzzy
+#~ msgid "User Timeperiod Id"
+#~ msgstr "Ausführungszeitabschnitt"
+
+#~ msgid "User States"
+#~ msgstr "Status-Filter für Benachrichtigungen"
+
+#~ msgid "User Types"
+#~ msgstr "Typ-Filter für Benachrichtigungen"
+
+#, fuzzy
+#~ msgid "User Zone Id"
+#~ msgstr "Cluster Zone"
+
+#, fuzzy
+#~ msgid "Usergroup Zone Id"
+#~ msgstr "Benutzergruppe"
+
+#, fuzzy
+#~ msgid "Zone Environment Id"
+#~ msgstr "Downtime Umgebung-ID"
+
+#, fuzzy
+#~ msgid "Zone Parent Id"
+#~ msgstr "Zonenname"
+
+#~ msgid "Environment id"
+#~ msgstr "Umgebungs-ID"
 
 #~ msgid "Open health overview"
 #~ msgstr "Öffne Zustands-Übersicht"
