@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-29 15:40+0000\n"
-"PO-Revision-Date: 2022-05-31 09:37+0000\n"
+"PO-Revision-Date: 2022-07-12 08:43+0000\n"
 "Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
 "Language-Team: German <https://translate.icinga.com/projects/icinga/"
 "icingaweb2-module-vspheredb/de/>\n"
@@ -55,6 +55,7 @@ msgstr "Tabelle"
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/EventsController.php:160
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:141
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:142
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:143
 msgid "Events"
 msgstr "Ereignisse"
 
@@ -292,19 +293,23 @@ msgid "%s events, max %s per day"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:122
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:124
 msgid "Host System"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:127
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:129
 #, php-format
 msgid "Virtual Machines (%d)"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:133
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:135
 msgid "Sensors"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:137
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:139
 msgid "PCI Devices"
 msgstr ""
 
@@ -973,7 +978,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:163
 msgid "default"
-msgstr ""
+msgstr "standard"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:264
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/PerfdataConsumerForm.php:44
@@ -1039,7 +1044,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:74
 msgid "Object Type"
-msgstr "Objekttyp"
+msgstr "Objekt-Typ"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:78
 #, fuzzy
@@ -1658,6 +1663,7 @@ msgid "half duplex"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/HostPhysicalNicTable.php:63
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/HostHbaTable.php:53
 msgid "driver"
 msgstr ""
 
@@ -1707,6 +1713,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/HostSystemInfoTable.php:45
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:117
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:87
 msgid "Tools"
 msgstr ""
 
@@ -1817,6 +1824,7 @@ msgid "Information"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:89
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:90
 msgid "Annotation"
 msgstr "Anmerkung"
 
@@ -1882,7 +1890,6 @@ msgstr "Konnte Job nicht erstellen"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmLocationInfoTable.php:73
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:124
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/MemoryUsage.php:35
-#, fuzzy
 msgid "Host"
 msgstr "Host"
 
@@ -2192,7 +2199,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/ConfigTabs.php:42
 msgid "Performance Data"
-msgstr "Leistungsdaten"
+msgstr "Performancedaten"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/MainTabs.php:47
 msgid "vCenters"
@@ -2400,6 +2407,7 @@ msgid "Pending - this host has never been checked"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Link/Html5UiLink.php:45
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Link/Html5UiLink.php:53
 msgid "Open the VMware HTML 5 UI"
 msgstr ""
 
@@ -2550,6 +2558,11 @@ msgstr ""
 #, fuzzy
 msgid "This is a template"
 msgstr "Vorhandene Vorlagen"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/HostHbaTable.php:31
+#, php-format
+msgid "HBA (%s)"
+msgstr ""
 
 #, fuzzy
 #~ msgid "documentation"
