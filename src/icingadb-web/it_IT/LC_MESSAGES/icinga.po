@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-15 09:37+0000\n"
+"POT-Creation-Date: 2022-07-18 10:16+0000\n"
 "PO-Revision-Date: 2020-04-27 14:45+0200\n"
 "Last-Translator: Francesco Mazzi <fmazzi@comune.genova.it>\n"
 "Language-Team: \n"
@@ -1610,7 +1610,7 @@ msgid "Host Problems"
 msgstr "Problemi Host"
 
 #: sources.d/icingadb-web/configuration.php:197
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:134
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:140
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/StateListItem.php:97
 msgid "Overdue"
 msgstr "Ritardi"
@@ -1910,6 +1910,11 @@ msgstr "Variabili personalizzate"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:255
 #: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:308
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:130
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:168
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:174
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:194
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:200
 msgid "n. a."
 msgstr ""
 
@@ -3967,48 +3972,52 @@ msgid_plural "%d unhandled services critical"
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:81
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:82
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:268
 msgid "Now"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:117
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:118
 msgid "Last update"
 msgstr "Ultimo aggiornamento"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:119
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:137
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:120
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:143
 msgid "PENDING"
 msgstr "PENDING"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:136
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:127
+msgid "Interval"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:142
 msgid "Next Check"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:160
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:167
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:212
 #, fuzzy
 msgid "Scheduling Source"
 msgstr "Schedulazione controllo.."
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:172
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:184
 msgid "Command"
 msgstr "Command"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:174
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:186
 msgid "Attempts"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:177
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:189
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:213
 msgid "Check Source"
 msgstr "Eseguito da"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:179
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:191
 msgid "Execution time"
 msgstr "Tempo di esecuzione"
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:182
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:197
 msgid "Latency"
 msgstr "Latenza"
 
@@ -4728,21 +4737,31 @@ msgstr[1] ""
 msgid "{{#total}}Total{{/total}} %d"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseCommentListItem.php:51
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseCommentListItem.php:54
 #, php-format
 msgctxt "<username>.."
 msgid "%s acknowledged"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseCommentListItem.php:51
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseCommentListItem.php:54
 #, php-format
 msgctxt "<username>.."
 msgid "%s commented"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseCommentListItem.php:78
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseCommentListItem.php:81
 msgid "EXPIRES"
 msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseCommentListItem.php:110
+#, fuzzy, php-format
+msgid "expires %s"
+msgstr "Scade"
+
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseCommentListItem.php:116
+#, fuzzy, php-format
+msgid "created %s"
+msgstr "Creato"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseDowntimeListItem.php:136
 msgid "Flexible Downtime"
