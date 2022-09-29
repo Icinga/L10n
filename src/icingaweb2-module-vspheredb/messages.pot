@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n 1ab56bb\n"
+"Project-Id-Version: Icinga L10n 0badbb5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 20:08+0000\n"
+"POT-Creation-Date: 2022-09-29 12:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,7 +168,7 @@ msgstr ""
 msgid "Currently there are no requests pending"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/DaemonController.php:168
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/DaemonController.php:174
 msgid "The vSphereDB Daemon is currently not polling any vCenter"
 msgstr ""
 
@@ -621,32 +621,32 @@ msgstr ""
 msgid "The connection has been deleted"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:42
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:41
 msgid "VCenters"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:51
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:50
 msgid "Add Connection"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:68
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:67
 msgid "Monitored vCenters"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:86
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:85
 #, php-format
 msgid "No vCenter available. You might want to check your %s or your %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:88
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:87
 msgid "Server Connections"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:92
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:91
 msgid "Daemon Status"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:151
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VcentersController.php:150
 msgid "Daemon is not running"
 msgstr ""
 
@@ -777,12 +777,28 @@ msgstr ""
 msgid "Active Memory Usage"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/ComputeResourceUsageRuleSet.php:14
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/ComputeResourceUsageRuleSet.php:15
 msgid "Compute Resource Usage"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/ConfigurationPolicyRuleSet.php:13
 msgid "Configuration Policy"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/CpuUsageRuleDefinition.php:30
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/HostsTable.php:42
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:131
+msgid "CPU Usage"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/CpuUsageRuleDefinition.php:88
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:81
+msgid "Raise Warning with less then X percent free"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/CpuUsageRuleDefinition.php:92
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:85
+msgid "Raise Critical with less then X percent free"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskHealthRuleSet.php:14
@@ -851,14 +867,6 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:77
 msgid "Worse state wins"
-msgstr ""
-
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:81
-msgid "Raise Warning with less then X percent free"
-msgstr ""
-
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:85
-msgid "Raise Critical with less then X percent free"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:89
@@ -1946,11 +1954,6 @@ msgstr ""
 msgid "BIOS Release Date"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/HostsTable.php:42
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:131
-msgid "CPU Usage"
-msgstr ""
-
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/HostsTable.php:58
 msgid "CPU Cores"
 msgstr ""
@@ -2284,7 +2287,7 @@ msgid ""
 "dedicated DB for this module."
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/CpuAbsoluteUsage.php:26
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/CpuAbsoluteUsage.php:27
 #, php-format
 msgid "%d CPUs"
 msgstr ""
