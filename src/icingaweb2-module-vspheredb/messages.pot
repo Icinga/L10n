@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n 0badbb5\n"
+"Project-Id-Version: Icinga L10n be316d3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-29 12:08+0000\n"
+"POT-Creation-Date: 2022-10-05 16:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,7 +226,7 @@ msgid "Sizing"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/DatastoreController.php:100
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:82
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:88
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmDatastoresTable.php:53
 msgid "Datastore"
 msgstr ""
@@ -359,7 +359,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:76
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:199
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:79
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:85
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:88
 msgid "Host Systems"
 msgstr ""
@@ -543,7 +543,17 @@ msgstr ""
 msgid "Daemon configuration refresh FAILED: "
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:35
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:45
+#, php-format
+msgid "Please click %s to configure related Monitoring Rules"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:46
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseDbResourceForm.php:101
+msgid "here"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:56
 #, php-format
 msgid ""
 "If you want to get Alarms for this object, you can configure related Icinga "
@@ -551,11 +561,11 @@ msgid ""
 "Director Import Source"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:54
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:75
 msgid "Hide Inspection"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:61
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:82
 msgid "Inspect"
 msgstr ""
 
@@ -656,7 +666,7 @@ msgid "Hardware"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:113
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:80
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:86
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Controller/ObjectsController.php:146
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmsOnDatastoreTable.php:50
 msgid "Virtual Machine"
@@ -785,20 +795,28 @@ msgstr ""
 msgid "Configuration Policy"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/CpuUsageRuleDefinition.php:30
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/CpuUsageRuleDefinition.php:31
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/HostsTable.php:42
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:131
 msgid "CPU Usage"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/CpuUsageRuleDefinition.php:88
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/CpuUsageRuleDefinition.php:93
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:81
 msgid "Raise Warning with less then X percent free"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/CpuUsageRuleDefinition.php:92
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/CpuUsageRuleDefinition.php:97
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:85
 msgid "Raise Critical with less then X percent free"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DatastoreHealthRuleSet.php:13
+msgid "Datastore Health"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DatastoreUsageRuleDefinition.php:22
+msgid "Datastore Usage"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskHealthRuleSet.php:14
@@ -1037,21 +1055,21 @@ msgstr ""
 msgid "Latency %s Read / %s Write"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:77
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:83
 msgid "Object Type"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:81
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:87
 msgid "Compute Resource"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:87
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:93
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VCenterSummaryTable.php:351
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VsphereApiConnectionTable.php:10
 msgid "VCenter"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:89
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:95
 msgid "- any -"
 msgstr ""
 
@@ -1118,10 +1136,6 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseDbResourceForm.php:99
 #, php-format
 msgid "Please click %s to create new MySQL/MariaDB resource"
-msgstr ""
-
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseDbResourceForm.php:101
-msgid "here"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseDbResourceForm.php:127
