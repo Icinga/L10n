@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 07:27+0000\n"
+"POT-Creation-Date: 2022-12-29 15:58+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,25 +20,28 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:82
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:162
-msgid "No such host"
-msgstr "Немає такого хоста"
-
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:107
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:137
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:80
+#: sources.d/icingaweb2-module-graphite/application/controllers/MonitoringGraphController.php:90
 msgid "No such service"
 msgstr "Немає такого сервіса"
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:195
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:105
+#: sources.d/icingaweb2-module-graphite/application/controllers/MonitoringGraphController.php:70
+msgid "No such host"
+msgstr "Немає такого хоста"
+
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:138
+#: sources.d/icingaweb2-module-graphite/application/controllers/MonitoringGraphController.php:121
 msgid "No such template"
 msgstr "Немає такого шаблона"
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:206
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:149
+#: sources.d/icingaweb2-module-graphite/application/controllers/MonitoringGraphController.php:132
 msgid "No such graph"
 msgstr "Немає такого графіка"
 
-#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:224
+#: sources.d/icingaweb2-module-graphite/application/controllers/GraphController.php:167
+#: sources.d/icingaweb2-module-graphite/application/controllers/MonitoringGraphController.php:150
 msgid ""
 "Graphite Web yields more than one metric for the given filter. Please "
 "specify a more precise filter."
@@ -367,6 +370,13 @@ msgstr "Дозволити дебаг напряму через веб інте�
 msgid "Graphs"
 msgstr "Графіки"
 
+#: sources.d/icingaweb2-module-graphite/library/Graphite/Web/Controller/MonitoringAwareController.php:152
+#, php-format
+msgid ""
+"Cannot apply restriction %s using the filter %s. You can only use the "
+"following columns: %s"
+msgstr ""
+
 #: sources.d/icingaweb2-module-graphite/library/Graphite/Web/Controller/TimeRangePickerTrait.php:53
 msgid "Specify custom time range"
 msgstr "Вказати користувацький період"
@@ -375,7 +385,7 @@ msgstr "Вказати користувацький період"
 msgid "The username must not contain colons."
 msgstr "Ім'я користувача не має містити двокрапку."
 
-#: sources.d/icingaweb2-module-graphite/library/Graphite/Web/Widget/Graphs.php:414
+#: sources.d/icingaweb2-module-graphite/library/Graphite/Web/Widget/Graphs.php:432
 #, php-format
 msgid "Please %scorrect%s the configuration of the Graphite module."
 msgstr "Будь ласка, %sвиправте%s конфігурацію модулю Graphite."

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-24 12:23+0000\n"
+"POT-Creation-Date: 2022-12-29 15:58+0000\n"
 "PO-Revision-Date: 2020-04-30 16:15+0200\n"
 "Last-Translator: Juan Cruz Fernandez <juancruz.f87@gmail.com>\n"
 "Language-Team: \n"
@@ -525,7 +525,13 @@ msgstr "Agregar"
 msgid "Delete"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:166
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:154
+#, php-format
+msgid ""
+"Process \"%s\" cannot be deleted as it has been referenced in other processes"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:173
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:184
 #, php-format
 msgid "A process named \"%s\" already exists"
@@ -666,41 +672,41 @@ msgstr ""
 msgid "You are lacking permission to access service \"%s\" on host \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/configuration.php:6
+#: sources.d/icingaweb2-module-businessprocess/configuration.php:7
 msgid "Business Processes"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/configuration.php:24
+#: sources.d/icingaweb2-module-businessprocess/configuration.php:26
 msgid "Show all"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/configuration.php:44
+#: sources.d/icingaweb2-module-businessprocess/configuration.php:47
 msgid ""
 "Allow to see all available processes, regardless of configured restrictions"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/configuration.php:48
+#: sources.d/icingaweb2-module-businessprocess/configuration.php:51
 msgid "Allow to create whole new process configuration (files)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/configuration.php:52
+#: sources.d/icingaweb2-module-businessprocess/configuration.php:55
 msgid "Allow to modify process definitions, to add and remove nodes"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/configuration.php:56
+#: sources.d/icingaweb2-module-businessprocess/configuration.php:59
 msgid "Restrict access to configurations with the given prefix"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:683
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:699
 msgid "Unbound nodes"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:740
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:756
 #, php-format
 msgid "Node \"%s\" has been defined twice"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:882
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:898
 #, php-format
 msgid "No business process nodes for \"%s\" have been defined yet"
 msgstr ""
@@ -710,32 +716,32 @@ msgstr ""
 msgid "Nesting error detected: %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:139
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:140
 msgid "UP"
 msgstr "ARRIBA"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:140
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:141
 msgid "DOWN"
 msgstr "Abajo"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:141
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:154
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:142
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:155
 msgid "PENDING"
 msgstr "PENDIENTE"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:150
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:151
 msgid "OK"
 msgstr "ACEPTAR"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:151
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:152
 msgid "WARNING"
 msgstr "ADVERTENCIA"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:152
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:153
 msgid "CRITICAL"
 msgstr "CRITICO"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:153
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:154
 msgid "UNKNOWN"
 msgstr "DESCONOCIDO"
 
@@ -943,3 +949,10 @@ msgstr ""
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/NoDuplicateChildrenValidator.php:35
 msgid "%label% is already defined in this process"
 msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Navigation/Renderer/ProcessProblemsBadge.php:42
+#, php-format
+msgid "One unhandled root node critical"
+msgid_plural "%d unhandled root nodes critical"
+msgstr[0] ""
+msgstr[1] ""
