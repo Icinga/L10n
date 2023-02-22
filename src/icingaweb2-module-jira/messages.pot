@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n 2b54821\n"
+"Project-Id-Version: Icinga L10n aff6a59\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-21 15:15+0000\n"
+"POT-Creation-Date: 2023-02-22 10:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,22 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:30
+#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:42
+msgid "Jira Software deployment configuration has been saved successfully"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:52
 msgid ""
 "This page serves no special purpose right now, but gives some insight into "
 "available projects and Custom Fields"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:58
+#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:83
 #, php-format
 msgid "Icinga Director has not been configured on this system: %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:133
-msgid "Director Config"
-msgstr ""
-
-#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:136
+#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:158
 msgid "Inspect"
 msgstr ""
 
@@ -61,16 +61,56 @@ msgstr ""
 msgid "Create"
 msgstr ""
 
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:19
+msgid "Deployment Type"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:20
+msgid "Select deployment type"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:23
+msgid "Cloud"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:24
+msgid "Server"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:32
+msgid "Jira Software seems to be deployed differently."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:43
+msgid "Legacy compatibility"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:44
+msgid "Enable legacy compatibility if unable to create jira issues"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:52
+msgid "Save Changes"
+msgstr ""
+
 #: sources.d/icingaweb2-module-jira/configuration.php:4
 msgid "Jira"
 msgstr ""
 
 #: sources.d/icingaweb2-module-jira/configuration.php:10
-msgid "Configuration"
+msgid "Allow to manually create issues"
 msgstr ""
 
 #: sources.d/icingaweb2-module-jira/configuration.php:15
-msgid "Allow to manually create issues"
+msgid "Configuration"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/configuration.php:24
+msgid "Director Config"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/configuration.php:25
+msgid "Director Config Preview"
 msgstr ""
 
 #: sources.d/icingaweb2-module-jira/library/Jira/Web/Controller.php:53
@@ -86,53 +126,53 @@ msgstr ""
 msgid "JIRA project"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:79
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:98
 msgid "Issue type"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:86
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:105
 msgid "Summary"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:90
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:109
 msgid "Summary of this incident"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:94
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:113
 msgid "Description"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:99
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:118
 msgid "Message body of this issue"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:103
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:122
 msgid "Template"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:108
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:127
 msgid "Acknowledge"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:110
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:129
 msgid "Yes"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:111
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:130
 msgid "No"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:115
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:134
 msgid ""
 "Whether the Icinga problem should be acknowledged. The newly created JIRA "
 "issue will be linked in the related comment."
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:121
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:140
 msgid "Create Issue"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/TemplateForm.php:31
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/TemplateForm.php:32
 #, php-format
 msgid "Unable to talk to JIRA, please check your configuration: %s"
 msgstr ""
