@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n 9e3d83f\n"
+"Project-Id-Version: Icinga L10n 7d1f415\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-09 15:33+0000\n"
+"POT-Creation-Date: 2023-03-12 09:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,7 @@ msgid "Basket"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:38
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:141
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:161
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/BasketTable.php:32
 msgid "Snapshots"
 msgstr ""
@@ -62,7 +62,8 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:96
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:114
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:342
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:133
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:368
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:138
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:542
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:366
@@ -93,76 +94,81 @@ msgid "Upload a Configuration Basket"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:140
+msgid "Upload a Configuration Basket Snapshot"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:160
 msgid "Basket Snapshots"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:144
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:164
 #, php-format
 msgid "%s: Snapshots"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:193
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:169
+#: sources.d/icingaweb2-module-director/application/controllers/BasketsController.php:26
+#: sources.d/icingaweb2-module-director/application/forms/BasketUploadForm.php:45
+msgid "Upload"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:219
 #, php-format
 msgid "%s: %s (Snapshot)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:200
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:226
 msgid "Show Basket"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:206
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:232
 #: sources.d/icingaweb2-module-director/application/forms/RestoreBasketForm.php:58
 msgid "Restore"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:212
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:238
 #: sources.d/icingaweb2-module-director/application/controllers/SchemaController.php:80
 #: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:249
 #: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:262
 msgid "Download"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:228
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:254
 msgid "Created"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:229
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:255
 msgid "Content Checksum"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:246
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:357
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:272
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:383
 msgid "Snapshot"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:278
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:304
 msgid "modified"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:284
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:310
 msgid "unchanged"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:288
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:314
 msgid "new"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:328
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:354
 msgid "Single Object Diff"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:330
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:356
 #, php-format
 msgid "Comparing %s \"%s\" from Snapshot \"%s\" to current config"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketsController.php:20
 msgid "Create"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/controllers/BasketsController.php:26
-#: sources.d/icingaweb2-module-director/application/forms/BasketUploadForm.php:43
-msgid "Upload"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketsController.php:32
@@ -1335,7 +1341,7 @@ msgid "Basket Definitions"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:48
-#: sources.d/icingaweb2-module-director/application/forms/BasketUploadForm.php:29
+#: sources.d/icingaweb2-module-director/application/forms/BasketUploadForm.php:30
 msgid "Basket Name"
 msgstr ""
 
@@ -1365,15 +1371,15 @@ msgid ""
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:126
-#: sources.d/icingaweb2-module-director/application/forms/BasketUploadForm.php:130
+#: sources.d/icingaweb2-module-director/application/forms/BasketUploadForm.php:122
 msgid "It's not allowed to store an empty basket"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/BasketUploadForm.php:35
+#: sources.d/icingaweb2-module-director/application/forms/BasketUploadForm.php:37
 msgid "Choose file"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/BasketUploadForm.php:145
+#: sources.d/icingaweb2-module-director/application/forms/BasketUploadForm.php:141
 msgid "Basket has been uploaded"
 msgstr ""
 
