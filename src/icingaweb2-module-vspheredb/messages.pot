@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n 8d36652\n"
+"Project-Id-Version: Icinga L10n c55a9be\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 15:21+0000\n"
+"POT-Creation-Date: 2023-03-15 16:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,13 +38,13 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/DatastoreController.php:107
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/EventsController.php:110
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:151
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:121
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:123
 msgid "Events"
 msgstr ""
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/AlarmsController.php:85
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/EventsController.php:113
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:125
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:127
 msgid "Alarms"
 msgstr ""
 
@@ -240,7 +240,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:155
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:41
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:179
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:129
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:131
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/ConfigTabs.php:48
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/HostMonitoringInfo.php:42
 msgid "Monitoring"
@@ -704,12 +704,12 @@ msgstr ""
 msgid "Daemon is not running"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:64
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:117
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:66
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:119
 msgid "Hardware"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:113
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:115
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:95
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Controller/ObjectsController.php:167
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmsOnDatastoreTable.php:52
@@ -2225,16 +2225,26 @@ msgstr ""
 msgid "Disks"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmNetworkAdapterTable.php:32
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmNetworkAdapterTable.php:36
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmNetworkAdapterTable.php:88
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/VmRouteConfigTable.php:33
 msgid "Network"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmNetworkAdapterTable.php:56
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmNetworkAdapterTable.php:61
 #, php-format
 msgid "Port %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmNetworkAdapterTable.php:89
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmNetworkAdapterTable.php:85
+msgid "Connected"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmNetworkAdapterTable.php:86
+msgid "no"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmNetworkAdapterTable.php:122
 msgid "MAC Address"
 msgstr ""
 
@@ -2580,4 +2590,20 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/VmHeader.php:51
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/VmHeader.php:55
 msgid "This is a template"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/VmRouteConfigTable.php:25
+msgid "Guest Routing Table"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/VmRouteConfigTable.php:28
+msgid "Got no Guest IP Stack information"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/VmRouteConfigTable.php:34
+msgid "Gateway"
+msgstr ""
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/VmRouteConfigTable.php:48
+msgid "Device"
 msgstr ""
