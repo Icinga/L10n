@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-29 15:58+0000\n"
+"POT-Creation-Date: 2023-03-16 11:42+0000\n"
 "PO-Revision-Date: 2022-07-08 13:43+0000\n"
 "Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
 "Language-Team: German <https://translate.icinga.com/projects/icinga/"
@@ -37,155 +37,167 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.9.1\n"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificateController.php:33
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificateController.php:17
+msgid "X.509 Certificate"
+msgstr "X.509 Zertifikat"
+
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificateController.php:35
 #: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:38
 msgid "Certificate not found."
 msgstr "Zertifikat nicht gefunden."
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificateController.php:36
-msgid "X.509 Certificate"
-msgstr "X.509 Zertifikat"
-
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:24
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:20
 msgid "Certificates"
 msgstr "Zertifikate"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:45
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:47
-#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:30
-#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:49
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:34
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:49
+#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:31
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:62
+#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:57
 msgid "Certificate"
 msgstr "Zertifikat"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:46
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:48
-#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:74
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:35
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:50
+#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:75
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:63
 msgid "Issuer"
 msgstr "Aussteller"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:47
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:49
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:58
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:36
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:51
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:59
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:64
 msgid "Version"
 msgstr "Version"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:48
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:50
-#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:55
-#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:64
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:37
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:52
+#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:56
+#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:65
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:65
 msgid "Is Self-Signed"
 msgstr "Ist Selbst-Signiert"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:49
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:51
-#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:41
-#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:50
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:38
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:53
+#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:42
+#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:51
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:66
 msgid "Is Certificate Authority"
 msgstr "Ist Zertifikats-Autorität"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:50
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:52
-#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:69
-#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:78
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:39
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:54
+#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:70
+#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:79
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:67
 msgid "Is Trusted"
 msgstr "Wird vertraut"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:51
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:53
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:40
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:55
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:68
 msgid "Public Key Algorithm"
 msgstr "Algorithmus des öffentlichen Schlüssels"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:52
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:54
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:41
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:56
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:69
 msgid "Public Key Strength"
 msgstr "Stärke des öffentlichen Schlüssels"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:53
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:55
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:60
-#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:77
-#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:84
-#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:52
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:42
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:57
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:61
+#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:78
+#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:85
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:70
+#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:60
 msgid "Signature Algorithm"
 msgstr "Signatur Algorithmus"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:54
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:56
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:43
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:58
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:71
 msgid "Signature Hash Algorithm"
 msgstr "Signatur Prüfsummen Algorithmus"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:55
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:57
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:44
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:59
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:72
 msgid "Valid From"
 msgstr "Gültig ab"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:56
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:58
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:45
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:60
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:73
 msgid "Valid To"
 msgstr "Gültig bis"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:57
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:60
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:46
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:62
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:74
 msgid "Duration"
 msgstr "Dauer"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:58
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:61
-#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:92
-#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:99
-#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:67
-msgid "Expiration"
-msgstr "Frist"
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:114
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:137
+msgid "Adjust Filter"
+msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:41
+#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:20
 msgid "X.509 Certificate Chain"
 msgstr "X.509 Zertifikatskette"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:51
+#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:43
 msgid "Host"
 msgstr "Host"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:53
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:45
+#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:45
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:47
 #: sources.d/icingaweb2-module-x509/application/forms/Config/SniConfigForm.php:22
 #: sources.d/icingaweb2-module-x509/application/forms/Config/SniConfigForm.php:23
 #: sources.d/icingaweb2-module-x509/application/views/scripts/sni/index.phtml:24
-#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:35
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Target.php:46
+#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:44
 msgid "IP"
 msgstr "IP"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:55
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:46
-#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:47
+#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:47
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:48
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Target.php:47
+#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:51
 msgid "Port"
 msgstr "Port"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:63
+#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:55
 msgid "Certificate chain is valid."
 msgstr "Zertifikatskette ist gültig."
 
-#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:67
+#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:59
 #, php-format
 msgid "Certificate chain is invalid: %s."
 msgstr "Zertifikatskette ist ungültig: %s."
 
-#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:19
+#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:21
 msgid "Certificate Dashboard"
 msgstr "Zertifikat Dashboard"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:39
+#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:46
 msgid "Certificates by CA"
 msgstr "Zertifikate nach CA"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:65
+#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:74
 msgid "Certificates by Duration"
 msgstr "Zertifikate nach Dauer"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:89
+#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:102
 msgid "Key Strength"
 msgstr "Schlüssel-Stärke"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:117
+#: sources.d/icingaweb2-module-x509/application/controllers/DashboardController.php:134
 msgid "Signature Algorithms"
 msgstr "Signatur Algorithmen"
 
@@ -223,17 +235,17 @@ msgstr "Ändere SNI Map"
 msgid "Remove SNI Map"
 msgstr "Entferne SNI Map"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:26
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:21
 #: sources.d/icingaweb2-module-x509/configuration.php:18
 msgid "Certificate Usage"
 msgstr "Zertifikat Nutzung"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:44
-#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:32
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:46
+#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:37
 msgid "Hostname"
 msgstr "Hostname"
 
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:59
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:61
 msgid "Chain Is Valid"
 msgstr "Kette ist gültig"
 
@@ -456,61 +468,67 @@ msgstr "Konfiguriere SNI"
 msgid "SNI"
 msgstr "SNI"
 
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:56
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:57
 msgid "Serial Number"
 msgstr "Seriennummer"
 
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:62
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:63
 msgid "Not Valid Before"
 msgstr "Nicht gültig vor"
 
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:64
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:65
 msgid "Not Valid After"
 msgstr "Nicht gültig nach"
 
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:70
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:71
 msgid "Algorithm"
 msgstr "Algorithmus"
 
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:72
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:73
 msgid "Key Size"
 msgstr "Schlüssel-Größe"
 
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:95
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:96
 msgid "Subject Name"
 msgstr "Zertifikatinhaber"
 
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:97
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:98
 msgid "Issuer Name"
 msgstr "Aussteller Name"
 
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:99
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:100
 msgid "Certificate Info"
 msgstr "Zertifikats-Info"
 
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:101
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:102
 msgid "Public Key Info"
 msgstr "Informationen des öffentlichen Schlüssels"
 
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:103
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:104
 msgid "Extensions"
 msgstr "Erweiterungen"
 
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:105
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:106
 msgid "Fingerprints"
 msgstr "Fingerabdrücke"
 
-#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:84
-#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:91
-#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:59
+#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:85
+#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:92
+#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:67
 msgid "Public Key"
 msgstr "Öffentlicher Schlüssel"
 
-#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:38
+#: sources.d/icingaweb2-module-x509/library/X509/CertificatesTable.php:93
+#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:100
+#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:75
+msgid "Expiration"
+msgstr "Frist"
+
+#: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:39
 msgid "Subject"
 msgstr "Betreff"
 
-#: sources.d/icingaweb2-module-x509/library/X509/DataTable.php:129
+#: sources.d/icingaweb2-module-x509/library/X509/DataTable.php:133
 msgid "No results found."
 msgstr "Keine Ergebnisse gefunden."
 
@@ -532,6 +550,26 @@ msgstr "vor %d Tagen"
 #: sources.d/icingaweb2-module-x509/library/X509/ExpirationWidget.php:52
 msgid "today"
 msgstr "Heute"
+
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:75
+#, fuzzy
+msgid "Subject Hash"
+msgstr "Zertifikatinhaber"
+
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:76
+#, fuzzy
+msgid "Issuer Hash"
+msgstr "Aussteller Name"
+
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Target.php:45
+#, fuzzy
+msgid "Host Name"
+msgstr "Hostname"
+
+#: sources.d/icingaweb2-module-x509/library/X509/Web/Control/SearchBar/ObjectSuggestions.php:144
+#, php-format
+msgid "\"%s\" is not a valid column"
+msgstr ""
 
 #~ msgid "Expires"
 #~ msgstr "Läuft ab"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-29 15:58+0000\n"
+"POT-Creation-Date: 2023-03-16 11:42+0000\n"
 "PO-Revision-Date: 2020-04-27 14:45+0200\n"
 "Last-Translator: Francesco Mazzi <fmazzi@comune.genova.it>\n"
 "Language-Team: \n"
@@ -21,125 +21,446 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:30
+#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:42
+msgid "Jira Software deployment configuration has been saved successfully"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:51
+msgid "Inspect"
+msgstr "Ispezionare"
+
+#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:52
+#, fuzzy
+msgid "Jira Inspection"
+msgstr "Ispezionare"
+
+#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:54
 msgid ""
 "This page serves no special purpose right now, but gives some insight into "
 "available projects and Custom Fields"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:58
+#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:84
 #, php-format
 msgid "Icinga Director has not been configured on this system: %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:133
-msgid "Director Config"
+#: sources.d/icingaweb2-module-jira/application/controllers/FieldController.php:23
+msgid "Edit Custom Field"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/controllers/ConfigurationController.php:136
-msgid "Inspect"
-msgstr "Ispezionare"
-
-#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:25
-msgid "Ticket Search"
+#: sources.d/icingaweb2-module-jira/application/controllers/FieldController.php:32
+#, php-format
+msgid "Removed field \"%s\" successfully from template \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:28
+#: sources.d/icingaweb2-module-jira/application/controllers/FieldController.php:42
+#, php-format
+msgid "Updated field \"%s\" successfully in template \"%s\""
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/controllers/FieldsController.php:33
+#: sources.d/icingaweb2-module-jira/application/controllers/FieldsController.php:55
+msgid "Add Custom Field"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/controllers/FieldsController.php:60
+#, php-format
+msgid "Added custom field %s successfully to the template %s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:24
+#, php-format
+msgid "Ticket Search%s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:27
 msgid "with closed ones"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:36
+#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:35
 msgid "No issue found"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:56
-msgid "Create JIRA Issue"
+#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:55
+msgid "Create Jira Issue"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:102
+#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:101
 #: sources.d/icingaweb2-module-jira/configuration.php:8
 msgid "Issues"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:109
+#: sources.d/icingaweb2-module-jira/application/controllers/IssuesController.php:108
 msgid "Create"
 msgstr "Creato"
+
+#: sources.d/icingaweb2-module-jira/application/controllers/TemplateController.php:30
+#, php-format
+msgid "Deleted template \"%s\" successfully"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/controllers/TemplateController.php:35
+#, php-format
+msgid "Updated template name successfully from \"%s\" to \"%s\""
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/controllers/TemplatesController.php:32
+#: sources.d/icingaweb2-module-jira/application/controllers/TemplatesController.php:47
+#: sources.d/icingaweb2-module-jira/application/forms/Config/TemplateConfigForm.php:70
+#, fuzzy
+msgid "Add Template"
+msgstr "Template"
+
+#: sources.d/icingaweb2-module-jira/application/controllers/TemplatesController.php:51
+#, php-format
+msgid "Created template \"%s\" successfully"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:28
+#, fuzzy
+msgid "API Configuration"
+msgstr "Configurazione"
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:38
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:78
+#, fuzzy
+msgid "Host"
+msgstr "Host"
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:39
+msgid "Jira host name or IP address"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:46
+msgid "Port"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:52
+msgid "Path"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:58
+msgid "Scheme"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:59
+msgid "Protocol used by Jira (http / https)"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:67
+msgid "Username"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:76
+msgid "Password"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:85
+msgid "Deployment Settings"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:86
+msgid "Configure where the Jira software has been deployed."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:99
+msgid "Deployment Type"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:102
+msgid "Cloud"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:103
+#, fuzzy
+msgid "Server"
+msgstr "Servizio"
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:126
+msgid "Jira Software seems to be deployed differently."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:142
+msgid "Legacy compatibility"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:155
+msgid "Key Fields"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:157
+msgid ""
+"The module requires you to create two custom fields in Jira that represent "
+"\"icingaKey\" and \"icingaStatus\"."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:171
+msgid ""
+"Custom field to figure out whether an issue for the given object already "
+"exists"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:182
+msgid "Custom field that represents the status of icinga object"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:192
+msgid "icingaStatus and icingaKey cannot be the same field."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:208
+msgid "Issue Defaults"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:210
+msgid ""
+"Default project and issue type to be used for creating Jira tickets. Please "
+"note that the project settings must represent project keys, not display "
+"names."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:222
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:59
+msgid "Project"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:228
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:63
+msgid "Issue Type"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:236
+msgid "Icinga Web Link"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:238
+msgid ""
+"If you want to have links pointing back to your Icinga Installation in your "
+"Jira issues, you need to fill the Url setting."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:250
+msgid "URL"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:258
+#: sources.d/icingaweb2-module-jira/application/forms/Config/TemplateConfigForm.php:70
+msgid "Save Changes"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:113
+msgid "Jira Field"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:128
+#, php-format
+msgid "Field \"%s\" already exists in the template \"%s\""
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:154
+msgid "Host Group"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:155
+#, fuzzy
+msgid "Service Group"
+msgstr "Servizio"
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:156
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:225
+msgid "Custom Variable"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:163
+msgid "Field Type"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:173
+msgid "Others"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:180
+msgid "Associated Icinga Object Property"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:192
+#, php-format
+msgid "%s can only be an array type field."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:228
+msgid ""
+"Enter appropriate custom variable. For example host.vars.customvar or "
+"service.vars.customvar."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:241
+msgid "Field Value"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:244
+msgid "Enter the value for the field."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:256
+#, php-format
+msgid "Field %s expects a numeric value."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:268
+#, php-format
+msgid "Field %s expects english textual datetime."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:278
+#, php-format
+msgid "Field %s cannot be a custom variable."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:285
+#, php-format
+msgid "Field %s cannot be %s."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:320
+msgid "Add Field"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:320
+msgid "Edit Field"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:330
+#: sources.d/icingaweb2-module-jira/application/forms/Config/TemplateConfigForm.php:80
+msgid "Delete"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/FieldConfigForm.php:371
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:193
+msgid "- please choose -"
+msgstr "- prego scegliere -"
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/TemplateConfigForm.php:46
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:130
+msgid "Template"
+msgstr "Template"
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/TemplateConfigForm.php:53
+#, php-format
+msgid "Template with name \"%s\" already exists"
+msgstr ""
 
 #: sources.d/icingaweb2-module-jira/configuration.php:4
 msgid "Jira"
 msgstr ""
 
 #: sources.d/icingaweb2-module-jira/configuration.php:10
-msgid "Configuration"
-msgstr "Configurazione"
-
-#: sources.d/icingaweb2-module-jira/configuration.php:15
 msgid "Allow to manually create issues"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Controller.php:53
+#: sources.d/icingaweb2-module-jira/configuration.php:15
+#: sources.d/icingaweb2-module-jira/configuration.php:16
+msgid "Configuration"
+msgstr "Configurazione"
+
+#: sources.d/icingaweb2-module-jira/configuration.php:24
+#, fuzzy
+msgid "Configure templates"
+msgstr "Configurazione"
+
+#: sources.d/icingaweb2-module-jira/configuration.php:25
+#, fuzzy
+msgid "Templates Configuration"
+msgstr "Configurazione"
+
+#: sources.d/icingaweb2-module-jira/configuration.php:34
+msgid "Director Config"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/configuration.php:35
+msgid "Director Config Preview"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/library/Jira/IssueTemplate.php:129
+msgid "Sending objects to custom fields is not supported"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/library/Jira/IssueTemplate.php:134
+#, php-format
+msgid "Custom field %s expects %s, but array given."
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/library/Jira/IssueTemplate.php:144
+#, php-format
+msgid "Custom field %s expects array, but %s given"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Controller.php:56
 #, php-format
 msgid "ERROR: %s"
 msgstr "ERRORE: %s"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form.php:145
-msgid "- please choose -"
-msgstr "- prego scegliere -"
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Controller.php:121
+#, fuzzy
+msgid "Edit Template"
+msgstr "Template"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:50
-msgid "JIRA project"
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Controller.php:130
+msgid "Fields List"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:79
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:56
+#, fuzzy
+msgid "Jira project"
+msgstr "Ispezionare"
+
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:105
 msgid "Issue type"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:86
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:113
 msgid "Summary"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:90
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:117
 msgid "Summary of this incident"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:94
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:121
 msgid "Description"
 msgstr "Descrizione"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:99
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:126
 msgid "Message body of this issue"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:103
-msgid "Template"
-msgstr "Template"
-
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:108
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:136
 msgid "Acknowledge"
 msgstr "Conferma"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:110
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:138
 msgid "Yes"
 msgstr "Sí "
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:111
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:139
 #, fuzzy
 msgid "No"
 msgstr "No"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:115
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:143
 msgid ""
-"Whether the Icinga problem should be acknowledged. The newly created JIRA "
+"Whether the Icinga problem should be acknowledged. The newly created Jira "
 "issue will be linked in the related comment."
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:121
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:178
 msgid "Create Issue"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/TemplateForm.php:31
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/TemplateForm.php:32
 #, php-format
-msgid "Unable to talk to JIRA, please check your configuration: %s"
+msgid "Unable to talk to Jira, please check your configuration: %s"
 msgstr ""
 
 #: sources.d/icingaweb2-module-jira/library/Jira/Web/RenderingHelper.php:35
@@ -152,40 +473,35 @@ msgstr ""
 msgid "Show Icinga Service State"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:52
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:55
 msgid "Issue"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:56
-msgid "Project"
-msgstr ""
-
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:60
-msgid "Issue Type"
-msgstr ""
-
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:65
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:68
 msgid "Status"
 msgstr "Stati"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:66
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:69
 msgid "Priority"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:70
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:73
 msgid "Created"
 msgstr "Creato"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:75
-#, fuzzy
-msgid "Host"
-msgstr "Host"
-
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:81
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:84
 #, fuzzy
 msgid "Service"
 msgstr "Servizio"
 
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:87
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:90
 msgid "Created by"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/JiraCustomFields.php:41
+msgid "No custom fields added"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/TemplateTable.php:32
+msgid "No templates added"
 msgstr ""
