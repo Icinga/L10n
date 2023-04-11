@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-16 11:42+0000\n"
+"POT-Creation-Date: 2023-04-04 15:33+0000\n"
 "PO-Revision-Date: 2020-04-27 14:34+0200\n"
 "Last-Translator: Mikko Peltokangas <mikko@peltokangas.org>\n"
 "Language-Team: \n"
@@ -183,21 +183,25 @@ msgstr ""
 msgid "Signature Algorithms"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/controllers/JobsController.php:36
+#: sources.d/icingaweb2-module-x509/application/controllers/JobsController.php:43
 msgid "New Job"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/controllers/JobsController.php:49
-#: sources.d/icingaweb2-module-x509/application/controllers/JobsController.php:65
-msgid "Job not found"
-msgstr ""
-
-#: sources.d/icingaweb2-module-x509/application/controllers/JobsController.php:52
+#: sources.d/icingaweb2-module-x509/application/controllers/JobsController.php:55
 msgid "Update Job"
 msgstr ""
 
 #: sources.d/icingaweb2-module-x509/application/controllers/JobsController.php:68
 msgid "Remove Job"
+msgstr ""
+
+#: sources.d/icingaweb2-module-x509/application/controllers/JobsController.php:70
+#, php-format
+msgid "Remove job %s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-x509/application/controllers/JobsController.php:94
+msgid "Job not found"
 msgstr ""
 
 #: sources.d/icingaweb2-module-x509/application/controllers/SniController.php:36
@@ -243,100 +247,75 @@ msgstr "Tietokanta"
 msgid "Database resource"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:22
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:86
 msgid "Job name"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:23
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:87
 #: sources.d/icingaweb2-module-x509/application/views/scripts/jobs/index.phtml:24
 msgid "Name"
 msgstr "Nimi"
 
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:31
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:90
 msgid "Comma-separated list of CIDR addresses to scan"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:32
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:91
 msgid "CIDRs"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:40
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:112
 msgid "Comma-separated list of ports to scan"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:41
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:113
 msgid "Ports"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:49
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:117
 msgid "Comma-separated list of addresses/hostnames to exclude"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:50
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:118
 msgid "Exclude Targets"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:58
-msgid "Job cron Schedule"
-msgstr ""
-
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:59
-msgid "Schedule"
-msgstr ""
-
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:64
-#: sources.d/icingaweb2-module-x509/application/views/scripts/jobs/index.phtml:7
-#: sources.d/icingaweb2-module-x509/application/views/scripts/jobs/index.phtml:14
-msgid "Create a New Job"
-msgstr ""
-
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:65
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:127
 #: sources.d/icingaweb2-module-x509/application/forms/Config/SniConfigForm.php:39
 msgid "Create"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:71
-#, php-format
-msgid "Edit job %s"
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:127
+msgid "Update"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:72
-#: sources.d/icingaweb2-module-x509/application/forms/Config/SniConfigForm.php:46
-msgid "Save"
-msgstr ""
-
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:77
-#, php-format
-msgid "Remove job %s?"
-msgstr ""
-
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:78
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:127
 #: sources.d/icingaweb2-module-x509/application/forms/Config/SniConfigForm.php:52
 msgid "Yes"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:89
-msgid "Job created"
-msgstr ""
-
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:90
-msgid "Failed to create job"
-msgstr ""
-
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:96
-msgid "Job updated"
-msgstr ""
-
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:97
-msgid "Failed to update job"
-msgstr ""
-
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:103
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:137
 msgid "Job removed"
 msgstr ""
 
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:104
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:139
 msgid "Failed to remove job"
+msgstr ""
+
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:159
+msgid "Job updated"
+msgstr ""
+
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:162
+msgid "Job created"
+msgstr ""
+
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:168
+msgid "Failed to create job"
+msgstr ""
+
+#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:168
+msgid "Failed to update job"
 msgstr ""
 
 #: sources.d/icingaweb2-module-x509/application/forms/Config/SniConfigForm.php:31
@@ -356,6 +335,10 @@ msgstr ""
 #: sources.d/icingaweb2-module-x509/application/forms/Config/SniConfigForm.php:45
 #, php-format
 msgid "Edit map for %s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-x509/application/forms/Config/SniConfigForm.php:46
+msgid "Save"
 msgstr ""
 
 #: sources.d/icingaweb2-module-x509/application/forms/Config/SniConfigForm.php:51
@@ -385,6 +368,11 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-x509/application/forms/Config/SniConfigForm.php:78
 msgid "Failed to remove map"
+msgstr ""
+
+#: sources.d/icingaweb2-module-x509/application/views/scripts/jobs/index.phtml:7
+#: sources.d/icingaweb2-module-x509/application/views/scripts/jobs/index.phtml:14
+msgid "Create a New Job"
 msgstr ""
 
 #: sources.d/icingaweb2-module-x509/application/views/scripts/jobs/index.phtml:19
@@ -504,6 +492,7 @@ msgid "Expiration"
 msgstr "Sivutus"
 
 #: sources.d/icingaweb2-module-x509/library/X509/ChainDetails.php:39
+msgctxt "x509.certificate"
 msgid "Subject"
 msgstr ""
 
