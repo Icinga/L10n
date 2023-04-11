@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-16 11:42+0000\n"
+"POT-Creation-Date: 2023-04-04 15:33+0000\n"
 "PO-Revision-Date: 2023-04-11 12:23+0000\n"
 "Last-Translator: p4k8 <pkuznetsunit@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.icinga.com/projects/icinga/"
@@ -18,57 +18,70 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.16.4\n"
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:53
+#: sources.d/icingaweb2-module-reporting/application/clicommands/DownloadCommand.php:47
+msgid "Argument id is mandatory"
+msgstr ""
+
+#: sources.d/icingaweb2-module-reporting/application/clicommands/ListCommand.php:73
+#, fuzzy
+msgid "No reports found\n"
+msgstr "Показати звіти"
+
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:41
+msgid "Report not found"
+msgstr ""
+
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:66
 #, fuzzy
 msgid "Edit Report"
 msgstr "Новий звіт"
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:83
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:96
 #: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/SendForm.php:36
 #, fuzzy
 msgid "Send Report"
 msgstr "Новий звіт"
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:102
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:206
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:115
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:219
 msgid "Schedule"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:192
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:205
 msgid "Modify"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:221
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:234
 msgid "Send"
 msgstr ""
 
 #: sources.d/icingaweb2-module-reporting/application/controllers/ReportsController.php:29
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportsController.php:103
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportsController.php:100
 msgid "New Report"
 msgstr "Новий звіт"
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/TemplateController.php:75
+#: sources.d/icingaweb2-module-reporting/application/controllers/TemplateController.php:76
 msgid "Edit template"
 msgstr "Редагувати шаблон"
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/TemplateController.php:76
+#: sources.d/icingaweb2-module-reporting/application/controllers/TemplateController.php:77
 msgid "Edit Template"
 msgstr "Редагувати шаблон"
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/TemplateController.php:82
+#: sources.d/icingaweb2-module-reporting/application/controllers/TemplateController.php:83
 msgid "Preview template"
 msgstr "Попередній перегляд"
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/TemplateController.php:83
+#: sources.d/icingaweb2-module-reporting/application/controllers/TemplateController.php:84
 msgid "Preview"
 msgstr "Превью"
 
 #: sources.d/icingaweb2-module-reporting/application/controllers/TemplatesController.php:31
-#: sources.d/icingaweb2-module-reporting/application/controllers/TemplatesController.php:97
+#: sources.d/icingaweb2-module-reporting/application/controllers/TemplatesController.php:94
 msgid "New Template"
 msgstr "Новий шаблон"
 
@@ -77,12 +90,12 @@ msgstr "Новий шаблон"
 msgid "Timeframes"
 msgstr "Періоди"
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/TimeframeController.php:28
+#: sources.d/icingaweb2-module-reporting/application/controllers/TimeframeController.php:39
 msgid "Edit Time Frame"
 msgstr "Редагувати період"
 
 #: sources.d/icingaweb2-module-reporting/application/controllers/TimeframesController.php:30
-#: sources.d/icingaweb2-module-reporting/application/controllers/TimeframesController.php:105
+#: sources.d/icingaweb2-module-reporting/application/controllers/TimeframesController.php:103
 msgid "New Timeframe"
 msgstr "Новий період"
 
@@ -158,66 +171,70 @@ msgstr "Тема листа"
 msgid "Recipients"
 msgstr "Отримувачі"
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:48
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:49
 #: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/TemplateForm.php:64
 #: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/TimeframeForm.php:47
 msgid "Name"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:50
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:51
 msgid ""
 "A unique name of this report. It is used when exporting to pdf, json or csv "
 "format and also when listing the reports in the cli"
 msgstr ""
 
 #: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:58
+msgid "Double dots are not allowed in the report name"
+msgstr ""
+
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:72
 #, fuzzy
 msgid "Timeframe"
 msgstr "Новий період"
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:59
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:67
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:77
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:73
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:81
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:91
 #: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ScheduleForm.php:112
 #: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ScheduleForm.php:118
 msgid "Please choose"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:61
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:75
 msgid "Specifies the time frame in which this report is to be generated"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:66
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:80
 #, fuzzy
 msgid "Template"
 msgstr "Шаблони"
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:69
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:83
 msgid ""
 "Specifies the template to use when exporting this report to pdf. (Default "
 "Icinga template)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:76
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:90
 #, fuzzy
 msgid "Report"
 msgstr "Звіти"
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:78
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:92
 msgid "Specifies the type of the reportlet to be generated"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:98
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:112
 #, fuzzy
 msgid "Create Report"
 msgstr "Новий звіт"
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:98
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:112
 #, fuzzy
 msgid "Update Report"
 msgstr "Новий звіт"
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:104
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:118
 #, fuzzy
 msgid "Remove Report"
 msgstr "Новий звіт"
