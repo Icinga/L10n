@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-11 14:40+0000\n"
-"PO-Revision-Date: 2023-04-15 08:23+0000\n"
+"PO-Revision-Date: 2023-04-18 14:23+0000\n"
 "Last-Translator: p4k8 <pkuznetsunit@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.icinga.com/projects/icinga/"
 "icingaweb2-module-vspheredb/uk/>\n"
@@ -148,7 +148,7 @@ msgstr "Нова інтеграція моніторингу"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:178
 msgid "Modify"
-msgstr "Редагувати"
+msgstr "Змінити"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/DaemonController.php:29
 msgid "vSphereDB Daemon Status"
@@ -475,9 +475,9 @@ msgid "Settings for %s have been stored"
 msgstr "Налаштування для %s було збережено"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:259
-#, fuzzy, php-format
+#, php-format
 msgid "Settings for %s have been removed"
-msgstr "З'єднання до %s було вимкнено"
+msgstr "Налаштування для %s видалено"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:266
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/FormElementStealer.php:38
@@ -550,9 +550,9 @@ msgid "Error"
 msgstr "Error"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/PhperrorController.php:20
-#, fuzzy, php-format
+#, php-format
 msgid "PHP version %s is required for vSphereDB, you're running %s."
-msgstr "Для vSphereDB необхідний PHP версії 5.6.x, у вас встановлено %s."
+msgstr "Для vSphereDB необхідний PHP версії %s, у вас встановлено %s."
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/PhperrorController.php:22
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/PhperrorController.php:37
@@ -601,9 +601,9 @@ msgid "Daemon configuration refresh FAILED: "
 msgstr "Оновлення налаштувань демону було НЕВДАЛИМ: "
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:69
-#, fuzzy, php-format
+#, php-format
 msgid "Please click %s to configure related Monitoring Rules"
-msgstr "Будь ласка, натисніть %s для створення нового ресурсу MySQL/MariaDB"
+msgstr "Натисніть %s для налаштування правил моніторингу"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:70
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseDbResourceForm.php:101
@@ -617,24 +617,25 @@ msgid ""
 "Service (or Host) Checks: %s Doing so can be automated via an Icinga "
 "Director Import Source"
 msgstr ""
+"Якщо необхідно отримати аварії цього об'єкта, ви можете налаштувати "
+"перевірки сервіса (або хоста): %s Це можливо автоматизувати за допомогою "
+"джерела імпорту Icinga Director"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:98
-#, fuzzy
 msgid "Hide Inspection"
-msgstr "Додати з'єднання"
+msgstr "Приховати інспектування"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:105
 msgid "Inspect"
-msgstr ""
+msgstr "Інспектувати"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:117
 msgid "Show current state"
-msgstr ""
+msgstr "Показати поточний стан"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/SingleObjectMonitoring.php:124
-#, fuzzy
 msgid "Show history"
-msgstr "Історія"
+msgstr "Показати історію"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/StoragepodsController.php:15
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/StoragepodsController.php:20
@@ -650,9 +651,8 @@ msgid "Virtual Port Groups"
 msgstr "Віртуальні групи портів"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/SwitchesController.php:15
-#, fuzzy
 msgid "Switches"
-msgstr "Комутатор"
+msgstr "Комутатори"
 
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/SwitchesController.php:20
 msgid "(Distributed) Virtual Switches"
@@ -774,6 +774,9 @@ msgid ""
 "Restrict Access to specific vCenters only. Please specify a comma-separated "
 "list of case-sensitive vCenter names. Wildcard-matching (with *) is allowed"
 msgstr ""
+"Обмежити доступ лише до окремих vCenter. Зазначте розділений комами список "
+"залежних від регістру імен vCenter. Дозволено використання символів "
+"підстановки (*)"
 
 #: sources.d/icingaweb2-module-vspheredb/configuration.php:18
 msgid "Virtualization (VMware)"
@@ -864,22 +867,19 @@ msgstr ""
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:162
 #, php-format
 msgid "inherited from %s"
-msgstr ""
+msgstr "унаслідувано від %s"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/ActiveMemoryUsageRuleDefinition.php:21
-#, fuzzy
 msgid "Active Memory Usage"
-msgstr "Активна пам'ять"
+msgstr "Активне використання пам'яті"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/ComputeResourceUsageRuleSet.php:15
-#, fuzzy
 msgid "Compute Resource Usage"
-msgstr "Обчислювальний ресурс"
+msgstr "Використання обчислювального ресурсу"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/ConfigurationPolicyRuleSet.php:13
-#, fuzzy
 msgid "Configuration Policy"
-msgstr "Налаштування"
+msgstr "Політика налаштування"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/CpuUsageRuleDefinition.php:31
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/HostsTable.php:44
@@ -890,74 +890,69 @@ msgstr "Використання CPU"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/CpuUsageRuleDefinition.php:104
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:90
 msgid "Raise Warning with less than X percent free"
-msgstr ""
+msgstr "Спричинити Warning при менш ніж X відсотків вільних"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/CpuUsageRuleDefinition.php:108
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:94
 msgid "Raise Critical with less than X percent free"
-msgstr ""
+msgstr "Спричинити Critical при менш ніж X відсотків вільних"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DatastoreHealthRuleSet.php:13
-#, fuzzy
 msgid "Datastore Health"
-msgstr "Сховище даних"
+msgstr "Стан сховища даних"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DatastoreUsageRuleDefinition.php:22
-#, fuzzy
 msgid "Datastore Usage"
 msgstr "Використання сховища даних"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskHealthRuleSet.php:14
-#, fuzzy
 msgid "Disk Health"
-msgstr "Шлях до диску"
+msgstr "Стан диску"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskUsageRuleDefinition.php:115
 msgid "Apply to specific disks only"
-msgstr ""
+msgstr "Застосувати до окремих дисків"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/DiskUsageRuleDefinition.php:119
 msgid "Ignore specific disks"
-msgstr ""
+msgstr "Ігнорувати окремі диски"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:29
-#, fuzzy
 msgid "Guest Utilities Policy"
-msgstr "Гостьові застосунки"
+msgstr "Політика гостьових утиліт"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:99
 msgid "When the vCenter says \"outdated\""
-msgstr ""
+msgstr "Коли vCenter пише \"outdated\""
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:102
 msgid "When not installed"
-msgstr ""
+msgstr "Коли не встановлено"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:105
-#, fuzzy
 msgid "When installed, but not running"
-msgstr "Демон не запущений"
+msgstr "Коли встановлено, але не запущено"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:108
 msgid "On version 2147483647"
-msgstr ""
+msgstr "На версії 2147483647"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:110
 #, php-format
 msgid "Please read %s"
-msgstr ""
+msgstr "Будь ласка, прочитайте %s"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:115
 msgid "Raise Warning for versions lower than"
-msgstr ""
+msgstr "Спричинити Warning для версій нижчих за"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/GuestUtilitiesRuleDefinition.php:119
 msgid "Raise Critical for versions lower than"
-msgstr ""
+msgstr "Спричинити Critical для версій нижчих за"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:82
 msgid "Threshold/State Precedence"
-msgstr ""
+msgstr "Пріоритет межі/стану"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:84
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/DataTypeMonitoringRule.php:29
@@ -972,19 +967,19 @@ msgstr "- будь ласка оберіть -"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:85
 msgid "Better state wins"
-msgstr ""
+msgstr "Кращий стан виграє"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:86
 msgid "Worse state wins"
-msgstr ""
+msgstr "Гірший стан виграє"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:98
 msgid "Raise Warning with less than X MBytes free"
-msgstr ""
+msgstr "Спричинити Warning при менш ніж X МБайт вільних"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageHelper.php:102
 msgid "Raise Critical with less than X MBytes free"
-msgstr ""
+msgstr "Спричинити Critical при менш ніж X МБайт вільних"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/MemoryUsageRuleDefinition.php:27
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/HostsTable.php:52
@@ -993,115 +988,108 @@ msgid "Memory Usage"
 msgstr "Використання пам'яті"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/ObjectStateRuleSet.php:14
-#, fuzzy
 msgid "Object State Policy"
-msgstr "Гостьові застосунки"
+msgstr "Політика станів об'єктів"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:32
-#, fuzzy
 msgid "Power State"
-msgstr "Стан HA"
+msgstr "Стан живлення"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:162
-#, fuzzy
 msgid "When powered off"
-msgstr "Вимкнено"
+msgstr "Коли вимкнено"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:165
-#, fuzzy
 msgid "When suspended"
-msgstr "Призупинено"
+msgstr "Коли призупинено"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:168
 msgid "When unknown"
-msgstr ""
+msgstr "Коли невідомо"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:169
 msgid "Might be disconnected"
-msgstr ""
+msgstr "Може бути від'єднано"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:172
 msgid "Raise WARNING for uptime less than"
-msgstr ""
+msgstr "Спричинити WARNING коли апйтайм менший за"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:173
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:177
 msgid "Please provide the uptime in seconds"
-msgstr ""
+msgstr "Будь ласка надайте аптайм у секундах"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:176
 msgid "Raise CRITICAL for uptime less than"
-msgstr ""
+msgstr "Спричинити CRITICAL коли апйтайм менший за"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:180
 msgid "Raise WARNING for uptime greater than"
-msgstr ""
+msgstr "Спричинити WARNING коли апйтайм більший за"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:181
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:185
 msgid "Please provide the uptime in days"
-msgstr ""
+msgstr "Будь ласка надайте аптайм у днях"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/PowerStateRuleDefinition.php:184
 msgid "Raise CRITICAL for uptime greater than"
-msgstr ""
+msgstr "Спричинити CRITICAL коли апйтайм більший за"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/SnapshotsRuleDefinition.php:24
-#, fuzzy
 msgid "Snapshot Policy"
-msgstr "Тип снапшоту"
+msgstr "Політика снапшотів"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/SnapshotsRuleDefinition.php:78
 msgid "Raise Warning if more than X snapshots"
-msgstr ""
+msgstr "Спричинити Warning коли більше X снапшотів"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/SnapshotsRuleDefinition.php:82
 msgid "Raise Critical if more than X snapshots"
-msgstr ""
+msgstr "Спричинити Critical коли більше X снапшотів"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/SnapshotsRuleDefinition.php:86
 msgid "Raise Warning for snapshots older than X days"
-msgstr ""
+msgstr "Спричинити Warning для снапшотів старших за X днів"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/SnapshotsRuleDefinition.php:90
 msgid "Raise Critical for snapshots older than X days"
-msgstr ""
+msgstr "Спричинити Critical для снапшотів старших за X днів"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/VMwareObjectStateRuleDefinition.php:26
-#, fuzzy
 msgid "Overall VMware Object State"
-msgstr "Ім'я об'єкта"
+msgstr "Загальний стан об'єкта VMware"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/VMwareObjectStateRuleDefinition.php:63
 msgid "When VMware shows YELLOW"
-msgstr ""
+msgstr "Коли VMware показує YELLOW"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/VMwareObjectStateRuleDefinition.php:66
 msgid "When VMware shows GRAY"
-msgstr ""
+msgstr "Коли VMware показує GRAY"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/VMwareObjectStateRuleDefinition.php:67
 msgid "VM might be unreachable"
-msgstr ""
+msgstr "VM може бути недосяжною"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/Definition/VMwareObjectStateRuleDefinition.php:70
 msgid "When VMware shows RED"
-msgstr ""
+msgstr "Коли VMware показує RED"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/MonitoringRulesTree.php:44
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/MonitoringRulesTree.php:72
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/Element/VCenterSelection.php:32
-#, fuzzy
 msgid "All vCenters"
-msgstr "vCenter-и"
+msgstr "Всі vCenter"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:117
 msgid "new instance"
-msgstr ""
+msgstr "новий екземпляр"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:163
 msgid "default"
-msgstr ""
+msgstr "за замовчуванням"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:264
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/PerfdataConsumerForm.php:44
@@ -1111,23 +1099,23 @@ msgstr "Увімкнено"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:273
 msgid "Not configured / Inherited"
-msgstr ""
+msgstr "Не налаштовано / унаслідувано"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:274
 msgid "Do nothing"
-msgstr ""
+msgstr "Не робити нічого"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:275
 msgid "Trigger a Warning state"
-msgstr ""
+msgstr "Спричинити стан Warning"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:276
 msgid "Trigger a Critical state"
-msgstr ""
+msgstr "Спричинити стан Critical"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Monitoring/Rule/RuleForm.php:277
 msgid "Trigger an Unknown state"
-msgstr ""
+msgstr "Спричинити стан Unknown"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/PerformanceData/IcingaRrd/RrdImg.php:13
 #, php-format
@@ -1157,7 +1145,7 @@ msgstr "Затримка %s читання / %s запису"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/DataTypeMonitoringRule.php:20
 #, php-format
 msgid "(full rule set: %s)"
-msgstr ""
+msgstr "(повний набір правил: %s)"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:101
 msgid "Object Type"
@@ -1180,19 +1168,17 @@ msgid "- any -"
 msgstr "- будь-який -"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:120
-#, fuzzy
 msgid "Skip powered off VMs"
-msgstr "Вимкнено"
+msgstr "Пропустити вимкнені VM"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Director/ImportSource.php:124
-#, fuzzy
 msgid "Skip Templates"
-msgstr "Це шаблон"
+msgstr "Пропустити шаблони"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Monitoring/DetailviewExtension.php:87
 #, php-format
 msgid "ESXi Host: %s"
-msgstr ""
+msgstr "Хост ESXi: %s"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/ProvidedHook/Monitoring/DetailviewExtension.php:90
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmsOnDatastoreTable.php:68
@@ -1554,15 +1540,15 @@ msgstr "Відсутній споживач даних продуктивнос�
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/RestartDaemonForm.php:31
 msgid "Restart"
-msgstr ""
+msgstr "Рестарт"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/RestartDaemonForm.php:32
 msgid "Click to restart the vSphereDB background daemon"
-msgstr ""
+msgstr "Натисніть для рестарту демону vSphereDB"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/RestartDaemonForm.php:34
 msgid "Yes, please restart"
-msgstr ""
+msgstr "Так, перезапустити"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterForm.php:25
 msgid "Rename this vCenter"
@@ -1696,7 +1682,7 @@ msgstr "Надсилати дані продуктивності"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterShipMetricsForm.php:97
 #, php-format
 msgid "Choose one of your configured %s"
-msgstr "Оберіть один з %s"
+msgstr "Оберіть один з налаштованих %s"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/OverviewTree.php:44
 msgid "vSphere"
@@ -1751,7 +1737,7 @@ msgstr "більше"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/HostHbaTable.php:31
 #, php-format
 msgid "HBA (%s)"
-msgstr ""
+msgstr "Хост-адаптер шини (%s)"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/HostHbaTable.php:53
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/HostPhysicalNicTable.php:64
@@ -1799,11 +1785,11 @@ msgstr "Співставлення віртуальної машини"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Monitoring/MonitoringRuleProblemHistoryTable.php:39
 #, php-format
 msgid "( former state: [%s] )"
-msgstr ""
+msgstr "( минулий стан: [%s] )"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Monitoring/MonitoringRuleProblemHistoryTable.php:42
 msgid "[OK] Check has no longer been executed"
-msgstr ""
+msgstr "[OK] Перевірка більше не виконувалась"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Monitoring/MonitoringRuleProblemHistoryTable.php:56
 #, php-format
@@ -1817,14 +1803,12 @@ msgid "VCenter"
 msgstr "VCenter"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Monitoring/MonitoringRuleProblemTable.php:21
-#, fuzzy
 msgid "Problems / Monitoring Rule"
-msgstr "Моніторинг"
+msgstr "Проблеми / Правило моніторингу"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Monitoring/MonitoringRuleProblematicObjectTable.php:40
-#, fuzzy
 msgid "Object"
-msgstr "Тип об'єкта"
+msgstr "Об'єкт"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/HostHardwareInfoTable.php:32
 msgid "Hardware Information"
@@ -1900,7 +1884,7 @@ msgstr "UUID системи"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/HostSystemInfoTable.php:65
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:134
 msgid "System booted recently"
-msgstr ""
+msgstr "Систему нещодавно було завантажено"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/HostSystemInfoTable.php:91
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmEssentialInfoTable.php:162
@@ -2058,9 +2042,8 @@ msgstr "Вільно RAM: %s"
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/DatastoreTable.php:55
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/HostsTable.php:31
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:140
-#, fuzzy
 msgid "vCenter / ESXi"
-msgstr "Хост vCenter (або ESX)"
+msgstr "vCenter / ESXi"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/DatastoreTable.php:58
 msgid "Multiple Hosts"
@@ -2245,9 +2228,8 @@ msgid "Balloon"
 msgstr "Balloon"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:270
-#, fuzzy
 msgid "Template"
-msgstr "Це шаблон"
+msgstr "Шаблон"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/PerformanceCounterTable.php:35
 msgid "Key"
@@ -2320,14 +2302,12 @@ msgid "Port %s"
 msgstr "Порт %s"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmNetworkAdapterTable.php:85
-#, fuzzy
 msgid "Connected"
-msgstr "Додати з'єднання"
+msgstr "З'єднано"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmNetworkAdapterTable.php:86
-#, fuzzy
 msgid "no"
-msgstr "Інфо"
+msgstr "ні"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmNetworkAdapterTable.php:122
 msgid "MAC Address"
@@ -2376,7 +2356,7 @@ msgstr "Завантажити як JSON"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/AdditionalTableActions.php:66
 msgid "Export (JSON, predefined)"
-msgstr ""
+msgstr "Експорт (JSON, визначений)"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/AdditionalTableActions.php:86
 msgid "Hide SQL"
@@ -2519,9 +2499,8 @@ msgid "%d CPUs"
 msgstr "%d CPU"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/CustomValueDetails.php:41
-#, fuzzy
 msgid "Custom Values and Tags"
-msgstr "Користувацькі значення"
+msgstr "Користувацькі значення та теги"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/CustomValueDetails.php:56
 msgid "No custom values have been defined"
@@ -2529,7 +2508,7 @@ msgstr "Користувацьких значень не визначено"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/CustomValueDetails.php:63
 msgid "Tags"
-msgstr ""
+msgstr "Теги"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/DatastoreUsage.php:150
 msgid "Unknown / not used by any visible Virtual Machine"
@@ -2538,7 +2517,7 @@ msgstr "Невідомо / не використовується жодною в
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Documentation.php:44
 #, php-format
 msgid "Click to read our documentation: %s"
-msgstr ""
+msgstr "Натисніть для перегляду документації: %s"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/GuestToolsStatusRenderer.php:22
 msgid "Guest Tools are NOT installed"
@@ -2695,9 +2674,8 @@ msgid "This is a template"
 msgstr "Це шаблон"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/VmRouteConfigTable.php:25
-#, fuzzy
 msgid "Guest Routing Table"
-msgstr "Ім'я гостьового хоста"
+msgstr "Таблиця маршрутизації гостя"
 
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/VmRouteConfigTable.php:28
 msgid "Got no Guest IP Stack information"
