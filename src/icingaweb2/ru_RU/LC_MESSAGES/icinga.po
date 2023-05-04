@@ -5,13 +5,13 @@
 # Contributors:
 # Yuri Konotopov <ykonotopov@gmail.com>, 2015.
 # Dmitriy Q <dmitry@atsip.ru>, 2021.
-# Dmitriy Q <krotesk@mail.ru>, 2022.
+# Dmitriy Q <krotesk@mail.ru>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-11 14:40+0000\n"
-"PO-Revision-Date: 2022-06-15 00:44+0000\n"
+"PO-Revision-Date: 2023-05-05 05:23+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@mail.ru>\n"
 "Language-Team: Russian <https://translate.icinga.com/projects/icinga/"
 "icingaweb2/ru/>\n"
@@ -19,9 +19,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.16.4\n"
 
 #: sources.d/icingaweb2/application/controllers/AboutController.php:17
 #: sources.d/icingaweb2/application/controllers/AboutController.php:21
@@ -5966,22 +5966,25 @@ msgstr "Время простоя не должно быть в прошлом"
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleHostDowntimeCommandForm.php:172
 msgid "Scheduling host downtime.."
 msgid_plural "Scheduling host downtimes.."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Планирование времени простоя хоста.."
+msgstr[1] "Планирование времён простоя хоста.."
+msgstr[2] "Планирование времён простоя хоста.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:23
 msgid ""
 "This command is used to schedule the next check of hosts or services. Icinga "
 "will re-queue the hosts or services to be checked at the time you specify."
 msgstr ""
+"Эта команда используется для планирования следующей проверки хостов или "
+"служб. Icinga повторно назначит хосты или службы для проверки в указанное "
+"вами время."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:34
 msgid "Schedule check"
 msgid_plural "Schedule checks"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Проверка по расписанию"
+msgstr[1] "Проверки по расписанию"
+msgstr[2] "Проверок по расписанию"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:51
 msgid "Check Time"
@@ -5989,24 +5992,27 @@ msgstr "Время проверки"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:53
 msgid "Set the date and time when the check should be scheduled."
-msgstr ""
+msgstr "Установите дату и время, когда должна быть запланирована проверка."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:62
 msgid "Force Check"
-msgstr ""
+msgstr "Проверить принудительно"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:64
 msgid ""
 "If you select this option, Icinga will force a check regardless of both what "
 "time the scheduled check occurs and whether or not checks are enabled."
 msgstr ""
+"Если вы выберите эту опцию, Icinga будет принудительно выполнять проверку "
+"независимо от того, в какое время происходит запланированная проверка и "
+"включены ли проверки."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceCheckCommandForm.php:106
 msgid "Scheduling service check.."
 msgid_plural "Scheduling service checks.."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Планирование проверки службы.."
+msgstr[1] "Планирование проверки служб.."
+msgstr[2] "Планирование проверки служб.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:71
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:7
@@ -6025,14 +6031,19 @@ msgid ""
 "notifications for the hosts and services as it normally would. Scheduled "
 "downtimes are preserved across program shutdowns and restarts."
 msgstr ""
+"Эта команда используется для планирования времени простоя хостов и служб. Во "
+"время указанного простоя Icinga не будет рассылать уведомления о хостах и "
+"службах. Когда запланированное время простоя истечет, Icinga будет посылать "
+"уведомления о хостах и службах, как обычно. Запланированное время простоя "
+"сохраняется при отключении и перезапуске программы."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:112
 msgid "Set the start date and time for the downtime."
-msgstr ""
+msgstr "Установите дату и время начала простоя."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:122
 msgid "Set the end date and time for the downtime."
-msgstr ""
+msgstr "Установите дату и время окончания простоя."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:135
 msgid ""
@@ -6042,6 +6053,12 @@ msgid ""
 "times you specified and lasts as long as the duration time you enter. The "
 "duration fields do not apply for fixed downtimes."
 msgstr ""
+"Если вы выберете фиксированный вариант, время простоя будет действовать "
+"между указанным вами временем начала и окончания, в то время как гибкое "
+"время простоя начинается, когда хост или служба входит в проблемное "
+"состояние где-то между указанным вами временем начала и окончания и длится "
+"столько, сколько вы укажете. Поля продолжительности не применяются для "
+"фиксированных простоев."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:141
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:60
@@ -6051,7 +6068,7 @@ msgstr "Статическое"
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:142
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:60
 msgid "Flexible"
-msgstr ""
+msgstr "Гибкий"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:171
 msgid "Hours"
@@ -6070,13 +6087,15 @@ msgid ""
 "Enter here the duration of the downtime. The downtime will be automatically "
 "deleted after this time expired."
 msgstr ""
+"Введите здесь продолжительность простоя. Время простоя будет автоматически "
+"удалено по истечении этого времени."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:257
 msgid "Scheduling service downtime.."
 msgid_plural "Scheduling service downtimes.."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Планирование простоя служб.."
+msgstr[1] "Планирование простоев служб.."
+msgstr[2] "Планирование простоев служб.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/SendCustomNotificationCommandForm.php:21
 msgid ""
@@ -6134,7 +6153,7 @@ msgstr "Пассивные проверки"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:46
 msgid "Obsessing"
-msgstr ""
+msgstr "Наблюдение"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:54
 msgid "Event Handler"
@@ -6178,11 +6197,11 @@ msgstr "Отключение пассивных проверок.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:145
 msgid "Enabling obsessing.."
-msgstr ""
+msgstr "Включить наблюдение.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:146
 msgid "Disabling obsessing.."
-msgstr ""
+msgstr "Отключить наблюдение.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:153
 msgid "Enabling event handler.."
