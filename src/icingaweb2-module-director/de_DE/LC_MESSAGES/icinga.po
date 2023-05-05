@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-11 14:40+0000\n"
+"POT-Creation-Date: 2023-04-21 16:06+0000\n"
 "PO-Revision-Date: 2022-07-15 07:40+0000\n"
 "Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
 "Language-Team: German <https://translate.icinga.com/projects/icinga/"
@@ -2333,7 +2333,8 @@ msgstr ""
 "Standardmäßig ist dies nicht der Fall."
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:167
-msgid "Disable Notificiations"
+#, fuzzy
+msgid "Disable Notifications"
 msgstr "Benachrichtigungen deaktivieren"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:169
@@ -6245,7 +6246,7 @@ msgstr ""
 "komplette Importvorgang aufgrund ungültiger Daten fehlschlagen lassen"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMakeBoolean.php:42
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:33
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:35
 msgid "Set null"
 msgstr "Auf \"null\" setzen"
 
@@ -6258,15 +6259,15 @@ msgid "Set false"
 msgstr "Auf \"false\" setzen"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMakeBoolean.php:45
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:35
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:38
 msgid "Let the import fail"
 msgstr "Import fehlschlagen lassen"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:19
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:21
 msgid "Please choose a data list that can be used for map lookups"
 msgstr "Eine Datenliste auswählen, die für Map lookups verwendet wird"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:28
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:30
 msgid ""
 "What should happen if the lookup key does not exist in the data list? You "
 "could return a null value, keep the unmodified imported value or interrupt "
@@ -6276,9 +6277,33 @@ msgstr ""
 "befindet? Es kann ein null Wert zurückgegeben werden, der importierte Wert "
 "unverändert übernommen oder der Importvorgang unterbrochen werden"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:34
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:36
 msgid "Return lookup key unmodified"
 msgstr "Suchschlüssel unverändert zurück geben"
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:37
+msgid "Return custom default value"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:46
+#, fuzzy
+msgid "Default value"
+msgstr "Globale Standard-Zone"
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:49
+#, fuzzy
+msgid ""
+"This value will be evaluated, and variables like ${some_column} will be "
+"filled accordingly. A typical use-case is generating unique service "
+"identifiers via ${host}!${service} in case your data source doesn't allow "
+"you to ship such. The chosen \"property\" has no effect here and will be "
+"ignored."
+msgstr ""
+"Dieses Muster wird ausgewertet, und Variablen wie ${eine_spalte} werden "
+"entsprechend befüllt. Ein typischer Anwendungsfall ist das Erstellen von "
+"eindeutigen Service-Bezeichnern via ${host}!${service} falls die Datenquelle "
+"einen solchen nicht bereitstellt. Die gewählte \"Eigenschaft\" hat hier "
+"keine Auswirkung und wird ignoriert."
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierParseURL.php:27
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierParseURL.php:28

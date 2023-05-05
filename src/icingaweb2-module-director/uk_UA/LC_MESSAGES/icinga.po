@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-11 14:40+0000\n"
+"POT-Creation-Date: 2023-04-21 16:06+0000\n"
 "PO-Revision-Date: 2023-04-18 14:23+0000\n"
 "Last-Translator: p4k8 <pkuznetsunit@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.icinga.com/projects/icinga/"
@@ -18,8 +18,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.16.4\n"
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:34
@@ -2273,7 +2273,8 @@ msgid ""
 msgstr "Чи вимкнути перевірки при втраті залежності. За замовчуванням false."
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:167
-msgid "Disable Notificiations"
+#, fuzzy
+msgid "Disable Notifications"
 msgstr "Вимкнути сповіщення"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:169
@@ -2730,10 +2731,10 @@ msgid ""
 msgstr ""
 "Якщо визначено, користувачі з цієї користувацької змінної будуть поєднані з "
 "користувачами обраними нижче.  Наприклад: коли призначено до "
-"notification_contacts, це сповіщення отримає користувачів з масиву "
-"service.vars.notification_contacts або з host.vars.notification_contacts "
-"якщо його не існує. Для цієї функції підходять лише поля DirectorObject типу "
-"масив для об'єктів User."
+"notification_contacts, це сповіщення отримає користувачів з масиву service."
+"vars.notification_contacts або з host.vars.notification_contacts якщо його "
+"не існує. Для цієї функції підходять лише поля DirectorObject типу масив для "
+"об'єктів User."
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:164
 msgid "No UserGroup object has been created yet"
@@ -6115,7 +6116,7 @@ msgstr ""
 "вхідні дані"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMakeBoolean.php:42
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:33
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:35
 msgid "Set null"
 msgstr "Задати null"
 
@@ -6128,16 +6129,16 @@ msgid "Set false"
 msgstr "Задати false"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMakeBoolean.php:45
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:35
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:38
 msgid "Let the import fail"
 msgstr "Невдача завдання імпорту"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:19
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:21
 msgid "Please choose a data list that can be used for map lookups"
 msgstr ""
 "Будь ласка, оберіть список даних що може бути використаний для пошуку ключа"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:28
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:30
 msgid ""
 "What should happen if the lookup key does not exist in the data list? You "
 "could return a null value, keep the unmodified imported value or interrupt "
@@ -6147,9 +6148,33 @@ msgstr ""
 "повернути пусте значення, залишити імпортоване значення або перервати процес "
 "імпорту"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:34
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:36
 msgid "Return lookup key unmodified"
 msgstr "Повернути ключ пошуку без змін"
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:37
+msgid "Return custom default value"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:46
+#, fuzzy
+msgid "Default value"
+msgstr "Глобальна зона за замовчуванням"
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:49
+#, fuzzy
+msgid ""
+"This value will be evaluated, and variables like ${some_column} will be "
+"filled accordingly. A typical use-case is generating unique service "
+"identifiers via ${host}!${service} in case your data source doesn't allow "
+"you to ship such. The chosen \"property\" has no effect here and will be "
+"ignored."
+msgstr ""
+"Цей патерн буде оброблено, та змінні типу ${some_column} будуть відповідно "
+"заповнені. Зазвичай застосовується при генеруванні унікальних "
+"ідентифікаторів сервісів через ${host}!${service} у разі якщо ваше джерело "
+"даних не підтримує такого. Обрана \"властивість\" не має ефекту та буде "
+"проігнорована."
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierParseURL.php:27
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierParseURL.php:28
@@ -6339,8 +6364,8 @@ msgid ""
 "Specify the characters that trim should remove.Default is: \" \\t\\n\\r"
 "\\0\\x0B\""
 msgstr ""
-"Вказати символи які видаляються при обрізанні. За замовчуванням: \" \\t\\n"
-"\\r\\0\\x0B\""
+"Вказати символи які видаляються при обрізанні. За замовчуванням: \" \\t\\n\\r"
+"\\0\\x0B\""
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierUpperCaseFirst.php:18
 msgid "Use lowercase first"

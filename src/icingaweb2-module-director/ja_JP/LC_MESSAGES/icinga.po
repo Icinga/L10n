@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-11 14:40+0000\n"
+"POT-Creation-Date: 2023-04-21 16:06+0000\n"
 "PO-Revision-Date: 2020-04-27 14:54+0200\n"
 "Last-Translator: papillon326 <udagawa@www2178ue.sakura.ne.jp>\n"
 "Language-Team: \n"
@@ -2268,7 +2268,8 @@ msgstr ""
 
 # smori
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:167
-msgid "Disable Notificiations"
+#, fuzzy
+msgid "Disable Notifications"
 msgstr "通知を無効化"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:169
@@ -6050,7 +6051,7 @@ msgstr ""
 "ンポートプロセス全体を中断することもできます。"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMakeBoolean.php:42
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:33
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:35
 msgid "Set null"
 msgstr "NULLを設定"
 
@@ -6063,15 +6064,15 @@ msgid "Set false"
 msgstr "FALSEを設定する"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMakeBoolean.php:45
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:35
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:38
 msgid "Let the import fail"
 msgstr "インポートを失敗にする"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:19
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:21
 msgid "Please choose a data list that can be used for map lookups"
 msgstr "地図検索に使用できるデータリストを選択してください"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:28
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:30
 msgid ""
 "What should happen if the lookup key does not exist in the data list? You "
 "could return a null value, keep the unmodified imported value or interrupt "
@@ -6081,9 +6082,31 @@ msgstr ""
 "されていないインポート値を保持する、またはインポートプロセスを中断することが"
 "できます。"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:34
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:36
 msgid "Return lookup key unmodified"
 msgstr "変更されていない参照キーを返す"
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:37
+msgid "Return custom default value"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:46
+#, fuzzy
+msgid "Default value"
+msgstr "デフォルトのグローバルゾーン"
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:49
+#, fuzzy
+msgid ""
+"This value will be evaluated, and variables like ${some_column} will be "
+"filled accordingly. A typical use-case is generating unique service "
+"identifiers via ${host}!${service} in case your data source doesn't allow "
+"you to ship such. The chosen \"property\" has no effect here and will be "
+"ignored."
+msgstr ""
+"このパターンが評価され、それに応じて ${some_column} のような変数が埋められま"
+"す。 典型的なユースケースは ${host}!${service}でユニークなサービス識別子を生"
+"成することです。 選択された「プロパティ」はここでは効果がなく、無視されます。"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierParseURL.php:27
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierParseURL.php:28

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-11 14:40+0000\n"
+"POT-Creation-Date: 2023-04-21 16:06+0000\n"
 "PO-Revision-Date: 2020-04-27 14:45+0200\n"
 "Last-Translator: Francesco Mazzi <fmazzi@comune.genova.it>\n"
 "Language-Team: \n"
@@ -2340,7 +2340,8 @@ msgstr ""
 "impostazioni predefinite sono false."
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:167
-msgid "Disable Notificiations"
+#, fuzzy
+msgid "Disable Notifications"
 msgstr "Disattivare le notifiche"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:169
@@ -6273,7 +6274,7 @@ msgstr ""
 "validi"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMakeBoolean.php:42
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:33
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:35
 msgid "Set null"
 msgstr "Imposta null"
 
@@ -6286,17 +6287,17 @@ msgid "Set false"
 msgstr "Imposta falso"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMakeBoolean.php:45
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:35
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:38
 msgid "Let the import fail"
 msgstr "Lascia che l'importazione fallisca"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:19
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:21
 msgid "Please choose a data list that can be used for map lookups"
 msgstr ""
 "Si prega di scegliere una lista dati che puo' essere utilizzata per la map "
 "lookups"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:28
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:30
 msgid ""
 "What should happen if the lookup key does not exist in the data list? You "
 "could return a null value, keep the unmodified imported value or interrupt "
@@ -6306,9 +6307,33 @@ msgstr ""
 "data? Si potrebbe restituire un valore nullo, mantenere il valore importato "
 "non modificato o interrompere il processo di importazione"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:34
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:36
 msgid "Return lookup key unmodified"
 msgstr "La chiave di ricerca per la restituzione rimane invariata"
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:37
+msgid "Return custom default value"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:46
+#, fuzzy
+msgid "Default value"
+msgstr "Zona globale predefinita"
+
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:49
+#, fuzzy
+msgid ""
+"This value will be evaluated, and variables like ${some_column} will be "
+"filled accordingly. A typical use-case is generating unique service "
+"identifiers via ${host}!${service} in case your data source doesn't allow "
+"you to ship such. The chosen \"property\" has no effect here and will be "
+"ignored."
+msgstr ""
+"Questo pattern sarà esaminato e le variabili come ${qualche_colonna} saranno "
+"sostituite di conseguenza. Un tipico caso d'uso è la generazione di "
+"identificatori di servizio unici tramite ${host}!${servizio} nel caso in cui "
+"la vostra fonte di dati non vi permetta di spedirli. La \"proprietà\" scelta "
+"non ha alcun effetto in questo caso e sarà ignorata."
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierParseURL.php:27
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierParseURL.php:28
