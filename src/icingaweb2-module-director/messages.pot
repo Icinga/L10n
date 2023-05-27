@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n c7c4fa3\n"
+"Project-Id-Version: Icinga L10n 1d2c60a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 13:30+0000\n"
+"POT-Creation-Date: 2023-05-26 13:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3251,11 +3251,32 @@ msgid ""
 "it's purpose and why it has been put in place at all."
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:69
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:68
+#: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:84
+msgid "Set based on filter"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:89
+#: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:103
+#: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:95
+msgid "Filter Expression"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:91
+msgid ""
+"This allows to filter for specific parts within the given source expression. "
+"You are allowed to refer all imported columns. Examples: host=www* would set "
+"this property only for rows imported with a host property starting with "
+"\"www\". Complex example: host=www*&!(address=127.*|address6=::1). Please "
+"note, that CIDR notation based matches are also supported:  "
+"address=192.0.2.128/25|address=2001:db8::/32|address=::ffff:192.0.2.0/96"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:104
 msgid "Modifier"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:72
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:107
 msgid ""
 "A property modifier allows you to modify a specific property at import time"
 msgstr ""
@@ -3816,15 +3837,6 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:67
 msgid "Custom variable"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:84
-msgid "Set based on filter"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:103
-#: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:95
-msgid "Filter Expression"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:105
