@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n 46f3e24\n"
+"Project-Id-Version: Icinga L10n 5809dbf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-15 13:54+0000\n"
+"POT-Creation-Date: 2023-06-20 14:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,30 +30,65 @@ msgid "Report not found"
 msgstr ""
 
 #: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:66
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:87
+msgid "Clone Report"
+msgstr ""
+
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:101
 msgid "Edit Report"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:96
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:131
 #: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/SendForm.php:36
 msgid "Send Report"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:115
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:219
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:150
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:266
 msgid "Schedule"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:205
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:240
 msgid "Modify"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:234
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:252
+msgid "Clone"
+msgstr ""
+
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportController.php:281
 msgid "Send"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportsController.php:29
-#: sources.d/icingaweb2-module-reporting/application/controllers/ReportsController.php:100
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportsController.php:31
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportsController.php:114
 msgid "New Report"
+msgstr ""
+
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportsController.php:49
+#: sources.d/icingaweb2-module-reporting/application/controllers/TemplatesController.php:42
+#: sources.d/icingaweb2-module-reporting/application/controllers/TimeframesController.php:47
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:80
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/TemplateForm.php:64
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/TimeframeForm.php:47
+msgid "Name"
+msgstr ""
+
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportsController.php:50
+#: sources.d/icingaweb2-module-reporting/application/controllers/TemplatesController.php:43
+msgid "Author"
+msgstr ""
+
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportsController.php:51
+#: sources.d/icingaweb2-module-reporting/application/controllers/TemplatesController.php:44
+#: sources.d/icingaweb2-module-reporting/application/controllers/TimeframesController.php:48
+msgid "Created At"
+msgstr ""
+
+#: sources.d/icingaweb2-module-reporting/application/controllers/ReportsController.php:52
+#: sources.d/icingaweb2-module-reporting/application/controllers/TemplatesController.php:45
+#: sources.d/icingaweb2-module-reporting/application/controllers/TimeframesController.php:49
+msgid "Modified At"
 msgstr ""
 
 #: sources.d/icingaweb2-module-reporting/application/controllers/TemplateController.php:76
@@ -73,7 +108,7 @@ msgid "Preview"
 msgstr ""
 
 #: sources.d/icingaweb2-module-reporting/application/controllers/TemplatesController.php:31
-#: sources.d/icingaweb2-module-reporting/application/controllers/TemplatesController.php:94
+#: sources.d/icingaweb2-module-reporting/application/controllers/TemplatesController.php:106
 msgid "New Template"
 msgstr ""
 
@@ -86,7 +121,7 @@ msgid "Edit Time Frame"
 msgstr ""
 
 #: sources.d/icingaweb2-module-reporting/application/controllers/TimeframesController.php:30
-#: sources.d/icingaweb2-module-reporting/application/controllers/TimeframesController.php:103
+#: sources.d/icingaweb2-module-reporting/application/controllers/TimeframesController.php:114
 msgid "New Timeframe"
 msgstr ""
 
@@ -160,65 +195,59 @@ msgstr ""
 msgid "Recipients"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:49
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/TemplateForm.php:64
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/TimeframeForm.php:47
-msgid "Name"
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:66
+msgid "Create Report"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:51
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:66
+msgid "Update Report"
+msgstr ""
+
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:82
 msgid ""
 "A unique name of this report. It is used when exporting to pdf, json or csv "
 "format and also when listing the reports in the cli"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:58
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:89
 msgid "Double dots are not allowed in the report name"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:72
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:103
 msgid "Timeframe"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:73
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:81
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:91
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:104
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:112
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:122
 #: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ScheduleForm.php:112
 #: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ScheduleForm.php:118
 msgid "Please choose"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:75
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:106
 msgid "Specifies the time frame in which this report is to be generated"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:80
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:111
 msgid "Template"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:83
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:114
 msgid ""
 "Specifies the template to use when exporting this report to pdf. (Default "
 "Icinga template)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:90
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:121
 msgid "Report"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:92
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:123
 msgid "Specifies the type of the reportlet to be generated"
 msgstr ""
 
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:112
-msgid "Create Report"
-msgstr ""
-
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:112
-msgid "Update Report"
-msgstr ""
-
-#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:118
+#: sources.d/icingaweb2-module-reporting/library/Reporting/Web/Forms/ReportForm.php:149
 msgid "Remove Report"
 msgstr ""
 
