@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n f2d326a\n"
+"Project-Id-Version: Icinga L10n 557eb59\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 14:28+0000\n"
+"POT-Creation-Date: 2023-07-21 14:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -368,7 +368,7 @@ msgstr ""
 #: sources.d/icingadb-web/configuration.php:154
 #: sources.d/icingadb-web/configuration.php:331
 #: sources.d/icingadb-web/configuration.php:450
-#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:72
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:70
 msgid "Hosts"
 msgstr ""
 
@@ -1515,7 +1515,7 @@ msgid "Host Problems"
 msgstr ""
 
 #: sources.d/icingadb-web/configuration.php:205
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:250
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:255
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/StateListItem.php:96
 msgid "Overdue"
 msgstr ""
@@ -1736,24 +1736,20 @@ msgstr ""
 msgid "Use shift/cmd + click/arrow keys to select multiple items"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:98
+#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:90
 msgid "up"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:101
+#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:93
 msgid "down"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:104
-msgid "unreachable"
-msgstr ""
-
-#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:107
+#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:96
 #: sources.d/icingadb-web/library/Icingadb/Common/ServiceStates.php:118
 msgid "pending"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:110
+#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:99
 #: sources.d/icingadb-web/library/Icingadb/Common/ServiceStates.php:121
 msgid "not available"
 msgstr ""
@@ -1808,11 +1804,11 @@ msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:265
 #: sources.d/icingadb-web/library/Icingadb/Common/ObjectInspectionDetail.php:318
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:214
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:229
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:232
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:295
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:308
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:219
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:234
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:237
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:300
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:309
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:527
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:554
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:557
@@ -3003,12 +2999,16 @@ msgstr ""
 msgid "Servicegroup Display Name"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/State.php:102
+#: sources.d/icingadb-web/library/Icingadb/Model/State.php:103
 msgid "handled by Downtime"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Model/State.php:102
+#: sources.d/icingadb-web/library/Icingadb/Model/State.php:103
 msgid "in Downtime"
+msgstr ""
+
+#: sources.d/icingadb-web/library/Icingadb/Model/State.php:117
+msgid "is unreachable"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:63
@@ -3654,64 +3654,64 @@ msgstr[1] ""
 msgid "Now"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:173
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:178
 msgid "Execution Start"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:174
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:194
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:257
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:179
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:199
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:262
 msgid "PENDING"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:189
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:194
 msgid "Execution End"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:211
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:216
 msgid "Interval"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:224
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:229
 msgid "Execution Time"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:224
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:229
 msgid "Latency"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:243
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:252
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:248
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:257
 msgid "Next Check"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:244
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:249
 msgid "n.a"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:305
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:306
 msgid "Command"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:307
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:308
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:245
 msgid "Scheduling Source"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:314
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:315
 msgid "Timeperiod"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:321
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:322
 msgid "Attempts"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:324
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:325
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:246
 msgid "Check Source"
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:367
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:368
 msgid "active and passive checks are disabled"
 msgstr ""
 
@@ -4343,7 +4343,7 @@ msgid "Up"
 msgstr ""
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:153
-#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:57
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:55
 msgid "Down"
 msgstr ""
 
@@ -4399,7 +4399,7 @@ msgid_plural "%d Hosts"
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:74
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:72
 #: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:76
 #, php-format
 msgid "{{#total}}Total{{/total}} %d"
@@ -4632,7 +4632,7 @@ msgstr ""
 msgid "List all services in the group \"%s\""
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/HostgroupGridCell.php:31
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/HostgroupGridCell.php:35
 #, php-format
 msgid "List %d host that is currently in DOWN state in host group \"%s\""
 msgid_plural ""
@@ -4640,7 +4640,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/HostgroupGridCell.php:50
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/HostgroupGridCell.php:57
 #, php-format
 msgid ""
 "List %d host that is currently in DOWN (Acknowledged) state in host group "
@@ -4651,27 +4651,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/HostgroupGridCell.php:69
-#, php-format
-msgid ""
-"List %d host that is currently in UNREACHABLE state in host group \"%s\""
-msgid_plural ""
-"List %d hosts which are currently in UNREACHABLE state in host group \"%s\""
-msgstr[0] ""
-msgstr[1] ""
-
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/HostgroupGridCell.php:88
-#, php-format
-msgid ""
-"List %d host that is currently in UNREACHABLE (Acknowledged) state in host "
-"group \"%s\""
-msgid_plural ""
-"List %d hosts which are currently in UNREACHABLE (Acknowledged) state in "
-"host group \"%s\""
-msgstr[0] ""
-msgstr[1] ""
-
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/HostgroupGridCell.php:105
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/HostgroupGridCell.php:75
 #, php-format
 msgid "List %d host that is currently in PENDING state in host group \"%s\""
 msgid_plural ""
@@ -4679,7 +4659,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/HostgroupGridCell.php:121
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/HostgroupGridCell.php:93
 #, php-format
 msgid "List %d host that is currently in UP state in host group \"%s\""
 msgid_plural ""
@@ -4687,12 +4667,12 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/HostgroupGridCell.php:137
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/HostgroupGridCell.php:109
 #, php-format
 msgid "There are no hosts in host group \"%s\""
 msgstr ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:31
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:35
 #, php-format
 msgid ""
 "List %d service that is currently in CRITICAL state in service group \"%s\""
@@ -4702,7 +4682,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:50
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:57
 #, php-format
 msgid ""
 "List %d service that is currently in CRITICAL (Acknowledged) state in "
@@ -4713,7 +4693,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:71
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:79
 #, php-format
 msgid ""
 "List %d service that is currently in WARNING state in service group \"%s\""
@@ -4722,7 +4702,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:90
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:101
 #, php-format
 msgid ""
 "List %d service that is currently in WARNING (Acknowledged) state in service "
@@ -4733,7 +4713,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:111
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:123
 #, php-format
 msgid ""
 "List %d service that is currently in UNKNOWN state in service group \"%s\""
@@ -4742,7 +4722,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:130
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:145
 #, php-format
 msgid ""
 "List %d service that is currently in UNKNOWN (Acknowledged) state in service "
@@ -4753,7 +4733,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:148
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:165
 #, php-format
 msgid ""
 "List %d service that is currently in PENDING state in service group \"%s\""
@@ -4762,7 +4742,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:164
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:183
 #, php-format
 msgid "List %d service that is currently in OK state in service group \"%s\""
 msgid_plural ""
@@ -4770,7 +4750,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:180
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ServicegroupGridCell.php:199
 #, php-format
 msgid "There are no services in service group \"%s\""
 msgstr ""
