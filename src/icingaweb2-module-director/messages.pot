@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n 410afaa\n"
+"Project-Id-Version: Icinga L10n 04dd51a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-10 12:12+0000\n"
+"POT-Creation-Date: 2023-08-20 11:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -314,6 +314,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:384
 #: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:395
+#: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:284
 #: sources.d/icingaweb2-module-director/application/forms/SelfServiceSettingsForm.php:252
 #: sources.d/icingaweb2-module-director/application/forms/SettingsForm.php:193
 #: sources.d/icingaweb2-module-director/application/views/helpers/FormDataFilter.php:465
@@ -1499,7 +1500,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldCategoryForm.php:31
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:158
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:31
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:134
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:94
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceSetForm.php:103
 #: sources.d/icingaweb2-module-director/application/forms/IcingaTemplateChoiceForm.php:56
 #: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:52
@@ -1581,16 +1582,18 @@ msgid ""
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:149
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:126
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:83
 msgid "Caption"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:152
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:88
 msgid ""
 "The caption which should be displayed to your users when this field is shown"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:160
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:96
 msgid ""
 "An extended description for this field. Will be shown as soon as a user puts "
 "the focus on this field"
@@ -2636,64 +2639,44 @@ msgstr ""
 msgid "Check command definition"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:94
-msgid "Suggested fields"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:99
-msgid "Argument macros"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:104
-msgid "Other available fields"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:118
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:75
 msgid ""
 "There are no data fields available. Please ask an administrator to create "
 "such"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:130
-msgid "The caption which should be displayed"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:135
-msgid "A description about the field"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:143
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:148
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:106
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:111
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaObjectDatafieldTable.php:51
 msgid "Mandatory"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:144
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:107
 msgid "Whether this field should be mandatory"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:147
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:110
 msgid "Optional"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:170
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:118
 msgid ""
 "You might want to show this field only when certain conditions are met. "
 "Otherwise it will not be available and values eventually set before will be "
 "cleared once stored"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:184
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:132
 msgid "Show based on filter"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:194
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:142
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:87
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:928
 msgid "Delete"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:197
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:145
 msgid "Field has been removed"
 msgstr ""
 
@@ -4961,6 +4944,22 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/Db/Housekeeping.php:54
 msgid "(Host) group resolve cache"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:78
+msgid "Suggested fields"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:82
+msgid "Argument macros"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:86
+msgid "Flags (boolean) arguments"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:90
+msgid "Other available fields"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:20
