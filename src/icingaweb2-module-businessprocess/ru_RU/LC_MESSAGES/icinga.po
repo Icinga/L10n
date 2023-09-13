@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-29 15:58+0000\n"
+"POT-Creation-Date: 2023-09-12 12:59+0000\n"
 "PO-Revision-Date: 2021-11-03 12:23+0500\n"
 "Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
 "Language-Team: TranslAster <https://github.com/translaster>\n"
@@ -25,633 +25,627 @@ msgstr ""
 msgid "Business Process Overview"
 msgstr "Обзор бизнес-процесса"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/NodeController.php:22
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/NodeController.php:25
 msgid "Node Impact"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/NodeController.php:25
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/NodeController.php:28
 #, php-format
 msgid "Business Impact (%s)"
 msgstr "Влияние на бизнесс (%s)"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/NodeController.php:109
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/NodeController.php:119
 msgid "No impact detected. Is this node part of a business process?"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:44
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/NodeController.php:127
+msgid ""
+"The following business process has an invalid config file and therefore "
+"cannot be read:"
+msgid_plural ""
+"The following business processes have invalid config files and therefore "
+"cannot be read:"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:54
 msgid "Create a new Business Process"
 msgstr "Создание нового бизнес-процесса"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:65
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:75
 msgid "Upload a Business Process Config file"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:97
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:107
 #, php-format
 msgid "Business Process \"%s\""
 msgstr "Бизнес-процесс \"%s\""
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:143
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:147
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:37
+msgid "Name"
+msgstr "Название"
+
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:148
+#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:54
+msgid "State"
+msgstr "Состояние"
+
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:151
+msgid "Manual"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:189
 msgid "Leave full screen and switch back to normal mode"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:206
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:253
 #, php-format
 msgid "%d applied simulation(s) have been dropped"
 msgstr "%d примененных симуляций было сброшено"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:332
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:420
 #, php-format
 msgid "This process has %d pending change(s)."
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:340
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:130
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:74
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:428
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:137
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:79
 msgid "Store"
 msgstr "Применить"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:344
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:357
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:432
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:445
 msgid "Dismiss"
 msgstr "Отклонить"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:352
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:440
 #, php-format
 msgid "This process shows %d simulated state(s)."
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:386
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:452
+msgid "Drag&Drop disabled. Custom sort order applied."
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:456
+msgid "Reset to default"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:487
+#, php-format
+msgid "Linked node %s has one missing child node: {{#link}}Show{{/link}}"
+msgid_plural ""
+"Linked node %s has %d missing child nodes: {{#link}}Show{{/link}}"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:518
+#, php-format
+msgid "{{#link}}Cleanup{{/link}} one missing node: %2$s"
+msgid_plural "{{#link}}Cleanup{{/link}} %d missing nodes: %s"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:548
 #, php-format
 msgid "%s: Source Code Differences"
 msgstr "%s: различия в исходном коде"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:391
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:553
 #, php-format
 msgid "%s: Source Code"
 msgstr "%s: исходный код"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:437
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:599
 #, php-format
 msgid "%s: Configuration"
 msgstr "%s: конфигурация"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:468
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:629
 msgid "Show source code"
 msgstr "Показать исходный код"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:470
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:541
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:62
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:633
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:709
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:67
 msgid "Source"
 msgstr "Источник"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:483
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:646
 msgid "Highlight changes"
 msgstr "Выделите изменения"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:485
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:650
 msgid "Diff"
 msgstr "Разница"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:495
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:660
 msgid "Download process configuration"
 msgstr "Загрузка конфигурации процесса"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:497
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:664
 msgid "Download"
 msgstr "Загрузить"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:506
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:674
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Controller.php:132
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Controller.php:143
 msgid "Business Process"
 msgstr "Бизнес-процесс"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:517
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:59
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:685
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:61
 msgid "Create"
 msgstr "Создание"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:520
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:68
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:688
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:70
 msgid "Upload"
 msgstr "Загрузка"
 
-#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:532
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:700
 msgid "Process Configuration"
 msgstr "Конфигурация процесса"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:46
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/SuggestionsController.php:235
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/SuggestionsController.php:362
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/ServiceNode.php:76
+#, php-format
+msgctxt "<service> on <host>"
+msgid "%s on %s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:100
 #, php-format
 msgid "Add a node to %s"
 msgstr "Добавить узел в %s"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:51
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:102
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:199
+#, fuzzy
+msgid "Host"
+msgstr "Узел"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:103
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:164
+#, fuzzy
+msgid "Service"
+msgstr "Служба"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:104
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:111
+msgid "Existing Process"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:105
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:112
+#, fuzzy
+msgid "New Process"
+msgstr "Бизнес-процесс"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:108
 msgid "Add a new root node"
 msgstr "Добавить новый корневой узел"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:76
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:231
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:367
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:377
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:400
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:142
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:79
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:214
-msgid "Next"
-msgstr "Далее"
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:123
+msgid "Node type"
+msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:84
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:125
+#, fuzzy
+msgid "Please choose"
+msgstr "- пожалуйста выберите -"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:150
+#, fuzzy
+msgid "Add Process"
+msgstr "Добавить узел"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:159
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:16
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:95
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:36
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:31
 msgid "ID"
 msgstr "ИД"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:87
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:34
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:42
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:99
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:39
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:160
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:41
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:40
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:35
 msgid "This is the unique identifier of this process"
 msgstr "Это уникальный идентификатор для этого процесса"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:99
-msgid "%value% is already defined in this process"
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:165
+#, fuzzy, php-format
+msgid "%s is already defined in this process"
 msgstr "%value% уже определено в этом процессе"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:106
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:39
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:104
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:51
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:177
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:46
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:39
 msgid "Display Name"
 msgstr "Отображаемое имя"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:108
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:106
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:53
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:179
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:41
 msgid "Usually this name will be shown for this node. Equals ID if not given"
 msgstr ""
 "Обычно это название будет показываться для этого узла. Используется ID если "
 "не задано"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:114
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:112
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:59
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:185
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:47
 msgid "Operator"
 msgstr "Оператор"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:117
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:115
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:62
-msgid "AND"
-msgstr "И"
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:118
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:116
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:63
-msgid "OR"
-msgstr "ИЛИ"
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:119
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:117
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:64
-msgid "NOT"
-msgstr "НЕ"
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:120
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:118
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:65
-msgid "DEGRADED"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:121
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:119
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:66
-msgid "MIN 1"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:122
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:120
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:67
-msgid "MIN 2"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:123
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:121
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:68
-msgid "MIN 3"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:124
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:122
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:69
-msgid "MIN 4"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:125
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:123
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:70
-msgid "MIN 5"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:126
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:124
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:71
-msgid "MIN 6"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:127
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:125
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:72
-msgid "MIN 7"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:128
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:126
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:73
-msgid "MIN 8"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:129
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:127
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:74
-msgid "MIN 9"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:139
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:133
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:84
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:196
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:58
 msgid "Visualization"
 msgstr "Визуализация"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:142
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:136
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:87
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:197
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:61
 msgid "Where to show this process"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:146
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:140
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:90
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:200
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:64
 msgid "Toplevel Process"
 msgstr "Процесс верхнего уровня"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:147
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:141
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:91
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:201
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:65
 msgid "Subprocess only"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:152
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:146
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:96
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:206
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:70
 msgid "Info URL"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:154
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:148
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:98
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:207
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:72
 msgid "URL pointing to more information about this node"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:166
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:238
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:183
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:221
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:219
+msgid "Imported nodes cannot be used as root nodes"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:221
+msgid "Missing node name"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:225
+msgid "Config does not exist or access has been denied"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:231
+#, php-format
+msgid "Cannot load config: %s"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:237
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:245
+msgid "No node with this name found in config"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:251
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:63
 #, fuzzy
-msgid "Host"
-msgstr "Узел"
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:167
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:258
-#, fuzzy
-msgid "Service"
-msgstr "Служба"
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:168
-#, fuzzy
-msgid "Hosts from filter"
-msgstr "Пользовательский фильтр"
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:169
-#, fuzzy
-msgid "Services from filter"
-msgstr "Проблемы служб"
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:181
-msgid "Existing Process"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:184
-msgid "New Process Node"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:187
-msgid "Node type"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:190
-msgid "The node type you want to add"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:203
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:268
-msgid "Hosts"
-msgstr "Узлы"
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:209
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:274
-msgid "Hosts that should be part of this business process node"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:249
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:287
-msgid "Services"
-msgstr "Службы"
+msgid "Already defined in this process"
+msgstr "%value% уже определено в этом процессе"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:255
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:293
-msgid "Services that should be part of this business process node"
+msgid "Results in a parent/child loop"
 msgstr ""
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:264
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:283
-msgid "Refresh"
-msgstr "Обновление"
+msgid "Process Nodes"
+msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:302
-msgid "Filter"
-msgstr "Фильтр"
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:287
+msgid "Hosts"
+msgstr "Узлы"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:311
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:132
-msgid "File"
-msgstr "Файл"
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:318
-msgid "Choose a different configuration file to import its processes"
-msgstr "Выберите другой файл конфигурации для импорта его процессов"
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:328
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:237
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:294
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:207
 #, fuzzy
 msgid "Override Host State"
 msgstr "Состояние узла"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:329
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:238
-msgid "Enable host state overrides"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:337
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:356
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:248
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:281
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:298
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:328
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:176
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:211
 msgid "State Overrides"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:347
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:270
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:300
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:213
+msgid "UP"
+msgstr "ВКЛЮЧЕН"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:301
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:214
+msgid "DOWN"
+msgstr "ОСТАНОВЛЕН"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:302
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:334
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:182
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:215
+msgid "PENDING"
+msgstr "РАССМАТРИВАЕМЫЙ"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:317
+msgid "Services"
+msgstr "Службы"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:324
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:172
 #, fuzzy
 msgid "Override Service State"
 msgstr "Состояние службы"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:348
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:271
-msgid "Enable service state overrides"
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:330
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:178
+msgid "OK"
+msgstr "ОК"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:331
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:179
+msgid "WARNING"
+msgstr "ВНИМАНИЕ"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:332
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:180
+msgid "CRITICAL"
+msgstr "КРИТИЧНО"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:333
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:181
+msgid "UNKNOWN"
+msgstr "НЕИЗВЕСТНО"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:32
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:56
+msgid ""
+"Id must only consist of alphanumeric characters. Underscore at the beginning "
+"and space, dot and hyphen at the beginning and end are not allowed."
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:389
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:288
-msgid "Process nodes"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:395
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:294
-msgid "Other processes that should be part of this business process node"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:41
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:48
 msgid ""
 "Usually this name will be shown for this process. Equals ID if not given"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:47
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:54
 msgid "Description"
 msgstr "Описание"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:49
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:56
 msgid ""
 "A slightly more detailed description for this process, about 100-150 "
 "characters long"
 msgstr ""
 "Чуть более подробное описание этого процесса, длиной около 100-150 символов"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:56
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:63
 msgid "Backend"
 msgstr "Бэкэнд"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:58
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:65
 msgid ""
 "Icinga Web Monitoring Backend where current object states for this process "
 "should be retrieved from"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:62
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:69
 msgid "Use the configured default backend"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:68
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:75
 msgid "State Type"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:71
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:78
 msgid "Whether this process should be based on Icinga hard or soft states"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:74
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:81
 msgid "Use SOFT states"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:75
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:82
 msgid "Use HARD states"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:80
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:87
 msgid "Add to menu"
 msgstr "Добавить в меню"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:83
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:90
 msgid "Whether this process should be linked in the main Icinga Web 2 menu"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:86
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:93
 msgid "Yes"
 msgstr "Да"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:87
-#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:75
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:94
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:66
 msgid "No"
 msgstr "Нет"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:92
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:99
 msgid "Allowed Users"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:94
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:101
 msgid "Allowed Users (comma-separated)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:99
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:106
 msgid "Allowed Groups"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:101
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:108
 msgid "Allowed Groups (comma-separated)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:106
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:113
 msgid "Allowed Roles"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:108
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:115
 msgid "Allowed Roles (comma-separated)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:114
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:121
 msgid "Add"
 msgstr "Добавить"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:133
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:140
 msgid "Delete"
 msgstr "Удалить"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:154
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:161
 #, php-format
 msgid ""
 "Process \"%s\" cannot be deleted as it has been referenced in other processes"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:173
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:184
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:180
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:189
 #, php-format
 msgid "A process named \"%s\" already exists"
 msgstr "Процесс с именем \"%s\" уже существует"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:39
-msgid "Name"
-msgstr "Название"
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:64
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:69
 msgid "Business process source code"
 msgstr "Исходный код бизнес-процесса"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:37
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:137
+msgid "File"
+msgstr "Файл"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:147
+msgid "Next"
+msgstr "Далее"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/CleanupNodeForm.php:26
+msgid "Cleanup missing nodes"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/CleanupNodeForm.php:30
+msgid "Cleanup all missing nodes"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/CleanupNodeForm.php:31
+msgid "Remove all missing nodes from config"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/CleanupNodeForm.php:36
+msgid "Select nodes to cleanup"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:28
 #, php-format
 msgid "Delete \"%s\""
 msgstr "Удалить \"%s\""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:50
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:41
 #, php-format
 msgid "Unsure? Show business impact of \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:58
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:49
 #, php-format
 msgid "Delete from %s"
 msgstr "Удалить из %s"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:63
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:54
 #, php-format
 msgid "Delete root node \"%s\""
 msgstr "Удалить корневой узел \"%s\""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:69
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:60
 msgid "Are you sure?"
 msgstr "Вы уверены?"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:72
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:63
 msgid "Do you really want to delete this node?"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:77
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:68
 #, php-format
 msgid "Delete all occurrences of %s"
 msgstr "Удалить все вхождения %s"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:146
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:106
 msgid "Well, maybe next time"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:53
-#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:45
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:138
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:25
 #, php-format
 msgid "Modify \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:184
-msgid "The host for this business process node"
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:149
+msgid "Save Changes"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:259
-msgid "The service for this business process node"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/MoveNodeForm.php:65
+#: sources.d/icingaweb2-module-businessprocess/application/forms/MoveNodeForm.php:66
 msgid "No process found with name %value%"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/MoveNodeForm.php:171
+#: sources.d/icingaweb2-module-businessprocess/application/forms/MoveNodeForm.php:154
 msgid "Node order updated"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:30
+#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:31
 msgid "Current simulation"
 msgstr "Текущее моделирование"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:41
+#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:43
 #, php-format
 msgid "Modify simulation for %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:43
+#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:45
 #, php-format
 msgid "Add simulation for %s"
 msgstr "Добавить моделирование для %s"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:52
-msgid "State"
-msgstr "Состояние"
-
-#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:65
+#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:67
 msgid "Acknowledged"
 msgstr "Подтверждено"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:70
+#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:72
 msgid "In downtime"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:75
+#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:77
 msgid "Apply"
 msgstr "Применить"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:107
+#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:109
 msgid "Simulation has been set"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:115
+#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:117
 msgid "Simulation has been removed"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:129
+#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:131
 #, php-format
 msgid "Use current state (%s)"
-msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/application/views/helpers/FormStateOverrides.php:26
-msgid "Keep actual state"
 msgstr ""
 
 #: sources.d/icingaweb2-module-businessprocess/application/views/scripts/host/show.phtml:10
@@ -701,53 +695,34 @@ msgstr "Разрешить изменять определения процес�
 msgid "Restrict access to configurations with the given prefix"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:699
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:685
 msgid "Unbound nodes"
 msgstr "Несвязанные узлы"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:756
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:703
+#, php-format
+msgid "Trying to import node \"%s\" from faulty config file \"%s.conf\""
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:707
+#, fuzzy, php-format
+msgid "Trying to access a missing business process node \"%s\""
+msgstr "Добавить новый узел бизнес-процесса"
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:750
 #, php-format
 msgid "Node \"%s\" has been defined twice"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:898
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:882
 #, php-format
 msgid "No business process nodes for \"%s\" have been defined yet"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpNode.php:392
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpNode.php:383
 #, php-format
 msgid "Nesting error detected: %s"
 msgstr ""
-
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:140
-msgid "UP"
-msgstr "ВКЛЮЧЕН"
-
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:141
-msgid "DOWN"
-msgstr "ОСТАНОВЛЕН"
-
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:142
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:155
-msgid "PENDING"
-msgstr "РАССМАТРИВАЕМЫЙ"
-
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:151
-msgid "OK"
-msgstr "ОК"
-
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:152
-msgid "WARNING"
-msgstr "ВНИМАНИЕ"
-
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:153
-msgid "CRITICAL"
-msgstr "КРИТИЧНО"
-
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:154
-msgid "UNKNOWN"
-msgstr "НЕИЗВЕСТНО"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/MonitoringRestrictions.php:46
 #, php-format
@@ -758,18 +733,75 @@ msgstr ""
 "Невозможно применить ограничение %s с помощью фильтра %s. Можно использовать "
 "только следующие столбцы: %s"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/ProvidedHook/Icingadb/HostActions.php:13
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/ProvidedHook/Icingadb/ServiceActions.php:13
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/ProvidedHook/Monitoring/HostActions.php:12
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/ProvidedHook/Monitoring/ServiceActions.php:15
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:493
+msgid "AND"
+msgstr "И"
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:494
+msgid "OR"
+msgstr "ИЛИ"
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:495
+#, fuzzy
+msgid "XOR"
+msgstr "ИЛИ"
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:496
+msgid "NOT"
+msgstr "НЕ"
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:497
+msgid "DEGRADED"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:498
+msgid "MIN 1"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:499
+msgid "MIN 2"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:500
+msgid "MIN 3"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:501
+msgid "MIN 4"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:502
+msgid "MIN 5"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:503
+msgid "MIN 6"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:504
+msgid "MIN 7"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:505
+msgid "MIN 8"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:506
+msgid "MIN 9"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/ProvidedHook/Icingadb/HostActions.php:14
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/ProvidedHook/Icingadb/ServiceActions.php:14
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/ProvidedHook/Monitoring/HostActions.php:13
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/ProvidedHook/Monitoring/ServiceActions.php:16
 msgid "Business Impact"
 msgstr "Влияние на бизнесс"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/Breadcrumb.php:38
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/Breadcrumb.php:39
 msgid "Show Overview"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/Renderer.php:150
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/Renderer.php:183
 #, php-format
 msgid "%u Child"
 msgid_plural "%u Children"
@@ -777,68 +809,68 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:201
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:197
 msgid "Show tiles for this subtree"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:208
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:204
 msgid "Show this subtree as a tree"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:221
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:218
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:220
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:240
 msgid "Show this process as part of its original configuration"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:237
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:326
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:236
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:353
 msgid "More information"
 msgstr "Подробная информация"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:291
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:287
 msgid "Show the business impact of this node by simulating a specific state"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:303
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:299
 msgid "Modify this monitored node"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:320
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:316
 msgid "Modify this business process node"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:334
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:330
 msgid "Add a new sub-node to this business process"
 msgstr "Добавить новый подузел в этот бизнес-процесс"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:351
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:347
 msgid "Delete this node"
 msgstr "Удалить этот узел"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:303
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:330
 msgid "Modify this node"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:316
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:343
 msgid "Simulate a specific state"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:350
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:128
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:377
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:138
 msgid "Add a new business process node"
 msgstr "Добавить новый узел бизнес-процесса"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/State/IcingaDbState.php:45
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/State/IcingaDbState.php:46
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/State/MonitoringState.php:41
 #, php-format
 msgid "Could not retrieve process state: %s"
 msgstr "Не удалось получить состояние процесса: %s"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:45
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:47
 msgid "Welcome to your Business Process Overview"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:52
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:54
 msgid ""
 "From here you can reach all your defined Business Process configurations, "
 "create new or modify existing ones"
@@ -846,121 +878,154 @@ msgstr ""
 "Отсюда вы можете получить доступ ко всем определенным конфигурациям бизнес-"
 "процессов, создавать новые или изменять существующие"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:60
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:62
 msgid "Create a new Business Process configuration"
 msgstr "Создание новой конфигурации бизнес-процесса"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:69
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:71
 msgid "Upload an existing Business Process configuration"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:79
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:81
 msgid "Not available"
 msgstr "Недоступен"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:82
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:84
 msgid "No Business Process has been defined for you"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:23
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:103
+#, php-format
+msgid "File %s has faulty config"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:24
 msgid "Switch to Tile view"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:31
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:32
 msgid "Switch to Tree view"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:43
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:44
 msgid "View"
 msgstr "Вид"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:52
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:53
 msgid "Switch to fullscreen mode"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:55
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:57
 msgid "Fullscreen"
 msgstr "Во весь экран"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:66
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:69
 msgid "Imported processes can only be changed in their original configuration"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:70
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:72
 msgid "Editing Locked"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:77
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:79
 msgid "Click to unlock editing for this process"
 msgstr "Нажмите, чтобы разблокировать редактирование для этого процесса"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:80
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:83
 msgid "Unlock Editing"
 msgstr "Разблокировка редактирования"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:88
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:92
 msgid "Click to lock editing for this process"
 msgstr "Нажмите чтобы заблокировать редактирование для этого процесса"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:91
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:96
 msgid "Lock Editing"
 msgstr "Блокировка редактирования"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:102
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:115
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:108
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:123
 msgid "Modify this process"
 msgstr "Изменить этот процесс"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:105
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:118
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:112
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:127
 msgid "Config"
 msgstr "Конфиг"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:131
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:143
 msgid "Add Node"
 msgstr "Добавить узел"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Controller.php:200
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Controller.php:192
 #, php-format
 msgid "%d pending change(s) have been dropped"
 msgstr "%d отложенных изменений были отброшены"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Controller.php:225
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Controller.php:218
 #, php-format
 msgid "No such process config: \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/BpConfigBaseForm.php:57
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/BpConfigBaseForm.php:111
 #, php-format
 msgid "Please prefix the name with \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/BpConfigBaseForm.php:62
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/BpConfigBaseForm.php:116
 #, php-format
 msgid "Please prefix the name with one of \"%s\""
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Element/IplStateOverrides.php:63
+msgid "Keep actual state"
 msgstr ""
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/QuickBaseForm.php:113
 msgid "- please choose -"
 msgstr "- пожалуйста выберите -"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/QuickForm.php:180
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/QuickForm.php:181
 msgid "Submit"
 msgstr "Принять"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/QuickForm.php:392
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/QuickForm.php:417
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/QuickForm.php:397
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/QuickForm.php:422
 msgid "Form has successfully been sent"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/NoDuplicateChildrenValidator.php:35
-msgid "%label% is already defined in this process"
-msgstr "%label% уже определен в этом процессе"
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:82
+msgid "Service not found"
+msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Navigation/Renderer/ProcessProblemsBadge.php:42
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:84
+msgid "Host not found"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Navigation/Renderer/ProcessProblemsBadge.php:40
 #, php-format
 msgid "One unhandled root node critical"
 msgid_plural "%d unhandled root nodes critical"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+
+#, fuzzy
+#~ msgid "Hosts from filter"
+#~ msgstr "Пользовательский фильтр"
+
+#, fuzzy
+#~ msgid "Services from filter"
+#~ msgstr "Проблемы служб"
+
+#~ msgid "Refresh"
+#~ msgstr "Обновление"
+
+#~ msgid "Filter"
+#~ msgstr "Фильтр"
+
+#~ msgid "Choose a different configuration file to import its processes"
+#~ msgstr "Выберите другой файл конфигурации для импорта его процессов"
+
+#~ msgid "%label% is already defined in this process"
+#~ msgstr "%label% уже определен в этом процессе"

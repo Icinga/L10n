@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-29 15:58+0000\n"
+"POT-Creation-Date: 2023-09-12 12:59+0000\n"
 "PO-Revision-Date: 2022-07-08 13:43+0000\n"
 "Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
 "Language-Team: German <https://translate.icinga.com/projects/icinga/ipl-web/"
@@ -20,8 +20,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.9.1\n"
 
+#: sources.d/ipl-web/src/Common/BaseItemList.php:70
+#: sources.d/ipl-web/src/Common/BaseItemTable.php:85
+#: sources.d/ipl-web/src/Common/BaseOrderedItemList.php:28
+msgid "No items found."
+msgstr ""
+
 #: sources.d/ipl-web/src/Compat/SearchControls.php:111
-#: sources.d/ipl-web/src/Compat/SearchControls.php:222
+#: sources.d/ipl-web/src/Compat/SearchControls.php:212
 msgid "Is not a valid column"
 msgstr "Ist keine gültige Spalte"
 
@@ -42,30 +48,30 @@ msgstr "Gehe zu Seite …"
 msgid "Pagination"
 msgstr "Seitennavigation"
 
-#: sources.d/ipl-web/src/Control/SearchBar.php:376
+#: sources.d/ipl-web/src/Control/SearchBar.php:388
 msgid "Please add a logical operator on the left."
 msgstr "Bitte füge links einen logischen Operator hinzu."
 
-#: sources.d/ipl-web/src/Control/SearchBar.php:377
+#: sources.d/ipl-web/src/Control/SearchBar.php:389
 msgid "Please close or remove this group."
 msgstr "Bitte schließe oder entferne diese Gruppe."
 
-#: sources.d/ipl-web/src/Control/SearchBar.php:378
+#: sources.d/ipl-web/src/Control/SearchBar.php:390
 #, php-format
 msgctxt "..<comma separated list>"
 msgid "Please type one of: %s"
 msgstr "Bitte triff eine Wahl und tippe: %s"
 
-#: sources.d/ipl-web/src/Control/SearchBar.php:379
+#: sources.d/ipl-web/src/Control/SearchBar.php:391
 msgid "Please enter a valid column."
 msgstr "Bitte trage eine gültige Spalte ein."
 
-#: sources.d/ipl-web/src/Control/SearchBar.php:446
+#: sources.d/ipl-web/src/Control/SearchBar.php:457
 #, php-format
 msgid "Unexpected %s at start of input"
 msgstr "Unerwartetes Zeichen (%s) am Beginn der Eingabe"
 
-#: sources.d/ipl-web/src/Control/SearchBar.php:485
+#: sources.d/ipl-web/src/Control/SearchBar.php:504
 msgid "Adjust Filter"
 msgstr "Filter anpassen"
 
@@ -88,6 +94,7 @@ msgid "Columns"
 msgstr "Spalten"
 
 #: sources.d/ipl-web/src/Control/SearchBar/Suggestions.php:318
+#: sources.d/ipl-web/src/FormElement/TermInput/TermSuggestions.php:277
 msgid "Nothing to suggest"
 msgstr ""
 
@@ -95,34 +102,329 @@ msgstr ""
 msgid "Missing column name"
 msgstr "Name der Spalte fehlt"
 
-#: sources.d/ipl-web/src/Control/SearchEditor.php:417
+#: sources.d/ipl-web/src/Control/SearchEditor.php:413
 msgctxt "to a group of filter conditions"
 msgid "Add Condition"
 msgstr "Bedingung hinzufügen"
 
-#: sources.d/ipl-web/src/Control/SearchEditor.php:422
+#: sources.d/ipl-web/src/Control/SearchEditor.php:418
 msgctxt "of filter conditions"
 msgid "Add Group"
 msgstr "Gruppe hinzufügen"
 
-#: sources.d/ipl-web/src/Control/SearchEditor.php:429
+#: sources.d/ipl-web/src/Control/SearchEditor.php:425
 msgctxt "a filter rule"
 msgid "Wrap in Group"
 msgstr "Gruppieren"
 
-#: sources.d/ipl-web/src/Control/SearchEditor.php:434
+#: sources.d/ipl-web/src/Control/SearchEditor.php:430
 msgctxt "a filter rule"
 msgid "Delete"
 msgstr "Löschen"
 
-#: sources.d/ipl-web/src/Control/SearchEditor.php:591
+#: sources.d/ipl-web/src/Control/SearchEditor.php:589
 msgid "Clear Filter"
 msgstr "Filter löschen"
 
-#: sources.d/ipl-web/src/Control/SearchEditor.php:597
+#: sources.d/ipl-web/src/Control/SearchEditor.php:595
 msgid "Apply"
 msgstr "Anwenden"
 
-#: sources.d/ipl-web/src/Control/SortControl.php:246
+#: sources.d/ipl-web/src/Control/SortControl.php:281
 msgid "Change sort direction"
 msgstr "Sortierreihenfolge ändern"
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:93
+msgid "Minutely"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:94
+msgid "Hourly"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:95
+msgid "Daily"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:96
+msgid "Weekly"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:97
+msgid "Monthly"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:98
+msgid "Quarterly"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:99
+msgid "Annually"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:106
+msgid "Custom…"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:107
+msgid "Cron Expression…"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:409
+msgid "Start"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:411
+msgid "Start time of this schedule"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:419
+msgid "Use End Time"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:432
+msgid "End"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:433
+msgid "End time of this schedule"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:440
+msgid "Frequency"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:441
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:456
+msgid "Specifies how often this job run should be recurring"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:443
+msgid "None"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:444
+msgid "Regular"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:445
+msgid "Advanced"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:455
+msgid "Custom Frequency"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:480
+msgid "Cron Expression"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:481
+msgid "Job cron Schedule"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:485
+msgid "Invalid CRON expression"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:500
+msgid "Next occurrences"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:564
+msgid "week(s) on"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:567
+msgid "month(s)"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:570
+msgid "day(s)"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement.php:587
+msgid "Every"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:28
+msgid "Jan"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:29
+msgid "Feb"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:30
+msgid "Mar"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:31
+msgid "Apr"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:32
+msgid "May"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:33
+msgid "Jun"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:34
+msgid "Jul"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:35
+msgid "Aug"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:36
+msgid "Sep"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:37
+msgid "Oct"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:38
+msgid "Nov"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:39
+msgid "Dec"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:92
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/MonthlyFields.php:131
+msgid "On the"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/AnnuallyFields.php:101
+#, php-format
+msgid "Use %s / %s keys to choose a month by keyboard."
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:33
+msgid "Monday"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:34
+msgid "Tuesday"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:35
+msgid "Wednesday"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:36
+msgid "Thursday"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:37
+msgid "Friday"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:38
+msgid "Saturday"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:39
+msgid "Sunday"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:49
+msgid "First"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:50
+msgid "Second"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:51
+msgid "Third"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:52
+msgid "Fourth"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:53
+msgid "Fifth"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:54
+msgid "Last"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:66
+msgid "Day"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:67
+msgid "Weekday (Mon - Fri)"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Common/FieldsUtils.php:68
+msgid "WeekEnd (Sat or Sun)"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/MonthlyFields.php:100
+msgid "Each"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/MonthlyFields.php:184
+msgid "You must select at least one of these days"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Recurrence.php:71
+msgid "Never"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/Recurrence.php:77
+msgid "D, Y/m/d, H:i:s"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/WeeklyFields.php:26
+msgid "Mon"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/WeeklyFields.php:27
+msgid "Tue"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/WeeklyFields.php:28
+msgid "Wed"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/WeeklyFields.php:29
+msgid "Thu"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/WeeklyFields.php:30
+msgid "Fri"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/WeeklyFields.php:31
+msgid "Sat"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/WeeklyFields.php:32
+msgid "Sun"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/ScheduleElement/WeeklyFields.php:144
+msgid "You must select at least one of these weekdays"
+msgstr ""
+
+#: sources.d/ipl-web/src/FormElement/TermInput.php:410
+msgid "Type to search. Separate multiple terms by comma."
+msgstr ""
+
+#: sources.d/ipl-web/src/Widget/CopyToClipboard.php:34
+msgid "Copied"
+msgstr ""
+
+#: sources.d/ipl-web/src/Widget/CopyToClipboard.php:35
+msgid "Copy to clipboard"
+msgstr ""

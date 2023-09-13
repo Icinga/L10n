@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-29 15:58+0000\n"
+"POT-Creation-Date: 2023-09-12 12:59+0000\n"
 "PO-Revision-Date: 2022-07-15 07:40+0000\n"
 "Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
 "Language-Team: German <https://translate.icinga.com/projects/icinga/"
@@ -42,30 +42,30 @@ msgstr ""
 msgid "Adjust Filter"
 msgstr ""
 
-#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:36
+#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:82
 msgid "+ Add a dimension"
 msgstr "+ Dimension hinzufügen"
 
-#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:71
+#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:116
 msgid "Slice/Filter"
 msgstr "Schneiden/Filtern"
 
-#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:113
+#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:130
 #, php-format
 msgid "Remove dimension \"%s\""
 msgstr "Dimension entfernen „%s“"
 
-#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:124
+#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:140
 #, php-format
 msgid "Move dimension \"%s\" up"
 msgstr "Dimension „%s“ nach oben verschieben"
 
-#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:136
+#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:151
 #, php-format
 msgid "Move dimension \"%s\" down"
 msgstr "Dimension „%s“ nach unten verschieben"
 
-#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:168
+#: sources.d/icingaweb2-module-cube/application/forms/DimensionsForm.php:170
 msgid "New dimension has been added"
 msgstr "Neue Dimension wurde hinzugefügt"
 
@@ -82,19 +82,19 @@ msgstr "Reporting"
 msgid "No action links have been provided for this cube"
 msgstr "Keine Aktion für diesen Würfel bereitgestellt"
 
-#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/IcingaDbActions.php:33
+#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/IcingaDbActions.php:35
 #: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:33
 msgid "Show hosts status"
 msgstr "Zeige Host-Zustände an"
 
-#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/IcingaDbActions.php:34
-#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/IcingaDbActions.php:41
+#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/IcingaDbActions.php:36
+#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/IcingaDbActions.php:43
 msgid "This shows all matching hosts and their current state in Icinga DB Web"
 msgstr ""
 "Das zeigt alle passenden Hosts und deren aktuellen Zustand in Icinga DB Web "
 "an"
 
-#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/IcingaDbActions.php:40
+#: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/IcingaDbActions.php:42
 #: sources.d/icingaweb2-module-cube/library/Cube/ProvidedHook/Cube/MonitoringActions.php:47
 msgid "Show services status"
 msgstr "Zeige Service-Zustände an"
@@ -115,24 +115,32 @@ msgstr ""
 "Das zeigt alle passenden Services und deren aktuellen Zustand im Monitoring-"
 "Modul an"
 
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:91
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:38
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:69
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:32
 msgid "Cube details"
 msgstr "Würfel Details"
 
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:106
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:93
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:87
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:51
 #, php-format
 msgid "Cube: %s"
 msgstr "Würfel: %s"
 
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:280
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:117
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:111
+msgid "Value"
+msgstr ""
+
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:112
+msgid "Severity"
+msgstr ""
+
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:289
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:190
 msgid "Hosts"
 msgstr "Hosts"
 
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:284
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:121
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:293
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:194
 msgid "Services"
 msgstr "Services"
 
