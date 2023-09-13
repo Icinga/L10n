@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-21 16:06+0000\n"
+"POT-Creation-Date: 2023-09-12 12:59+0000\n"
 "PO-Revision-Date: 2020-04-27 14:54+0200\n"
 "Last-Translator: papillon326 <udagawa@www2178ue.sakura.ne.jp>\n"
 "Language-Team: \n"
@@ -132,8 +132,8 @@ msgstr "リストア"
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:238
 #: sources.d/icingaweb2-module-director/application/controllers/SchemaController.php:80
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:236
 #: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:249
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:262
 msgid "Download"
 msgstr "ダウンロード"
 
@@ -331,6 +331,7 @@ msgstr "設定差分"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:384
 #: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:395
+#: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:284
 #: sources.d/icingaweb2-module-director/application/forms/SelfServiceSettingsForm.php:252
 #: sources.d/icingaweb2-module-director/application/forms/SettingsForm.php:193
 #: sources.d/icingaweb2-module-director/application/views/helpers/FormDataFilter.php:465
@@ -972,7 +973,7 @@ msgstr "適用: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:280
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:15
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:598
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:601
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:12
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:71
 #: sources.d/icingaweb2-module-director/library/Director/TranslationDummy.php:13
@@ -1077,8 +1078,8 @@ msgstr ""
 "実行をトリガする必要があります。"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:97
-#, php-format
-msgid "This Sync Rule was last found to by in Sync at %s."
+#, fuzzy, php-format
+msgid "This Sync Rule was last found to be in Sync at %s."
 msgstr "この同期ルールは、%sの同期で最後に見つかったものです。"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:108
@@ -1549,7 +1550,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldCategoryForm.php:31
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:158
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:31
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:134
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:94
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceSetForm.php:103
 #: sources.d/icingaweb2-module-director/application/forms/IcingaTemplateChoiceForm.php:56
 #: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:52
@@ -1637,7 +1638,7 @@ msgstr ""
 "をユーザに強制することができるようになります。"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:141
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:50
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:52
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaObjectDatafieldTable.php:50
 msgid "Field name"
 msgstr "フィールド名"
@@ -1652,16 +1653,18 @@ msgstr ""
 "icingaの設定で定義するカスタム変数の名前になります。"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:149
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:126
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:83
 msgid "Caption"
 msgstr "キャプション"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:152
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:88
 msgid ""
 "The caption which should be displayed to your users when this field is shown"
 msgstr "このフィールドが表示されたときにユーザーに表示されるキャプション"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:160
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:96
 msgid ""
 "An extended description for this field. Will be shown as soon as a user puts "
 "the focus on this field"
@@ -1694,7 +1697,7 @@ msgstr ""
 "カスタム変数の値の入力時に、このキーが選択されると、変数の値になります。"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistEntryForm.php:30
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:49
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:51
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatalistEntryTable.php:55
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaObjectDatafieldTable.php:49
 msgid "Label"
@@ -1843,19 +1846,19 @@ msgstr "サービステンプレートを選択"
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:40
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:22
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceDictionaryMemberForm.php:22
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:576
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:579
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceVarForm.php:22
 #: sources.d/icingaweb2-module-director/application/forms/IcingaTimePeriodForm.php:15
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ChoicesTable.php:41
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiFieldsTable.php:79
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiObjectsTable.php:57
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiPrototypesTable.php:40
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:46
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:50
 msgid "Name"
 msgstr "名前"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaAddServiceForm.php:147
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:579
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:582
 msgid "Name for the Icinga service you are going to create"
 msgstr "Icingaサービスの名前"
 
@@ -2095,7 +2098,7 @@ msgstr "引数%sは正常に保存されました"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:181
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeRangeForm.php:99
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:778
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:781
 #: sources.d/icingaweb2-module-director/application/forms/IcingaTimePeriodRangeForm.php:94
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:673
 msgid "No action taken, object has not been modified"
@@ -2220,7 +2223,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:100
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:90
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:89
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:712
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:715
 #: sources.d/icingaweb2-module-director/configuration.php:121
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/HostsDashlet.php:13
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDictionary.php:59
@@ -2237,7 +2240,7 @@ msgstr "ホスト"
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostGroupForm.php:30
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:107
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:115
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:477
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:480
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceGroupForm.php:30
 msgid ""
 "This allows you to configure an assignment filter. Please feel free to "
@@ -2484,7 +2487,7 @@ msgstr ""
 "べてください。"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:149
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:698
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:701
 msgid "Icinga Agent and zone settings"
 msgstr "Icingaエージェントとゾーンの設定"
 
@@ -2506,7 +2509,7 @@ msgid "Choose a Host Template"
 msgstr "ホストテンプレートを選択"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:219
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:650
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:653
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:109
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:67
 msgid "Groups"
@@ -2800,19 +2803,7 @@ msgstr "通知コマンド"
 msgid "Check command definition"
 msgstr "監視コマンドの定義"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:94
-msgid "Suggested fields"
-msgstr "サジェストされたフィールド"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:99
-msgid "Argument macros"
-msgstr "引数マクロ"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:104
-msgid "Other available fields"
-msgstr "ほかの利用可能なフィールド"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:118
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:75
 msgid ""
 "There are no data fields available. Please ask an administrator to create "
 "such"
@@ -2820,29 +2811,21 @@ msgstr ""
 "利用可能なデータフィールドがありません。作成するように管理者に依頼してくださ"
 "い。"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:130
-msgid "The caption which should be displayed"
-msgstr "表示されるキャプション"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:135
-msgid "A description about the field"
-msgstr "フィールドについての説明"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:143
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:148
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:106
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:111
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaObjectDatafieldTable.php:51
 msgid "Mandatory"
 msgstr "必須"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:144
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:107
 msgid "Whether this field should be mandatory"
 msgstr "このフィールドが必須か選択します。"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:147
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:110
 msgid "Optional"
 msgstr "オプション"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:170
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:118
 msgid ""
 "You might want to show this field only when certain conditions are met. "
 "Otherwise it will not be available and values eventually set before will be "
@@ -2852,17 +2835,17 @@ msgstr ""
 "そうしなければ利用できないでしょう。また、以前に設定された値はいったん格納さ"
 "れると消去されます"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:184
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:132
 msgid "Show based on filter"
 msgstr "フィルタに基づいて表示"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:194
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:142
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:87
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:928
 msgid "Delete"
 msgstr "削除"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:197
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:145
 msgid "Field has been removed"
 msgstr "フィールドが削除されました"
 
@@ -2974,42 +2957,42 @@ msgstr "新しい %s が正常に作成されました"
 msgid "Name for the instance you are going to create"
 msgstr "作成しようとしているIcingaゾーンの名前"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:137
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:138
 #, fuzzy
 msgid "This Service has been deactivated on this host"
 msgstr "このサービスはこのホストでブラックリストに登録されています"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:142
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:143
 #, fuzzy
 msgid "Reactivate"
 msgstr "無効"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:161
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:436
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:468
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:162
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:439
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:471
 msgid "Override vars"
 msgstr "変数のオーバーライド"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:167
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:168
 msgid "Hints regarding this service"
 msgstr "このサービスに関するヒント"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:174
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:175
 #, fuzzy
 msgid "Deactivate"
 msgstr "無効"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:287
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:290
 #, fuzzy, php-format
 msgid "%s has been deactivated on %s"
 msgstr "%s は %s のブラックリストに登録されました。"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:323
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:326
 #, fuzzy, php-format
 msgid "%s is no longer deactivated on %s"
 msgstr "%s は %s のブラックリストから除外されました。"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:385
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:388
 msgid ""
 "This service has been generated in an automated way, but still allows you to "
 "override the following properties in a safe way."
@@ -3017,13 +3000,13 @@ msgstr ""
 "このサービスは自動化された方法で生成されていますが、それでも次のプロパティを"
 "安全な方法に上書きすることができます。"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:391
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:394
 #, php-format
 msgid ""
 "This service has been generated using the %s apply rule, assigned where %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:404
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:407
 #, php-format
 msgid ""
 "This service belongs to the %s Service Set. Still, you might want to "
@@ -3032,7 +3015,7 @@ msgstr ""
 "このサービスは %s サービスセットに属しています。それでも、このホストに対して"
 "のみ次のプロパティを上書きすることをお勧めします。"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:416
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:419
 #, php-format
 msgid ""
 "This service has been inherited from %s. Still, you might want to change the "
@@ -3041,7 +3024,7 @@ msgstr ""
 "このサービスは%sから継承されました。 それでも、このホストに対してのみ次のプロ"
 "パティを変更することをお勧めします。"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:444
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:447
 #, php-format
 msgid ""
 "This service belongs to the service set \"%s\". Still, you might want to "
@@ -3050,24 +3033,24 @@ msgstr ""
 "このサービスはサービスセット \"%s\" に属しています。 それでも、このホストに対"
 "してのみ次のプロパティを変更することをお勧めします。"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:465
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:468
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/IcingaObjectFieldLoader.php:266
 msgid "Custom properties"
 msgstr "カスタムプロパティ"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:602
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:605
 msgid "Choose the host this single service should be assigned to"
 msgstr "この単一サービスが割り当てられるべきホストを選択"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:624
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:627
 msgid "Apply For"
 msgstr "適用対象"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:626
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:629
 msgid "None"
 msgstr "なし"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:628
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:631
 msgid ""
 "Evaluates the apply for rule for all objects with the custom attribute "
 "specified. E.g selecting \"host.vars.custom_attr\" will generate \"for "
@@ -3080,7 +3063,7 @@ msgstr ""
 "array_var）\"が生成されます。ここで \"config\"は \"$config$\"を通してアクセス"
 "可能です。 注：タイプ \"配列\"のカスタム変数のみが対象です。"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:654
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:657
 msgid ""
 "Service groups that should be directly assigned to this service. "
 "Servicegroups can be useful for various reasons. They are helpful to "
@@ -3094,18 +3077,18 @@ msgstr ""
 "ビスグループは、単一のサービスまたはサービステンプレートに直接割り当てること"
 "ができます。"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:679
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:682
 msgid "Run on agent"
 msgstr "エージェント側で実行"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:681
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:684
 msgid ""
 "Whether the check commmand for this service should be executed on the Icinga "
 "agent"
 msgstr ""
 "このサービスのcheckコマンドをIcingaエージェントで実行するか選択します。"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:711
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:714
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:82
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DependencyTemplateUsageTable.php:10
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/HostTemplateUsageTable.php:10
@@ -3117,12 +3100,12 @@ msgstr ""
 msgid "Templates"
 msgstr "テンプレート"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:767
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:770
 #, php-format
 msgid "All overrides have been removed from \"%s\""
 msgstr "すべてのオーバーライドは\"%s\"から削除されました"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:768
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:771
 #, php-format
 msgid "The given properties have been stored for \"%s\""
 msgstr "プロパティが\"%s\" に保存されました。"
@@ -3469,11 +3452,37 @@ msgstr ""
 "このインポート行プロパティ変換ルールの詳細な説明。 目的と、なぜ必要なのかの説"
 "明を書きます。"
 
-#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:69
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:68
+#: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:84
+msgid "Set based on filter"
+msgstr "フィルタに基づいて設定"
+
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:89
+#: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:103
+#: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:95
+msgid "Filter Expression"
+msgstr "フィルタ表現"
+
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:91
+#, fuzzy
+msgid ""
+"This allows to filter for specific parts within the given source expression. "
+"You are allowed to refer all imported columns. Examples: host=www* would set "
+"this property only for rows imported with a host property starting with \"www"
+"\". Complex example: host=www*&!(address=127.*|address6=::1). Please note, "
+"that CIDR notation based matches are also supported:  "
+"address=192.0.2.128/25| address=2001:db8::/32| address=::ffff:192.0.2.0/96"
+msgstr ""
+"指定された元の表現内の特定の部分をフィルタリングできます。 インポートされたす"
+"べてのカラムを参照することが許可されています。 例）「host=www*」 は、\"www"
+"\"で始まるホストプロパティでインポートされた行に対してのみこのプロパティを設"
+"定します。 複雑な例：host=www*&!(address=127.*|address6=::1)"
+
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:104
 msgid "Modifier"
 msgstr "プロパティ変換ルール"
 
-#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:72
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:107
 msgid ""
 "A property modifier allows you to modify a specific property at import time"
 msgstr ""
@@ -4124,15 +4133,6 @@ msgstr "宛先フィールド"
 #: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:67
 msgid "Custom variable"
 msgstr "カスタム変数"
-
-#: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:84
-msgid "Set based on filter"
-msgstr "フィルタに基づいて設定"
-
-#: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:103
-#: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:95
-msgid "Filter Expression"
-msgstr "フィルタ表現"
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:105
 msgid ""
@@ -4912,7 +4912,7 @@ msgid "Scheduled Downtimes"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/SelfServiceDashlet.php:13
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:180
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:167
 msgid "Self Service API"
 msgstr "セルフサービス API"
 
@@ -5355,6 +5355,22 @@ msgstr "インポートされたプロパティをリンク解除しました"
 msgid "(Host) group resolve cache"
 msgstr "(ホスト) グループがキャッシュを解決"
 
+#: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:78
+msgid "Suggested fields"
+msgstr "サジェストされたフィールド"
+
+#: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:82
+msgid "Argument macros"
+msgstr "引数マクロ"
+
+#: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:86
+msgid "Flags (boolean) arguments"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:90
+msgid "Other available fields"
+msgstr "ほかの利用可能なフィールド"
+
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:20
 msgid "Up"
 msgstr "Up (起動)"
@@ -5729,7 +5745,7 @@ msgstr "変更を適用する"
 msgid "Run all rules at once"
 msgstr "すべてのルールをまとめて実行"
 
-#: sources.d/icingaweb2-module-director/library/Director/Objects/DirectorDatafield.php:213
+#: sources.d/icingaweb2-module-director/library/Director/Objects/DirectorDatafield.php:204
 #, php-format
 msgid "Form element could not be created, %s is missing"
 msgstr "フォーム要素が作成できません。%s がありません"
@@ -6051,7 +6067,7 @@ msgstr ""
 "ンポートプロセス全体を中断することもできます。"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMakeBoolean.php:42
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:35
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:34
 msgid "Set null"
 msgstr "NULLを設定"
 
@@ -6064,15 +6080,15 @@ msgid "Set false"
 msgstr "FALSEを設定する"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMakeBoolean.php:45
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:38
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:37
 msgid "Let the import fail"
 msgstr "インポートを失敗にする"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:21
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:20
 msgid "Please choose a data list that can be used for map lookups"
 msgstr "地図検索に使用できるデータリストを選択してください"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:30
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:29
 msgid ""
 "What should happen if the lookup key does not exist in the data list? You "
 "could return a null value, keep the unmodified imported value or interrupt "
@@ -6082,20 +6098,20 @@ msgstr ""
 "されていないインポート値を保持する、またはインポートプロセスを中断することが"
 "できます。"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:36
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:35
 msgid "Return lookup key unmodified"
 msgstr "変更されていない参照キーを返す"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:37
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:36
 msgid "Return custom default value"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:46
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:45
 #, fuzzy
 msgid "Default value"
 msgstr "デフォルトのグローバルゾーン"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:49
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:48
 #, fuzzy
 msgid ""
 "This value will be evaluated, and variables like ${some_column} will be "
@@ -7074,39 +7090,29 @@ msgstr "Icinga ホスト"
 msgid "In case you're using %s, please run this Script:"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:158
 #: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:164
-msgid "Icinga 2 Powershell Module"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:160
-#, php-format
-msgid "In case you're using the legacy %s, please run:"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:177
 msgid "Documentation"
 msgstr "ドキュメント"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:192
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:179
 #, fuzzy
 msgid "Configure this Agent via Self Service API"
 msgstr "このエージェントをセルフサービスAPIで設定。"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:195
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:182
 #, fuzzy
 msgid "Inherited Template Api Key:"
 msgstr "サービステンプレートチョイス"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:216
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:203
 msgid "Icinga 2 Client documentation"
 msgstr "Icinga 2 Client のドキュメント"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:221
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:208
 msgid "Top Down"
 msgstr "トップダウン"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:234
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:221
 #, php-format
 msgid ""
 "A ticket for this agent could not have been requested from your deployment "
@@ -7115,19 +7121,19 @@ msgstr ""
 "このエージェントのチケットは、デプロイメントエンドポイントから要求されていな"
 "い可能性があります：%s"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:245
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:232
 msgid "For manual configuration"
 msgstr "手動設定用"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:246
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:233
 msgid "Ticket"
 msgstr "チケット"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:247
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:234
 msgid "Windows Kickstart Script"
 msgstr "Windowsキックスタートスクリプト"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:256
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:243
 msgid ""
 "This requires the Icinga Agent to be installed. It generates and signs it's "
 "certificate and it also generates a minimal icinga2.conf to get your agent "
@@ -7136,11 +7142,11 @@ msgstr ""
 "これには、Icinga Agentをインストールする必要があります。 証明書を生成して署名"
 "し、エージェントをその親に接続するための最小限のicinga2.confも生成します。"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:260
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:247
 msgid "Linux commandline"
 msgstr "Linux コマンドライン"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:267
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:255
 msgid "Just download and run this script on your Linux Client Machine:"
 msgstr ""
 "このスクリプトをLinuxクライアントマシンにダウンロードして実行するだけです。"
@@ -7225,15 +7231,15 @@ msgid "Category Name"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldCategoryTable.php:48
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:52
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:54
 msgid "# Used"
 msgstr "# 使用済み"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:51
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:53
 msgid "Category"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:53
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:55
 msgid "# Vars"
 msgstr "# 変数"
 
@@ -7294,16 +7300,16 @@ msgstr "サービス名"
 msgid "%s %s(%s)"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:216
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:229
 #, php-format
 msgid "This set has been inherited from %s"
 msgstr "このセットは%sから継承されました"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:225
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:238
 msgid "Remove"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:227
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:240
 #, php-format
 msgid "Remove \"%s\" from this host"
 msgstr "このホストから「%s」を削除"
@@ -7322,7 +7328,7 @@ msgstr "タイムスタンプ"
 msgid "Imported rows"
 msgstr "インポートされた行"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:62
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:66
 #, php-format
 msgid "%s (%d members)"
 msgstr "%s (%d 人のメンバー)"
@@ -7361,7 +7367,7 @@ msgstr "間接"
 msgid "Total"
 msgstr "合計"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:103
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:104
 msgid "This template is not in use"
 msgstr "このテンプレートは使用されていません"
 
@@ -7846,6 +7852,12 @@ msgstr "%s オブジェクトが編集されました。"
 #, fuzzy
 msgid "Show all actions"
 msgstr "利用可能なオプションを表示"
+
+#~ msgid "The caption which should be displayed"
+#~ msgstr "表示されるキャプション"
+
+#~ msgid "A description about the field"
+#~ msgstr "フィールドについての説明"
 
 #, fuzzy
 #~ msgid "Create a new Service Set"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-21 16:06+0000\n"
+"POT-Creation-Date: 2023-09-12 12:59+0000\n"
 "PO-Revision-Date: 2021-11-03 12:23+0500\n"
 "Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
 "Language-Team: TranslAster <https://github.com/translaster>\n"
@@ -133,8 +133,8 @@ msgstr "Восстановление"
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:238
 #: sources.d/icingaweb2-module-director/application/controllers/SchemaController.php:80
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:236
 #: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:249
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:262
 msgid "Download"
 msgstr "Загрузить"
 
@@ -330,6 +330,7 @@ msgstr "Разница в конфигурации"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:384
 #: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:395
+#: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:284
 #: sources.d/icingaweb2-module-director/application/forms/SelfServiceSettingsForm.php:252
 #: sources.d/icingaweb2-module-director/application/forms/SettingsForm.php:193
 #: sources.d/icingaweb2-module-director/application/views/helpers/FormDataFilter.php:465
@@ -968,7 +969,7 @@ msgstr "Применить: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:280
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:15
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:598
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:601
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:12
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:71
 #: sources.d/icingaweb2-module-director/library/Director/TranslationDummy.php:13
@@ -1070,7 +1071,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:97
 #, php-format
-msgid "This Sync Rule was last found to by in Sync at %s."
+msgid "This Sync Rule was last found to be in Sync at %s."
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:108
@@ -1540,7 +1541,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldCategoryForm.php:31
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:158
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:31
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:134
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:94
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceSetForm.php:103
 #: sources.d/icingaweb2-module-director/application/forms/IcingaTemplateChoiceForm.php:56
 #: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:52
@@ -1616,7 +1617,7 @@ msgstr ""
 "настраивать таким образом."
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:141
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:50
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:52
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaObjectDatafieldTable.php:50
 msgid "Field name"
 msgstr "Имя поля"
@@ -1628,16 +1629,18 @@ msgid ""
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:149
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:126
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:83
 msgid "Caption"
 msgstr "Подпись"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:152
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:88
 msgid ""
 "The caption which should be displayed to your users when this field is shown"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:160
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:96
 msgid ""
 "An extended description for this field. Will be shown as soon as a user puts "
 "the focus on this field"
@@ -1669,7 +1672,7 @@ msgid ""
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatalistEntryForm.php:30
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:49
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:51
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatalistEntryTable.php:55
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaObjectDatafieldTable.php:49
 msgid "Label"
@@ -1814,19 +1817,19 @@ msgstr "Выбрать шаблон службы"
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:40
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:22
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceDictionaryMemberForm.php:22
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:576
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:579
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceVarForm.php:22
 #: sources.d/icingaweb2-module-director/application/forms/IcingaTimePeriodForm.php:15
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ChoicesTable.php:41
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiFieldsTable.php:79
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiObjectsTable.php:57
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiPrototypesTable.php:40
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:46
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:50
 msgid "Name"
 msgstr "Название"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaAddServiceForm.php:147
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:579
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:582
 msgid "Name for the Icinga service you are going to create"
 msgstr ""
 
@@ -2053,7 +2056,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:181
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeRangeForm.php:99
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:778
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:781
 #: sources.d/icingaweb2-module-director/application/forms/IcingaTimePeriodRangeForm.php:94
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:673
 msgid "No action taken, object has not been modified"
@@ -2166,7 +2169,7 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:100
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:90
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:89
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:712
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:715
 #: sources.d/icingaweb2-module-director/configuration.php:121
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/HostsDashlet.php:13
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDictionary.php:59
@@ -2183,7 +2186,7 @@ msgstr "Узлы"
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostGroupForm.php:30
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:107
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:115
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:477
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:480
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceGroupForm.php:30
 msgid ""
 "This allows you to configure an assignment filter. Please feel free to "
@@ -2409,7 +2412,7 @@ msgid ""
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:149
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:698
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:701
 msgid "Icinga Agent and zone settings"
 msgstr "Icinga Агент и настройки зоны"
 
@@ -2431,7 +2434,7 @@ msgid "Choose a Host Template"
 msgstr "Выбрать шаблон узла"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:219
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:650
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:653
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:109
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:67
 msgid "Groups"
@@ -2709,47 +2712,27 @@ msgstr ""
 msgid "Check command definition"
 msgstr "Определение команды проверки"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:94
-msgid "Suggested fields"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:99
-msgid "Argument macros"
-msgstr "Макрос аргумента"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:104
-msgid "Other available fields"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:118
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:75
 msgid ""
 "There are no data fields available. Please ask an administrator to create "
 "such"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:130
-msgid "The caption which should be displayed"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:135
-msgid "A description about the field"
-msgstr "Описание этого поля"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:143
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:148
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:106
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:111
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaObjectDatafieldTable.php:51
 msgid "Mandatory"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:144
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:107
 msgid "Whether this field should be mandatory"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:147
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:110
 msgid "Optional"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:170
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:118
 msgid ""
 "You might want to show this field only when certain conditions are met. "
 "Otherwise it will not be available and values eventually set before will be "
@@ -2759,17 +2742,17 @@ msgstr ""
 "условий. В противном случае оно не будет доступно и значения заданные ранее "
 "в конечном итоге будут очищены после сохранения"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:184
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:132
 msgid "Show based on filter"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:194
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:142
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:87
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:928
 msgid "Delete"
 msgstr "Удалить"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:197
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:145
 msgid "Field has been removed"
 msgstr "Поле было удалено"
 
@@ -2879,89 +2862,89 @@ msgstr "Новый %s успешно создан"
 msgid "Name for the instance you are going to create"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:137
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:138
 msgid "This Service has been deactivated on this host"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:142
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:143
 msgid "Reactivate"
 msgstr "Повторно активирован"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:161
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:436
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:468
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:162
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:439
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:471
 msgid "Override vars"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:167
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:168
 msgid "Hints regarding this service"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:174
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:175
 msgid "Deactivate"
 msgstr "Деактивирован"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:287
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:290
 #, php-format
 msgid "%s has been deactivated on %s"
 msgstr "%s был деактивирован на %s"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:323
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:326
 #, php-format
 msgid "%s is no longer deactivated on %s"
 msgstr "%s больше не деактивирован на %s"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:385
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:388
 msgid ""
 "This service has been generated in an automated way, but still allows you to "
 "override the following properties in a safe way."
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:391
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:394
 #, php-format
 msgid ""
 "This service has been generated using the %s apply rule, assigned where %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:404
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:407
 #, php-format
 msgid ""
 "This service belongs to the %s Service Set. Still, you might want to "
 "override the following properties for this host only."
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:416
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:419
 #, php-format
 msgid ""
 "This service has been inherited from %s. Still, you might want to change the "
 "following properties for this host only."
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:444
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:447
 #, php-format
 msgid ""
 "This service belongs to the service set \"%s\". Still, you might want to "
 "change the following properties for this host only."
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:465
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:468
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/IcingaObjectFieldLoader.php:266
 msgid "Custom properties"
 msgstr "Пользовательские свойства"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:602
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:605
 msgid "Choose the host this single service should be assigned to"
 msgstr "Выберите хост, которому должна быть назначена эта единственная служба"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:624
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:627
 msgid "Apply For"
 msgstr "Применить для"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:626
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:629
 msgid "None"
 msgstr "Отсутствует"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:628
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:631
 msgid ""
 "Evaluates the apply for rule for all objects with the custom attribute "
 "specified. E.g selecting \"host.vars.custom_attr\" will generate \"for "
@@ -2970,7 +2953,7 @@ msgid ""
 "eligible."
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:654
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:657
 msgid ""
 "Service groups that should be directly assigned to this service. "
 "Servicegroups can be useful for various reasons. They are helpful to "
@@ -2979,17 +2962,17 @@ msgid ""
 "be directly assigned to single services or to service templates."
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:679
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:682
 msgid "Run on agent"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:681
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:684
 msgid ""
 "Whether the check commmand for this service should be executed on the Icinga "
 "agent"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:711
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:714
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:82
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DependencyTemplateUsageTable.php:10
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/HostTemplateUsageTable.php:10
@@ -3001,12 +2984,12 @@ msgstr ""
 msgid "Templates"
 msgstr "Шаблоны"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:767
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:770
 #, php-format
 msgid "All overrides have been removed from \"%s\""
 msgstr "Все переопределения были удалены из \"%s\""
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:768
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:771
 #, php-format
 msgid "The given properties have been stored for \"%s\""
 msgstr ""
@@ -3344,11 +3327,32 @@ msgstr ""
 "Расширенное описание для этого модификатора строки импорта. Оно должно "
 "объяснить его назначение и то, почему оно вообще было введено в действие."
 
-#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:69
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:68
+#: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:84
+msgid "Set based on filter"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:89
+#: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:103
+#: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:95
+msgid "Filter Expression"
+msgstr "Фильтр выражения"
+
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:91
+msgid ""
+"This allows to filter for specific parts within the given source expression. "
+"You are allowed to refer all imported columns. Examples: host=www* would set "
+"this property only for rows imported with a host property starting with \"www"
+"\". Complex example: host=www*&!(address=127.*|address6=::1). Please note, "
+"that CIDR notation based matches are also supported:  "
+"address=192.0.2.128/25| address=2001:db8::/32| address=::ffff:192.0.2.0/96"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:104
 msgid "Modifier"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:72
+#: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:107
 msgid ""
 "A property modifier allows you to modify a specific property at import time"
 msgstr ""
@@ -3949,15 +3953,6 @@ msgstr "Поле назначения"
 #: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:67
 msgid "Custom variable"
 msgstr "Пользовательская переменная"
-
-#: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:84
-msgid "Set based on filter"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:103
-#: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:95
-msgid "Filter Expression"
-msgstr "Фильтр выражения"
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:105
 msgid ""
@@ -4713,7 +4708,7 @@ msgid "Scheduled Downtimes"
 msgstr "Расписание времен простоя"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/SelfServiceDashlet.php:13
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:180
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:167
 msgid "Self Service API"
 msgstr ""
 
@@ -5108,6 +5103,22 @@ msgstr ""
 msgid "(Host) group resolve cache"
 msgstr "(Узел) кэш группового разрешения"
 
+#: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:78
+msgid "Suggested fields"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:82
+msgid "Argument macros"
+msgstr "Макрос аргумента"
+
+#: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:86
+msgid "Flags (boolean) arguments"
+msgstr ""
+
+#: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:90
+msgid "Other available fields"
+msgstr ""
+
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:20
 msgid "Up"
 msgstr "Вверх"
@@ -5462,7 +5473,7 @@ msgstr "Применить изменения"
 msgid "Run all rules at once"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Objects/DirectorDatafield.php:213
+#: sources.d/icingaweb2-module-director/library/Director/Objects/DirectorDatafield.php:204
 #, php-format
 msgid "Form element could not be created, %s is missing"
 msgstr ""
@@ -5768,7 +5779,7 @@ msgid ""
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMakeBoolean.php:42
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:35
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:34
 msgid "Set null"
 msgstr ""
 
@@ -5781,35 +5792,35 @@ msgid "Set false"
 msgstr ""
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMakeBoolean.php:45
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:38
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:37
 msgid "Let the import fail"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:21
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:20
 msgid "Please choose a data list that can be used for map lookups"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:30
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:29
 msgid ""
 "What should happen if the lookup key does not exist in the data list? You "
 "could return a null value, keep the unmodified imported value or interrupt "
 "the import process"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:36
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:35
 msgid "Return lookup key unmodified"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:37
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:36
 msgid "Return custom default value"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:46
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:45
 #, fuzzy
 msgid "Default value"
 msgstr "Глобальная зона по умолчанию"
 
-#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:49
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierMap.php:48
 msgid ""
 "This value will be evaluated, and variables like ${some_column} will be "
 "filled accordingly. A typical use-case is generating unique service "
@@ -6759,37 +6770,27 @@ msgstr "Icinga для Windows"
 msgid "In case you're using %s, please run this Script:"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:158
 #: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:164
-msgid "Icinga 2 Powershell Module"
-msgstr "Icinga 2 Модуль Powershell"
-
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:160
-#, php-format
-msgid "In case you're using the legacy %s, please run:"
-msgstr ""
-
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:177
 msgid "Documentation"
 msgstr "Документация"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:192
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:179
 msgid "Configure this Agent via Self Service API"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:195
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:182
 msgid "Inherited Template Api Key:"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:216
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:203
 msgid "Icinga 2 Client documentation"
 msgstr "Icinga 2 Клиентская документация"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:221
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:208
 msgid "Top Down"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:234
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:221
 #, php-format
 msgid ""
 "A ticket for this agent could not have been requested from your deployment "
@@ -6798,30 +6799,30 @@ msgstr ""
 "Ярлык для этого агента не мог быть запрошен из конечной точки развертывания: "
 "%s"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:245
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:232
 msgid "For manual configuration"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:246
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:233
 msgid "Ticket"
 msgstr "Задача"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:247
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:234
 msgid "Windows Kickstart Script"
 msgstr "Скрипт быстрого запуска Windows"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:256
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:243
 msgid ""
 "This requires the Icinga Agent to be installed. It generates and signs it's "
 "certificate and it also generates a minimal icinga2.conf to get your agent "
 "connected to it's parents"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:260
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:247
 msgid "Linux commandline"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:267
+#: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:255
 msgid "Just download and run this script on your Linux Client Machine:"
 msgstr ""
 
@@ -6905,15 +6906,15 @@ msgid "Category Name"
 msgstr "Название категории"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldCategoryTable.php:48
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:52
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:54
 msgid "# Used"
 msgstr "# Использовано"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:51
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:53
 msgid "Category"
 msgstr "Категория"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:53
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DatafieldTable.php:55
 msgid "# Vars"
 msgstr "# Переменные"
 
@@ -6974,17 +6975,17 @@ msgstr ""
 msgid "%s %s(%s)"
 msgstr "%s %s(%s)"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:216
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:229
 #, php-format
 msgid "This set has been inherited from %s"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:225
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:238
 #, fuzzy
 msgid "Remove"
 msgstr "Удалить"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:227
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:240
 #, php-format
 msgid "Remove \"%s\" from this host"
 msgstr ""
@@ -7003,7 +7004,7 @@ msgstr "Метка времени"
 msgid "Imported rows"
 msgstr ""
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:62
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:66
 #, php-format
 msgid "%s (%d members)"
 msgstr "%s (%d участников)"
@@ -7042,7 +7043,7 @@ msgstr ""
 msgid "Total"
 msgstr "Суммарно"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:103
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:104
 msgid "This template is not in use"
 msgstr "Этот шаблон не используется"
 
@@ -7517,6 +7518,12 @@ msgstr "объекты %s были изменены"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/SyncRunDetails.php:97
 msgid "Show all actions"
 msgstr ""
+
+#~ msgid "A description about the field"
+#~ msgstr "Описание этого поля"
+
+#~ msgid "Icinga 2 Powershell Module"
+#~ msgstr "Icinga 2 Модуль Powershell"
 
 #, fuzzy
 #~ msgid "Create a new Service Set"
