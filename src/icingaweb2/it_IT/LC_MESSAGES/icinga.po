@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-12 12:59+0000\n"
+"POT-Creation-Date: 2023-09-20 13:39+0000\n"
 "PO-Revision-Date: 2020-04-27 14:45+0200\n"
 "Last-Translator: Francesco Mazzi <fmazzi@comune.genova.it>\n"
 "Language-Team: \n"
@@ -24,7 +24,7 @@ msgstr ""
 #: sources.d/icingaweb2/application/controllers/AboutController.php:17
 #: sources.d/icingaweb2/application/controllers/AboutController.php:21
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:48
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:43
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:46
 msgid "About"
 msgstr "Info"
 
@@ -82,7 +82,7 @@ msgstr "Servizi"
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:17
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:31
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:63
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:51
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:58
 msgid "Announcements"
 msgstr "Annunci"
 
@@ -173,9 +173,10 @@ msgstr "Backend Gruppo Utenti"
 
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:127
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:139
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:87
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:84
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:110
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:80
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:87
 msgid "Modules"
 msgstr "Moduli"
 
@@ -374,16 +375,17 @@ msgstr "Rimouovi Dashboard"
 msgid "Dashboard"
 msgstr "Dashboard"
 
-#: sources.d/icingaweb2/application/controllers/ErrorController.php:64
+#: sources.d/icingaweb2/application/controllers/ErrorController.php:66
 msgid "Page not found."
 msgstr "Pagina non trovata."
 
-#: sources.d/icingaweb2/application/controllers/ErrorController.php:68
+#: sources.d/icingaweb2/application/controllers/ErrorController.php:70
 #, php-format
 msgid "Enabling the \"%s\" module might help!"
 msgstr "Abilitare il modulo \"%s\" potrebbe essere utile!"
 
-#: sources.d/icingaweb2/application/controllers/ErrorController.php:153
+#: sources.d/icingaweb2/application/controllers/ErrorController.php:171
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:123
 msgid "Error"
 msgstr "Errore"
 
@@ -442,6 +444,7 @@ msgstr "Gruppo \"%s\" non trovato"
 #: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:63
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:145
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:34
+#: sources.d/icingaweb2/application/forms/MigrationForm.php:70
 #: sources.d/icingaweb2/application/views/scripts/group/show.phtml:75
 #: sources.d/icingaweb2/application/views/scripts/user/list.phtml:51
 #: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:101
@@ -583,13 +586,13 @@ msgstr "Stato"
 
 #: sources.d/icingaweb2/application/controllers/HealthController.php:48
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:55
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:47
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:50
 msgid "Health"
 msgstr "Health"
 
 #: sources.d/icingaweb2/application/controllers/ListController.php:57
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:145
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:102
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:109
 msgid "Application Log"
 msgstr "Log Applicazione"
 
@@ -613,6 +616,82 @@ msgstr "Lista servizi"
 #, fuzzy
 msgid "Devices"
 msgstr "Servizi"
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:37
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:54
+#, fuzzy
+msgid "Migrations"
+msgstr "Scadenza"
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:49
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:164
+msgid "You do not have the required permission to apply pending migrations."
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:63
+msgid "Migrate All"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:64
+msgid "Migrate all pending migrations"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:82
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:244
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:37
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:43
+msgid "System"
+msgstr "Sistema"
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:112
+#: sources.d/icingaweb2/library/Icinga/Cli/Params.php:185
+#: sources.d/icingaweb2/library/Icinga/Cli/Params.php:287
+#: sources.d/icingaweb2/library/Icinga/Web/UrlParams.php:65
+#: sources.d/icingaweb2/library/Icinga/Web/UrlParams.php:160
+#, php-format
+msgid "Required parameter '%s' missing"
+msgstr "Parametro richiesto '%s' non trovato"
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:128
+#, fuzzy
+msgid "Error!"
+msgstr "Errore"
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:132
+#, php-format
+msgid "%s has pending migrations."
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:134
+msgid "Please apply the migrations first."
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:135
+msgid "View pending Migrations"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:145
+#, fuzzy
+msgid "Migration"
+msgstr "Scadenza"
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:204
+msgid "Applied all migrations successfully"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:208
+msgid ""
+"Applied migrations successfully. Though, one or more migration hooks failed "
+"to run. See logs for details"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:217
+msgid "Applied pending migrations successfully"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:220
+msgid "Failed to apply pending migration(s). See logs for details"
+msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:159
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:211
@@ -640,7 +719,7 @@ msgstr "Annulla condivisione per questo oggetto di navigazione"
 #: sources.d/icingaweb2/application/controllers/NavigationController.php:213
 #: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:19
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:102
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:75
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:82
 msgid "Shared Navigation"
 msgstr "Navigazione Condivisa"
 
@@ -1016,6 +1095,7 @@ msgstr "Accesso in corso"
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:155
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:42
 #: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:64
+#: sources.d/icingaweb2/application/forms/MigrationForm.php:78
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:115
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:106
 #: sources.d/icingaweb2/modules/setup/application/forms/AdminAccountPage.php:224
@@ -1698,8 +1778,8 @@ msgstr "La configurazione è stata convalidata correttamente."
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:296
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:282
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:95
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:383
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:399
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:389
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:405
 msgid "Validate Configuration"
 msgstr "Convalida Configurazione"
 
@@ -1708,8 +1788,8 @@ msgstr "Convalida Configurazione"
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:297
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:283
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:96
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:384
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:400
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:390
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:406
 msgid "Validation In Progress"
 msgstr "Convalida In Corso"
 
@@ -2331,6 +2411,47 @@ msgstr "Cerca nel Dominio"
 msgid "Search this domain for records of available servers."
 msgstr "Cerca in questo dominio i server disponibili."
 
+#: sources.d/icingaweb2/application/forms/MigrationForm.php:72
+#, fuzzy
+msgid "A user which is able to create and/or alter the database schema."
+msgstr ""
+"Un utente che abbia i permessi di creare database e/o modificarne lo schema"
+
+#: sources.d/icingaweb2/application/forms/MigrationForm.php:79
+#, fuzzy
+msgid "The password for the database user defined above."
+msgstr "Password per l'utente del database definito sopra"
+
+#: sources.d/icingaweb2/application/forms/MigrationForm.php:96
+#, fuzzy, php-format
+msgid ""
+"The provided credentials cannot be used to execute \"%s\" SQL commands and/"
+"or grant the missing privileges to other users."
+msgstr ""
+"Le credenziali fornite non possono essere utilizzate per assegnare "
+"all'utente \"%s\" tutti i privilegi necessari."
+
+#: sources.d/icingaweb2/application/forms/MigrationForm.php:116
+#, fuzzy
+msgid "Grant Missing Privileges"
+msgstr "Amministrazione"
+
+#: sources.d/icingaweb2/application/forms/MigrationForm.php:118
+msgid ""
+"Allows to automatically grant the required privileges to the database user "
+"specified in the respective resource config. If you do not want to provide "
+"additional credentials each time, you can enable this and Icinga Web will "
+"grant the active database user the missing privileges."
+msgstr ""
+
+#: sources.d/icingaweb2/application/forms/MigrationForm.php:131
+#, php-format
+msgid ""
+"It seems that the currently used database user does not have the required "
+"privileges to execute the %s SQL commands. Please provide an alternative "
+"user that has the appropriate credentials to resolve this issue."
+msgstr ""
+
 #: sources.d/icingaweb2/application/forms/Navigation/DashletForm.php:18
 msgid "Pane"
 msgstr "Pannello"
@@ -2529,12 +2650,6 @@ msgstr ""
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:240
 msgid "Light"
 msgstr ""
-
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:244
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:37
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:40
-msgid "System"
-msgstr "Sistema"
 
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:263
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:273
@@ -2805,26 +2920,31 @@ msgstr "Permetti di condividere oggetti di navigazione"
 msgid "Allow to manage user sessions"
 msgstr "Permetti rimozione commenti su host e servizi"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:589
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:586
+#, fuzzy
+msgid "Allow to apply pending application migrations"
+msgstr "Permetti di vedere l'application log"
+
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:592
 msgid "Restrict which users this role can share items and information with"
 msgstr ""
 "Limita gli utenti di questo ruolo con cui condividere oggetti e informazioni"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:592
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:595
 msgid "Restrict which groups this role can share items and information with"
 msgstr ""
 "Limita i gruppi di questo ruolo con cui condividere oggetti e informazioni"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:601
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:604
 msgid "General Module Access"
 msgstr ""
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:602
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:605
 #, php-format
 msgid "Allow access to module %s"
 msgstr "Permetti accesso al modulo %s"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:610
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:613
 msgid "Full Module Access"
 msgstr ""
 
@@ -2848,75 +2968,89 @@ msgstr "Salta al Contenuto"
 msgid "Toggle Menu"
 msgstr ""
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:18
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:21
 msgid "Icinga Web 2 Version"
 msgstr ""
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:24
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:27
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:40
 msgid "Git commit"
 msgstr "Commit Git"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:29
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:32
 #: sources.d/icingaweb2/modules/setup/library/Setup/Requirement/PhpVersionRequirement.php:15
 msgid "PHP Version"
 msgstr "PHP-Versione"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:34
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:37
 msgid "Git commit date"
 msgstr "Data commit Gid"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:46
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:49
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:52
 msgid "Get Icinga Support"
 msgstr ""
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:59
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:62
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:72
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:65
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:75
 msgid "Icinga Community"
 msgstr "Icinga Community"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:75
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:78
 msgid "Report a bug"
 msgstr "Segnala un bug"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:86
 #: sources.d/icingaweb2/application/views/scripts/about/index.phtml:89
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:92
 msgid "Icinga Documentation"
 msgstr "Documentazione Icinga"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:96
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:101
+#, fuzzy
+msgid "Pending Migrations"
+msgstr "Amministrazione"
+
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:116
+#, fuzzy
+msgid "Show all"
+msgstr "Mostra %s"
+
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:119
+msgid "Show all pending migrations"
+msgstr ""
+
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:124
 #, fuzzy
 msgid "Loaded Libraries"
 msgstr "Moduli caricati"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:110
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:138
 #, fuzzy
 msgid "Loaded Modules"
 msgstr "Moduli caricati"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:124
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:152
 #, fuzzy
 msgid "Configure"
 msgstr "Configurazione"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:127
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:155
 #: sources.d/icingaweb2/application/views/scripts/config/modules.phtml:34
 #, php-format
 msgid "Show the overview of the %s module"
 msgstr "Mostra i dettagli del modulo %s"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:138
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:166
 msgid "Copyright"
 msgstr "Copyright"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:157
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:185
 #: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:39
 msgid "Icinga on Twitter"
 msgstr "Icinga su Twitter"
 
-#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:166
+#: sources.d/icingaweb2/application/views/scripts/about/index.phtml:194
 #: sources.d/icingaweb2/application/views/scripts/authentication/login.phtml:51
 msgid "Icinga on Facebook"
 msgstr "Icinga su Facebook"
@@ -3647,6 +3781,11 @@ msgstr "Impossibile abilitare il modulo \"%s\". Si è verificato un errore:"
 msgid "This module has no description"
 msgstr "Questo modulo non ha descrizione"
 
+#: sources.d/icingaweb2/library/Icinga/Application/ProvidedHook/DbMigration.php:26
+#, fuzzy
+msgid "Icinga Web"
+msgstr "Info Icinga Web 2"
+
 #: sources.d/icingaweb2/library/Icinga/Authentication/AdmissionLoader.php:143
 msgid ""
 "Unable to parse authentication configuration. Check the log for more details."
@@ -3680,14 +3819,6 @@ msgstr "Grafico a Torta"
 #: sources.d/icingaweb2/library/Icinga/Chart/PieChart.php:56
 msgid "Contains data in a pie chart."
 msgstr "Contiene i dati in grafici a torta."
-
-#: sources.d/icingaweb2/library/Icinga/Cli/Params.php:185
-#: sources.d/icingaweb2/library/Icinga/Cli/Params.php:287
-#: sources.d/icingaweb2/library/Icinga/Web/UrlParams.php:65
-#: sources.d/icingaweb2/library/Icinga/Web/UrlParams.php:160
-#, php-format
-msgid "Required parameter '%s' missing"
-msgstr "Parametro richiesto '%s' non trovato"
 
 #: sources.d/icingaweb2/library/Icinga/Common/PdfExport.php:59
 #, fuzzy
@@ -3936,13 +4067,13 @@ msgid "List announcements"
 msgstr ""
 
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:70
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:55
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:62
 #, fuzzy
 msgid "User Sessions"
 msgstr "Stati Host"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:79
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:62
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:69
 msgid "Configuration"
 msgstr "Configurazione"
 
@@ -3951,7 +4082,7 @@ msgid "Open application configuration"
 msgstr ""
 
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:87
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:66
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:73
 msgid "Application"
 msgstr "Applicazione"
 
@@ -3961,7 +4092,7 @@ msgid "Open access control configuration"
 msgstr "Mostra la configurazione della risorsa"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:94
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:70
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:77
 msgid "Access Control"
 msgstr ""
 
@@ -3982,7 +4113,7 @@ msgid "Log out"
 msgstr "Uscita in corso"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:133
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:89
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:96
 msgid "Logout"
 msgstr "Esci"
 
@@ -4185,6 +4316,49 @@ msgstr "Filtra questa lista"
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:748
 msgid "Modify this filter"
 msgstr "Modifica filtro"
+
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/ItemList/MigrationFileListItem.php:55
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/ItemList/MigrationListItem.php:97
+msgid "Upgrade failed"
+msgstr ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/ItemList/MigrationFileListItem.php:71
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/ItemList/MigrationListItem.php:78
+msgid "No description provided."
+msgstr ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/ItemList/MigrationList.php:95
+msgid "Migrate"
+msgstr ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/ItemList/MigrationList.php:98
+#, php-format
+msgid "Migrate %d pending migration"
+msgid_plural "Migrate all %d pending migrations"
+msgstr[0] ""
+msgstr[1] ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/ItemList/MigrationList.php:114
+msgid ""
+"Please apply all the pending migrations of Icinga Web first or use the apply "
+"all button instead."
+msgstr ""
+
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/ItemList/MigrationList.php:130
+#, fuzzy
+msgid "No items found."
+msgstr "Nessun ruolo trovato."
+
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/ItemList/MigrationListItem.php:53
+#, fuzzy, php-format
+msgctxt "<name>"
+msgid "%s "
+msgstr "%s fa"
+
+#: sources.d/icingaweb2/library/Icinga/Web/Widget/ItemList/MigrationListItem.php:124
+#, fuzzy, php-format
+msgid "Show all %d migrations"
+msgstr "Navigazione Condivisa"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SearchDashboard.php:32
 msgctxt "dashboard.pane.tooltip"
@@ -8922,7 +9096,7 @@ msgid "The given resource name is already in use."
 msgstr "Il nome risorsa fornito è già in uso."
 
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:82
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:358
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:364
 msgctxt "setup.welcome.btn.next"
 msgid "Start"
 msgstr ""
@@ -10276,14 +10450,14 @@ msgstr ""
 msgid "Invalid token supplied."
 msgstr "Token non valido."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:175
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:181
 msgid ""
 "Now please configure the database resource where to store users and user "
 "groups."
 msgstr "Configura la risorsa database dove salvare utenti e gruppi di utenti."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:179
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:216
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:185
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:222
 msgid ""
 "Note that the database itself does not need to exist at this time as it is "
 "going to be created once the wizard is about to be finished."
@@ -10291,29 +10465,29 @@ msgstr ""
 "Attenzione: non è necessario che il database esista già, verrà creato alla "
 "fine dell'installazione guidata."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:212
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:218
 msgid ""
 "Now please configure the database resource where to store user preferences."
 msgstr "Configura la risorsa database dove salvare le preferenze degli utenti."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:223
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:229
 msgid ""
 "The given resource name must be unique and is already in use by the LDAP "
 "resource"
 msgstr ""
 "Il nome della risorsa deve essere univoco ed è già in uso dalla risorsa LDAP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:362
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:368
 msgctxt "setup.summary.btn.finish"
 msgid "Setup Icinga Web 2"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:583
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:589
 #, fuzzy, php-format
 msgid "Running Icinga Web 2 requires PHP version %s."
 msgstr "Icinga Web 2 richiede PHP 5.6."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:592
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:598
 msgid ""
 "Icinga Web 2 is developed for and tested on Linux. While we cannot guarantee "
 "they will, other platforms may also perform as well."
@@ -10321,16 +10495,16 @@ msgstr ""
 "Icinga Web 2 è stato sviluppato e testato per Linux, questo non esclude la "
 "compatibilità con altri sistemi operativi."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:602
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:608
 msgid "The Icinga PHP library (IPL) is required for Icinga Web 2 and modules"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:611
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:617
 msgid ""
 "The Icinga PHP Thirdparty library is required for Icinga Web 2 and modules"
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:619
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:625
 msgid ""
 "The PHP module for OpenSSL is required to generate cryptographically safe "
 "password salts."
@@ -10338,7 +10512,7 @@ msgstr ""
 "Per poter generare password crittograficamente sicure, è necessario "
 "installare il modulo OpenSSL per PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:627
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:633
 #, fuzzy
 msgid ""
 "The XML module for PHP is required for Markdown and custom HTML annotations."
@@ -10346,7 +10520,7 @@ msgstr ""
 "Per utilizzare le funzionalità di esportazione e le API, è necessario "
 "installare il modulo JSON per PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:635
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:641
 msgid ""
 "The JSON module for PHP is required for various export functionalities as "
 "well as APIs."
@@ -10354,14 +10528,14 @@ msgstr ""
 "Per utilizzare le funzionalità di esportazione e le API, è necessario "
 "installare il modulo JSON per PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:643
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:649
 #, fuzzy
 msgid "For message localization, the gettext module for PHP is required."
 msgstr ""
 "Se vuoi poter esportare viste e report in PDF, è necessario installare il "
 "modulo DOM per PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:651
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:657
 #, fuzzy
 msgid ""
 "For language, timezone and date/time format negotiation, the INTL module for "
@@ -10370,7 +10544,7 @@ msgstr ""
 "Se vuoi che gli utenti possano scegliere lingua, fuso orario e formato della "
 "data, è necessario installare il modulo INTL per PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:659
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:665
 #, fuzzy
 msgid ""
 "For charts and exports of views and reports to PDF, the DOM module for PHP "
@@ -10379,7 +10553,7 @@ msgstr ""
 "Se vuoi poter esportare viste e report in PDF, è necessario installare il "
 "modulo DOM per PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:668
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:674
 msgid ""
 "If you'd like to authenticate users using LDAP the corresponding PHP module "
 "is required."
@@ -10387,7 +10561,7 @@ msgstr ""
 "Se vuoi che gli utenti accedano tramite LDAP, è necessario installare il "
 "modulo corrispondente per PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:677
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:683
 #, fuzzy
 msgid ""
 "In case you want views being exported to PDF, you'll need the mbstring "
@@ -10396,7 +10570,7 @@ msgstr ""
 "Se vuoi esportare i tuoi ricerche in PDF, è necessario installare "
 "l'estensione GD per PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:686
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:692
 msgid ""
 "In case you want views being exported to PDF, you'll need the GD extension "
 "for PHP."
@@ -10404,7 +10578,7 @@ msgstr ""
 "Se vuoi esportare i tuoi ricerche in PDF, è necessario installare "
 "l'estensione GD per PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:695
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:701
 msgid ""
 "In case you want graphs being exported to PDF as well, you'll need the "
 "ImageMagick extension for PHP."
@@ -10412,7 +10586,7 @@ msgstr ""
 "Se vuoi esportare anche i tuoi grafici in PDF, è necessario installare "
 "l'estensione ImageMagick per PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:706
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:712
 msgid ""
 "To store users or preferences in a MySQL database the PDO-MySQL module for "
 "PHP is required."
@@ -10420,7 +10594,7 @@ msgstr ""
 "Se vuoi salvare le preferenze degli utenti in un database MySQL, è "
 "necessario installare il modulo PDO-MySQL per PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:715
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:721
 msgid ""
 "To store users or preferences in a PostgreSQL database the PDO-PostgreSQL "
 "module for PHP is required."
@@ -10428,18 +10602,18 @@ msgstr ""
 "Se vuoi salvare le preferenze degli utenti in un database PostgreSQL, è "
 "necessario installare il modulo PDO-PostgreSQL per PHP."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:727
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:733
 msgid ""
 "A database is mandatory, therefore at least one module PDO-MySQL or PDO-"
 "PostgreSQL for PHP is required."
 msgstr ""
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:736
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:742
 #, fuzzy
 msgid "Read- and writable storage directory"
 msgstr "Cartella di configurazione in lettura e scrittura."
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:739
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:745
 #, fuzzy
 msgid ""
 "The Icinga Web 2 storage directory defaults to \"/var/lib/icingaweb2\", if "
@@ -10449,7 +10623,7 @@ msgstr ""
 "cartella di configurazione predefinita di Icinga Web 2 è \"/etc/"
 "icingaweb2\". "
 
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:748
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:754
 msgid ""
 "The Icinga Web 2 configuration directory defaults to \"/etc/icingaweb2\", if "
 "not explicitly set in the environment variable \"ICINGAWEB_CONFIGDIR\"."
