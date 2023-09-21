@@ -4,13 +4,13 @@
 #
 # Contributors:
 # Thomas Gelf <thomas.gelf@icinga.com>, 2014.
-# Carlos Cesario <carloscesario@gmail.com>, 2014, 2020.
+# Carlos Cesario <carloscesario@gmail.com>, 2020, 2014.
 msgid ""
 msgstr ""
-"Project-Id-Version: v1.1.0-191-g2890ee7c\n"
+"Project-Id-Version: v1.2.0-248-g67d908f6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-15 09:37+0000\n"
-"PO-Revision-Date: 2022-07-15 14:29:+0200\n"
+"POT-Creation-Date: 2023-09-20 13:39+0000\n"
+"PO-Revision-Date: 2023-09-21 14:59:+0200\n"
 "Last-Translator: Carlos Cesario <carloscesario@gmail.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -19,19 +19,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: sources.d/icingaweb2-module-cube/configuration.php:4
-#: sources.d/icingaweb2-module-reporting/configuration.php:17
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:287
-msgid "Reporting"
-msgstr "Relatórios"
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/AlarmsController.php:81
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/DatastoreController.php:107
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/EventsController.php:110
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:151
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:123
+#: sources.d/icingaweb2-module-elasticsearch/application/controllers/EventsController.php:35
+#: sources.d/icingaweb2-module-elasticsearch/application/controllers/EventsController.php:43
+msgid "Events"
+msgstr "Eventos"
 
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:14
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:39
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:49
+#: sources.d/icingaweb2-module-vspheredb/configuration.php:41
+#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:63
+#: sources.d/icingaweb2-module-director/library/Director/Web/Widget/DeploymentInfo.php:83
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:79
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:69
+#: sources.d/icingaweb2-module-jira/configuration.php:15
+#: sources.d/icingaweb2-module-jira/configuration.php:16
+#: sources.d/icingaweb2-module-audit/configuration.php:9
+msgid "Configuration"
+msgstr "Configuração"
+
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostsController.php:19
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostsController.php:33
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:52
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/OverviewController.php:24
+#: sources.d/icingaweb2-module-vspheredb/configuration.php:25
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Controller/ObjectsController.php:203
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/HostSummaryTable.php:103
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/SwitchesTable.php:28
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VCenterSummaryTable.php:114
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:100
-#: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:89
+#: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:90
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:89
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:697
-#: sources.d/icingaweb2-module-director/configuration.php:153
-#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/HostsDashlet.php:11
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:715
+#: sources.d/icingaweb2-module-director/configuration.php:121
+#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/HostsDashlet.php:13
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDictionary.php:59
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDirectorObject.php:56
 #: sources.d/icingaweb2-module-director/library/Director/Db/Branch/BranchModificationInspection.php:38
@@ -45,92 +70,323 @@ msgstr "Relatórios"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostsController.php:71
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:51
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:98
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:39
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:36
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/hostservicechecks.phtml:9
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:118
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:197
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:203
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:268
 #: sources.d/icingaweb2-module-graphite/application/controllers/HostsController.php:37
 #: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:54
 #: sources.d/icingaweb2-module-graphite/configuration.php:12
 #: sources.d/icingaweb2-module-graphite/configuration.php:15
-#: sources.d/icingadb-web/application/controllers/HostgroupController.php:73
-#: sources.d/icingadb-web/application/controllers/HostsController.php:36
-#: sources.d/icingadb-web/application/controllers/HostsController.php:136
-#: sources.d/icingadb-web/configuration.php:151
-#: sources.d/icingadb-web/configuration.php:323
-#: sources.d/icingadb-web/configuration.php:443
-#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:68
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostsController.php:19
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostsController.php:29
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:34
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/OverviewController.php:24
-#: sources.d/icingaweb2-module-vspheredb/configuration.php:17
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Controller/ObjectsController.php:150
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/HostSummaryTable.php:103
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/SwitchesTable.php:28
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VCenterSummaryTable.php:112
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:289
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:190
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:287
+#: sources.d/icingadb-web/application/controllers/HostgroupController.php:69
+#: sources.d/icingadb-web/application/controllers/HostsController.php:35
+#: sources.d/icingadb-web/application/controllers/HostsController.php:137
+#: sources.d/icingadb-web/configuration.php:154
+#: sources.d/icingadb-web/configuration.php:331
+#: sources.d/icingadb-web/configuration.php:450
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:70
 msgid "Hosts"
 msgstr "Hosts"
 
-#: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:18
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:274
-#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:295
-#: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:101
-#: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:90
-#: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:90
-#: sources.d/icingaweb2-module-director/configuration.php:157
-#: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDictionary.php:60
-#: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDirectorObject.php:59
-#: sources.d/icingaweb2-module-director/library/Director/Db/Branch/BranchModificationInspection.php:40
-#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:23
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarTable.php:44
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarVariantsTable.php:59
-#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectTabs.php:75
-#: sources.d/icingaweb2/application/views/scripts/pivottablePagination.phtml:35
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:123
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:46
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:69
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:77
-#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:97
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:44
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/hostservicechecks.phtml:10
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:119
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:203
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:271
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:249
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:287
-#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:112
-#: sources.d/icingaweb2-module-graphite/application/controllers/ServicesController.php:35
-#: sources.d/icingaweb2-module-graphite/configuration.php:13
-#: sources.d/icingaweb2-module-graphite/configuration.php:16
-#: sources.d/icingadb-web/application/controllers/HostController.php:241
-#: sources.d/icingadb-web/application/controllers/ServicegroupController.php:79
-#: sources.d/icingadb-web/application/controllers/ServicesController.php:39
-#: sources.d/icingadb-web/application/controllers/ServicesController.php:146
-#: sources.d/icingadb-web/configuration.php:156
-#: sources.d/icingadb-web/configuration.php:329
-#: sources.d/icingadb-web/configuration.php:450
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostDetail.php:34
-#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:70
-msgid "Services"
-msgstr "Serviços"
+#: sources.d/icingaweb2-module-vspheredb/application/controllers/MonitoringController.php:44
+#: sources.d/icingaweb2-module-vspheredb/configuration.php:37
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsGuestDiskUsageTable.php:60
+#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ImportsourceTabs.php:45
+#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectTabs.php:92
+#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/SyncRuleTabs.php:43
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:255
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:290
+#: sources.d/icingadb-web/application/controllers/HistoryController.php:22
+#: sources.d/icingadb-web/application/controllers/HostController.php:250
+#: sources.d/icingadb-web/application/controllers/ServiceController.php:199
+#: sources.d/icingadb-web/configuration.php:408
+#: sources.d/icingadb-web/configuration.php:533
+msgid "History"
+msgstr "Histórico"
 
-#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:54
-#: sources.d/icingaweb2-module-director/application/controllers/DataController.php:165
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:95
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:624
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:648
-#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:21
 #: sources.d/icingaweb2-module-vspheredb/application/controllers/VcenterController.php:62
 #: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/FormElementStealer.php:47
+#: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:52
+#: sources.d/icingaweb2-module-director/application/controllers/DataController.php:165
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:96
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:625
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:649
+#: sources.d/icingaweb2/modules/setup/application/views/scripts/index/parts/finish.phtml:21
 msgid "Back"
 msgstr "Voltar"
 
-#: sources.d/icingaweb2-module-director/application/controllers/BranchController.php:48
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseInfluxDatabaseForm.php:139
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseInfluxDatabaseForm.php:147
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/ConfigTabs.php:54
+#: sources.d/icingaweb2-module-reporting/application/forms/SelectBackendForm.php:29
+#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:272
+#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:190
+#: sources.d/icingaweb2/modules/setup/application/forms/AuthenticationPage.php:50
+#: sources.d/icingaweb2-module-x509/application/forms/Config/BackendConfigForm.php:23
+#: sources.d/icingadb-web/application/forms/DatabaseConfigForm.php:23
+#: sources.d/icingadb-web/configuration.php:542
+#: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:74
+msgid "Database"
+msgstr "Banco de dados"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/FormElementStealer.php:68
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:68
+#: sources.d/icingaweb2-module-director/application/forms/IcingaAddServiceForm.php:36
+#: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:33
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:613
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:637
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:147
+msgid "Next"
+msgstr "Próximo"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/InfluxDbConnectionForm.php:195
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:101
+#: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:28
+#: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceRestApi.php:226
+#: sources.d/icingaweb2-module-director/library/Director/Web/Widget/BackgroundDaemonDetails.php:74
+#: sources.d/icingaweb2/application/controllers/GroupController.php:116
+#: sources.d/icingaweb2/application/controllers/UserController.php:80
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:63
+#: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:145
+#: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:34
+#: sources.d/icingaweb2/application/forms/MigrationForm.php:70
+#: sources.d/icingaweb2/application/views/scripts/group/show.phtml:75
+#: sources.d/icingaweb2/application/views/scripts/user/list.phtml:51
+#: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:101
+#: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:104
+#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:269
+#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:117
+#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:121
+#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:571
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:111
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:102
+#: sources.d/icingaweb2/modules/setup/application/forms/AdminAccountPage.php:159
+#: sources.d/icingaweb2/modules/setup/application/forms/AdminAccountPage.php:191
+#: sources.d/icingaweb2/modules/setup/application/forms/AdminAccountPage.php:212
+#: sources.d/icingaweb2/modules/setup/application/forms/DatabaseCreationPage.php:100
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:87
+#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:65
+#: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:78
+msgid "Username"
+msgstr "Nome do usuario"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/InfluxDbConnectionForm.php:198
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:110
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:115
+#: sources.d/icingaweb2-module-director/application/forms/IcingaApiUserForm.php:19
+#: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:163
+#: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceRestApi.php:233
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:73
+#: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:155
+#: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:42
+#: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:64
+#: sources.d/icingaweb2/application/forms/MigrationForm.php:78
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:115
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:106
+#: sources.d/icingaweb2/modules/setup/application/forms/AdminAccountPage.php:224
+#: sources.d/icingaweb2/modules/setup/application/forms/DatabaseCreationPage.php:111
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:91
+#: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:99
+#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:69
+#: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:82
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:123
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:143
+msgid "Password"
+msgstr "Senha"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:85
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:101
+#: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:41
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaHostsMatchingFilterTable.php:48
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetHostTable.php:38
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:91
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:174
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:709
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:46
+#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:35
+#: sources.d/icingaweb2-module-graphite/application/controllers/HostsController.php:48
+#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:73
+#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:139
+#: sources.d/icingaweb2-module-graphite/application/controllers/ServicesController.php:50
+msgid "Hostname"
+msgstr "Nome do host"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:87
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:92
+msgid "Address"
+msgstr "Endereço"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/PerfdataConsumerForm.php:39
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterForm.php:27
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VCenterInfoTable.php:26
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/DatastoreTable.php:20
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/ObjectsTable.php:83
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/StoragePodTable.php:18
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:294
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/PerfDataConsumerTable.php:20
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/PerformanceCounterTable.php:45
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmsWithDuplicateProperty.php:40
+#: sources.d/icingaweb2-module-director/application/forms/IcingaAddServiceForm.php:144
+#: sources.d/icingaweb2-module-director/application/forms/IcingaApiUserForm.php:14
+#: sources.d/icingaweb2-module-director/application/forms/IcingaCommandForm.php:46
+#: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:74
+#: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:40
+#: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:22
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceDictionaryMemberForm.php:22
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:579
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceVarForm.php:22
+#: sources.d/icingaweb2-module-director/application/forms/IcingaTimePeriodForm.php:15
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ChoicesTable.php:41
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiFieldsTable.php:79
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiObjectsTable.php:57
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiPrototypesTable.php:40
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:50
+#: sources.d/icingaweb2/application/controllers/DashboardController.php:209
+#: sources.d/icingaweb2/application/controllers/HealthController.php:23
+#: sources.d/icingaweb2/application/controllers/HealthController.php:33
+#: sources.d/icingaweb2/application/controllers/RoleController.php:66
+#: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:575
+#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:19
+#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:28
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:327
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:20
+#: sources.d/icingaweb2-module-x509/application/controllers/JobController.php:120
+#: sources.d/icingaweb2-module-x509/application/controllers/JobsController.php:35
+#: sources.d/icingaweb2-module-x509/application/forms/Jobs/JobConfigForm.php:56
+#: sources.d/icingaweb2-module-x509/application/forms/Jobs/ScheduleForm.php:91
+#: sources.d/icingaweb2-module-x509/library/X509/Widget/JobDetails.php:50
+#: sources.d/icingaweb2-module-x509/library/X509/Widget/Jobs.php:44
+#: sources.d/icingaweb2-module-x509/library/X509/Widget/Schedules.php:53
+#: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/eventtypes/index.phtml:29
+#: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/instances/index.phtml:44
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:147
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:37
+#: sources.d/icingadb-web/application/controllers/HostController.php:212
+#: sources.d/icingadb-web/application/controllers/HostgroupsController.php:63
+#: sources.d/icingadb-web/application/controllers/HostsController.php:56
+#: sources.d/icingadb-web/application/controllers/ServicegroupsController.php:51
+#: sources.d/icingadb-web/application/controllers/ServicesController.php:66
+#: sources.d/icingadb-web/application/controllers/UsergroupsController.php:38
+#: sources.d/icingadb-web/application/controllers/UsersController.php:38
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:92
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:67
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UsergroupDetail.php:42
+msgid "Name"
+msgstr "Nome"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/ControlSocketConnectionsTable.php:68
+#: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:17
+#: sources.d/icingaweb2-module-director/library/Director/TranslationDummy.php:17
+#: sources.d/icingaweb2/application/controllers/UserController.php:313
+#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:45
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:440
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/RemoteTransportForm.php:163
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:43
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:40
+#: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:90
+#: sources.d/icingadb-web/application/controllers/UserController.php:23
+msgid "User"
+msgstr "Usuário"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Dependency/DependencyInfoTable.php:57
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/Dependency/DependencyInfoTable.php:57
+#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:101
+msgid "disabled"
+msgstr "desabilitado"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmExtraInfoTable.php:45
+#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:35
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:36
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:51
+#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:69
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:66
+msgid "Version"
+msgstr "Versão"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/NetworkAdaptersTable.php:54
+#: sources.d/icingaweb2-module-director/application/forms/IcingaEndpointForm.php:36
+#: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:145
+#: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:125
+#: sources.d/icingaweb2/application/forms/Config/Resource/LdapResourceForm.php:60
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/ApiTransportForm.php:41
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/RemoteTransportForm.php:150
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:103
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:98
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:79
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:161
+#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:48
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:48
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Target.php:49
+#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:49
+#: sources.d/icingadb-web/application/forms/ApiTransportForm.php:40
+#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:50
+#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:61
+#: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:70
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:119
+#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:139
+msgid "Port"
+msgstr "Porta"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VsphereApiConnectionTable.php:12
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiFieldsTable.php:84
+#: sources.d/icingaweb2/application/controllers/HealthController.php:24
+#: sources.d/icingaweb2/application/controllers/HealthController.php:34
+#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:23
+#: sources.d/icingaweb2/application/views/scripts/user/show.phtml:32
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:515
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:533
+#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:111
+#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:130
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:29
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:28
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:29
+#: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:148
+#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:54
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:141
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:258
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:105
+msgid "State"
+msgstr "Estado"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:32
+#: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:56
+#: sources.d/icingaweb2-module-director/library/Director/Web/Widget/DeploymentInfo.php:84
+#: sources.d/icingaweb2-module-director/library/Director/Web/Widget/SyncRunDetails.php:29
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:253
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:53
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:135
+#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:46
+#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:62
+#: sources.d/icingaweb2-module-x509/library/X509/Model/X509Certificate.php:76
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:52
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:180
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:363
+msgid "Duration"
+msgstr "Duração"
+
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:33
+#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/VRangerBackupRunDetails.php:24
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiFieldsTable.php:80
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableEndpoint.php:22
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:159
+#: sources.d/icingaweb2/application/controllers/NavigationController.php:211
+#: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:639
+#: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:30
+#: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:20
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:78
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:133
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:25
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:86
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:140
+msgid "Type"
+msgstr "Tipo"
+
+#: sources.d/icingaweb2-module-director/application/controllers/BranchController.php:59
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:31
-#: sources.d/icingaweb2-module-director/library/Director/Web/Widget/ActivityLogInfo.php:501
+#: sources.d/icingaweb2-module-director/library/Director/Web/Widget/ActivityLogInfo.php:506
 #: sources.d/icingaweb2/application/controllers/AnnouncementsController.php:47
 #: sources.d/icingaweb2/application/views/scripts/announcements/index.phtml:33
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:407
@@ -138,67 +394,113 @@ msgstr "Voltar"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:248
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:42
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:39
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:49
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:50
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:61
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:301
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:367
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:466
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:46
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:47
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:65
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:337
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:415
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:525
 msgid "Author"
 msgstr "Autor"
 
-#: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:240
+#: sources.d/icingaweb2-module-director/application/controllers/ConfigController.php:241
 #: sources.d/icingaweb2-module-director/library/Director/Web/SelfService.php:97
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/Tabextension/DashboardSettings.php:34
 msgid "Settings"
 msgstr "Configurações"
 
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:284
+#: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:305
+#: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:101
+#: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:91
+#: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:90
+#: sources.d/icingaweb2-module-director/configuration.php:125
+#: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDictionary.php:60
+#: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDirectorObject.php:59
+#: sources.d/icingaweb2-module-director/library/Director/Db/Branch/BranchModificationInspection.php:40
+#: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:23
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarTable.php:44
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarVariantsTable.php:59
+#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectTabs.php:74
+#: sources.d/icingaweb2/application/views/scripts/pivottablePagination.phtml:35
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:123
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:46
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:69
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/ServicesController.php:77
+#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:97
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:41
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/hostservicechecks.phtml:10
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:119
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:203
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:273
+#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:112
+#: sources.d/icingaweb2-module-graphite/application/controllers/ServicesController.php:35
+#: sources.d/icingaweb2-module-graphite/configuration.php:13
+#: sources.d/icingaweb2-module-graphite/configuration.php:16
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/Controller.php:293
+#: sources.d/icingaweb2-module-cube/library/Cube/Web/IdoController.php:194
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:317
+#: sources.d/icingadb-web/application/controllers/HostController.php:246
+#: sources.d/icingadb-web/application/controllers/ServicegroupController.php:76
+#: sources.d/icingadb-web/application/controllers/ServicesController.php:39
+#: sources.d/icingadb-web/application/controllers/ServicesController.php:148
+#: sources.d/icingadb-web/configuration.php:164
+#: sources.d/icingadb-web/configuration.php:337
+#: sources.d/icingadb-web/configuration.php:457
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/HostDetail.php:34
+#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:73
+msgid "Services"
+msgstr "Serviços"
+
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:20
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:13
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hostgroups.phtml:31
-#: sources.d/icingadb-web/application/controllers/HostgroupController.php:27
+#: sources.d/icingadb-web/application/controllers/HostgroupController.php:26
 msgid "Host Group"
 msgstr "Grupos de hosts"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:23
-#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/ServiceGroupsDashlet.php:11
+#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/ServiceGroupsDashlet.php:13
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:473
 #: sources.d/icingadb-web/application/controllers/ServicegroupsController.php:30
-#: sources.d/icingadb-web/configuration.php:354
-#: sources.d/icingadb-web/configuration.php:484
+#: sources.d/icingadb-web/configuration.php:361
+#: sources.d/icingadb-web/configuration.php:489
 msgid "Service Groups"
 msgstr "Grupos de serviços"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:29
-#: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:131
+#: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:126
+#: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:132
+#: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:163
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDirectorObject.php:62
-#: sources.d/icingaweb2-module-director/library/Director/Db/Branch/BranchModificationInspection.php:42
+#: sources.d/icingaweb2-module-director/library/Director/Db/Branch/BranchModificationInspection.php:43
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceCoreApi.php:62
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarTable.php:47
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarVariantsTable.php:62
 #: sources.d/icingaweb2/application/controllers/GroupController.php:401
 #: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:35
 #: sources.d/icingaweb2/application/controllers/RoleController.php:67
-#: sources.d/icingaweb2/application/controllers/RoleController.php:294
-#: sources.d/icingaweb2/application/controllers/RoleController.php:380
+#: sources.d/icingaweb2/application/controllers/RoleController.php:287
+#: sources.d/icingaweb2/application/controllers/RoleController.php:373
 #: sources.d/icingaweb2/application/controllers/UserController.php:26
 #: sources.d/icingaweb2/application/controllers/UserController.php:356
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/AddMemberForm.php:118
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:605
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:86
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:91
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:29
 #: sources.d/icingadb-web/application/controllers/UsersController.php:27
-#: sources.d/icingadb-web/configuration.php:372
-#: sources.d/icingadb-web/configuration.php:502
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:376
+#: sources.d/icingadb-web/configuration.php:379
+#: sources.d/icingadb-web/configuration.php:507
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:387
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UsergroupDetail.php:76
 msgid "Users"
 msgstr "Usuários"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:31
-#: sources.d/icingaweb2-module-director/configuration.php:165
-#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/NotificationApplyDashlet.php:13
-#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/NotificationsDashlet.php:13
+#: sources.d/icingaweb2-module-director/configuration.php:133
+#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/NotificationApplyDashlet.php:15
+#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/NotificationsDashlet.php:15
+#: sources.d/icingaweb2-module-director/library/Director/Db/Branch/BranchModificationInspection.php:46
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarTable.php:46
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarVariantsTable.php:61
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:273
@@ -221,188 +523,58 @@ msgstr "Usuários"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:129
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:131
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:271
-#: sources.d/icingadb-web/application/controllers/NotificationsController.php:23
-#: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:42
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:45
-#: sources.d/icingadb-web/configuration.php:405
-#: sources.d/icingadb-web/configuration.php:522
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:374
+#: sources.d/icingadb-web/application/controllers/NotificationsController.php:24
+#: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:39
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:43
+#: sources.d/icingadb-web/configuration.php:412
+#: sources.d/icingadb-web/configuration.php:527
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:385
 msgid "Notifications"
 msgstr "Notificações"
 
 #: sources.d/icingaweb2-module-director/application/forms/BasketForm.php:33
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/DependencyObjectDashlet.php:13
+#: sources.d/icingaweb2-module-director/library/Director/Db/Branch/BranchModificationInspection.php:47
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:52
 msgid "Dependencies"
 msgstr "Dependências"
 
 #: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldCategoryForm.php:31
-#: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:159
+#: sources.d/icingaweb2-module-director/application/forms/DirectorDatafieldForm.php:158
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandArgumentForm.php:31
-#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:133
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceSetForm.php:100
+#: sources.d/icingaweb2-module-director/application/forms/IcingaObjectFieldForm.php:94
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceSetForm.php:103
 #: sources.d/icingaweb2-module-director/application/forms/IcingaTemplateChoiceForm.php:56
 #: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:52
 #: sources.d/icingaweb2-module-director/application/forms/ImportSourceForm.php:24
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:36
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:94
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:45
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:47
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:121
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:54
 msgid "Description"
 msgstr "Descrição"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaAddServiceForm.php:35
-#: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:31
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:612
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:636
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:76
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:231
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:367
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:377
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:400
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:142
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:79
-#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:214
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/FormElementStealer.php:68
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:67
-msgid "Next"
-msgstr "Próximo"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaAddServiceForm.php:143
-#: sources.d/icingaweb2-module-director/application/forms/IcingaApiUserForm.php:14
-#: sources.d/icingaweb2-module-director/application/forms/IcingaCommandForm.php:47
-#: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:74
-#: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:38
-#: sources.d/icingaweb2-module-director/application/forms/IcingaHostVarForm.php:22
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceDictionaryMemberForm.php:22
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:561
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceVarForm.php:22
-#: sources.d/icingaweb2-module-director/application/forms/IcingaTimePeriodForm.php:15
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ChoicesTable.php:41
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiFieldsTable.php:79
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiObjectsTable.php:57
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiPrototypesTable.php:40
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectSetTable.php:42
-#: sources.d/icingaweb2/application/controllers/DashboardController.php:209
-#: sources.d/icingaweb2/application/controllers/HealthController.php:23
-#: sources.d/icingaweb2/application/controllers/HealthController.php:33
-#: sources.d/icingaweb2/application/controllers/RoleController.php:66
-#: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:575
-#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:19
-#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:28
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:327
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:20
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:39
-#: sources.d/icingaweb2-module-x509/application/forms/Config/JobConfigForm.php:22
-#: sources.d/icingaweb2-module-x509/application/views/scripts/jobs/index.phtml:24
-#: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/eventtypes/index.phtml:29
-#: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/instances/index.phtml:44
-#: sources.d/icingadb-web/application/controllers/HostController.php:207
-#: sources.d/icingadb-web/application/controllers/HostgroupsController.php:44
-#: sources.d/icingadb-web/application/controllers/HostsController.php:57
-#: sources.d/icingadb-web/application/controllers/ServicegroupsController.php:44
-#: sources.d/icingadb-web/application/controllers/ServicesController.php:66
-#: sources.d/icingadb-web/application/controllers/UsergroupsController.php:40
-#: sources.d/icingadb-web/application/controllers/UsersController.php:40
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:83
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:67
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UsergroupDetail.php:42
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/PerfdataConsumerForm.php:39
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterForm.php:27
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VCenterInfoTable.php:26
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/DatastoreTable.php:18
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/ObjectsTable.php:58
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/StoragePodTable.php:17
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsTable.php:239
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/PerfDataConsumerTable.php:20
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/PerformanceCounterTable.php:45
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VmsWithDuplicateProperty.php:39
-msgid "Name"
-msgstr "Nome"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaApiUserForm.php:19
-#: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:163
-#: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceRestApi.php:233
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:72
-#: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:155
-#: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:42
-#: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:64
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:113
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:106
-#: sources.d/icingaweb2/modules/setup/application/forms/AdminAccountPage.php:221
-#: sources.d/icingaweb2/modules/setup/application/forms/DatabaseCreationPage.php:111
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:90
-#: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:99
-#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:69
-#: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:82
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:123
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:143
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/InfluxDbConnectionForm.php:198
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:110
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:115
-msgid "Password"
-msgstr "Senha"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaCommandForm.php:59
+#: sources.d/icingaweb2-module-director/application/forms/IcingaCommandForm.php:58
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:20
 #: sources.d/icingaweb2-module-director/library/Director/TranslationDummy.php:16
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:164
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:166
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/command.phtml:12
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:172
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:309
 msgid "Command"
 msgstr "Comando"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaEndpointForm.php:36
-#: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:145
-#: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:125
-#: sources.d/icingaweb2/application/forms/Config/Resource/LdapResourceForm.php:60
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/ApiTransportForm.php:41
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/RemoteTransportForm.php:150
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:101
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:98
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:78
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:159
-#: sources.d/icingaweb2-module-x509/application/controllers/ChainController.php:53
-#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:45
-#: sources.d/icingadb-web/application/forms/ApiTransportForm.php:40
-#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:50
-#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:61
-#: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:70
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:119
-#: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:139
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/NetworkAdaptersTable.php:54
-msgid "Port"
-msgstr "Porta"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:39
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaHostsMatchingFilterTable.php:48
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetHostTable.php:38
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:91
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:174
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:709
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:42
-#: sources.d/icingaweb2-module-x509/library/X509/UsageTable.php:31
-#: sources.d/icingaweb2-module-graphite/application/controllers/HostsController.php:48
-#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:73
-#: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:139
-#: sources.d/icingaweb2-module-graphite/application/controllers/ServicesController.php:50
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:83
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:99
-msgid "Hostname"
-msgstr "Nome do host"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:217
-#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:635
+#: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:219
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:653
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:109
-#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:65
+#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:67
 #: sources.d/icingaweb2/application/controllers/RoleController.php:68
-#: sources.d/icingaweb2/application/controllers/RoleController.php:329
+#: sources.d/icingaweb2/application/controllers/RoleController.php:322
 #: sources.d/icingaweb2/application/forms/Config/User/CreateMembershipForm.php:79
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:615
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:94
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:99
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:30
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:270
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:281
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:86
 msgid "Groups"
 msgstr "Grupos"
@@ -413,7 +585,7 @@ msgstr "Grupos"
 msgid "Alias"
 msgstr "Apelido"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:25
+#: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:26
 #: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:22
 #: sources.d/icingaweb2-module-director/library/Director/TranslationDummy.php:18
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:82
@@ -438,14 +610,14 @@ msgstr "Notificação"
 #: sources.d/icingadb-web/application/controllers/CommentController.php:26
 #: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:77
 #: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:74
-#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:107
-#: sources.d/icingadb-web/application/forms/Command/Object/SendCustomNotificationForm.php:75
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:37
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:104
+#: sources.d/icingadb-web/application/forms/Command/Object/SendCustomNotificationForm.php:74
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:41
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:72
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:66
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:247
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:346
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:458
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:88
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:280
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:391
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:512
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:93
 msgid "Comment"
 msgstr "Comentário"
@@ -456,63 +628,18 @@ msgstr "Comentário"
 msgid "Fixed"
 msgstr "Permanente"
 
-#: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:56
-#: sources.d/icingaweb2-module-director/library/Director/Web/Widget/DeploymentInfo.php:83
-#: sources.d/icingaweb2-module-director/library/Director/Web/Widget/SyncRunDetails.php:26
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:253
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:53
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:135
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:56
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:57
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:55
-#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:183
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:321
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:32
-msgid "Duration"
-msgstr "Duração"
-
-#: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:28
-#: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceRestApi.php:226
-#: sources.d/icingaweb2-module-director/library/Director/Web/Widget/BackgroundDaemonDetails.php:74
-#: sources.d/icingaweb2/application/controllers/GroupController.php:116
-#: sources.d/icingaweb2/application/controllers/UserController.php:80
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:62
-#: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:145
-#: sources.d/icingaweb2/application/forms/Config/User/UserForm.php:34
-#: sources.d/icingaweb2/application/views/scripts/group/show.phtml:75
-#: sources.d/icingaweb2/application/views/scripts/user/list.phtml:51
-#: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:101
-#: sources.d/icingaweb2/library/Icinga/Authentication/User/DbUserBackend.php:104
-#: sources.d/icingaweb2/library/Icinga/Authentication/User/LdapUserBackend.php:267
-#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:117
-#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/DbUserGroupBackend.php:121
-#: sources.d/icingaweb2/library/Icinga/Authentication/UserGroup/LdapUserGroupBackend.php:570
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:109
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:102
-#: sources.d/icingaweb2/modules/setup/application/forms/AdminAccountPage.php:156
-#: sources.d/icingaweb2/modules/setup/application/forms/AdminAccountPage.php:188
-#: sources.d/icingaweb2/modules/setup/application/forms/AdminAccountPage.php:209
-#: sources.d/icingaweb2/modules/setup/application/forms/DatabaseCreationPage.php:100
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:86
-#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:65
-#: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:78
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/InfluxDbConnectionForm.php:195
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/VCenterServerForm.php:101
-msgid "Username"
-msgstr "Nome do usuario"
-
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:36
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:329
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:21
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:42
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:24
-#: sources.d/icingadb-web/application/controllers/UsersController.php:41
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:21
+#: sources.d/icingadb-web/application/controllers/UsersController.php:39
 msgid "Email"
 msgstr "Email"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaUserForm.php:41
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/contacts.phtml:22
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:34
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:31
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:69
 msgid "Pager"
 msgstr "Pager"
@@ -523,32 +650,17 @@ msgstr "Pager"
 msgid "Service Group"
 msgstr "Grupos de serviços"
 
-#: sources.d/icingaweb2-module-director/application/forms/SyncRuleForm.php:17
-#: sources.d/icingaweb2-module-director/library/Director/TranslationDummy.php:17
-#: sources.d/icingaweb2/application/controllers/UserController.php:313
-#: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:45
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:440
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Config/Transport/RemoteTransportForm.php:163
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:43
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:40
-#: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:90
-#: sources.d/icingadb-web/application/controllers/UserController.php:23
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/ControlSocketConnectionsTable.php:68
-msgid "User"
-msgstr "Usuário"
-
 #: sources.d/icingaweb2-module-director/application/locale/translateMe.php:5
-#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:98
+#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:90
 msgid "up"
 msgstr "up"
 
 #: sources.d/icingaweb2-module-director/application/locale/translateMe.php:6
-#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:101
+#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:93
 msgid "down"
 msgstr "down"
 
 #: sources.d/icingaweb2-module-director/application/locale/translateMe.php:7
-#: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:104
 msgid "unreachable"
 msgstr "inacessível"
 
@@ -572,24 +684,24 @@ msgstr "crítico"
 msgid "unknown"
 msgstr "desconhecido"
 
-#: sources.d/icingaweb2-module-director/configuration.php:161
-#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/CheckCommandsDashlet.php:19
-#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/CommandObjectDashlet.php:13
+#: sources.d/icingaweb2-module-director/configuration.php:129
+#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/CheckCommandsDashlet.php:21
+#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/CommandObjectDashlet.php:15
 #: sources.d/icingaweb2-module-director/library/Director/Db/Branch/BranchModificationInspection.php:37
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/CustomvarVariantsTable.php:57
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:75
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comments/show.phtml:9
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:163
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtimes/show.phtml:9
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:51
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:48
 msgid "Commands"
 msgstr "Comandos"
 
-#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/HostGroupsDashlet.php:11
+#: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/HostGroupsDashlet.php:13
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:549
 #: sources.d/icingadb-web/application/controllers/HostgroupsController.php:30
-#: sources.d/icingadb-web/configuration.php:345
-#: sources.d/icingadb-web/configuration.php:475
+#: sources.d/icingadb-web/configuration.php:352
+#: sources.d/icingadb-web/configuration.php:480
 msgid "Host Groups"
 msgstr "Grupos de hosts"
 
@@ -598,7 +710,7 @@ msgstr "Grupos de hosts"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/hostgroups.phtml:16
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:120
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:215
-#: sources.d/icingadb-web/configuration.php:161
+#: sources.d/icingadb-web/configuration.php:169
 msgid "Hostgroups"
 msgstr "Grupos de hosts"
 
@@ -606,7 +718,7 @@ msgstr "Grupos de hosts"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/servicegroups.phtml:17
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:121
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:209
-#: sources.d/icingadb-web/configuration.php:166
+#: sources.d/icingadb-web/configuration.php:174
 msgid "Servicegroups"
 msgstr "Grupos de serviços"
 
@@ -622,35 +734,36 @@ msgstr "Up"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:32
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:39
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:153
-#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:53
+#: sources.d/icingadb-web/library/Icingadb/Widget/HostSummaryDonut.php:55
 msgid "Down"
 msgstr "Down"
 
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:24
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:80
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:193
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:150
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:194
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:330
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:178
 msgid "OK"
 msgstr "OK"
 
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:25
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:115
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:40
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:44
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:89
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:96
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:76
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:59
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:159
 msgid "Warning"
 msgstr "Atenção"
 
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/StateFilterSet.php:26
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:114
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:41
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/Perfdata.php:45
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:103
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/index.phtml:110
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:77
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:60
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:162
-#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:55
+#: sources.d/icingadb-web/library/Icingadb/Widget/ServiceSummaryDonut.php:58
 msgid "Critical"
 msgstr "Crítico"
 
@@ -667,7 +780,7 @@ msgstr "Desconhecido"
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:28
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:429
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-description.phtml:20
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:63
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:67
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:115
 msgid "Acknowledgement"
 msgstr "Reconhecimento"
@@ -675,8 +788,8 @@ msgstr "Reconhecimento"
 #: sources.d/icingaweb2-module-director/library/Director/IcingaConfig/TypeFilterSet.php:33
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:426
 #: sources.d/icingaweb2/modules/monitoring/application/forms/EventOverviewForm.php:84
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:16
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:16
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:21
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:21
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/comment/comment-description.phtml:5
 msgid "Flapping"
 msgstr "Oscilando"
@@ -687,24 +800,13 @@ msgstr "Oscilando"
 msgid "Pattern"
 msgstr "Padrão"
 
-#: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:65
-#: sources.d/icingaweb2-module-director/library/Director/Web/Widget/DeploymentInfo.php:82
-#: sources.d/icingaweb2-module-jira/configuration.php:10
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:79
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:62
-#: sources.d/icingaweb2-module-audit/configuration.php:9
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/ConfigurationController.php:39
-#: sources.d/icingaweb2-module-vspheredb/configuration.php:33
-msgid "Configuration"
-msgstr "Configuração"
-
 #: sources.d/icingaweb2-module-director/library/Director/Web/ActionBar/AutomationObjectActionBar.php:32
-#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/MainTabs.php:26
+#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/MainTabs.php:27
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:187
 msgid "Overview"
 msgstr "Visão geral"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1127
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1130
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/SyncruleTable.php:46
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:94
 msgid "Object type"
@@ -712,152 +814,64 @@ msgstr "Tipo do objeto"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ConfigFileDiffTable.php:82
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/GeneratedConfigFileTable.php:84
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:261
-#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:311
-#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:132
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:262
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:137
 #: sources.d/icingaweb2-module-audit/application/forms/Config/AuditLogConfigForm.php:22
 msgid "File"
 msgstr "Arquivo"
-
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiFieldsTable.php:80
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableEndpoint.php:22
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:159
-#: sources.d/icingaweb2/application/controllers/NavigationController.php:211
-#: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:639
-#: sources.d/icingaweb2/application/views/scripts/navigation/index.phtml:30
-#: sources.d/icingaweb2/application/views/scripts/navigation/shared.phtml:20
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:78
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:133
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/comments.phtml:25
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:86
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:121
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/IbmSpectrumProtectBackupRunDetails.php:33
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Widget/Addon/VRangerBackupRunDetails.php:24
-msgid "Type"
-msgstr "Tipo"
-
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/CoreApiFieldsTable.php:84
-#: sources.d/icingaweb2/application/controllers/HealthController.php:24
-#: sources.d/icingaweb2/application/controllers/HealthController.php:34
-#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:23
-#: sources.d/icingaweb2/application/views/scripts/user/show.phtml:32
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:515
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:533
-#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:111
-#: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:130
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/downtimes.phtml:29
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/hosts.phtml:28
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/list/services.phtml:29
-#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:52
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:122
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:225
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:96
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/VsphereApiConnectionTable.php:12
-msgid "State"
-msgstr "Estado"
-
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/Dependency/DependencyInfoTable.php:57
-#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:101
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Dependency/DependencyInfoTable.php:57
-msgid "disabled"
-msgstr "desabilitado"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableService.php:107
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:169
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:710
 #: sources.d/icingaweb2-module-graphite/application/controllers/ListController.php:138
-#: sources.d/icingadb-web/application/controllers/ServicesController.php:243
+#: sources.d/icingadb-web/application/controllers/ServicesController.php:248
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:79
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/Reporting/ServiceSlaReport.php:32
 msgid "Service Name"
 msgstr "Nome do serviço"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ImportsourceTabs.php:45
-#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectTabs.php:95
-#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/SyncRuleTabs.php:43
-#: sources.d/icingaweb2/modules/monitoring/configuration.php:255
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php:288
-#: sources.d/icingadb-web/application/controllers/HistoryController.php:22
-#: sources.d/icingadb-web/application/controllers/HostController.php:245
-#: sources.d/icingadb-web/application/controllers/ServiceController.php:193
-#: sources.d/icingadb-web/configuration.php:401
-#: sources.d/icingadb-web/configuration.php:528
-#: sources.d/icingaweb2-module-vspheredb/configuration.php:30
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Objects/VmsGuestDiskUsageTable.php:60
-msgid "History"
-msgstr "Histórico"
-
-#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:49
-#: sources.d/ipl-web/src/Control/SearchEditor.php:597
+#: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:51
 #: sources.d/icingaweb2/library/Icinga/Web/Form/Decorator/Autosubmit.php:127
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:20
-#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:75
+#: sources.d/ipl-web/src/Control/SearchEditor.php:595
+#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:77
 msgid "Apply"
 msgstr "Aplicar"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Widget/AdditionalTableActions.php:87
+#: sources.d/icingaweb2-module-director/library/Director/Web/Widget/AdditionalTableActions.php:88
 msgid "all"
 msgstr "todas"
 
-#: sources.d/icingaweb2-module-pdfexport/application/forms/ChromeBinaryForm.php:17
-#: sources.d/icingaweb2-module-reporting/application/forms/ConfigureMailForm.php:13
-#: sources.d/icingaweb2-module-reporting/application/forms/SelectBackendForm.php:14
+#: sources.d/icingaweb2-module-reporting/application/forms/ConfigureMailForm.php:14
+#: sources.d/icingaweb2-module-reporting/application/forms/SelectBackendForm.php:15
 #: sources.d/icingaweb2/application/forms/Config/GeneralConfigForm.php:23
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:44
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:45
 #: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:53
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:60
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:85
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:42
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/SecurityConfigForm.php:20
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/TransportConfigForm.php:51
-#: sources.d/icingaweb2-module-x509/application/forms/Config/BackendConfigForm.php:14
+#: sources.d/icingaweb2-module-x509/application/forms/Config/BackendConfigForm.php:15
+#: sources.d/icingaweb2-module-aws/application/forms/Config/KeysForm.php:33
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:14
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/BackendForm.php:13
-#: sources.d/icingaweb2-module-aws/application/forms/Config/KeysForm.php:33
+#: sources.d/icingaweb2-module-pdfexport/application/forms/ChromeBinaryForm.php:17
 #: sources.d/icingadb-web/application/forms/DatabaseConfigForm.php:14
 #: sources.d/icingadb-web/application/forms/RedisConfigForm.php:25
 msgid "Save Changes"
 msgstr "Salvar alterações"
 
-#: sources.d/icingaweb2-module-pdfexport/application/forms/ChromeBinaryForm.php:55
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:69
-msgid "Remote Host"
-msgstr "Host remoto"
-
-#: sources.d/icingaweb2-module-reporting/application/forms/ConfigureMailForm.php:19
+#: sources.d/icingaweb2-module-reporting/application/forms/ConfigureMailForm.php:20
 #: sources.d/icingaweb2/modules/monitoring/application/forms/StatehistoryForm.php:66
 msgid "From"
 msgstr "De"
 
-#: sources.d/icingaweb2-module-reporting/application/forms/SelectBackendForm.php:28
-#: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:272
-#: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:190
-#: sources.d/icingaweb2/modules/setup/application/forms/AuthenticationPage.php:50
-#: sources.d/icingaweb2-module-x509/application/forms/Config/BackendConfigForm.php:22
-#: sources.d/icingadb-web/application/forms/DatabaseConfigForm.php:23
-#: sources.d/icingadb-web/configuration.php:537
-#: sources.d/icingadb-web/library/Icingadb/Setup/DbResourceStep.php:74
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseInfluxDatabaseForm.php:139
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/ChooseInfluxDatabaseForm.php:147
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Tabs/ConfigTabs.php:54
-msgid "Database"
-msgstr "Banco de dados"
-
-#: sources.d/ipl-web/src/Control/PaginationControl.php:508
-#: sources.d/icingaweb2/application/views/scripts/mixedPagination.phtml:3
-msgid "Pagination"
-msgstr "Paginação"
-
-#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:108
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:31
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:16
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:30
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:30
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/acknowledgement.phtml:77
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:53
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:48
-msgid "Acknowledge"
-msgstr "Reconhecer"
+#: sources.d/icingaweb2-module-reporting/configuration.php:11
+#: sources.d/icingaweb2/modules/monitoring/configuration.php:287
+#: sources.d/icingaweb2-module-cube/configuration.php:5
+msgid "Reporting"
+msgstr "Relatórios"
 
 #: sources.d/icingaweb2/application/controllers/AccountController.php:33
 #: sources.d/icingaweb2/application/controllers/MyDevicesController.php:36
@@ -874,42 +888,43 @@ msgid "Navigation"
 msgstr "Navegação"
 
 #: sources.d/icingaweb2/application/controllers/ConfigController.php:49
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:398
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:419
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:439
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:504
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:409
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:430
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:450
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:515
 msgid "Resources"
 msgstr "Recursos"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:116
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:128
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:127
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:139
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:87
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:84
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:110
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:80
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:87
 msgid "Modules"
 msgstr "Módulos"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:183
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:194
 #, php-format
 msgid "Module \"%s\" enabled"
 msgstr "Módulo \"%s\" habilitado"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:222
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:233
 #, php-format
 msgid "Module \"%s\" disabled"
 msgstr "Módulo \"%s\" desabilitado"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:265
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:312
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:351
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:384
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:276
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:323
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:362
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:395
 #: sources.d/icingaweb2/application/controllers/UsergroupbackendController.php:61
 #: sources.d/icingaweb2/application/controllers/UsergroupbackendController.php:98
 #: sources.d/icingaweb2/application/controllers/UsergroupbackendController.php:130
 msgid "Authentication"
 msgstr "Autenticação"
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:279
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:290
 msgid ""
 "Create a new backend for authenticating your users. This backend will be "
 "added at the end of your authentication order."
@@ -917,11 +932,11 @@ msgstr ""
 "Criar um novo backend para autenticar os usuários. Este backend será "
 "adicionado por último."
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:413
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:424
 msgid "Resources are entities that provide data to Icinga Web 2."
 msgstr "Os recursos são entidades que fornecem dados para Icinga Web 2."
 
-#: sources.d/icingaweb2/application/controllers/ConfigController.php:467
+#: sources.d/icingaweb2/application/controllers/ConfigController.php:478
 #, php-format
 msgid "Resource \"%s\" has been successfully removed"
 msgstr "Recurso \"%s\" foi removido com sucesso"
@@ -973,59 +988,75 @@ msgstr "Remover dashboard"
 msgid "Dashboard"
 msgstr "Dashboard"
 
-#: sources.d/icingaweb2/application/controllers/ErrorController.php:64
+#: sources.d/icingaweb2/application/controllers/ErrorController.php:66
 msgid "Page not found."
 msgstr "Página não encontrada."
 
-#: sources.d/icingaweb2/application/controllers/ErrorController.php:68
+#: sources.d/icingaweb2/application/controllers/ErrorController.php:70
 #, php-format
 msgid "Enabling the \"%s\" module might help!"
 msgstr "Habilitando o módulo \"%s\" pode ajudar!"
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:377
-#: sources.d/icingaweb2/application/controllers/RoleController.php:35
-#: sources.d/icingaweb2/application/controllers/RoleController.php:357
+#: sources.d/icingaweb2/application/controllers/RoleController.php:36
+#: sources.d/icingaweb2/application/controllers/RoleController.php:350
 #: sources.d/icingaweb2/application/controllers/UserController.php:333
 msgid "Roles"
 msgstr "Funções"
 
 #: sources.d/icingaweb2/application/controllers/ListController.php:57
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:145
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:102
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:109
 msgid "Application Log"
 msgstr "Log da aplicação"
 
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:82
+#: sources.d/icingaweb2/application/forms/PreferenceForm.php:244
+#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:37
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:43
+msgid "System"
+msgstr "Sistema"
+
+#: sources.d/icingaweb2/application/controllers/MigrationsController.php:112
+#: sources.d/icingaweb2/library/Icinga/Cli/Params.php:185
+#: sources.d/icingaweb2/library/Icinga/Cli/Params.php:287
+#: sources.d/icingaweb2/library/Icinga/Web/UrlParams.php:65
+#: sources.d/icingaweb2/library/Icinga/Web/UrlParams.php:160
+#, php-format
+msgid "Required parameter '%s' missing"
+msgstr "Está faltando o paramento requerido \"%s'"
+
 #: sources.d/icingaweb2/application/controllers/RoleController.php:69
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:133
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:138
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:117
-#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:439
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:473
 msgid "Permissions"
 msgstr "Permissões"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:90
+#: sources.d/icingaweb2/application/controllers/RoleController.php:88
 msgid "Create Role"
 msgstr "Criar função"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:93
+#: sources.d/icingaweb2/application/controllers/RoleController.php:91
 msgid "New Role"
 msgstr "Nova função"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:109
-#: sources.d/icingaweb2/application/controllers/RoleController.php:118
+#: sources.d/icingaweb2/application/controllers/RoleController.php:105
+#: sources.d/icingaweb2/application/controllers/RoleController.php:114
 msgid "Update Role"
 msgstr "Atualizar função"
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:132
-#: sources.d/icingaweb2/application/controllers/RoleController.php:141
+#: sources.d/icingaweb2/application/controllers/RoleController.php:126
+#: sources.d/icingaweb2/application/controllers/RoleController.php:135
 msgid "Remove Role"
 msgstr "Remover função"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:46
-#: sources.d/icingaweb2/application/views/scripts/authentication/logout.phtml:23
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:47
+#: sources.d/icingaweb2/application/views/scripts/authentication/logout.phtml:30
 msgid "Login"
 msgstr "Login"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:162
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:170
 msgid ""
 "No authentication methods available. Did you create authentication.ini when "
 "setting up Icinga Web 2?"
@@ -1033,7 +1064,7 @@ msgstr ""
 "Não há métodos de autenticação disponíveis. Você criou o arquivo "
 "authentication.ini ao configurar Icinga Web 2?"
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:168
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:176
 msgid ""
 "All configured authentication methods failed. Please check the system log or "
 "Icinga Web 2 log for more information."
@@ -1041,7 +1072,7 @@ msgstr ""
 "Todos os métodos de autenticação configurados falharam. Por favor, verifique "
 "o log de sistema ou o log do Icinga Web 2 para obter mais informações."
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:175
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:183
 msgid ""
 "Please note that not all authentication methods were available. Check the "
 "system log or Icinga Web 2 log for more information."
@@ -1050,15 +1081,15 @@ msgstr ""
 "disponíveis. Verifique o log do sistema ou o log do Icinga Web 2 para obter "
 "mais informações."
 
-#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:180
+#: sources.d/icingaweb2/application/forms/Authentication/LoginForm.php:188
 msgid "Incorrect username or password"
 msgstr "Usuário ou senha inválida"
 
-#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:62
+#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:74
 msgid "Module Path"
 msgstr "Caminho dos módulos"
 
-#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:66
+#: sources.d/icingaweb2/application/forms/Config/General/ApplicationConfigForm.php:78
 msgid ""
 "Contains the directories that will be searched for available modules, "
 "separated by colons. Modules that don't exist in these directories can still "
@@ -1070,67 +1101,67 @@ msgstr ""
 "ainda serem linkados simbolicamente para a pasta dos módulos,  mas não "
 "aparecerão na lista de módulos desabilitados. "
 
-#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:39
+#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:41
 msgid "Logging Type"
 msgstr "Tipo do registro de log"
 
-#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:40
+#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:42
 msgid "The type of logging to utilize."
 msgstr "O tipo do registro de log a ser utilizado."
 
-#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:44
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:80
+#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:47
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:82
 msgctxt "app.config.logging.type"
 msgid "File"
 msgstr "Arquivo"
 
-#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:45
+#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:48
 msgctxt "app.config.logging.type"
 msgid "None"
 msgstr "Nenhum"
 
-#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:56
+#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:59
 msgid "Logging Level"
 msgstr "Nível do registro de log"
 
-#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:57
+#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:60
 msgid "The maximum logging level to emit."
 msgstr "O nível máximo de log a ser emitido."
 
-#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:59
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:95
+#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:62
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:97
 msgctxt "app.config.logging.level"
 msgid "Error"
 msgstr "Erro"
 
-#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:60
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:96
+#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:63
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:98
 msgctxt "app.config.logging.level"
 msgid "Warning"
 msgstr "Atenção"
 
-#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:61
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:97
+#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:64
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:99
 msgctxt "app.config.logging.level"
 msgid "Information"
 msgstr "Informação"
 
-#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:62
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:98
+#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:65
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:100
 msgctxt "app.config.logging.level"
 msgid "Debug"
 msgstr "Depurar"
 
-#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:74
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:75
+#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:77
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:77
 msgid "Application Prefix"
 msgstr "Prefixo da aplicação"
 
-#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:129
+#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:132
 msgid "File path"
 msgstr "Caminho do arquivo"
 
-#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:130
+#: sources.d/icingaweb2/application/forms/Config/General/LoggingConfigForm.php:133
 msgid "The full path to the log file to write messages to."
 msgstr "O caminho completo do arquivo de log para gravar as mensagens."
 
@@ -1138,9 +1169,9 @@ msgstr "O caminho completo do arquivo de log para gravar as mensagens."
 #: sources.d/icingaweb2/application/forms/Config/Resource/FileResourceForm.php:32
 #: sources.d/icingaweb2/application/forms/Config/Resource/LdapResourceForm.php:37
 #: sources.d/icingaweb2/application/forms/Config/Resource/SshResourceForm.php:36
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:89
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:66
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:151
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:91
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:67
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:153
 msgid "Resource Name"
 msgstr "Nome do recurso"
 
@@ -1152,8 +1183,8 @@ msgid "The unique name of this resource"
 msgstr "O nome único deste recurso"
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:93
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:93
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:70
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:95
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:71
 msgid "Database Type"
 msgstr "Tipo do banco de dados"
 
@@ -1163,8 +1194,8 @@ msgstr "Tipo do banco de dados SQL"
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:104
 #: sources.d/icingaweb2/application/forms/Config/Resource/DbResourceForm.php:136
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:105
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:82
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:107
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:83
 msgid "Database Name"
 msgstr "Nome do banco de dados"
 
@@ -1191,7 +1222,7 @@ msgid "The password to use for authentication"
 msgstr "A senha a ser utilizada para a autenticação"
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/FileResourceForm.php:41
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:81
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/GeneralConfigStep.php:83
 msgid "Filepath"
 msgstr "Caminho do arquivo"
 
@@ -1204,7 +1235,7 @@ msgid "The port of the LDAP server to use for authentication"
 msgstr "A porta do servidor LDAP utilizado para autenticação"
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/LdapResourceForm.php:89
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:163
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:165
 msgid "Root DN"
 msgstr "DN Root"
 
@@ -1213,12 +1244,12 @@ msgid "Only the root and its child nodes will be accessible on this resource."
 msgstr "Somente a raiz e seus nós filhos estarão acessíveis neste recurso."
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/LdapResourceForm.php:99
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:167
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:169
 msgid "Bind DN"
 msgstr "Bind DN"
 
 #: sources.d/icingaweb2/application/forms/Config/Resource/LdapResourceForm.php:111
-#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:171
+#: sources.d/icingaweb2/modules/setup/library/Setup/Steps/ResourceStep.php:173
 msgid "Bind Password"
 msgstr "Senha Bind"
 
@@ -1238,54 +1269,54 @@ msgstr ""
 "observe que a autenticação baseada em chaves SSH deve ser configurada para "
 "este usuário"
 
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:66
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:67
 #, php-format
 msgid "Invalid resource type \"%s\" provided"
 msgstr "Tipo \"%s\" inválido de recurso fornecido"
 
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:85
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:144
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:218
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:86
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:145
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:219
 msgid "Resource name missing"
 msgstr "Falta o nome do recurso"
 
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:87
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:88
 msgid "Resource already exists"
 msgstr "Recurso já existe"
 
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:108
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:109
 msgid "Old resource name missing"
 msgstr "Falta o nome do recurso antigo"
 
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:110
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:111
 msgid "New resource name missing"
 msgstr "Falta o nome do novo rescurso"
 
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:112
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:146
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:220
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:113
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:147
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:221
 msgid "Unknown resource provided"
 msgstr "Recurso fornecido desconhecido"
 
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:189
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:190
 #, php-format
 msgid "Resource \"%s\" has been successfully created"
 msgstr "Recurso \"%s\" foi criado com sucesso"
 
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:192
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:193
 #, php-format
 msgid "Resource \"%s\" has been successfully changed"
 msgstr "Recurso \"%s\" foi alterado com sucesso"
 
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:268
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:269
 msgid "SQL Database"
 msgstr "Banco de dados SQL"
 
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:277
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:278
 msgid "Resource Type"
 msgstr "Tipo do recurso"
 
-#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:278
+#: sources.d/icingaweb2/application/forms/Config/ResourceConfigForm.php:279
 msgid "The type of resource"
 msgstr "O tipo do recurso"
 
@@ -1346,7 +1377,7 @@ msgstr "Tipo \"%s\" inválido de backend fornecido"
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/UserGroupBackendForm.php:210
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:210
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Setup/BackendPage.php:43
-#: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:113
+#: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:114
 msgid "Backend Type"
 msgstr "Tipo do backend"
 
@@ -1357,12 +1388,12 @@ msgstr "Tipo do recurso a ser utilizado para este provedor de autenticação"
 #: sources.d/icingaweb2/application/forms/Config/UserBackendConfigForm.php:388
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Config/BackendConfigForm.php:304
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Setup/IdoResourcePage.php:183
-#: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:244
-#: sources.d/icingaweb2/modules/setup/application/forms/DatabaseCreationPage.php:201
+#: sources.d/icingaweb2/modules/setup/application/forms/AuthBackendPage.php:245
+#: sources.d/icingaweb2/modules/setup/application/forms/DatabaseCreationPage.php:202
 #: sources.d/icingaweb2/modules/setup/application/forms/DbResourcePage.php:178
 #: sources.d/icingaweb2/modules/setup/application/forms/LdapResourcePage.php:145
-#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:217
-#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:122
+#: sources.d/icingadb-web/application/forms/RedisConfigForm.php:219
+#: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:123
 #: sources.d/icingadb-web/library/Icingadb/Setup/DbResourcePage.php:140
 msgid "Skip Validation"
 msgstr "Pular validação"
@@ -1371,7 +1402,7 @@ msgstr "Pular validação"
 msgid "Authentication order updated"
 msgstr "Ordem da autenticação atualizada"
 
-#: sources.d/icingaweb2/application/forms/ConfigForm.php:84
+#: sources.d/icingaweb2/application/forms/ConfigForm.php:88
 msgid "New configuration has successfully been stored"
 msgstr "A nova configuração foi salva com sucesso"
 
@@ -1445,12 +1476,6 @@ msgstr "Preferências salvas com sucesso"
 msgid "Preferences successfully saved for the current session"
 msgstr "Preferências salvas com sucesso para a sessão atual"
 
-#: sources.d/icingaweb2/application/forms/PreferenceForm.php:243
-#: sources.d/icingaweb2/library/Icinga/Web/Menu.php:37
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:40
-msgid "System"
-msgstr "Sistema"
-
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:263
 #: sources.d/icingaweb2/application/forms/PreferenceForm.php:273
 #, php-format
@@ -1482,37 +1507,37 @@ msgstr "Utilizar benchmark"
 msgid "Save for the current Session"
 msgstr "Salvar para a sessão atual"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:65
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:70
 msgid "Role Name"
 msgstr "Nome da função"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:66
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:71
 msgid "The name of the role"
 msgstr "O nome da função"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:87
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:92
 msgid "Comma-separated list of users that are assigned to the role"
 msgstr "Lista separada por vírgulas dos usuários que são atribuídos à função"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:95
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:100
 msgid "Comma-separated list of groups that are assigned to the role"
 msgstr "Lista separada por vírgulas dos grupos que são atribuídos à função"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:225
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:230
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:127
-#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:443
+#: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:477
 msgid "Restrictions"
 msgstr "Restrições"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:421
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:428
 msgid "Role created"
 msgstr "Função criada"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:426
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:433
 msgid "Role updated"
 msgstr "Função atualizada"
 
-#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:431
+#: sources.d/icingaweb2/application/forms/Security/RoleForm.php:438
 msgid "Role removed"
 msgstr "Função removida"
 
@@ -1520,11 +1545,11 @@ msgstr "Função removida"
 msgid "Preferences"
 msgstr "Preferências"
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/logout.phtml:13
+#: sources.d/icingaweb2/application/views/scripts/authentication/logout.phtml:18
 msgid "Logging out..."
 msgstr "Saída do registro de log..."
 
-#: sources.d/icingaweb2/application/views/scripts/authentication/logout.phtml:16
+#: sources.d/icingaweb2/application/views/scripts/authentication/logout.phtml:21
 msgid ""
 "If this message does not disappear, it might be necessary to quit the "
 "current session manually by clearing the cache, or by closing the current "
@@ -1532,10 +1557,6 @@ msgid ""
 msgstr ""
 "Se esta mensagem não desaparecer, pode ser necessário sair da sessão atual "
 "manualmente limpando o cache ou fechando a sessão atual do navegador. "
-
-#: sources.d/icingaweb2/application/views/scripts/authentication/logout.phtml:45
-msgid "Logout successful!"
-msgstr "Sucesso ao realizar o logout!"
 
 #: sources.d/icingaweb2/application/views/scripts/config/devtools.phtml:5
 msgid "UI Debug"
@@ -1548,14 +1569,6 @@ msgstr "alternar"
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:6
 msgid "There is no such module installed."
 msgstr "Não existe nenhum módulo instalado."
-
-#: sources.d/icingaweb2/application/views/scripts/config/module.phtml:35
-#: sources.d/icingaweb2-module-x509/application/controllers/CertificatesController.php:46
-#: sources.d/icingaweb2-module-x509/application/controllers/UsageController.php:46
-#: sources.d/icingaweb2-module-x509/library/X509/CertificateDetails.php:57
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Table/Object/VmExtraInfoTable.php:45
-msgid "Version"
-msgstr "Versão"
 
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:55
 msgid "This module has no dependencies"
@@ -1612,11 +1625,11 @@ msgstr "Nome do dashlet"
 msgid "No dashlets added to dashboard"
 msgstr "Nenhum dashlet adicionado ao dashboard"
 
-#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:46
+#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:56
 msgid "Move up in authentication order"
 msgstr "Mover para cima na ordem de autenticação"
 
-#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:58
+#: sources.d/icingaweb2/application/views/scripts/form/reorder-authbackend.phtml:68
 msgid "Move down in authentication order"
 msgstr "Mover para baixo na ordem de autenticação"
 
@@ -1625,6 +1638,11 @@ msgstr "Mover para baixo na ordem de autenticação"
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SearchDashboard.php:50
 msgid "Search"
 msgstr "Pesquisar"
+
+#: sources.d/icingaweb2/application/views/scripts/mixedPagination.phtml:3
+#: sources.d/ipl-web/src/Control/PaginationControl.php:508
+msgid "Pagination"
+msgstr "Paginação"
 
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:23
 msgid "No roles found."
@@ -1689,22 +1707,14 @@ msgstr ""
 "Caso você mesmo possa acessar o arquivo, você pode abri-lo e inserir a "
 "configuração manualmente:"
 
-#: sources.d/icingaweb2/library/Icinga/Application/Config.php:328
+#: sources.d/icingaweb2/library/Icinga/Application/Config.php:329
 #, php-format
 msgid "Cannot read config file \"%s\". Permission denied"
 msgstr "Não é possível ler arquivo de configuração \"%s\". Permissão negada"
 
-#: sources.d/icingaweb2/library/Icinga/Application/Modules/Module.php:857
+#: sources.d/icingaweb2/library/Icinga/Application/Modules/Module.php:864
 msgid "This module has no description"
 msgstr "Este módulo não tem descrição"
-
-#: sources.d/icingaweb2/library/Icinga/Cli/Params.php:185
-#: sources.d/icingaweb2/library/Icinga/Cli/Params.php:287
-#: sources.d/icingaweb2/library/Icinga/Web/UrlParams.php:65
-#: sources.d/icingaweb2/library/Icinga/Web/UrlParams.php:160
-#, php-format
-msgid "Required parameter '%s' missing"
-msgstr "Está faltando o paramento requerido \"%s'"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Form/Element/Number.php:139
 #, php-format
@@ -1712,31 +1722,34 @@ msgid "'%s' is not a valid number"
 msgstr "'%s' não é um número válido"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:87
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:66
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:73
 msgid "Application"
 msgstr "Aplicação"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Menu.php:133
-#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:89
+#: sources.d/icingaweb2/library/Icinga/Web/Navigation/ConfigMenu.php:96
 msgid "Logout"
 msgstr "Logout"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:75
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:86
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:202
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:153
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:203
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:333
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:181
 msgid "UNKNOWN"
 msgstr "DESCONHECIDO(S)"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:82
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:196
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:151
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:197
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:331
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:179
 msgid "WARNING"
 msgstr "ATENÇÃO"
 
 #: sources.d/icingaweb2/library/Icinga/Web/View/AppHealth.php:84
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:199
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:152
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:200
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:332
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:180
 msgid "CRITICAL"
 msgstr "CRÍTICO(S)"
 
@@ -1753,36 +1766,18 @@ msgid "Search..."
 msgstr "Pesquisar..."
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:746
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterWidget.php:89
 msgid "Filter this list"
 msgstr "Filtrar esta lista"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterEditor.php:748
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterWidget.php:94
 msgid "Modify this filter"
 msgstr "Modificar este filtro"
-
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterWidget.php:68
-msgid "Click to remove this part of your filter"
-msgstr "Clique para remover esta parte do seu filtro"
-
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterWidget.php:80
-msgid "Add filter..."
-msgstr "Adicionar filtro..."
-
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterWidget.php:93
-msgid "Filtered"
-msgstr "Filtrado"
-
-#: sources.d/icingaweb2/library/Icinga/Web/Widget/FilterWidget.php:98
-msgid "Remove this filter"
-msgstr "Remover este filtro"
 
 #: sources.d/icingaweb2/library/Icinga/Web/Widget/SortBox.php:196
 msgid "Sort by"
 msgstr "Ordenar por"
 
-#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:660
+#: sources.d/icingaweb2/library/Icinga/Web/Wizard.php:661
 msgid "Finish"
 msgstr "Finalizar"
 
@@ -1796,12 +1791,12 @@ msgstr "Finalizar"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:59
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/comments.phtml:37
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:239
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:25
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:141
-#: sources.d/icingadb-web/configuration.php:382
-#: sources.d/icingadb-web/configuration.php:510
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:205
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:106
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:24
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:138
+#: sources.d/icingadb-web/configuration.php:389
+#: sources.d/icingadb-web/configuration.php:515
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:216
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:104
 msgid "Comments"
 msgstr "Comentários"
 
@@ -1829,19 +1824,19 @@ msgstr "Parada"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:96
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:41
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:245
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:25
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:147
-#: sources.d/icingadb-web/configuration.php:388
-#: sources.d/icingadb-web/configuration.php:516
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:256
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:125
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:24
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:144
+#: sources.d/icingadb-web/configuration.php:395
+#: sources.d/icingadb-web/configuration.php:521
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:267
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:123
 msgid "Downtimes"
 msgstr "Paradas"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:100
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:629
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:265
-#: sources.d/icingadb-web/configuration.php:411
+#: sources.d/icingadb-web/configuration.php:418
 msgid "Event Overview"
 msgstr "Visão geral dos eventos"
 
@@ -1872,18 +1867,18 @@ msgid "Expires"
 msgstr "Expira"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/EventController.php:489
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseHistoryListItem.php:294
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseNotificationListItem.php:63
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseHistoryListItem.php:323
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/BaseNotificationListItem.php:64
 msgid "Flapping stopped"
 msgstr "Oscilação parada"
 
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/HealthController.php:173
+#: sources.d/icingaweb2/modules/monitoring/application/controllers/HealthController.php:174
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/DisableNotificationsExpireCommandForm.php:24
 msgid "Disable Notifications"
 msgstr "Desabilitar notificações"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostController.php:33
-#: sources.d/icingadb-web/application/controllers/HostController.php:53
+#: sources.d/icingadb-web/application/controllers/HostController.php:54
 msgid "Host not found"
 msgstr "Host não encontrado"
 
@@ -1900,7 +1895,7 @@ msgid "Reschedule Host Check"
 msgstr "Reagendar checagem do host"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/HostController.php:158
-#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:222
+#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:275
 msgid "Schedule Host Downtime"
 msgstr "Agendar parada de host"
 
@@ -1921,26 +1916,21 @@ msgstr "Agendar parada de hosts"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:535
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:579
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:616
-#: sources.d/icingadb-web/application/controllers/HostController.php:208
-#: sources.d/icingadb-web/application/controllers/HostgroupsController.php:45
-#: sources.d/icingadb-web/application/controllers/HostsController.php:58
-#: sources.d/icingadb-web/application/controllers/ServicegroupsController.php:45
+#: sources.d/icingadb-web/application/controllers/HostController.php:213
+#: sources.d/icingadb-web/application/controllers/HostgroupsController.php:64
+#: sources.d/icingadb-web/application/controllers/HostsController.php:57
+#: sources.d/icingadb-web/application/controllers/ServicegroupsController.php:52
 #: sources.d/icingadb-web/application/controllers/ServicesController.php:67
-#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/StateItemTable.php:14
+#: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/StateItemTable.php:92
 msgid "Severity"
 msgstr "Gravidade"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:90
-#: sources.d/icingadb-web/application/controllers/HostController.php:209
-#: sources.d/icingadb-web/application/controllers/HostsController.php:59
+#: sources.d/icingadb-web/application/controllers/HostController.php:214
+#: sources.d/icingadb-web/application/controllers/HostsController.php:58
 #: sources.d/icingadb-web/application/controllers/ServicesController.php:68
 msgid "Current State"
 msgstr "Estado atual"
-
-#: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:92
-#: sources.d/icingaweb2-module-vspheredb/library/Vspheredb/Web/Form/MonitoringConnectionForm.php:85
-msgid "Address"
-msgstr "Endereço"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:93
 msgid "Last Check"
@@ -1973,44 +1963,44 @@ msgid "Last Host Check"
 msgstr "Última checagem do host"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:244
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:46
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:43
 msgid "Is In Effect"
 msgstr "Está em vigor"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:247
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:43
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:46
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:47
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:43
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:44
 msgid "Entry Time"
 msgstr "Período"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:249
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:111
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:51
-#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:125
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:48
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:122
 msgid "Start Time"
 msgstr "Horário de início"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:250
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:121
-#: sources.d/icingadb-web/application/controllers/DowntimesController.php:52
-#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:137
+#: sources.d/icingadb-web/application/controllers/DowntimesController.php:49
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:134
 msgid "End Time"
 msgstr "Horário de término"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:251
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:125
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:187
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:147
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:181
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:148
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:308
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:344
 msgid "Scheduled Start"
 msgstr "Início do agendamento"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:252
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:137
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:206
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:107
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeCard.php:194
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:152
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:313
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:352
 msgid "Scheduled End"
 msgstr "Término do agendamento"
 
@@ -2026,7 +2016,7 @@ msgid "Contacts"
 msgstr "Contatos"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:330
-#: sources.d/icingadb-web/application/controllers/UsersController.php:42
+#: sources.d/icingadb-web/application/controllers/UsersController.php:40
 msgid "Pager Address / Number"
 msgstr "Endereço / Número do pager"
 
@@ -2061,8 +2051,7 @@ msgstr "Nome do grupo de serviços"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:536
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:581
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:619
-#: sources.d/icingadb-web/application/controllers/HostgroupsController.php:47
-#: sources.d/icingadb-web/application/controllers/ServicegroupsController.php:46
+#: sources.d/icingadb-web/application/controllers/ServicegroupsController.php:53
 msgid "Total Services"
 msgstr "Total de serviços"
 
@@ -2073,14 +2062,14 @@ msgstr "Nome do grupo de hosts"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ListController.php:661
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:171
-#: sources.d/icingadb-web/application/controllers/ServicesController.php:226
-#: sources.d/icingadb-web/configuration.php:293
-#: sources.d/icingadb-web/configuration.php:457
+#: sources.d/icingadb-web/application/controllers/ServicesController.php:231
+#: sources.d/icingadb-web/configuration.php:301
+#: sources.d/icingadb-web/configuration.php:464
 msgid "Service Grid"
 msgstr "Grade de serviços"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:38
-#: sources.d/icingadb-web/application/controllers/ServiceController.php:58
+#: sources.d/icingadb-web/application/controllers/ServiceController.php:60
 msgid "Service not found"
 msgstr "Serviço não encontrado"
 
@@ -2097,7 +2086,7 @@ msgid "Reschedule Service Check"
 msgstr "Reagendar checagem do serviço"
 
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/ServiceController.php:120
-#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:226
+#: sources.d/icingadb-web/library/Icingadb/Common/CommandActions.php:279
 msgid "Schedule Service Downtime"
 msgstr "Agendar parada de serviço"
 
@@ -2122,10 +2111,10 @@ msgstr "Detalhes do contato"
 #: sources.d/icingaweb2/modules/monitoring/application/controllers/TacticalController.php:26
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:117
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:191
-#: sources.d/icingadb-web/application/controllers/TacticalController.php:22
-#: sources.d/icingadb-web/configuration.php:146
-#: sources.d/icingadb-web/configuration.php:317
-#: sources.d/icingadb-web/configuration.php:436
+#: sources.d/icingadb-web/application/controllers/TacticalController.php:24
+#: sources.d/icingadb-web/configuration.php:149
+#: sources.d/icingadb-web/configuration.php:325
+#: sources.d/icingadb-web/configuration.php:443
 msgid "Tactical Overview"
 msgstr "Visão tática"
 
@@ -2186,9 +2175,9 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Instance/DisableNotificationsExpireCommandForm.php:43
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:96
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:92
-#: sources.d/icingadb-web/application/controllers/CommentsController.php:50
-#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:155
-#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:111
+#: sources.d/icingadb-web/application/controllers/CommentsController.php:47
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:153
+#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:110
 msgid "Expire Time"
 msgstr "Tempo de validade"
 
@@ -2219,8 +2208,8 @@ msgstr "As notificações serão reativadas em <strong>%s</strong>"
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:58
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:8
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/monitoringfeatures.phtml:10
-#: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:40
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:53
+#: sources.d/icingadb-web/application/forms/Command/Instance/ToggleInstanceFeaturesForm.php:37
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:51
 msgid "Flap Detection"
 msgstr "Detecção de oscilação"
 
@@ -2244,7 +2233,7 @@ msgstr ""
 "serão temporariamente desativadas até que o host ou serviço se recupere."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:35
-#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:172
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:182
 msgid "Acknowledge problem"
 msgid_plural "Acknowledge problems"
 msgstr[0] "Reconhecer o problema"
@@ -2265,13 +2254,13 @@ msgstr ""
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:79
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:77
-#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:138
-#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:94
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:136
+#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:93
 msgid "Use Expire Time"
 msgstr "Usar o tempo de expiração"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AcknowledgeProblemCommandForm.php:82
-#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:139
+#: sources.d/icingadb-web/application/forms/Command/Object/AcknowledgeProblemForm.php:137
 msgid "If the acknowledgement should expire, check this option."
 msgstr "Se a confirmação deve expirar, marque esta opção."
 
@@ -2316,7 +2305,7 @@ msgstr ""
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:31
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/comments.phtml:7
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/comments.phtml:19
-#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:126
+#: sources.d/icingadb-web/application/forms/Command/Object/AddCommentForm.php:137
 msgid "Add comment"
 msgid_plural "Add comments"
 msgstr[0] "Adicionar comentário"
@@ -2324,9 +2313,9 @@ msgstr[1] "Adicionar comentários"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/AddCommentCommandForm.php:59
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/comment/show.phtml:47
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:67
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:380
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:493
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:71
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:428
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:555
 msgid "Persistent"
 msgstr "Persistente"
 
@@ -2351,49 +2340,49 @@ msgid "Check now"
 msgstr "Checar agora"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/CheckNowCommandForm.php:81
-#: sources.d/icingadb-web/application/forms/Command/Object/CheckNowForm.php:24
+#: sources.d/icingadb-web/application/forms/Command/Object/CheckNowForm.php:22
 msgid "Scheduling check.."
 msgid_plural "Scheduling checks.."
 msgstr[0] "Agendando checagem.."
 msgstr[1] "Agendando checagens.."
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:58
-#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:86
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:59
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:83
 msgctxt "icinga.state"
 msgid "OK"
 msgstr "OK"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:59
-#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:87
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:60
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:84
 msgctxt "icinga.state"
 msgid "WARNING"
 msgstr "ATENÇÃO"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:60
-#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:88
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:61
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:85
 msgctxt "icinga.state"
 msgid "CRITICAL"
 msgstr "CRÍTICO(S)"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:61
-#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:89
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:62
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:86
 msgctxt "icinga.state"
 msgid "UNKNOWN"
 msgstr "DESCONHECIDO(S)"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:129
-#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:83
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:130
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:80
 msgctxt "icinga.state"
 msgid "UP"
 msgstr "UP"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:130
-#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:84
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:131
+#: sources.d/icingadb-web/application/forms/Command/Object/ProcessCheckResultForm.php:81
 msgctxt "icinga.state"
 msgid "DOWN"
 msgstr "DOWN"
 
-#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:134
+#: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ProcessCheckResultCommandForm.php:135
 msgctxt "icinga.state"
 msgid "UNREACHABLE"
 msgstr "INACESSÍVEL"
@@ -2503,7 +2492,7 @@ msgstr[1] "Agendando checagem de serviços.."
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:71
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:7
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/downtime.phtml:21
-#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:223
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:238
 msgid "Schedule downtime"
 msgid_plural "Schedule downtimes"
 msgstr[0] "Agendar parada"
@@ -2525,12 +2514,12 @@ msgstr ""
 "reinício do programa."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:112
-#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:126
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:123
 msgid "Set the start date and time for the downtime."
 msgstr "Defina a data e hora de início da parada."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:122
-#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:138
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:135
 msgid "Set the end date and time for the downtime."
 msgstr "Defina a data e hora de término da parada."
 
@@ -2550,23 +2539,23 @@ msgstr ""
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:142
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/downtime/show.phtml:60
-#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:167
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:164
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/DowntimeDetail.php:87
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:319
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:361
 msgid "Flexible"
 msgstr "Flexível"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:171
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:38
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:54
-#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:209
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:224
 msgid "Hours"
 msgstr "Horas"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ScheduleServiceDowntimeCommandForm.php:181
 #: sources.d/icingaweb2-module-graphite/application/forms/Config/AdvancedForm.php:37
 #: sources.d/icingaweb2-module-graphite/application/forms/TimeRangePicker/CommonForm.php:46
-#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:202
+#: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:211
 msgid "Minutes"
 msgstr "Minutos"
 
@@ -2590,13 +2579,13 @@ msgstr[0] "Agendando parada de serviço.."
 msgstr[1] "Agendando parada de serviços.."
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:38
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:37
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:35
 msgid "Active Checks"
 msgstr "Checagens ativas"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:42
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:134
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:41
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:39
 msgid "Passive Checks"
 msgstr "Checagens passivas"
 
@@ -2605,7 +2594,7 @@ msgid "Obsessing"
 msgstr "Modo obsessão"
 
 #: sources.d/icingaweb2/modules/monitoring/application/forms/Command/Object/ToggleObjectFeaturesCommandForm.php:54
-#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:49
+#: sources.d/icingadb-web/application/forms/Command/Object/ToggleObjectFeaturesForm.php:47
 msgid "Event Handler"
 msgstr "Manipulador de evento"
 
@@ -2773,35 +2762,35 @@ msgstr "Ok"
 msgid "Unreachable"
 msgstr "Inacessível"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:10
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:10
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:15
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:15
 msgid "Unhandled"
 msgstr "Não tratado(s)"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:13
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:13
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:18
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:18
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/acknowledgement.phtml:15
-#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:65
+#: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:67
 msgid "Acknowledged"
 msgstr "Reconhecido(s)"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:19
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:19
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:24
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:24
 msgid "Notifications Disabled"
 msgstr "Notificações desativadas"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:22
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:22
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:27
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:27
 msgid "In Downtime"
 msgstr "em parada"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:26
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:26
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:31
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:31
 msgid "Active And Passive Checks Disabled"
 msgstr "Checagens ativas e passivas desabilitadas"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:28
-#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:28
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/HostFlags.php:33
+#: sources.d/icingaweb2/modules/monitoring/application/views/helpers/ServiceFlags.php:33
 msgid "Active Checks Disabled"
 msgstr "Checagens ativas desabilitadas"
 
@@ -2870,14 +2859,13 @@ msgstr "Manipulador de eventos de host global"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:205
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/flags.phtml:2
 #: sources.d/icingadb-web/application/controllers/HealthController.php:86
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:509
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:161
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:527
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:159
 msgid "Feature Commands"
 msgstr "Comandos dos recursos"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/not-running.phtml:7
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/ProvidedHook/Health.php:32
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Web/Navigation/Renderer/BackendAvailabilityNavigationItemRenderer.php:42
 #, php-format
 msgid "%s is currently not up and running"
 msgstr "%s atualmente não está up e nem rodando"
@@ -2901,18 +2889,28 @@ msgid "Active checks"
 msgstr "Checagens ativas"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:109
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:182
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:226
 msgid "Latency"
 msgstr "Latência"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:110
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:179
 msgid "Execution time"
 msgstr "Tempo de execução"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/health/stats.phtml:129
 msgid "Passive checks"
 msgstr "Checagens passivas"
+
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:31
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:16
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/partials/object/quick-actions.phtml:30
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:30
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/acknowledgement.phtml:77
+#: sources.d/icingaweb2-module-jira/library/Jira/Web/Form/NewIssueForm.php:136
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/MultiselectQuickActions.php:53
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/QuickActions.php:48
+msgid "Acknowledge"
+msgstr "Reconhecer"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/hosts/show.phtml:190
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/services/show.phtml:192
@@ -2946,8 +2944,8 @@ msgid "Not acknowledged"
 msgstr "Não reconhecido"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/checksource.phtml:3
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:177
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:213
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:328
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:246
 msgid "Check Source"
 msgstr "Origem da checagem"
 
@@ -2982,9 +2980,9 @@ msgid "Contactgroups"
 msgstr "Grupos de contatos"
 
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/components/output.phtml:1
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:66
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:164
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:414
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:88
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:200
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:426
 msgid "Plugin Output"
 msgstr "Saída do plugin"
 
@@ -2992,15 +2990,15 @@ msgstr "Saída do plugin"
 msgid "Performance data"
 msgstr "Dados de performance"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:12
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:9
 msgid "No such contact"
 msgstr "Não existe este contato"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:58
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:55
 msgid "Notifications sent to this contact"
 msgstr "Notificações enviadas para este contato"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:69
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/show/contact.phtml:66
 msgid "No notifications have been sent for this contact"
 msgstr "Nenhuma notificação foi enviada para este contato"
 
@@ -3011,17 +3009,17 @@ msgstr "Recursos de monitoramento"
 #: sources.d/icingaweb2/modules/monitoring/application/views/scripts/tactical/components/ok_hosts.phtml:78
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:157
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:297
-#: sources.d/icingadb-web/configuration.php:176
-#: sources.d/icingadb-web/configuration.php:285
+#: sources.d/icingadb-web/configuration.php:184
+#: sources.d/icingadb-web/configuration.php:293
 msgid "Service Problems"
 msgstr "Serviços com problemas"
 
-#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/timeline/index.phtml:15
+#: sources.d/icingaweb2/modules/monitoring/application/views/scripts/timeline/index.phtml:21
 msgid "Legend"
 msgstr "Legenda"
 
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:10
-#: sources.d/icingadb-web/configuration.php:21
+#: sources.d/icingadb-web/configuration.php:24
 msgid "Allow all commands"
 msgstr "Permitir todos os comandos"
 
@@ -3046,51 +3044,51 @@ msgid "Allow scheduling host and service downtimes"
 msgstr "Permitir o agendamento de paradas de hosts e serviços"
 
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:135
-#: sources.d/icingadb-web/configuration.php:269
+#: sources.d/icingadb-web/configuration.php:277
 msgid "Problems"
 msgstr "Problemas"
 
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:143
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:307
-#: sources.d/icingadb-web/configuration.php:188
-#: sources.d/icingadb-web/configuration.php:277
+#: sources.d/icingadb-web/configuration.php:196
+#: sources.d/icingadb-web/configuration.php:285
 msgid "Host Problems"
 msgstr "Hosts com problemas"
 
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:177
-#: sources.d/icingadb-web/configuration.php:300
+#: sources.d/icingadb-web/configuration.php:308
 msgid "Current Downtimes"
 msgstr "Paradas atuais"
 
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:295
-#: sources.d/icingadb-web/configuration.php:174
+#: sources.d/icingadb-web/configuration.php:182
 msgid "Current Incidents"
 msgstr "Incidentes atuais"
 
 #: sources.d/icingaweb2/modules/monitoring/configuration.php:302
-#: sources.d/icingadb-web/configuration.php:182
+#: sources.d/icingadb-web/configuration.php:190
 msgid "Recently Recovered Services"
 msgstr "Serviços recuperados recentemente"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Backend/MonitoringBackend.php:89
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Backend/MonitoringBackend.php:90
 #, php-format
 msgid "There is no \"%s\" monitoring backend"
 msgstr "Não há nenhum \"%s\" backend de monitoramento"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Backend/MonitoringBackend.php:173
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Backend/MonitoringBackend.php:174
 msgid "No backend has been configured"
 msgstr "Nenhum backend foi configurado"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Backend/MonitoringBackend.php:175
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Backend/MonitoringBackend.php:176
 msgid "All backends are disabled"
 msgstr "Todos os backends estão desabilitados"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Backend/MonitoringBackend.php:184
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Backend/MonitoringBackend.php:185
 #, php-format
 msgid "No configuration for backend %s"
 msgstr "Nenhuma configuração para o backend %s"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Backend/MonitoringBackend.php:191
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Backend/MonitoringBackend.php:192
 #, php-format
 msgid "Configuration for backend %s is disabled"
 msgstr "A configuração para o backend %s está desabilitada"
@@ -3104,16 +3102,16 @@ msgstr ""
 "Icinga Web 2 irá obter as informações de seu ambiente de monitoramento "
 "usando um backend chamado \"%s\" e o recurso especificado abaixo:"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:84
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:86
 msgid "Database Resource"
 msgstr "Recurso do banco de dados"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:177
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:179
 #, php-format
 msgid "Monitoring backend configuration has been successfully written to: %s"
 msgstr "Configuração do backend de monitoramento foi salva com sucesso em: %s"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:193
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/BackendStep.php:195
 #, php-format
 msgid "Resource configuration has been successfully updated: %s"
 msgstr "A configuração do recurso foi atualizada com sucesso: %s"
@@ -3128,22 +3126,25 @@ msgstr "A classificação da coluna \"%s\" não é permitida em \"%s\"."
 msgid "The filter column \"%s\" is not allowed here."
 msgstr "A filtragem da coluna \"%s\" não é permitida aqui."
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:59
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:60
 msgid "The given resource name is already in use."
 msgstr "O nome do recurso informado já está em uso."
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:81
-#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:351
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/MonitoringWizard.php:82
+#: sources.d/icingaweb2/modules/setup/library/Setup/WebWizard.php:364
 msgctxt "setup.welcome.btn.next"
 msgid "Start"
 msgstr "Iniciar"
 
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:190
-#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:205
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:141
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Common/EnumList.php:154
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:119
-#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:137
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Host.php:191
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/Object/Service.php:206
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:302
+#: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:334
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:182
+#: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:215
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:181
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:198
+#: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:265
 msgid "PENDING"
 msgstr "PENDENTE(S)"
 
@@ -3180,6 +3181,11 @@ msgstr ""
 "para enviar comandos para sua instância de monitoramento usando os detalhes "
 "de conexão listados abaixo:"
 
+#: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:69
+#: sources.d/icingaweb2-module-pdfexport/application/forms/ChromeBinaryForm.php:55
+msgid "Remote Host"
+msgstr "Host remoto"
+
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:73
 msgid "Remote SSH Port"
 msgstr "Porta SSH remota"
@@ -3187,16 +3193,6 @@ msgstr "Porta SSH remota"
 #: sources.d/icingaweb2/modules/monitoring/library/Monitoring/TransportStep.php:77
 msgid "Remote SSH User"
 msgstr "Usuário SSH remoto"
-
-#: sources.d/icingaweb2-module-elasticsearch/application/controllers/EventsController.php:35
-#: sources.d/icingaweb2-module-elasticsearch/application/controllers/EventsController.php:43
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/AlarmsController.php:74
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/DatastoreController.php:97
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/EventsController.php:160
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/HostController.php:143
-#: sources.d/icingaweb2-module-vspheredb/application/controllers/VmController.php:142
-msgid "Events"
-msgstr "Eventos"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:68
 msgid "Instance Name"
