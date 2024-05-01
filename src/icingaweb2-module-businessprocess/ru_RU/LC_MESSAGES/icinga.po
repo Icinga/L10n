@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-20 13:39+0000\n"
+"POT-Creation-Date: 2024-04-30 10:29+0000\n"
 "PO-Revision-Date: 2021-11-03 12:23+0500\n"
 "Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
 "Language-Team: TranslAster <https://github.com/translaster>\n"
@@ -18,8 +18,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/IndexController.php:15
 msgid "Business Process Overview"
@@ -335,7 +335,7 @@ msgid "No node with this name found in config"
 msgstr ""
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:251
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:63
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:64
 #, fuzzy
 msgid "Already defined in this process"
 msgstr "%value% уже определено в этом процессе"
@@ -520,11 +520,27 @@ msgid ""
 "Process \"%s\" cannot be deleted as it has been referenced in other processes"
 msgstr ""
 
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:168
+#, php-format
+msgid "Process %s has been deleted"
+msgstr ""
+
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:180
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:189
 #, php-format
 msgid "A process named \"%s\" already exists"
 msgstr "Процесс с именем \"%s\" уже существует"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:200
+#, php-format
+msgid "Process %s has been created"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:203
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:201
+#, php-format
+msgid "Process %s has been stored"
+msgstr ""
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:69
 msgid "Business process source code"
@@ -553,6 +569,14 @@ msgstr ""
 #: sources.d/icingaweb2-module-businessprocess/application/forms/CleanupNodeForm.php:36
 msgid "Select nodes to cleanup"
 msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/CleanupNodeForm.php:63
+#, php-format
+msgid "Successfully removed missing node %s"
+msgid_plural "Successfully removed %d missing nodes"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:28
 #, php-format
@@ -587,7 +611,17 @@ msgstr ""
 msgid "Delete all occurrences of %s"
 msgstr "Удалить все вхождения %s"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:106
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:102
+#, php-format
+msgid "Node %s has been deleted"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:109
+#, php-format
+msgid "All occurrences of node %s have been deleted"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:114
 msgid "Well, maybe next time"
 msgstr ""
 
@@ -607,6 +641,11 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/MoveNodeForm.php:154
 msgid "Node order updated"
+msgstr ""
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:146
+#, php-format
+msgid "Process %s has been modified"
 msgstr ""
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:31
@@ -719,7 +758,7 @@ msgstr ""
 msgid "No business process nodes for \"%s\" have been defined yet"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpNode.php:383
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpNode.php:386
 #, php-format
 msgid "Nesting error detected: %s"
 msgstr ""
@@ -733,60 +772,60 @@ msgstr ""
 "Невозможно применить ограничение %s с помощью фильтра %s. Можно использовать "
 "только следующие столбцы: %s"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:493
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:504
 msgid "AND"
 msgstr "И"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:494
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:505
 msgid "OR"
 msgstr "ИЛИ"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:495
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:506
 #, fuzzy
 msgid "XOR"
 msgstr "ИЛИ"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:496
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:507
 msgid "NOT"
 msgstr "НЕ"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:497
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:508
 msgid "DEGRADED"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:498
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:509
 msgid "MIN 1"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:499
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:510
 msgid "MIN 2"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:500
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:511
 msgid "MIN 3"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:501
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:512
 msgid "MIN 4"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:502
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:513
 msgid "MIN 5"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:503
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:514
 msgid "MIN 6"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:504
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:515
 msgid "MIN 7"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:505
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:516
 msgid "MIN 8"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:506
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:517
 msgid "MIN 9"
 msgstr ""
 
@@ -981,7 +1020,7 @@ msgstr ""
 msgid "Keep actual state"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/QuickBaseForm.php:113
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/QuickBaseForm.php:116
 msgid "- please choose -"
 msgstr "- пожалуйста выберите -"
 
@@ -994,11 +1033,11 @@ msgstr "Принять"
 msgid "Form has successfully been sent"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:82
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:83
 msgid "Service not found"
 msgstr ""
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:84
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:85
 msgid "Host not found"
 msgstr ""
 

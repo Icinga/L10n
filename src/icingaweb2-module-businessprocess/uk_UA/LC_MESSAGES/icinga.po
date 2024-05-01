@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-20 13:39+0000\n"
+"POT-Creation-Date: 2023-09-21 14:41+0000\n"
 "PO-Revision-Date: 2023-04-18 14:23+0000\n"
 "Last-Translator: p4k8 <pkuznetsunit@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.icinga.com/projects/icinga/"
@@ -47,8 +47,14 @@ msgid_plural ""
 "The following business processes have invalid config files and therefore "
 "cannot be read:"
 msgstr[0] ""
+"Наступний бізнес-процес має невалідний конфігураційний файл і не може бути "
+"прочитаний:"
 msgstr[1] ""
+"Наступні бізнес-процеси мають невалідні конфігураційні файли і не можуть "
+"бути прочитані:"
 msgstr[2] ""
+"Наступних бізнес-процесів мають невалідні конфігураційні файли і не можуть "
+"бути прочитані:"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:54
 msgid "Create a new Business Process"
@@ -75,7 +81,7 @@ msgstr "Стан"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:151
 msgid "Manual"
-msgstr ""
+msgstr "Вручну"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:189
 msgid "Leave full screen and switch back to normal mode"
@@ -109,11 +115,11 @@ msgstr "Цей процес відображає %d симульованих с�
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:452
 msgid "Drag&Drop disabled. Custom sort order applied."
-msgstr ""
+msgstr "Drag&Drop вимкнено. Застосовано користувацький порядок сортування."
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:456
 msgid "Reset to default"
-msgstr ""
+msgstr "Скинути"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:487
 #, php-format
@@ -121,16 +127,21 @@ msgid "Linked node %s has one missing child node: {{#link}}Show{{/link}}"
 msgid_plural ""
 "Linked node %s has %d missing child nodes: {{#link}}Show{{/link}}"
 msgstr[0] ""
+"З'єднаний вузол %s має відсутній дочірній вузол: {{#link}}Показати{{/link}}"
 msgstr[1] ""
+"З'єднаний вузол %s має %d відсутніх дочірніх вузли: {{#link}}Показати{{/"
+"link}}"
 msgstr[2] ""
+"З'єднаний вузол %s має %d відсутніх дочірніх вузлів: {{#link}}Показати{{/"
+"link}}"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:518
 #, php-format
 msgid "{{#link}}Cleanup{{/link}} one missing node: %2$s"
 msgid_plural "{{#link}}Cleanup{{/link}} %d missing nodes: %s"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "{{#link}}Очистити{{/link}} один відсутній вузол: %2$s"
+msgstr[1] "{{#link}}Очистити{{/link}} %d відсутніх вузли: %s"
+msgstr[2] "{{#link}}Очистити{{/link}} %d відсутніх вузлів: %s"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/ProcessController.php:548
 #, php-format
@@ -199,7 +210,7 @@ msgstr "Налаштування процесу"
 #, php-format
 msgctxt "<service> on <host>"
 msgid "%s on %s"
-msgstr ""
+msgstr "%s на %s"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:100
 #, php-format
@@ -223,9 +234,8 @@ msgstr "Існуючий процес"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:105
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:112
-#, fuzzy
 msgid "New Process"
-msgstr "Новий вузол процесу"
+msgstr "Новий процес"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:108
 msgid "Add a new root node"
@@ -236,14 +246,12 @@ msgid "Node type"
 msgstr "Тип вузла"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:125
-#, fuzzy
 msgid "Please choose"
-msgstr "- будь ласка оберіть -"
+msgstr "Будь ласка оберіть"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:150
-#, fuzzy
 msgid "Add Process"
-msgstr "Додати вузол"
+msgstr "Додати процес"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:159
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:16
@@ -259,9 +267,9 @@ msgid "This is the unique identifier of this process"
 msgstr "Унікальний ідентифікатор даного процесу"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:165
-#, fuzzy, php-format
+#, php-format
 msgid "%s is already defined in this process"
-msgstr "%value% вже визначене у цьому процесі"
+msgstr "%s вже визначене у цьому процесі"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:177
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:46
@@ -313,38 +321,36 @@ msgstr "URL що веде до розгорнутої інформації пр�
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:219
 msgid "Imported nodes cannot be used as root nodes"
-msgstr ""
+msgstr "Імпортовані вузли не можуть бути використані як кореневі"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:221
 msgid "Missing node name"
-msgstr ""
+msgstr "Відсутнє ім'я вузла"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:225
 msgid "Config does not exist or access has been denied"
-msgstr ""
+msgstr "Відсутня конфігурація або доступ до неї"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:231
 #, php-format
 msgid "Cannot load config: %s"
-msgstr ""
+msgstr "Не вдалося завантажити конфігурацію: %s"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:237
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:245
 msgid "No node with this name found in config"
-msgstr ""
+msgstr "Вузол з таким іменем не вдалося знайти у конфігурації"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:251
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:63
-#, fuzzy
 msgid "Already defined in this process"
-msgstr "%value% вже визначене у цьому процесі"
+msgstr "Вже визначено у цьому процесі"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:255
 msgid "Results in a parent/child loop"
-msgstr ""
+msgstr "Призводить до закільцювання"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:264
-#, fuzzy
 msgid "Process Nodes"
 msgstr "Вузли процесу"
 
@@ -416,6 +422,8 @@ msgid ""
 "Id must only consist of alphanumeric characters. Underscore at the beginning "
 "and space, dot and hyphen at the beginning and end are not allowed."
 msgstr ""
+"ID має містити лише числобуквені символи. Андерскор на початку та пробіл, "
+"точка та дефіс на початку та у кінці не дозволені."
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:48
 msgid ""
@@ -542,19 +550,19 @@ msgstr "Наступний"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/CleanupNodeForm.php:26
 msgid "Cleanup missing nodes"
-msgstr ""
+msgstr "Очистити відсутні вузли"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/CleanupNodeForm.php:30
 msgid "Cleanup all missing nodes"
-msgstr ""
+msgstr "Очистити всі відсутні вузли"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/CleanupNodeForm.php:31
 msgid "Remove all missing nodes from config"
-msgstr ""
+msgstr "Видалити всі відсутні вузли з конфігурації"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/CleanupNodeForm.php:36
 msgid "Select nodes to cleanup"
-msgstr ""
+msgstr "Обрати вузли для очистки"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:28
 #, php-format
@@ -601,7 +609,7 @@ msgstr "Змінити \"%s\""
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/EditNodeForm.php:149
 msgid "Save Changes"
-msgstr ""
+msgstr "Зберегти зміни"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/MoveNodeForm.php:66
 msgid "No process found with name %value%"
@@ -705,12 +713,12 @@ msgstr "Не зв'язані вузли"
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:703
 #, php-format
 msgid "Trying to import node \"%s\" from faulty config file \"%s.conf\""
-msgstr ""
+msgstr "Спроба імпорту вузла \"%s\" з помилкового файлу \"%s.conf\""
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:707
-#, fuzzy, php-format
+#, php-format
 msgid "Trying to access a missing business process node \"%s\""
-msgstr "Сервіс для цього вузла бізнес-процесу"
+msgstr "Спроба доступу до відсутнього вузла бізнес-процесу \"%s\""
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpConfig.php:750
 #, php-format
@@ -745,9 +753,8 @@ msgid "OR"
 msgstr "OR"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:495
-#, fuzzy
 msgid "XOR"
-msgstr "OR"
+msgstr "XOR"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:496
 msgid "NOT"
@@ -900,7 +907,7 @@ msgstr "Для вас не було визначено жодного бізне
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/Dashboard.php:103
 #, php-format
 msgid "File %s has faulty config"
-msgstr ""
+msgstr "Файл %s має помилки у конфігурації"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Component/RenderedProcessActionBar.php:24
 msgid "Switch to Tile view"
@@ -1000,11 +1007,11 @@ msgstr "Форму було успішно надіслано"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:82
 msgid "Service not found"
-msgstr ""
+msgstr "Сервіс не знайдено"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:84
 msgid "Host not found"
-msgstr ""
+msgstr "Хост не знайдено"
 
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Navigation/Renderer/ProcessProblemsBadge.php:40
 #, php-format
