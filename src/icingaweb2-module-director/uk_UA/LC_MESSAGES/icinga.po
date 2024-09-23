@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-20 13:39+0000\n"
+"POT-Creation-Date: 2023-09-21 14:41+0000\n"
 "PO-Revision-Date: 2023-05-06 17:23+0000\n"
 "Last-Translator: p4k8 <pkuznetsunit@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.icinga.com/projects/icinga/"
@@ -36,7 +36,8 @@ msgstr "Знімки"
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:52
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:165
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:96
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:121
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:120
 msgid "Back"
 msgstr "Назад"
 
@@ -57,7 +58,8 @@ msgstr "Кошики"
 #: sources.d/icingaweb2-module-director/application/controllers/ServicesController.php:36
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:671
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectController.php:420
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:130
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:155
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:154
 msgid "Add to Basket"
 msgstr "Додати до кошика"
 
@@ -70,7 +72,7 @@ msgstr "Додати обрані об'єкти до кошика налашту
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:133
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:368
 #: sources.d/icingaweb2-module-director/application/controllers/DataController.php:138
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:542
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:543
 #: sources.d/icingaweb2-module-director/application/controllers/ImportsourceController.php:366
 #: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:156
 #: sources.d/icingaweb2-module-director/application/controllers/ServiceController.php:216
@@ -79,6 +81,7 @@ msgstr "Додати обрані об'єкти до кошика налашту
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ActionController.php:182
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectController.php:281
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectController.php:649
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:540
 msgid "back"
 msgstr "назад"
 
@@ -428,9 +431,11 @@ msgstr "Списки даних"
 #: sources.d/icingaweb2-module-director/library/Director/Web/ActionBar/ObjectsActionBar.php:16
 #: sources.d/icingaweb2-module-director/library/Director/Web/ActionBar/TemplateActionBar.php:19
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ActionController.php:166
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:316
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:357
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:505
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:315
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:356
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:505
 msgid "Add"
 msgstr "Додати"
 
@@ -587,62 +592,77 @@ msgstr "Сервіси: %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:198
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:282
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:197
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:279
 msgid "Individual Service objects"
 msgstr "Окремі об'єкти сервісів"
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:219
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:217
 #, php-format
 msgid "Inherited from %s"
 msgstr "Успадковано від %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:235
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:315
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:233
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:312
 #, php-format
 msgid "%s (Applied Service set)"
 msgstr "%s (набір застосованих сервісів)"
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:248
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:331
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:246
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:328
 msgid "Applied services"
 msgstr "Застосовані сервіси"
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:272
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:270
 msgid "Configuration (read-only)"
 msgstr "Налаштування (лише читання)"
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:273
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:271
 #, php-format
 msgid "Services on %s"
 msgstr "Сервіси на %s"
 
 #: sources.d/icingaweb2-module-director/application/controllers/HostController.php:369
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:366
 #, php-format
 msgid "%s (Service set)"
 msgstr "%s (набір сервісів)"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:402
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:403
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:400
 #, php-format
 msgid "Applied service: %s"
 msgstr "Застосований сервіс: %s"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:446
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:447
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:444
 #, php-format
 msgid "Inherited service: %s"
 msgstr "Успадкований сервіс: %s"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:520
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:521
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:518
 #, php-format
 msgid "%s on %s (from set: %s)"
 msgstr "%s на %s (з набору: %s)"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:570
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:571
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:568
 msgid "Show"
 msgstr "Показати"
 
-#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:592
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:593
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/HostActions.php:37
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:44
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectTabs.php:129
+#: sources.d/icingaweb2-module-director/application/controllers/HostController.php:590
 msgid "Inspect"
 msgstr "Інспектувати"
 
@@ -702,8 +722,9 @@ msgstr "Створення джерел імпорту"
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:57
 #: sources.d/icingaweb2-module-director/library/Director/ProvidedHook/Monitoring/ServiceActions.php:60
 #: sources.d/icingaweb2-module-director/library/Director/Web/ActionBar/AutomationObjectActionBar.php:38
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:122
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:147
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/SyncRuleTabs.php:37
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:146
 msgid "Modify"
 msgstr "Змінити"
 
@@ -1033,24 +1054,24 @@ msgstr "API самостійного обслуговування - Глобал
 #: sources.d/icingaweb2-module-director/application/controllers/SuggestController.php:252
 #: sources.d/icingaweb2-module-director/application/controllers/SuggestController.php:261
 #: sources.d/icingaweb2-module-director/library/Director/Objects/IcingaHost.php:162
-#: sources.d/icingaweb2-module-director/library/Director/Objects/IcingaService.php:679
+#: sources.d/icingaweb2-module-director/library/Director/Objects/IcingaService.php:695
 msgid "Host properties"
 msgstr "Властивості хостів"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SuggestController.php:253
 #: sources.d/icingaweb2-module-director/application/controllers/SuggestController.php:263
 #: sources.d/icingaweb2-module-director/library/Director/Objects/IcingaHost.php:163
-#: sources.d/icingaweb2-module-director/library/Director/Objects/IcingaService.php:667
+#: sources.d/icingaweb2-module-director/library/Director/Objects/IcingaService.php:683
 msgid "Custom variables"
 msgstr "Користувацькі змінні"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SuggestController.php:260
-#: sources.d/icingaweb2-module-director/library/Director/Objects/IcingaService.php:666
+#: sources.d/icingaweb2-module-director/library/Director/Objects/IcingaService.php:682
 msgid "Service properties"
 msgstr "Властивості сервісів"
 
 #: sources.d/icingaweb2-module-director/application/controllers/SuggestController.php:262
-#: sources.d/icingaweb2-module-director/library/Director/Objects/IcingaService.php:680
+#: sources.d/icingaweb2-module-director/library/Director/Objects/IcingaService.php:696
 msgid "Host Custom variables"
 msgstr "Користувацькі змінні хостів"
 
@@ -1077,9 +1098,9 @@ msgstr ""
 "наявність змін або здійснити новий запуск синхронізації."
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:97
-#, fuzzy, php-format
+#, php-format
 msgid "This Sync Rule was last found to be in Sync at %s."
-msgstr "Це правило синхронізації було в останній раз синхронізовано о %s."
+msgstr "Це правило було в останній раз у синхронізованому стані о %s."
 
 #: sources.d/icingaweb2-module-director/application/controllers/SyncruleController.php:108
 msgid ""
@@ -2102,6 +2123,7 @@ msgstr "Аргумент %s було успішно збережено"
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:781
 #: sources.d/icingaweb2-module-director/application/forms/IcingaTimePeriodRangeForm.php:94
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:673
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:780
 msgid "No action taken, object has not been modified"
 msgstr "Не виконано жодних дій, об'єкт не було змінено"
 
@@ -2761,8 +2783,8 @@ msgid ""
 "single Groups chosen below.  e.g.: when set to notification_groups, this "
 "notification will pick User Groups from the Array service.vars."
 "notification_groups and fall back to host.vars.notification_groups, in case "
-"the former one does not exist Only Array type DirectorObject Fields for User "
-"objects are eligible for this feature."
+"the former one does not exist. Only Array type DirectorObject Fields for "
+"User objects are eligible for this feature."
 msgstr ""
 "Якщо визначено, групи користувачів з цієї користувацької змінної будуть "
 "поєднані з групами обраними нижче.  Наприклад: коли призначено до "
@@ -3111,22 +3133,25 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:714
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:82
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DependencyTemplateUsageTable.php:10
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DependencyTemplateUsageTable.php:12
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/HostTemplateUsageTable.php:10
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/NotificationTemplateUsageTable.php:10
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ServiceTemplateUsageTable.php:10
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:23
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/NotificationTemplateUsageTable.php:12
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ServiceTemplateUsageTable.php:13
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:29
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tabs/ObjectsTabs.php:60
 #: sources.d/icingaweb2-module-director/library/Director/Web/Tree/TemplateTreeRenderer.php:43
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:33
 msgid "Templates"
 msgstr "Шаблони"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:770
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:769
 #, php-format
 msgid "All overrides have been removed from \"%s\""
 msgstr "Всі перезаписи були видалені з \"%s\""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:771
+#: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:770
 #, php-format
 msgid "The given properties have been stored for \"%s\""
 msgstr "Надані властивості були збережені для \"%s\""
@@ -3494,7 +3519,6 @@ msgid "Filter Expression"
 msgstr "Вираз фільтру"
 
 #: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:91
-#, fuzzy
 msgid ""
 "This allows to filter for specific parts within the given source expression. "
 "You are allowed to refer all imported columns. Examples: host=www* would set "
@@ -3506,7 +3530,9 @@ msgstr ""
 "Дозволяє фільтрувати окремі частини наданого виразу. Дозволено звертатися до "
 "всіх імпортованих колонок. Приклади: host=www* задасть цю властивість лише "
 "для рядків імпортованих з властивістю host що починається з www. Більш "
-"складний приклад: host=www*&!(address=127.*|address6=::1)"
+"складний приклад: host=www*&!(address=127.*|address6=::1). Зазначте, що "
+"підтримується запис у формі CIDR:    address=192.0.2.128/25| address=2001:"
+"db8::/32| address=::ffff:192.0.2.0/96"
 
 #: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:104
 msgid "Modifier"
@@ -5287,9 +5313,10 @@ msgid "Please choose a specific Icinga object type"
 msgstr "Будь ласка, оберіть тип об'єкта Icinga"
 
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDictionary.php:86
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:160
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:185
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1114
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1118
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:184
 msgid "Template"
 msgstr "Шаблон"
 
@@ -5306,9 +5333,10 @@ msgid "Service groups"
 msgstr "Групи сервісів"
 
 #: sources.d/icingaweb2-module-director/library/Director/DataType/DataTypeDirectorObject.php:67
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:150
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:175
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1117
 #: sources.d/icingaweb2-module-director/library/Director/Web/Form/DirectorObjectForm.php:1122
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:174
 msgid "Object"
 msgstr "Об'єкт"
 
@@ -5416,8 +5444,8 @@ msgid "Argument macros"
 msgstr "Макроси аргументів"
 
 #: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:86
-msgid "Flags (boolean) arguments"
-msgstr ""
+msgid "Toggles (boolean arguments)"
+msgstr "Перемикає (булеві аргументи)"
 
 #: sources.d/icingaweb2-module-director/library/Director/Field/FormFieldSuggestion.php:90
 msgid "Other available fields"
@@ -5509,8 +5537,9 @@ msgstr "Всі типи об'єктів"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:81
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/HostTemplateUsageTable.php:11
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ServiceTemplateUsageTable.php:11
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:24
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ServiceTemplateUsageTable.php:14
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:30
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:34
 msgid "Objects"
 msgstr "Об'єкти"
 
@@ -5519,9 +5548,9 @@ msgid "External Objects"
 msgstr "Зовнішні об'єкти"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceDirectorObject.php:84
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DependencyTemplateUsageTable.php:11
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/NotificationTemplateUsageTable.php:11
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ServiceTemplateUsageTable.php:12
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/DependencyTemplateUsageTable.php:13
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/NotificationTemplateUsageTable.php:13
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ServiceTemplateUsageTable.php:15
 msgid "Apply Rules"
 msgstr "Правила призначення"
 
@@ -5928,6 +5957,7 @@ msgstr "Відкинути поточний рядок"
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierJsonDecode.php:27
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierListToObject.php:26
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierParseURL.php:41
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierJsonDecode.php:28
 msgid "Let the whole import run fail"
 msgstr "Невдача завдання імпорту в цілому"
 
@@ -5991,6 +6021,7 @@ msgstr "Що необхідно зробити при невдалому зап�
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierGetHostByName.php:17
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierJsonDecode.php:25
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierParseURL.php:39
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierJsonDecode.php:26
 msgid "Set no value (null)"
 msgstr "Не задавати значення (null)"
 
@@ -6084,10 +6115,12 @@ msgstr ""
 "зі стрічкою. Може бути пустим"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierJsonDecode.php:22
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierJsonDecode.php:23
 msgid "What should we do in case we are unable to decode the given string?"
 msgstr "Що необхідно зробити при невдалому декодуванні стрічки?"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierJsonDecode.php:26
+#: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierJsonDecode.php:27
 msgid "Keep the JSON string as is"
 msgstr "Залишити стрічку JSON як є"
 
@@ -6559,7 +6592,8 @@ msgid "Group membership: %s"
 msgstr "Участь в групах: %s"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectController.php:351
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:117
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:142
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:141
 #, php-format
 msgid "Template: %s"
 msgstr "Шаблон: %s"
@@ -6583,86 +6617,109 @@ msgstr "Додати %s: %s"
 msgid "Add new Icinga %s"
 msgstr "Додати новий %s Icinga"
 
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:214
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:213
 msgid "Multiple objects"
 msgstr "Декілька об'єктів"
 
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:216
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:215
 #, php-format
 msgid "Modify %d objects"
 msgstr "Редагувати %d об'єктів"
 
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:253
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:252
 #, php-format
 msgid "All your %s Templates"
 msgstr "Всі ваші %s шаблонів"
 
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:308
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:307
 #, php-format
 msgid "All your %s Apply Rules"
 msgstr "Всі ваші %s правил призначення"
 
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:321
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:320
 #, php-format
 msgid "Create a new %s Apply Rule"
 msgstr "Створити нове %s правило призначення"
 
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:351
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:350
 #, php-format
 msgid "Icinga %s Sets"
 msgstr "Набори Icinga %s"
 
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:362
 #: sources.d/icingaweb2-module-director/library/Director/Web/Controller/ObjectsController.php:361
 #, php-format
 msgid "Create a new %s Set"
 msgstr "Створити новий %s набір"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:38
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:41
 #, php-format
 msgid "%s based on %s"
 msgstr "%s заснований на %s"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:55
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:61
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:62
+#, php-format
+msgid "%s in service sets based on %s"
+msgstr "%s наборів сервісів заснованих на %s"
+
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:79
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:78
 #, php-format
 msgid "Applied %s"
 msgstr "Призначений %s"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:58
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:82
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:81
 #, php-format
 msgid "Notification Apply Rules based on %s"
 msgstr "Правила призначення сповіщень засновані на %s"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:73
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:98
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:97
 #, php-format
 msgid "%s Templates"
 msgstr "Шаблони %s"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:76
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:101
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:100
 #, php-format
 msgid "%s templates based on %s"
 msgstr "%s шаблонів заснованих на %s"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:148
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:168
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:173
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:193
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:172
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:192
 #, php-format
 msgid "Create a new %s inheriting from this template"
 msgstr "Створити новий %s що наслідує з цього шаблону"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:158
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:183
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:182
 #, php-format
 msgid "Create a new %s inheriting from this one"
 msgstr "Створити новий %s наслідуючий з цього"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:170
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:195
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:194
 msgid "Apply Rule"
 msgstr "Правило призначення"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:180
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:205
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:204
 #, php-format
 msgid "This is the \"%s\" %s Template. Based on this, you might want to:"
 msgstr "Це шаблон \"%s\" %s. На основі цього ви можете:"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:187
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:212
+#: sources.d/icingaweb2-module-director/library/Director/Web/Controller/TemplateController.php:211
 msgid "Current Template Usage"
 msgstr "Поточне використання шаблону"
 
@@ -6980,46 +7037,46 @@ msgstr "Типи переходів між станами про які ви б�
 msgid "State and transition type filters"
 msgstr "Фільтри типів стану та переходів"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:243
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:245
 msgid "- add more -"
 msgstr "- додати більше -"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:271
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:273
 msgid "Add a new one..."
 msgstr "Додати новий..."
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:307
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:309
 #, php-format
 msgid "%s (inherited)"
 msgstr "%s (успадковано)"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:312
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:314
 #, php-format
 msgid "%s (inherited from %s)"
 msgstr "%s (успадковано від %s)"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:325
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:327
 #, php-format
 msgid "%s (not an Array!)"
 msgstr "%s (не масив!)"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:501
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:503
 msgid "Show available options"
 msgstr "Показати доступні опції"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:514
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:516
 msgid "Add a new entry"
 msgstr "Додати новий запис"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:524
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:526
 msgid "Remove this entry"
 msgstr "Видалити цей запис"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:534
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:536
 msgid "Move up"
 msgstr "Догори"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:544
+#: sources.d/icingaweb2-module-director/library/Director/Web/Form/IplElement/ExtensibleSetElement.php:546
 msgid "Move down"
 msgstr "Донизу"
 
@@ -7225,19 +7282,19 @@ msgstr "Перейти до цього об'єкта"
 msgid "Show details related to this change"
 msgstr "Показати деталі цієї зміни"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ApplyRulesTable.php:151
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ApplyRulesTable.php:159
 msgid "Show affected Objects"
 msgstr "Показати задіяні об'єкти"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ApplyRulesTable.php:158
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ApplyRulesTable.php:166
 msgid "Modify this Apply Rule"
 msgstr "Редагувати це правило призначення"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ApplyRulesTable.php:165
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ApplyRulesTable.php:173
 msgid "Apply Rule rendering preview"
 msgstr "Превью правила призначення"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ApplyRulesTable.php:172
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ApplyRulesTable.php:180
 msgid "Apply rule history"
 msgstr "Історія правила призначення"
 
@@ -7349,7 +7406,7 @@ msgid "via"
 msgstr "через"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaAppliedServiceTable.php:32
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:168
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:172
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/ObjectsTableService.php:103
 msgid "Servicename"
 msgstr "Ім'я сервіса"
@@ -7363,16 +7420,19 @@ msgstr "Назва сервіса"
 msgid "%s %s(%s)"
 msgstr "%s %s(%s)"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:229
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:233
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:235
 #, php-format
 msgid "This set has been inherited from %s"
 msgstr "Цей набір було успадковано від %s"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:238
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:242
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:244
 msgid "Remove"
 msgstr "Видалити"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:240
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:244
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/IcingaServiceSetServiceTable.php:246
 #, php-format
 msgid "Remove \"%s\" from this host"
 msgstr "Видалити \"%s\" з цього хоста"
@@ -7410,6 +7470,10 @@ msgstr "Назва сервіса"
 msgid "Actions"
 msgstr "Дії"
 
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/ServiceTemplateUsageTable.php:16
+msgid "Set Members"
+msgstr "Учасники набору"
+
 #: sources.d/icingaweb2-module-director/library/Director/Web/Table/SyncpropertyTable.php:62
 msgid "Source field"
 msgstr "Поле джерела"
@@ -7418,19 +7482,23 @@ msgstr "Поле джерела"
 msgid "Destination"
 msgstr "Призначення"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:55
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:57
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:61
 msgid "Direct"
 msgstr "Напряму"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:56
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:58
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:62
 msgid "Indirect"
 msgstr "Не напряму"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:57
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:59
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:63
 msgid "Total"
 msgstr "Загалом"
 
-#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:104
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:107
+#: sources.d/icingaweb2-module-director/library/Director/Web/Table/TemplateUsageTable.php:112
 msgid "This template is not in use"
 msgstr "Цей шаблон не використовується"
 
