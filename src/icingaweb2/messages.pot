@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Icinga L10n 32136c0\n"
+"Project-Id-Version: Icinga L10n bfa2f2d\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 15:52+0000\n"
+"POT-Creation-Date: 2024-11-06 13:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -329,7 +329,7 @@ msgstr ""
 #: sources.d/icingaweb2/application/controllers/DashboardController.php:209
 #: sources.d/icingaweb2/application/controllers/HealthController.php:23
 #: sources.d/icingaweb2/application/controllers/HealthController.php:33
-#: sources.d/icingaweb2/application/controllers/RoleController.php:66
+#: sources.d/icingaweb2/application/controllers/RoleController.php:62
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:575
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:19
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:28
@@ -377,7 +377,7 @@ msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:26
 #: sources.d/icingaweb2/application/controllers/GroupController.php:411
-#: sources.d/icingaweb2/application/controllers/RoleController.php:384
+#: sources.d/icingaweb2/application/controllers/RoleController.php:381
 #: sources.d/icingaweb2/application/controllers/UserController.php:366
 msgid "User Groups"
 msgstr ""
@@ -491,43 +491,43 @@ msgid "Group"
 msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:377
-#: sources.d/icingaweb2/application/controllers/RoleController.php:36
-#: sources.d/icingaweb2/application/controllers/RoleController.php:350
+#: sources.d/icingaweb2/application/controllers/RoleController.php:34
+#: sources.d/icingaweb2/application/controllers/RoleController.php:347
 #: sources.d/icingaweb2/application/controllers/UserController.php:333
 msgid "Roles"
 msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:379
-#: sources.d/icingaweb2/application/controllers/RoleController.php:352
+#: sources.d/icingaweb2/application/controllers/RoleController.php:349
 #: sources.d/icingaweb2/application/controllers/UserController.php:335
 msgid ""
 "Configure roles to permit or restrict users and groups accessing Icinga Web 2"
 msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:388
-#: sources.d/icingaweb2/application/controllers/RoleController.php:361
+#: sources.d/icingaweb2/application/controllers/RoleController.php:358
 #: sources.d/icingaweb2/application/controllers/UserController.php:344
 msgid "Audit a user's or group's privileges"
 msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:389
-#: sources.d/icingaweb2/application/controllers/RoleController.php:141
-#: sources.d/icingaweb2/application/controllers/RoleController.php:362
+#: sources.d/icingaweb2/application/controllers/RoleController.php:138
+#: sources.d/icingaweb2/application/controllers/RoleController.php:359
 #: sources.d/icingaweb2/application/controllers/UserController.php:345
 msgid "Audit"
 msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:400
-#: sources.d/icingaweb2/application/controllers/RoleController.php:372
+#: sources.d/icingaweb2/application/controllers/RoleController.php:369
 #: sources.d/icingaweb2/application/controllers/UserController.php:355
 msgid "List users of authentication backends"
 msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:401
 #: sources.d/icingaweb2/application/controllers/ManageUserDevicesController.php:35
-#: sources.d/icingaweb2/application/controllers/RoleController.php:67
-#: sources.d/icingaweb2/application/controllers/RoleController.php:287
-#: sources.d/icingaweb2/application/controllers/RoleController.php:373
+#: sources.d/icingaweb2/application/controllers/RoleController.php:63
+#: sources.d/icingaweb2/application/controllers/RoleController.php:284
+#: sources.d/icingaweb2/application/controllers/RoleController.php:370
 #: sources.d/icingaweb2/application/controllers/UserController.php:26
 #: sources.d/icingaweb2/application/controllers/UserController.php:356
 #: sources.d/icingaweb2/application/forms/Config/UserGroup/AddMemberForm.php:118
@@ -538,7 +538,7 @@ msgid "Users"
 msgstr ""
 
 #: sources.d/icingaweb2/application/controllers/GroupController.php:410
-#: sources.d/icingaweb2/application/controllers/RoleController.php:383
+#: sources.d/icingaweb2/application/controllers/RoleController.php:380
 #: sources.d/icingaweb2/application/controllers/UserController.php:365
 msgid "List groups of user group backends"
 msgstr ""
@@ -764,8 +764,8 @@ msgstr ""
 msgid "Navigation not found"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:68
-#: sources.d/icingaweb2/application/controllers/RoleController.php:322
+#: sources.d/icingaweb2/application/controllers/RoleController.php:64
+#: sources.d/icingaweb2/application/controllers/RoleController.php:319
 #: sources.d/icingaweb2/application/forms/Config/User/CreateMembershipForm.php:79
 #: sources.d/icingaweb2/application/forms/Navigation/NavigationConfigForm.php:615
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:99
@@ -773,72 +773,77 @@ msgstr ""
 msgid "Groups"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:69
+#: sources.d/icingaweb2/application/controllers/RoleController.php:65
+#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:31
+msgid "Inherits From"
+msgstr ""
+
+#: sources.d/icingaweb2/application/controllers/RoleController.php:71
 #: sources.d/icingaweb2/application/forms/Security/RoleForm.php:138
 #: sources.d/icingaweb2/application/views/scripts/config/module.phtml:117
 #: sources.d/icingaweb2/library/Icinga/Web/View/PrivilegeAudit.php:473
 msgid "Permissions"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:88
+#: sources.d/icingaweb2/application/controllers/RoleController.php:87
 msgid "Create Role"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:91
+#: sources.d/icingaweb2/application/controllers/RoleController.php:90
 msgid "New Role"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:105
-#: sources.d/icingaweb2/application/controllers/RoleController.php:114
+#: sources.d/icingaweb2/application/controllers/RoleController.php:102
+#: sources.d/icingaweb2/application/controllers/RoleController.php:111
 msgid "Update Role"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:111
-#: sources.d/icingaweb2/application/controllers/RoleController.php:132
+#: sources.d/icingaweb2/application/controllers/RoleController.php:108
+#: sources.d/icingaweb2/application/controllers/RoleController.php:129
 msgid "Role not found"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:126
-#: sources.d/icingaweb2/application/controllers/RoleController.php:135
+#: sources.d/icingaweb2/application/controllers/RoleController.php:123
+#: sources.d/icingaweb2/application/controllers/RoleController.php:132
 msgid "Remove Role"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:162
+#: sources.d/icingaweb2/application/controllers/RoleController.php:159
 msgid "Enter user or group name"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:163
+#: sources.d/icingaweb2/application/controllers/RoleController.php:160
 msgid "Inspect"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:183
+#: sources.d/icingaweb2/application/controllers/RoleController.php:180
 msgid "No user or group selected."
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:188
+#: sources.d/icingaweb2/application/controllers/RoleController.php:185
 #, php-format
 msgid "Privilege Audit for User \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:194
+#: sources.d/icingaweb2/application/controllers/RoleController.php:191
 #, php-format
 msgid "Privilege Audit for Group \"%s\""
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:219
+#: sources.d/icingaweb2/application/controllers/RoleController.php:216
 msgid "All roles"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:221
+#: sources.d/icingaweb2/application/controllers/RoleController.php:218
 msgid "Show privileges of all roles"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:232
+#: sources.d/icingaweb2/application/controllers/RoleController.php:229
 #, php-format
 msgid "Only show privileges of role %s"
 msgstr ""
 
-#: sources.d/icingaweb2/application/controllers/RoleController.php:334
+#: sources.d/icingaweb2/application/controllers/RoleController.php:331
 msgid "Your search does not match any user or group"
 msgstr ""
 
@@ -3451,10 +3456,6 @@ msgstr ""
 
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:23
 msgid "No roles found."
-msgstr ""
-
-#: sources.d/icingaweb2/application/views/scripts/role/list.phtml:31
-msgid "Inherits From"
 msgstr ""
 
 #: sources.d/icingaweb2/application/views/scripts/role/list.phtml:43
