@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-30 10:29+0000\n"
+"POT-Creation-Date: 2025-04-11 06:58+0000\n"
 "PO-Revision-Date: 2021-07-13 14:54-0400\n"
 "Last-Translator: Mathieu Lutfy <mathieu@symbiotic.coop>\n"
 "Language-Team: \n"
@@ -144,103 +144,114 @@ msgstr ""
 msgid "Protocol used by Jira (http / https)"
 msgstr ""
 
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:65
+#, fuzzy
+msgid "Proxy Server"
+msgstr "Service"
+
 #: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:67
+msgid ""
+"Proxy Server used to connect to Jira if needed, format <hostname or IP>:"
+"<port>"
+msgstr ""
+
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:78
 msgid "Username"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:76
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:87
 msgid "Password"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:85
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:96
 msgid "Deployment Settings"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:86
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:97
 msgid "Configure where Jira has been deployed."
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:99
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:110
 msgid "Deployment Type"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:102
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:113
 msgid "Cloud"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:103
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:114
 #, fuzzy
 msgid "Server"
 msgstr "Service"
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:126
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:137
 msgid "Jira seems to be deployed differently."
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:142
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:153
 msgid "Legacy compatibility"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:155
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:166
 msgid "Key Fields"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:157
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:168
 msgid ""
 "The module requires you to create two custom fields in Jira that represent "
 "\"icingaKey\" and \"icingaStatus\"."
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:171
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:182
 msgid ""
 "Custom field to figure out whether an issue for the given object already "
 "exists"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:182
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:193
 msgid "Custom field that represents the status of icinga object"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:192
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:203
 msgid "icingaStatus and icingaKey cannot be the same field."
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:208
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:219
 msgid "Issue Defaults"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:210
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:221
 msgid ""
 "Default project and issue type to be used for creating Jira tickets. Please "
 "note that the project settings must represent project keys, not display "
 "names."
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:222
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:233
 #: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:61
 msgid "Project"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:228
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:239
 #: sources.d/icingaweb2-module-jira/library/Jira/Web/Table/IssueDetails.php:65
 msgid "Issue Type"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:236
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:247
 msgid "Icinga Web Link"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:238
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:249
 msgid ""
 "If you want to have links pointing back to your Icinga Installation in your "
 "Jira issues, you need to fill the Url setting."
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:250
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:261
 msgid "URL"
 msgstr ""
 
-#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:258
+#: sources.d/icingaweb2-module-jira/application/forms/Config/ConfigForm.php:269
 #: sources.d/icingaweb2-module-jira/application/forms/Config/TemplateConfigForm.php:67
 msgid "Save Changes"
 msgstr ""
