@@ -43,10 +43,14 @@ for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
     HTTP_STATUS=$(curl -Is https://api.github.com/repos/Icinga/$repo_name/branches/master | head -n 1 | awk '{ print $2 }')
     if [ "$HTTP_STATUS" == "301" ]; then
       DEFAULT_BRANCH="main"
+    elif [ "$HTTP_STATUS" != "200" ]; then
+      echo "Error: Unable to fetch the default branch for $repo_name. HTTP status code: $HTTP_STATUS"
+      exit 1
     fi
 
     wget -q -O - https://github.com/Icinga/$repo_name/archive/$DEFAULT_BRANCH.tar.gz | tar xz
     mv $repo_name-$DEFAULT_BRANCH/ sources.d/$repo_name
+    echo "$DEFAULT_BRANCH" > sources.d/$repo_name/.gitHEAD
   fi
 done
 
@@ -54,6 +58,8 @@ for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
   if [ ! -d $repo_name ]; then
     mkdir $repo_name
   fi
+
+  git_head=$(cat sources.d/$repo_name/.gitHEAD)
 
   # Create a list of files xgettext should scan
   find -L sources.d/$repo_name -regex ".*\.\(php\|phtml\)" ! -path "*/vendor/*" ! -path "*/test/*" > $repo_name/catalog.txt
@@ -83,18 +89,30 @@ for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
 
   # Use current year in the copyright for new templates without one yet
   REPLACE_CODE=$(cat << PYTHON
-import sys
+import sys, argparse, re
 input = sys.stdin.read()
+parser = argparse.ArgumentParser()
+parser.add_argument('--repo-name')
+parser.add_argument('--git-head')
+args = parser.parse_args()
 from datetime import date
 result = input.replace(
     '# Copyright (C) YEAR Icinga GmbH',
     '# Copyright (C) {0} Icinga GmbH'.format(date.today().year),
     1
 )
+result = re.sub(
+    '^#: sources.d/{}/(.*?):(\d+)'.format(args.repo_name),
+    '#: https://github.com/Icinga/{repo_name}/tree/{git_head}/\\\\1#L\\\\2'.format(**vars(args)),
+    result,
+    count=0,
+    flags=re.MULTILINE
+)
 sys.stdout.write(result)
 PYTHON
 )
-  cat $repo_name/messages.pot | python3 -c "$REPLACE_CODE" > temp; mv temp $repo_name/messages.pot
+  cat $repo_name/messages.pot | python3 -c "$REPLACE_CODE" --repo-name=$repo_name --git-head=$git_head > temp
+  mv temp $repo_name/messages.pot
 
   # Cleanup created files and directories
   rm $repo_name/catalog.txt
