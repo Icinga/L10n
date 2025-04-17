@@ -4,12 +4,14 @@
 #
 # Contributors:
 # Johannes Meyer <johannes.meyer@icinga.com>, 2021, 2022, 2025.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2025.
+# OpenAI <noreply-mt-openai@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-11 06:58+0000\n"
-"PO-Revision-Date: 2025-04-14 12:40+0000\n"
+"PO-Revision-Date: 2025-04-14 14:06+0000\n"
 "Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
 "Language-Team: German <https://translate.icinga.com/projects/icinga/"
 "icingadb-web/de/>\n"
@@ -1030,11 +1032,11 @@ msgstr[1] "Checks planen"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:47
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:70
-#, fuzzy, php-format
+#, php-format
 msgid "Scheduled downtime successfully"
 msgid_plural "Scheduled downtime for %d hosts successfully"
 msgstr[0] "Downtime erfolgreich geplant"
-msgstr[1] "Downtime auf %d Hosts erfolgreich geplant"
+msgstr[1] "Downtime für %d Hosts erfolgreich geplant"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleHostDowntimeForm.php:63
 msgid "All Services"
@@ -1099,7 +1101,7 @@ msgstr ""
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:191
 msgid "The duration must not be zero"
-msgstr ""
+msgstr "Die Dauer darf nicht null sein"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:214
 msgid "Minutes"
@@ -1118,19 +1120,18 @@ msgid "Child Options"
 msgstr "Kind-Optionen"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:241
-#, fuzzy
 msgid "Do nothing with children"
-msgstr "Nicht auf Kind-Hosts anwenden"
+msgstr "Nichts mit untergeordneten Elementen machen"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:244
-#, fuzzy
 msgid "Schedule a downtime for all children and trigger them by this downtime"
-msgstr "Plane eine Downtime mit Auslöser für alle Kind-Hosts"
+msgstr ""
+"Eine Downtime für alle untergeordneten Elemente planen und durch diese "
+"Downtime auslösen"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:247
-#, fuzzy
 msgid "Schedule non-triggered downtime for all children"
-msgstr "Plane eine Downtime ohne Auslöser für alle Kind-Hosts"
+msgstr "Nicht-ausgelöste Downtime für alle untergeordneten Elemente planen"
 
 #: sources.d/icingadb-web/application/forms/Command/Object/ScheduleServiceDowntimeForm.php:262
 msgid "Schedule downtime"
@@ -1770,15 +1771,13 @@ msgstr "Liste Servicegruppen"
 
 #: sources.d/icingadb-web/configuration.php:381
 #: sources.d/icingadb-web/configuration.php:515
-#, fuzzy
 msgid "List contact groups"
-msgstr "Liste Hostgruppen"
+msgstr "Kontaktgruppen auflisten"
 
 #: sources.d/icingadb-web/configuration.php:393
 #: sources.d/icingadb-web/configuration.php:527
-#, fuzzy
 msgid "List contacts"
-msgstr "Liste Kommentare"
+msgstr "Kontakte auflisten"
 
 #: sources.d/icingadb-web/configuration.php:402
 #: sources.d/icingadb-web/configuration.php:535
@@ -1895,6 +1894,8 @@ msgstr "%d Zeile(n) ausgewählt"
 #: sources.d/icingadb-web/library/Icingadb/Common/DetailActions.php:58
 msgid "Use shift/cmd + click/arrow keys to select multiple items"
 msgstr ""
+"Verwenden Sie Umschalttaste/Befehlstaste + Klick/Pfeiltasten, um mehrere "
+"Elemente auszuwählen"
 
 #: sources.d/icingadb-web/library/Icingadb/Common/HostStates.php:90
 msgid "up"
@@ -2322,7 +2323,7 @@ msgstr "Kommentar wurde gelöscht"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/DependencyEdgeState.php:40
 msgid "Dependency Edge State Failed"
-msgstr ""
+msgstr "Zustand der Abhängigkeitskante fehlgeschlagen"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Downtime.php:87
 #: sources.d/icingadb-web/library/Icingadb/Model/DowntimeHistory.php:88
@@ -2614,9 +2615,8 @@ msgid "Host Check Interval"
 msgstr "Host Check-Intervall"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:146
-#, fuzzy
 msgid "Host Check Retry Interval"
-msgstr "Host Check-Wiederholungs-Intervall"
+msgstr "Host-Check-Wiederholungsintervall"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:147
 msgid "Host Active Checks Enabled"
@@ -2686,9 +2686,8 @@ msgstr "Zonenname"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Host.php:170
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:160
-#, fuzzy
 msgid "Total Children"
-msgstr "Kinder"
+msgstr "Gesamtanzahl Kinder"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:30
 msgid "Host State Type"
@@ -2784,9 +2783,8 @@ msgid "Host Check Source"
 msgstr "Host-Check Quelle"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:54
-#, fuzzy
 msgid "Host Scheduling Source"
-msgstr "Check-Scheduler"
+msgstr "Host-Planungsquelle"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:55
 msgid "Host Last Update"
@@ -2805,9 +2803,8 @@ msgid "Host Next Update"
 msgstr "Nächste Host Aktualisierung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/HostState.php:62
-#, fuzzy
 msgid "Host Affects Children"
-msgstr "Host-Aktion"
+msgstr "Host beeinflusst Kinder"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Hostgroup.php:52
 msgid "Hostgroup Name Checksum"
@@ -2920,9 +2917,8 @@ msgid "Notification Text"
 msgstr "Benachrichtigungstext"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/NotificationHistory.php:83
-#, fuzzy
 msgid "Contacts Notified"
-msgstr "Benachrichtigte Benutzer"
+msgstr "Benachrichtigte Kontakte"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Notificationcommand.php:55
 msgid "Notificationcommand Name Checksum"
@@ -3001,23 +2997,20 @@ msgid "Notificationcommand Envvar Value"
 msgstr "Benachrichtigungs-Kommando-Umgebungsvariable Wert"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/RedundancyGroup.php:56
-#, fuzzy
 msgid "Redundancy Group Display Name"
-msgstr "Benutzergruppen-Anzeigename"
+msgstr "Redundanzgruppen-Anzeigename"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/RedundancyGroupState.php:56
 msgid "Redundancy Group Failed"
-msgstr ""
+msgstr "Redundanzgruppe ausgefallen"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/RedundancyGroupState.php:57
-#, fuzzy
 msgid "Redundancy Group Is Reachable"
-msgstr "Service ist Erreichbar"
+msgstr "Redundanzgruppe ist erreichbar"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/RedundancyGroupState.php:58
-#, fuzzy
 msgid "Redundancy Group Last State Change"
-msgstr "Letzte Host Zustands-Änderung"
+msgstr "Redundanzgruppen Letzter Zustandswechsel"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:123
 msgid "Service Name Checksum"
@@ -3049,9 +3042,8 @@ msgid "Service Check Interval"
 msgstr "Service-Check Intervall"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:136
-#, fuzzy
 msgid "Service Check Retry Interval"
-msgstr "Service-Check Versuchsintervall"
+msgstr "Service-Check-Wiederholungsintervall"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Service.php:137
 msgid "Service Active Checks Enabled"
@@ -3182,9 +3174,8 @@ msgid "Service Check Source"
 msgstr "Service-Check Quelle"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:56
-#, fuzzy
 msgid "Service Scheduling Source"
-msgstr "Check-Scheduler"
+msgstr "Service-Planungsquelle"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:57
 msgid "Service Last Update"
@@ -3203,9 +3194,8 @@ msgid "Service Next Update"
 msgstr "Nächste Service Aktualisierung"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/ServiceState.php:64
-#, fuzzy
 msgid "Service Affects Children"
-msgstr "Service-Aktion"
+msgstr "Service betrifft untergeordnete Elemente"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Servicegroup.php:52
 msgid "Servicegroup Name Checksum"
@@ -3228,19 +3218,16 @@ msgid "Servicegroup Display Name"
 msgstr "Servicegruppen-Anzeigename"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/State.php:160
-#, fuzzy
 msgid "handled by Downtime"
-msgstr "Geplant von einer Downtime"
+msgstr "wird durch Downtime behandelt"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/State.php:160
-#, fuzzy
 msgid "in Downtime"
-msgstr "Downtime"
+msgstr "in Downtime"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/State.php:174
-#, fuzzy
 msgid "is unreachable"
-msgstr "unerreichbar"
+msgstr "ist unerreichbar"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/StateHistory.php:83
 msgid "Event State Type"
@@ -3347,29 +3334,24 @@ msgid "User Receives Notifications"
 msgstr "Benutzer empfängt Benachrichtigungen"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:52
-#, fuzzy
 msgid "Contactgroup Name Checksum"
-msgstr "Prüfsumme (Hostgruppenname)"
+msgstr "Kontaktgruppenname Prüfsumme"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:53
-#, fuzzy
 msgid "Contactgroup Properties Checksum"
-msgstr "Prüfsumme (Hostgruppen-Eigenschaften)"
+msgstr "Kontaktgruppeneigenschaften-Prüfsumme"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:54
-#, fuzzy
 msgid "Contactgroup Name"
-msgstr "Hostgruppenname"
+msgstr "Kontaktgruppenname"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:55
-#, fuzzy
 msgid "Contactgroup Name (CI)"
-msgstr "Hostgruppenname (CI)"
+msgstr "Kontaktgruppenname (CI)"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Usergroup.php:56
-#, fuzzy
 msgid "Contactgroup Display Name"
-msgstr "Hostgruppen-Anzeigename"
+msgstr "Kontaktgruppen-Anzeigename"
 
 #: sources.d/icingadb-web/library/Icingadb/Model/Zone.php:53
 msgid "Zone Name Checksum"
@@ -3397,33 +3379,31 @@ msgstr "Zonentiefe"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:34
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:52
-#, fuzzy, php-format
+#, php-format
 msgid "Can't connect to Redis: %s"
-msgstr "Keine Verbindung zu Icinga Redis: %s"
+msgstr "Kann keine Verbindung zu Redis herstellen: %s"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/ApplicationState.php:92
-#, fuzzy
 msgid ""
 "Redis is outdated. Make sure Icinga 2 is running and connected to Redis."
 msgstr ""
-"Icinga Redis ist veraltet. Stelle sicher, dass Icinga 2 läuft und eine "
-"Verbindung zu Redis hat."
+"Redis ist veraltet. Stellen Sie sicher, dass Icinga 2 läuft und mit Redis "
+"verbunden ist."
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/CreateHostSlaReport.php:28
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/CreateHostsSlaReport.php:28
 msgid "Create Host SLA Report"
-msgstr ""
+msgstr "Host-SLA-Bericht erstellen"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/CreateHostsSlaReport.php:26
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/CreateServicesSlaReport.php:25
 msgid "Reporting"
-msgstr ""
+msgstr "Reporting"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/CreateServiceSlaReport.php:31
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/CreateServicesSlaReport.php:27
-#, fuzzy
 msgid "Create Service SLA Report"
-msgstr "Verspätete Service-Checks"
+msgstr "Service SLA-Bericht erstellen"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:36
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/IcingaHealth.php:42
@@ -3451,26 +3431,23 @@ msgid "Notifications are disabled"
 msgstr "Benachrichtigungen inaktiv"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:35
-#, fuzzy
 msgid ""
 "Can't check Redis: Icinga DB is not running or not writing into the database "
 "(make sure the icinga feature \"icingadb\" is enabled)"
 msgstr ""
-"Kann Icinga Redis nicht prüfen: Icinga DB läuft nicht oder schreibt nichts "
-"in die Datenbank (Stelle sicher dass das Icinga 2 feature \"icingadb\" aktiv "
-"ist)"
+"Redis-Überprüfung nicht möglich: Icinga DB läuft nicht oder schreibt nicht "
+"in die Datenbank (stellen Sie sicher, dass das Icinga-Feature \"icingadb\" "
+"aktiviert ist)"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:45
-#, fuzzy
 msgid "Redis available and up to date."
-msgstr "Icinga Redis ist verfügbar und aktuell."
+msgstr "Redis verfügbar und auf dem neuesten Stand."
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/RedisHealth.php:48
-#, fuzzy
 msgid "Redis outdated. Make sure Icinga 2 is running and connected to Redis."
 msgstr ""
-"Icinga Redis ist veraltet. Stelle sicher, dass Icinga 2 läuft und eine "
-"Verbindung zu Redis hat."
+"Redis veraltet. Stellen Sie sicher, dass Icinga 2 läuft und mit Redis "
+"verbunden ist."
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/Reporting/HostSlaReport.php:21
 msgid "Host SLA"
@@ -3500,9 +3477,8 @@ msgid "None"
 msgstr "Keine"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/Reporting/SlaReport.php:180
-#, fuzzy
 msgid "Hour"
-msgstr "Stunden"
+msgstr "Stunde"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/Reporting/SlaReport.php:181
 msgid "Day"
@@ -3526,21 +3502,19 @@ msgstr "Dezimalstellen Anzahl"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/Reporting/SlaReport.php:203
 msgid "Export Total Averages"
-msgstr ""
+msgstr "Gesamtdurchschnitte exportieren"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/Reporting/SlaReport.php:204
 msgid "Export total averages to CSV and JSON"
-msgstr ""
+msgstr "Gesamtdurchschnitte als CSV und JSON exportieren"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/Reporting/TotalHostSlaReport.php:17
-#, fuzzy
 msgid "Total Host SLA"
-msgstr "Alle Hosts"
+msgstr "Gesamt-Host-SLA"
 
 #: sources.d/icingadb-web/library/Icingadb/ProvidedHook/Reporting/TotalServiceSlaReport.php:17
-#, fuzzy
 msgid "Total Service SLA"
-msgstr "Alle Services"
+msgstr "Gesamter Service SLA"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportPage.php:17
 #: sources.d/icingadb-web/library/Icingadb/Setup/ApiTransportStep.php:78
@@ -3698,10 +3672,8 @@ msgstr ""
 "Für Check-Plugins die HTML ausgeben, ist die libxml-Erweiterung erforderlich"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:76
-#, fuzzy
 msgid "For check plugins that output HTML the dom extension is required"
-msgstr ""
-"Für Check-Plugins die HTML ausgeben, ist die libxml-Erweiterung erforderlich"
+msgstr "Für Check-Plugins, die HTML ausgeben, wird die dom-Erweiterung benötigt"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/IcingaDbWizard.php:83
 msgid ""
@@ -3712,14 +3684,14 @@ msgstr ""
 "PHP benötigt."
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisPage.php:17
-#, fuzzy
 msgid "Please fill out the connection details to access the Redis server."
-msgstr "Bitte gib die Verbindungsdetails zum erreichen des Icinga DB Redis an."
+msgstr ""
+"Bitte füllen Sie die Verbindungsdetails aus, um auf den Redis-Server "
+"zuzugreifen"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:110
-#, fuzzy
 msgid "Redis will be accessed using the following connection details:"
-msgstr "Icinga DB wird über die folgenden Verbindungsdetails erreicht:"
+msgstr "Auf Redis wird mit folgenden Verbindungsdetails zugegriffen:"
 
 #: sources.d/icingadb-web/library/Icingadb/Setup/RedisStep.php:129
 msgid "Primary"
@@ -3795,8 +3767,8 @@ msgstr "%s ist %s"
 #, php-format
 msgid "%d affected object"
 msgid_plural "Up to %d affected objects"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d betroffenes Objekt"
+msgstr[1] "Bis zu %d betroffene Objekte"
 
 #: sources.d/icingadb-web/library/Icingadb/View/BaseHostAndServiceRenderer.php:219
 #, php-format
@@ -4014,7 +3986,11 @@ msgid "List %d host that is currently in DOWN state in host group \"%s\""
 msgid_plural ""
 "List %d hosts which are currently in DOWN state in host group \"%s\""
 msgstr[0] ""
+"Liste %d host, der sich derzeit im Zustand DOWN in der Hostgruppe \"%s\" "
+"befindet"
 msgstr[1] ""
+"Liste %d hosts, die sich derzeit im Zustand DOWN in der Hostgruppe \"%s\" "
+"befinden"
 
 #: sources.d/icingadb-web/library/Icingadb/View/HostgroupGridRenderer.php:70
 #, php-format
@@ -4025,7 +4001,11 @@ msgid_plural ""
 "List %d hosts which are currently in DOWN (Acknowledged) state in host group "
 "\"%s\""
 msgstr[0] ""
+"Liste %d host, der sich derzeit im Zustand DOWN (Anerkannt) in der "
+"Hostgruppe \"%s\" befindet"
 msgstr[1] ""
+"Liste %d hosts, die sich derzeit im Zustand DOWN (Anerkannt) in der "
+"Hostgruppe \"%s\" befinden"
 
 #: sources.d/icingadb-web/library/Icingadb/View/HostgroupGridRenderer.php:88
 #, php-format
@@ -4033,7 +4013,11 @@ msgid "List %d host that is currently in PENDING state in host group \"%s\""
 msgid_plural ""
 "List %d hosts which are currently in PENDING state in host group \"%s\""
 msgstr[0] ""
+"Liste %d Host, der sich aktuell im Zustand AUSSTEHEND in der Hostgruppe \"%"
+"s\" befindet"
 msgstr[1] ""
+"Liste %d Hosts, die sich aktuell im Zustand AUSSTEHEND in der Hostgruppe \"%"
+"s\" befinden"
 
 #: sources.d/icingadb-web/library/Icingadb/View/HostgroupGridRenderer.php:106
 #, php-format
@@ -4041,18 +4025,22 @@ msgid "List %d host that is currently in UP state in host group \"%s\""
 msgid_plural ""
 "List %d hosts which are currently in UP state in host group \"%s\""
 msgstr[0] ""
+"Liste %d Host, der sich aktuell im Zustand UP in der Hostgruppe \"%s\" "
+"befindet"
 msgstr[1] ""
+"Liste %d Hosts, die sich aktuell im Zustand UP in der Hostgruppe \"%s\" "
+"befinden"
 
 #: sources.d/icingadb-web/library/Icingadb/View/HostgroupGridRenderer.php:121
 #, php-format
 msgid "There are no hosts in host group \"%s\""
-msgstr ""
+msgstr "Es gibt keine Hosts in der Hostgruppe \"%s\""
 
 #: sources.d/icingadb-web/library/Icingadb/View/HostgroupGridRenderer.php:139
 #: sources.d/icingadb-web/library/Icingadb/View/HostgroupRenderer.php:51
-#, fuzzy, php-format
+#, php-format
 msgid "List all hosts in the group \"%s\""
-msgstr "Liste Hostgruppen"
+msgstr "Liste alle Hosts in der Gruppe \"%s\""
 
 #: sources.d/icingadb-web/library/Icingadb/View/NotificationRenderer.php:179
 msgid "Problem acknowledged"
@@ -4080,13 +4068,13 @@ msgstr "%s hat sich erholt"
 #, php-format
 msgctxt "<groupname> has ..."
 msgid "%s has no working objects"
-msgstr ""
+msgstr "%s hat keine funktionierenden Objekte"
 
 #: sources.d/icingadb-web/library/Icingadb/View/RedundancyGroupRenderer.php:76
 #, php-format
 msgctxt "<groupname> has ..."
 msgid "%s has working objects"
-msgstr ""
+msgstr "%s hat funktionierende Objekte"
 
 #: sources.d/icingadb-web/library/Icingadb/View/ServicegroupGridRenderer.php:48
 #, php-format
@@ -4096,7 +4084,11 @@ msgid_plural ""
 "List %d services which are currently in CRITICAL state in service group "
 "\"%s\""
 msgstr[0] ""
+"Liste %d Dienst, der sich aktuell im Zustand CRITICAL in der Dienstgruppe \"%"
+"s\" befindet"
 msgstr[1] ""
+"Liste %d Dienste, die sich aktuell im Zustand CRITICAL in der Dienstgruppe \""
+"%s\" befinden"
 
 #: sources.d/icingadb-web/library/Icingadb/View/ServicegroupGridRenderer.php:70
 #, php-format
@@ -4107,7 +4099,11 @@ msgid_plural ""
 "List %d services which are currently in CRITICAL (Acknowledged) state in "
 "service group \"%s\""
 msgstr[0] ""
+"Liste %d Service, der sich aktuell im Zustand KRITISCH (Anerkannt) in der "
+"Servicegruppe \"%s\" befindet"
 msgstr[1] ""
+"Liste %d Services, die sich aktuell im Zustand KRITISCH (Anerkannt) in der "
+"Servicegruppe \"%s\" befinden"
 
 #: sources.d/icingadb-web/library/Icingadb/View/ServicegroupGridRenderer.php:92
 #, php-format
@@ -4116,7 +4112,11 @@ msgid ""
 msgid_plural ""
 "List %d services which are currently in WARNING state in service group \"%s\""
 msgstr[0] ""
+"Liste %d Service, der sich aktuell im Zustand WARNUNG in der Servicegruppe \""
+"%s\" befindet"
 msgstr[1] ""
+"Liste %d Services, die sich aktuell im Zustand WARNUNG in der Servicegruppe "
+"\"%s\" befinden"
 
 #: sources.d/icingadb-web/library/Icingadb/View/ServicegroupGridRenderer.php:114
 #, php-format
@@ -4127,7 +4127,11 @@ msgid_plural ""
 "List %d services which are currently in WARNING (Acknowledged) state in "
 "service group \"%s\""
 msgstr[0] ""
+"Liste %d Dienst, der sich aktuell im Zustand WARNING (Acknowledged) in der "
+"Dienstgruppe \"%s\" befindet"
 msgstr[1] ""
+"Liste %d Dienste, die sich aktuell im Zustand WARNING (Acknowledged) in der "
+"Dienstgruppe \"%s\" befinden"
 
 #: sources.d/icingadb-web/library/Icingadb/View/ServicegroupGridRenderer.php:136
 #, php-format
@@ -4136,7 +4140,11 @@ msgid ""
 msgid_plural ""
 "List %d services which are currently in UNKNOWN state in service group \"%s\""
 msgstr[0] ""
+"Liste %d Dienst, der sich aktuell im Zustand UNKNOWN in der Dienstgruppe \"%"
+"s\" befindet"
 msgstr[1] ""
+"Liste %d Dienste, die sich aktuell im Zustand UNKNOWN in der Dienstgruppe \"%"
+"s\" befinden"
 
 #: sources.d/icingadb-web/library/Icingadb/View/ServicegroupGridRenderer.php:158
 #, php-format
@@ -4147,7 +4155,11 @@ msgid_plural ""
 "List %d services which are currently in UNKNOWN (Acknowledged) state in "
 "service group \"%s\""
 msgstr[0] ""
+"Liste %d Dienst, der sich aktuell im Zustand UNKNOWN (Acknowledged) in der "
+"Dienstgruppe \"%s\" befindet"
 msgstr[1] ""
+"Liste %d Dienste, die sich aktuell im Zustand UNKNOWN (Acknowledged) in der "
+"Dienstgruppe \"%s\" befinden"
 
 #: sources.d/icingadb-web/library/Icingadb/View/ServicegroupGridRenderer.php:178
 #, php-format
@@ -4156,7 +4168,11 @@ msgid ""
 msgid_plural ""
 "List %d services which are currently in PENDING state in service group \"%s\""
 msgstr[0] ""
+"Liste %d Dienst, der sich aktuell im Zustand AUSSTEHEND in der Dienstgruppe "
+"\"%s\" befindet"
 msgstr[1] ""
+"Liste %d Dienste, die sich aktuell im Zustand AUSSTEHEND in der Dienstgruppe "
+"\"%s\" befinden"
 
 #: sources.d/icingadb-web/library/Icingadb/View/ServicegroupGridRenderer.php:196
 #, php-format
@@ -4164,38 +4180,38 @@ msgid "List %d service that is currently in OK state in service group \"%s\""
 msgid_plural ""
 "List %d services which are currently in OK state in service group \"%s\""
 msgstr[0] ""
+"Liste %d Service, der sich aktuell im Zustand OK in der Servicegruppe \"%s\" "
+"befindet"
 msgstr[1] ""
+"Liste %d Services, die sich aktuell im Zustand OK in der Servicegruppe \"%s\""
+" befinden"
 
 #: sources.d/icingadb-web/library/Icingadb/View/ServicegroupGridRenderer.php:211
 #, php-format
 msgid "There are no services in service group \"%s\""
-msgstr ""
+msgstr "Es gibt keine Services in der Servicegruppe \"%s\""
 
 #: sources.d/icingadb-web/library/Icingadb/View/ServicegroupGridRenderer.php:229
 #: sources.d/icingadb-web/library/Icingadb/View/ServicegroupRenderer.php:50
-#, fuzzy, php-format
+#, php-format
 msgid "List all services in the group \"%s\""
-msgstr "Liste Servicegruppen"
+msgstr "Liste alle Services in der Gruppe \"%s\""
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/GridViewModeSwitcher.php:27
-#, fuzzy
 msgid "List view active"
-msgstr "Minimale Ansicht aktiv"
+msgstr "Listenansicht aktiv"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/GridViewModeSwitcher.php:28
-#, fuzzy
 msgid "Switch to list view"
-msgstr "Zur minimalen Ansicht wechseln"
+msgstr "Zur Listenansicht wechseln"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/GridViewModeSwitcher.php:31
-#, fuzzy
 msgid "Grid view active"
-msgstr "Detaillierte Ansicht aktiv"
+msgstr "Rasteransicht aktiv"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/GridViewModeSwitcher.php:32
-#, fuzzy
 msgid "Switch to grid view"
-msgstr "Zur detaillierten Ansicht wechseln"
+msgstr "Zur Rasteransicht wechseln"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/ProblemToggle.php:59
 msgid "Problems Only"
@@ -4259,13 +4275,13 @@ msgstr "Zeitraum %s"
 #, php-format
 msgctxt "..<customvar-name>"
 msgid "Contact %s"
-msgstr ""
+msgstr "Kontakt %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:59
-#, fuzzy, php-format
+#, php-format
 msgctxt "..<customvar-name>"
 msgid "Contactgroup %s"
-msgstr "Hostgruppe %s"
+msgstr "Kontaktgruppe %s"
 
 #: sources.d/icingadb-web/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php:179
 #, php-format
@@ -4328,9 +4344,8 @@ msgid "Now"
 msgstr "Jetzt"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:182
-#, fuzzy
 msgid "Execution Start"
-msgstr "Ausführungsdauer"
+msgstr "Ausführungsbeginn"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:183
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:200
@@ -4339,18 +4354,16 @@ msgid "PENDING"
 msgstr "AUSSTEHEND"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:195
-#, fuzzy
 msgid "Execution End"
-msgstr "Ausführungsdauer"
+msgstr "Ausführungsende"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:211
 msgid "Interval"
 msgstr "Intervall"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:223
-#, fuzzy
 msgid "Execution Time"
-msgstr "Ausführungsdauer"
+msgstr "Ausführungszeit"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:223
 msgid "Latency"
@@ -4362,9 +4375,8 @@ msgid "Next Check"
 msgstr "Nächster Check"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:249
-#, fuzzy
 msgid "n.a"
-msgstr "n. a."
+msgstr "n. z."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:306
 msgid "Command"
@@ -4377,9 +4389,8 @@ msgstr "Check-Scheduler"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:315
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:70
-#, fuzzy
 msgid "Timeperiod"
-msgstr "Zeitraum-ID"
+msgstr "Zeitraum"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:322
 msgid "Attempts"
@@ -4391,9 +4402,8 @@ msgid "Check Source"
 msgstr "Check-Quelle"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CheckStatistics.php:368
-#, fuzzy
 msgid "active and passive checks are disabled"
-msgstr "Aktive Service-Checks deaktiviert"
+msgstr "aktive und passive Prüfungen sind deaktiviert"
 
 # Aktuell wird es so in anderen Modulen übersetzt. -ThW
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/CommentDetail.php:67
@@ -4561,9 +4571,8 @@ msgid "State"
 msgstr "Zustand"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:155
-#, fuzzy
 msgid "Notified Contacts"
-msgstr "Benachrichtigungs-Status"
+msgstr "Benachrichtigte Kontakte"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:158
 msgctxt "notified users: none"
@@ -4571,11 +4580,11 @@ msgid "None"
 msgstr "Keine"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:161
-#, fuzzy, php-format
+#, php-format
 msgid "This notification was sent to a single contact"
 msgid_plural "This notification was sent to %d contacts"
-msgstr[0] "Diese Benachrichtigung wurde an einen einzelnen Benutzer gesendet"
-msgstr[1] "Diese Benachrichtigung wurde an %d Benutzer gesendet"
+msgstr[0] "Diese Benachrichtigung wurde an einen einzelnen Kontakt gesendet"
+msgstr[1] "Diese Benachrichtigung wurde an %d Kontakte gesendet"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/EventDetail.php:177
 #, php-format
@@ -4839,14 +4848,12 @@ msgid "Notes"
 msgstr "Notizen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:406
-#, fuzzy
 msgid "No contacts configured."
-msgstr "Keine Benutzer konfiguriert."
+msgstr "Keine Kontakte konfiguriert"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:412
-#, fuzzy
 msgid "No contact groups configured."
-msgstr "Keine Benutzergruppen konfiguriert."
+msgstr "Keine Kontaktgruppen konfiguriert"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:422
 msgid "No performance data available."
@@ -4855,25 +4862,26 @@ msgstr "Keine Performancedaten verfügbar."
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:629
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:671
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/RedundancyGroupDetail.php:98
-#, fuzzy
 msgid "Root Problems"
-msgstr "Host-Probleme"
+msgstr "Ursächliche Probleme"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:630
 msgid ""
 "You're missing out! Upgrade Icinga DB and see the actual root cause here!"
 msgstr ""
+"Sie verpassen etwas! Aktualisieren Sie Icinga DB und sehen Sie hier die "
+"tatsächliche Ursache!"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:673
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:749
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/RedundancyGroupDetail.php:100
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/RedundancyGroupDetail.php:133
 msgid "You are not authorized to view these objects."
-msgstr ""
+msgstr "Sie sind nicht berechtigt, diese Objekte einzusehen."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectDetail.php:747
 msgid "Affected Objects"
-msgstr ""
+msgstr "Betroffene Objekte"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/ObjectsDetail.php:109
 #, php-format
@@ -4921,9 +4929,8 @@ msgid "Critical"
 msgstr "Kritisch"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:104
-#, fuzzy
 msgid "Evaluation failed. Performance data is invalid."
-msgstr "Service Performancedaten aktiv"
+msgstr "Auswertung fehlgeschlagen. Performancedaten sind ungültig."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/PerfDataTable.php:121
 msgctxt "value"
@@ -4942,20 +4949,17 @@ msgstr ""
 "Einmaliges oder sogenanntes passives Ergebnis für den %s-Check übermitteln"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/RedundancyGroupDetail.php:131
-#, fuzzy
 msgid "Group Members"
-msgstr "Gruppen"
+msgstr "Gruppenmitglieder"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:71
-#, fuzzy
 msgctxt "timeperiod"
 msgid "None"
 msgstr "Keine"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:73
-#, fuzzy
 msgid "Notifications Enabled"
-msgstr "Host Benachrichtigungen aktiv"
+msgstr "Benachrichtigungen aktiviert"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/Detail/UserDetail.php:74
 msgid "E-Mail"
@@ -5093,12 +5097,11 @@ msgid "Remove command transport \"%s\""
 msgstr "Befehls-Transport \"%s\" entfernen"
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemList/ObjectList.php:262
-#, fuzzy
 msgid ""
 "Redis is currently unavailable. The shown information might be outdated."
 msgstr ""
-"Icinga Redis ist gerade nicht verfügbar. Die angezeigten Informationen "
-"könnten veraltet sein."
+"Redis ist derzeit nicht verfügbar. Die angezeigten Informationen könnten "
+"veraltet sein."
 
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/ObjectGrid.php:110
 #: sources.d/icingadb-web/library/Icingadb/Widget/ItemTable/StateItemTable.php:190
