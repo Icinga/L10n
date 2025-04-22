@@ -4,13 +4,13 @@
 #
 # Contributors:
 # Pavlo Kuznetsov <p4k81337@gmail.com>, 2019.
-# p4k8 <pkuznetsunit@gmail.com>, 2023.
+# p4k8 <pkuznetsunit@gmail.com>, 2023, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-11 06:58+0000\n"
-"PO-Revision-Date: 2023-05-06 17:23+0000\n"
+"PO-Revision-Date: 2025-04-22 10:14+0000\n"
 "Last-Translator: p4k8 <pkuznetsunit@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.icinga.com/projects/icinga/"
 "icingaweb2-module-director/uk/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.16.4\n"
+"X-Generator: Weblate 5.11\n"
 
 #: sources.d/icingaweb2-module-director/application/controllers/BasketController.php:34
 #: sources.d/icingaweb2-module-director/application/forms/AddToBasketForm.php:49
@@ -2186,8 +2186,7 @@ msgstr "Якщо увімкнено, неможливо визначити ар�
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandForm.php:79
 msgid "Disabled by default, and should only be used in rare cases."
-msgstr ""
-"Вимкнено за замовчуванням, варто використовувати у виняткових випадках."
+msgstr "Вимкнено за замовчуванням, варто використовувати у виняткових випадках."
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaCommandForm.php:80
 msgid ""
@@ -2621,8 +2620,7 @@ msgstr ""
 msgid ""
 "Unable to store a host with the given properties because of insufficient "
 "permissions"
-msgstr ""
-"Неможливо зберегти хост з наданими властивостями через нестачу дозволів"
+msgstr "Неможливо зберегти хост з наданими властивостями через нестачу дозволів"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostGroupForm.php:14
 msgid "Hostgroup"
@@ -2764,10 +2762,10 @@ msgid ""
 msgstr ""
 "Якщо визначено, користувачі з цієї користувацької змінної будуть поєднані з "
 "користувачами обраними нижче.  Наприклад: коли призначено до "
-"notification_contacts, це сповіщення отримає користувачів з масиву service."
-"vars.notification_contacts або з host.vars.notification_contacts якщо його "
-"не існує. Для цієї функції підходять лише поля DirectorObject типу масив для "
-"об'єктів User."
+"notification_contacts, це сповіщення отримає користувачів з масиву "
+"service.vars.notification_contacts або з host.vars.notification_contacts "
+"якщо його не існує. Для цієї функції підходять лише поля DirectorObject типу "
+"масив для об'єктів User."
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:164
 msgid "No UserGroup object has been created yet"
@@ -2923,8 +2921,8 @@ msgid ""
 "advanced-topics/#downtimes"
 msgstr ""
 "Чи цей простій фіксований або динамічний. Якщо не впевнені, прочитайте "
-"наступний розділ: https://icinga.com/docs/icinga2/latest/doc/08-advanced-"
-"topics/#downtimes"
+"наступний розділ: https://icinga.com/docs/icinga2/latest/doc/"
+"08-advanced-topics/#downtimes"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:56
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/DeploymentInfo.php:85
@@ -2940,9 +2938,9 @@ msgid ""
 "you might want to write 1h 30m"
 msgstr ""
 "Тривалість простою. Має ефект лише для динамічний (не фіксованих) простоїв. "
-"Час у секундах, підтримувані суфікси включають ms (мілісекунди), s "
-"(секунди), m (хвилини), h (години),d (дні). Для зазначення \"90 хвилин\" "
-"можливо написати 1h 30m"
+"Час у секундах, підтримувані суфікси включають ms (мілісекунди), s (секунди)"
+", m (хвилини), h (години),d (дні). Для зазначення \"90 хвилин\" можливо "
+"написати 1h 30m"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:102
 msgid "With Services"
@@ -3111,8 +3109,8 @@ msgid ""
 "eligible."
 msgstr ""
 "Обчислює правило apply for для всіх об'єктів з вказаними користувацькими "
-"атрибутами. Наприклад, вибір \"host.vars.custom_attr\" згенерує \"for "
-"(config in host.vars.array_var)\" де \"config\" буде доступним через "
+"атрибутами. Наприклад, вибір \"host.vars.custom_attr\" згенерує "
+"\"for (config in host.vars.array_var)\" де \"config\" буде доступним через "
 "\"$config$\". ПРИМІТКА: доступні лише користувацькі змінні типу \"Array\"."
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:659
@@ -3537,8 +3535,8 @@ msgstr ""
 "всіх імпортованих колонок. Приклади: host=www* задасть цю властивість лише "
 "для рядків імпортованих з властивістю host що починається з www. Більш "
 "складний приклад: host=www*&!(address=127.*|address6=::1). Зазначте, що "
-"підтримується запис у формі CIDR:    address=192.0.2.128/25| address=2001:"
-"db8::/32| address=::ffff:192.0.2.0/96"
+"підтримується запис у формі CIDR:    address=192.0.2.128/25| "
+"address=2001:db8::/32| address=::ffff:192.0.2.0/96"
 
 #: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:104
 msgid "Modifier"
@@ -4172,8 +4170,8 @@ msgid ""
 "argument for the script)"
 msgstr ""
 "Скрипт або інструмент який буде викликано при активації нової стадії "
-"конфігурації. (наприклад, sudo /usr/local/bin/icinga-director-activate) "
-"(назва стадії буде аргументом для скрипта)"
+"конфігурації. (наприклад, sudo /usr/local/bin/icinga-director-activate) ("
+"назва стадії буде аргументом для скрипта)"
 
 #: sources.d/icingaweb2-module-director/application/forms/SettingsForm.php:230
 msgid "Settings have been stored"
@@ -4939,8 +4937,8 @@ msgid ""
 "This is where you add all your servers, containers, network or sensor "
 "devices - and much more. Every subject worth to be monitored"
 msgstr ""
-"Сюди додаються всі ваші сервери, контейнери, мережеві або сенсорні пристрої "
-"- і багато іншого. Все що варто моніторингу"
+"Сюди додаються всі ваші сервери, контейнери, мережеві або сенсорні пристрої -"
+" і багато іншого. Все що варто моніторингу"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/ImportSourceDashlet.php:15
 msgid "Import data sources"
@@ -4957,8 +4955,7 @@ msgstr "Інфраструктура Icinga"
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/InfrastructureDashlet.php:19
 msgid ""
 "Manage your Icinga 2 infrastructure: Masters, Zones, Satellites and more"
-msgstr ""
-"Керувати вашої інфраструктурою Icinga 2: мастери, зони, супутні та інші"
+msgstr "Керувати вашої інфраструктурою Icinga 2: мастери, зони, супутні та інші"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/JobDashlet.php:30
 msgid ""
@@ -5593,8 +5590,8 @@ msgid ""
 "Your LDAP search base. Often something like OU=Users,OU=HQ,DC=your,"
 "DC=company,DC=tld"
 msgstr ""
-"Ваша основа пошуку LDAP. Часто щось схоже на OU=Users,OU=HQ,DC=your,"
-"DC=company,DC=tld"
+"Ваша основа пошуку LDAP. Часто щось схоже на "
+"OU=Users,OU=HQ,DC=your,DC=company,DC=tld"
 
 #: sources.d/icingaweb2-module-director/library/Director/Import/ImportSourceLdap.php:56
 msgid "Object class"
@@ -6400,8 +6397,7 @@ msgstr "Доменне ім'я яке необхідно відкинути"
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierSubstring.php:27
 #, php-format
 msgid "Please see %s for detailled instructions of how start and end work"
-msgstr ""
-"Перегляньте %s для детальних інструкцій по початку та завершенню роботи"
+msgstr "Перегляньте %s для детальних інструкцій по початку та завершенню роботи"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierTrim.php:16
 msgid "Trim Method"
@@ -6432,8 +6428,8 @@ msgid ""
 "Specify the characters that trim should remove.Default is: \" "
 "\\t\\n\\r\\0\\x0B\""
 msgstr ""
-"Вказати символи які видаляються при обрізанні. За замовчуванням: \" "
-"\\t\\n\\r\\0\\x0B\""
+"Вказати символи які видаляються при обрізанні. За замовчуванням: \" \\t\\n"
+"\\r\\0\\x0B\""
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierUpperCaseFirst.php:18
 msgid "Use lowercase first"
