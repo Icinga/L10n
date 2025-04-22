@@ -26,8 +26,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-11 06:58+0000\n"
-"PO-Revision-Date: 2025-04-17 11:42+0000\n"
-"Last-Translator: Johannes Meyer <johannes.meyer@icinga.com>\n"
+"PO-Revision-Date: 2025-04-22 10:13+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://translate.icinga.com/projects/icinga/"
 "icingaweb2-module-director/de/>\n"
 "Language: de_DE\n"
@@ -2317,8 +2317,8 @@ msgstr ""
 "Hiermit lässt sich ein Zuweisungsfilter (assign) definieren. Dabei lassen "
 "sich beliebig viele Operatoren beliebig tief verschachtelt benutzen. Der "
 "Operator \"contains\" (\"enthält\") ist nur für Arrays zulässig. Um "
-"Teilstrings zu vergleichen bitte Jokerzeichen (wildcards) benutzen, wie in *."
-"example.com"
+"Teilstrings zu vergleichen bitte Jokerzeichen (wildcards) benutzen, wie in "
+"*.example.com"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:144
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:290
@@ -2380,16 +2380,16 @@ msgid ""
 "You might want to refer to Host or Service Custom Variables via $host|"
 "service.vars.varname$"
 msgstr ""
-"Der Elternhost. Benutzerdefinierte Hosteigenschaften lassen sich via  $host."
-"vars.varname$ referenzieren"
+"Der Elternhost. Benutzerdefinierte Hosteigenschaften lassen sich via  "
+"$host.vars.varname$ referenzieren"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:222
 #, fuzzy
 msgid ""
 "You might want to refer to Host Custom Variables via $host.vars.varname$"
 msgstr ""
-"Der Elternhost. Benutzerdefinierte Hosteigenschaften lassen sich via  $host."
-"vars.varname$ referenzieren"
+"Der Elternhost. Benutzerdefinierte Hosteigenschaften lassen sich via  "
+"$host.vars.varname$ referenzieren"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaDependencyForm.php:229
 msgid "Parent Host"
@@ -2525,8 +2525,8 @@ msgid ""
 msgstr ""
 "Icinga-Objektname für diesen Host. Dies ist üblicherweise ein FQDN, kann "
 "jedoch jede beliebige Zeichenkette sein. Der Einfachheit halber sollten "
-"sprechende Namen für Vorlagen verwendet werden. z.B. ist \"Standard Linux "
-"Server\" leichter verständlich als \"generic-host\""
+"sprechende Namen für Vorlagen verwendet werden. z.B. ist "
+"\"Standard Linux Server\" leichter verständlich als \"generic-host\""
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaHostForm.php:80
 msgid "Icinga2 Agent"
@@ -2894,9 +2894,9 @@ msgid ""
 "(milliseconds), s (seconds), m (minutes), h (hours) and d (days)."
 msgstr ""
 "Wie lang die Downtime dauert. Beeinflusst nur flexible (keine fixen) "
-"Downtimes. Zeit in Sekunden, unterstützt auch die Suffixes ms "
-"(Millisekunden), s (Sekunden), m (Minuten), h (Stunden) and d (Tage). Um "
-"\"90 Minuten\" auszudrücken könnte man 1h 30m schreiben."
+"Downtimes. Zeit in Sekunden, unterstützt auch die Suffixes ms (Millisekunden)"
+", s (Sekunden), m (Minuten), h (Stunden) and d (Tage). Um \"90 Minuten\" "
+"auszudrücken könnte man 1h 30m schreiben."
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaNotificationForm.php:310
 msgid "Notification command"
@@ -2985,8 +2985,8 @@ msgid ""
 "advanced-topics/#downtimes"
 msgstr ""
 "Ob diese Downtime fix oder flexibel ist. Im Zweifel bitte die entsprechende "
-"Dokumentation zu Rate ziehen: https://icinga.com/docs/icinga2/latest/doc/08-"
-"advanced-topics/#downtimes"
+"Dokumentation zu Rate ziehen: https://icinga.com/docs/icinga2/latest/doc/"
+"08-advanced-topics/#downtimes"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:56
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/DeploymentInfo.php:85
@@ -3002,9 +3002,9 @@ msgid ""
 "you might want to write 1h 30m"
 msgstr ""
 "Wie lang die Downtime dauert. Beeinflusst nur flexible (keine fixen) "
-"Downtimes. Zeit in Sekunden, unterstützt auch die Suffixes ms "
-"(Millisekunden), s (Sekunden), m (Minuten), h (Stunden) and d (Tage). Um "
-"\"90 Minuten\" auszudrücken könnte man 1h 30m schreiben"
+"Downtimes. Zeit in Sekunden, unterstützt auch die Suffixes ms (Millisekunden)"
+", s (Sekunden), m (Minuten), h (Stunden) and d (Tage). Um \"90 Minuten\" "
+"auszudrücken könnte man 1h 30m schreiben"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaScheduledDowntimeForm.php:102
 msgid "With Services"
@@ -3173,10 +3173,10 @@ msgid ""
 "eligible."
 msgstr ""
 "Berechnet die Apply-Regel für alle Objekte für welche diese "
-"benutzerdefinierte Eigenschaft spezifiziert wurde. Wählt man z.B. \"host."
-"vars.custom_attr\", wird \"for (config in host.vars.array_var)\" generiert. "
-"Dabei ist \"config\" dann als \"$config$\" zugänglich. HINWEIS: nur "
-"benutzerdefinierte Eigenschaften vom Typ \"Array\" sind wählbar."
+"benutzerdefinierte Eigenschaft spezifiziert wurde. Wählt man z.B. "
+"\"host.vars.custom_attr\", wird \"for (config in host.vars.array_var)\" "
+"generiert. Dabei ist \"config\" dann als \"$config$\" zugänglich. HINWEIS: "
+"nur benutzerdefinierte Eigenschaften vom Typ \"Array\" sind wählbar."
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceForm.php:659
 msgid ""
@@ -3268,8 +3268,8 @@ msgstr ""
 "Schritt lässt sich auch überspringen und eventuell später umsetzen. "
 "Alternativ (oder zusätzlich) kann dieses Service-Set einzelne Hosts direkt "
 "zugewiesen werden. Der Operator \"contains\" (\"enthält\") ist nur für "
-"Arrays zulässig. Um Teilstrings zu vergleichen bitte Jokerzeichen "
-"(wildcards) benutzen, wie in *.example.com"
+"Arrays zulässig. Um Teilstrings zu vergleichen bitte Jokerzeichen (wildcards)"
+" benutzen, wie in *.example.com"
 
 #: sources.d/icingaweb2-module-director/application/forms/IcingaServiceVarForm.php:16
 msgid "The name of the service"
@@ -3609,10 +3609,10 @@ msgid ""
 "address=192.0.2.128/25| address=2001:db8::/32| address=::ffff:192.0.2.0/96"
 msgstr ""
 "Erlaubt das Filtern nach bestimmten Teilen innerhalb des angegebenen "
-"Quellausdrucks. Alle importierten Spalten können angegeben werden. "
-"Beispiele: host=www* würde diese Eigenschaft nur für importierte Zeilen "
-"setzen, bei denen die Host Eigenschaft mit \"www\" beginnt. Komplexes "
-"Beispiel: host=www*&!(address=127.*|address6=::1)"
+"Quellausdrucks. Alle importierten Spalten können angegeben werden. Beispiele:"
+" host=www* würde diese Eigenschaft nur für importierte Zeilen setzen, bei "
+"denen die Host Eigenschaft mit \"www\" beginnt. Komplexes Beispiel: "
+"host=www*&!(address=127.*|address6=::1)"
 
 #: sources.d/icingaweb2-module-director/application/forms/ImportRowModifierForm.php:104
 msgid "Modifier"
@@ -3781,10 +3781,11 @@ msgid ""
 msgstr ""
 "IP Adresse / Hostname des Icinga Knotens. Diese Information wird nur für den "
 "ersten Verbindungsaufbau zur Icinga Instanz verwendet. Danach verlässt sich "
-"der Director auf ein richtig konfiguriertes Endpunkt-Objekt. \"Richtig "
-"konfiguriert\" bedeutet dabei, dass entweder der Name auflösbar ist oder die "
-"host-Eigenschaft entweder eine IP Adresse oder einen auflösbaren Hostname "
-"enthält. Der Director muss diesen Endpunkt erreichen können"
+"der Director auf ein richtig konfiguriertes Endpunkt-Objekt. "
+"\"Richtig konfiguriert\" bedeutet dabei, dass entweder der Name auflösbar "
+"ist oder die host-Eigenschaft entweder eine IP Adresse oder einen "
+"auflösbaren Hostname enthält. Der Director muss diesen Endpunkt erreichen "
+"können"
 
 #: sources.d/icingaweb2-module-director/application/forms/KickstartForm.php:150
 msgid ""
@@ -4262,8 +4263,8 @@ msgid ""
 "argument for the script)"
 msgstr ""
 "Skript oder Tools welches beim Aktivieren einer neuen Konfigurationsphase "
-"ausgeführt werden soll. (z.B. sudo /usr/local/bin/icinga-director-activate) "
-"(der Name der Konfiguration wird dem Skript als Argument mitgegeben)"
+"ausgeführt werden soll. (z.B. sudo /usr/local/bin/icinga-director-activate) ("
+"der Name der Konfiguration wird dem Skript als Argument mitgegeben)"
 
 #: sources.d/icingaweb2-module-director/application/forms/SettingsForm.php:230
 msgid "Settings have been stored"
@@ -4297,10 +4298,10 @@ msgid ""
 "\"www\". Complex example: host=www*&!(address=127.*|address6=::1)"
 msgstr ""
 "Erlaubt das Filtern nach bestimmten Teilen innerhalb des angegebenen "
-"Quellausdrucks. Alle importierten Spalten können angegeben werden. "
-"Beispiele: host=www* würde diese Eigenschaft nur für importierte Zeilen "
-"setzen, bei denen die Host Eigenschaft mit \"www\" beginnt. Komplexes "
-"Beispiel: host=www*&!(address=127.*|address6=::1)"
+"Quellausdrucks. Alle importierten Spalten können angegeben werden. Beispiele:"
+" host=www* würde diese Eigenschaft nur für importierte Zeilen setzen, bei "
+"denen die Host Eigenschaft mit \"www\" beginnt. Komplexes Beispiel: "
+"host=www*&!(address=127.*|address6=::1)"
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncPropertyForm.php:117
 msgid "Merge Policy"
@@ -4550,9 +4551,9 @@ msgid ""
 msgstr ""
 "Vorsicht: das ist für gewöhnlich NICHT das was man möchte, denn es macht "
 "Sync \"blind\" für Objekte die diesem Filter entsprechen. Das bedeutet meist "
-"dass das \"Bereinigen\" nicht wie erwartet funktioniert. Der \"Black/"
-"Whitelist\"-Eigenschaftsmodifikator ist für gewöhnlich was man stattdessen "
-"nutzen möchte."
+"dass das \"Bereinigen\" nicht wie erwartet funktioniert. Der "
+"\"Black/Whitelist\"-Eigenschaftsmodifikator ist für gewöhnlich was man "
+"stattdessen nutzen möchte."
 
 #: sources.d/icingaweb2-module-director/application/forms/SyncRunForm.php:35
 #, fuzzy, php-format
@@ -4737,8 +4738,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-director/configuration.php:82
 msgid "Limit access to the given comma-separated list of hostgroups"
-msgstr ""
-"Den Zugriff auf diese Kommagetrennte Liste von Host-Gruppen beschränken"
+msgstr "Den Zugriff auf diese Kommagetrennte Liste von Host-Gruppen beschränken"
 
 #: sources.d/icingaweb2-module-director/configuration.php:85
 msgid "Filter available notification apply rules"
@@ -4832,8 +4832,7 @@ msgstr "Icinga API Benutzer"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/BasketDashlet.php:19
 msgid "Preserve specific configuration objects in a specific state"
-msgstr ""
-"Bestimmte Konfigurationsobjekte in einem bestimmten Zustand aufbewahren"
+msgstr "Bestimmte Konfigurationsobjekte in einem bestimmten Zustand aufbewahren"
 
 #: sources.d/icingaweb2-module-director/library/Director/Dashboard/Dashlet/CheckCommandsDashlet.php:14
 msgid ""
@@ -6398,8 +6397,8 @@ msgid ""
 "The pattern you want to search for. This can be a regular expression like /"
 "^www\\d+\\./"
 msgstr ""
-"Das Muster, nach dem gesucht werden soll. Kann ein regulärer Ausdruck wie /"
-"^www\\d+\\./ sein"
+"Das Muster, nach dem gesucht werden soll. Kann ein regulärer Ausdruck wie /^"
+"www\\d+\\./ sein"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRegexReplace.php:21
 #, fuzzy
@@ -6480,8 +6479,8 @@ msgid ""
 "The string/pattern you want to search for, use regular expression like /"
 "^www\\d+\\./"
 msgstr ""
-"Das Muster, nach dem gesucht werden soll. Kann ein regulärer Ausdruck wie /"
-"^www\\d+\\./ sein"
+"Das Muster, nach dem gesucht werden soll. Kann ein regulärer Ausdruck wie /^"
+"www\\d+\\./ sein"
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierRejectOrSelect.php:68
 msgid ""
@@ -6579,8 +6578,8 @@ msgid ""
 "Specify the characters that trim should remove.Default is: \" "
 "\\t\\n\\r\\0\\x0B\""
 msgstr ""
-"Zeichen welche von Trim entfernt werden sollen. Standard: \" "
-"\\t\\n\\r\\0\\x0B\""
+"Zeichen welche von Trim entfernt werden sollen. Standard: \" \\t\\n"
+"\\r\\0\\x0B\""
 
 #: sources.d/icingaweb2-module-director/library/Director/PropertyModifier/PropertyModifierUpperCaseFirst.php:18
 msgid "Use lowercase first"
@@ -7286,14 +7285,12 @@ msgstr ""
 #: sources.d/icingaweb2-module-director/library/Director/Web/Navigation/Renderer/ConfigHealthItemRenderer.php:114
 #, fuzzy, php-format
 msgid "%s config changes are available in your configuration branch"
-msgstr ""
-"%s Konfigurationsänderungen seit der letzten ausgerollten Konfiguration"
+msgstr "%s Konfigurationsänderungen seit der letzten ausgerollten Konfiguration"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Navigation/Renderer/ConfigHealthItemRenderer.php:129
 #, php-format
 msgid "%s config changes happend since the last deployed configuration"
-msgstr ""
-"%s Konfigurationsänderungen seit der letzten ausgerollten Konfiguration"
+msgstr "%s Konfigurationsänderungen seit der letzten ausgerollten Konfiguration"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/ObjectPreview.php:41
 #, php-format
@@ -8144,8 +8141,7 @@ msgstr "Dieser Auftrag wurde bisher nicht ausgeführt"
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/NotInBranchedHint.php:18
 #, fuzzy, php-format
 msgid "%s is not available while being in a Configuration Branch: %s"
-msgstr ""
-"%s Konfigurationsänderungen seit der letzten ausgerollten Konfiguration"
+msgstr "%s Konfigurationsänderungen seit der letzten ausgerollten Konfiguration"
 
 #: sources.d/icingaweb2-module-director/library/Director/Web/Widget/SyncRunDetails.php:29
 msgid "Start time"
