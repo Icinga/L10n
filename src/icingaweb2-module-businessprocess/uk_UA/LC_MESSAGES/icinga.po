@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-21 14:41+0000\n"
+"POT-Creation-Date: 2025-04-11 06:58+0000\n"
 "PO-Revision-Date: 2023-04-18 14:23+0000\n"
 "Last-Translator: p4k8 <pkuznetsunit@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.icinga.com/projects/icinga/"
@@ -18,8 +18,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.16.4\n"
 
 #: sources.d/icingaweb2-module-businessprocess/application/controllers/IndexController.php:15
@@ -342,7 +342,7 @@ msgid "No node with this name found in config"
 msgstr "Вузол з таким іменем не вдалося знайти у конфігурації"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/AddNodeForm.php:251
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:63
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:64
 msgid "Already defined in this process"
 msgstr "Вже визначено у цьому процесі"
 
@@ -530,11 +530,27 @@ msgstr ""
 "Процес \"%s\" не може бути видалено, оскільки на нього посилаються інші "
 "процеси"
 
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:168
+#, fuzzy, php-format
+msgid "Process %s has been deleted"
+msgstr "Вузол \"%s\" було визначено двічі"
+
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:180
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:189
 #, php-format
 msgid "A process named \"%s\" already exists"
 msgstr "Процес названий \"%s\" вже існує"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:200
+#, fuzzy, php-format
+msgid "Process %s has been created"
+msgstr "Вузол \"%s\" було визначено двічі"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpConfigForm.php:203
+#: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:201
+#, php-format
+msgid "Process %s has been stored"
+msgstr ""
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/BpUploadForm.php:69
 msgid "Business process source code"
@@ -563,6 +579,14 @@ msgstr "Видалити всі відсутні вузли з конфігур�
 #: sources.d/icingaweb2-module-businessprocess/application/forms/CleanupNodeForm.php:36
 msgid "Select nodes to cleanup"
 msgstr "Обрати вузли для очистки"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/CleanupNodeForm.php:63
+#, php-format
+msgid "Successfully removed missing node %s"
+msgid_plural "Successfully removed %d missing nodes"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:28
 #, php-format
@@ -597,7 +621,17 @@ msgstr "Ви дійсно бажаєте видалити цей вузол?"
 msgid "Delete all occurrences of %s"
 msgstr "Видалити всі випадки появи %s"
 
-#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:106
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:102
+#, fuzzy, php-format
+msgid "Node %s has been deleted"
+msgstr "Вузол \"%s\" було визначено двічі"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:109
+#, fuzzy, php-format
+msgid "All occurrences of node %s have been deleted"
+msgstr "Для \"%s\" не було визначено жодного вузла бізнес-процесу"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/DeleteNodeForm.php:114
 msgid "Well, maybe next time"
 msgstr "Мабуть, наступного разу"
 
@@ -618,6 +652,11 @@ msgstr "Не знайдено процесу з назвою %value%"
 #: sources.d/icingaweb2-module-businessprocess/application/forms/MoveNodeForm.php:154
 msgid "Node order updated"
 msgstr "Порядок вузлів оновлено"
+
+#: sources.d/icingaweb2-module-businessprocess/application/forms/ProcessForm.php:146
+#, fuzzy, php-format
+msgid "Process %s has been modified"
+msgstr "Вузол \"%s\" було визначено двічі"
 
 #: sources.d/icingaweb2-module-businessprocess/application/forms/SimulationForm.php:31
 msgid "Current simulation"
@@ -730,7 +769,7 @@ msgstr "Вузол \"%s\" було визначено двічі"
 msgid "No business process nodes for \"%s\" have been defined yet"
 msgstr "Для \"%s\" не було визначено жодного вузла бізнес-процесу"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpNode.php:383
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/BpNode.php:386
 #, php-format
 msgid "Nesting error detected: %s"
 msgstr "Зафіксовано помилку вкладення: %s"
@@ -744,59 +783,59 @@ msgstr ""
 "Неможливо застосувати обмеження %s використовуючи фільтр %s. Можливо "
 "використати наступні колонки: %s"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:493
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:504
 msgid "AND"
 msgstr "AND"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:494
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:505
 msgid "OR"
 msgstr "OR"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:495
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:506
 msgid "XOR"
 msgstr "XOR"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:496
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:507
 msgid "NOT"
 msgstr "NOT"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:497
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:508
 msgid "DEGRADED"
 msgstr "ДЕГРАДУВАВ"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:498
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:509
 msgid "MIN 1"
 msgstr "MIN 1"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:499
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:510
 msgid "MIN 2"
 msgstr "MIN 2"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:500
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:511
 msgid "MIN 3"
 msgstr "MIN 3"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:501
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:512
 msgid "MIN 4"
 msgstr "MIN 4"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:502
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:513
 msgid "MIN 5"
 msgstr "MIN 5"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:503
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:514
 msgid "MIN 6"
 msgstr "MIN 6"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:504
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:515
 msgid "MIN 7"
 msgstr "MIN 7"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:505
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:516
 msgid "MIN 8"
 msgstr "MIN 8"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:506
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Node.php:517
 msgid "MIN 9"
 msgstr "MIN 9"
 
@@ -819,41 +858,41 @@ msgstr[0] "%u дочірній"
 msgstr[1] "%u дочірніх"
 msgstr[2] "%u дочірніх"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:197
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:199
 msgid "Show tiles for this subtree"
 msgstr "Показати плитки для цього піддерева"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:204
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:206
 msgid "Show this subtree as a tree"
 msgstr "Показати це піддерево як дерево"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:220
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:222
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:240
 msgid "Show this process as part of its original configuration"
 msgstr "Показати цей процес як частину його первинної конфігурації"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:236
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:238
 #: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TreeRenderer.php:353
 msgid "More information"
 msgstr "Більше інформації"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:287
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:289
 msgid "Show the business impact of this node by simulating a specific state"
 msgstr "Показати вплив на бізнес цього вузла симулювавши конкретний стан"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:299
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:301
 msgid "Modify this monitored node"
 msgstr "Змінити цей вузол під моніторингом"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:316
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:318
 msgid "Modify this business process node"
 msgstr "Змінити цей вузол бізнес-процесу"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:330
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:332
 msgid "Add a new sub-node to this business process"
 msgstr "Додати новий підвузол до цього бізнес-процесу"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:347
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Renderer/TileRenderer/NodeTile.php:349
 msgid "Delete this node"
 msgstr "Видалити цей вузол"
 
@@ -992,7 +1031,7 @@ msgstr "Будь ласка, додайте до імені один з преф
 msgid "Keep actual state"
 msgstr "Зберегти справжній стан"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/QuickBaseForm.php:113
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/QuickBaseForm.php:116
 msgid "- please choose -"
 msgstr "- будь ласка оберіть -"
 
@@ -1005,11 +1044,11 @@ msgstr "Надіслати"
 msgid "Form has successfully been sent"
 msgstr "Форму було успішно надіслано"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:82
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:83
 msgid "Service not found"
 msgstr "Сервіс не знайдено"
 
-#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:84
+#: sources.d/icingaweb2-module-businessprocess/library/Businessprocess/Web/Form/Validator/HostServiceTermValidator.php:85
 msgid "Host not found"
 msgstr "Хост не знайдено"
 

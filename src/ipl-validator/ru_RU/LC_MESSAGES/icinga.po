@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-30 10:29+0000\n"
+"POT-Creation-Date: 2025-04-11 06:58+0000\n"
 "PO-Revision-Date: 2021-11-03 12:23+0500\n"
 "Last-Translator: Dmitriy Q <dmitry@atsip.ru>\n"
 "Language-Team: TranslAster <https://github.com/translaster>\n"
@@ -23,73 +23,80 @@ msgstr ""
 #: sources.d/ipl-validator/src/BetweenValidator.php:143
 #, php-format
 msgid "'%s' is not between '%s' and '%s', inclusively"
-msgstr ""
+msgstr "'%s' не между '%s' и '%s' включительно"
 
 #: sources.d/ipl-validator/src/BetweenValidator.php:153
 #, php-format
 msgid "'%s' is not between '%s' and '%s'"
-msgstr ""
+msgstr "'%s' не между '%s' и '%s'"
 
 #: sources.d/ipl-validator/src/CidrValidator.php:26
 #, php-format
 msgid "CIDR \"%s\" does not conform to the required format $address/$prefix"
-msgstr ""
+msgstr "CIDR \"%s\" не соответствует требуемому формату $address/$prefix"
 
 #: sources.d/ipl-validator/src/CidrValidator.php:36
 #, php-format
 msgid "CIDR \"%s\" contains an invalid address"
-msgstr ""
+msgstr "CIDR \"%s\" содержит недопустимый адрес"
 
 #: sources.d/ipl-validator/src/CidrValidator.php:42
 #, php-format
 msgid "Prefix of CIDR \"%s\" must be a number"
-msgstr ""
+msgstr "Префикс CIDR \"%s\" должен быть числом"
 
 #: sources.d/ipl-validator/src/CidrValidator.php:53
 #, php-format
 msgid ""
 "Prefix length of CIDR \"%s\" must be between 0 and %d for IPv%d addresses"
-msgstr ""
+msgstr "Длина префикса CIDR \"%s\" должна быть от 0 до %d для адресов IPv%d"
 
 #: sources.d/ipl-validator/src/DateTimeValidator.php:44
 msgid "Invalid date/time given."
 msgstr "Указана неверная дата/время."
 
 #: sources.d/ipl-validator/src/DateTimeValidator.php:55
-#, fuzzy, php-format
+#, php-format
 msgid "Date/time string not in the expected format: %s"
-msgstr "%s не в ожидаемом формате: %%value%%"
+msgstr "Строка даты/времени не в ожидаемом формате: %s"
 
 #: sources.d/ipl-validator/src/EmailAddressValidator.php:127
 #, php-format
 msgid "'%s' can not be matched against dot-atom format or quoted-string format"
 msgstr ""
+"'%s' не может быть сопоставлен с форматом атомов точек или строк в кавычках"
 
 #: sources.d/ipl-validator/src/EmailAddressValidator.php:132
 #, php-format
 msgid "Hence '%s' is not a valid local part for email address '%s'"
 msgstr ""
+"Следовательно, '%s' не является действительной локальной частью для адреса "
+"электронной почты '%s'"
 
 #: sources.d/ipl-validator/src/EmailAddressValidator.php:162
 #, php-format
 msgid "host name %s is a domain literal and is invalid"
-msgstr ""
+msgstr "Имя хоста %s является доменным литералом и недействительно"
 
 #: sources.d/ipl-validator/src/EmailAddressValidator.php:174
 #, php-format
 msgid "%s is not a valid domain name for email address %s."
 msgstr ""
+"%s не является действительным доменным именем для адреса электронной почты "
+"%s."
 
 #: sources.d/ipl-validator/src/EmailAddressValidator.php:225
 #, php-format
 msgid ""
 "'%s' is not a valid email address in the basic format local-part@hostname"
 msgstr ""
+"'%s' не является действительным адресом электронной почты в формате local-"
+"part@hostname"
 
 #: sources.d/ipl-validator/src/EmailAddressValidator.php:237
 #, php-format
 msgid "'%s' exceeds the allowed length"
-msgstr ""
+msgstr "Длина '%s' превышает допустимую"
 
 #: sources.d/ipl-validator/src/EmailAddressValidator.php:273
 #: sources.d/ipl-validator/src/EmailAddressValidator.php:312
@@ -97,6 +104,8 @@ msgstr ""
 msgid ""
 "'%s' does not appear to have a valid MX record for the email address '%s'"
 msgstr ""
+"Похоже, что у '%s' нет действительной MX-записи для адреса электронной почты "
+"'%s'"
 
 #: sources.d/ipl-validator/src/EmailAddressValidator.php:304
 #, php-format
@@ -104,60 +113,61 @@ msgid ""
 "'%s' is not in a routable network segment. The email address '%s' should not "
 "be resolved from public network"
 msgstr ""
+"'%s' не находится в маршрутизируемом сегменте сети. Адрес электронной почты "
+"'%s' не может быть разрешен из публичной сети"
 
 #: sources.d/ipl-validator/src/FileValidator.php:193
 #, php-format
 msgid "File %s is bigger than the allowed maximum size of %d"
-msgstr ""
+msgstr "Файл %s больше допустимого максимального размера %d"
 
 #: sources.d/ipl-validator/src/FileValidator.php:203
 #, php-format
 msgid "File %s is smaller than the minimum required size of %d"
-msgstr ""
+msgstr "Файл %s меньше минимально необходимого размера %d"
 
 #: sources.d/ipl-validator/src/FileValidator.php:216
 #, php-format
 msgid "File name is longer than the allowed length of %d characters."
-msgstr ""
+msgstr "Имя файла превышает допустимую длину в %d символов."
 
 #: sources.d/ipl-validator/src/FileValidator.php:245
 #, php-format
 msgid "File %s is of type %s. Only %s allowed."
-msgstr ""
+msgstr "Файл %s имеет тип %s. Допускается только %s."
 
 #: sources.d/ipl-validator/src/GreaterThanValidator.php:66
 #, php-format
 msgid "'%s' is not greater than '%s'"
-msgstr ""
+msgstr "'%s' не больше чем '%s'"
 
 #: sources.d/ipl-validator/src/HexColorValidator.php:28
-#, fuzzy, php-format
+#, php-format
 msgid "Color string not in the expected format %s"
-msgstr "%s не в ожидаемом формате: %%value%%"
+msgstr "Цветная строка не в ожидаемом формате %s"
 
 #: sources.d/ipl-validator/src/HostnameValidator.php:28
 #, php-format
 msgid "%s is not a valid host name."
-msgstr ""
+msgstr "%s недействительное имя хоста."
 
 #: sources.d/ipl-validator/src/InArrayValidator.php:100
 #, php-format
 msgid "%s was not found in the haystack"
 msgid_plural "%s were not found in the haystack"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%s не был найден в стоге сена"
+msgstr[1] "%s не было найдено в стоге сена"
+msgstr[2] "%s не были найдены в стоге сена"
 
 #: sources.d/ipl-validator/src/LessThanValidator.php:66
 #, php-format
 msgid "'%s' is not less than '%s'"
-msgstr ""
+msgstr "'%s' не меньше, чем '%s'"
 
 #: sources.d/ipl-validator/src/PrivateKeyValidator.php:25
 #: sources.d/ipl-validator/src/X509CertValidator.php:24
-#, fuzzy
 msgid "URLs are not allowed"
-msgstr "%s не установлен"
+msgstr "URL-адреса не допускаются"
 
 #: sources.d/ipl-validator/src/PrivateKeyValidator.php:31
 msgid "Not a valid PEM-encoded private key"
@@ -167,7 +177,7 @@ msgstr "Недопустимый приватный ключ в PEM-кодиро
 #: sources.d/ipl-validator/src/StringLengthValidator.php:176
 #, php-format
 msgid "String should be %d characters long, %d given"
-msgstr ""
+msgstr "Длина строки должна составлять %d символов, получено %d"
 
 #: sources.d/ipl-validator/src/X509CertValidator.php:30
 msgid "Not a valid PEM-encoded X.509 certificate"
