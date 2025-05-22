@@ -33,6 +33,14 @@ SOURCE_REPOSITORIES=(
   #icingaweb2-module-lynxtechnik
 )
 
+function project_id_version()
+{
+    echo $(sed -n '/^"Project-Id-Version:/{
+N
+s/.*\([a-f0-9]\{40\}\)\\n".*/\1/p
+}' "$1")
+}
+
 # Fetch repositories which do not exist yet in the directory
 FETCHED_REPOS=();
 for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
@@ -74,7 +82,7 @@ for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
            --package-name=$repo_name \
            --package-version=$git_head \
            --default-domain=icinga \
-           --output=$repo_name/messages.pot
+           --output=$repo_name/messages.new.pot
 
   # Use current year in the copyright for new templates without one yet
   REPLACE_CODE=$(cat << PYTHON
@@ -89,6 +97,10 @@ result = input.replace(
     '# Copyright (C) YEAR Icinga GmbH',
     '# Copyright (C) {0} Icinga GmbH'.format(date.today().year),
     1
+).replace(
+    '"Content-Type: text/plain; charset=CHARSET',
+    '"Content-Type: text/plain; charset=UTF-8',
+    1
 )
 result = re.sub(
     '^#: sources.d/{}/(.*?):(\d+)'.format(args.repo_name),
@@ -100,8 +112,45 @@ result = re.sub(
 sys.stdout.write(result)
 PYTHON
 )
-  cat $repo_name/messages.pot | python3 -c "$REPLACE_CODE" --repo-name=$repo_name --git-head=$git_head > temp
-  mv temp $repo_name/messages.pot
+  ADD_LEGACY_COMMENT_CODE=$(cat << PYTHON
+import sys, argparse, re
+input = sys.stdin.read()
+parser = argparse.ArgumentParser()
+parser.add_argument('--git-head')
+args = parser.parse_args()
+result = re.sub(
+    '^\n#:',
+    '\n#. last-seen={git_head}\n#:'.format(git_head=args.git_head),
+    input,
+    count=0,
+    flags=re.MULTILINE
+)
+sys.stdout.write(result)
+PYTHON
+)
+  cat $repo_name/messages.new.pot | python3 -c "$REPLACE_CODE" --repo-name=$repo_name --git-head=$git_head > temp
+  mv temp $repo_name/messages.new.pot
+
+  if [ -s $repo_name/messages.pot ]; then
+    old_head=$(project_id_version "$repo_name/messages.pot")
+
+    # Merge new template with the existing template
+    # Does not work though, if only a plural form has changed…
+    msgcomm --more-than=0 -o temp $repo_name/messages.new.pot $repo_name/messages.pot # First identify unique messages
+    # Then identify messages that are only in the old template (skips the header using awk)
+    msgcomm -u temp $repo_name/messages.new.pot | awk 'NF { if (!skip) next } { skip = 1; print }' > $repo_name/messages.old.pot
+    # Add legacy comments to the old template
+    cat $repo_name/messages.old.pot | python3 -c "$ADD_LEGACY_COMMENT_CODE" --git-head=$old_head > temp
+    mv temp $repo_name/messages.old.pot
+    # Then merge both, but without duplicating locations and such…
+    xgettext --omit-header -o $repo_name/messages.pot $repo_name/messages.new.pot $repo_name/messages.old.pot
+    # Cleanup created files and directories
+    rm $repo_name/messages.old.pot
+    rm $repo_name/messages.new.pot
+  else
+    # If no old template exists, just rename the new one
+    mv $repo_name/messages.new.pot $repo_name/messages.pot
+  fi
 
   # Cleanup created files and directories
   rm $repo_name/catalog.txt
