@@ -39,18 +39,7 @@ for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
   if [ ! -d "sources.d/$repo_name" ]; then
     FETCHED_REPOS+=( $repo_name );
 
-    DEFAULT_BRANCH="master"
-    HTTP_STATUS=$(curl -Is https://api.github.com/repos/Icinga/$repo_name/branches/master | head -n 1 | awk '{ print $2 }')
-    if [ "$HTTP_STATUS" == "301" ]; then
-      DEFAULT_BRANCH="main"
-    elif [ "$HTTP_STATUS" != "200" ]; then
-      echo "Error: Unable to fetch the default branch for $repo_name. HTTP status code: $HTTP_STATUS"
-      exit 1
-    fi
-
-    wget -q -O - https://github.com/Icinga/$repo_name/archive/$DEFAULT_BRANCH.tar.gz | tar xz
-    mv $repo_name-$DEFAULT_BRANCH/ sources.d/$repo_name
-    echo "$DEFAULT_BRANCH" > sources.d/$repo_name/.gitHEAD
+    git clone --depth 1 https://github.com/Icinga/$repo_name.git sources.d/$repo_name
   fi
 done
 
@@ -59,7 +48,7 @@ for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
     mkdir $repo_name
   fi
 
-  git_head=$(cat sources.d/$repo_name/.gitHEAD)
+  git_head=$(git -C sources.d/$repo_name rev-parse HEAD)
 
   # Create a list of files xgettext should scan
   find -L sources.d/$repo_name -regex ".*\.\(php\|phtml\)" ! -path "*/vendor/*" ! -path "*/test/*" > $repo_name/catalog.txt
@@ -103,7 +92,7 @@ result = input.replace(
 )
 result = re.sub(
     '^#: sources.d/{}/(.*?):(\d+)'.format(args.repo_name),
-    '#: https://github.com/Icinga/{repo_name}/tree/{git_head}/\\\\1#L\\\\2'.format(**vars(args)),
+    '#: https://github.com/Icinga/{repo_name}/blob/{git_head}/\\\\1#L\\\\2'.format(**vars(args)),
     result,
     count=0,
     flags=re.MULTILINE
