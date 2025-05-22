@@ -71,8 +71,8 @@ for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
            --files-from=$repo_name/catalog.txt \
            --sort-by-file \
            --copyright-holder="Icinga GmbH" \
-           --package-name="Icinga L10n" \
-           --package-version=$(git describe --always) \
+           --package-name=$repo_name \
+           --package-version=$git_head \
            --default-domain=icinga \
            --output=$repo_name/messages.pot
 
@@ -114,6 +114,7 @@ done
 CHANGES=1
 git diff -U0 \
   | grep -Pe '^[+-]{1}(?!#:)[^+-]+' \
+  | grep -vPe '^[+-]"[a-f0-9]{40}\\n"' \
   | grep -qv -e '."Project-Id-Version:' -e '."POT-Creation-Date:' \
 || CHANGES=0
 
