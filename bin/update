@@ -3,6 +3,7 @@
 set -xe
 
 SOURCE_REPOSITORIES=(
+  ipl-html
   ipl-web
   ipl-validator
   icingaweb2
@@ -12,25 +13,15 @@ SOURCE_REPOSITORIES=(
   icingaweb2-module-reporting
   icingaweb2-module-graphite
   icingaweb2-module-cube
-  #icingaweb2-module-idoreports
   icingaweb2-module-aws
   icingaweb2-module-businessprocess
-  #icingaweb2-module-doc
-  #icingaweb2-module-fileshipper
   icingaweb2-module-jira
-  #icingaweb2-module-nagvis
+  icingaweb2-module-nagvis
   icingaweb2-module-pdfexport
-  #icingaweb2-module-pnp
-  #icingaweb2-module-puppetdb
-  #icingaweb2-module-test
-  #icingaweb2-module-vsphere
   icingaweb2-module-x509
-  #icingaweb2-module-toplevelview
   icingaweb2-module-audit
-  #icingaweb2-module-elasticsearch
-  #icingaweb2-module-eventdb
-  #icingaweb2-module-generictts
-  #icingaweb2-module-lynxtechnik
+  icinga-notifications-web
+  icinga-kubernetes-web
 )
 
 function project_id_version()
@@ -83,6 +74,12 @@ for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
            --package-version=$git_head \
            --default-domain=icinga \
            --output=$repo_name/messages.new.pot
+
+  if [ ! -s $repo_name/messages.new.pot ]; then
+    rm $repo_name/catalog.txt
+    echo "No messages found in $repo_name. Skipping."
+    continue
+  fi
 
   # Use current year in the copyright for new templates without one yet
   REPLACE_CODE=$(cat << PYTHON
