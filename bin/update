@@ -98,6 +98,10 @@ result = input.replace(
     '"Content-Type: text/plain; charset=CHARSET',
     '"Content-Type: text/plain; charset=UTF-8',
     1
+).replace(
+  '# SOME DESCRIPTIVE TITLE.',
+  '# {0} translation catalog.'.format(args.repo_name),
+  1
 )
 result = re.sub(
     '^#: sources.d/{}/(.*?):(\d+)'.format(args.repo_name),
