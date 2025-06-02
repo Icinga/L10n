@@ -21,6 +21,8 @@ jobs:
         run: echo "${{ github.event.client_payload.origin }} @ ${{ github.event.client_payload.commit }}"
 
       - name: Update template file
+        env:
+          ICINGA_GITLAB_CREDENTIAL: ${{ secrets.ICINGA_GITLAB_CREDENTIAL }}
         run: cd ./src/ && ../bin/update
 
       - name: Open pull request

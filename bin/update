@@ -1,27 +1,29 @@
 #!/bin/bash
 
-set -xe
+set -e
 
-SOURCE_REPOSITORIES=(
-  ipl-html
-  ipl-web
-  ipl-validator
-  icingaweb2
-  icingaweb2-module-director
-  icingaweb2-module-vspheredb
-  icingadb-web
-  icingaweb2-module-reporting
-  icingaweb2-module-graphite
-  icingaweb2-module-cube
-  icingaweb2-module-aws
-  icingaweb2-module-businessprocess
-  icingaweb2-module-jira
-  icingaweb2-module-nagvis
-  icingaweb2-module-pdfexport
-  icingaweb2-module-x509
-  icingaweb2-module-audit
-  icinga-notifications-web
-  icinga-kubernetes-web
+: "${ICINGA_GITLAB_CREDENTIAL:=}"
+
+declare -A SOURCE_REPOSITORIES=(
+  [ipl-html]=
+  [ipl-web]=
+  [ipl-validator]=
+  [icingaweb2]=
+  [icingaweb2-module-director]=
+  [icingaweb2-module-vspheredb]=
+  [icingadb-web]=
+  [icingaweb2-module-reporting]=
+  [icingaweb2-module-graphite]=
+  [icingaweb2-module-cube]=
+  [icingaweb2-module-aws]=
+  [icingaweb2-module-businessprocess]=
+  [icingaweb2-module-jira]=
+  [icingaweb2-module-nagvis]=
+  [icingaweb2-module-pdfexport]=
+  [icingaweb2-module-x509]=
+  [icingaweb2-module-audit]=
+  [icinga-notifications-web]=
+  [icinga-kubernetes-web]=
 )
 
 function project_id_version()
@@ -32,17 +34,32 @@ s/.*\([a-f0-9]\{40\}\)\\n".*/\1/p
 }' "$1")
 }
 
+if [ -z "$ICINGA_GITLAB_CREDENTIAL" ]; then
+  echo "Environment variable ICINGA_GITLAB_CREDENTIAL not set"
+  exit 1
+fi
+
 # Fetch repositories which do not exist yet in the directory
 FETCHED_REPOS=();
-for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
+for repo_name in "${!SOURCE_REPOSITORIES[@]}"; do
+  repo_url="${SOURCE_REPOSITORIES[$repo_name]:-https://github.com/Icinga/$repo_name}"
   if [ ! -d "sources.d/$repo_name" ]; then
     FETCHED_REPOS+=( $repo_name );
 
-    git clone --depth 1 https://github.com/Icinga/$repo_name.git sources.d/$repo_name
+    # Inject GitLab credentials into GitLab urls. Non-GitLab urls are used as is.
+    source_url=$(sed -E "s/(https:\/\/)(git\.icinga\.com)/\1${ICINGA_GITLAB_CREDENTIAL}@\2/" <<< $repo_url)
+    git clone --depth 1 "$source_url.git" sources.d/$repo_name
   fi
 done
 
-for repo_name in "${SOURCE_REPOSITORIES[@]}"; do
+for repo_name in "${!SOURCE_REPOSITORIES[@]}"; do
+  repo_url="${SOURCE_REPOSITORIES[$repo_name]:-https://github.com/Icinga/$repo_name}"
+  if [[ "$repo_url" =~ ^https://git\.icinga\.com/ ]];
+  then
+    # GitLab requires this dash for some reason…
+    repo_url+="/-"
+  fi
+
   if [ ! -d $repo_name ]; then
     mkdir $repo_name
   fi
@@ -87,6 +104,7 @@ import sys, argparse, re
 input = sys.stdin.read()
 parser = argparse.ArgumentParser()
 parser.add_argument('--repo-name')
+parser.add_argument('--repo-url')
 parser.add_argument('--git-head')
 args = parser.parse_args()
 from datetime import date
@@ -105,7 +123,7 @@ result = input.replace(
 )
 result = re.sub(
     '^#: sources.d/{}/(.*?):(\d+)'.format(args.repo_name),
-    '#: https://github.com/Icinga/{repo_name}/blob/{git_head}/\\\\1#L\\\\2'.format(**vars(args)),
+    '#: {repo_url}/blob/{git_head}/\\\\1#L\\\\2'.format(**vars(args)),
     result,
     count=0,
     flags=re.MULTILINE
@@ -129,7 +147,7 @@ result = re.sub(
 sys.stdout.write(result)
 PYTHON
 )
-  cat $repo_name/messages.new.pot | python3 -c "$REPLACE_CODE" --repo-name=$repo_name --git-head=$git_head > temp
+  cat $repo_name/messages.new.pot | python3 -c "$REPLACE_CODE" --repo-name=$repo_name --repo-url=$repo_url --git-head=$git_head > temp
   mv temp $repo_name/messages.new.pot
 
   if [ -s $repo_name/messages.pot ]; then
