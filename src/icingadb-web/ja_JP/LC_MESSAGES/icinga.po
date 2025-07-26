@@ -5,13 +5,14 @@
 # Contributors:
 # papillon326 <udagawa@www2178ue.sakura.ne.jp>, 2020.
 # Weblate Translation Memory <icingabot+58964@icinga.com>, 2025.
+# Weblate <icingabot+58962@icinga.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-24 13:33+0000\n"
 "PO-Revision-Date: 2025-07-26 08:00+0000\n"
-"Last-Translator: Weblate Translation Memory <icingabot+58964@icinga.com>\n"
+"Last-Translator: Weblate <icingabot+58962@icinga.com>\n"
 "Language-Team: Japanese <https://translate.icinga.com/projects/icinga/"
 "icingadb-web/ja/>\n"
 "Language: ja_JP\n"
@@ -57,7 +58,7 @@ msgid "Removed command transport \"%s\" successfully"
 msgstr "コマンド転送方法 %s を削除"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/application/controllers/CommandTransportController.php#L120
-#, fuzzy, php-format
+#, php-format
 msgid "Remove Command Transport: %s"
 msgstr "コマンド転送方法 %s の削除"
 
@@ -289,11 +290,11 @@ msgstr "終了時刻"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/application/controllers/DowntimesController.php#L56
 msgid "Scheduled Start Time"
-msgstr ""
+msgstr "開始予定時刻"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/application/controllers/DowntimesController.php#L57
 msgid "Scheduled End Time"
-msgstr ""
+msgstr "終了予定時刻"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/application/controllers/DowntimesController.php#L58
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/application/forms/Command/Object/ScheduleServiceDowntimeForm.php#L185
@@ -374,7 +375,7 @@ msgstr "履歴"
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/History.php#L76
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/StateHistory.php#L82
 msgid "Event Time"
-msgstr ""
+msgstr "イベント時間"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/application/controllers/HostController.php#L63
 msgid "Host not found"
@@ -880,7 +881,6 @@ msgid_plural "Scheduling checks.."
 msgstr[0] "監視を設定中.."
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/application/forms/Command/Object/CheckNowForm.php#L44
-#, fuzzy
 msgid "Check Now"
 msgstr "監視の実施"
 
@@ -1206,10 +1206,9 @@ msgid_plural "Send custom notifications"
 msgstr[0] "カスタム通知を送信"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/application/forms/Command/Object/SendCustomNotificationForm.php#L111
-#, fuzzy
 msgid "Sending custom notification"
 msgid_plural "Sending custom notifications"
-msgstr[0] "カスタム通知を送信"
+msgstr[0] "カスタム通知の送信"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/application/forms/Command/Object/ToggleObjectFeaturesForm.php#L39
 msgid "Active Checks"
@@ -1276,7 +1275,7 @@ msgstr "変更を保存"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/application/forms/DatabaseConfigForm.php#L22
 msgid "Database resource"
-msgstr ""
+msgstr "データベースリソース"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/application/forms/DatabaseConfigForm.php#L23
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/configuration.php#L559
@@ -1286,7 +1285,7 @@ msgstr "データベース"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/application/forms/DatabaseConfigForm.php#L25
 msgid "Please choose"
-msgstr ""
+msgstr "- 選択してください -"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/application/forms/Navigation/ActionForm.php#L31
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/ProvidedHook/Reporting/SlaReport.php#L173
@@ -1911,13 +1910,13 @@ msgid "No command transports have been configured in \"%s\"."
 msgstr "\"%s\" にコマンドトランスポートが設定されていません。"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Command/Transport/CommandTransport.php#L68
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "Cannot create command transport \"%s\". Invalid transport defined in \"%s\". "
 "Use one of: %s."
 msgstr ""
-"コマンド転送方法 \"%s\" が作成できません。無効なトランスポートが \"%s\" に定"
-"義されています。\"%s\", \"%s\" または \"%s\" を使用してください。"
+"コマンド転送方法 \"%s\" が作成できません。無効なトランスポートが \"%s\" "
+"に定義されています。\"%s\", \"%s\" または \"%s\" を使用してください。"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Command/Transport/CommandTransport.php#L126
 msgid ""
@@ -1986,7 +1985,7 @@ msgstr "保留中"
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Common/HostStates.php#L99
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Common/ServiceStates.php#L121
 msgid "not available"
-msgstr ""
+msgstr "利用不可"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Common/LoadMore.php#L102
 msgid "Load More"
@@ -2245,7 +2244,6 @@ msgid "Acknowledgement Is Persistent"
 msgstr "承認削除"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/ActionUrl.php#L41
-#, fuzzy
 msgid "Action Url"
 msgstr "アクションURL"
 
@@ -2721,12 +2719,10 @@ msgid "Flapping Percent State Change End"
 msgstr "最終状態変更"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/FlappingHistory.php#L74
-#, fuzzy
 msgid "Flapping Threshold Low"
 msgstr "フラッピング閾値（下限）"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/FlappingHistory.php#L75
-#, fuzzy
 msgid "Flapping Threshold High"
 msgstr "フラッピング閾値（上限）"
 
@@ -2877,14 +2873,12 @@ msgstr "アイコン画像"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/Host.php#L162
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/Service.php#L152
-#, fuzzy
 msgid "Icon Image Alt"
 msgstr "アイコン画像の代替テキスト"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/Host.php#L163
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/Service.php#L153
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/Zone.php#L55
-#, fuzzy
 msgid "Zone Name"
 msgstr "ゾーン名"
 
@@ -3065,7 +3059,6 @@ msgid "Hostgroup Display Name"
 msgstr "表示名"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/IconImage.php#L40
-#, fuzzy
 msgid "Icon Image"
 msgstr "アイコン画像"
 
@@ -3112,16 +3105,14 @@ msgid "Notification Escalate Until"
 msgstr "通知開始"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/Notification.php#L78
-#, fuzzy
 msgid "Notification Interval"
 msgstr "通知インターバル"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/Notification.php#L79
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/TimeperiodRange.php#L44
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/User.php#L73
-#, fuzzy
 msgid "Timeperiod Id"
-msgstr "スケジュール"
+msgstr "期間ID"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/Notification.php#L80
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/User.php#L74
@@ -3156,9 +3147,8 @@ msgid "Notification Sent On"
 msgstr "通知開始"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/NotificationHistory.php#L79
-#, fuzzy
 msgid "Hard State"
-msgstr "ホストの状態"
+msgstr "ハードステート"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/NotificationHistory.php#L80
 #, fuzzy
@@ -3176,9 +3166,8 @@ msgid "Notification Text"
 msgstr "通知テンプレート"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/NotificationHistory.php#L83
-#, fuzzy
 msgid "Contacts Notified"
-msgstr "クラスタゾーン"
+msgstr "コンタクトへの通知"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/Notificationcommand.php#L55
 #, fuzzy
@@ -3556,9 +3545,8 @@ msgid "handled by Downtime"
 msgstr "計画メンテナンス期間"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/State.php#L163
-#, fuzzy
 msgid "in Downtime"
-msgstr "メンテナンス期間"
+msgstr "停止中"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Model/State.php#L177
 #, fuzzy
@@ -4064,13 +4052,11 @@ msgid "For check plugins that output HTML the dom extension is required"
 msgstr ""
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Setup/IcingaDbWizard.php#L83
-#, fuzzy
 msgid ""
 "To send external commands over Icinga 2's API, the cURL module for PHP is "
 "required."
-msgstr ""
-"Icinga 2のAPIを介して外部コマンドを送信するには、PHP用のcURLモジュールが必要"
-"です。"
+msgstr "Icinga "
+"2のAPIを介して外部コマンドを送信するには、PHP用のcURLモジュールが必要です。"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Setup/RedisPage.php#L17
 #, fuzzy
@@ -4165,12 +4151,10 @@ msgid "Host \"%s\" is in flapping state"
 msgstr ""
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/View/BaseHostAndServiceRenderer.php#L240
-#, fuzzy
 msgid "Notifications disabled"
 msgstr "通知が無効"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/View/BaseHostAndServiceRenderer.php#L246
-#, fuzzy
 msgid "Active checks disabled"
 msgstr "アクティブ監視無効"
 
@@ -4191,9 +4175,9 @@ msgid "EXPIRES"
 msgstr ""
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/View/CommentRenderer.php#L146
-#, fuzzy, php-format
+#, php-format
 msgid "expires %s"
-msgstr "期限切れ"
+msgstr "有効期限 %s"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/View/CommentRenderer.php#L153
 #, fuzzy, php-format
@@ -4611,7 +4595,7 @@ msgstr "スケジュール"
 #, php-format
 msgctxt "..<customvar-name>"
 msgid "Contact %s"
-msgstr ""
+msgstr "連絡先%s"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Web/Control/SearchBar/ObjectSuggestions.php#L59
 #, fuzzy, php-format
@@ -4710,7 +4694,6 @@ msgid "Interval"
 msgstr ""
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Widget/Detail/CheckStatistics.php#L223
-#, fuzzy
 msgid "Execution Time"
 msgstr "実行時間"
 
@@ -4721,7 +4704,7 @@ msgstr "遅延時間"
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Widget/Detail/CheckStatistics.php#L248
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Widget/Detail/CheckStatistics.php#L257
 msgid "Next Check"
-msgstr ""
+msgstr "次回の監視"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Widget/Detail/CheckStatistics.php#L249
 msgid "n.a"
@@ -4953,7 +4936,6 @@ msgid "Occurred On"
 msgstr "発生順"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Widget/Detail/EventDetail.php#L264
-#, fuzzy
 msgid "Check Attempt"
 msgstr "監視の試行回数"
 
@@ -5170,11 +5152,11 @@ msgstr ""
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Widget/Detail/ObjectDetail.php#L108
 msgid "IPv4 Address"
-msgstr ""
+msgstr "IPv4アドレス"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Widget/Detail/ObjectDetail.php#L112
 msgid "IPv6 Address"
-msgstr ""
+msgstr "IPv6 アドレス"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Widget/Detail/ObjectDetail.php#L156
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Widget/Detail/ObjectDetail.php#L346
@@ -5381,7 +5363,6 @@ msgid "Downtime End"
 msgstr "DowntimeEnd (ダウンタイムの終了)"
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Widget/Detail/UserDetail.php#L133
-#, fuzzy
 msgid "Downtime Removed"
 msgstr "DowntimeRemoved (ダウンタイムの削除)"
 
@@ -5467,7 +5448,7 @@ msgid "{{#total}}Total{{/total}} %d"
 msgstr ""
 
 #: https://github.com/Icinga/icingadb-web/blob/fa23e86ae74f05209bd1e12806fa32fbe27057df/library/Icingadb/Widget/ItemList/CommandTransportListItem.php#L35
-#, fuzzy, php-format
+#, php-format
 msgid "Remove command transport \"%s\""
 msgstr "コマンド転送方法 %s を削除"
 
