@@ -6,13 +6,14 @@
 # Yuri Konotopov <ykonotopov@gmail.com>, 2015.
 # Dmitriy Q <dmitry@atsip.ru>, 2021.
 # Dmitriy Q <krotesk@mail.ru>, 2023, 2025.
+# DeepL <noreply-mt-deepl@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-21 14:41+0000\n"
-"PO-Revision-Date: 2025-04-03 05:00+0000\n"
-"Last-Translator: Dmitriy Q <krotesk@mail.ru>\n"
+"PO-Revision-Date: 2025-07-26 08:00+0000\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Russian <https://translate.icinga.com/projects/icinga/"
 "icingaweb2-module-elasticsearch/ru/>\n"
 "Language: ru_RU\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.4.2\n"
+"X-Generator: Weblate 5.11\n"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/controllers/DocumentsController.php:24
 msgid "Instance not found"
@@ -71,11 +72,11 @@ msgstr "Новый тип события"
 #: sources.d/icingaweb2-module-elasticsearch/application/controllers/EventtypesController.php:64
 #: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/eventtypes/index.phtml:41
 msgid "Update Event Type"
-msgstr ""
+msgstr "Тип события обновления"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/controllers/EventtypesController.php:82
 msgid "Remove Event Type"
-msgstr ""
+msgstr "Удалить тип события"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/controllers/InstancesController.php:40
 msgid "New Instance"
@@ -109,7 +110,7 @@ msgstr "Экземпляр Elasticsearch"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:90
 msgid "Elasticsearch index pattern"
-msgstr ""
+msgstr "Шаблон индекса Elasticsearch"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:91
 #: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/eventtypes/index.phtml:33
@@ -118,7 +119,7 @@ msgstr "Индекс"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:100
 msgid "Elasticsearch filter in the Icinga Web 2 filter format"
-msgstr ""
+msgstr "Фильтр Elasticsearch в формате фильтра Icinga Web 2"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:101
 #: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/eventtypes/index.phtml:35
@@ -155,18 +156,17 @@ msgstr "Сохранение"
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:132
 #, php-format
 msgid "Update Event Type %s"
-msgstr ""
+msgstr "Тип события обновления %s"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:150
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:162
-#, fuzzy
 msgid "Remove"
 msgstr "Удалить"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:168
 #, php-format
 msgid "Remove Event Type %s"
-msgstr ""
+msgstr "Удалить тип события %s"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/EventtypeConfigForm.php:170
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:182
@@ -203,24 +203,24 @@ msgstr "Тип события"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:67
 msgid "Name of the Elasticsearch instance"
-msgstr ""
+msgstr "Имя экземпляра Elasticsearch"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:68
 msgid "Instance Name"
-msgstr ""
+msgstr "Имя экземпляра"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:78
 msgid "URI to the Elasticsearch instance"
-msgstr ""
+msgstr "URI к экземпляру Elasticsearch"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:79
 #: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/instances/index.phtml:46
 msgid "URI"
-msgstr ""
+msgstr "URI"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:89
 msgid "The user to use for authentication"
-msgstr ""
+msgstr "Пользователь, который будет использоваться для аутентификации"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:90
 msgid "User"
@@ -239,6 +239,8 @@ msgid ""
 "The path of the file containing one or more certificates to verify the peer "
 "with or the path to the directory that holds multiple CA certificates"
 msgstr ""
+"Путь к файлу, содержащему один или несколько сертификатов для проверки пира, "
+"или путь к директории, в которой хранится несколько сертификатов ЦС."
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:110
 msgid "Certificate Authority"
@@ -246,7 +248,7 @@ msgstr "Центр сертификации"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:117
 msgid "The path of the client certificate"
-msgstr ""
+msgstr "Путь к клиентскому сертификату"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:118
 msgid "Client Certificate"
@@ -254,7 +256,7 @@ msgstr "Клиентский сертификат"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:125
 msgid "The path of the client private key"
-msgstr ""
+msgstr "Путь к закрытому ключу клиента"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:126
 msgid "Client Private Key"
@@ -269,16 +271,16 @@ msgstr "Создание нового экземпляра"
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:144
 #, php-format
 msgid "Update Instance %s"
-msgstr ""
+msgstr "Обновление экземпляра %s"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:180
 #, php-format
 msgid "Remove Instance %s"
-msgstr ""
+msgstr "Удалить экземпляр %s"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:193
 msgid "Elasticsearch instance created"
-msgstr ""
+msgstr "Создан экземпляр Elasticsearch"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:194
 msgid "Failed to create Elasticsearch instance"
@@ -286,15 +288,15 @@ msgstr "Ошибка при создании экземпляра Elasticsearch"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:200
 msgid "Elasticsearch instance updated"
-msgstr ""
+msgstr "Обновлен экземпляр Elasticsearch"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:201
 msgid "Failed to update Elasticsearch instance"
-msgstr ""
+msgstr "Не удалось обновить экземпляр Elasticsearch"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:207
 msgid "Elasticsearch instance removed"
-msgstr ""
+msgstr "Экземпляр Elasticsearch удален"
 
 #: sources.d/icingaweb2-module-elasticsearch/application/forms/InstanceConfigForm.php:208
 msgid "Failed to remove Elasticsearch instance"
@@ -307,6 +309,8 @@ msgid ""
 "No event types configured yet. You have to configure event types in order to "
 "access data in Elasticsearch."
 msgstr ""
+"Пока не настроены типы событий. Тебе нужно настроить типы событий, чтобы "
+"получить доступ к данным в Elasticsearch."
 
 #: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/events/create-eventtype.phtml:17
 #: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/eventtypes/index.phtml:19
@@ -324,6 +328,8 @@ msgid ""
 "No Elasticsearch instance configured yet. You have to configure an instance "
 "before creating event types."
 msgstr ""
+"Экземпляр Elasticsearch еще не настроен. Тебе нужно настроить экземпляр "
+"перед созданием типов событий."
 
 #: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/eventtypes/create-instance.phtml:19
 #: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/instances/index.phtml:16
@@ -341,7 +347,7 @@ msgstr ""
 
 #: sources.d/icingaweb2-module-elasticsearch/application/views/scripts/eventtypes/index.phtml:50
 msgid "Update event type"
-msgstr ""
+msgstr "Тип события обновления"
 
 #: sources.d/icingaweb2-module-elasticsearch/configuration.php:8
 msgid "Allow to configure Elasticsearch instances and event types"
@@ -353,15 +359,15 @@ msgstr "Разрешить доступ к просмотру событий Ela
 
 #: sources.d/icingaweb2-module-elasticsearch/configuration.php:18
 msgid "Restrict the event types the user may use"
-msgstr ""
+msgstr "Ограничьте типы событий, которые может использовать пользователь"
 
 #: sources.d/icingaweb2-module-elasticsearch/configuration.php:22
 msgid "Configure Elasticsearch Instances"
-msgstr ""
+msgstr "Настройка экземпляров Elasticsearch"
 
 #: sources.d/icingaweb2-module-elasticsearch/configuration.php:23
 msgid "Elasticsearch Instances"
-msgstr ""
+msgstr "Экземпляры Elasticsearch"
 
 #: sources.d/icingaweb2-module-elasticsearch/configuration.php:28
 msgid "Configure Event Types"
@@ -369,4 +375,4 @@ msgstr "Настройка типов событий"
 
 #: sources.d/icingaweb2-module-elasticsearch/library/Elasticsearch/ProvidedHook/Monitoring/HostActions.php:15
 msgid "Elasticsearch Events"
-msgstr ""
+msgstr "События Elasticsearch"
