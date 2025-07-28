@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-24 13:33+0000\n"
 "PO-Revision-Date: 2025-07-28 07:24+0000\n"
-"Last-Translator: DeepL <icingabot+60327@icinga.com>\n"
+"Last-Translator: Weblate <icingabot+58962@icinga.com>\n"
 "Language-Team: Japanese <https://translate.icinga.com/projects/icinga/"
 "icingaweb2-module-director/ja/>\n"
 "Language: ja_JP\n"
@@ -497,9 +497,9 @@ msgid "%s instances"
 msgstr "%s インスタンス"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/application/controllers/DataController.php#L359
-#, fuzzy, php-format
+#, php-format
 msgid "%s on %s"
-msgstr "%s （ベース: %s）"
+msgstr "%s について%s"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/application/controllers/DataController.php#L397
 msgid "Edit list"
@@ -2907,7 +2907,7 @@ msgstr "関連するダウンタイムには必ずこのコメントが表示さ
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/application/forms/IcingaScheduledDowntimeForm.php#L47
 msgid "Fixed"
-msgstr ""
+msgstr "固定"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/application/forms/IcingaScheduledDowntimeForm.php#L49
 msgid ""
@@ -4426,9 +4426,8 @@ msgid "Whether to delete or to disable objects subject to purge"
 msgstr "パージ対象のオブジェクトを削除するか無効にするか"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/application/forms/SyncRuleForm.php#L88
-#, fuzzy
 msgid "Disable"
-msgstr "無効"
+msgstr "無効にする"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/application/forms/SyncRuleForm.php#L98
 #, php-format
@@ -5603,7 +5602,7 @@ msgstr ""
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L129
 msgid "Protocol"
-msgstr ""
+msgstr "プロトコル"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L131
 msgid "Whether to use encryption when talking to the REST API"
@@ -5611,11 +5610,11 @@ msgstr "REST APIとの通信時に暗号化を使用するかどうか"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L134
 msgid "HTTPS (strongly recommended)"
-msgstr ""
+msgstr "HTTPS (強く推奨)"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L135
 msgid "HTTP (this is plaintext!)"
-msgstr ""
+msgstr "HTTP (これはプレーンテキストだ!)"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L150
 msgid "HTTP Header"
@@ -5633,21 +5632,22 @@ msgstr "ヘッダは、\"Header.Value \""
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L170
 msgid "Verify Peer"
-msgstr ""
+msgstr "ピア検証"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L172
 msgid ""
 "Whether we should check that our peer's certificate has been signed by a "
 "trusted CA. This is strongly recommended."
-msgstr ""
+msgstr "ピアの証明書が信頼できるCAによって署名されていることを確認すべきかどうか。こ"
+"れは強く推奨される。"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L177
 msgid "Verify Host"
-msgstr ""
+msgstr "ホストを検証する"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L179
 msgid "Whether we should check that the certificate matches theconfigured host"
-msgstr ""
+msgstr "証明書が設定されたホストと一致することを確認するかどうか"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L195
 msgid "Something like https://api.example.com/rest/v2/objects"
@@ -5674,7 +5674,7 @@ msgstr "お客様のREST APIに対する認証に使用される"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L245
 msgid "Proxy"
-msgstr ""
+msgstr "プロキシ"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L247
 msgid ""
@@ -5684,31 +5684,31 @@ msgstr "APIがプロキシ経由でのみアクセス可能な場合は、ここ
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L251
 msgid "HTTP proxy"
-msgstr ""
+msgstr "HTTPプロキシ"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L252
 msgid "SOCKS5 proxy"
-msgstr ""
+msgstr "SOCKS5プロキシ"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L261
 msgid "Proxy Address"
-msgstr ""
+msgstr "プロキシアドレス"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L263
 msgid "Hostname, IP or <host>:<port>"
-msgstr ""
+msgstr "ホスト名、IPまたは&lt;ホスト&gt;:&lt;ポート"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L269
 msgid "Proxy Username"
-msgstr ""
+msgstr "プロキシのユーザー名"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L271
 msgid "In case your proxy requires authentication, please configure this here"
-msgstr ""
+msgstr "プロキシに認証が必要な場合は、こちらで設定する。"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceRestApi.php#L277
 msgid "Proxy Password"
-msgstr ""
+msgstr "プロキシパスワード"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Import/ImportSourceSql.php#L41
 msgid "DB Query"
@@ -7320,11 +7320,11 @@ msgstr "# 変数"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Web/Table/Dependency/DependencyInfoTable.php#L37
 msgid "Module name"
-msgstr ""
+msgstr "モジュール名"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Web/Table/Dependency/DependencyInfoTable.php#L39
 msgid "Installed"
-msgstr ""
+msgstr "インストール"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Web/Table/Dependency/DependencyInfoTable.php#L57
 msgid "disabled"
@@ -7332,11 +7332,11 @@ msgstr "無効"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Web/Table/Dependency/DependencyInfoTable.php#L60
 msgid "missing"
-msgstr ""
+msgstr "欠落"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Web/Table/Dependency/DependencyInfoTable.php#L65
 msgid "more"
-msgstr ""
+msgstr "詳細"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Web/Table/GeneratedConfigFileTable.php#L85
 msgid "Object/Tpl/Apply"
@@ -7500,7 +7500,7 @@ msgstr "director の設定状況"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Web/Tabs/MainTabs.php#L35
 msgid "Daemon"
-msgstr ""
+msgstr "デーモン"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Web/Tabs/ObjectTabs.php#L100
 msgid "Fields"
@@ -7650,7 +7650,7 @@ msgstr "systemdで実行する"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Web/Widget/BackgroundDaemonDetails.php#L77
 msgid "yes"
-msgstr ""
+msgstr "はい"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Web/Widget/BackgroundDaemonDetails.php#L78
 msgid "no"
@@ -7800,7 +7800,7 @@ msgstr "スタートアップログ"
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Web/Widget/Documentation.php#L38
 #, php-format
 msgid "Click to read our documentation: %s"
-msgstr ""
+msgstr "クリックしてドキュメントを読む：%s"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/library/Director/Web/Widget/HealthCheckPluginOutput.php#L46
 #, php-format
