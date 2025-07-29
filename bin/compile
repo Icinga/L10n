@@ -9,51 +9,62 @@ import sys, re
 input = sys.stdin.read()
 from datetime import datetime
 
-m1 = re.match(r'# #-#-#-#-#  icinga\.po  #-#-#-#-#.*\nmsgid ""', input, re.DOTALL)
-if m1: # Consists the header of multiple parts?
-    author_lines = set(re.findall(r'^# [^\n,]+,(?:(?: \d{4},)|(?: \d{4}.))+$', m1[0], re.MULTILINE))
+if not input:
+    sys.stderr.write("Error: No input provided.\n")
+    sys.exit(1)
 
-    # Collect all unique authors
-    author_map = {}
-    for author_line in author_lines:
-        m2 = re.match(r'# ([^<]+) <([^>]+)>,((?:(?: \d{4},)|(?: \d{4}.)))+', author_line)
-        if m2[2] not in author_map:
-            author_map[m2[2]] = {
-                'name': m2[1],
-                'years': []
-            }
+head = input[:input.index("\n#: ")]
+author_lines = set(re.findall(r'^# [^<\n,]+ <[^>]+>,(?:(?: \d{4},)|(?: \d{4}.))+$', head, re.MULTILINE))
 
-        for i in range(3, m2.lastindex + 1):
-            author_map[m2[2]]['years'].append(m2[i][1:5])
+# Collect all unique authors
+author_map = {}
+for author_line in author_lines:
+    m2 = re.match(r'# ([^<]+) <([^>]+)>,((?:(?: \d{4},)|(?: \d{4}.)))+', author_line)
+    if m2[2] not in author_map:
+        author_map[m2[2]] = {
+            'name': m2[1],
+            'years': []
+        }
 
-    # Methods to extract sorting keys
-    def get_year(kv):
-        return max(kv[1]['years'])
-    def get_name(kv):
-        return kv[1]['name']
+    for i in range(3, m2.lastindex + 1):
+        author_map[m2[2]]['years'].append(m2[i][1:5])
 
-    # Sort and render the authors list
-    authors = []
-    for author, data in sorted(sorted(author_map.items(), key=get_name), key=get_year):
-        authors.append('# ' + data['name'] + ' <' + author + '>, ' + ', '.join(set(sorted(data['years']))) + '.')
+# Methods to extract sorting keys
+def get_year(kv):
+    return max(kv[1]['years'])
+def get_name(kv):
+    return kv[1]['name']
 
-    # The header values, of the first extracted header (Similar to --use-first of msgcat)
-    header_values = re.search(r'msgid ""\nmsgstr "".*?(("[^#][^"]+"\n)+)', input, re.DOTALL)[1]
+# Sort and render the authors list
+authors = []
+for author, data in sorted(sorted(author_map.items(), key=get_name), key=get_year):
+    authors.append('# ' + data['name'] + ' <' + author + '>, ' + ', '.join(set(sorted(data['years']))) + '.')
 
-    # Edit/fill some header values
-    header_values = re.sub(r'(Project-Id-Version:)[^"]*', r'\1 ${git_version}\\\n', header_values)
-    header_values = re.sub(r'(PO-Revision-Date:)[^"]*',
-        r'\1 {:%Y-%m-%d %H:%M:%z}\\\n'.format(datetime.now().astimezone()), header_values)
+# The header values, of the first extracted header (Similar to --use-first of msgcat)
+header_values = re.search(r'msgid ""\nmsgstr "".*?((?:"[^#"]+(?!#\\\n)"\n)+)', input, re.DOTALL)[1]
 
-    result = re.search(r'(# #-#-#-#-#  icinga.po  #-#-#-#-#)\n(?!\1)(.*?)# Contributors:', m1[0], re.DOTALL)[2] \
-        + "# Contributors:\n" \
-        + "\n".join(authors) \
-        + "\nmsgid \"\"\n" \
-        + "msgstr \"\"\n" \
-        + header_values \
-        + input[input.index("\n#: "):]
+# Edit/fill some header values
+header_values = re.sub(r'(Project-Id-Version:)[^\\\]*?\\\n', r'\1 ${git_version}\\\n', header_values)
+header_values = re.sub(r'(PO-Revision-Date:)[^"]*',
+    r'\1 {:%Y-%m-%d %H:%M:%z}\\\n'.format(datetime.now().astimezone()), header_values)
+
+first_line = re.search(r'# Icinga - [^(]+ \(\w{2}_\w{2}\)\n', head)
+if not first_line:
+    first_line = "# Icinga - Unknown translation (unknown locale)\n"
+    sys.stderr.write("Warning: No first line found in the header, using default.\n")
 else:
-    result = input
+    first_line = first_line[0]
+
+result = first_line \
+    + "# Copyright (C) {:%Y} Icinga GmbH\n".format(datetime.now().astimezone()) \
+    + "# This file is distributed under the same license as the icinga-l10n package.\n" \
+    + "#\n" \
+    + "# Contributors:\n" \
+    + "\n".join(authors) \
+    + "\n#\nmsgid \"\"\n" \
+    + "msgstr \"\"\n" \
+    + header_values \
+    + input[input.index("\n#: "):]
 
 sys.stdout.write(result)
 PYTHON
@@ -81,6 +92,11 @@ for locale_name in "${!CATALOGS[@]}"; do
         ../locale/$locale_name/LC_MESSAGES/icinga.po -
   done
 
-  cat ../locale/$locale_name/LC_MESSAGES/icinga.po | python3 -c "$HEADER_FIXER" > temp; mv temp ../locale/$locale_name/LC_MESSAGES/icinga.po
-  msgfmt -o ../locale/$locale_name/LC_MESSAGES/icinga.mo -c ../locale/$locale_name/LC_MESSAGES/icinga.po
+  if [ -s ../locale/$locale_name/LC_MESSAGES/icinga.po ]; then
+    cat ../locale/$locale_name/LC_MESSAGES/icinga.po | python3 -c "$HEADER_FIXER" > temp; mv temp ../locale/$locale_name/LC_MESSAGES/icinga.po
+    msgfmt -o ../locale/$locale_name/LC_MESSAGES/icinga.mo -c ../locale/$locale_name/LC_MESSAGES/icinga.po
+  else
+    echo "Warning: No translations found for $locale_name, skipping compilation."
+    rm -rf ../locale/$locale_name
+  fi
 done
