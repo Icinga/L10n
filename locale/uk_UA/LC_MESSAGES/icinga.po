@@ -13,11 +13,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: v1.3.0-224-g5d7d00a8\n"
+"Project-Id-Version: v1.3.0-231-gec579591\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-24 13:33+0000\n"
-"PO-Revision-Date: 2025-07-29 15:48:+0200\n"
-"Last-Translator: Weblate <icingabot+58962@icinga.com>\n"
+"PO-Revision-Date: 2025-07-31 15:00:+0200\n"
+"Last-Translator: DeepL <icingabot+60327@icinga.com>\n"
 "Language-Team: Ukrainian <https://translate.icinga.com/projects/icinga/"
 "icinga-kubernetes-web/uk/>\n"
 "Language: uk_UA\n"
@@ -8593,6 +8593,32 @@ msgid ""
 msgstr ""
 "Чи ігнорувати м'які стани при обчисленні доступності. За замовчуванням true."
 
+#: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/application/forms/IcingaDependencyForm.php#L201
+msgid "Optional. The parent host."
+msgstr "Необов'язково. Батьківський хост."
+
+#: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/application/forms/IcingaDependencyForm.php#L212
+msgid ""
+"The parent host cannot be a service custom variable for a host dependency"
+msgstr ""
+"Батьківський хост не може бути користувацькою змінною служби для залежного "
+"хоста"
+
+#: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/application/forms/IcingaDependencyForm.php#L218
+msgid ""
+"You might want to refer to Host or Service Custom Variables via $host|"
+"service.vars.varname$"
+msgstr ""
+"Ви можете звернутися до користувацьких змінних хоста або сервісу за "
+"допомогою $host|service.vars.varname$."
+
+#: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/application/forms/IcingaDependencyForm.php#L222
+msgid ""
+"You might want to refer to Host Custom Variables via $host.vars.varname$"
+msgstr ""
+"Ви можете звернутися до користувацьких змінних хоста за допомогою $host.vars."
+"varname$."
+
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/application/forms/IcingaDependencyForm.php#L229
 msgid "Parent Host"
 msgstr "Батьківський хост"
@@ -8604,6 +8630,13 @@ msgid ""
 msgstr ""
 "Опціонально. Батьківський сервіс. Якщо залежність пропущено, цей об'єкт буде "
 "рахуватися як залежність хоста."
+
+#: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/application/forms/IcingaDependencyForm.php#L259
+msgid ""
+"The parent service cannot be a service custom variable for a host dependency"
+msgstr ""
+"Батьківський сервіс не може бути користувацькою змінною сервісу для хост-"
+"залежності"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/application/forms/IcingaDependencyForm.php#L264
 msgid "Parent Service"
@@ -10818,12 +10851,31 @@ msgstr ""
 msgid "Allow readonly users to see where a Service came from"
 msgstr "Дозволити користувачам з правами на читання бачити звідки виник сервіс"
 
+#: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/configuration.php#L59
+msgid "Allow users to modify Hosts they are allowed to see in Icinga DB Web"
+msgstr ""
+"Дозвольте користувачам змінювати хости, які вони можуть бачити в Icinga DB "
+"Web"
+
+#: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/configuration.php#L62
+msgid "Allow users to modify Service they are allowed to see in Icinga DB Web"
+msgstr ""
+"Дозвольте користувачам змінювати сервіс, який вони можуть бачити в Icinga DB "
+"Web"
+
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/configuration.php#L71
 msgid ""
 "Additional (monitoring module) object filter to further restrict write access"
 msgstr ""
 "Додатковий (модуль monitoring) фільтр об'єктів для подальшого обмеження "
 "доступу для запису"
+
+#: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/configuration.php#L77
+msgid ""
+"Additional (Icinga DB Web) object filter to further restrict write access"
+msgstr ""
+"Додатковий фільтр об'єктів (Icinga DB Web) для подальшого обмеження доступу "
+"на запис"
 
 #: https://github.com/Icinga/icingaweb2-module-director/blob/6749b4fb08e4e3ae6371df6dd8f8d081cb871c70/configuration.php#L82
 msgid "Limit access to the given comma-separated list of hostgroups"
@@ -14108,6 +14160,11 @@ msgstr ""
 "його не існує. Для цієї функції підходять лише поля DirectorObject типу "
 "масив для об'єктів User."
 
+#. last-seen=079bf87a9a42e5507844fc3dfd479dd430c7c071
+#: https://github.com/Icinga/icingaweb2-module-director/blob/079bf87a9a42e5507844fc3dfd479dd430c7c071/library/Director/Field/FormFieldSuggestion.php#L86
+msgid "Flags (boolean) arguments"
+msgstr "Прапорці (булеві) аргументи"
+
 #. last-seen=8896e54d69d6f8e8ad01a4663de64aa02172b74d
 #: https://github.com/Icinga/icingaweb2-module-director/blob/8896e54d69d6f8e8ad01a4663de64aa02172b74d/application/controllers/SyncruleController.php#L97
 #, php-format
@@ -14171,6 +14228,16 @@ msgstr ""
 #: https://github.com/Icinga/icingaweb2-module-director/blob/4e41e7f2d896d51d35a9f34bedde42404b9c2036/library/Director/PropertyModifier/PropertyModifierRegexReplace.php#L23
 msgid "The string that should be used as a preplacement"
 msgstr "Стрічка що має бути використана як заміна"
+
+#. last-seen=616d329be3c4d2274d940b5abe8b6425cd7b057b
+#: https://github.com/Icinga/icingaweb2-module-director/blob/616d329be3c4d2274d940b5abe8b6425cd7b057b/library/Director/Web/Widget/BranchedObjectHint.php#L34
+#, php-format
+msgid ""
+"This object will be created in %s. It will not be part of any deployment "
+"unless being merged"
+msgstr ""
+"Цей об'єкт буде створено в %s. Він не буде частиною жодного розгортання, "
+"якщо не буде об'єднаний"
 
 #. last-seen=616d329be3c4d2274d940b5abe8b6425cd7b057b
 #: https://github.com/Icinga/icingaweb2-module-director/blob/616d329be3c4d2274d940b5abe8b6425cd7b057b/library/Director/Web/Widget/BranchedObjectHint.php#L42
