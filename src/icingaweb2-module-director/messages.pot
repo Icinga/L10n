@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: icingaweb2-module-director "
 "52a7584befe09b9749d5f2ddd900ef3e46bfd3f1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-06 08:43+0000\n"
+"POT-Creation-Date: 2025-10-07 14:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -372,6 +372,7 @@ msgstr ""
 msgid "Custom Variable variants: %s"
 msgstr ""
 
+#. Avoiding layout issues:
 #: https://github.com/Icinga/icingaweb2-module-director/blob/52a7584befe09b9749d5f2ddd900ef3e46bfd3f1/application/controllers/DaemonController.php#L20
 #: https://github.com/Icinga/icingaweb2-module-director/blob/52a7584befe09b9749d5f2ddd900ef3e46bfd3f1/application/controllers/DaemonController.php#L22
 msgid "Director Background Daemon"
@@ -3598,6 +3599,8 @@ msgstr ""
 msgid "- no automatic installation -"
 msgstr ""
 
+#. TODO: not yet
+#. 'director' => $this->translate('Download via the Icinga Director'),
 #: https://github.com/Icinga/icingaweb2-module-director/blob/52a7584befe09b9749d5f2ddd900ef3e46bfd3f1/application/forms/SelfServiceSettingsForm.php#L82
 msgid "Download from packages.icinga.com"
 msgstr ""
@@ -4097,10 +4100,12 @@ msgstr ""
 msgid "Nothing changed, rule is in sync"
 msgstr ""
 
+#. Used to be $rule->get('sync_state') === 'in-sync', $changed = $rule->applyChanges();
 #: https://github.com/Icinga/icingaweb2-module-director/blob/52a7584befe09b9749d5f2ddd900ef3e46bfd3f1/application/forms/SyncRunForm.php#L64
 msgid "Nothing to do, rule is in sync"
 msgstr ""
 
+#. Dummy strings helping the translation module
 #: https://github.com/Icinga/icingaweb2-module-director/blob/52a7584befe09b9749d5f2ddd900ef3e46bfd3f1/application/locale/translateMe.php#L5
 msgid "up"
 msgstr ""
@@ -6729,6 +6734,8 @@ msgstr ""
 msgid "Id"
 msgstr ""
 
+#. $this->translate('Array Rank'),
+#. $this->translate('Attributes')
 #: https://github.com/Icinga/icingaweb2-module-director/blob/52a7584befe09b9749d5f2ddd900ef3e46bfd3f1/library/Director/Web/Table/CoreApiFieldsTable.php#L84
 msgid "State"
 msgstr ""
@@ -7317,6 +7324,8 @@ msgstr ""
 msgid "File Content: %s"
 msgstr ""
 
+#. No root zone link for now:
+#. $result = [Link::create($this->translate('Root Zone'), $this->baseUrl)];
 #: https://github.com/Icinga/icingaweb2-module-director/blob/52a7584befe09b9749d5f2ddd900ef3e46bfd3f1/library/Director/Web/Widget/InspectPackages.php#L69
 msgid "Root Zone"
 msgstr ""
