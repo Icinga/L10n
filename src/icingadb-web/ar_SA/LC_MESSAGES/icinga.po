@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:49+0000\n"
+"POT-Creation-Date: 2025-10-07 14:58+0000\n"
 "PO-Revision-Date: 2020-04-27 14:37+0200\n"
 "Last-Translator: Munzir Taha <munzirtaha@gmail.com>\n"
 "Language-Team: English <trans-ar@lists.fedoraproject.org>\n"
@@ -84,6 +84,7 @@ msgstr "تعليق"
 msgid "Comment not found"
 msgstr "تعليق غير موجود"
 
+#. * @var ResultSet $comments
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/application/controllers/CommentsController.php#L30
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/application/controllers/CommentsController.php#L123
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/configuration.php#L400
@@ -275,6 +276,7 @@ msgstr "زمن التوقف"
 msgid "Downtime not found"
 msgstr "زمن التوقف غير موجود"
 
+#. * @var ResultSet $downtimes
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/application/controllers/DowntimesController.php#L30
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/application/controllers/DowntimesController.php#L129
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/configuration.php#L406
@@ -322,6 +324,7 @@ msgstr ""
 msgid "Cancel Downtimes"
 msgstr ""
 
+#. TODO: Find a native way for ipl-html to support enriching text with html
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/application/controllers/ErrorController.php#L82
 msgid "Database not configured"
 msgstr ""
@@ -371,6 +374,11 @@ msgstr "فحوصات الخدمة"
 msgid "Feature Commands"
 msgstr "أوامر ميزة"
 
+#. *
+#. * @var \Icinga\Application\Modules\Module $this
+#. *
+#. * History section in case monitoring is disabled
+#.
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/application/controllers/HistoryController.php#L22
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/application/controllers/HostController.php#L489
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/application/controllers/ServiceController.php#L461
@@ -1814,6 +1822,9 @@ msgid ""
 "Obfuscate custom variable values of Icinga objects that are part of the list"
 msgstr "تقييد العروض بكائنات إسنجا التي توافق المرشح"
 
+#.
+#. * Available navigation items
+#.
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/configuration.php#L150
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/configuration.php#L441
 msgid "Host Action"
@@ -1837,6 +1848,9 @@ msgstr "مجموعات المضيف"
 msgid "Servicegroups"
 msgstr "مجموعات خدمة"
 
+#. *
+#. * Current Incidents
+#.
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/configuration.php#L196
 msgid "Current Incidents"
 msgstr "الحوادث الحالية"
@@ -1855,6 +1869,9 @@ msgstr "خدمات تعافت مؤخرا"
 msgid "Host Problems"
 msgstr "مشاكل المضيف"
 
+#. *
+#. * Overdue
+#.
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/configuration.php#L219
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/library/Icingadb/View/BaseHostAndServiceRenderer.php#L174
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/library/Icingadb/Widget/Detail/CheckStatistics.php#L255
@@ -1878,6 +1895,9 @@ msgstr "الإشعارات النشطة لثلاثة أيام على الأقل"
 msgid "Downtimes Active For At Least Three Days"
 msgstr "أزمنة التوقف النشطة لأكثر من ثلاثة أيام"
 
+#. *
+#. * Muted
+#.
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/configuration.php#L248
 msgid "Muted"
 msgstr "صامت"
@@ -1906,6 +1926,11 @@ msgstr "خدمات بمشاكل معروفة"
 msgid "Acknowledged Problem Hosts"
 msgstr "مضيفون بمشاكل معروفة"
 
+#. *
+#. * @var \Icinga\Application\Modules\Module $this
+#. *
+#. * Problems section in case monitoring is disabled
+#.
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/configuration.php#L291
 msgid "Problems"
 msgstr "المشاكل"
@@ -2366,6 +2391,7 @@ msgstr "إشعار استلام"
 msgid "Action Url"
 msgstr "فعل المضيف"
 
+#. Programmatically translated since the full definition is available in class ObjectSuggestions
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/library/Icingadb/Model/Behavior/FlattenedObjectVars.php#L107
 #, fuzzy, php-format
 msgctxt "..<customvar-name>"
@@ -4832,6 +4858,13 @@ msgstr ""
 msgid "Page"
 msgstr "جهاز إخطار"
 
+#. The purpose of this is not only to show that a requested format isn't supported.
+#. It's main purpose is to not allow to bypass restrictions with `?format=sql` as
+#. it may be possible that an action applies restrictions, but doesn't support any
+#. output formats. Since the restrictions are bypassed in method `$this->filter()`
+#. for the SQL output format and the actual format processing is part of a different
+#. method (`$this->export()`) which needs to be called explicitly by an action,
+#. it's otherwise possible for bad individuals to access unrestricted data.
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/library/Icingadb/Web/Controller.php#L533
 msgid "This route does not support the requested output format"
 msgstr ""
@@ -5279,6 +5312,7 @@ msgstr "إزالة مورد"
 msgid "The acknowledgement expired on %s"
 msgstr "إشعار استلام"
 
+#. Hosts have no other state between UP and DOWN
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/library/Icingadb/Widget/Detail/EventDetail.php#L632
 #, fuzzy
 msgid "Service changed its state"
@@ -5361,6 +5395,7 @@ msgstr ""
 msgid "IPv6 Address"
 msgstr ""
 
+#. Add warning to links that open in new tabs, as recommended by WCAG20 G201
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/library/Icingadb/Widget/Detail/ObjectDetail.php#L156
 #: https://github.com/Icinga/icingadb-web/blob/b5eed40255e38a51f822db1a1dbf8aaf2ad8a796/library/Icingadb/Widget/Detail/ObjectDetail.php#L346
 #, fuzzy

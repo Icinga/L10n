@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Icinga L10n db2ab5e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:49+0000\n"
+"POT-Creation-Date: 2025-10-07 14:58+0000\n"
 "PO-Revision-Date: 2025-09-24 14:22+0000\n"
 "Last-Translator: Feu Mourek <feu.mourek@icinga.com>\n"
 "Language-Team: Polish <https://translate.icinga.com/projects/icinga/"
@@ -2218,6 +2218,7 @@ msgstr ""
 msgid "Add a new group"
 msgstr ""
 
+#. $this->shouldUpdate()
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/application/forms/Config/UserGroup/UserGroupForm.php#L33
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/application/views/scripts/group/show.phtml#L18
 #, php-format
@@ -3059,6 +3060,7 @@ msgstr ""
 msgid "Module %s is disabled"
 msgstr ""
 
+#. ! $module->loaded
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/application/views/scripts/config/modules.phtml#L25
 #, php-format
 msgid "Module %s has failed to load"
@@ -3481,6 +3483,7 @@ msgstr ""
 msgid "Create a new role"
 msgstr ""
 
+#. * @var \Icinga\Application\Config $roles
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/application/views/scripts/role/list.phtml#L23
 msgid "No roles found."
 msgstr ""
@@ -4320,6 +4323,10 @@ msgstr ""
 msgid "No documentation found matching the filter"
 msgstr ""
 
+#. * @var \Icinga\Web\Widget\Tabs $tabs
+#. * @var \Icinga\Module\Doc\Renderer\DocTocRenderer $toc
+#. * @var \Icinga\Web\Widget\Tabs $tabs
+#. * @var \Icinga\Module\Doc\Renderer\DocSectionRenderer $section
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/doc/application/views/scripts/style/guide.phtml#L69
 msgid "Comment List"
 msgstr ""
@@ -4339,6 +4346,8 @@ msgstr ""
 msgid "Blockquote"
 msgstr ""
 
+#. Icinga Web 2 | (c) 2014 Icinga Development Team | GPLv2+
+#. * @var $this \Icinga\Application\Modules\Module
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/doc/configuration.php#L6
 msgid "Documentation"
 msgstr ""
@@ -5044,6 +5053,7 @@ msgstr ""
 msgid "Is In Effect"
 msgstr ""
 
+#. $row->object_type === 'service'
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/controllers/ListController.php#L246
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/controllers/ListController.php#L449
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/scripts/comment/show.phtml#L17
@@ -5328,6 +5338,9 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
+#.
+#. * Available Search Urls
+#.
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/controllers/TacticalController.php#L18
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/controllers/TacticalController.php#L26
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/configuration.php#L117
@@ -6443,6 +6456,7 @@ msgstr ""
 msgid "Unhandled"
 msgstr ""
 
+#. * @var \Icinga\Module\Monitoring\Object\Acknowledgement $acknowledgement
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/helpers/HostFlags.php#L18
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/helpers/ServiceFlags.php#L18
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/scripts/show/components/acknowledgement.phtml#L15
@@ -6535,6 +6549,7 @@ msgstr ""
 msgid "This comment does not expire."
 msgstr ""
 
+#. Form is unset if the current user lacks the respective permission
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/scripts/comment/show.phtml#L75
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/scripts/comments/show.phtml#L9
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/scripts/downtime/show.phtml#L163
@@ -6989,6 +7004,7 @@ msgstr ""
 msgid "Process check result"
 msgstr ""
 
+#. Form is unset if the current user lacks the respective permission
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/scripts/hosts/show.phtml#L180
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/scripts/services/show.phtml#L182
 msgid "Schedule Check"
@@ -7041,6 +7057,8 @@ msgid ""
 "or press and hold the Shift key to select a range of rows"
 msgstr ""
 
+#. / TRANSLATORS: Please leave %s as it is because the selection counter is wrapped in a span tag for updating
+#. / the counter via JavaScript
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/scripts/list/components/selectioninfo.phtml#L12
 #, php-format
 msgctxt "Multi-selection count"
@@ -7137,6 +7155,7 @@ msgstr ""
 msgid "Toogle grid view mode"
 msgstr ""
 
+#. * @var \Icinga\Module\Monitoring\DataView\Hostgroup $hostGroups
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/scripts/list/hostgroup-grid.phtml#L18
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/scripts/list/hostgroups.phtml#L24
 msgid "No host groups found matching the filter."
@@ -7297,6 +7316,7 @@ msgstr ""
 msgid "Load more"
 msgstr ""
 
+#. * @var \Icinga\Module\Monitoring\DataView\Servicegroup $serviceGroups
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/scripts/list/servicegroup-grid.phtml#L18
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/application/views/scripts/list/servicegroups.phtml#L21
 msgid "No service groups found matching the filter."
@@ -8574,6 +8594,9 @@ msgid ""
 "Configure how to protect your monitoring environment against prying eyes"
 msgstr ""
 
+#.
+#. * Available navigation items
+#.
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/configuration.php#L126
 msgid "Host Action"
 msgstr ""
@@ -8582,6 +8605,12 @@ msgstr ""
 msgid "Service Action"
 msgstr ""
 
+#. Notes are disabled as we're not sure whether to really make a difference between actions and notes
+#. $this->provideNavigationItem('host-note', $this->translate('Host Note'));
+#. $this->provideNavigationItem('service-note', $this->translate('Service Note'));
+#.
+#. * Problems Section
+#.
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/configuration.php#L135
 msgid "Problems"
 msgstr ""
@@ -8621,6 +8650,9 @@ msgstr ""
 msgid "List current downtimes"
 msgstr ""
 
+#.
+#. * Overview Section
+#.
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/configuration.php#L187
 msgid "Overview"
 msgstr ""
@@ -8633,6 +8665,9 @@ msgstr ""
 msgid "List users"
 msgstr ""
 
+#.
+#. * History Section
+#.
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/configuration.php#L255
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/library/Monitoring/Web/Controller/MonitoredObjectController.php#L290
 msgid "History"
@@ -8650,10 +8685,16 @@ msgstr ""
 msgid "Open timeline"
 msgstr ""
 
+#.
+#. * Reporting Section
+#.
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/configuration.php#L287
 msgid "Reporting"
 msgstr ""
 
+#.
+#. * Current Incidents
+#.
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/configuration.php#L295
 msgid "Current Incidents"
 msgstr ""
@@ -8662,6 +8703,25 @@ msgstr ""
 msgid "Recently Recovered Services"
 msgstr ""
 
+#.
+#. * Overview
+#.
+#. $dashboard = $this->dashboard(N_('Overview'), array('priority' => 60));
+#. $dashboard->add(
+#. N_('Service Grid'),
+#. 'monitoring/list/servicegrid?limit=15,18'
+#. );
+#. $dashboard->add(
+#. N_('Service Groups'),
+#. 'monitoring/list/servicegroups'
+#. );
+#. $dashboard->add(
+#. N_('Host Groups'),
+#. 'monitoring/list/hostgroups'
+#. );
+#.
+#. * Most Overdue
+#.
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/configuration.php#L332
 msgid "Overdue"
 msgstr ""
@@ -8682,6 +8742,9 @@ msgstr ""
 msgid "Downtimes Active For More Than Three Days"
 msgstr ""
 
+#.
+#. * Muted Objects
+#.
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/configuration.php#L357
 msgid "Muted"
 msgstr ""
@@ -8858,6 +8921,7 @@ msgstr ""
 msgid "The given resource name is already in use."
 msgstr ""
 
+#. Used t() here as "Start" is too generic and already translated in the icinga domain
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/monitoring/library/Monitoring/MonitoringWizard.php#L82
 #: https://github.com/Icinga/icingaweb2/blob/d658c73c73a87772f85dfaa4597fd245b7087913/modules/setup/library/Setup/WebWizard.php#L365
 msgctxt "setup.welcome.btn.next"

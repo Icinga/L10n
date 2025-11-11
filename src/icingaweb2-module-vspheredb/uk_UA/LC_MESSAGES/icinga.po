@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:49+0000\n"
+"POT-Creation-Date: 2025-10-07 14:58+0000\n"
 "PO-Revision-Date: 2023-05-06 17:23+0000\n"
 "Last-Translator: p4k8 <pkuznetsunit@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.icinga.com/projects/icinga/"
@@ -347,6 +347,9 @@ msgstr ""
 "Оберіть папку (або кореневий вузол) для визначення (та перезапису) правил "
 "моніторингу для всіх дочірніх вузлів"
 
+#. $section->add(N_('Anomalies'))
+#. ->setUrl('vspheredb/anomalies')
+#. ->setPriority(45);
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/application/controllers/MonitoringController.php#L79
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/application/controllers/MonitoringController.php#L112
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/configuration.php#L34
@@ -1244,6 +1247,7 @@ msgstr ""
 msgid "Please click %s to create new MySQL/MariaDB resource"
 msgstr "Будь ласка, натисніть %s для створення нового ресурсу MySQL/MariaDB"
 
+#. $this->setSuccessMessage
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Form/ChooseDbResourceForm.php#L130
 msgid "Configuration has been stored"
 msgstr "Налаштування було збережено"
@@ -1456,6 +1460,7 @@ msgstr "Тип джерела"
 msgid "IDO"
 msgstr "IDO"
 
+#. 'icinga2-api' => $this->translate('Icinga 2 API'),
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Form/MonitoringConnectionForm.php#L58
 msgid "Icinga DB"
 msgstr ""
@@ -1918,6 +1923,7 @@ msgstr "Інформація про систему"
 msgid "Tools"
 msgstr "Гостьові інструменти"
 
+#. $this->translate('Build') => $c->get('build'),
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Table/Object/HostSystemInfoTable.php#L47
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Table/Object/VCenterInfoTable.php#L39
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Table/Objects/HostsTable.php#L29
@@ -1991,6 +1997,7 @@ msgstr "Інфо"
 msgid "UUID"
 msgstr "UUID"
 
+#. $this->translate('Version') => $c->get('version'),
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Table/Object/VCenterInfoTable.php#L35
 msgid "OS Type"
 msgstr "Тип OS"
@@ -2090,6 +2097,7 @@ msgstr "Не вдалося завантажити хост"
 msgid "Host"
 msgstr "Хост"
 
+#. Better: Host CPU / Host Memory
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Table/Object/VmLocationInfoTable.php#L77
 msgid "Host Resources"
 msgstr "Ресурси хоста"
@@ -2152,6 +2160,16 @@ msgstr "Розмір"
 msgid "Usage"
 msgstr "Використання"
 
+#.
+#. $this->createColumn('cpu', 'CPU', [
+#. 'used_mhz'  => 'SUM(vqs.overall_cpu_usage)',
+#. 'total_mhz' => 'SUM(h.hardware_cpu_cores * h.hardware_cpu_mhz)',
+#. ])->setRenderer(function ($row) {
+#. return new CpuUsage($row->used_mhz, $row->total_mhz);
+#. })->setSortExpression(
+#. 'SUM(hqs.overall_cpu_usage) / SUM(h.hardware_cpu_cores * h.hardware_cpu_mhz)'
+#. )->setDefaultSortDirection('DESC'),
+#.
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Table/Objects/GroupedvmsTable.php#L93
 msgid "vCPU Count"
 msgstr "Кількість vCPU"
@@ -2774,6 +2792,7 @@ msgstr "Немає інформації про гостьовий IP стек"
 msgid "Gateway"
 msgstr "Шлюз"
 
+#. 0 -> hardware_key minus 4000?
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Widget/VmRouteConfigTable.php#L46
 msgid "Device"
 msgstr "Пристрій"

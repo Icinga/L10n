@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:49+0000\n"
+"POT-Creation-Date: 2025-10-07 14:58+0000\n"
 "PO-Revision-Date: 2020-04-27 14:37+0200\n"
 "Last-Translator: Munzir Taha <munzirtaha@gmail.com>\n"
 "Language-Team: English <trans-ar@lists.fedoraproject.org>\n"
@@ -343,6 +343,9 @@ msgid ""
 "Rules for all related child nodes"
 msgstr ""
 
+#. $section->add(N_('Anomalies'))
+#. ->setUrl('vspheredb/anomalies')
+#. ->setPriority(45);
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/application/controllers/MonitoringController.php#L79
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/application/controllers/MonitoringController.php#L112
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/configuration.php#L34
@@ -1237,6 +1240,7 @@ msgstr ""
 msgid "Please click %s to create new MySQL/MariaDB resource"
 msgstr ""
 
+#. $this->setSuccessMessage
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Form/ChooseDbResourceForm.php#L130
 msgid "Configuration has been stored"
 msgstr ""
@@ -1451,6 +1455,7 @@ msgstr ""
 msgid "IDO"
 msgstr ""
 
+#. 'icinga2-api' => $this->translate('Icinga 2 API'),
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Form/MonitoringConnectionForm.php#L58
 msgid "Icinga DB"
 msgstr ""
@@ -1902,6 +1907,7 @@ msgstr ""
 msgid "Tools"
 msgstr ""
 
+#. $this->translate('Build') => $c->get('build'),
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Table/Object/HostSystemInfoTable.php#L47
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Table/Object/VCenterInfoTable.php#L39
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Table/Objects/HostsTable.php#L29
@@ -1976,6 +1982,7 @@ msgstr ""
 msgid "UUID"
 msgstr ""
 
+#. $this->translate('Version') => $c->get('version'),
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Table/Object/VCenterInfoTable.php#L35
 msgid "OS Type"
 msgstr ""
@@ -2077,6 +2084,7 @@ msgstr "فشل في إضافة مستخدم"
 msgid "Host"
 msgstr ""
 
+#. Better: Host CPU / Host Memory
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Table/Object/VmLocationInfoTable.php#L77
 #, fuzzy
 msgid "Host Resources"
@@ -2140,6 +2148,16 @@ msgstr ""
 msgid "Usage"
 msgstr ""
 
+#.
+#. $this->createColumn('cpu', 'CPU', [
+#. 'used_mhz'  => 'SUM(vqs.overall_cpu_usage)',
+#. 'total_mhz' => 'SUM(h.hardware_cpu_cores * h.hardware_cpu_mhz)',
+#. ])->setRenderer(function ($row) {
+#. return new CpuUsage($row->used_mhz, $row->total_mhz);
+#. })->setSortExpression(
+#. 'SUM(hqs.overall_cpu_usage) / SUM(h.hardware_cpu_cores * h.hardware_cpu_mhz)'
+#. )->setDefaultSortDirection('DESC'),
+#.
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Table/Objects/GroupedvmsTable.php#L93
 msgid "vCPU Count"
 msgstr ""
@@ -2751,6 +2769,7 @@ msgstr ""
 msgid "Gateway"
 msgstr ""
 
+#. 0 -> hardware_key minus 4000?
 #: https://github.com/Icinga/icingaweb2-module-vspheredb/blob/7998ba3f34356e1ef17197adbf16d187d5d89c16/library/Vspheredb/Web/Widget/VmRouteConfigTable.php#L46
 msgid "Device"
 msgstr ""
