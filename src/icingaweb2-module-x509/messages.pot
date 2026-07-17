@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: icingaweb2-module-x509 "
 "63f45954cd9d0fc798aab1de212afaa274fadbd8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-15 19:42+0000\n"
+"POT-Creation-Date: 2026-07-16 14:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -502,9 +502,10 @@ msgstr ""
 
 #. * @var \Icinga\Web\Widget\Tabs $tabs
 #. * @var \Icinga\Module\X509\CertificateDetails $certificateDetails
+#. * @var \ipl\Html\ValidHtml $chain
+#. @TODO(el): create() has to be called because the UserForm is setting the title there
 #. * @var \Icinga\Web\Widget\Tabs $tabs
 #. * @var \Icinga\Module\X509\Forms\Config\BackendConfigForm $form
-#. * @var \ipl\Html\ValidHtml $chain
 #: https://github.com/Icinga/icingaweb2-module-x509/blob/63f45954cd9d0fc798aab1de212afaa274fadbd8/application/views/scripts/missing-resource.phtml#L5
 msgid "Database not configured"
 msgstr ""
@@ -516,7 +517,6 @@ msgid ""
 "%1$shere%3$s and then set it in this %2$smodule's configuration%3$s."
 msgstr ""
 
-#. @TODO(el): create() has to be called because the UserForm is setting the title there
 #. * @var \Icinga\Repository\RepositoryQuery $sni
 #: https://github.com/Icinga/icingaweb2-module-x509/blob/63f45954cd9d0fc798aab1de212afaa274fadbd8/application/views/scripts/sni/index.phtml#L4
 msgid "No SNI maps configured yet."
