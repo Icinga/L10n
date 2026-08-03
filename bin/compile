@@ -6,14 +6,15 @@ git_version=$(git describe --always)
 
 HEADER_FIXER=$(cat << PYTHON
 import sys, re
-input = sys.stdin.read()
+with open(sys.argv[1]) as f:
+    catalog = f.read()
 from datetime import datetime
 
-if not input:
+if not catalog:
     sys.stderr.write("Error: No input provided.\n")
     sys.exit(1)
 
-head = input[:input.index("\n#: ")]
+head = catalog[:catalog.index("\n#: ")]
 author_lines = set(re.findall(r'^# [^<\n,]+ <[^>]+>,(?:(?: \d{4},)|(?: \d{4}.))+$', head, re.MULTILINE))
 
 # Collect all unique authors
@@ -41,7 +42,7 @@ for author, data in sorted(sorted(author_map.items(), key=get_name), key=get_yea
     authors.append('# ' + data['name'] + ' <' + author + '>, ' + ', '.join(set(sorted(data['years']))) + '.')
 
 # The header values, of the first extracted header (Similar to --use-first of msgcat)
-header_values = re.search(r'msgid ""\nmsgstr "".*?((?:"[^#"]+(?!#\\\n)"\n)+)', input, re.DOTALL)[1]
+header_values = re.search(r'msgid ""\nmsgstr "".*?((?:"[^#"]+(?!#\\\n)"\n)+)', catalog, re.DOTALL)[1]
 
 # Edit/fill some header values
 header_values = re.sub(r'(Project-Id-Version:)[^\\\]*?\\\n', r'\1 ${git_version}\\\n', header_values)
@@ -50,8 +51,22 @@ header_values = re.sub(r'(PO-Revision-Date:)[^"]*',
 
 first_line = re.search(r'# Icinga - .+? \(\w{2}_\w{2}\)\n', head)
 if not first_line:
-    first_line = "# Icinga - Unknown translation (unknown locale)\n"
-    sys.stderr.write("Warning: No first line found in the header, using default.\n")
+    # None of the source catalogs has a proper first line, so the language
+    # cannot be derived and has to be asked for
+    locale = re.search(r'Language: (\w+)', header_values)[1]
+
+    language = ""
+    while not language:
+        sys.stderr.write("Unknown language of locale " + locale + ", please enter its name: ")
+        sys.stderr.flush()
+        answer = sys.stdin.readline()
+        if not answer:
+            sys.stderr.write("\nError: No language name given for " + locale + ".\n")
+            sys.exit(1)
+
+        language = answer.strip()
+
+    first_line = "# Icinga - " + language + " translation (" + locale + ")\n"
 else:
     first_line = first_line[0]
 
@@ -64,7 +79,7 @@ result = first_line \
     + "\n#\nmsgid \"\"\n" \
     + "msgstr \"\"\n" \
     + header_values \
-    + input[input.index("\n#: "):]
+    + catalog[catalog.index("\n#: "):]
 
 sys.stdout.write(result)
 PYTHON
@@ -93,7 +108,7 @@ for locale_name in "${!CATALOGS[@]}"; do
   done
 
   if [ -s ../locale/$locale_name/LC_MESSAGES/icinga.po ]; then
-    cat ../locale/$locale_name/LC_MESSAGES/icinga.po | python3 -c "$HEADER_FIXER" > temp; mv temp ../locale/$locale_name/LC_MESSAGES/icinga.po
+    python3 -c "$HEADER_FIXER" ../locale/$locale_name/LC_MESSAGES/icinga.po > temp && mv temp ../locale/$locale_name/LC_MESSAGES/icinga.po
     msgfmt -o ../locale/$locale_name/LC_MESSAGES/icinga.mo -c ../locale/$locale_name/LC_MESSAGES/icinga.po
   else
     echo "Warning: No translations found for $locale_name, skipping compilation."
