@@ -48,7 +48,7 @@ header_values = re.sub(r'(Project-Id-Version:)[^\\\]*?\\\n', r'\1 ${git_version}
 header_values = re.sub(r'(PO-Revision-Date:)[^"]*',
     r'\1 {:%Y-%m-%d %H:%M:%z}\\\n'.format(datetime.now().astimezone()), header_values)
 
-first_line = re.search(r'# Icinga - [^(]+ \(\w{2}_\w{2}\)\n', head)
+first_line = re.search(r'# Icinga - .+? \(\w{2}_\w{2}\)\n', head)
 if not first_line:
     first_line = "# Icinga - Unknown translation (unknown locale)\n"
     sys.stderr.write("Warning: No first line found in the header, using default.\n")
